@@ -33,4 +33,4 @@ Running a release build with `npm run build` can be very slow and use a lot of R
 
 ## Staying up to date
 
-You can run `npm run sync -- --all` to grab the latest source.  **It's important to note that this will overwrite your local changes, so please back up work before running this**.  If you'd prefer to manually update, you can re-run the antimuon patches by running `npm run sync -- --run_hooks`
+You can run `npm run sync -- --all` to grab the latest source. This typically triggers a full rebuild. **It's important to note that this will overwrite your local changes, so please back up work before running this**.  If you'd prefer to manually update, you can re-run the antimuon patches by running `npm run sync -- --run_hooks`
