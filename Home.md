@@ -17,6 +17,7 @@ npm install
 npm run init
 
 # Linux specific steps
+
 ./src/build/install-build-deps.sh
 apt-get install libgnome-keyring-dev build-essential rpm ninja-build
 https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_build_instructions.md#notes
@@ -34,3 +35,13 @@ Running a release build with `npm run build` can be very slow and use a lot of R
 ## Staying up to date
 
 You can run `npm run sync -- --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the antimuon patches by running `npm run sync -- --run_hooks`
+
+### Troubleshooting 
+
+#### Troubleshooting on MacOS
+
+As of Chromium 62, the 10.12 SDK is required for building.
+
+`git clone git@github.com:phracker/MacOSX-SDKs.git`
+
+And then before building make a symbolic link to MacOSX10.12.sdk in `Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs`
