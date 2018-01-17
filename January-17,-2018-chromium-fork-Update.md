@@ -87,10 +87,11 @@ This page is meant to give you a snapshot in time view of:
 - Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
 - Sriram Venkataram is lightly testing builds as they become available.
 - James Mudgett has helped with icon image resources.
+- Anthony Tseng has helped with some build problems on Windows and did some work towards debranding but is not currently sourced on this project.  He may help out more if opportunities come up between muon updates.
 
 ## Hiring
 
-- We're looking at expanding the team by 2 people in the short term to help deliver chromium-fork.
+- We're looking at expanding the team by 2 people in the short term to help deliver chromium-fork on schedule.
 - Jocelyn will be joining the security team in Feb 12 to help.
 - eV is helping to find a devops / dev candidate that can help get buildbot setup and work on the update server.
 
