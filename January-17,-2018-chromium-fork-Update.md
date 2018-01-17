@@ -80,6 +80,8 @@ This page is meant to give you a snapshot in time view of:
 - Alexey Barabash recently started spending most of his time on chromium-fork
   - Completed: URL suggestions using Alexa and no search by default.
   - Working on tab shape, has a prototype of that on Windows / Linux already.
+- Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
+- Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
 - Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
 - Kevin Lawler has helped with patch splitting, but is currently sourced for a different project.
 - Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
