@@ -84,7 +84,7 @@ This page is meant to give you a snapshot in time view of:
 - Kevin Lawler has helped with patch splitting, but is currently source for a different project.
 - Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
 - Sriram Venkataram is lightly testing builds as they become available.
-- James has helped with icon image resources.
+- James Mudgett has helped with icon image resources.
 
 ## Hiring
 
