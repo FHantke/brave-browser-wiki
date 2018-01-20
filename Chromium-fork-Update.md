@@ -28,8 +28,8 @@ This page is meant to give you a snapshot in time view of:
 - [x] WebUI basic framework used by payments, new tab page and welcome page
 - [x] geolocations
 - [x] produce build on Linux / Win that changes tab shape
-- [ ] Signing build / installer on Windows
-- [ ] Linux debs / rpms w/ signing.
+- [x] Signing build / installer on Windows
+- [ ] Linux debs / rpms w/ signing. (In progress)
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [ ] Removing Chrome extension store support
 - [ ] Payments / Ledger impl (In progress)
