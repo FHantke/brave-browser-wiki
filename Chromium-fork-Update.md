@@ -1,14 +1,15 @@
 # chromium-fork Update
 
-# Key Updates:
-- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
-
 This page is meant to give you a snapshot in time view of:
 
-- Where we're at with development and how it's split up into milestones.
+- Current status per milestone.
 - Current staffing.
 - Hiring plan.
 - Give a couple screenshots of where we're at.
+
+
+# Key Updates:
+- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
 
 ## Milestones
 
