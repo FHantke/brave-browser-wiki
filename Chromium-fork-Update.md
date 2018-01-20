@@ -1,4 +1,7 @@
-# chromium-fork update January 17, 2018
+# chromium-fork Update
+
+# Key Updates:
+- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
 
 This page is meant to give you a snapshot in time view of:
 
