@@ -15,6 +15,7 @@
 
 # Key Updates:
 - [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
+- [February 3, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/fa87057f8f31ceb5b90c7f670035e533b214e942)
 
 ## Milestones
 
