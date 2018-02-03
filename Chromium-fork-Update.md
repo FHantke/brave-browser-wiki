@@ -1,6 +1,6 @@
 # chromium-fork Update
 
-# Recent changes tldr;
+# Recent changes February 3 2018 -- tldr;
 
 - Linux deb and rpms work done and almost landed
 - Welcome page done and landed for first run
