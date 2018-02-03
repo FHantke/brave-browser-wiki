@@ -25,7 +25,6 @@
 - [x] Tracking protection off the main thread
 - [x] HTTPS Everywhere off the main thread
 - [x] Browser action for shields panel, implemented through an extension
-- [x] Packaging installer by default
 - [x] macOS installer
 - [x] Windows silent installer
 - [x] Signing on macOS
