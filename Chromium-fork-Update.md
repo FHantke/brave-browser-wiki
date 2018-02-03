@@ -1,11 +1,16 @@
 # chromium-fork Update
 
-This page is meant to give you a snapshot in time view of:
+# Recent changes tldr;
 
-- Current status per milestone.
-- Current staffing.
-- Hiring plan.
-- Give a couple screenshots of where we're at.
+- Linux deb and rpms work done and almost landed
+- Welcome page done and landed for first run
+- New tab page landed, not showing stats count yet but shows top sites
+- Tab shape on macOS (previously also on Windows / Linux)
+- Restores last session now enabled by default
+- Upgraded to Chromium 64
+- New candidate starting February 12th to work on #chromium-fork
+- New candidate hired likely to start March 1st
+- Plan to use partitions for session tabs
 
 
 # Key Updates:
@@ -27,16 +32,19 @@ This page is meant to give you a snapshot in time view of:
 - [x] URL bar suggestions from Alexa and search suggestions off by default
 - [x] Debranding
 - [x] WebUI basic framework used by payments, new tab page and welcome page
-- [x] geolocations
+- [x] Geolocations
 - [x] produce build on Linux / Win that changes tab shape
 - [x] Signing build / installer on Windows
-- [ ] Linux debs / rpms w/ signing. (In progress)
+- [x] Linux debs / rpms
+- [ ] Linux signing.
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [ ] Removing Chrome extension store support
-- [ ] Payments / Ledger impl (In progress)
-- [ ] new tab page impl
-- [ ] welcome page impl
-- [ ] produce build on macOS that changes tab shape
+- [ ] Payments / Ledger impl
+- [x] new tab page impl
+- [x] welcome page impl
+- [x] produce build on macOS that changes tab shape
+- [x] Restore last session by default
+- [x] Disable search autocomplete and use alexa top 500
 
 ### Milestone 2: Builds with updates (March-May)
 
@@ -77,13 +85,22 @@ This page is meant to give you a snapshot in time view of:
 
 - Brian Bondy is spending most of his coding time on chromium-fork
   - Completed: Native Adblock, tracking protection, HTTPS Everywhere, basic DAT file downloading
-  - Completed: Basic Windows and macOS packaging.
+  - Completed: C63 upgrade
+  - Completed: Basic Windows and macOS packaging and signing.
   - Completed: WebUI framework.
-  - Working on Chromium rebases as they happen to keep us up to date.
-  - Currently working more on landing WebUI and packaging PRs.
+  - Completed: Geolocations
+  - Completed: C64 upgrade
+  - Completed: Basic newtab page
+  - Completed: Welcome page
+  - Completed: Restore session by default
+
 - Alexey Barabash recently started spending most of his time on chromium-fork
   - Completed: URL suggestions using Alexa and no search by default.
-  - Working on tab shape, has a prototype of that on Windows / Linux already.
+  - Completed: tab shape on Windows / Linux
+  - Completed: tab shape on macOS
+  - Completed: Top site suggestions
+  - Completed: Packaging on Linux
+
 - Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
 - Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
 - Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
@@ -95,13 +112,14 @@ This page is meant to give you a snapshot in time view of:
 
 ## Hiring
 
-- We're looking at expanding the team by 2 people in the short term to help deliver chromium-fork on schedule.
+
+
 - Jocelyn will be joining the security team in Feb 12 to help.
+- Offer is sent for another candidate who is likely to accept and start on March 1st. 
+- Short term contractor likely to take on work soon.
 - eV is helping to find a devops / dev candidate that can help get buildbot setup and work on the update server.
 
 
 ## Screenshots from chromium-fork
 
-![screen shot 2018-01-17 at 12 01 59 pm](https://user-images.githubusercontent.com/831718/35055946-7713010c-fb7e-11e7-821d-48b17453bb69.png)
-![screen shot 2018-01-17 at 12 02 18 pm](https://user-images.githubusercontent.com/831718/35055947-772568ba-fb7e-11e7-9568-eb58e72e2ede.png)
-
+<img width="1034" alt="screen shot 2018-02-03 at 2 25 56 pm" src="https://user-images.githubusercontent.com/831718/35770707-3f4b819a-08ee-11e8-88e0-69d9be4abae0.png">
