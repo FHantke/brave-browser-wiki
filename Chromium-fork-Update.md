@@ -1,21 +1,19 @@
 # chromium-fork Update
 
-# Recent changes February 3 2018 -- tldr;
+# Recent changes
 
-- Linux deb and rpms work done and almost landed
-- Welcome page done and landed for first run
-- New tab page landed, not showing stats count yet but shows top sites
-- Tab shape on macOS (previously also on Windows / Linux)
-- Restores last session now enabled by default
-- Upgraded to Chromium 64
+- Linux deb and rpms done
+- Upload script done to upload binaries, symbols, and installers to GitHub
+- New tab page now showing stats and persisting changes
+- cc_wrapper hack to override .cc files so we can avoid patching .gn files for .cc overrides. 
 - New candidate starting February 12th to work on #chromium-fork
-- New candidate hired likely to start March 1st
+- New candidate starting February 26th to work on #chromium-fork
 - Plan to use partitions for session tabs
 
 
 # Key Updates:
-- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
 - [February 3, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/e93dd33543cfc9d18e743ebd9ec55b99971c3fc4)
+- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
 
 ## Milestones
 
@@ -36,6 +34,8 @@
 - [x] produce build on Linux / Win that changes tab shape
 - [x] Signing build / installer on Windows
 - [x] Linux debs / rpms
+- [x] Upload symbols and bins to GitHub
+- [x] Ability to override cc files for less patching to chromium src
 - [ ] Linux signing.
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [ ] Removing Chrome extension store support
