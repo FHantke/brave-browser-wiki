@@ -6,7 +6,7 @@
 - Upload script done to upload binaries, symbols, and installers to GitHub
 - New tab page now showing stats and persisting changes
 - cc_wrapper hack to override .cc files so we can avoid patching .gn files for .cc overrides. 
-- New candidate starting February 12th to work on #chromium-fork
+- New candidate started February 12th to work on #chromium-fork
 - New candidate starting February 26th to work on #chromium-fork
 
 
