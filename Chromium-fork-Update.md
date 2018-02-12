@@ -8,7 +8,6 @@
 - cc_wrapper hack to override .cc files so we can avoid patching .gn files for .cc overrides. 
 - New candidate starting February 12th to work on #chromium-fork
 - New candidate starting February 26th to work on #chromium-fork
-- Plan to use partitions for session tabs
 
 
 # Key Updates:
