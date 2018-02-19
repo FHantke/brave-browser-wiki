@@ -44,6 +44,8 @@
 - [x] produce build on macOS that changes tab shape
 - [x] Restore last session by default
 - [x] Disable search autocomplete and use alexa top 500
+- [x] Transifex tooling and app localization
+- [ ] Extension localization
 
 ### Milestone 2: Builds with updates (March-May)
 
@@ -100,6 +102,8 @@
   - Completed: Top site suggestions
   - Completed: Packaging on Linux
 
+- Jocelyn Liu nearing completion on fingerprinting protection
+
 - Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
 - Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
 - Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
@@ -111,9 +115,6 @@
 
 ## Hiring
 
-
-
-- Jocelyn will be joining the security team in Feb 12 to help.
 - Offer is sent for another candidate who is likely to accept and start on March 1st. 
 - Short term contractor likely to take on work soon.
 - eV is helping to find a devops / dev candidate that can help get buildbot setup and work on the update server.
