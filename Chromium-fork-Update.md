@@ -81,6 +81,7 @@
 - [ ] Tab pages
 - [ ] More UI customizations
 - [ ] Tor private tabs (Taylor Campbell)
+- [ ] Webtorrent
 
 ## Staffing
 
