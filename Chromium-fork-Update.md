@@ -117,4 +117,6 @@
 
 ## Screenshots from chromium-fork
 
+<img width="1208" alt="screen shot 2018-02-26 at 9 39 46 am" src="https://user-images.githubusercontent.com/831718/36676797-9c6d26aa-1ada-11e8-95b9-c5a7bfb0cd8e.png">
+
 <img width="1034" alt="screen shot 2018-02-03 at 2 25 56 pm" src="https://user-images.githubusercontent.com/831718/35770707-3f4b819a-08ee-11e8-88e0-69d9be4abae0.png">
