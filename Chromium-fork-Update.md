@@ -21,7 +21,7 @@
 
 ## Milestones
 
-### Milestone 1: Open source (December-February)
+### Milestone 1: Open sourceable (December-February)
 - [x] Adblock off the main thread
 - [x] Tracking protection off the main thread
 - [x] HTTPS Everywhere off the main thread
@@ -70,7 +70,7 @@
 - [ ] Linux deb and rpm signing.
 
 
-### Milestone 3: Getting to 1.0 (May-July)
+### Milestone 3: Getting to 1.0 (June-July)
 
 - [ ] Import from browser-laptop based Brave
 - [ ] More permissions
