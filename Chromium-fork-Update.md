@@ -2,7 +2,7 @@
 
 # Recent news
 
-- Localization tooling is completed, we ordered localizations already.  Supported locales for v1 will be: am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW.
+- Localization tooling is completed, we ordered localizations already.  Supported locales for v1 are: am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW.
 - Fixes for Linux packaging (Chromium install could overwrite icon), fixing install package name.
 - The team is growing: 
   - Jocelyn Liu: Shields work and general dev/ (Started February 12th)
