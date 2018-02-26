@@ -2,13 +2,13 @@
 
 # Recent changes
 
-- Linux deb and rpms done
-- Upload script done to upload binaries, symbols, and installers to GitHub
-- New tab page now showing stats and persisting changes
-- cc_wrapper hack to override .cc files so we can avoid patching .gn files for .cc overrides. 
-- Jocelyn started February 12th to work on #chromium-fork
-- New candidate starting February 26th to work on #chromium-fork
-
+- Localization tooling is completed, we ordered localizations already.  Supported locales for v1 will be: am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW.
+- Fixes for Linux packaging (Chromium install could overwrite icon), fixing install package name.
+- The team is growing: 
+  - Jocelyn Liu: Shields work and general dev/ (Started February 12th)
+  - Emerick Rogul: Extensions and general dev. (Started February 26th)
+  - Garrett Robinson: Import work and general dev. (Started February 26th)
+  - Matt Bacchi: Chromium CI and updates (Starting March 19th)
 
 # Key Updates:
 - February 26, 2018 - This rev
@@ -37,34 +37,40 @@
 - [x] Linux debs / rpms
 - [x] Upload symbols and bins to GitHub
 - [x] Ability to override cc files for less patching to chromium src
-- [ ] Linux signing.
-- [ ] No phoning home to Google (mostly done but more work remains)
-- [ ] Removing Chrome extension store support
-- [ ] Payments / Ledger impl
 - [x] new tab page impl
 - [x] welcome page impl
 - [x] produce build on macOS that changes tab shape
 - [x] Restore last session by default
 - [x] Disable search autocomplete and use alexa top 500
 - [x] Transifex tooling and app localization
-- [ ] Extension localization
+- [x] Extension localization tooling
+- [x] Canvas / WebGL Fingerprinting protection
 
 ### Milestone 2: Builds with updates (March-May)
 
-- [ ] Installer wrapper with UI for Windows
-- [ ] More advanced JS blocking via shields
-- [ ] Update client and server work to do updates
-- [ ] Refine tab shape to be better
+- [ ] Audio / WebRTC fingerprinting protection (Jocelyn has this in progress)
+- [ ] Noscript with per origin selections  (Jocelyn starting on this next)
+- [ ] Investigate updating DAT files via an extension. (Emerick has this in progress)
+- [ ] Removing Chrome extension store support. (Emerick will start on this next)
+- [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
+- [ ] Import from Chrome (Garrett has this in progress)
+- [ ] Payments / Ledger impl (Brian has this in progress using Serg's lib which is also in progress by Serg)
+- [ ] CI for builds using buildbot (Matt will start on this on his first day of work Feb 26)
+- [ ] Update client and server work to do updates (Matt will start on this after CI work)
+- [ ] Refine tab shape to be better (Waiting on design from Brad's team)
 - [ ] Multiple channels support
 - [ ] Fine tune Chrome default settings
-- [ ] CI for builds using buildbot
-- [ ] Provide alternate UI to install extensions
-- [ ] Investigate updating DAT files via an extension.
+- [ ] Provide alternate UI or store to install extensions
 - [ ] Fix any remaining chromium branding things.
+- [ ] Get native automated tests started
+- [ ] Get automated tests running on Travis
+- [ ] No phoning home to Google (mostly done but more work remains)
+- [ ] Linux deb and rpm signing.
+
 
 ### Milestone 3: Getting to 1.0 (May-July)
 
-- [ ] Import from Brave
+- [ ] Import from browser-laptop based Brave
 - [ ] More permissions
 - [ ] Restyling bookmarks
 - [ ] Restyling history
@@ -87,41 +93,26 @@
 
 ## Staffing
 
-- Brian Bondy is spending most of his coding time on chromium-fork
-  - Completed: Native Adblock, tracking protection, HTTPS Everywhere, basic DAT file downloading
-  - Completed: C63 upgrade
-  - Completed: Basic Windows and macOS packaging and signing.
-  - Completed: WebUI framework.
-  - Completed: Geolocations
-  - Completed: C64 upgrade
-  - Completed: Basic newtab page
-  - Completed: Welcome page
-  - Completed: Restore session by default
+- Full time resources:
+  - Brian Bondy
+  - Alexey Barabash
+  - Jocelyn Liu
+  - Emerick Rogul
+  - Garrett Robinson
 
-- Alexey Barabash recently started spending most of his time on chromium-fork
-  - Completed: URL suggestions using Alexa and no search by default.
-  - Completed: tab shape on Windows / Linux
-  - Completed: tab shape on macOS
-  - Completed: Top site suggestions
-  - Completed: Packaging on Linux
-
-- Jocelyn Liu nearing completion on fingerprinting protection
-
-- Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
-- Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
-- Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
-- Kevin Lawler has helped with patch splitting, but is currently sourced for a different project.
-- Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
-- Sriram Venkataram is lightly testing builds as they become available.
-- James Mudgett has helped with icon image resources.
-- Anthony Tseng has helped with some build problems on Windows and did some work towards debranding but is not currently sourced on this project.  He may help out more if opportunities come up between muon updates.
+- Pasts part time resources:
+  - Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
+  - Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
+  - Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
+  - Kevin Lawler has helped with patch splitting, but is currently sourced for a different project.
+  - Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
+  - Sriram Venkataram is lightly testing builds as they become available.
+  - James Mudgett has helped with icon image resources.
+  - Anthony Tseng has helped with some build problems on Windows and did some work towards debranding but is not currently sourced on this project.  He may help out more if opportunities come up between muon updates.
 
 ## Hiring
 
-- Offer is sent for another candidate who is likely to accept and start on March 1st. 
-- Short term contractor likely to take on work soon.
-- eV is helping to find a devops / dev candidate that can help get buildbot setup and work on the update server.
-
+- There's no active hiring being done, we're fully staffed up for Chromium-fork!
 
 ## Screenshots from chromium-fork
 
