@@ -1,6 +1,6 @@
 # chromium-fork Update
 
-# Recent changes
+# Recent news
 
 - Localization tooling is completed, we ordered localizations already.  Supported locales for v1 will be: am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW.
 - Fixes for Linux packaging (Chromium install could overwrite icon), fixing install package name.
@@ -9,6 +9,7 @@
   - Emerick Rogul: Extensions and general dev. (Started February 26th)
   - Garrett Robinson: Import work and general dev. (Started February 26th)
   - Matt Bacchi: Chromium CI and updates (Starting March 19th)
+- We've completed hiring objectives for now for chromium-fork!
 
 # Key Updates:
 - February 26, 2018 - This rev
