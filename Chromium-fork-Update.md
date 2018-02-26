@@ -83,6 +83,7 @@
 - [ ] Flash
 - [ ] Widevine
 - [ ] Some UI customizations
+- [ ] New tab private search engine selection (DuckDuckGo)
 
 ### Milestone 4: Stretch goals or post 1.0
 
