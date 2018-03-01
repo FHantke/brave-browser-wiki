@@ -68,8 +68,7 @@
 - [ ] Get native automated tests started
 - [ ] Get automated tests running on Travis
 - [ ] No phoning home to Google (mostly done but more work remains)
-- [ ] Linux deb and rpm signing.
-
+- [ ] Site hacks
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
@@ -85,6 +84,7 @@
 - [ ] Widevine
 - [ ] Some UI customizations
 - [ ] New tab private search engine selection (DuckDuckGo)
+- [ ] Linux deb and rpm signing.
 
 ### Milestone 4: Stretch goals or post 1.0
 
