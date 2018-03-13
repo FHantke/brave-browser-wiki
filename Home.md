@@ -12,15 +12,15 @@ git clone git@github.com:brave/brave.git
 cd brave
 yarn install
 
+# Linux specific steps
+# Tested on Ubuntu 16.04.4
+# More info: https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_build_instructions.md#notes
+./src/build/install-build-deps.sh
+apt-get install build-essential libgnome-keyring-dev python-setuptools rpm
+
 # this takes 30-45 minutes to run
 # the Chromium source is downloaded which has a large history
 yarn run init
-
-# Linux specific steps
-
-./src/build/install-build-deps.sh
-apt-get install libgnome-keyring-dev build-essential rpm ninja-build
-https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_build_instructions.md#notes
 
 # start the compile
 yarn build
