@@ -45,3 +45,10 @@ Install the latest Python 2.7 release from https://www.python.org/downloads/wind
 # Done!
 
 Now you are ready to follow the rest of the instructions in the [[wiki|Home]].
+
+## Tip: clone the Brave repository to `C:\`
+
+We recommend cloning the Git repository to the top level of your `C:\` drive because:
+
+- Some developers have encountered problems with paths exceeding 256 chars when the repository is cloned to a subdirectory.
+- Some developers have encountered problems with paths that contain spaces (e.g. the path to your home directory, if your username contains spaces) and some of Chromium's build tools.
