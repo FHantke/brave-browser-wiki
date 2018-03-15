@@ -44,4 +44,4 @@ Install the latest Python 2.7 release from https://www.python.org/downloads/wind
 
 # Done!
 
-Now you are ready to follow the rest of the instructions in the [wiki|Home].
+Now you are ready to follow the rest of the instructions in the [[wiki|Home]].
