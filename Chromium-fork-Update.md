@@ -51,7 +51,8 @@
 
 ### Milestone 2: Builds with updates (March-May)
 
-- [ ] Audio / WebRTC fingerprinting protection (Jocelyn has this in progress)
+- [x] Audio / WebRTC fingerprinting protection
+- [ ] Third party fingerprinting protection
 - [ ] Noscript with per origin selections  (Jocelyn starting on this next)
 - [ ] Investigate updating DAT files via an extension. (Emerick has this in progress)
 - [ ] Removing Chrome extension store support. (Emerick will start on this next)
