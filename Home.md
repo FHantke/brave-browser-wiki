@@ -8,8 +8,8 @@ xcode-select --install
 
 You can then get the latest code and build everything.
 ```bash
-git clone git@github.com:brave/brave.git
-cd brave
+git clone git@github.com:brave/brave-browser.git
+cd brave-browser
 yarn install
 
 # Linux specific steps
