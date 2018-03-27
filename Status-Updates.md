@@ -89,8 +89,8 @@
 
 ### Milestone 4: Stretch goals or post 1.0
 
-- [ ] Private tabs (Brian Johnson)
-- [ ] Session tabs (Brian Johnson)
+- [ ] Private tabs
+- [ ] Session tabs
 - [ ] Tab pages
 - [ ] More UI customizations
 - [ ] Tor private tabs (Taylor Campbell)
