@@ -9,8 +9,6 @@ You will need the following prerequisites to build Brave on macOS:
 
 ## Troubleshooting
 
-### Troubleshooting 
-
 As of Chromium 62, the 10.12 SDK is required for building. If you are using macOS < 10.12, you may need to:
 
 `git clone git@github.com:phracker/MacOSX-SDKs.git`
