@@ -86,6 +86,7 @@
 - [ ] Some UI customizations
 - [ ] New tab private search engine selection (DuckDuckGo)
 - [ ] Linux deb and rpm signing.
+- [ ] Shortcut lists
 
 ### Milestone 4: Stretch goals or post 1.0
 
