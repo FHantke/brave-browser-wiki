@@ -16,6 +16,8 @@ Now run the image interactively, mounting the appropriate directories:
 docker run --rm -it -v $(pwd):/src -v $(pwd)/.sccache:/root/.cache/sccache blb
 ```
 
-Dependencies are included in the image so there's no need to run `./src/build/install-build-deps.sh`.
+After starting the container, perform the `yarn install` and `yarn run init` steps from the [[standard build instructions|Home]].
+ 
+Then, install the Chromium dependencies by following [[the Linux Development Environment setup process here|Linux-Development-Environment]].
 
-Now you can proceed with build scripts such as `yarn install`, `yarn run init`, `yarn sync --all` and `yarn build --debug_build=true --official_build=false`. See `./src/out` for the results.  For incremental builds you can also pass `--no_branding_update` for a faster build.
+Lastly you can proceed with [[remaining build scripts|Home#build-brave]] such as `yarn sync --all` and `yarn build --debug_build=true --official_build=false`. See `./src/out` for the results.  For incremental builds you can also pass `--no_branding_update` for a faster build.
