@@ -47,7 +47,7 @@ Tests took 0 seconds.
 Browser tests compile a browser executable together with the test C++ code.  This type of test is useful for when you need to test something that requires most of the browser services started.
 
 ```
-npm run test brave_unit_tests
+npm run test brave_browser_tests
 ```
 
 Typical output looks like this:
