@@ -1,4 +1,4 @@
-## Prerequisites
+# Prerequisites
 
 You will need the following prerequisites to build Brave on macOS:
 
@@ -7,7 +7,7 @@ You will need the following prerequisites to build Brave on macOS:
 - NodeJS >= 7.x
 - Yarn
 
-## Troubleshooting
+# Troubleshooting
 
 As of Chromium 62, the 10.12 SDK is required for building. If you are using macOS < 10.12, you may need to:
 
