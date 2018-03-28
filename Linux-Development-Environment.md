@@ -4,7 +4,7 @@ Before you begin, ensure your system satisfies the [system requirements](https:/
 
 ## Install additional build dependencies
 
-You will need Git, Python 2.7, NodeJS >= 7.x, and Yarn. We recommend follow the [Yarn install docs](https://yarnpkg.com/lang/en/docs/install/) to install Yarn and a compatible version of NodeJS.
+You will need Git, Python 2.7, NodeJS >= 7.x, and Yarn. We recommend following the [Yarn install docs](https://yarnpkg.com/lang/en/docs/install/) to install Yarn and a compatible version of NodeJS.
 
 If you are using Ubuntu, additionally install:
 
