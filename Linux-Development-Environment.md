@@ -12,7 +12,7 @@ If you are using Ubuntu, additionally install:
 apt-get install build-essential libgnome-keyring-dev python-setuptools rpm
 ```
 
-You are now ready to [[Clone and initialize the repo|wiki#clone-and-initialize-the-repo]]. After `yarn run init` there is one final step to finish installing additional build dependencies:
+You are now ready to [[Clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `yarn run init` there is one final step to finish installing additional build dependencies:
 
 ```
 # cd to brave-browser repo root
