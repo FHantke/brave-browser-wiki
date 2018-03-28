@@ -1,6 +1,6 @@
 Everything you need to build Brave.
 
-# Build instructions
+# Build Instructions
 
 ## Install prerequisites
 
@@ -37,6 +37,6 @@ Running a release build with `yarn build` can be very slow and use a lot of RAM 
 
 `yarn start`
 
-## Staying up to date
+# Staying up to date
 
 You can run `yarn run sync --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `yarn run sync --run_hooks`
