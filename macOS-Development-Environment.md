@@ -6,6 +6,8 @@ You will need the following prerequisites to build Brave on macOS:
     - You can install Xcode through the App Store, or by running `xcode-select --install`.
 - NodeJS >= 7.x
 - Yarn
+- Git >= 2.17.0
+  - Git is included with Xcode's "Command Line Tools," but the version provided by Apple is old and sometimes has problems interoperating with current Git stable, e.g. when generating diffs using the default settings. You should install a newer version of Git, e.g. via Homebrew.
 
 # Troubleshooting
 
