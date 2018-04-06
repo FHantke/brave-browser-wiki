@@ -1,5 +1,3 @@
-# Debugging brave-extension
-
 To debug the [brave-extension](https://github.com/brave/brave-extension), it is recommended to load the extension manually in dev mode.
 
 In a new terminal, change your current working directory to `src/brave/vendor/brave-extension` and run `yarn dev`.
