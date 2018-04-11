@@ -7,6 +7,11 @@ cd src
 ninja -C out/Release views_examples_with_content_exe
 ```
 
+1.3 Requirements to source svg
+In order to make conversion go smooth and have no need to adjust result file, it is required for source svg to be:
+* the same size as a target icon; size of a target icon is in the line `CANVAS_DIMENSIONS, `
+* to have no line objects, lines should be represented as a closed loop with fill of extremely small width.
+
 ### 2. Paths conventions
 Modified icons should be placed in the location `brave-browser/src/brave/vector_icons/<original chromium path>`.
 For example, for the file
