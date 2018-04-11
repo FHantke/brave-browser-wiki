@@ -114,6 +114,7 @@ END
 ```
 
 3.5 Verify the result
+
 Run `src/out/Release/views_examples_with_content_exe`
 Choose `Vector Icon` in dropdown list above
 Put the full path to your modified icon file
