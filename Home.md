@@ -35,6 +35,8 @@ yarn build
 
 Running a release build with `yarn build` can be very slow and use a lot of RAM especially on Linux with the Gold LLVM plugin.  To speed things up we recommend doing a build with debug symbols and without being an official build.  Instead you'd run `yarn build --debug_build=true --official_build=false`.  For incremental builds also pass `--no_branding_update` to build less files.
 
+Note: For using npm to build use the following command `npm run build -- --debug_build=true --official_build=false`
+
 You may also want to try [[using sccache|Using sccache]].
 
 ## Run Brave
