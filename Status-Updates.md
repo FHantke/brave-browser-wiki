@@ -2,17 +2,6 @@
 
 # Recent news
 
-- Localization tooling is completed, we ordered localizations already.  Supported locales for v1 are:
-```am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW.```
-- Builds have a CI script which uploads builds and symbols to GitHub for all platforms.
-- Fixes for Linux packaging (Chromium install could overwrite Brave icon), fixing install package name.
-- The team has grown: 
-  - Jocelyn Liu: Shields work and general dev/ (Started February 12th)
-  - Emerick Rogul: Extensions and general dev. (Started February 26th)
-  - Garrett Robinson: Import work and general dev. (Started February 26th)
-  - Matt Bacchi: Chromium CI and updates (Starting March 19th)
-- We've completed hiring objectives for now for chromium-fork!
-
 # Past communicated updates
 
 - [February 26, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/fd077a7e7aaaa734c31eea2290c7e2d31567f6ca)
