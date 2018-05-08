@@ -52,24 +52,24 @@
 ### Milestone 2: Builds with updates (March-May)
 
 - [x] Audio / WebRTC fingerprinting protection
-- [ ] Third party fingerprinting protection
-- [ ] Noscript with per origin selections  (Jocelyn starting on this next)
-- [ ] Investigate updating DAT files via an extension. (Emerick has this in progress)
-- [ ] Removing Chrome extension store support. (Emerick will start on this next)
+- [x] Third party fingerprinting protection
+- [x] Noscript with per origin selections
+- [x] Updating DAT files via an extension.
+- [ ] Removing Chrome extension store support.
 - [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
-- [ ] Import from Chrome (Garrett has this in progress)
-- [ ] Payments / Ledger impl (Brian has this in progress using Serg's lib which is also in progress by Serg)
-- [ ] CI for builds using buildbot (Matt will start on this on his first day of work Feb 26)
-- [ ] Update client and server work to do updates (Matt will start on this after CI work)
+- [x] Import from Chrome
+- [ ] Payments / Ledger impl
+- [ ] CI for builds using buildbot
+- [ ] Update client and server work to do updates
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team)
-- [ ] Multiple channels support
+- [x] Multiple channels support
 - [ ] Fine tune Chrome default settings
 - [ ] Provide alternate UI or store to install extensions
 - [ ] Fix any remaining chromium branding things.
-- [ ] Get native automated tests started
+- [x] Automated browser tests framework
 - [ ] Get automated tests running on Travis
 - [ ] No phoning home to Google (mostly done but more work remains)
-- [ ] Site hacks
+- [x] Site hacks
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
