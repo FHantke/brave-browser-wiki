@@ -1,5 +1,11 @@
 [More information about sccache](https://github.com/mozilla/sccache)
 
+## Supported platforms
+
+You can currently use sccache to build Brave on Mac and Linux.
+
+Windows support is currently blocked by https://github.com/mozilla/sccache/issues/62.
+
 ## Setup (Mac/Linux)
 Install Rust via [rustup](https://rustup.rs/)
 ```
