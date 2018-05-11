@@ -49,7 +49,6 @@
 - [ ] Payments / Ledger impl
 - [ ] CI for builds using buildbot
 - [ ] Update client and server work to do updates
-- [ ] Refine tab shape to be better (Waiting on design from Brad's team)
 - [x] Multiple channels support
 - [ ] Fine tune Chrome default settings
 - [ ] Provide alternate UI or store to install extensions
@@ -81,6 +80,7 @@
 - [ ] Session tabs
 - [ ] Tor private tabs (Taylor Campbell)
 - [ ] Webtorrent
+- [ ] Refine tab shape to be better (Waiting on design from Brad's team)
 
 ### Unlikely stretch goals
 
