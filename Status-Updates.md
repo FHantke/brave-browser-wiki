@@ -76,13 +76,13 @@
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
 
-### Milestone 4: Stretch goals or post 1.0
+### Milestone 4: Stretch goals but wanted for 1.0
 
 - [ ] Session tabs
 - [ ] Tor private tabs (Taylor Campbell)
 - [ ] Webtorrent
 
-### Stretch goals
+### Unlikely stretch goals
 
 - [ ] Private tabs
 - [ ] More UI customizations
