@@ -45,7 +45,6 @@
 - [x] Noscript with per origin selections
 - [x] Updating DAT files via an extension.
 - [ ] Removing Chrome extension store support.
-- [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
 - [x] Import from Chrome
 - [ ] Payments / Ledger impl
 - [ ] CI for builds using buildbot
@@ -79,12 +78,17 @@
 
 ### Milestone 4: Stretch goals or post 1.0
 
-- [ ] Private tabs
 - [ ] Session tabs
-- [ ] Tab pages
-- [ ] More UI customizations
 - [ ] Tor private tabs (Taylor Campbell)
 - [ ] Webtorrent
+
+### Stretch goals
+
+- [ ] Private tabs
+- [ ] More UI customizations
+- [ ] Tab pages
+- [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
+
 
 ## Staffing
 
