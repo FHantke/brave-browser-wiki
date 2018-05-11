@@ -46,7 +46,6 @@
 - [x] Updating DAT files via an extension.
 - [ ] Removing Chrome extension store support.
 - [x] Import from Chrome
-- [ ] Payments / Ledger impl
 - [ ] CI for builds using buildbot
 - [ ] Update client and server work to do updates
 - [x] Multiple channels support
@@ -74,6 +73,7 @@
 - [ ] New tab private search engine selection (DuckDuckGo)
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
+- [ ] Payments / Ledger impl
 
 ### Milestone 4: Stretch goals but wanted for 1.0
 
