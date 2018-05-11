@@ -33,9 +33,16 @@ yarn build
 
 ### Speed up the builds
 
-Running a release build with `yarn build` can be very slow and use a lot of RAM especially on Linux with the Gold LLVM plugin.  To speed things up we recommend doing a build with debug symbols and without being an official build.  Instead you'd run `yarn build --debug_build=true --official_build=false`.  For incremental builds also pass `--no_branding_update` to build less files.
+Running a release build with `yarn build` can be very slow and use a lot of RAM especially on Linux with the Gold LLVM plugin.  To speed things up we recommend doing a build with debug symbols and without being an official build.  Instead you'd run `yarn build --debug_build=true --official_build=false`.
 
-Note: For using npm to build use the following command `npm run build -- --debug_build=true --official_build=false`
+For _incremental_ builds only, pass `--no_branding_update` to skip the branding update and build fewer files. If you see the following error, it means the branding update is required (i.e., you must not pass the flag to skip it):
+
+```
+ninja: error: '../../components/components_brave_strings.grd', needed by
+'obj/components/strings/components_chromium_strings_grit.inputdeps.stamp', missing and no known rule to make it
+```
+
+Note: When using npm to build, specify the following command `npm run build -- --debug_build=true --official_build=false`
 
 You may also want to try [[using sccache|Using sccache]].
 
@@ -45,4 +52,4 @@ You may also want to try [[using sccache|Using sccache]].
 
 # Staying up to date
 
-You can run `yarn run sync --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `yarn run sync --run_hooks`
+You can run `yarn run sync --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `yarn run sync --run_hooks`.
