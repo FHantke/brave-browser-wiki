@@ -81,6 +81,7 @@
 - [ ] Tor private tabs (Taylor Campbell)
 - [ ] Webtorrent
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team)
+- [ ] Autoplay
 
 ### Unlikely stretch goals
 
