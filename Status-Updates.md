@@ -74,6 +74,7 @@
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
 - [ ] Payments / Ledger impl
+- [ ] Get proper Debug builds working
 
 ### Milestone 4: Stretch goals but wanted for 1.0
 
