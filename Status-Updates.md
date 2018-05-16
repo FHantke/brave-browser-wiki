@@ -45,6 +45,7 @@
 - [x] Noscript with per origin selections
 - [x] Updating DAT files via an extension.
 - [ ] Removing Chrome extension store support.
+- [ ] Create whitelist for extension installation.
 - [x] Import from Chrome
 - [ ] CI for builds using buildbot
 - [ ] Update client and server work to do updates
