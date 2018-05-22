@@ -93,30 +93,6 @@
 - [ ] Tab pages
 - [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
 
-
-## Staffing
-
-- Full time resources:
-  - Brian Bondy
-  - Alexey Barabash
-  - Jocelyn Liu
-  - Emerick Rogul
-  - Garrett Robinson
-
-- Pasts part time resources:
-  - Cezar Augusto worked on the shields panel UI but is not currently sourced on the project.
-  - Nejc Zdovc has worked on porting the brave-extension for the shields panel to typescript.
-  - Brian Johnsons is advising and doing code reviews. May jump in for active dev if muon slows down, did some strings / branding work initially.
-  - Kevin Lawler has helped with patch splitting, but is currently sourced for a different project.
-  - Sergey Zhukovsky is not working on chromium-fork directly but the native ledger-client which we'll use.
-  - Sriram Venkataram is lightly testing builds as they become available.
-  - James Mudgett has helped with icon image resources.
-  - Anthony Tseng has helped with some build problems on Windows and did some work towards debranding but is not currently sourced on this project.  He may help out more if opportunities come up between muon updates.
-
-## Hiring
-
-- There's no active hiring being done, we're fully staffed up for Chromium-fork!
-
 ## Screenshots from chromium-fork
 
 <img width="1208" alt="screen shot 2018-02-26 at 9 39 46 am" src="https://user-images.githubusercontent.com/831718/36676797-9c6d26aa-1ada-11e8-95b9-c5a7bfb0cd8e.png">
