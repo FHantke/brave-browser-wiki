@@ -65,7 +65,6 @@
 - [ ] Restyling bookmarks
 - [ ] Restyling history
 - [ ] Restyling preferences
-- [ ] Clear private data on shutdown
 - [ ] Extensions installation page
 - [ ] Sync
 - [ ] Flash
@@ -84,6 +83,7 @@
 - [ ] Webtorrent
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team)
 - [ ] Autoplay
+- [ ] Clear private data on shutdown
 
 ### Unlikely stretch goals
 
