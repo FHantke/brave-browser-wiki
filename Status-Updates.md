@@ -57,7 +57,7 @@
 - [ ] Get automated tests running on Travis
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [x] Site hacks
-- [x] New tab private search engine selection UI (DuckDuckGo)
+- [x] New tab private search engine selection UI
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
