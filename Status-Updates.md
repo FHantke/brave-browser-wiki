@@ -70,7 +70,7 @@
 - [ ] Sync (Alexey in-progress)
 - [ ] Flash
 - [ ] Widevine
-- [ ] Some UI customizations
+- [ ] Some UI customizations (Pete)
 - [ ] New private tab search engine functionality
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
