@@ -74,7 +74,7 @@
 - [ ] New private tab search engine functionality
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
-- [ ] Payments / Ledger 2.0 impl
+- [ ] Payments / Ledger 2.0 impl (Nejc)
 - [ ] Get proper Debug builds working
 
 ### Milestone 4: Stretch goals but wanted for 1.0
