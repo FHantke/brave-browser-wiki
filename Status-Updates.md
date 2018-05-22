@@ -61,7 +61,7 @@
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
-- [ ] Import from browser-laptop based Brave
+- [ ] Import from browser-laptop based Brave (started)
 - [ ] More permissions
 - [ ] Restyling bookmarks
 - [ ] Restyling history
