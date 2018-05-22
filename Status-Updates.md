@@ -51,7 +51,7 @@
 - [ ] Update client and server work to do updates
 - [x] Multiple channels support
 - [ ] Fine tune Chrome default settings
-- [ ] Provide alternate UI or store to install extensions
+- [ ] Extend UI to show extensions in about:extensions
 - [ ] Fix any remaining chromium branding things.
 - [x] Automated browser tests framework
 - [ ] Get automated tests running on Travis
