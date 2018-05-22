@@ -50,7 +50,7 @@
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
 - [x] Multiple channels support
 - [x] Fine tune Chrome default settings
-- [ ] Extend UI to show installable extensions in about:extensions
+- [ ] Extend UI to show installable extensions in about:extensions (Ailin)
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).
 - [x] Automated browser tests framework
 - [ ] Get automated tests running on Travis
@@ -66,7 +66,6 @@
 - [ ] Restyling bookmarks (Cezar)
 - [ ] Restyling history
 - [ ] Restyling preferences
-- [ ] Extensions installation page
 - [ ] Sync (Alexey in-progress)
 - [ ] Flash
 - [ ] Widevine
@@ -76,6 +75,7 @@
 - [ ] Shortcut lists
 - [ ] Payments / Ledger 2.0 impl (Nejc)
 - [ ] Get proper Debug builds working
+- [ ] Add support to install extensions from about:extensions
 
 ### Milestone 4: Stretch goals but wanted for 1.0
 
