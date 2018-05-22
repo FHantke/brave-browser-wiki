@@ -57,6 +57,7 @@
 - [ ] Get automated tests running on Travis
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [x] Site hacks
+- [x] New tab private search engine selection UI (DuckDuckGo)
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
@@ -70,7 +71,7 @@
 - [ ] Flash
 - [ ] Widevine
 - [ ] Some UI customizations
-- [ ] New tab private search engine selection (DuckDuckGo)
+- [ ] New private tab search engine functionality
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
 - [ ] Payments / Ledger impl
