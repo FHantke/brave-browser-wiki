@@ -85,6 +85,7 @@
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team)
 - [ ] Autoplay (Anthony in-progress)
 - [ ] Clear private data on shutdown
+- [ ] Cosmetic filter blocking (Snuupy)
 
 ### Unlikely stretch goals
 
