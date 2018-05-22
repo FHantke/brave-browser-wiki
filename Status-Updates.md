@@ -18,7 +18,6 @@
 - [x] Browser action for shields panel, implemented through an extension
 - [x] macOS installer
 - [x] Windows silent installer
-- [x] Signing on macOS
 - [x] Basic JS blocking via shields
 - [x] URL bar suggestions from Alexa and search suggestions off by default
 - [x] Debranding
@@ -58,6 +57,7 @@
 - [ ] No phoning home to Google (mostly done but more work remains)
 - [x] Site hacks
 - [x] New tab private search engine selection UI
+- [ ] Signing on macOS
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
@@ -74,7 +74,7 @@
 - [ ] New private tab search engine functionality
 - [ ] Linux deb and rpm signing.
 - [ ] Shortcut lists
-- [ ] Payments / Ledger impl
+- [ ] Payments / Ledger 2.0 impl
 - [ ] Get proper Debug builds working
 
 ### Milestone 4: Stretch goals but wanted for 1.0
