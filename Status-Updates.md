@@ -65,9 +65,7 @@
 
 - [ ] Import from browser-laptop based Brave (Garrett in-progress)
 - [ ] More permissions
-- [ ] Restyling bookmarks (Cezar)
-- [ ] Restyling history
-- [ ] Restyling preferences
+- [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
 - [ ] Widevine
 - [ ] Some UI customizations (Pete)
