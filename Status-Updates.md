@@ -56,7 +56,7 @@
 - [ ] Verify no calls are made out to Google
 - [x] Site hacks
 - [x] New tab private search engine selection UI
-- [ ] Signing on macOS (bbondy in-progress)
+- [ ] Signing on macOS (Jarv in-progress)
 - [x] Proxy Safe Browsing (pj)
 - [ ] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30) (bbondy in-progress)
 - [ ] Disable PDFium and use PDF.js (bbondy in-progress)
