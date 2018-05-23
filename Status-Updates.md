@@ -59,6 +59,7 @@
 - [x] New tab private search engine selection UI
 - [ ] Signing on macOS (bbondy in-progress)
 - [x] Proxy Safe Browsing (pj)
+- [ ] Disable PDFium and use PDF.js
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
