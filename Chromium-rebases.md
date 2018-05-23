@@ -115,10 +115,13 @@ Also apply these replacements:
 
 `cp ../chrome/app/settings_chromium_strings.grdp app/settings_brave_strings.grdp`
 Open up the file and apply these replacements:
+
+```
 %s/Google Chrome/Brave/g  
 %s/Chromium/Brave/g  
 %s/Chrome/Brave/g  
 %s/Google/Brave/g  
+```
 
 `cp ../components/components_chromium_strings.grd ./app/components_brave_strings.grd`
 Open up the file and apply these replacements:
