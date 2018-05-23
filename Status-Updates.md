@@ -53,7 +53,6 @@
 - [ ] Extend UI to show installable extensions in about:extensions (Ailin)
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).
 - [x] Automated browser tests framework
-- [ ] Get automated tests running on Travis
 - [ ] Verify no calls are made out to Google
 - [x] Site hacks
 - [x] New tab private search engine selection UI
@@ -78,6 +77,7 @@
 - [ ] Payments / Ledger 2.0 impl (Nejc)
 - [ ] Get proper Debug builds working
 - [ ] Add support to install extensions from about:extensions
+- [ ] Get automated tests running on Travis
 
 ### Milestone 4: Stretch goals but wanted for 1.0
 
