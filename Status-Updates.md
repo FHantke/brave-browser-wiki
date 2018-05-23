@@ -78,7 +78,7 @@
 - [ ] Get automated tests running on Travis
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
 
-### Milestone 4: Stretch goals but wanted for 1.0
+### Milestone 4: Stretch goals but wanted for 1.0 (August)
 
 - [ ] Session tabs (Brian Johnson)
 - [ ] Tor private tabs (Taylor Campbell)
