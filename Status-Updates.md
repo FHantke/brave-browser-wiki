@@ -76,6 +76,7 @@
 - [ ] Get proper Debug builds working
 - [ ] Add support to install extensions from about:extensions
 - [ ] Get automated tests running on Travis
+- [ ] Hide settings which are not applicable, add Brave specific needed settings.
 
 ### Milestone 4: Stretch goals but wanted for 1.0
 
