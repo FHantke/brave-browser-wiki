@@ -59,7 +59,7 @@
 - [x] New tab private search engine selection UI
 - [ ] Signing on macOS (bbondy in-progress)
 - [x] Proxy Safe Browsing (pj)
-- [x] Make [v1 Flash plan](https://github.com/brave/brave-browser/issues/30)
+- [ ] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30)
 - [ ] Disable PDFium and use PDF.js
 
 ### Milestone 3: Getting to 1.0 (June-July)
