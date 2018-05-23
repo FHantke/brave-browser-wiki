@@ -98,8 +98,10 @@ Do a build like normal, fix errors as they come up.
 
 Eventually you’ll start getting some string errors when you build.
 
+```
 cd brave
-`cp ../chrome/app/chromium_strings.grd app/brave_strings.grd`
+cp ../chrome/app/chromium_strings.grd app/brave_strings.grd
+```
 
 Open up `app/brave_strings.grd` and replace `settings_chromium_strings.grdp` with `settings_brave_strings.grdp`
 Also apply these replacements:
