@@ -1,14 +1,5 @@
 # Status Update
 
-# Recent news
-
-# Past communicated updates
-
-- [February 26, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/fd077a7e7aaaa734c31eea2290c7e2d31567f6ca)
-- [February 12, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/f5823e63e22e4c3420f86693acecc5afa1a14f67)
-- [February 3, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/e93dd33543cfc9d18e743ebd9ec55b99971c3fc4)
-- [January 17, 2018](https://github.com/brave/brave/wiki/Chromium-fork-Update/d041d44b5d6213be19bf6fb951a21aa3c2c8bb77)
-
 ## Milestones
 
 ### Milestone 1: Open sourceable (December-February)
