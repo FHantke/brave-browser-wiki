@@ -51,6 +51,7 @@
 - [x] Proxy Safe Browsing (pj)
 - [ ] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30) (bbondy in-progress)
 - [ ] Disable PDFium and use PDF.js (bbondy in-progress)
+- [ ] Regional ad-block
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
