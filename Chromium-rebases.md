@@ -105,10 +105,13 @@ cp ../chrome/app/chromium_strings.grd app/brave_strings.grd
 
 Open up `app/brave_strings.grd` and replace `settings_chromium_strings.grdp` with `settings_brave_strings.grdp`
 Also apply these replacements:
+
+```
 %s/Google Chrome/Brave/g  
 %s/Chromium/Brave/g  
 %s/Chrome/Brave/g  
 %s/Google/Brave/g  
+```
 
 `cp ../chrome/app/settings_chromium_strings.grdp app/settings_brave_strings.grdp`
 Open up the file and apply these replacements:
@@ -119,10 +122,13 @@ Open up the file and apply these replacements:
 
 `cp ../components/components_chromium_strings.grd ./app/components_brave_strings.grd`
 Open up the file and apply these replacements:
+
+```
 %s/Google Chrome/Brave/g  
 %s/Chromium/Brave/g  
 %s/Chrome/Brave/g  
 %s/Google/Brave/g  
+```
 
 Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
 If you need access talk to devops.
