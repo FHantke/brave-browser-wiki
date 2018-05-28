@@ -47,13 +47,13 @@ Tests took 0 seconds.
 Browser tests compile a browser executable together with the test C++ code.  This type of test is useful for when you need to test something that requires most of the browser services started.
 
 ```
-npm run test brave_browser_tests
+npm run test -- brave_browser_tests
 ```
 
 Typical output looks like this:
 
 ```
-$ npm run test brave_browser_tests
+$ npm run test -- brave_browser_tests
 
 > brave@1.0.0 test /Users/bbondy/projects/brave/brave
 > node ./scripts/commands.js test "brave_browser_tests"
@@ -76,14 +76,17 @@ Using 4 parallel jobs.
 [4/4] HTTPSEverywhereServiceTest.RedirectsKnownSite (2370 ms)
 SUCCESS: all tests passed.
 ```
+# Filtering test targets
+
+`npm run test -- brave_browser_tests --filter=BraveContentSettingsObserverBrowserTest.*`
 
 # Other targets
 
-Other targets can be passed to `npm run test <suite>` such as running Chrome's tests.
+Other targets can be passed to `npm run test -- <suite>` such as running Chrome's tests.
 
 Example:
 
-`npm run test browser_tests` will run a lot of tests, but some will not pass.
+`npm run test -- browser_tests` will run a lot of tests, but some will not pass.
 
 # Resources
 
