@@ -52,7 +52,7 @@
 - [x] Regional ad-block
 - [x] Generate brave-extensions for DAT files and themes
 - [x] Get proper Debug builds working
-- [x] New private tab search engine functionality
+- [x] Newtab private search engine UI
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
@@ -68,6 +68,7 @@
 - [ ] Get automated tests running on Travis
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
 - [ ] Verify no calls are made out to Google
+- [ ] Allow a different private search engine to tie into private newtab UI
 
 ### Milestone 4: Stretch goals but wanted for 1.0 (August)
 
