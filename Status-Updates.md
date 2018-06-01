@@ -41,35 +41,33 @@
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
 - [x] Multiple channels support
 - [x] Fine tune Chrome default settings
-- [ ] Extend UI to show installable extensions in about:extensions (Ailin)
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).
 - [x] Automated browser tests framework
-- [ ] Verify no calls are made out to Google
 - [x] Site hacks
 - [x] New tab private search engine selection UI
 - [ ] Signing on macOS (Jarv in-progress)
 - [x] Proxy Safe Browsing (pj)
-- [ ] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30) (bbondy in-progress)
-- [ ] Disable PDFium and use PDF.js (bbondy in-progress)
-- [ ] Regional ad-block (emerick in-progress)
-- [ ] Generate brave-extensions for DAT files and themes (emerick in-progress)
+- [x] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30)
+- [x] Disable PDFium and use PDF.js
+- [x] Regional ad-block
+- [x] Generate brave-extensions for DAT files and themes
+- [x] Get proper Debug builds working
+- [x] New private tab search engine functionality
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
+- [ ] Make extensions.brave.com store (Ailin)
 - [ ] Import from browser-laptop based Brave (Garrett in-progress)
 - [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
 - [ ] Widevine
 - [ ] Some UI customizations (Pete)
-- [ ] New private tab search engine functionality
 - [ ] Linux deb and rpm signing.
-- [ ] Shortcut lists
 - [ ] Payments / Ledger 2.0 impl (Nejc)
-- [ ] Get proper Debug builds working
-- [ ] Add support to install extensions from about:extensions
 - [ ] Get automated tests running on Travis
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
+- [ ] Verify no calls are made out to Google
 
 ### Milestone 4: Stretch goals but wanted for 1.0 (August)
 
@@ -80,6 +78,7 @@
 - [ ] Autoplay (Anthony in-progress)
 - [ ] Clear private data on shutdown
 - [ ] Cosmetic filter blocking (Snuupy)
+- [ ] Urlbar Shortcuts for search engines
 
 ### Unlikely stretch goals
 
