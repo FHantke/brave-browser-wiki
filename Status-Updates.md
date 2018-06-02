@@ -70,6 +70,7 @@
 - [ ] Verify no calls are made out to Google
 - [ ] Allow a different private search engine to tie into private newtab UI
 - [ ] Stats when you click on a number in brave shields panel
+- [ ] Manage script should not show enforced by extension
 
 ### Milestone 4: Stretch goals but wanted for 1.0 (August)
 
