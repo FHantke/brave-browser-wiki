@@ -41,7 +41,7 @@
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
 - [x] Multiple channels support
 - [x] Fine tune Chrome default settings
-- [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).
+- [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [x] Automated browser tests framework
 - [x] Site hacks
 - [x] New tab private search engine selection UI
