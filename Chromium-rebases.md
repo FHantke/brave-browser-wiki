@@ -19,7 +19,11 @@ Get a list of the patches:
 `ls -la brave/patches/ | mvim -`
 
 Do a vim git macro to add `git apply ./brave/patches/` before each line.
-Save the list of `git apply` script file and chmod to enable executing it. Run it.
+Save the list of `git apply` script file `:wq a`
+
+Make it runnable:
+
+`chmod u+x ./a`
 
 You should see a bunch of errors similar to this:
 
