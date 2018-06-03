@@ -94,7 +94,11 @@ error: patch failed: third_party/WebKit/Source/modules/webgl/WebGLRenderingConte
 error: patch failed: tools/gritsettings/resource_ids:149
 ```
 
-Open these files 1 by 1 and apply the patch manually.
+Treat this new text document as your todo list.
+Open these files one by one and apply the associated patch manually. 
+You do this by opening the file in brave/patches with the same path but with dashes as the directory separator.
+Once open you apply the changes to the associated file.
+
 Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
 
 Do a build like normal, fix errors as they come up.
