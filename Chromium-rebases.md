@@ -69,7 +69,7 @@ error: patch failed: tools/gritsettings/resource_ids:149
 error: tools/gritsettings/resource_ids: patch does not apply
 ```
 
-Copy out that string to another text file and remove the lines referencing the same files (every 2nd line usually)
+Copy out that string to another text file and remove the lines referencing the same files (every 2nd line usually, unless a file has moved)
 
 ```
 error: patch failed: chrome/app/chrome_main.cc:7
