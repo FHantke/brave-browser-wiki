@@ -170,5 +170,9 @@ If you have more fixes you can add them to the commit before the string commit w
 
 `git rebase -i HEAD~2` to do that.
 
+Continue to build with:
+
+`npm run build`
+
 If there's anything that should be called out as a non-trivial change, you should do it as a separate commit.
 
