@@ -103,6 +103,7 @@ Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs ca
 
 Do a build like normal, fix errors as they come up.
 
+`npm run build`
 
 Eventually you’ll start getting some string errors when you build.
 
