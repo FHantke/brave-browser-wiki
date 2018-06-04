@@ -159,6 +159,8 @@ Run this to pull down new xtb and translation files:
 
 `npm run pull_l10n`
 
+Do a commit for all the string updates.
+
 Continue the build after that runs successfully.
 
 
