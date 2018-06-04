@@ -47,7 +47,7 @@ ninja: error: '../../components/components_brave_strings.grd', needed by
 'obj/components/strings/components_chromium_strings_grit.inputdeps.stamp', missing and no known rule to make it
 ```
 
-Note: When using npm to build, specify the following command `npm run build Release -- --debug_build=true --official_build=false`
+Note: When using npm to build, specify the following command `npm run build -- Release --debug_build=true --official_build=false`
 
 You may also want to try [[using sccache|Using sccache]].
 
