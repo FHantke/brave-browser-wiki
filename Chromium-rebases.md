@@ -162,3 +162,9 @@ Run this to pull down new xtb and translation files:
 Continue the build after that runs successfully.
 
 
+If you have more fixes you can add them to the commit before the string commit which has the brave-core updates.
+
+`git rebase -i HEAD~2` to do that.
+
+If there's anything that should be called out as a non-trivial change, you should do it as a separate commit.
+
