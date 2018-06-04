@@ -101,11 +101,16 @@ Once open you apply the changes to the associated file.
 
 Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
 
+Once you are done updating all the patches remove with `rm` not `git rm` all the patches in `brave/patches` and then run `npm run update_patches`.  cd `brave/patches` and `git add` everything.
+
+Commit what you have in a commit to update patches for the Chromium update.
+
 Do a build like normal, fix errors as they come up.
 
 `npm run build`
 
 Eventually you’ll start getting some string errors when you build.
+Commit what you have in a updates to brave-core commit.
 
 ```
 cd brave
@@ -145,7 +150,10 @@ Open up the file and apply these replacements:
 Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
 If you need access talk to devops.
 
-`npm run push_l10n`
+```
+cd ..
+npm run push_l10n
+```
 
 Run this to pull down new xtb and translation files:
 
