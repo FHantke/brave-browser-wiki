@@ -7,14 +7,14 @@ There are 2 types of tests currently in use by Brave: unit tests and browser tes
 Unit tests are compiled C++ tests that test a specific function or thing.
 
 ```
-npm run test brave_unit_tests
+npm run test -- brave_unit_tests
 ```
 
 Typical output looks like this:
 
 
 ```
-$ npm run test brave_unit_tests
+$ npm run test -- brave_unit_tests
 
 > brave@1.0.0 test /Users/bbondy/projects/brave/brave
 > node ./scripts/commands.js test "brave_unit_tests"
@@ -79,6 +79,11 @@ SUCCESS: all tests passed.
 # Filtering test targets
 
 `npm run test -- brave_browser_tests --filter=BraveContentSettingsObserverBrowserTest.*`
+
+
+# Running tests in release mode
+
+`npm run test -- brave_browser_tests Release`
 
 # Other targets
 
