@@ -147,6 +147,8 @@ Open up the file and apply these replacements:
 %s/Google/Brave/g  
 ```
 
+Do a commit for the updated source strings, `grd` files.
+
 Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
 If you need access talk to devops.
 
@@ -159,7 +161,7 @@ Run this to pull down new xtb and translation files:
 
 `npm run pull_l10n`
 
-Do a commit for all the string updates.
+Do a commit for all the string translation updates, `xtb` files.
 
 Continue the build after that runs successfully.
 
