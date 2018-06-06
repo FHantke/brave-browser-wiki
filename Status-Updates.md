@@ -74,7 +74,7 @@
 - [ ] update ping stats
 - [ ] Crash reporting
 - [ ] Local welcome page (Cezar)
-- [ ] Referral promo
+- [ ] Referral promo (& Dow Jones)
 - [ ] UGP
 
 ### Milestone 4: Wanted for 1.0 (August)
