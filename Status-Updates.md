@@ -98,6 +98,7 @@
 - [ ] Tab previews
 - [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
 - [ ] Translations (Chrome parity)
+- [ ] Pinned tab differences
 
 ## Screenshots from chromium-fork
 
