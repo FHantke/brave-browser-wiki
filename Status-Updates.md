@@ -90,6 +90,7 @@
 - [ ] Private tabs
 - [ ] More UI customizations
 - [ ] Tab pages
+- [ ] Tab previews
 - [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
 
 ## Screenshots from chromium-fork
