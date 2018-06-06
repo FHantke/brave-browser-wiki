@@ -87,6 +87,8 @@
 - [ ] Clear private data on shutdown
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Urlbar Shortcuts for search engines
+- [ ] Uphold widget
+- [ ] 2-way wallet
 
 ### Unlikely stretch goals
 
