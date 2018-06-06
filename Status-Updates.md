@@ -77,7 +77,7 @@
 ### Milestone 4: Stretch goals but wanted for 1.0 (August)
 
 - [ ] Session windows (Brian Johnson)
-- [ ] Tor private tabs (Taylor Campbell)
+- [ ] Tor private windows (Taylor Campbell)
 - [ ] Webtorrent
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
 - [ ] Autoplay (Anthony in-progress)
