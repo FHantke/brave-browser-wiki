@@ -12,12 +12,13 @@ If you are using Ubuntu, additionally install:
 apt-get install build-essential libgnome-keyring-dev python-setuptools rpm
 ```
 
-You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `yarn run init` is finished, there is one final step to finish installing build dependencies:
+You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `yarn run init` is finished, there is one final step to finish installing build dependencies. This shell script only works on Debian and Ubuntu but check [system requirements](https://chromium.googlesource.com/chromium/src/+/lkcr/docs/linux_build_instructions.md#system-requirements) for other distros: 
 
 ```
 # cd to brave-browser repo root
 ./src/build/install-build-deps.sh
 ```
+You might also want to try ```./src/build/install-build-deps.sh --unsupported``` if you are on a distribution based on Debian or Ubuntu.
 
 # Troubleshooting
 
