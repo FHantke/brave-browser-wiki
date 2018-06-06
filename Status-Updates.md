@@ -73,6 +73,7 @@
 - [ ] Manage script should not show enforced by extension
 - [ ] update ping stats
 - [ ] Crash reporting
+- [ ] Local welcome page (Cezar)
 
 ### Milestone 4: Wanted for 1.0 (August)
 
