@@ -76,6 +76,7 @@
 - [ ] Local welcome page (Cezar)
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
+- [ ] Chromium 68 rebase
 
 ### Milestone 4: Wanted for 1.0 (August)
 
@@ -89,6 +90,7 @@
 - [ ] Urlbar Shortcuts for search engines
 - [ ] Uphold widget
 - [ ] 2-way wallet
+- [ ] Chromium 69 rebase
 
 ### Unlikely stretch goals
 
