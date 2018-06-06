@@ -74,6 +74,7 @@
 - [ ] update ping stats
 - [ ] Crash reporting
 - [ ] Local welcome page (Cezar)
+- [ ] Referral promo
 
 ### Milestone 4: Wanted for 1.0 (August)
 
