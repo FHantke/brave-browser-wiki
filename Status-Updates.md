@@ -74,7 +74,7 @@
 - [ ] update ping stats
 - [ ] Crash reporting
 
-### Milestone 4: Stretch goals but wanted for 1.0 (August)
+### Milestone 4: Wanted for 1.0 (August)
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
