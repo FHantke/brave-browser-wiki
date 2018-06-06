@@ -92,6 +92,7 @@
 - [ ] Tab pages
 - [ ] Tab previews
 - [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
+- [ ] Translations (Chrome parity)
 
 ## Screenshots from chromium-fork
 
