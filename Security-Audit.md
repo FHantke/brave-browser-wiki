@@ -80,6 +80,10 @@ Referrer blocking:
 - `git grep ShouldSetReferrer` for the 2 locations where referrer blocking happens.
 - Referrer blocking works by TLD+1 comparisons, and if they are different it will override a referring URL as its own origin.
 
+Fingerprinting protection:
+- Changes are made directly in Blink renderer code, controlled by content-settings.
+- Talk to Jocelyn for more details
+
 Source code overrides:
 - Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
 - Review `src/brave/patches` for changes made directly in Chromium code.
