@@ -31,3 +31,10 @@ PDF handling:
 
 Keychain:
 - I believe we store our passwords in our own keychain, I believe we will ask to unlock the keychain of other apps during imports.  (Check with Garrett and/or Anthony)
+
+HTTPS Redirects:
+- HTTPS redirects are driven in the `browser/net/brave_httpse_network_delegate_helper.cc` file which loads a leveldb loaded from an extension.
+
+Tracking protection, Ad-block:
+- Managed by code in `components/brave_shields/browser/tracking_protection_service.cc` and `components/brave_shields/browser/ad_block_service.cc`
+- Works from lists updated in an extension that holds only a DAT file. The DAT file is loaded as binary in the same way as muon handles them by the same library.
