@@ -2,3 +2,4 @@
 - DAT files updated through extensions.
 - Extensions are restricted, by PWAs are allowed.
 - There is a whitelist of extensions allowed to be installed otherwise at: extensions/browser/brave_extension_provider.cc
+- Tab muting is enabled by default (icon clickable in tabs)
