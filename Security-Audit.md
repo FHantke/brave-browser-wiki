@@ -82,6 +82,7 @@ Referrer blocking:
 
 Source code overrides:
 - Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
+- Review `src/brave/patches` for changes made directly in Chromium code.
 
 Command line switches:
 - Brave specific command line switches exist here: `brave/common/brave_switches.cc`.
