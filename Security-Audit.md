@@ -73,3 +73,6 @@ Source code overrides:
 
 Command line switches:
 - Brave specific command line switches exist here: `common/brave_switches.cc`.
+
+Brave specific preferences:
+- Brave specific preferences are added here: `common/pref_names.cc`.  They should be reviewed to make sure we can't cause any harm with values that are set by different extensions.
