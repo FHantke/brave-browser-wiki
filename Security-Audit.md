@@ -40,4 +40,7 @@ Tracking protection, Ad-block:
 - Works from lists updated in an extension that holds only a DAT file. The DAT file is loaded as binary in the same way as muon handles them by the same library.
 
 Site hacks:
-- Site hacks should be reviewed individually, they are managed here: `browser/net/brave_site_hacks_network_delegate_helper.cc`
+- Site hacks should be reviewed individually, they are managed here: `browser/net/brave_site_hacks_network_delegate_helper.cc`. They run only for the profile level network delegate.
+
+Browser level network delegate helper:
+- Network redirects mapping Chrome URLs to Brave ones are done for the browser context here: `browser/net/brave_static_redirect_network_delegate_helper.cc`.
