@@ -21,9 +21,12 @@ Extension handling:
 Tooling:
 - Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
 
-Enabled features over Chromium:
+Enabled/disabled features over Chromium:
 - Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
+- Emoji picker control when right clicking in an input text control.
 - Tab muting is enabled by default (icon clickable in tabs)
+- Sign into Chrome/Brave feature disabled `browser/brave_profile_prefs.cc`
+- Restoring last tab value default pref value set to remember last session `browser/brave_profile_prefs.cc`
 
 Tests:
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
