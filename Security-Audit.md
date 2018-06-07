@@ -38,3 +38,6 @@ HTTPS Redirects:
 Tracking protection, Ad-block:
 - Managed by code in `components/brave_shields/browser/tracking_protection_service.cc` and `components/brave_shields/browser/ad_block_service.cc`
 - Works from lists updated in an extension that holds only a DAT file. The DAT file is loaded as binary in the same way as muon handles them by the same library.
+
+Site hacks:
+- Site hacks should be reviewed individually, they are managed here: `browser/net/brave_site_hacks_network_delegate_helper.cc`
