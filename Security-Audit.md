@@ -6,7 +6,13 @@
 - brave component updater has its own configurator `brave/browser/component_updater/brave_component_updater_configurator.cc`. Take special note of all values here, in particular if `EnabledCupSigning` is ok to keep disabled. (We were ok to have this disabled in muon previously)
 - Flash has no UI if it is not installed.  Flash is disabled by default via an explicit generic wildcard content setting to disable. Once you allow once, it will set a content setting to enable click to play for that origin.
 - Content settings for all shields are done through the plugins content setting type with different resource identifiers.
-- Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
+
+Extensions:
 - Some extension IDs are whitelisted for tests, those private keys are in the clear in our repo.
 - Brave shields icon is a browser action loaded from an extension at brave/brave-extension, it is included as part of a pak file.
+
+Tooling:
 - Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
+
+Tests:
+- Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
