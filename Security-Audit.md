@@ -63,10 +63,11 @@ Software updates:
 - Omaha (Windows)
 - Check with Jarv and Simon Hong for details.
 
-Custom `about:` pages:
+Custom WebUI `about:` pages:
 - Newtab WebUI page (it currently does outgoing network requests to s3). Code exists at `brave/components/brave_new_tab_ui`.
 - Welcome page (currently remote, but changing to local before we ship, muon is remote though).
 - Payments page `brave/components/brave_payments_ui`
+- See `package.json` deps in use.  In particular we use some node modules and webpack them together to create a bundle which is loaded from a pak file.
 
 Cookie blocking:
 - Cookie blocking is managed here: `brave/browser/brave_content_browser_client.cc`
