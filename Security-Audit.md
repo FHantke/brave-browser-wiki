@@ -71,6 +71,10 @@ Custom `about:` pages:
 Cookie blocking:
 - Cookie blocking is managed here: `brave/browser/brave_content_browser_client.cc`
 
+Referrer blocking:
+- `git grep ShouldSetReferrer` for the 2 locations where referrer blocking happens.
+- Referrer blocking works by TLD+1 comparisons, and if they are different it will override a referring URL as its own origin.
+
 Source code overrides:
 - Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
 
