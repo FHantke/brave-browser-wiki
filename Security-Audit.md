@@ -16,7 +16,7 @@ Extension handling:
 - Extension permission should be reviewed here: `common/extensions/api/_api_features.json`
 
 Allowed extensions
-- There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
+- There is a whitelist of extensions allowed to be installed otherwise at: `brave/extensions/browser/brave_extension_provider.cc`
 - The plan is to allow 1k+ extensions initially.
 
 Added Extension APIs:
@@ -29,8 +29,8 @@ Enabled/disabled features over Chromium:
 - Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
 - Emoji picker control when right clicking in an input text control.
 - Tab muting is enabled by default (icon clickable in tabs)
-- Sign into Chrome/Brave feature disabled `browser/brave_profile_prefs.cc`
-- Restoring last tab value default pref value set to remember last session `browser/brave_profile_prefs.cc`
+- Sign into Chrome/Brave feature disabled `brave/browser/brave_profile_prefs.cc`
+- Restoring last tab value default pref value set to remember last session `brave/browser/brave_profile_prefs.cc`
 
 Tests:
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
@@ -38,23 +38,24 @@ Tests:
 PDF handling:
 - PDF handling via the Chromium PDF Viewer extension is explicitly disabled by blocking the extension ID.
 - PDF.js is force installed on startup via a setting that's used for administration management policy. It can't currently be disabled, but if we decide to allow that we can make it part of the recommended extension list instead.
-- There is a manifest override handler which only applies to PDF.js and nulls out the page action here `common/extensions/manifest_handlers/pdfjs_manifest_override.cc`.
+- There is a manifest override handler which only applies to PDF.js and nulls out the page action here `brave/common/extensions/manifest_handlers/pdfjs_manifest_override.cc`.
 
 Keychain:
 - I believe we store our passwords in our own keychain, I believe we will ask to unlock the keychain of other apps during imports.  (Check with Garrett and/or Anthony)
 
 HTTPS Redirects:
-- HTTPS redirects are driven in the `browser/net/brave_httpse_network_delegate_helper.cc` file which loads a leveldb loaded from an extension.
+- HTTPS redirects are driven in the `brave/browser/net/brave_httpse_network_delegate_helper.cc` file which loads a leveldb loaded from an extension.
 
 Tracking protection, Ad-block:
-- Managed by code in `components/brave_shields/browser/tracking_protection_service.cc` and `components/brave_shields/browser/ad_block_service.cc`
+- Managed by code in `brave/components/brave_shields/browser/tracking_protection_service.cc` and `brave/components/brave_shields/browser/ad_block_service.cc`
 - Works from lists updated in an extension that holds only a DAT file. The DAT file is loaded as binary in the same way as muon handles them by the same library.
 
 Site hacks:
-- Site hacks should be reviewed individually, they are managed here: `browser/net/brave_site_hacks_network_delegate_helper.cc`. They run only for the profile level network delegate.
+- Site hacks should be reviewed individually, they are managed here: `brave/browser/net/brave_site_hacks_network_delegate_helper.cc`. They run only for the profile level network delegate.
+- Shield exceptions are managed here `brave/common/shield_exceptions.cc`
 
 Browser level network delegate helper:
-- Network redirects mapping Chrome URLs to Brave ones are done for the browser context here: `browser/net/brave_static_redirect_network_delegate_helper.cc`.
+- Network redirects mapping Chrome URLs to Brave ones are done for the browser context here: `brave/browser/net/brave_static_redirect_network_delegate_helper.cc`.
 
 Software updates:
 - Sparkle (macOS)
@@ -66,13 +67,13 @@ Custom `about:` pages:
 - Welcome page (currently remote, but changing to local before we ship, muon is remote though).
 
 Cookie blocking:
-- Cookie blocking is managed here: `browser/brave_content_browser_client.cc`
+- Cookie blocking is managed here: `brave/browser/brave_content_browser_client.cc`
 
 Source code overrides:
 - Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
 
 Command line switches:
-- Brave specific command line switches exist here: `common/brave_switches.cc`.
+- Brave specific command line switches exist here: `brave/common/brave_switches.cc`.
 
 Brave specific preferences:
-- Brave specific preferences are added here: `common/pref_names.cc`.  They should be reviewed to make sure we can't cause any harm with values that are set by different extensions.
+- Brave specific preferences are added here: `brave/common/pref_names.cc`.  They should be reviewed to make sure we can't cause any harm with values that are set by different extensions.
