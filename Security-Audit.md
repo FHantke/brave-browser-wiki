@@ -4,3 +4,4 @@
 - There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
 - Tab muting is enabled by default (icon clickable in tabs)
 - brave component updater has its own configurator `brave/browser/component_updater/brave_component_updater_configurator.cc`. Take special note of all values here, in particular if `EnabledCupSigning` is ok to keep disabled. (We were ok to have this disabled in muon previously)
+- Flash has no UI if it is not installed.  Flash is disabled by default via an explicit generic wildcard content setting to disable. Once you allow once, it will set a content setting to enable click to play for that origin.
