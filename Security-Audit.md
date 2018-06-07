@@ -62,3 +62,6 @@ Custom `about:` pages:
 
 Cookie blocking:
 - Cookie blocking is managed here: `browser/brave_content_browser_client.cc`
+
+Source code overrides:
+- Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
