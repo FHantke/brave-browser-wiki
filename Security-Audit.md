@@ -1,4 +1,3 @@
-- Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
 - DAT files updated through extensions.
 - Extensions are restricted, by PWAs are allowed.
 - There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
@@ -13,6 +12,9 @@ Extensions:
 
 Tooling:
 - Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
+
+Enabled features over Chromium:
+- Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
 
 Tests:
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
