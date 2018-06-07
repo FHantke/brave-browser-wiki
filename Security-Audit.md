@@ -13,8 +13,9 @@ Extension handling:
 - Brave shields icon is a browser action loaded from an extension at brave/brave-extension, it is included as part of a pak file.
 - Extensions are restricted, by PWAs are allowed.
 - DAT files updated through extensions which are the source of adblock list updates, tracking protection list updates, and HTTPS Everywhere list updates.
+- Extension permission should be reviewed here: `common/extensions/api/_api_features.json`
 
-- Allowed extensions
+Allowed extensions
 - There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
 - The plan is to allow 1k+ extensions initially.
 
