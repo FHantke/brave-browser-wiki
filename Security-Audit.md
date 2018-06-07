@@ -8,3 +8,5 @@
 - Content settings for all shields are done through the plugins content setting type with different resource identifiers.
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
 - Some extension IDs are whitelisted for tests, those private keys are in the clear in our repo.
+- Brave shields icon is a browser action loaded from an extension at brave/brave-extension, it is included as part of a pak file.
+- Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
