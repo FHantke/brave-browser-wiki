@@ -1,5 +1,6 @@
 - Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
 - DAT files updated through extensions.
 - Extensions are restricted, by PWAs are allowed.
-- There is a whitelist of extensions allowed to be installed otherwise at: extensions/browser/brave_extension_provider.cc
+- There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
 - Tab muting is enabled by default (icon clickable in tabs)
+- brave component updater has its own configurator `brave/browser/component_updater/brave_component_updater_configurator.cc`. Take special note of all values here, in particular if `EnabledCupSigning` is ok to keep disabled. (We were ok to have this disabled in muon previously)
