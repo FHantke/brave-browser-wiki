@@ -67,3 +67,6 @@ Cookie blocking:
 
 Source code overrides:
 - Source code overrides should get special attention, in these cases we completely replace a Chromium file with one of our own.  These files exist in `src/brave/chromium_src` and if a file exists there it will overwrite the equivalent file in `src`.
+
+Command line switches:
+- Brave specific command line switches exist here: `common/brave_switches.cc`.
