@@ -1,0 +1,3 @@
+- Enabled progressive web apps flag (PWAs) (https://github.com/brave/brave-core/commit/3c046d3a419e4585d5c6f7b1f6d5963ce8a5902b)
+- DAT files updated through extensions.
+- Extensions are restricted, by PWAs are allowed.
