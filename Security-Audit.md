@@ -44,3 +44,8 @@ Site hacks:
 
 Browser level network delegate helper:
 - Network redirects mapping Chrome URLs to Brave ones are done for the browser context here: `browser/net/brave_static_redirect_network_delegate_helper.cc`.
+
+Software updates:
+- Sparkle
+- Omaha
+- Check with Jarv and Simon Hong for details.
