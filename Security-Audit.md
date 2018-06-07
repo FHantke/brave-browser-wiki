@@ -20,7 +20,7 @@ Allowed extensions
 - The plan is to allow 1k+ extensions initially.
 
 Added Extension APIs:
-- Some extra extension APIs are available for blocking information here: `common/extensions/api/brave_shields.json`
+- Some extra extension APIs are available for blocking information here: `common/extensions/api/brave_shields.json`.  It currently applies to all `blessed_extension`s.
 
 Tooling:
 - Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
