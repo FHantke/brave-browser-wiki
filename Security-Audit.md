@@ -49,6 +49,7 @@ HTTPS Redirects:
 Tracking protection, Ad-block:
 - Managed by code in `brave/components/brave_shields/browser/tracking_protection_service.cc` and `brave/components/brave_shields/browser/ad_block_service.cc`
 - Works from lists updated in an extension that holds only a DAT file. The DAT file is loaded as binary in the same way as muon handles them by the same library.
+- Unlike in muon these are handled by a resource throttle which stays on the IO thread and not the network delegate like HTTPS Everywhere is handled.
 
 Site hacks:
 - Site hacks should be reviewed individually, they are managed here: `brave/browser/net/brave_site_hacks_network_delegate_helper.cc`. They run only for the profile level network delegate.
@@ -63,8 +64,9 @@ Software updates:
 - Check with Jarv and Simon Hong for details.
 
 Custom `about:` pages:
-- Newtab page (it currently does outgoing network requests to s3)
+- Newtab WebUI page (it currently does outgoing network requests to s3). Code exists at `brave/components/brave_new_tab_ui`.
 - Welcome page (currently remote, but changing to local before we ship, muon is remote though).
+- Payments page `brave/components/brave_payments_ui`
 
 Cookie blocking:
 - Cookie blocking is managed here: `brave/browser/brave_content_browser_client.cc`
