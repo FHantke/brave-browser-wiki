@@ -24,3 +24,7 @@ Enabled features over Chromium:
 
 Tests:
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
+
+PDF handling:
+- PDF handling via the Chromium PDF Viewer extension is explicitly disabled by blocking the extension ID.
+- PDF.js is force installed on startup via a setting that's used for administration management policy. It can't currently be disabled, but if we decide to allow that we can make it part of the recommended extension list instead.
