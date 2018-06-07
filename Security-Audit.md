@@ -53,6 +53,9 @@ Software updates:
 - Omaha
 - Check with Jarv and Simon Hong for details.
 
-Custom about: pages:
+Custom `about:` pages:
 - Newtab page (it currently does outgoing network requests to s3)
 - Welcome page (currently remote, but changing to local before we ship, muon is remote though).
+
+Cookie blocking:
+- Cookie blocking is managed here: `browser/brave_content_browser_client.cc`
