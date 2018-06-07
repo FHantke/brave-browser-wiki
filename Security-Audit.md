@@ -8,12 +8,15 @@ Flash:
 Content settings:
 - Content settings for all shields are done through the plugins content setting type with different resource identifiers.
 
-Extensions:
+Extension handling:
 - Some extension IDs are whitelisted for tests, those private keys are in the clear in our repo.
 - Brave shields icon is a browser action loaded from an extension at brave/brave-extension, it is included as part of a pak file.
-- There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
 - Extensions are restricted, by PWAs are allowed.
 - DAT files updated through extensions which are the source of adblock list updates, tracking protection list updates, and HTTPS Everywhere list updates.
+
+- Allowed extensions
+- There is a whitelist of extensions allowed to be installed otherwise at: `extensions/browser/brave_extension_provider.cc`
+- The plan is to allow 1k+ extensions initially.
 
 Tooling:
 - Translations get pulled down from Transifex and new source strings get pushed there on demand and during chromium upgrades.
