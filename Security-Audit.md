@@ -31,6 +31,7 @@ Enabled/disabled features over Chromium:
 - Tab muting is enabled by default (icon clickable in tabs)
 - Sign into Chrome/Brave feature disabled `brave/browser/brave_profile_prefs.cc`
 - Restoring last tab value default pref value set to remember last session `brave/browser/brave_profile_prefs.cc`
+- Search suggestions are disabled by default and replaced with a top sites provider for alexa top 500.
 
 Tests:
 - Tests: We are currently running our own browser tests and unit tests, we are not currently running Chromium unit and browser tests, but we'd like to enable some subset of them that apply.
@@ -62,6 +63,9 @@ Software updates:
 - Sparkle (macOS)
 - Omaha (Windows)
 - Check with Jarv and Simon Hong for details.
+
+Installers and build signing:
+- Check with Jarv about build signing.
 
 Custom WebUI `about:` pages:
 - Newtab WebUI page (it currently does outgoing network requests to s3). Code exists at `brave/components/brave_new_tab_ui`.
