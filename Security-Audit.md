@@ -35,6 +35,7 @@ Tests:
 PDF handling:
 - PDF handling via the Chromium PDF Viewer extension is explicitly disabled by blocking the extension ID.
 - PDF.js is force installed on startup via a setting that's used for administration management policy. It can't currently be disabled, but if we decide to allow that we can make it part of the recommended extension list instead.
+- There is a manifest override handler which only applies to PDF.js and nulls out the page action here `common/extensions/manifest_handlers/pdfjs_manifest_override.cc`.
 
 Keychain:
 - I believe we store our passwords in our own keychain, I believe we will ask to unlock the keychain of other apps during imports.  (Check with Garrett and/or Anthony)
