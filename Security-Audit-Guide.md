@@ -11,7 +11,7 @@ Content settings:
 Extension handling:
 - Some extension IDs are whitelisted for tests, those private keys are in the clear in our repo.
 - Brave shields icon is a browser action loaded from an extension at brave/brave-extension, it is included as part of a pak file.
-- Extensions are restricted, by PWAs are allowed.
+- Extensions are restricted, but PWAs are allowed.
 - DAT files updated through extensions which are the source of adblock list updates, tracking protection list updates, and HTTPS Everywhere list updates.
 - Extension permission should be reviewed here: `common/extensions/api/_api_features.json`
 
