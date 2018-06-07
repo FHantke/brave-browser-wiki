@@ -52,3 +52,7 @@ Software updates:
 - Sparkle
 - Omaha
 - Check with Jarv and Simon Hong for details.
+
+Custom about: pages:
+- Newtab page (it currently does outgoing network requests to s3)
+- Welcome page (currently remote, but changing to local before we ship, muon is remote though).
