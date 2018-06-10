@@ -15,3 +15,8 @@ You can now use the DOM inspector and some of the other devtools.
 
 You can also pass `--enable-ui-devtools=<port>` if you want to use a different port.
 
+## Draw View's bounds
+
+You can see each View widget's bounds by passing `--draw-view-bounds-rects`.
+
+![debug_view_ui](https://user-images.githubusercontent.com/6786187/41207426-d58a49cc-6d50-11e8-8eba-e1189ba3dba7.png)
