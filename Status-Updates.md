@@ -91,8 +91,8 @@
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Urlbar Shortcuts for search engines
 - [ ] Uphold widget
-- [ ] Get update plan
 - [ ] Chromium 69 rebase
+- [ ] Get update plan from muon and execute it
 
 ### Unlikely stretch goals
 
