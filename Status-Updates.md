@@ -77,6 +77,7 @@
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [ ] CI for builds using buildbot (mattb in-progress)
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
+- [ ] brave:// protocol support (bbondy)
 
 
 ### Milestone 4: Wanted for 1.0 (August)
