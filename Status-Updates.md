@@ -64,12 +64,12 @@
 - [ ] Payments / Ledger 2.0 impl (Nejc)
 - [ ] Get automated tests running on Travis
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
-- [ ] Verify no calls are made out to Google
-- [ ] Allow a different private search engine to tie into private newtab UI
-- [ ] Stats when you click on a number in brave shields panel
+- [ ] Verify no calls are made out to Google (pj)
+- [ ] Allow a different private search engine to tie into private newtab UI (Simon)
+- [ ] Stats when you click on a number in brave shields panel (Cezar)
 - [ ] Manage script should not show enforced by extension
-- [ ] update ping stats
-- [ ] Crash reporting
+- [ ] update ping stats (bbondy)
+- [ ] Crash reporting (Matt O/)
 - [ ] Local welcome page (Cezar)
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
