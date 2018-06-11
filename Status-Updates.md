@@ -83,18 +83,19 @@
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
-- [ ] Webtorrent
+- [ ] Webtorrent (Jocelyn)
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
 - [ ] Autoplay (Anthony in-progress)
 - [ ] Clear private data on shutdown
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Urlbar Shortcuts for search engines
 - [ ] Uphold widget
-- [ ] 2-way wallet
+- [ ] Get update plan
 - [ ] Chromium 69 rebase
 
 ### Unlikely stretch goals
 
+- [ ] 2-way wallet
 - [ ] Private tabs
 - [ ] More UI customizations
 - [ ] Tab pages
