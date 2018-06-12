@@ -73,3 +73,6 @@ Command line switches:
 
 Brave specific preferences:
 - Brave specific preferences are added here: `brave/common/pref_names.cc`.
+
+Protocol handlers:
+- There is a brave:// equivalent to chrome:// but it just forwards to chrome://
