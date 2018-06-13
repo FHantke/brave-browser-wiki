@@ -46,7 +46,6 @@
 - [x] Proxy Safe Browsing
 - [x] Disable Flash by default per [v1 Flash plan](https://github.com/brave/brave-browser/issues/30)
 - [x] Disable PDFium and use PDF.js
-- [x] Regional ad-block
 - [x] Generate brave-extensions for DAT files and themes
 - [x] Get proper Debug builds working
 - [x] Newtab private search engine UI
@@ -77,7 +76,8 @@
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [ ] CI for builds using buildbot (mattb in-progress)
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
-- [ ] brave:// protocol support (bbondy)
+- [x] Regional ad-block
+- [x] brave:// protocol support (bbondy)
 
 
 ### Milestone 4: Wanted for 1.0 (August)
