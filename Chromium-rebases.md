@@ -125,6 +125,7 @@ Also apply these replacements:
 %s/Chromium/Brave/g  
 %s/Chrome/Brave/g  
 %s/Google/Brave/g  
+%s/The Brave Authors. All rights reserved./Brave Software Inc. All rights reserved./g
 %s/The Brave Authors/Brave Software Inc./g
 ```
 
