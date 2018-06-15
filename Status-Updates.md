@@ -67,7 +67,7 @@
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
 - [ ] Stats when you click on a number in brave shields panel (Cezar)
 - [ ] Manage script should not show enforced by extension
-- [ ] update ping stats (bbondy)
+- [ ] update ping stats (emerick)
 - [ ] Crash reporting (Matt O/)
 - [ ] Local welcome page (Cezar)
 - [ ] Referral promo (& Dow Jones)
@@ -76,6 +76,7 @@
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [ ] CI for builds using buildbot (mattb in-progress)
 - [ ] Update client and server work to do updates (jarv, simon in-progress)
+- [ ] Windows stub installer from Omaha server (simon)
 - [x] Regional ad-block
 - [x] brave:// protocol support (bbondy)
 
@@ -101,7 +102,6 @@
 - [ ] More UI customizations
 - [ ] Tab pages
 - [ ] Tab previews
-- [ ] Stub installer wrapper with UI for Windows using Mozilla stub installer. (Emerick will start on this after extension work)
 - [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
 
