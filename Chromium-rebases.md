@@ -125,6 +125,8 @@ Also apply these replacements:
 %s/Chromium/Brave/g  
 %s/Chrome/Brave/g  
 %s/Google/Brave/g  
+
+The Brave Authors -> Brave Software Inc. (IDS_ABOUT_VERSION_COMPANY_NAME)
 ```
 
 `cp ../chrome/app/settings_chromium_strings.grdp app/settings_brave_strings.grdp`
