@@ -112,42 +112,9 @@ Do a build like normal, fix errors as they come up.
 Eventually you’ll start getting some string errors when you build.
 Commit what you have in a updates to brave-core commit.
 
-```
-cd brave
-cp ../chrome/app/chromium_strings.grd app/brave_strings.grd
-```
+Update `grd` and `grdp` files from the Chromium ones:
 
-Open up `app/brave_strings.grd` and replace `settings_chromium_strings.grdp` with `settings_brave_strings.grdp`
-Also apply these replacements:
-
-```
-%s/Google Chrome/Brave/g  
-%s/Chromium/Brave/g  
-%s/Chrome/Brave/g  
-%s/Google/Brave/g  
-%s/The Brave Authors. All rights reserved./Brave Software Inc. All rights reserved./g
-%s/The Brave Authors/Brave Software Inc./g
-```
-
-`cp ../chrome/app/settings_chromium_strings.grdp app/settings_brave_strings.grdp`
-Open up the file and apply these replacements:
-
-```
-%s/Google Chrome/Brave/g  
-%s/Chromium/Brave/g  
-%s/Chrome/Brave/g  
-%s/Google/Brave/g  
-```
-
-`cp ../components/components_chromium_strings.grd ./app/components_brave_strings.grd`
-Open up the file and apply these replacements:
-
-```
-%s/Google Chrome/Brave/g  
-%s/Chromium/Brave/g  
-%s/Chrome/Brave/g  
-%s/Google/Brave/g  
-```
+`npm run chromium_rebase_l10n`
 
 Do a commit for the updated source strings, `grd` files.
 
