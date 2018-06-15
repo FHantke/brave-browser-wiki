@@ -28,3 +28,5 @@ No BUILD.gn changes are needed for this.
 ## Patch the Chromium files
 
 When other options are exhausted, you can patch the code directly in `src/`. After making the changes, you can run the npm command `npm run update_patches`.   This will update the patches which are stored in  `src/brave/patches`.   Please note that removed changes in `src` currently will not update the patches, so you will have to do that manually. 
+
+We aim to make the only patches required to be trivial changes, and not nested logic changes.
