@@ -8,7 +8,12 @@ If changes can be made inside existing subclasses and code inside `src/brave`, t
 
 ## Subclass and override
 
-When you can't make a change directly in existing brave-core code, it's often best to simply override a Chromium class, possibly add a `friend` member to your base class for your subclass.  Change the instance creation to use your class, and provide an override for the function. If the function is not `virtual`, you can patch to make it virtual. 
+When you can't make a change directly in existing brave-core code, it's often best to simply subclass a Chromium class, and override the functions needed.
+
+You will need to patch (see the below documentation) for some small trivial things in this case:
+- Create instances of your class instead of the Chromium class.
+- Possibly add a `friend` member to the base class you're subclassing.
+- Possibly add a `virtual` keyword to functions you'd like to subclass.
 
 ## Using the preprocessor to use base implementations inside override files
 
