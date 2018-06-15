@@ -23,6 +23,8 @@ No BUILD.gn changes are needed for this.
 
 If you want to provide a completely different implementation of a file, it is often not safe, but sometimes applicable. You can just provide the alternate implementation inside the `src/brave/chromium_src` directory.
 
+One way electron went wrong is they copied entire files for changes inside a similar setup, do NOT do this. This will cause Chromium rebases to get stale and cause problems. 
+
 No BUILD.gn changes are needed for this.
 
 ## Patch the Chromium files
