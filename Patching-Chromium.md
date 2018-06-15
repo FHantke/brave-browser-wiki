@@ -17,9 +17,13 @@ one strategy that's preferred over patching is to use `src/brave/chromium_src` w
 Here's an example:
 https://github.com/brave/brave-core/blob/5293f0cab08816819bb307d02e404c2061e4368d/chromium_src/chrome/browser/browser_about_handler.cc
 
+No BUILD.gn changes are needed for this.
+
 ## Override a .cc file completely
 
 If you want to provide a completely different implementation of a file, it is often not safe, but sometimes applicable. You can just provide the alternate implementation inside the `src/brave/chromium_src` directory.
+
+No BUILD.gn changes are needed for this.
 
 ## Patch the Chromium files
 
