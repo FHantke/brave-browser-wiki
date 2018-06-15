@@ -17,7 +17,7 @@ You will need to patch (see the below documentation) for some small trivial thin
 
 ## Using the preprocessor to use base implementations inside override files
 
-one strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` files but still use the source in the original Chromium code too.  To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium one inside of it.
+one strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` and `.h` files but still use the source in the original Chromium code too.  To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium implementation inside of it.
 
 Here's an example:
 https://github.com/brave/brave-core/blob/5293f0cab08816819bb307d02e404c2061e4368d/chromium_src/chrome/browser/browser_about_handler.cc
