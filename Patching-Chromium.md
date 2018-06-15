@@ -10,7 +10,7 @@ If changes can be made inside existing subclasses and code inside `src/brave`, t
 
 When you can't make a change directly in existing brave-core code, it's often best to simply override a Chromium class, possibly add a `friend` member to your base class for your subclass.  Change the instance creation to use your class, and provide an override for the function. If the function is not `virtual`, you can patch to make it virtual. 
 
-## Override a .cc file in Chromium but use the base implementation
+## Using the preprocessor to use base implementations inside override files
 
 one strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` files but still use the source in the original Chromium code too.  To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium one inside of it.
 
