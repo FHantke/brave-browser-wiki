@@ -116,7 +116,8 @@ Update `grd` and `grdp` files from the Chromium ones:
 
 ```
 cd ..
-npm run chromium_rebase_l10n```
+npm run chromium_rebase_l10n
+```
 
 Do a commit for the updated source strings, `grd` files.
 
