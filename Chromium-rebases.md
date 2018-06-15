@@ -114,7 +114,9 @@ Commit what you have in a updates to brave-core commit.
 
 Update `grd` and `grdp` files from the Chromium ones:
 
-`npm run chromium_rebase_l10n`
+```
+cd ..
+npm run chromium_rebase_l10n```
 
 Do a commit for the updated source strings, `grd` files.
 
@@ -122,7 +124,6 @@ Run this to detect new strings and push them to Transifex, it will also push up 
 If you need access talk to devops.
 
 ```
-cd ..
 npm run push_l10n
 ```
 
