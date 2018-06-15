@@ -38,4 +38,4 @@ When other options are exhausted, you can patch the code directly in `src/`. Aft
 
 We aim to make the only patches required to be trivial changes, and not nested logic changes.
 
-Patch changes which affect the flow of execution should ideally be wrapped in `#if defined(BRAVE_CHROMIUM_BUILD)`.
+Patch changes which affect the flow of execution should ideally be wrapped in `#if defined(BRAVE_CHROMIUM_BUILD)` and `#endif` blocks.
