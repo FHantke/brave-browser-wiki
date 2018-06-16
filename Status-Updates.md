@@ -65,7 +65,7 @@
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
 - [ ] Verify no calls are made out to Google (pj)
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
-- [ ] Stats when you click on a number in brave shields panel (Cezar)
+- [x] Stats when you click on a number in brave shields panel (Cezar)
 - [ ] Manage script should not show enforced by extension
 - [ ] update ping stats (emerick)
 - [ ] Crash reporting (Matt O/)
