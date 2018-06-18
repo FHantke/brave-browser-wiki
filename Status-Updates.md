@@ -57,7 +57,7 @@
 - [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
-- [ ] Widevine
+- [ ] Widevine (bbondy in-progress)
 - [ ] Some UI customizations (Pete)
 - [ ] Linux deb and rpm signing.
 - [ ] Payments / Ledger 2.0 impl (Nejc)
