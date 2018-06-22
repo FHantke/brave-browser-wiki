@@ -10,9 +10,10 @@
 
 
 ## Component updater:
-- There are 2 component updaters.
+- There are 2 component updaters: Google server, Brave server.
 - Test that components come from Chrome's server by default and not Brave server.
 - Test that Brave extensions go from Brave component updater (ad-block, tracking-protection, https-everywhere).
+- Widevine goes to the Google server.
 
 ## Flash:
 - Flash has no UI if it is not installed.  If installed, Flash is disabled by default, you can enable in the urlbar which enables click to play.
