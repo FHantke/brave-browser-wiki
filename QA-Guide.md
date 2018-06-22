@@ -23,8 +23,8 @@
 - Extensions will be allowed but require click through, PWAs are allowed too.
 - Test to make sure DAT files get updated periodically.
 - There is a whitelist of extensions, things not in the allowed list should be disabled.
-- The plan is to allow 1k+ extensions initially.
-- Extensions can be installed from extensions.brave.com
+- Allow all extensions but with click through prompt.
+- Extensions can be installed from extensions.brave.com, there are some Brave only extensions.
 
 ## Enabled/disabled features over Chromium:
 - Enabled progressive web apps flag are enabled. (mobile.twitter.com, login and you can install Twitter Lite app).
