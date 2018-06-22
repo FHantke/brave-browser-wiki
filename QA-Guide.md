@@ -16,7 +16,7 @@ Flash:
 - Flash has no UI if it is not installed.  If installed, Flash is disabled by default, you can enable in the urlbar which enables click to play.
 
 Extensions:
-- Extensions are restricted, but PWAs are allowed.
+- Extensions will be allowed but require click through, PWAs are allowed too.
 - Test to make sure DAT files get updated periodically.
 - There is a whitelist of extensions, things not in the allowed list should be disabled.
 - The plan is to allow 1k+ extensions initially.
