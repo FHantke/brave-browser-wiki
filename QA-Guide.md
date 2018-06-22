@@ -4,7 +4,10 @@ How to test:
 - Debug builds, but for assertions make sure to take Debug only things with a `debug` label.'
 
 Triage:
-- Things are triaged into milestones, and assigned an owner by bbondy for now and by a triage meeting eventually.  There is a project that shows per user views of tasks.
+- There's currently only two milestones for Releasable builds and Backlog.
+- Things are triaged into either of those milestones, things not in a milestone are not triaged yet.
+- Zenhub is used to give point estimations for timelines. 
+
 
 Component updater:
 - Test that components come from our server and not Chrome's server.
