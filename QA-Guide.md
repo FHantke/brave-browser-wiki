@@ -10,7 +10,9 @@ Triage:
 
 
 Component updater:
-- Test that components come from our server and not Chrome's server.
+- There are 2 component updaters.
+- Test that components come from Chrome's server by default and not Brave server.
+- Test that Brave extensions go from Brave component updater (ad-block, tracking-protection, https-everywhere).
 
 Flash:
 - Flash has no UI if it is not installed.  If installed, Flash is disabled by default, you can enable in the urlbar which enables click to play.
