@@ -57,7 +57,7 @@
 - [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
-- [ ] Widevine (bbondy in-progress)
+- [x] Widevine
 - [ ] Some UI customizations (Pete)
 - [ ] Linux deb and rpm signing.
 - [ ] Payments / Ledger 2.0 impl (Nejc)
@@ -67,18 +67,18 @@
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
 - [x] Stats when you click on a number in brave shields panel (Cezar)
 - [ ] Manage script should not show enforced by extension
-- [ ] update ping stats (emerick)
-- [ ] Crash reporting (Matt O/)
+- [x] update ping stats
+- [ ] Crash reporting (Matt O / Aubrey / emerick)
 - [ ] Local welcome page (Cezar)
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
 - [ ] Chromium 68 rebase
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [ ] CI for builds using buildbot (mattb in-progress)
-- [ ] Update client and server work to do updates (jarv, simon in-progress)
-- [ ] Windows stub installer from Omaha server (simon)
+- [x] Update client and server work to do updates
+- [x] Windows stub installer from Omaha server
 - [x] Regional ad-block
-- [x] brave:// protocol support (bbondy)
+- [x] brave:// protocol support
 
 
 ### Milestone 4: Wanted for 1.0 (August)
