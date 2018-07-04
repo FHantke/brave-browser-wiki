@@ -150,3 +150,14 @@ Continue to build with:
 
 If there's anything that should be called out as a non-trivial change, you should do it as a separate commit.
 
+***
+***MIDL issue on Windows***
+
+When this message is visible during the build, check `src/third_party/win_build_output/` is changed. If not, it means our pre-generated files in `./src/brave/win_build_output/midl/google_update/` are not copied there. In this case, check `updateOmahaMidlFiles()` in `lib/util.js`. Make sure that `google_update` directory has two directory(x64, x86).
+
+```
+To rebaseline:
+  copy /y c:\users\XXX\appdata\local\temp\tmpdjhho_\* C:\Projects\brave\brave-browser\src\third_party\win_build_output\midl\google_update\x64
+```
+
+
