@@ -19,7 +19,9 @@ Configure Git according to the ["Get the Code" section](https://chromium.googles
 
 Install Node LTS from https://nodejs.org/.
 
-## Yarn
+## npm or Yarn
+
+Preferably use npm as it is the default package manager used across our builds. npm is built in Node by default. Alternatively, you can install Yarn:
 
 Install Yarn from https://yarnpkg.com/lang/en/docs/install/.
 Installing Yarn via .msi has been tested and is known to work.
