@@ -118,6 +118,9 @@ Update `grd` and `grdp` files from the Chromium ones:
 cd ..
 npm run chromium_rebase_l10n
 ```
+```
+Note: Filled some custom strings to brave_strings.grd by https://github.com/brave/brave-core/pull/214/commits/256f5aa8e781d266ad23f863ac7b613615ad2a5a
+```
 
 Do a commit for the updated source strings, `grd` files.
 
