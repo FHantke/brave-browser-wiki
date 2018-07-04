@@ -1,11 +1,11 @@
 To debug the [brave-extension](https://github.com/brave/brave-extension), it is recommended to load the extension manually in dev mode.
 
-In a new terminal, change your current working directory to `src/brave/vendor/brave-extension` and run `yarn dev`.
+In a new terminal, change your current working directory to `src/brave/vendor/brave-extension` and run `npm run dev`.
 
 Back in your original terminal, start Brave without loading the extension:
 
 ```
-yarn start --disable_brave_extension
+npm start --disable_brave_extension
 ```
 
 Then navigate to `chrome://extensions/` and turn on the checkbox for `Developer mode`.
