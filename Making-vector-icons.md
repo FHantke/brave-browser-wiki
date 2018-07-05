@@ -197,7 +197,7 @@ If svg consists of closed loops only, than no need to make fixes.
 ### 4. About rebuild of browser 
 
 There is an issue now, brave icon files are not specified in gn scripts, so ninja tool cannot detect they were changed. 
-For now it is required to remove manually all `vector_icons.cc` inside of `brave-browser/src/out/Release/gen/` . This will be fixed.
+For now it is required to remove manually all `vector_icons.cc` files from the disk inside of `brave-browser/src/out/Release/gen/` . This will be fixed.
 
 ### 5. References
 
