@@ -1,30 +1,55 @@
+# Setup
 ### 1. Prerequisites
 1.1 Clone and build brave-browser https://github.com/brave/brave-browser/wiki
 
-1.2 Build target views_examples_with_content_exe to preview own changed icons
+1.2 Make sure you have Ninja builder installed: `brew install ninja`
+
+1.3 Build the application target "views_examples_with_content_exe" to preview changed icons without needing to rebuild by:
+
 ```
 cd src
 ninja -C out/Release views_examples_with_content_exe
 ```
 
-1.3 Requirements to source svg
-In order to make conversion go smooth and have no need to adjust result file, it is required for source svg to be:
-* the same size as a target icon; size of a target icon is in the line `CANVAS_DIMENSIONS, `
-* to have no line objects, lines should be represented as a closed loop with fill of extremely small width.
+1.4 Once the command has finished building, launch the app from `src/out/Release/views_examples_with_content_exe`
+
+![](https://github.com/rossmoody/images/blob/master/Screenshot%202018-06-19%2017.50.57.png)
+
+Once you begin replacing Skia code, reviewing icon using this UI will save time. 
+
+The first text box with `Size in dip` should be set to the value specified in  `CANVAS_DIMENSIONS` line of .icon file, for instance this is 32 for `https://github.com/brave/brave-core/blob/master/vector_icons/components/vector_icons/forward_arrow.icon`. 
+
+It works with other values also, but when we specify the value from .icon file, we get the same look in a tool as it would be in actual browser toolbar.
+
+The second field `Color AARRGGBB` is a hexadecimal code of the color, AA-alfa RR-red GG-green BB-blue. Now Chromium draws icons with a gray of `FF777777` , so this one should be specified to correctly render. 
+
+The 3rd field is a full path to the icon. Once all fields are filled you should be able to render icons. 
+
+![](https://github.com/rossmoody/images/blob/master/Screenshot%202018-06-19%2018.01.20.png)
 
 ### 2. Paths conventions
+In order to make conversion go smooth and have no need to adjust result file, it is required for source svg to be:
+
+- the same size as a target icon; size of a target icon is in the line `CANVAS_DIMENSIONS, `
+- to have no line objects, lines should be represented as a closed loop with fill of extremely small width.
+
 Modified icons should be placed in the location `brave-browser/src/brave/vector_icons/<original chromium path>`.
+
 For example, for the file
+
 ```
 brave-browser/src/components/vector_icons/reload.1x.icon
-``` 
+```
 we should create modified version at 
 ```
 brave-browser/src/brave/vector_icons/components/vector_icons/reload.1x.icon
 ```
 The build script will choose one from `brave/vector_icons` if it is present. 
 
-### 3. Converting svg into skia file 
+
+#Converting svg into skia file 
+### 3. Resizing and manipulating exising SVG icons
+
 The process will be shown on example of converting `reload_button_48.svg`
 
 ![initial](https://github.com/AlexeyBarabash/images1/blob/master/pic01.svg), 
@@ -194,12 +219,34 @@ And how it looks on the toolbar:
 
 If svg consists of closed loops only, than no need to make fixes.
 
-### 4. About rebuild of browser 
+### 4. Sketch to SKIA Process
+
+There is a process that seems pretty dependable in converting icons that are shapes to SKIA with minimal manual editing. 
+
+4.1 Set the artboard size of an individual icon to the same size of the canvas in the icon you are replacing. This is very often 16, 24, or 32. 
+
+![](https://github.com/rossmoody/images/blob/master/Screenshot%202018-06-19%2018.06.17.png)
+
+4.1 Convert icons to 100% shapes and combine them. In order for this process to work, we can't have stroked elements within the svg or we will have to manually state the stroke size in Skia. 
+
+4.2 Selecting the artboard (not the icon, the artboard), click Edit-> Copy SVG Code
+
+4.3 Using the [SVGOMG](https://jakearchibald.github.io/svgomg/) cleaner, paste in our SVG code. I have toyed with these settings a bit and I'm unsure the absolute best combination but the one setting that is mandatory is to make sure the "Remove viewBox" setting is disabled. We need the viewbox declarations to create our canvas size in Skia.
+
+4.4 Copy the compressed SVG code, bring it to [Skiafy](https://alexeybarabash.github.io/skiafy/) and paste it in. Since we are typically designing to size, I leave my scale at 1.0 and click Skiafy. Your code should have a canvas declaration and varying degrees of Move/Close declarations: 
+
+```
+CANVAS_DIMENSIONS, 32,MOVE_TO, 27, 27,R_H_LINE_TO, -5,V_LINE_TO, 16.5f,R_ARC_TO, 1.5f, 1.5f, 0, 0, 0, -1.5f, -1.5f,R_H_LINE_TO, -8,R_ARC_TO, 1.5f, 1.5f, 0, 0, 0, -1.5f, 1.5f,V_LINE_TO, 27,H_LINE_TO, 6,V_LINE_TO, 12.83f,R_LINE_TO, 10.5f, -6.56f,LINE_TO, 27, 12.83f,V_LINE_TO, 27,CLOSE,R_MOVE_TO, -13, 0,R_H_LINE_TO, 5,R_V_LINE_TO, -9,R_H_LINE_TO, -5,R_V_LINE_TO, 9,CLOSE,R_MOVE_TO, 14.59f, -16.71f,LINE_TO, 17.3f, 3.23f,R_ARC_TO, 1.5f, 1.5f, 0, 0, 0, -1.59f, 0,R_LINE_TO, -11.29f, 7.06f,ARC_TO, 2.98f, 2.98f, 0, 0, 0, 3, 12.83f,V_LINE_TO, 27.5f,CUBIC_TO, 3, 28.88f, 4.12f, 30, 5.5f, 30,R_H_LINE_TO, 22,R_CUBIC_TO, 1.38f, 0, 2.5f, -1.12f, 2.5f, -2.5f,V_LINE_TO, 12.83f,R_ARC_TO, 2.98f, 2.98f, 0, 0, 0, -1.41f, -2.54f,CLOSE
+```
+
+One bug I run into occasionally is an SVG will bring a `<def> </def>`  bracket around the svg code. This will cause Skia to not render any coordinates. Deleting this bracket fixes the issue. 
+
+### 5. About rebuild of browser 
 
 There is an issue now, brave icon files are not specified in gn scripts, so ninja tool cannot detect they were changed. 
 For now it is required to remove manually all `vector_icons.cc` files from the disk inside of `brave-browser/src/out/Release/gen/` . This will be fixed, https://github.com/brave/brave-browser/issues/491.
 
-### 5. References
+### 6. References
 
 [1] https://chromium.googlesource.com/chromium/src/+/master/components/vector_icons/README.md
 
