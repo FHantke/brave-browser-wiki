@@ -74,7 +74,7 @@
 - [ ] UGP
 - [ ] Chromium 68 rebase
 - [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
-- [ ] CI for builds using buildbot (mattb in-progress)
+- [x] CI for builds using buildbot
 - [x] Update client and server work to do updates
 - [x] Windows stub installer from Omaha server
 - [x] Regional ad-block
