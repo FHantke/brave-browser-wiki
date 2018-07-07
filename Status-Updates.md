@@ -88,7 +88,6 @@
 - [ ] Webtorrent (Jocelyn)
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
 - [ ] Autoplay (Anthony in-progress)
-- [ ] Clear private data on shutdown
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Uphold widget
 - [ ] Chromium 69 rebase
@@ -103,3 +102,4 @@
 - [ ] Tab previews
 - [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
+- [ ] Clear private data on shutdown
