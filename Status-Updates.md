@@ -90,7 +90,6 @@
 - [ ] Autoplay (Anthony in-progress)
 - [ ] Clear private data on shutdown
 - [ ] Cosmetic filter blocking (Snuupy)
-- [ ] Urlbar Shortcuts for search engines
 - [ ] Uphold widget
 - [ ] Chromium 69 rebase
 - [ ] Get update plan from muon and execute it
