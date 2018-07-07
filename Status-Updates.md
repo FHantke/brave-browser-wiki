@@ -81,7 +81,7 @@
 - [x] brave:// protocol support
 
 
-### Milestone 4: Wanted for 1.0 (August)
+### Milestone 4: Wanted for 1.0 (August - September first week)
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
@@ -93,7 +93,7 @@
 - [ ] Chromium 69 rebase
 - [ ] Get update plan from muon and execute it
 
-### Unlikely stretch goals
+### Unlikely stretch goals (Can happen sometimes after September)
 
 - [ ] 2-way wallet
 - [ ] Private tabs
