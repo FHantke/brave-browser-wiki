@@ -1,5 +1,7 @@
 To debug the [brave-extension](https://github.com/brave/brave-extension), it is recommended to load the extension manually in dev mode.
 
+> Note: If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+
 In a new terminal, change your current working directory to `src/brave/vendor/brave-extension` and run `npm run dev`.
 
 Back in your original terminal, start Brave without loading the extension:
