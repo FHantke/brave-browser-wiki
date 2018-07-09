@@ -47,8 +47,6 @@ ninja: error: '../../components/components_brave_strings.grd', needed by
 'obj/components/strings/components_chromium_strings_grit.inputdeps.stamp', missing and no known rule to make it
 ```
 
-Note: When using npm to build, specify the following command `npm run build -- Release --debug_build=true --official_build=false`
-
 You may also want to try [[using sccache|Using sccache]].
 
 ## Run Brave
@@ -61,4 +59,4 @@ To start release build:
 `npm start Release`
 # Staying up to date
 
-You can run `npm run sync --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `npm run sync --run_hooks`.
+You can run `npm run sync -- --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `npm run sync -- --run_hooks`.
