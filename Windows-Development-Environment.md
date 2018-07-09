@@ -24,7 +24,9 @@ Install Node LTS from https://nodejs.org/.
 Preferably use npm as it is the default package manager used across our builds. npm is built in Node by default. Alternatively, you can install Yarn:
 
 Install Yarn from https://yarnpkg.com/lang/en/docs/install/.
-Installing Yarn via .msi has been tested and is known to work.
+Installing Yarn via `.msi` has been tested and is known to work.
+
+If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 
 ## Python 2.7
 
