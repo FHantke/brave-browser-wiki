@@ -9,6 +9,8 @@ You will need the following prerequisites to build Brave on macOS:
 - Git >= 2.17.0
   - Git is included with Xcode's "Command Line Tools," but the version provided by Apple is old and sometimes has problems interoperating with current Git stable, e.g. when generating diffs using the default settings. You should install a newer version of Git, e.g. via Homebrew.
 
+> Note: If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+
 # Troubleshooting
 
 As of Chromium 62, the 10.12 SDK is required for building. If you are using macOS < 10.12, you may need to:
