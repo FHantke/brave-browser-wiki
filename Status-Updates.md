@@ -53,27 +53,30 @@
 ### Milestone 3: Getting to 1.0 (June-July)
 
 - [ ] Make extensions.brave.com store (Ailin)
-- [ ] Import from browser-laptop based Brave (Garrett in-progress)
+- [x] Import from browser-laptop based Brave (Garrett in-progress)
 - [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
 - [x] Widevine
-- [ ] Some UI customizations (Pete)
+- [x] Jumbo UI on Windows (Pete)
+- [ ] Background tabs not having border
+- [ ] Bookmarks star button on the left
 - [ ] Linux deb and rpm signing.
-- [ ] Payments / Ledger 2.0 impl (Nejc)
-- [ ] Get automated tests running on Travis
+- [x] Native-Ledger integration into brave-core
+- [ ] Rewards UI integration into brave-core (Nejc)
+- [ ] Rewards hooking up into delegates and observers
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
-- [ ] Verify no calls are made out to Google (pj)
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
 - [x] Stats when you click on a number in brave shields panel (Cezar)
 - [ ] Manage script should not show enforced by extension
 - [x] update ping stats
-- [ ] Crash reporting (Matt O / Aubrey / emerick)
-- [ ] Local welcome page (Cezar)
+- [x] Crash reporting
+- [x] Local welcome page w/ placeholder
+- [ ] Local welcome page UI impl (Cezar)
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
 - [ ] Chromium 68 rebase
-- [ ] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
+- [x] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [x] CI for builds using buildbot
 - [x] Update client and server work to do updates
 - [x] Windows stub installer from Omaha server
@@ -92,6 +95,9 @@
 - [ ] Uphold widget
 - [ ] Chromium 69 rebase
 - [ ] Get update plan from muon and execute it
+- [ ] More UI customizations (Pete)
+- [ ] Get automated tests running on Travis
+- [ ] Verify no calls are made out to Google (pj)
 
 ### Unlikely stretch goals (Can happen sometimes after September)
 
