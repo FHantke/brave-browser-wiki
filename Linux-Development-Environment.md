@@ -20,7 +20,7 @@ You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-t
 # cd to brave-browser repo root
 ./src/build/install-build-deps.sh
 ```
-You might also want to try ```./src/build/install-build-deps.sh --unsupported``` if you are on a distribution based on Debian or Ubuntu.
+You might also want to try `./src/build/install-build-deps.sh --unsupported` if above command gives an error about using a non supported Linux distribution.
 
 # Troubleshooting
 
