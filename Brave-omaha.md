@@ -257,7 +257,7 @@ This `BraveBrowserDevSetup.exe` will download installer from `dev` channel of `{
 
 `./ApplyTag.exe BraveUpdateSetup.exe BraveBrowserDevSetup.exe "appguid={CB2150F2-595F-4633-891A-E39720CE0531}&appname=Brave-Browser-Dev&needsadmin=prefers&lang=en&ap=dev"`
 
-Also, `install` action event should be added with `--chrome-dev` argument.
+Also, `install` and `update` action events should be added with `--chrome-dev` argument when adding a new version.
 
 *ApplyTag.exe* is in scones-out/dbg-win/obj/tools/ApplyTag.
 
