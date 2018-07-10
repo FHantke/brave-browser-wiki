@@ -295,7 +295,10 @@ Registry key: `HKEY_CURRENT_USER\Software\Brave\Update`.
 
 See [Crystalnix tutorial](https://github.com/Crystalnix/omaha-server#setting-up-a-development-server).
 
+# Test silent intaller (brave_intaller.exe)
 
-# Chromium intaller (mini_intaller.exe)
-
-### TODOs
+`brave_installer.exe` installs user mode stable version
+`brave_installer.exe --system-level` installs admin mode stable version
+`brave_installer.exe --system-level --chrome-dev` installs admin mode dev version
+`brave_installer.exe --chrome-sxs` installs user mode nightly verion
+`brave_installer.exe --chrome-beta` installs user mode beta version
