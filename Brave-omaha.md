@@ -247,7 +247,12 @@ For Omaha installation test, we need to make tagged metainstaller by using `Appl
 
 After build with above repo, execute below. appguid in tag is just example id. It should be replaced brave guid later.
 
-`ApplyTag.exe BraveUpdateSetup.exe BraveBrowserSetup.exe "appguid={AFE6A462-C574-4B8A-AF43-4CC60DF4563B}&appname=BraveBrowser&needsadmin=prefers&lang=en"`
+Below is for making installer for `stable` with `en` language. This `BraveBrowserSetup.exe` will download installer from stable channel of `{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}` app.
+`ApplyTag.exe BraveUpdateSetup.exe BraveBrowserSetup.exe "appguid={AFE6A462-C574-4B8A-AF43-4CC60DF4563B}&appname=Brave-Browser&needsadmin=prefers&lang=en"`
+
+Below is for making installer for `dev` channel. This `BraveBrowserDevSetup.exe` will download installer from `dev` channel of `{CB2150F2-595F-4633-891A-E39720CE0531}` app. Value of `ap` should be same as targeted channel name.
+`./ApplyTag.exe BraveUpdateSetup.exe BraveBrowserDevSetup.exe "appguid={CB2150F2-595F-4633-891A-E39720CE0531}&appname=Brave-Browser-Dev&needsadmin=prefers&lang=en&ap=dev"`
+
 
 *ApplyTag.exe* is in scones-out/dbg-win/obj/tools/ApplyTag.
 
