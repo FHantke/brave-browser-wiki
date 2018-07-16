@@ -295,6 +295,11 @@ Registry key: `HKEY_CURRENT_USER\Software\Brave\Update`.
 
 See [Crystalnix tutorial](https://github.com/Crystalnix/omaha-server#setting-up-a-development-server).
 
+# Update omaha itself
+
+Build updated `omaha/VERSION` and upload `BraveUpdateSetup.exe` with new version.
+Make sure to add additional `update` Action with `/update` arguments.
+
 # Test silent intaller (brave_intaller.exe)
 
 `brave_installer.exe` installs user mode stable version
