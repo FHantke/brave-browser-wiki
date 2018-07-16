@@ -72,7 +72,7 @@
 - [x] update ping stats
 - [x] Crash reporting
 - [x] Local welcome page w/ placeholder
-- [ ] Local welcome page UI impl (Cezar)
+- [x] Local welcome page UI impl
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
 - [ ] Chromium 68 rebase
