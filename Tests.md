@@ -93,6 +93,9 @@ Example:
 
 `npm run test -- browser_tests` will run a lot of tests, but some will not pass.
 
-# Resources
+# Useful Resources
 
-- https://github.com/google/googletest/blob/master/googletest/docs/Primer.md
+## Chromium test frameworks
+
+- [GoogleTest Primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)
+- [GoogleMock for Dummies](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md)
