@@ -75,7 +75,7 @@
 - [x] Local welcome page UI impl
 - [ ] Referral promo (& Dow Jones)
 - [ ] UGP
-- [ ] Chromium 68 rebase
+- [x] Chromium 68 rebase
 - [x] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [x] CI for builds using buildbot
 - [x] Update client and server work to do updates
