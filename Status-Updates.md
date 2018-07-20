@@ -61,7 +61,7 @@
 - [x] Jumbo UI on Windows (Pete)
 - [ ] Background tabs not having border
 - [ ] Bookmarks star button on the left
-- [ ] Linux deb and rpm signing.
+- [x] Linux deb and rpm signing.
 - [x] Native-Ledger integration into brave-core
 - [ ] Rewards UI integration into brave-core (Nejc)
 - [ ] Rewards hooking up into delegates and observers
