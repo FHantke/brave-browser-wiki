@@ -76,3 +76,5 @@
 - No updates will be made for Nightly builds.
 - See the chart at the top for the version number for Nightly builds.
 - With a version such as 0.60.x, the `x` is equal to 0 when dev-channel gets the previous 0.59.y version.
+- Developers work off of master.
+- We keep master stable, when it is not we backout what broke it.
