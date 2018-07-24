@@ -14,7 +14,7 @@
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
 
 
-## Release channel target release dates:
+## Release channel migration dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -29,7 +29,7 @@
 | 0.58.x  |    71    | December 20, 2018  |
 
 
-## Beta channel target release dates:
+## Beta channel migration dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -45,7 +45,7 @@
 | 0.59.x  |    72    | December 20, 2018  |
  
 
-## Dev channel target release dates:
+## Dev channel migration dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
