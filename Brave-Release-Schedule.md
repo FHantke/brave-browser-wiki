@@ -9,7 +9,8 @@
 | **Branch** | 0.48.x | 0.49.x | 0.50.x | master |
 
 
-- Release frequency: ~3 weeks
+- Major Release frequency: ~3 weeks
+- Minor / Chemspill frequency: As needed 
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
 
 
