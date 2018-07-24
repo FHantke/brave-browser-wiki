@@ -8,7 +8,7 @@
 
 
 
-*Release migrations:*
+## Release channel:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -23,7 +23,7 @@
 | 0.58.x  |    71    | December 20, 2018  |
 
 
-*Beta channel migrations:*
+## Beta channel:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -38,7 +38,7 @@
 | 0.58.x  |    71    | |
  
 
-*Dev channel migrations:*
+## Dev channel migrations:
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
 | 0.50.x  |    67    |  |
