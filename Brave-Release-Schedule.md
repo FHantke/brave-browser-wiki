@@ -75,3 +75,4 @@
 
 - CI will eventually do builds for Dev channel once a day if there are changes.
 - No updates will be made for Nightly builds.
+- See the chart at the top for the version number for Nightly builds.
