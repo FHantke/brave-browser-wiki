@@ -76,6 +76,8 @@
 - `x` in the version above will increase for each build.
 - Branches are created from master on the dates specified.
 
+---
+
 ## Nightly channel:
 
 - CI will eventually do builds for Dev channel once a day if there are changes.
