@@ -34,6 +34,7 @@
 - CI will eventually do builds for release channel once a day if there are changes.
 - Updates will be released as requested only.
 - Branches here never get re-created, they were created when they were spawned for Dev channel.
+- Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
 
 ---
 
@@ -53,6 +54,7 @@
 - CI will eventually do builds for beta channel once a day if there are changes.
 - Updates will be released twice a week or as requested.
 - Branches here never get re-created, they were created when they were spawned for Dev channel.
+- Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
 
 ---
 
