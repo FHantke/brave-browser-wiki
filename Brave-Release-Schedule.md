@@ -19,7 +19,7 @@
 
 ---
 
-## Release channel migration dates:
+## Release channel dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -37,7 +37,7 @@
 
 ---
 
-## Beta channel migration dates:
+## Beta channel dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -56,7 +56,7 @@
 
 ---
 
-## Dev channel migration dates:
+## Dev channel dates:
 
 | Version | Target Chromium | Date               |
 | ------- | ----------------|--------------------|
