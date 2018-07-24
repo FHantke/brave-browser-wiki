@@ -9,6 +9,7 @@
 
 
 *Release migrations:*
+
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
 | 0.50.x  |    67    |                    |
@@ -19,10 +20,11 @@
 | 0.55.x  |    70    | October 16, 2018   |
 | 0.56.x  |    70    | November 6, 2018   |
 | 0.57.x  |    71    | December 4, 2018   |
-| 0.58.x  |    71    | December 20, 2018   |
+| 0.58.x  |    71    | December 20, 2018  |
 
 
 *Beta channel migrations:*
+
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
 | 0.50.x  |    67    | |
