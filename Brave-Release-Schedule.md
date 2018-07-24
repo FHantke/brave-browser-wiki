@@ -35,6 +35,8 @@
 - Updates will be released as requested only.
 - Branches here never get re-created, they were created when they were spawned for Dev channel.
 
+---
+
 ## Beta channel migration dates:
 
 | Version | Chromium | Date               |
