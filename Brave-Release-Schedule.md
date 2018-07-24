@@ -9,7 +9,7 @@
 | **Branch** | 0.48.x | 0.49.x | 0.50.x | master |
 
 
-# Overall 
+## Overall 
 
 - Major Release frequency: ~3 weeks
 - Minor / Chemspill frequency: As needed 
