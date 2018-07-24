@@ -1,14 +1,11 @@
-# Brave Release Schedule
-
-
-## Overview 
+# Overview 
 
 - Major Release frequency: ~3 weeks
 - Minor / Chemspill frequency: As needed 
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
 
 
-## Current channel information:
+# Current channel information:
 
 | **Channel**     | Release |  Beta  | Dev       | Nightly|
 | ----------------| ------- | ------ | --------- | ------ |
@@ -19,7 +16,7 @@
 
 ---
 
-## Release channel dates:
+# Release channel dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -38,7 +35,7 @@
 
 ---
 
-## Beta channel dates:
+# Beta channel dates:
 
 | Version | Chromium | Date               |
 | ------- | ---------|--------------------|
@@ -59,7 +56,7 @@
 
 ---
 
-## Dev channel dates:
+# Dev channel dates:
 
 | Version | Target Chromium | Date               |
 | ------- | ----------------|--------------------|
@@ -82,7 +79,7 @@
 
 ---
 
-## Nightly channel:
+# Nightly channel:
 
 - CI will eventually do builds for Dev channel once a day if there are changes.
 - No updates will be made for Nightly builds.
