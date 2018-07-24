@@ -43,7 +43,7 @@
 
 ## Dev channel migration dates:
 
-| Version | Chromium | Date               |
+| Version | Eventual Chromium version | Date               |
 | ------- | ---------|--------------------|
 | 0.52.x  |    68    | July 3, 2018       |
 | 0.53.x  |    69    | July 24, 2018      |
