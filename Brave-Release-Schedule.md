@@ -10,10 +10,10 @@
 
 ## Current channel information:
 
-|          | Release |  Beta  | Dev | Nightly|
-| ---------| ------- | ------ | --------- | ------ |
-| **Milestone** | 0.51.x| 0.52.x | 0.53.x | 0.54.x |
-| **Branch name** | 0.51.x | 0.52.x | 0.53.x | master |
+| **Channel**     | Release |  Beta  | Dev       | Nightly|
+| ----------------| ------- | ------ | --------- | ------ |
+| **Milestone**   | 0.51.x  | 0.52.x | 0.53.x    | 0.54.x |
+| **Branch name** | 0.51.x  | 0.52.x | 0.53.x    | master |
 
 
 
