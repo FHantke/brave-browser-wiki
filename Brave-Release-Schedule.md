@@ -9,6 +9,10 @@
 | **Branch** | 0.48.x | 0.49.x | 0.50.x | master |
 
 
+Release migrations occur every ~3 weeks.
+In particular every other release is married to a Chromium release date.
+
+
 ## Release channel:
 
 | Version | Chromium | Date               |
