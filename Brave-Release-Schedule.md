@@ -3,15 +3,19 @@
 
 ## Overview 
 
+- Major Release frequency: ~3 weeks
+- Minor / Chemspill frequency: As needed 
+- Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
+
+
+## Current channel information:
+
 |          | Release |  Beta  | Dev | Nightly|
 | ---------| ------- | ------ | --------- | ------ |
 | **Milestone** | 0.51.x| 0.52.x | 0.53.x | 0.54.x |
 | **Branch name** | 0.51.x | 0.52.x | 0.53.x | master |
 
 
-- Major Release frequency: ~3 weeks
-- Minor / Chemspill frequency: As needed 
-- Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
 
 ---
 
