@@ -55,6 +55,7 @@
 - Updates will be released twice a week or as requested.
 - Branches here never get re-created, they were created when they were spawned for Dev channel.
 - Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
+- `brave/brave-browser`'s `package.json` specifies brave-core branch version explicitly.
 
 ---
 
@@ -77,6 +78,7 @@
 - Updates will be released twice a week or as requested.
 - `x` in the version above will increase for each build.
 - Branches are created from master on the dates specified.
+- `brave/brave-browser`'s `package.json` specifies brave-core branch version explicitly.
 
 ---
 
@@ -88,3 +90,4 @@
 - With a version such as 0.60.x, the `x` is equal to 0 when dev-channel gets the previous 0.59.y version.
 - Developers work off of master.
 - We keep master stable, when it is not we backout what broke it.
+- `brave/brave-browser`'s `package.json` specifies brave-core branch to be `master`.
