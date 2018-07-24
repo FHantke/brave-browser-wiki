@@ -61,6 +61,4 @@
 | 0.59.x  |    72    | December 4, 2018   |
 | 0.60.x  |    72    | January 15, 2019   |
  
-- Chromium versions are targets and not be ready in time for the dates.
-- In which case the Chromium upgrade will get uplifted to the version branches when they are ready.
-
+- Chromium versions are targets and may not be ready in time for the dates.  If a Chromium upgrade is not ready in time for a branch date, the branch still happens,  but the Chromium upgrade itself will be uplifted.
