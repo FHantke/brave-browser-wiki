@@ -62,5 +62,5 @@
 | 0.60.x  |    72    | January 15, 2019   |
  
 - Chromium versions are targets and not be ready in time for the dates.
-- In which case the Chromium upgrade will get uplifted to the version branches.
+- In which case the Chromium upgrade will get uplifted to the version branches when they are ready.
 
