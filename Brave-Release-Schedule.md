@@ -11,7 +11,7 @@
 
 Release migrations occur every ~3 weeks.
 
-In particular every other release is married to a [Chromium release date](https://www.chromium.org/developers/calendar).
+In particular every 2nd release is married to a [Chromium release date](https://www.chromium.org/developers/calendar).
 
 
 ## Release channel:
