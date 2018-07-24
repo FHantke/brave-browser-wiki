@@ -27,6 +27,9 @@
 | 0.57.x  |    71    | December 4, 2018   |
 | 0.58.x  |    71    | December 20, 2018  |
 
+- CI will eventually do builds for release channel once a day if there are changes.
+- Updates will be released as requested only.
+- Branches here never get re-created, they were created when they were spawned for Dev channel.
 
 ## Beta channel migration dates:
 
@@ -41,6 +44,10 @@
 | 0.58.x  |    71    | December 4, 2018   |
 | 0.59.x  |    72    | December 20, 2018  |
  
+- CI will eventually do builds for beta channel once a day if there are changes.
+- Updates will be released twice a week or as requested.
+- Branches here never get re-created, they were created when they were spawned for Dev channel.
+
 ---
 
 ## Dev channel migration dates:
@@ -58,3 +65,13 @@
 | 0.60.x  |    72           | January 15, 2019   |
  
 - Chromium versions are targets and may not be ready in time for the dates.  If a Chromium upgrade is not ready in time for a branch date, the branch still happens,  but the Chromium upgrade itself will be uplifted onto the Beta channel.
+- CI will eventually do builds for Dev channel once a day if there are changes.
+- Updates will be released twice a week or as requested.
+- `x` in the version above will increase for each build.
+- `x` is equal to 0 on the first day a version branch appears.
+- Branches are created from master on the dates specified.
+
+## Nightly channel:
+
+- CI will eventually do builds for Dev channel once a day if there are changes.
+- No updates will be made for Nightly builds.
