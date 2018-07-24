@@ -5,8 +5,8 @@
 
 |          | Release |  Beta  | Dev | Nightly|
 | ---------| ------- | ------ | --------- | ------ |
-| **Milestone** | 0.48.x| 0.49.x | 0.50.x | 0.51.x |
-| **Branch** | 0.48.x | 0.49.x | 0.50.x | master |
+| **Milestone** | 0.51.x| 0.52.x | 0.53.x | 0.54.x |
+| **Branch** | 0.51.x | 0.52.x | 0.53.x | master |
 
 
 - Major Release frequency: ~3 weeks
