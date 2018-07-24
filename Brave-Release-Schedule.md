@@ -68,7 +68,6 @@
 - CI will eventually do builds for Dev channel once a day if there are changes.
 - Updates will be released twice a week or as requested.
 - `x` in the version above will increase for each build.
-- `x` is equal to 0 on the first day a version branch appears.
 - Branches are created from master on the dates specified.
 
 ## Nightly channel:
@@ -76,3 +75,4 @@
 - CI will eventually do builds for Dev channel once a day if there are changes.
 - No updates will be made for Nightly builds.
 - See the chart at the top for the version number for Nightly builds.
+- With a version such as 0.60.x, the `x` is equal to 0 when dev-channel gets the previous 0.59.y version.
