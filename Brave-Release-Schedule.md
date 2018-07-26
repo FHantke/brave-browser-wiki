@@ -39,10 +39,10 @@
 
 | Version | Chromium | Date               | Comments                                  |
 | ------- | ---------|--------------------|-------------------------------------------|
-| 0.52.x  |    68    | July 24, 2018      |
-| 0.53.x  |    69    | August 14, 2018    |
-| 0.54.x  |    69    | September 4, 2018  |
-| 0.55.x  |    70    | September 24, 2018 |
+| 0.52.x  |    68    | July 24, 2018      | Not likely to ship on beta channel
+| 0.53.x  |    69    | August 14, 2018    | Not likely to ship on beta channel
+| 0.54.x  |    69    | September 4, 2018  | Possible to ship on beta channel
+| 0.55.x  |    70    | September 24, 2018 | Likely to ship on beta channel
 | 0.56.x  |    70    | October 16, 2018   |
 | 0.57.x  |    71    | November 6, 2018   |
 | 0.58.x  |    71    | December 4, 2018   |
@@ -69,7 +69,8 @@
 | 0.58.x  |    71           | November 6, 2018   |
 | 0.59.x  |    72           | December 4, 2018   |
 | 0.60.x  |    72           | January 15, 2019   |
- 
+
+- This channel will sometimes get merges from master to speed up the delivery of features. 
 - Chromium versions are targets and may not be ready in time for the dates.  If a Chromium upgrade is not ready in time for a branch date, the branch still happens,  but the Chromium upgrade itself will be uplifted onto the Beta channel.
 - CI will eventually do builds for Dev channel once a day if there are changes or as requested.
 - Updates will be released twice a week or as requested.
