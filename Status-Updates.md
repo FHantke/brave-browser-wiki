@@ -82,6 +82,7 @@
 - [x] Windows stub installer from Omaha server
 - [x] Regional ad-block
 - [x] brave:// protocol support
+- [x] Get automated WebUI tests running on Travis
 
 
 ### Milestone 4: Wanted for 1.0 (August - September first week)
@@ -96,7 +97,7 @@
 - [ ] Chromium 69 rebase
 - [ ] Get update plan from muon and execute it
 - [ ] More UI customizations (Pete)
-- [ ] Get automated tests running on Travis
+- [ ] Get automated C++ tests running on Travis
 - [ ] Verify no calls are made out to Google (pj)
 
 ### Unlikely stretch goals (Can happen sometimes after September)
