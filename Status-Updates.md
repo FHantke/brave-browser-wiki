@@ -52,29 +52,17 @@
 
 ### Milestone 3: Getting to 1.0 (June-July)
 
-- [ ] Make extensions.brave.com store (Ailin)
 - [x] Import from browser-laptop based Brave (Garrett in-progress)
-- [ ] More permissions
-- [ ] Restyling bookmarks, history, preferences (Cezar)
-- [ ] Sync (Alexey in-progress)
 - [x] Widevine
 - [x] Jumbo UI on Windows (Pete)
-- [ ] Background tabs not having border
-- [ ] Bookmarks star button on the left
 - [x] Linux deb and rpm signing.
 - [x] Native-Ledger integration into brave-core
-- [ ] Rewards UI integration into brave-core (Nejc)
-- [ ] Rewards hooking up into delegates and observers
-- [ ] Hide settings which are not applicable, add Brave specific needed settings.
-- [ ] Allow a different private search engine to tie into private newtab UI (Simon)
+- [x] Rewards hooking up into delegates and observers
 - [x] Stats when you click on a number in brave shields panel (Cezar)
-- [ ] Manage script should not show enforced by extension
 - [x] update ping stats
 - [x] Crash reporting
 - [x] Local welcome page w/ placeholder
 - [x] Local welcome page UI impl
-- [ ] Referral promo (& Dow Jones)
-- [ ] UGP
 - [x] Chromium 68 rebase
 - [x] Fix any remaining chromium branding things [here](https://github.com/brave/brave-browser/issues/212).  (Jocelyn, in progress)
 - [x] CI for builds using buildbot
@@ -85,7 +73,7 @@
 - [x] Get automated WebUI tests running on Travis
 
 
-### Milestone 4: Wanted for 1.0 (August - September first week)
+### Milestone 4: Wanted for 1.0 (August - September)
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
@@ -99,6 +87,19 @@
 - [ ] More UI customizations (Pete)
 - [ ] Get automated C++ tests running on Travis
 - [ ] Verify no calls are made out to Google (pj)
+- [ ] Referral promo (& Dow Jones)
+- [ ] UGP
+- [ ] Make extensions.brave.com store (Ailin)
+- [ ] Background tabs not having border
+- [ ] Bookmarks star button on the left
+- [ ] Rewards UI integration into brave-core (Nejc)
+- [ ] Hide settings which are not applicable, add Brave specific needed settings.
+- [ ] Allow a different private search engine to tie into private newtab UI (Simon)
+- [ ] Manage script should not show enforced by extension
+- [ ] More permissions
+- [ ] Restyling bookmarks, history, preferences (Cezar)
+- [ ] Sync (Alexey in-progress)
+
 
 ### Unlikely stretch goals (Can happen sometimes after September)
 
