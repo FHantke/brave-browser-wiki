@@ -50,7 +50,7 @@
 - [x] Get proper Debug builds working
 - [x] Newtab private search engine UI
 
-### Milestone 3: Getting to 1.0 (June-July)
+### Milestone 3: Getting to Releasable builds (June-July)
 
 - [x] Import from browser-laptop based Brave (Garrett in-progress)
 - [x] Widevine
@@ -73,7 +73,7 @@
 - [x] Get automated WebUI tests running on Travis
 
 
-### Milestone 4: Wanted for 1.0 (August - September)
+### Milestone 4: Releasable builds (August - September)
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
