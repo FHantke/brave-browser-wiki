@@ -50,7 +50,7 @@
 - [x] Get proper Debug builds working
 - [x] Newtab private search engine UI
 
-### Milestone 3: Getting to Releasable builds (June-July)
+### Milestone 3: Unadvertised Dev channel builds (June-July)
 
 - [x] Import from browser-laptop based Brave (Garrett in-progress)
 - [x] Widevine
