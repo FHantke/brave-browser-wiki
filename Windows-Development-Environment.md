@@ -36,6 +36,10 @@ Install the latest Python 2.7 release from https://www.python.org/downloads/wind
 
 Now you are ready to follow the next step of the build instructions in the [[wiki|Home]].
 
+# Running Brave
+
+It's always best to run Brave from a standard `cmd.exe` shell or via Windows Explorer. There are instances where debug builds of Brave attempt to log to stderr, which will fail and potentially result in unexpected crashes in non-standard shells (e.g., Cygwin, Git for Windows, etc.)
+
 # Troubleshooting
 
 The upstream documentation for [Checking out and Building Chromium on Windows](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md) have a lot of useful information on configuring Windows, resolving common problems, speeding up builds, etc.
