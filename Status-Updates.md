@@ -101,7 +101,7 @@
 - [ ] Sync (Alexey in-progress)
 
 
-### Unlikely stretch goals (Can happen sometimes after September)
+### Unlikely stretch goals (Can happen sometimes after October)
 
 - [ ] 2-way wallet
 - [ ] Private tabs
