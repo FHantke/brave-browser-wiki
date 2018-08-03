@@ -28,7 +28,7 @@
 - [x] Extension localization tooling
 - [x] Canvas / WebGL Fingerprinting protection
 
-### Milestone 2: Builds with updates (March-May)
+### Milestone 2: Builds with updates (March 2018 - May 2018)
 
 - [x] Audio / WebRTC fingerprinting protection
 - [x] Third party fingerprinting protection
@@ -50,7 +50,7 @@
 - [x] Get proper Debug builds working
 - [x] Newtab private search engine UI
 
-### Milestone 3: Unadvertised Dev channel builds (June-July)
+### Milestone 3: Unadvertised Dev channel builds (June 2018 - July 2018)
 
 - [x] Import from browser-laptop based Brave (Garrett in-progress)
 - [x] Widevine
@@ -73,7 +73,7 @@
 - [x] Get automated WebUI tests running on Travis
 
 
-### Milestone 4: Releasable builds (August - September)
+### Milestone 4: Releasable builds (August 2018 - September 2018)
 
 - [ ] Session windows (Brian Johnson)
 - [ ] Tor private windows (Taylor Campbell)
