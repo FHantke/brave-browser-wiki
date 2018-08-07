@@ -79,7 +79,7 @@
 - [ ] Tor private windows (Taylor Campbell)
 - [ ] Webtorrent (Jocelyn)
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
-- [ ] Autoplay (Anthony in-progress)
+- [x] Autoplay
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Uphold widget
 - [ ] Chromium 69 rebase
