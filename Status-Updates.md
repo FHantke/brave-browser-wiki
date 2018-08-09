@@ -84,9 +84,11 @@
 - [ ] Webtorrent (Jocelyn)
 - [ ] Referral promo (Emerick)
 - [ ] Bookmarks star button on the left (Pete)
+- [ ] Colors and tab shape (Pete)
 - [ ] Extensions installable from CWS, updatable (bbondy)
 - [ ] Dev channel dark theme (bbondy)
 - [ ] Chromium 70 rebase (bbondy)
+- [ ] Moving BAT & Brave icon into URL bar (Pete)
 
 ### Milestone 5: Beta channel Releasable builds for 0.55.x (September 2018)
 
@@ -101,7 +103,6 @@
 - [ ] More permissions (Pete)
 - [ ] Tab bar changes (Pete)
 - [ ] URL bar centered changes (Pete)
-- [ ] Moving BAT & Brave icon into URL bar (Pete)
 - [ ] Get automated C++ tests running on Travis
 
 ### Milestone 6: Beta channel Releasable builds for 0.55.x (October 2018 - November 2018)
