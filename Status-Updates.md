@@ -90,19 +90,19 @@
 
 ### Milestone 5: Beta channel Releasable builds for 0.55.x (September 2018)
 
-- [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
-- [ ] Uphold widget
-- [ ] More UI customizations (Pete)
-- [ ] Get automated C++ tests running on Travis
+- [ ] Uphold widget (Nejc)
 - [ ] Verify no calls are made out to Google (pj)
 - [ ] Make extensions.brave.com store (Ailin)
-- [ ] Background tabs not having border
-- [ ] Hide settings which are not applicable, add Brave specific needed settings.
+- [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
-- [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
-- [ ] Sync (Alexey in-progress)
+- [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
+- [ ] More permissions (Pete)
+- [ ] Tab bar changes (Pete)
+- [ ] URL bar centered changes (Pete)
+- [ ] Moving BAT & Brave icon into URL bar (Pete)
+- [ ] Get automated C++ tests running on Travis
 
 ### Milestone 6: Beta channel Releasable builds for 0.55.x (October 2018 - November 2018)
 
