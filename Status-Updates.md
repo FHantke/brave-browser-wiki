@@ -88,7 +88,7 @@
 - [ ] Get automated C++ tests running on Travis
 - [ ] Verify no calls are made out to Google (pj)
 - [ ] Referral promo (& Dow Jones)
-- [ ] UGP
+- [ ] UGP (Nejc)
 - [ ] Make extensions.brave.com store (Ailin)
 - [ ] Background tabs not having border
 - [ ] Bookmarks star button on the left
@@ -103,7 +103,7 @@
 
 ### Unlikely stretch goals (Can happen sometimes after October)
 
-- [ ] 2-way wallet
+- [ ] 2-way wallet (Nejc)
 - [ ] Private tabs
 - [ ] More UI customizations
 - [ ] Tab pages
