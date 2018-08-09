@@ -72,38 +72,41 @@
 - [x] brave:// protocol support
 - [x] Get automated WebUI tests running on Travis
 
-
-### Milestone 4: Releasable builds (August 2018 - September 2018)
-
-- [ ] Session windows (Brian Johnson)
+### Milestone 4: Dev channel Releasable builds for 0.55.x (August 2018)
+- [x] Chromium 69 rebase
+- [x] Autoplay
+- [x] Rewards UI integration into brave-core (Nejc)
+- [x] UGP (Nejc)
+- [ ] Cosmetic filter blocking (Snuupy)
+- [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell)
 - [ ] Webtorrent (Jocelyn)
+- [ ] Referral promo & Dow Jones (emerick)
+- [ ] Bookmarks star button on the left
+- [ ] Extensions installable from CWS, updatable
+- [ ] Dev channel dark theme
+
+### Milestone 4: Beta channel Releasable builds for 0.55.x (September 2018)
+
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
-- [x] Autoplay
-- [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Uphold widget
-- [ ] Chromium 69 rebase
-- [ ] Get update plan from muon and execute it
 - [ ] More UI customizations (Pete)
 - [ ] Get automated C++ tests running on Travis
 - [ ] Verify no calls are made out to Google (pj)
-- [ ] Referral promo (& Dow Jones)
-- [ ] UGP (Nejc)
 - [ ] Make extensions.brave.com store (Ailin)
 - [ ] Background tabs not having border
-- [ ] Bookmarks star button on the left
-- [ ] Rewards UI integration into brave-core (Nejc)
 - [ ] Hide settings which are not applicable, add Brave specific needed settings.
 - [ ] Allow a different private search engine to tie into private newtab UI (Simon)
-- [ ] Manage script should not show enforced by extension
 - [ ] More permissions
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey in-progress)
+- [ ] 2-way wallet? (Nejc)
 
+### Milestone 5: Beta channel Releasable builds for 0.55.x (October - November 2018)
+- [ ] Ads
 
 ### Unlikely stretch goals (Can happen sometimes after October)
 
-- [ ] 2-way wallet (Nejc)
 - [ ] Private tabs
 - [ ] More UI customizations
 - [ ] Tab pages
@@ -111,3 +114,4 @@
 - [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
 - [ ] Clear private data on shutdown
+- [ ] Session windows (Brian Johnson)
