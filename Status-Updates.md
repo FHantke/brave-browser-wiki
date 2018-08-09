@@ -80,13 +80,13 @@
 - [x] UGP (Nejc)
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Manage script should not show enforced by extension
-- [ ] Tor private windows (Taylor Campbell)
+- [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
-- [ ] Referral promo (emerick)
-- [ ] Bookmarks star button on the left
-- [ ] Extensions installable from CWS, updatable
-- [ ] Dev channel dark theme
-- [ ] Chromium 70 rebase
+- [ ] Referral promo (Emerick)
+- [ ] Bookmarks star button on the left (Pete)
+- [ ] Extensions installable from CWS, updatable (bbondy)
+- [ ] Dev channel dark theme (bbondy)
+- [ ] Chromium 70 rebase (bbondy)
 
 ### Milestone 5: Beta channel Releasable builds for 0.55.x (September 2018)
 
