@@ -86,6 +86,7 @@
 - [ ] Bookmarks star button on the left
 - [ ] Extensions installable from CWS, updatable
 - [ ] Dev channel dark theme
+- [ ] Chromium 70 rebase
 
 ### Milestone 5: Beta channel Releasable builds for 0.55.x (September 2018)
 
