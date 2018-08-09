@@ -86,7 +86,7 @@
 - [ ] Extensions installable from CWS, updatable
 - [ ] Dev channel dark theme
 
-### Milestone 4: Beta channel Releasable builds for 0.55.x (September 2018)
+### Milestone 5: Beta channel Releasable builds for 0.55.x (September 2018)
 
 - [ ] Refine tab shape to be better (Waiting on design from Brad's team, Pete to do work for it)
 - [ ] Uphold widget
@@ -102,10 +102,10 @@
 - [ ] Sync (Alexey in-progress)
 - [ ] 2-way wallet? (Nejc)
 
-### Milestone 5: Beta channel Releasable builds for 0.55.x (October - November 2018)
+### Milestone 6: Beta channel Releasable builds for 0.55.x (October - November 2018)
 - [ ] Ads
 
-### Unlikely stretch goals (Can happen sometimes after October)
+### Unlikely stretch goals (Can happen sometimes after November)
 
 - [ ] Private tabs
 - [ ] More UI customizations
