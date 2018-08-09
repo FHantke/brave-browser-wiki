@@ -73,6 +73,7 @@
 - [x] Get automated WebUI tests running on Travis
 
 ### Milestone 4: Dev channel Releasable builds for 0.55.x (August 2018)
+
 - [x] Chromium 69 rebase
 - [x] Autoplay
 - [x] Rewards UI integration into brave-core (Nejc)
@@ -81,7 +82,7 @@
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell)
 - [ ] Webtorrent (Jocelyn)
-- [ ] Referral promo & Dow Jones (emerick)
+- [ ] Referral promo (emerick)
 - [ ] Bookmarks star button on the left
 - [ ] Extensions installable from CWS, updatable
 - [ ] Dev channel dark theme
@@ -102,10 +103,11 @@
 - [ ] Sync (Alexey in-progress)
 - [ ] 2-way wallet? (Nejc)
 
-### Milestone 6: Beta channel Releasable builds for 0.55.x (October - November 2018)
+### Milestone 6: Beta channel Releasable builds for 0.55.x (October 2018 - November 2018)
+
 - [ ] Ads
 
-### Unlikely stretch goals (Can happen sometimes after November)
+### Unlikely stretch goals (Can happen sometimes after November 2018)
 
 - [ ] Private tabs
 - [ ] More UI customizations
