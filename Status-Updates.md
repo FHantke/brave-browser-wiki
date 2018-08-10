@@ -110,7 +110,7 @@
 - [ ] Ads
 - [ ] More UI work
 
-### Unlikely stretch goals (Can happen sometimes after November 2018)
+### Beyond Milestone 6
 
 - [ ] Private tabs
 - [ ] More UI customizations
