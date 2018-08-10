@@ -79,7 +79,7 @@
 - [x] Rewards UI integration into brave-core (Nejc)
 - [x] UGP (Nejc)
 - [x] Allow a different private search engine to tie into private newtab UI
-- [ ] Cosmetic filter blocking (Snuupy)
+- [x] Cosmetic filter blocking (Snuupy)
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
