@@ -78,6 +78,7 @@
 - [x] Autoplay
 - [x] Rewards UI integration into brave-core (Nejc)
 - [x] UGP (Nejc)
+- [x] Allow a different private search engine to tie into private newtab UI
 - [ ] Cosmetic filter blocking (Snuupy)
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
@@ -96,7 +97,6 @@
 - [ ] Verify no calls are made out to Google (pj)
 - [ ] Make extensions.brave.com store (Ailin)
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
-- [ ] Allow a different private search engine to tie into private newtab UI (Simon)
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
