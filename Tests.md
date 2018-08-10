@@ -85,6 +85,15 @@ SUCCESS: all tests passed.
 
 `npm run test -- brave_browser_tests Release`
 
+# Disabling tests
+
+You can disable a flacky test by prefixing it with `DISABLED_`.  Whenever doing this though, make sure to post an issue to re-enable it and assign it to the owner of the test. 
+
+```
+- TEST(ExampleTest, CrashingTest) {
++ TEST(ExampleTest, DISABLED_CrashingTest) {
+```
+
 # Other targets
 
 Other targets can be passed to `npm run test -- <suite>` such as running Chrome's tests.
