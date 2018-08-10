@@ -108,6 +108,7 @@
 ### Milestone 6: Beta channel Releasable builds for 0.56.x (October 2018 - November 2018)
 
 - [ ] Ads
+- [ ] More UI work
 
 ### Unlikely stretch goals (Can happen sometimes after November 2018)
 
