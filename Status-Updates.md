@@ -105,7 +105,7 @@
 - [ ] URL bar centered changes (Pete)
 - [ ] Get automated C++ tests running on Travis
 
-### Milestone 6: Beta channel Releasable builds for 0.55.x (October 2018 - November 2018)
+### Milestone 6: Beta channel Releasable builds for 0.56.x (October 2018 - November 2018)
 
 - [ ] Ads
 
