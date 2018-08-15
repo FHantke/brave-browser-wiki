@@ -80,6 +80,7 @@
 - [x] UGP (Nejc)
 - [x] Allow a different private search engine to tie into private newtab UI
 - [x] Cosmetic filter blocking (Snuupy)
+- [x] Dev channel dark theme (bbondy)
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
@@ -87,7 +88,6 @@
 - [ ] Bookmarks star button on the left (Pete)
 - [ ] Colors and tab shape (Pete)
 - [ ] Extensions installable from CWS, updatable (bbondy)
-- [ ] Dev channel dark theme (bbondy)
 - [ ] Chromium 70 rebase (bbondy)
 - [ ] Moving BAT & Brave icon into URL bar (Pete)
 
