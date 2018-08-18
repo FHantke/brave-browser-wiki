@@ -79,11 +79,11 @@
 - [x] Allow a different private search engine to tie into private newtab UI
 - [x] Cosmetic filter blocking (Snuupy)
 - [x] Dev channel dark theme (bbondy)
+- [x] Bookmarks star button on the left (Pete)
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
 - [ ] Referral promo (Emerick)
-- [ ] Bookmarks star button on the left (Pete)
 - [ ] Colors and tab shape (Pete)
 - [ ] Extensions installable from CWS, updatable (bbondy)
 - [ ] Chromium 70 rebase (bbondy)
