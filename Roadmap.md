@@ -1,5 +1,3 @@
-# Status Update
-
 ## Milestones
 
 ### Milestone 1: Open sourceable (December 2017 - February 2018)
