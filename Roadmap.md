@@ -89,7 +89,7 @@
 - [ ] Chromium 70 rebase (bbondy)
 - [ ] Moving BAT & Brave icon into URL bar (Pete)
 
-### Milestone 5: Beta channel Releasable builds for 0.55.x -- released on brave.com replacing browser-laptop (September 2018)
+### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
 
 - [ ] Uphold widget (Nejc)
 - [ ] Verify no calls are made out to Google (pj)
@@ -103,16 +103,16 @@
 - [ ] URL bar centered changes (Pete)
 - [ ] Get automated C++ tests running on Travis
 
-### Milestone 6: Beta channel Releasable builds for 0.56.x -- candidate to rename to 1.0 (October 2018 - November 2018)
+### Milestone 6: Releasable builds for 0.56.x -- candidate to rename to 1.0 (November)
 
 - [ ] Ads
 - [ ] More UI work
 
-### Beyond Milestone 6
+### Beyond release Milestone 6
 
-- [ ] Private tabs
+- [ ] Private tabs instead of just private windows
 - [ ] More UI customizations
-- [ ] Tab pages
+- [ ] Tab pages?
 - [ ] Tab previews
 - [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
