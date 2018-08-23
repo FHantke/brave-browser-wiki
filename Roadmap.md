@@ -77,9 +77,9 @@
 - [x] Rewards UI integration into brave-core (Nejc)
 - [x] UGP (Nejc)
 - [x] Allow a different private search engine to tie into private newtab UI
-- [x] Cosmetic filter blocking (Snuupy)
-- [x] Dev channel dark theme (bbondy)
-- [x] Bookmarks star button on the left (Pete)
+- [x] Cosmetic filter blocking
+- [x] Dev channel dark theme
+- [x] Bookmarks star button on the left
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
@@ -107,6 +107,7 @@
 
 - [ ] Ads
 - [ ] More UI work
+- [ ] Tipping and donations
 
 ### Beyond release Milestone 6
 
