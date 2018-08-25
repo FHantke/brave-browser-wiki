@@ -80,13 +80,13 @@
 - [x] Cosmetic filter blocking
 - [x] Dev channel dark theme
 - [x] Bookmarks star button on the left
+- [x] Chromium 70 rebase (bbondy)
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
 - [ ] Referral promo (Emerick)
 - [ ] Colors and tab shape (Pete)
 - [ ] Extensions installable from CWS, updatable (bbondy)
-- [ ] Chromium 70 rebase (bbondy)
 - [ ] Moving BAT & Brave icon into URL bar (Pete)
 
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
