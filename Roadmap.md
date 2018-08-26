@@ -81,6 +81,7 @@
 - [x] Dev channel dark theme
 - [x] Bookmarks star button on the left
 - [x] Chromium 70 rebase (bbondy)
+- [x] Verify no calls are made out to Google
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Webtorrent (Jocelyn)
@@ -92,7 +93,6 @@
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
 
 - [ ] Uphold widget (Nejc)
-- [ ] Verify no calls are made out to Google (pj)
 - [ ] Make extensions.brave.com store (Ailin)
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
 - [ ] Restyling bookmarks, history, preferences (Cezar)
