@@ -7,7 +7,7 @@ In a new terminal, change your current working directory to `src/brave/vendor/br
 Back in your original terminal, start Brave without loading the extension:
 
 ```
-npm start --disable_brave_extension
+npm start -- --disable_brave_extension
 ```
 
 Then navigate to `chrome://extensions/` and turn on the checkbox for `Developer mode`.
