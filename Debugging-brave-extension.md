@@ -16,4 +16,4 @@ Click on `Load unpacked extension...` and choose the directory `src/brave/vendor
 
 You'll be able to right click on the browser action icon and inspect to open developer tools for the browser action context.  You can also go to `chrome://extensions/` and open developer tools for the background page.
 
-brave-extension can also be loaded without the `--disable_brave_extension`, but is not officially supported. Note that it will not be able to run e2e tests if you choose to go this route.
+brave-extension can also be loaded without the `--disable_brave_extension`, but is not officially supported.
