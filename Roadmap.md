@@ -84,7 +84,7 @@
 - [x] Verify no calls are made out to Google
 - [x] Extensions installable from CWS, updatable
 - [x] Moving BAT & Brave icon into URL bar
-- [x] Colors
+- [x] Colors and tab shape v1
 - [x] Webtorrent
 
 
@@ -93,7 +93,7 @@
 - [ ] Manage script should not show enforced by extension
 - [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Referral promo (Emerick)
-- [ ] tab shape (Pete)
+- [ ] Colors and tab shape v2
 - [ ] Uphold widget (Nejc)
 - [ ] Make extensions.brave.com store
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
