@@ -75,23 +75,25 @@
 - [x] Chromium 69 rebase
 - [x] Autoplay
 - [x] Rewards UI integration into brave-core (Nejc)
-- [x] UGP (Nejc)
+- [x] UGP
 - [x] Allow a different private search engine to tie into private newtab UI
 - [x] Cosmetic filter blocking
 - [x] Dev channel dark theme
 - [x] Bookmarks star button on the left
-- [x] Chromium 70 rebase (bbondy)
+- [x] Chromium 70 rebase
 - [x] Verify no calls are made out to Google
-- [ ] Manage script should not show enforced by extension
-- [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
-- [ ] Webtorrent (Jocelyn)
-- [ ] Referral promo (Emerick)
-- [ ] Colors and tab shape (Pete)
-- [ ] Extensions installable from CWS, updatable (bbondy)
-- [ ] Moving BAT & Brave icon into URL bar (Pete)
+- [x] Extensions installable from CWS, updatable
+- [x] Moving BAT & Brave icon into URL bar
+- [x] Colors
+- [x] Webtorrent
+
 
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
 
+- [ ] Manage script should not show enforced by extension
+- [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
+- [ ] Referral promo (Emerick)
+- [ ] tab shape (Pete)
 - [ ] Uphold widget (Nejc)
 - [ ] Make extensions.brave.com store (Ailin)
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
