@@ -20,10 +20,10 @@
 
 | Version | Chromium | Date               | Comments                                  |
 | ------- | ---------|--------------------|-------------------------------------------|
-| 0.52.x  |    68    | August 14, 2018    | Will not ship on release channel
-| 0.53.x  |    69    | September 4, 2018  | Not likely to ship on release channel
-| 0.54.x  |    69    | September 24, 2018 | Not likely to ship on release channel
-| 0.55.x  |    70    | October 16, 2018   | Likely to be the first release to ship
+| 0.52.x  |    68    | August 14, 2018    | Will not ship on Release channel
+| 0.53.x  |    69    | September 4, 2018  | Will not ship on Release channel
+| 0.54.x  |    69    | September 24, 2018 | Will not ship on Release channel
+| 0.55.x  |    70    | October 16, 2018   | Will ship on Release channel
 | 0.56.x  |    70    | November 6, 2018   |
 | 0.57.x  |    71    | December 4, 2018   |
 | 0.58.x  |    71    | December 20, 2018  |
@@ -39,10 +39,10 @@
 
 | Version | Chromium | Date               | Comments                                  |
 | ------- | ---------|--------------------|-------------------------------------------|
-| 0.52.x  |    68    | July 24, 2018      | Not likely to ship on beta channel
-| 0.53.x  |    69    | August 14, 2018    | Not likely to ship on beta channel
-| 0.54.x  |    69    | September 4, 2018  | Possible to ship on beta channel
-| 0.55.x  |    70    | September 24, 2018 | Likely to ship on beta channel
+| 0.52.x  |    68    | July 24, 2018      | Will not ship on Beta channel
+| 0.53.x  |    69    | August 14, 2018    | Will not ship on Beta channel
+| 0.54.x  |    69    | September 4, 2018  | Will not ship on Beta channel
+| 0.55.x  |    70    | September 24, 2018 | Will ship on Beta channel
 | 0.56.x  |    70    | October 16, 2018   |
 | 0.57.x  |    71    | November 6, 2018   |
 | 0.58.x  |    71    | December 4, 2018   |
