@@ -95,7 +95,7 @@
 - [ ] Referral promo (Emerick)
 - [ ] tab shape (Pete)
 - [ ] Uphold widget (Nejc)
-- [ ] Make extensions.brave.com store (Ailin)
+- [ ] Make extensions.brave.com store
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey, Cezar)
