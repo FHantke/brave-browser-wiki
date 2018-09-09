@@ -95,12 +95,9 @@
 - [ ] Referral promo (Emerick)
 - [ ] Colors and tab shape v2
 - [ ] Uphold widget (Nejc)
-- [ ] Make extensions.brave.com store
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
-- [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
-- [ ] More permissions (Pete)
 - [ ] Tab bar changes (Pete)
 - [ ] URL bar centered changes (Pete)
 - [ ] Get automated C++ tests running on Travis
@@ -110,6 +107,8 @@
 - [ ] Ads
 - [ ] More UI work
 - [ ] Tipping and donations
+- [ ] Make extensions.brave.com store
+- [ ] Restyling bookmarks, history, preferences (Cezar)
 
 ### Beyond release Milestone 6
 
