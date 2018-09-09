@@ -1,4 +1,4 @@
 1. After we get to 1.0, uplifting to Dev channel should be rare, uplifting to Beta channel should be extremely rare, hotfixes to release should be reserved for only chemspill type of situations.
 2. All issues must be assigned a milestone.
 To ensure this, add the [`no:milestone` search option when viewing open issues](https://github.com/brave/brave-browser/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+no%3Amilestone).  `1.x milestone` for things that have not been prioritized for a release yet, but that we could see as possibly being prioritized in the near future.  `2.x milestone` for things that are further out.  Use a particular release milestone otherwise to target that release.
-
+3. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it.
