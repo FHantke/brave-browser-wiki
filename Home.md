@@ -43,13 +43,6 @@ npm run build Release
 
 Running a release build with `npm run build Release` can be very slow and use a lot of RAM especially on Linux with the Gold LLVM plugin.  To speed things up we recommend doing a build with debug symbols and without being an official build.  Instead you'd run `npm run build Release --debug_build=true --official_build=false`.
 
-For _incremental_ builds only, pass `--no_branding_update` to skip the branding update and build fewer files. If you see the following error, it means the branding update is required (i.e., you must not pass the flag to skip it):
-
-```
-ninja: error: '../../components/components_brave_strings.grd', needed by
-'obj/components/strings/components_chromium_strings_grit.inputdeps.stamp', missing and no known rule to make it
-```
-
 You may also want to try [[using sccache|Using sccache]].
 
 ## Run Brave
