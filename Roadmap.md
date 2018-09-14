@@ -94,6 +94,7 @@
 - [x] Tor private windows
 - [x] Tab shape
 - [x] Hide settings which are not applicable
+- [ ] Widevine support
 - [ ] Default Brave shield preferences
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
