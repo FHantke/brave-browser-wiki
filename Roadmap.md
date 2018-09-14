@@ -90,7 +90,7 @@
 
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
 
-- [x] Tor private windows (Taylor Campbell, Anthony, Emerick)
+- [x] Tor private windows
 - [x] Tab shape
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
