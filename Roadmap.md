@@ -92,12 +92,12 @@
 
 - [x] Tor private windows
 - [x] Tab shape
+- [x] Hide settings which are not applicable
 - [ ] Default Brave shield preferences
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
 - [ ] Colors v2
 - [ ] Uphold widget (Nejc)
-- [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
 - [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
 - [ ] URL bar centered changes (Pete)
