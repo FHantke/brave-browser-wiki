@@ -90,15 +90,15 @@
 
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
 
+- [x] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Manage script should not show enforced by extension
-- [ ] Tor private windows (Taylor Campbell, Anthony, Emerick)
 - [ ] Referral promo (Emerick)
 - [ ] Colors and tab shape v2
+- [ ] Tab bar changes (Pete)
 - [ ] Uphold widget (Nejc)
 - [ ] Hide settings which are not applicable, add Brave specific needed settings. (Pete or Cezar)
 - [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
-- [ ] Tab bar changes (Pete)
 - [ ] URL bar centered changes (Pete)
 - [ ] Get automated C++ tests running on Travis
 
