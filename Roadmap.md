@@ -86,6 +86,7 @@
 - [x] Moving BAT & Brave icon into URL bar
 - [x] Colors and tab shape v1
 - [x] Webtorrent
+- [x] go-update component update server
 
 
 ### Milestone 5: Release channel Releasable builds for 0.55.x -- released on brave.com (September-October 2018)
