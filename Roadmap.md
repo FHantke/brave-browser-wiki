@@ -92,6 +92,7 @@
 
 - [x] Tor private windows
 - [x] Tab shape
+- [ ] Default Brave shield preferences
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
 - [ ] Colors v2
