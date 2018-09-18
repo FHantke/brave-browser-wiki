@@ -4,6 +4,7 @@ You will need the following prerequisites to build Brave on macOS:
 
 - Xcode
     - You can install Xcode through the App Store, or by running `xcode-select --install`.
+    - There are additional details in the chromium build system requirements. Do not follow any of the instructions after system requirements https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements
 - NodeJS >= 7.x
 - npm (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable))
 - Git >= 2.17.0
