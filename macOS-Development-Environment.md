@@ -19,3 +19,10 @@ As of Chromium 62, the 10.12 SDK is required for building. If you are using macO
 `git clone git@github.com:phracker/MacOSX-SDKs.git`
 
 And then before building make a symbolic link to MacOSX10.12.sdk in `Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs`
+
+For example:
+```
+cd ~/Documents
+git clone git@github.com:phracker/MacOSX-SDKs.git
+sudo ln -s ~/Documents/MacOSX-SDKs/MacOSX10.12.sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+```
