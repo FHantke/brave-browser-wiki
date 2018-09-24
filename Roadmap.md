@@ -94,15 +94,15 @@
 - [x] Tor private windows
 - [x] Tab shape
 - [x] Hide settings which are not applicable
-- [ ] Widevine support
+- [x] Colors v2
+- [x] URL bar centered changes (Pete)
+- [ ] Fix Widevine
 - [ ] Default Brave shield preferences
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
-- [ ] Colors v2
 - [ ] Uphold widget (Nejc)
 - [ ] Sync (Alexey, Cezar)
 - [ ] 2-way wallet? (Nejc)
-- [ ] URL bar centered changes (Pete)
 - [ ] Get automated C++ tests running on Travis
 
 ### Milestone 6: Releasable builds for 0.56.x -- candidate to rename to 1.0 (November)
