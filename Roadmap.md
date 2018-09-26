@@ -96,7 +96,7 @@
 - [x] Hide settings which are not applicable
 - [x] Colors v2
 - [x] URL bar centered changes (Pete)
-- [ ] Fix Widevine
+- [x] Fix Widevine
 - [ ] Default Brave shield preferences
 - [ ] Manage script should not show enforced by extension
 - [ ] Referral promo (Emerick)
