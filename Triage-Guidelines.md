@@ -1,4 +1,4 @@
-# Uplifting
+# Triage
 
 1. After we get to 1.0, uplifting to Dev channel should be rare, uplifting to Beta channel should be extremely rare, hotfixes to release should be reserved for only chemspill type of situations.
 2. All issues must be assigned a milestone.
