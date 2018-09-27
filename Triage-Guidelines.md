@@ -1,6 +1,6 @@
 # General guidelines
 
-1. All work has an issue
+1. All work has an issue.
 2. All issues must be assigned a milestone.
 3. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it.
 4. High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
