@@ -20,6 +20,7 @@ To ensure this, add the [`no:milestone` search option when viewing open issues](
 # QA triage
 
 - Never remove `QA/Yes` and `QA/No` labels
+- Things that should get a `QA/No` label: Things that are internal or tooling related only, things that are impossible for QA to test, meta issues, things that are covered by something else fully with a test plan in the same milestone.
 - These labels are expected to be added when a PR is submitted, but it gets missed sometimes.
 - QA should block a release if there are any issues with neither of those tags using a search query similar to this one but with an appropriate milestone defined: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/No" -label:"QA/Yes"`.
 - QA should ping people as needed to make sure things have one of those labels.
