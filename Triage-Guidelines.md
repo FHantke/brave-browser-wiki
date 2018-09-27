@@ -16,4 +16,7 @@ To ensure this, add the [`no:milestone` search option when viewing open issues](
 - QA should block a release if there are any issues with neither of those tags using a search query similar to this one but with an appropriate milestone defined: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/No" -label:"QA/Yes"`.
 - QA should ping people as needed to make sure things have one of those labels.
 - Add labels for checked once an issue is checked on an OS.  If a certain OS is not needed then indicate it in a comment and mark it as checked too.
-- QA should use a search like this to find things that are not yet checked: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/QA Pass-Linux" -label:"QA Pass-macOS" -label:"QA Pass-Win64`
+- QA should use a search like this to find things that are not yet checked:
+  - Linux: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Linux"`
+  - macOS: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-macOS"`
+  - Windows: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Win64"`
