@@ -6,14 +6,14 @@ To ensure this, add the [`no:milestone` search option when viewing open issues](
 3. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it.
 4. We have weekly triage meetings to plan what will be in a particular milestone release.  All development work for a particular release should happen while that version is on master, and not while that version is on Dev channel, Beta channel, or Release channel.  Since we're on a time based schedule, nothing will be waiting very long anyway.
 5. High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
-6. All issues that are completed in a milestone should be marked with either `QA/No-QA-Needed` or `QA/Needed`. A link like [this](https://github.com/brave/brave-browser/issues?q=is%3Aissue+milestone%3A%22Releasable+builds+0.55.x%22+-label%3AQA%2FNeeded+-label%3AQA%2FNo-QA-Needed+is%3Aclosed) will show the list of issues in a milestone with neither label.
+6. All issues that are completed in a milestone should be marked with either `QA/No` or `QA/Yes`. A link like [this](https://github.com/brave/brave-browser/issues?q=is%3Aissue+milestone%3A%22Releasable+builds+0.55.x%22+-label%3AQA%2FYes+-label%3AQA%2FNo+is%3Aclosed) will show the list of issues in a milestone with neither label.
 
 
 # QA triage
 
-- Never remove `QA/Needed` and `QA/No-QA-Needed` labels
+- Never remove `QA/Yes` and `QA/No` labels
 - These labels are expected to be added when a PR is submitted, but it gets missed sometimes.
-- QA should block a release if there are any issues with neither of those tags using a search query similar to this one but with an appropriate milestone defined: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/No-QA-Needed" -label:"QA/Needed"`.
+- QA should block a release if there are any issues with neither of those tags using a search query similar to this one but with an appropriate milestone defined: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/No" -label:"QA/Yes"`.
 - QA should ping people as needed to make sure things have one of those labels.
 - Add labels for checked once an issue is checked on an OS.  If a certain OS is not needed then indicate it in a comment and mark it as checked too.
 - QA should use a search like this to find things that are not yet checked: `is:issue is:closed milestone:"Releasable builds 0.55.x"  -label:"QA/QA Pass-Linux" -label:"QA Pass-macOS" -label:"QA Pass-Win64`
