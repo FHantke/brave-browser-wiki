@@ -26,3 +26,38 @@ cd ~/Documents
 git clone git@github.com:phracker/MacOSX-SDKs.git
 sudo ln -s ~/Documents/MacOSX-SDKs/MacOSX10.12.sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
 ```
+
+If you have 64 <= chromium version <= 70, please just use Xcode 9(10.13 SDK) or you might encounter 
+```
+gen/components/autofill/content/common/autofill_agent.mojom-shared.h:394:16: error: too few arguments provided to function-like macro invocation
+  bool require() const {
+               ^
+../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/AssertMacros.h:1307:11: note: macro 'require' defined here
+                #define require(assertion, exceptionLabel)  __Require(assertion, exceptionLabel)
+                        ^
+In file included from ../../electron/brave/renderer/brave_content_renderer_client.cc:23:
+In file included from ../../components/autofill/content/renderer/autofill_agent.h:16:
+In file included from gen/components/autofill/content/common/autofill_agent.mojom.h:37:
+gen/components/autofill/content/common/autofill_agent.mojom-shared.h:394:15: error: expected ';' at end of declaration list
+  bool require() const {
+              ^
+              ;
+gen/components/autofill/content/common/autofill_agent.mojom-shared.h:391:9: error: member initializer 'data_' does not name a non-static data member or base class
+      : data_(data) {}
+        ^~~~~~~~~~~
+gen/components/autofill/content/common/autofill_agent.mojom-shared.h:393:34: error: use of undeclared identifier 'data_'
+  bool is_null() const { return !data_; }
+                                 ^
+4 errors generated.
+```
+And don't symlink 10.13 in xcode 10 because you will see
+```
+********************************************************************************
+ WARNING: The Mac OS X SDK is incompatible with the version of Xcode. To fix,
+          either upgrade Xcode to the latest version or install the Mac OS X
+          10.12 SDK. For more information, see https://crbug.com/620127.
+
+ Current SDK Version:   10.13
+ Current Xcode Version: 0100 (10A255)
+********************************************************************************
+```
