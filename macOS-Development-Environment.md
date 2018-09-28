@@ -50,7 +50,7 @@ gen/components/autofill/content/common/autofill_agent.mojom-shared.h:393:34: err
                                  ^
 4 errors generated.
 ```
-And don't symlink 10.13 in xcode 10 because you will see
+And don't symlink 10.13 SDK in Xcode 10 because you will see
 ```
 ********************************************************************************
  WARNING: The Mac OS X SDK is incompatible with the version of Xcode. To fix,
