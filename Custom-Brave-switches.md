@@ -6,3 +6,8 @@ In addition to supporting all Chromium command line switches, the following swit
 - `npm start --disable_pdfjs_extension`: Prevent installing the PDFJS extension
 
 > Note: If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+
+
+## Useful Chromium switches which must be passed to the binary
+
+- `--show-component-extension-options`
