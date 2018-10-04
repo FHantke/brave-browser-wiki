@@ -18,7 +18,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 
 ..TODO..
 
-## What Chrome features are removed for privacy/security reasons?
+## What Chromium features are removed for privacy/security reasons?
 
 For a partial list, see the comments in https://github.com/brave/brave-browser/issues/13.
 
