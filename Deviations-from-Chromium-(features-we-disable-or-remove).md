@@ -15,3 +15,13 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 ## What kind of patches are in place?
 
 ..TODO..
+
+## What Chrome features are removed for privacy/security reasons?
+
+For a partial list, see the comments in https://github.com/brave/brave-browser/issues/13.
+
+You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates, such as for PDFJS (which is our built-in PDF reader).
+
+Google translate is disabled as of this commit: https://github.com/brave/brave-core/commit/3351db79213b04d0879b9e284c4914c3da214a16
+
+Gaia (Google's sign-in code) is effectively disabled by setting the Gaia URL to an invalid endpoint: https://github.com/brave/brave-browser/issues/1312
