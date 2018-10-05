@@ -14,16 +14,31 @@ As part of the setup process, we also fetch our own code. The [`brave-core` repo
 ### Hooks are ran
 After the gclient sync runs and fetches all the code (including `brave-core`), the hooks are ran. One of the hooks that runs applies the patches ([which you can see here](https://github.com/brave/brave-core/tree/master/patches)) that are contained in `brave-core`. If you'd like to know more details about HOW the patching works, you can [take a peek at our patching wiki page](https://github.com/brave/brave-browser/wiki/Patching-Chromium)
 
-## What kind of patches are in place?
-
-..TODO..
 
 ## What Chromium features are removed for privacy/security reasons?
 
-For a partial list, see the comments in https://github.com/brave/brave-browser/issues/13.
+### Specific issues
+- Disabling domain service reliability: https://github.com/brave/brave-core/pull/246
+- Disable Chrome Google URL Tracker: https://github.com/brave/brave-core/pull/248
+- Disable google services in privacy settings: https://github.com/brave/brave-core/pull/244
+- Gaia URLs are set to `no-thanks.invalid` in brave-core: https://github.com/brave/brave-core/pull/512
+- Disable DNS prefetching: https://github.com/brave/brave-core/pull/340
+- Disable chrome.webstore.install for inline extensions: https://github.com/brave/brave-browser/issues/614
+- Disable background sync: https://github.com/brave/brave-browser/issues/515
+- Disable google accounts integration and chrome sync
+- SafeBrowsing requests are proxied https://github.com/brave/brave-core/pull/108
+
+### Comments
+Some of the above (along with other issues) were tracked in https://github.com/brave/brave-browser/issues/13.
 
 You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates, such as for PDFJS (which is our built-in PDF reader).
 
 Google translate is disabled as of this commit: https://github.com/brave/brave-core/commit/3351db79213b04d0879b9e284c4914c3da214a16
 
 Gaia (Google's sign-in code) is effectively disabled by setting the Gaia URL to an invalid endpoint: https://github.com/brave/brave-browser/issues/1312
+
+## How does Brave compare to `ungoogled-chromium`?
+Description of [`ungoogled-chromium`](https://github.com/Eloston/ungoogled-chromium), per their GitHub page:
+> *ungoogled-chromium is Google Chromium*, sans integration with Google. It also features some tweaks to enhance privacy, control, and transparency _(almost all of which require manual activation or enabling)_.
+
+We have [an issue captured](https://github.com/brave/brave-browser/issues/1431) for pulling in relevant patches from the `ungoogled-chromium` project. The `ungoogled-chromium` project similarly has an [issue captured](https://github.com/Eloston/ungoogled-chromium/issues/543) where they mention pulling in patches from Brave.
