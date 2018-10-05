@@ -1,5 +1,9 @@
 _**NOTE: this page is a work in progress! It should by no means be considered a "final" or exhaustive list of things we have removed.**_
 
+- [How it works](#how-it-works)
+- [What Chromium features are removed for privacy/security reasons?](#what-chromium-features-are-removed-for-privacysecurity-reasons)
+- [How does Brave compare to ungoogled-chromium?](#how-does-brave-compare-to-ungoogled-chromium)
+
 Brave for desktop is built on top of the [open-source Chromium project](https://www.chromium.org/chromium-projects). We add features on top of what is already there and we also remove features or pieces of the code. These deviations we make that touch the core Chromium code are done via patching.
 
 Chromium is not the same as Google Chrome. For some differences, see https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md. 
