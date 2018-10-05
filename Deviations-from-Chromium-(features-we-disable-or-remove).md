@@ -30,7 +30,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - Disabling domain service reliability: https://github.com/brave/brave-core/pull/246
 - Disable Chrome Google URL Tracker: https://github.com/brave/brave-core/pull/248
 - Disable google services in privacy settings: https://github.com/brave/brave-core/pull/244
-- Gaia URLs are set to `no-thanks.invalid` in brave-core: https://github.com/brave/brave-core/pull/512
+- <abbr title="Google Accounts and ID Administration">GAIA</abbr> URLs are set to `no-thanks.invalid` in brave-core: https://github.com/brave/brave-core/pull/512
 - Disable DNS prefetching: https://github.com/brave/brave-core/pull/340
 - Disable chrome.webstore.install for inline extensions: https://github.com/brave/brave-browser/issues/614
 - Disable background sync: https://github.com/brave/brave-browser/issues/515
@@ -44,7 +44,7 @@ You may notice some requests to Google domains. Some of these, such as `clients*
 
 Google translate is disabled as of this commit: https://github.com/brave/brave-core/commit/3351db79213b04d0879b9e284c4914c3da214a16
 
-Gaia (Google's sign-in code) is effectively disabled by setting the Gaia URL to an invalid endpoint: https://github.com/brave/brave-browser/issues/1312
+<abbr title="Google Accounts and ID Administration">GAIA</abbr> (Google's sign-in code) is effectively disabled by setting the service URL to an invalid endpoint: https://github.com/brave/brave-browser/issues/1312
 
 ## How does Brave compare to `ungoogled-chromium`?
 Description of [`ungoogled-chromium`](https://github.com/Eloston/ungoogled-chromium), per their GitHub page:
