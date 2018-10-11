@@ -97,21 +97,21 @@
 - [x] Colors v2
 - [x] URL bar centered changes (Pete)
 - [x] Fix Widevine
-- [ ] Default Brave shield preferences
-- [ ] Manage script should not show enforced by extension
-- [ ] Referral promo (Emerick)
-- [ ] Uphold widget (Nejc)
-- [ ] Sync (Alexey, Cezar)
-- [ ] 2-way wallet? (Nejc)
-- [ ] Get automated C++ tests running on Travis
+- [x] Default Brave shield preferences
+- [x] Manage script should not show enforced by extension
+- [x] Referral promo (Emerick)
 
-### Milestone 6: Releasable builds for 0.56.x -- candidate to rename to 1.0 (November)
+### Milestone 6: Releasable builds for 0.56.x
 
 - [ ] Ads
 - [ ] More UI work
 - [ ] Tipping and donations
 - [ ] Make extensions.brave.com store
 - [ ] Restyling bookmarks, history, preferences (Cezar)
+- [ ] Uphold widget (Nejc)
+- [ ] Sync (Alexey, Cezar)
+- [ ] 2-way wallet? (Nejc)
+- [ ] Get automated C++ tests running on Travis
 
 ### Beyond release Milestone 6
 
