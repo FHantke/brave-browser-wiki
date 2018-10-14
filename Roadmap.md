@@ -52,7 +52,7 @@
 
 - [x] Import from browser-laptop based Brave (Garrett in-progress)
 - [x] Widevine
-- [x] Jumbo UI on Windows (Pete)
+- [x] Jumbo UI on Windows
 - [x] Linux deb and rpm signing.
 - [x] Native-Ledger integration into brave-core
 - [x] Rewards hooking up into delegates and observers
@@ -95,11 +95,11 @@
 - [x] Tab shape
 - [x] Hide settings which are not applicable
 - [x] Colors v2
-- [x] URL bar centered changes (Pete)
+- [x] URL bar centered changes
 - [x] Fix Widevine
 - [x] Default Brave shield preferences
 - [x] Manage script should not show enforced by extension
-- [x] Referral promo (Emerick)
+- [x] Referral promo
 
 ### Milestone 6: Releasable builds for 0.56.x
 
