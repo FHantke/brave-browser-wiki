@@ -89,3 +89,17 @@
 - Developers work off of master.
 - We keep master stable, when it is not we backout what broke it.
 - `brave/brave-browser`'s `package.json` specifies brave-core branch to be `master`.
+
+
+# How to do branch migrations:
+
+Follow this checklist:
+
+- [ ] Update versions on brave-browser with a commit like this: https://github.com/brave/brave-browser/commit/b6e3f38df2519d86c983e12e04a7c0ed70607453
+- [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/dbba50b4bc272ac007522d1e39706594bf78522a
+- [ ] Message everyone in slack in #brave-core about a each branch and where it lives
+- [ ] Create a new branch off of master for the new version
+- [ ] Update info in the chart at the top of https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule 
+- [ ] Update the labels on brave-browser to add the correct prefix for the different versions
+- [ ] Update the labels on brave-core to add the correct prefix for the different versions
+
