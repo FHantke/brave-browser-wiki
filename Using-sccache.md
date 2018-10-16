@@ -27,11 +27,14 @@ Max cache size                 100 GiB
 ## Install pre-requisites
 ### Install rust
 If you already have rust installed but you're not sure if it's current, you can run `rustup update`
+
 #### Mac/Linux installation
 Install Rust via [rustup](https://rustup.rs/)
 ```
 curl https://sh.rustup.rs -sSf | sh
 ```
+On Linux, you may need to install `libssl-dev` and `pkg-config` using apt/yum/dnf
+
 #### Windows installation
 Download and install Rust via [rustup](https://rustup.rs/) and follow the on=screen instructions
 
