@@ -64,6 +64,11 @@ scons: done building targets.
 c:\Projects\omaha\omaha>
 ```
 
+#### Enable Client Update Protocol v2
+
+1. Use [Omaha eckeytool](https://github.com/google/omaha/tree/master/omaha/tools/eckeytool) to generate private.pem key and cup_ecdsa_pubkey.{KEYID}.h files.
+2. Add cup_ecdsa_pubkey.{KEYID}.h to Omaha source directory /path/to/omaha/omaha/net/, set CupEcdsaRequestImpl::kCupProductionPublicKey in /path/to/omaha/omaha/net/cup_ecdsa_request.cc to new key and build Omaha client.
+3. Add private.pem keyid and path to omaha CUP_PEM_KEYS dictionary.
 ### Troubleshooting guide
 
 #### 1. 'uuidgen.exe' is not recognized
