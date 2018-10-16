@@ -102,4 +102,5 @@ Follow this checklist:
 - [ ] Update info in the chart at the top of https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule 
 - [ ] Update the labels on brave-browser to add the correct prefix for the different versions
 - [ ] Update the labels on brave-core to add the correct prefix for the different versions
+- [ ] Update milestone names with the channel
 
