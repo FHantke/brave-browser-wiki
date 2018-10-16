@@ -51,6 +51,7 @@ cargo install --force sccache
   - Also on macOS, you can also run `brew doctor` to help try to identify problems with your installed packages
 - If you are doing this on a new Mac, make sure you have XCode installed and that you've installed the command-line tools via `xcode-select --install`
 - Clifton was getting an error `error: failed to run custom build command for 'rust-crypto v0.2.36'`, followed by errors about nested includes going too deep. The solution was to delete/move `/usr/local/include/stdint.h` (which must have been left over from an old install) which was referenced in the error
+- When installing sccache v0.2.7 on Windows, you are likely to get an error `failed to compile`. This is a known error (https://github.com/mozilla/sccache/issues/292) and is due to a compilation warning issued during the build of ring-0.12.1 and the setting to treat warnings as errors. To get around this, in your cmd shell, `set _CL_=/wd5045` and `set _LINK_=/WX:NO` (this one may not be necessary), then rerun the cargo install command.
 
 ## Configuring sccache
 You'll need to export some variables used by sccache to your `.bashrc`
