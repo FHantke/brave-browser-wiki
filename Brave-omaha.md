@@ -50,7 +50,15 @@ Or, use `Developer Command Prompt for VS2015` instead of `Command Prompt`.
 
 If build stops w/o showing specific error log, just try `hammer` again.
 
-For optimized build, use `hammer MODE=opt-win` instead of `hammer`.
+For optimized build, use `hammer MODE=opt-win` instead of `hammer`. In addition, signing must be done with a .pfx file (containing both the signing certificate and private key). In our tests, it was required to call the `hammer` script in the following manner to ensure that the resulting executables were properly signed:
+
+```
+hammer --mode=opt-win --sha2_authenticode_file=cert.pfx --sha2_authenticode_password=<password> --sha1_authenticode_file=cert.pfx --sha1_authenticode_password=<password> --authenticode_file=cert.pfx --authenticode_password=<password> --patching_certificate=cert.cer
+```
+
+If only the `--authenticode_file` and `--authenticode_password` options are passed, it seems that the build will still use a Google test signing certificate; all three sets of options must be passed (plus the patching certificate) to sign properly. Note that the resulting executables are dual-signed binaries.
+
+The resulting binaries are written to the `staging` directory.
 
 For more hammer options, see [Hammer Options](https://github.com/google/omaha/blob/master/doc/HammerOptions.md).
 
@@ -266,7 +274,7 @@ Also, `install` and `update` action events should be added with `--chrome-dev` a
 
 *ApplyTag.exe* is in scones-out/dbg-win/obj/tools/ApplyTag.
 
-### Intall BraveUpdate update client
+### Install BraveUpdate update client
 Execute `BraveBrowserSeup.exe`.
 
 You can see Dialog with "Unable to connect to the Internet...". I assume that invalid update server and appid in installer.
@@ -312,7 +320,7 @@ The shell program(`BraveUpdate.exe`) would not be replaced with newer version be
 it just load `goopdate.dll` in new folder. So, new `goopdate.dll` is still compatible with old shell,
 old shell is reused.
 
-# Test silent intaller (brave_intaller.exe)
+# Test silent installer (brave_installer.exe)
 
 `brave_installer.exe` installs user mode stable version
 
