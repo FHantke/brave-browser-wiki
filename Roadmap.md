@@ -100,12 +100,12 @@
 - [x] Default Brave shield preferences
 - [x] Manage script should not show enforced by extension
 - [x] Referral promo
+- [x] Tipping and donations
 
 ### Milestone 6: Releasable builds for 0.56.x
 
-- [ ] Ads
+- [ ] Ads integration into Brave-core
 - [ ] More UI work
-- [ ] Tipping and donations
 - [ ] Make extensions.brave.com store
 - [ ] Restyling bookmarks, history, preferences (Cezar)
 - [ ] Uphold widget (Nejc)
