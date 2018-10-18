@@ -161,3 +161,8 @@ To rebaseline:
 ```
 
 
+# Audit for new network services
+
+We should build some automation to find new things added here:
+
+https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
