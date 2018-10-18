@@ -108,3 +108,14 @@ Example:
 
 - [GoogleTest Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
 - [GoogleMock for Dummies](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md)
+
+# Manual tests
+
+## Privacy network audit
+
+1. Download Brave or `npm start`
+2. Open it with these command line flags `--log-net-log=/path/to/somefile.json --net-log-capture-mode=IncludeSocketBytes`. for instance on my mac it's `open /Applications/Brave\ Browser.app --args --log-net-log=/Users/yan/chromelog4.json --net-log-capture-mode=IncludeSocketBytes`.  If you're using `npm start` add the arguments to `lib/start.js`.
+3. Close brave, open brave, go to chrome://net-internals and pick the option to import the JSON file from step 2.
+4. Inspect requests that say `URL_REQUEST` and you can actually see what they are sent to.
+
+Note requests that return 307 are not actually sent over the network
