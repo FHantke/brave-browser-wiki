@@ -163,10 +163,7 @@ To rebaseline:
 
 # Audit for new network services
 
-For now just run:
-
-`npm run test-security`
-
+For now just follow the instructions in https://github.com/brave/brave-browser/wiki/Tests#privacy-network-audit.
 
 We should build some automation to find new things added here:
 
