@@ -127,8 +127,9 @@ Or manually:
 
 1. Download Brave or `npm start`
 2. Open it with these command line flags `--log-net-log=/path/to/somefile.json --net-log-capture-mode=IncludeSocketBytes`. for instance on my mac it's `open /Applications/Brave\ Browser.app --args --log-net-log=/Users/yan/chromelog4.json --net-log-capture-mode=IncludeSocketBytes`.  If you're using `npm start` add the arguments to `lib/start.js`.
-3. Close brave, open brave, go to chrome://net-internals and pick the option to import the JSON file from step 2.
-4. Inspect requests that say `URL_REQUEST` and you can actually see what they are sent to.
+3. Try doing some actions in Brave other than going to a webpage.
+4. Close brave, open brave, go to chrome://net-internals and pick the option to import the JSON file from step 
+5. Inspect requests that say `URL_REQUEST` and you can actually see what they are sent to.
 
 Note requests that return 307 are not actually sent over the network
 
