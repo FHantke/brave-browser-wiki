@@ -117,6 +117,10 @@ Run:
 
 `npm run test-security`
 
+Or if testing a non-Debug build:
+
+`npm run test-security -- --output_path="/path/to/brave/binary"`
+
 This will start the browser for 2 minutes. During that time, try doing some actions in Brave other than going to a webpage (since this will create a lot of false positives). For instance:
 1. open preferences and change some
 2. go through the brave://welcome onboarding process
