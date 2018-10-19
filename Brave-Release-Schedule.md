@@ -13,22 +13,22 @@
 | **Branch name** | 0.55.x  | 0.56.x | 0.57.x    | master |
 
 
+# Freeze
+
+Freeze time for a release is defined to be a period of time where only bugfixes, chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
 
 ---
 
 # Release channel dates:
 
-| Version | Chromium | Release Date       | Freeze Date         | Comments   |
-| ------- | ---------|--------------------|---------------------|------------|
-| 0.52.x  |    68    | August 14, 2018    | N/A                 | N/A        |
-| 0.53.x  |    69    | September 4, 2018  | N/A                 | N/A        |
-| 0.54.x  |    69    | September 24, 2018 | N/A                 | N/A        |
-| 0.55.x  |    70    | October 16, 2018   | N/A                 | N/A        |
-| 0.56.x  |    70    | November 6, 2018   | October 30, 2018    |            |
-| 0.57.x  |    71    | December 4, 2018   | November 20,2018    |            |
-| 0.58.x  |    71    | December 20, 2018  | Always frozen       |            |
+| Version | Chromium | Branch Date       | Freeze Date        | Release Date        | Comments      |
+| ------- | ---------|-------------------|--------------------|---------------------|---------------|
+| 0.55.x  |    70    | October 16, 2018  | October 16, 2018   | October 18, 2018    | First release |
+| 0.56.x  |    70    | October 30, 2018  | October 30, 2018   | November 6, 2018    | 1 week freeze |
+| 0.57.x  |    71    | November 20, 2018 | November 20, 2018  | December 4, 2018    | 2 week freeze |
+| 0.58.x  |    71    | December 4, 2018  | December 4, 2018   | December 20, 2018   | Always frozen |
 
-- CI will eventually do builds for release channel once a day if there are changes or as requested.
+- CI will do builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
 - Branches here never get re-created, they were created when they were spawned for Dev channel.
 - Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
