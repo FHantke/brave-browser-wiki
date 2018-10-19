@@ -18,15 +18,15 @@
 
 # Release channel dates:
 
-| Version | Chromium | Release Date       | Freeze Date         | Comments                          |
-| ------- | ---------|--------------------|---------------------------------------------------------|
-| 0.52.x  |    68    | August 14, 2018    |           -         | Will not ship on Release channel  |
-| 0.53.x  |    69    | September 4, 2018  |           -         | Will not ship on Release channel  |
-| 0.54.x  |    69    | September 24, 2018 |           -         | Will not ship on Release channel  |
-| 0.55.x  |    70    | October 16, 2018   |           -         | Will ship on Release channel      |
-| 0.56.x  |    70    | November 6, 2018   |  October 30, 2018   |                                   |
-| 0.57.x  |    71    | December 4, 2018   |  November 20,2018   |                                   |                                   
-| 0.58.x  |    71    | December 20, 2018  |  Always frozen      |                                   |
+| Version | Chromium | Release Date       | Freeze Date         | Comments   |
+| ------- | ---------|--------------------|---------------------|------------|
+| 0.52.x  |    68    | August 14, 2018    |                     | N/A        |
+| 0.53.x  |    69    | September 4, 2018  |                     | N/A        |
+| 0.54.x  |    69    | September 24, 2018 |                     | N/A        |
+| 0.55.x  |    70    | October 16, 2018   |                     | N/A        |
+| 0.56.x  |    70    | November 6, 2018   | October 30, 2018    |            |
+| 0.57.x  |    71    | December 4, 2018   | November 20,2018    |            |
+| 0.58.x  |    71    | December 20, 2018  | Always frozen       |            |
 
 - CI will eventually do builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
