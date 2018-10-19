@@ -15,9 +15,11 @@
 
 # Freeze
 
-Freeze time is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes. 
+Freeze time is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
 
-Freezing is a concept that is per version branch and not per channel.  So since we have 3 week release cycles, and since freezing is per version branch, a 4 week freeze would make sense one day in the future.  For the time being we are only entertaining a max of a 3 week freeze which we'll reach by 0.58.x.
+If a feature being worked on just misses the freeze time, then it will land on the next branch which is 1 release cycle higher.  This happens even if the feature was originally wanted for a certain version.
+
+Freezing is a concept that is per version branch and not per channel.  So since we have 3 week release cycles, and since freezing is per version branch, a 4 week freeze would make sense one day in the future.  For the time being though, we are only entertaining a max of a 3 weeks freeze. We'll reach the 3 week freeze by increasing the amount of freeze time incrementally on each Release version release by the time we reach 0.58.x.
 
 ---
 
