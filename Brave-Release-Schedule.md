@@ -15,7 +15,7 @@
 
 # Freeze
 
-Freeze time for a release is defined to be a period of time where only bugfixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
+Freeze time for a release is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
 
 ---
 
