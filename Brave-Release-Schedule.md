@@ -15,7 +15,7 @@
 
 # Freeze
 
-Freeze time for a release is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
+Freeze time for a release is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be uplifted in these periods of time.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.  Note that the freeze happens while it's on Beta for now and might go into Dev channel later too.  Freezing is a concept that is per version and not per channel.  So since we have 3 week cycles, and since freezing is per version, a 4 week freeze would make sense one day in the future.
 
 ---
 
