@@ -30,7 +30,7 @@ Freezing is a concept that is per version branch and not per channel.  So since 
 | 0.55.x  |    70    | October 16, 2018   | October 18, 2018    | First release |
 | 0.56.x  |    70    | October 30, 2018   | November 6, 2018    | 1 week freeze |
 | 0.57.x  |    71    | November 20, 2018  | December 4, 2018    | 2 week freeze |
-| 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | Always frozen |
+| 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | 3 week freeze |
 
 - CI will do builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
