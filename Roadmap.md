@@ -104,17 +104,21 @@
 
 ### Milestone 6: Releasable builds for 0.56.x
 
-- [ ] Ads integration into Brave-core
+- [ ] New shields redesign
 - [ ] More UI work
-- [ ] Make extensions.brave.com store
-- [ ] Restyling bookmarks, history, preferences (Cezar)
-- [ ] Uphold widget (Nejc)
-- [ ] Sync (Alexey, Cezar)
-- [ ] 2-way wallet? (Nejc)
+- [ ] Uphold widget
+- [ ] 2-way wallet?
 - [ ] Get automated C++ tests running on Travis
+
+### Milestone 6: Releasable builds for 0.57.x
+
+- [ ] Sync (Alexey, Cezar, Anthony, BrianJ)
+- [ ] Ads integration into Brave-core
+- [ ] Restyling bookmarks, history, preferences (Cezar)
 
 ### Beyond release Milestone 6
 
+- [ ] Make extensions.brave.com store
 - [ ] Private tabs instead of just private windows
 - [ ] More UI customizations
 - [ ] Tab pages?
