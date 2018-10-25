@@ -316,9 +316,10 @@ Make sure to add additional `update` Action with `/update` arguments.
 
 When update finished, new version's folder is created in `BraveSoftware/Update`.
 
-The shell program(`BraveUpdate.exe`) would not be replaced with newer version because
-it just load `goopdate.dll` in new folder. So, new `goopdate.dll` is still compatible with old shell,
-old shell is reused.
+The shell program(`BraveUpdate.exe`) would not be replaced with newer version of shell if old one is compatible
+with newly updated `goopdate.dll` because shell is quite simple and it just loads `goopdate.dll`.
+
+If not, omaha itself replaces old shell with new. It is determined by `SetupFiles::ShouldCopyShell()`.
 
 # Test silent installer (brave_installer.exe)
 
