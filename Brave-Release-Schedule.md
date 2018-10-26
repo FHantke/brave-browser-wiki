@@ -55,6 +55,11 @@ Freezing is a concept that is per version branch and not per channel.  So since 
 | 0.57.x  |    71    | November 6, 2018   |
 | 0.58.x  |    71    | December 4, 2018   |
 | 0.59.x  |    72    | December 20, 2018  |
+| 0.60.x  |    72    |                    |                     
+| 0.61.x  |    73    |                    |                     
+| 0.62.x  |    73    |                    |              
+
+
  
 - CI will eventually do builds for beta channel once a day if there are changes or as requested.
 - Updates will be released twice a week or as requested.
@@ -77,6 +82,9 @@ Freezing is a concept that is per version branch and not per channel.  So since 
 | 0.58.x  |    71           | November 6, 2018   |
 | 0.59.x  |    72           | December 4, 2018   |
 | 0.60.x  |    72           | January 15, 2019   |
+| 0.61.x  |    73           |                    |                     
+| 0.62.x  |    73           |                    |              
+
 
 - This channel will sometimes get merges from master to speed up the delivery of features. 
 - Chromium versions are targets and may not be ready in time for the dates.  If a Chromium upgrade is not ready in time for a branch date, the branch still happens,  but the Chromium upgrade itself will be uplifted onto the Beta channel.
