@@ -40,11 +40,10 @@ These are .xtb files containing xml elements of the form:
 <translation id=“[number]”>[Translated Text]</translation>
 ```
 
-The Translation ID refers to the unique fingerprint of the original string as it appears in the source GRD file.
+The Translation ID refers to the unique fingerprint of the original string as it appears in the source GRD file. This means that **multiple strings that have the exact same English value in the source GRD file will only get translated once per language per GRD file**.
 
 ## Transifex
 Strings are matched using filename (not path). This is something we control in transifex.py. Within each file, each _unique_ string from a GRD is translated and pulled down. It is then stored in a corresponding .xtb file with the translation ID (unique fingerprint of the original string).
-This means that **multiple strings that have the exact same English value in the source GRD file will only get translated once per language per GRD file**.
 
 ## GRD Tips
 - Provide a descriptive `desc=“”` attribute on each `<message` attribute informing the translator of the context for the string.
