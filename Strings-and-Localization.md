@@ -1,4 +1,3 @@
-# Strings
 Most strings are provided as resources, so that they may be translated to the many languages that Brave supports.
 
 They can be split in to two categories: those that are provided and referenced only from Brave code, and those that are provided and referenced from within Chromium code.
