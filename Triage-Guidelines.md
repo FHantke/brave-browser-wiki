@@ -1,21 +1,36 @@
 # General guidelines
 
 1. All work has an issue.
-2. All issues must be assigned a milestone.
-3. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it.
-4. High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
-5. We have weekly triage meetings to plan what will be in a particular milestone release.  All development work for a particular release should happen while that version is on master, and not while that version is on Dev channel, Beta channel, or Release channel.  Since we're on a time based schedule, nothing will be waiting very long anyway.
+2. If you'd like to have an issue schedule to a particular release, add it to the closest matching project board for triage.  If you aren't sure use the project called `General`.  A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
+3. Issues only get assigned to a milestone once they are completed and merged into that milestone.
+4. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it and can go into a milestone while the issue is still open. This should be rare though.
+5. High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
+6. We have weekly triage meetings which includes the following schedule:
+    - Go through the projects listed here https://github.com/brave/brave-browser/projects
+      -  Get a status on each issue
+      - Move issues along the process from the left most column to the right most depending on status.
+      - Make sure the Untriaged Backlog column is empty and we add appropriate p1-p5 labels
+    - Go through closed PRs that were merged to master recently.  Flag anything that we'd like to uplift, add an uplift label.  
 
 
 
 # Uplifting
 
-1. After we get to 1.0, uplifting to Dev channel should be rare, uplifting to Beta channel should be extremely rare, hotfixes to release should be reserved for only chemspill type of situations.
-To ensure this, add the [`no:milestone` search option when viewing open issues](https://github.com/brave/brave-browser/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+no%3Amilestone).  `1.x milestone` for things that have not been prioritized for a release yet, but that we could see as possibly being prioritized in the near future.  `2.x milestone` for things that are further out.  Use a particular release milestone otherwise to target that release.
-2. Things that are uplifted get a changeset SHA of the merge commit pasted into the pull request for each channel.
-3. A single label should be added similar to `merged/0.55.x` where right hand side version is the first version this change appears in.    If something is one version it must be in every version above it all the way back up to master. 
+1. By default everything only lands in master.
+2. For now no approval is needed if you also want it in Dev channel.
+3. Milestone on the issue should match only where it is currently and not where you want it ideally.  Merged label on the PR should match only where it is merged up to and not where you want it ideally.
+4. Beta requires special permissions now. You can simply add a label to the PR of for example: `uplift-request/0.56.x-Beta` and it'll be either approved or not by one of the approvers (See below).  Once merged milestone will be updated accordingly on the issue and merge label will be updated accordingly as well. 
 
+5. When something is uplifted, a changeset SHA of the merge commit should be pasted into the pull request for each channel.
+6. A single label should be added similar to `merged/0.55.x` where right hand side version is the first version this change appears in.    If something is one version it must be in every version above it all the way back up to master. 
 
+# Uplift approvers
+
+- Current approvers are @rebron @kjozwiak @Sri.
+- They are expected to keep on top of issues tagged with labels similar to: `uplift-request/0.56.x-Beta`.
+- They should be working to keep that list at 0 issues. This happens in 1 of 2 ways.
+  1. If approved, they will work with someone to get it merged to Beta.  This includes updating the PR merged label and the issues milestone. Then they will remove the label.
+  2. If not approved, they will indicate the decision in the issue with something like "This is too risky so we won't uplift to Beta, you can bring it up at the next triage meeting to dispute it.".  Then they will remove the label.
 
 # QA triage
 
@@ -29,3 +44,5 @@ To ensure this, add the [`no:milestone` search option when viewing open issues](
   - Linux: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Linux" -label:"QA/No"`
   - macOS: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-macOS" -label:"QA/No"`
   - Windows: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Win64" -label:"QA/No"`
+
+
