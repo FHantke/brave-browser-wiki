@@ -25,7 +25,7 @@
 
 # Uplift approvers
 
-- Current approvers are @rebron @kjozwiak @Sri.
+- Current approvers are @rebron @kjozwiak @Sri (Slack usernames).
 - They are expected to keep on top of issues tagged with labels similar to: `uplift-request/0.56.x-Beta`.
 - They should be working to keep that list at 0 issues. This happens in 1 of 2 ways.
   1. If approved, they will work with someone to get it merged to Beta.  This includes updating the PR merged label and the issues milestone. Then they will remove the label.
