@@ -17,7 +17,7 @@
 # Uplifting
 
 - By default everything only lands in master.
-- For now no approval is needed if you also want it in Dev channel.
+- For now no approval is needed if you also want it in Dev channel.  This is subject to change in the future.
 - Milestone on the issue should match only where it is currently and not where you want it ideally.  Merged label on the PR should match only where it is merged up to and not where you want it ideally.
 - Beta requires special permissions now. You can simply add a label to the PR of for example: `uplift-request/0.56.x-Beta` and it'll be either approved or not by one of the approvers (See below).  Once merged milestone will be updated accordingly on the issue and merge label will be updated accordingly as well. 
 - When something is uplifted, a changeset SHA of the merge commit should be pasted into the pull request for each channel.
