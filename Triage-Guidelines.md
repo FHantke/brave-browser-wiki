@@ -1,11 +1,11 @@
 # General guidelines
 
-1. All work has an issue.
-2. If you'd like to have an issue schedule to a particular release, add it to the closest matching project board for triage.  If you aren't sure use the project called `General`.  A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
-3. Issues only get assigned to a milestone once they are completed and merged into that milestone.
-4. Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it and can go into a milestone while the issue is still open. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
-5. High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
-6. We have weekly triage meetings which includes the following schedule:
+- All work has an issue.
+- If you'd like to have an issue schedule to a particular release, add it to the closest matching project board for triage.  If you aren't sure use the project called `General`.  A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
+- Issues only get assigned to a milestone once they are completed and merged into that milestone.
+- Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it and can go into a milestone while the issue is still open. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
+- High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
+- We have weekly triage meetings which includes the following schedule:
     - Go through the projects listed here https://github.com/brave/brave-browser/projects
       -  Get a status on each issue
       - Move issues along the process from the left most column to the right most depending on status.
@@ -16,13 +16,13 @@
 
 # Uplifting
 
-1. By default everything only lands in master.
-2. For now no approval is needed if you also want it in Dev channel.
-3. Milestone on the issue should match only where it is currently and not where you want it ideally.  Merged label on the PR should match only where it is merged up to and not where you want it ideally.
-4. Beta requires special permissions now. You can simply add a label to the PR of for example: `uplift-request/0.56.x-Beta` and it'll be either approved or not by one of the approvers (See below).  Once merged milestone will be updated accordingly on the issue and merge label will be updated accordingly as well. 
+- By default everything only lands in master.
+- For now no approval is needed if you also want it in Dev channel.
+- Milestone on the issue should match only where it is currently and not where you want it ideally.  Merged label on the PR should match only where it is merged up to and not where you want it ideally.
+- Beta requires special permissions now. You can simply add a label to the PR of for example: `uplift-request/0.56.x-Beta` and it'll be either approved or not by one of the approvers (See below).  Once merged milestone will be updated accordingly on the issue and merge label will be updated accordingly as well. 
 
-5. When something is uplifted, a changeset SHA of the merge commit should be pasted into the pull request for each channel.
-6. A single label should be added similar to `merged/0.55.x` where right hand side version is the first version this change appears in.    If something is one version it must be in every version above it all the way back up to master. 
+- When something is uplifted, a changeset SHA of the merge commit should be pasted into the pull request for each channel.
+- A single label should be added similar to `merged/0.55.x` where right hand side version is the first version this change appears in.    If something is one version it must be in every version above it all the way back up to master. 
 
 # Uplift approvers
 
