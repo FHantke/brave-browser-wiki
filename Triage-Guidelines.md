@@ -47,3 +47,10 @@
   - Windows: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Win64" -label:"QA/No"`
 
 
+# Release notes
+
+- You can use a search term like this to see all unlabeled issues: `is:issue milestone:"0.56.x - Beta" -label:"release-notes/include" -label:"release-notes/exclude"`
+- Releases shouldn't go out without release notes.
+- Every issue should be tagged with either `release-notes/include` or `release-notes/exclude`.
+- Ask QA to generate output when ready.
+- PR team should get a rough draft at the start of the Beta period of what will be included in the Beta release. 
