@@ -54,3 +54,5 @@
 - Releases shouldn't go out without release notes.
 - Ask QA to generate output when ready.
 - PR team should get a rough draft at the start of the Beta period of what will be included in the Beta release. 
+- Release notes should be included in a file on the root of brave-browser named CHANGELOG.md.
+- On each release, release notes (or a link to release notes) should also be included in the published release.
