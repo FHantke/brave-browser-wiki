@@ -13,6 +13,7 @@
     - Go through closed PRs that were merged to master recently.  Flag anything that we'd like to uplift, add an uplift label.  
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
+- Please do not change milestones/priority/boards on issues labeled 'security' without consulting the security team in Slack (`#security` or `#security-discussion`).
 
 
 # Uplifting
