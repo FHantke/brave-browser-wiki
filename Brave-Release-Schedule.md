@@ -125,4 +125,23 @@ Follow this checklist:
 - [ ] Update milestone names with the channel name.
 - [ ] Message everyone in slack in #brave-core about a each branch and where it lives.
 
+Example Slack ping:
+
+```
+@channel 
+
+Versions have migrated to new channels.
+
+- The 0.55.x branch no longer maintained
+- 0.56.x branch is now considered Release channel (It is not yet released though, next build will be RC1)
+- 0.57.x branch is now considered Beta channel
+- 0.58.x branch is now considered Dev channel
+- master branch is now considered Nightly channel and is at version 0.59.x.
+
+As usual current version and channel information can be found here:
+https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-channel-information
+
+Branch migration tasks that were performed are documented here:
+https://github.com/brave/brave-browser/issues/1953
+```
 
