@@ -4,6 +4,7 @@
 - If you'd like to have an issue schedule to a particular release, add it to the closest matching project board for triage.  If you aren't sure use the project called `General`.  A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
 - Issues only get assigned to a milestone once they are completed and merged into that milestone.
 - Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it and can go into a milestone while the issue is still open. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
+- Please do not change milestones/priority/boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
 - High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
 - We have weekly triage meetings which includes the following schedule:
     - Go through the projects listed here https://github.com/brave/brave-browser/projects
@@ -13,7 +14,6 @@
     - Go through closed PRs that were merged to master recently.  Flag anything that we'd like to uplift, add an uplift label.  
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
-- Please do not change milestones/priority/boards on issues labeled 'security' without consulting the security team in Slack (`#security` or `#security-discussion`).
 
 
 # Uplifting
