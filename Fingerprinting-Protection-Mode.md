@@ -26,7 +26,7 @@ Because most browser fingerprinting defense requires disabling web features that
 
 * 3rd party cookies and referers blocked by default
 * User-Agent is set to Chrome except on a few sites that need it for major functionality to work
-* `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash
+* [TODO] `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash. When Flash is enabled via click-to-play on a given site, both of these only report Flash.
 * Connections to known tracking domains are blocked via the Tracking Protection library
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled
 * `navigator.credentials` is disabled on desktop
