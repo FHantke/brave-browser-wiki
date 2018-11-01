@@ -61,6 +61,8 @@ export SCCACHE_CACHE_SIZE=100G     # some of us use 100GB; you can use less if n
 export SCCACHE_DIR=~/sccache       # where the cache is physically stored
 ```
 
+You may have to use `${HOME}` instead of `~` in the `PATH` variable in `.bashrc` since [it might break depot_tools](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#install).
+
 For convenience, you may also want to symlink the sccache binary into `/usr/local/bin`:
 ```
 ln -s ~/.cargo/bin/sccache /usr/local/bin/sccache
