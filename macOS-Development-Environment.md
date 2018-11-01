@@ -61,3 +61,5 @@ And don't symlink 10.13 SDK in Xcode 10 because you will see
  Current Xcode Version: 0100 (10A255)
 ********************************************************************************
 ```
+
+**You can use `Xcode 10` without workaround if you have chromium version >= `71.0.3578.20`**
