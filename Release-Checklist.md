@@ -1,75 +1,54 @@
-Below is a checklist that we should meet for each of our releases.
-- Check https://github.com/brave/webtorrent is up to date with its latest upstream.
-- Check https://github.com/brave/bittorrent-tracker is up to date with its latest upstream.
-- Check https://github.com/brave/torrent-discovery is up to date with its latest upstream.
-
-# Release Process Checklist
-
 Feel free to copy this into an issue if you want to keep track of items per-milestone.
 Be super sure that <version> is replaced with the version you wish to use.
 
 ### Prerequisites
 
-- [ ] consult with the security team to ensure that all security issues have been included
+- [ ] Check https://github.com/brave/webtorrent is up to date with its latest upstream.
+- [ ] Check https://github.com/brave/bittorrent-tracker is up to date with its latest upstream.
+- [ ] Check https://github.com/brave/torrent-discovery is up to date with its latest upstream.
 
-### First-time Setup
-- [ ] `git clone git@github.com:brave/vault-updater && cd vault-updater`
-- [ ] `git clone git@github.com:brave/release-tools`
-- [ ] `npm install`
-- [ ] install the heroku toolbelt https://toolbelt.heroku.com/ , ask @mrose17 to add you
-- [ ] `git remote add heroku-staged https://git.heroku.com/brave-laptop-updates-pre.git`
-- [ ] `git remote add heroku https://git.heroku.com/brave-laptop-updates.git`
-- [ ] *(optional) you can check logs : `heroku logs --tail --app brave-laptop-updates-pre`
+- [ ] At freeze date, consult with the security team to ensure that all security issues have been included.
+- [ ] At freeze date, consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverables.
 
-### Every time thereafter
-- [ ] `cd vault-updater`
-- [ ] `git pull`
-- [ ] `git checkout -b dev-<version>`
-- [ ] `cd ../release-tools`
-- [ ] `node bin/promotePreview.js --location ../vault-updater/data --overwrite --channel=dev --notes='Notes go here'`
-- [ ] `cd ../vault-updater`
-- [ ] `git add -u`
-- [ ] `git commit -m "<version>" -m "Auditors: @bsclifton"`
-- [ ] `git push (alternatively: git push --set-upstream origin dev-<version>)`
-- [ ] `git push heroku-staged dev-<version>:master`
+### Release Notes
+- [ ] Mark closed issues in github as release-notes/exclude or release-notes/include.
+- [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
+- [ ] Stage release notes to brave.com/release/ 
 
-### Fastly
-- [ ] Log into Fastly and purge the cache
-
-### Test Staging
+### Test Staging for Updates (needs input from devops)
 - [ ] Install a prior version of the app
 - [ ] `BRAVE_UPDATE_HOST=https://laptop-updates-pre.brave.com open -a ./Brave.app`
 - [ ] Confirm SHA in about:brave matches expectations
 
-### Merge Into Master
-- [ ] `git checkout master`
-- [ ] `git merge dev-<version>`
-- [ ] `git push`
+### Certification and Builds
+- [ ] QA summary and build verification report.
+- [ ] Devops starts release process. (need input from devops)
 
-### Release Notes
-- [ ] Edit the release notes title and uncheck the box to publish : https://github.com/brave/browser-laptop/releases
-- [ ] Update dependency release notes as needed
-- [ ] Announce release on https://community.brave.com/
-- [ ] Announce release on https://www.reddit.com/r/brave_browser/
+### Fastly (need input from devops)
+- [ ] Log into Fastly and purge the cache
 
-### Push To Production
+### Push To Production (need input from devops)
 - [ ] `git push heroku`
+
+### Announcements
+- [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
+- [ ] Announce release on https://community.brave.com/ (@brave-matt)
+- [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
 
 ### Updates And Broadcast
 - [ ] Wait for confirmation that Windows live update works
 - [ ] Wait for confirmation that Linux live update works
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Update the Brave Snap Package under Ubuntu
-- [ ] Notify #browser, #community, #general, #pr, #testers of the latest release with a link to the release notes
-- [ ] Add a screenshot to the #pr channel for social broadcast
+- [ ] Notify #general, #brave-core, #pr, #testers of the latest release with a link to the release notes
 
 ### Download Binaries from Brave.com
-- [ ] download binary using https://laptop-updates.brave.com/latest/osx
+- [ ] download binary from https://brave.com
+- [ ] download binary from https://brave.com/download
 - [ ] download binary using https://laptop-updates.brave.com/latest/winx64
 - [ ] download binary using https://laptop-updates.brave.com/latest/winia32
+- [ ] download binary using https://laptop-updates.brave.com/latest/osx
 
 ### Update Release channel wiki
 - [ ] Update entries here as needed: https://github.com/brave/browser-laptop/wiki/Release-channels
 
-### Branch Channel Maintenance
-- [ ] Create branch channel if needed
