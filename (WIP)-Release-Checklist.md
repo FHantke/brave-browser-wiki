@@ -10,7 +10,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] At freeze date, consult with the security team to ensure that all security issues have been included.
 - [ ] At freeze date, consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverables.
 
-### Release Notes
+### Release Notes to Staging
 - [ ] Mark closed issues in github as release-notes/exclude or release-notes/include.
 - [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
 - [ ] Stage release notes to brave.com/release/ 
