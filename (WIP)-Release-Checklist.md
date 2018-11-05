@@ -32,8 +32,8 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Updates Testing on Production
 - [ ] Wait for confirmation that Windows live update works
-- [ ] Wait for confirmation that Linux live update works
 - [ ] Wait for confirmation that macOS live update works
+- [ ] Wait for confirmation that Linux live update works
 - [ ] Update the Brave Snap Package under Ubuntu
 
 ### Download Binaries from Brave.com
