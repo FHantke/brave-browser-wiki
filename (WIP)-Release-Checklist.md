@@ -30,17 +30,11 @@ Be super sure that <version> is replaced with the version you wish to use.
 ### Push To Production (need input from devops)
 - [ ] `git push heroku`
 
-### Announcements
-- [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
-- [ ] Announce release on https://community.brave.com/ (@brave-matt)
-- [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
-
-### Updates And Broadcast
+### Updates Testing on Production
 - [ ] Wait for confirmation that Windows live update works
 - [ ] Wait for confirmation that Linux live update works
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Update the Brave Snap Package under Ubuntu
-- [ ] Notify #general, #brave-core, #pr, #testers of the latest release with a link to the release notes
 
 ### Download Binaries from Brave.com
 - [ ] download binary from https://brave.com
@@ -48,6 +42,12 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] download binary using https://laptop-updates.brave.com/latest/winx64
 - [ ] download binary using https://laptop-updates.brave.com/latest/winia32
 - [ ] download binary using https://laptop-updates.brave.com/latest/osx
+
+### Announcements
+- [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
+- [ ] Announce release on https://community.brave.com/ (@brave-matt)
+- [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
+- [ ] Notify #general, #brave-core, #pr, #testers of the latest release with a link to the release notes
 
 ### Update Release channel wiki
 - [ ] Update entries here as needed: https://github.com/brave/browser-laptop/wiki/Release-channels
