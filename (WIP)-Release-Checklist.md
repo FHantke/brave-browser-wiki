@@ -6,6 +6,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Check https://github.com/brave/webtorrent is up to date with its latest upstream.
 - [ ] Check https://github.com/brave/bittorrent-tracker is up to date with its latest upstream.
 - [ ] Check https://github.com/brave/torrent-discovery is up to date with its latest upstream.
+- [ ] Check Tor is up to date with its latest upstream.
 
 - [ ] At freeze date, consult with the security team to ensure that all security issues have been included.
 - [ ] At freeze date, consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverables.
@@ -42,6 +43,10 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] download binary using https://laptop-updates.brave.com/latest/winx64
 - [ ] download binary using https://laptop-updates.brave.com/latest/winia32
 - [ ] download binary using https://laptop-updates.brave.com/latest/osx
+- [ ] download binary to test promos https://brave.com/kjo527 - kjozwiak.github.io [Production]
+- [ ] download binary to test promos https://brave.com/red194 - Twitch (redPwnie) [Production]
+- [ ] download binary to test promos https://brave.com/kam253 - YT (kamiljoz) [Production]
+- [ ] download binary to test promos https://brave.com/bra941 - YT (braveqa1) [Production]
 
 ### Announcements
 - [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
