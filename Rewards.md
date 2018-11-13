@@ -43,7 +43,7 @@ This are flags that you can use for rewards. Flags can help you out testing thin
 Option name | Option value | Description
 ------------ | ------------- | -------------
 env | `stag` or `prod` | You can use this option for switching between production and staging servers
-reconcile-interval | whole number | Define what the interval should be between monthly contributions in minutes.
+reconcile-interval |integer | Define what the interval should be between monthly contributions in minutes.
 short-retries | bool | Enables short retries intervals that can be used for testing contribution failures 
 
 ### Usage
