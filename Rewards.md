@@ -7,3 +7,7 @@ This are flags that you can use for rewards. Flags can help you out testing thin
 #### Packaged version
 `[path-to-your-package] -- --rewards=[options]`
 
+Option name | Option value | Description
+------------ | ------------- | -------------
+env | `stag` or `prod` | You can use this option for switching between production and staging servers
+reconcile-interval | whole number | Define what the interval should be between monthly contributions in minutes.
