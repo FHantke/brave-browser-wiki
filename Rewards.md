@@ -29,7 +29,7 @@ We will re-try contribution in following intervals. Contrary to the phase 1 this
 
 
 # Flags
-This are flags that you can use for rewards. Flags can help you out testing things out, so that you don't need to wait that long or switch between things.
+This are flags that you can use for rewards. Flags can help you out testing things, so that you don't need to wait that long or switch between things.
 
 ### How to run it
 
