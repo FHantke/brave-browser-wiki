@@ -2,7 +2,7 @@ Brave has two built-in color themes: dark and light
 
 The default theme is light for Release and Beta channels, and dark for Dev and Development.
 
-WebUI pages can read, change and observe the theme value:
+WebUI pages can read, change and observe the theme value as of https://github.com/brave/brave-core/pull/774:
 
 `type ThemeType = 'Light' | 'Dark'`
 
