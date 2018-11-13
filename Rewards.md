@@ -12,3 +12,8 @@ Option name | Option value | Description
 ------------ | ------------- | -------------
 env | `stag` or `prod` | You can use this option for switching between production and staging servers
 reconcile-interval | whole number | Define what the interval should be between monthly contributions in minutes.
+
+### Usage
+(replace ... with version that you are running it)
+`... -- --rewards=env=stag` (single)
+`... -- --rewards=env=stag,reconcile-interval=5` (multiple)
