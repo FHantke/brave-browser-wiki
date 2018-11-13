@@ -15,5 +15,6 @@ reconcile-interval | whole number | Define what the interval should be between m
 
 ### Usage
 (replace ... with version that you are running it)
-`... -- --rewards=env=stag` (single)
-`... -- --rewards=env=stag,reconcile-interval=5` (multiple)
+
+* `... -- --rewards=env=stag` (single)
+* `... -- --rewards=env=stag,reconcile-interval=5` (multiple)
