@@ -51,3 +51,6 @@ short-retries | bool | Enables short retries intervals that can be used for test
 
 * `... -- --rewards=env=stag` (single)
 * `... -- --rewards=env=stag,reconcile-interval=5` (multiple)
+
+# Logging
+TODO
