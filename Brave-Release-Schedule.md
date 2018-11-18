@@ -20,6 +20,8 @@ Freeze time is defined to be a period of time where only bug fixes, Chromium min
 If a feature being worked on just misses the freeze time, then it will land on the next branch which is 1 release cycle higher.  This happens even if the feature was originally wanted for a certain version.
 
 Freezing is a concept that is per version branch and not per channel.  Every version has a 3 week freeze before release date.
+
+
 ---
 
 # Release channel dates:
