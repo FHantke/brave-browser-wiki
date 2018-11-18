@@ -25,16 +25,28 @@ Freezing is a concept that is per version branch and not per channel.  So since 
 
 # Release channel dates:
 
-| Version | Chromium | Freeze Date        | Release Date        | Comments      |
-| ------- | ---------|--------------------|---------------------|---------------|
-| 0.55.x  |    70    | October 16, 2018   | October 18, 2018    | First release |
-| 0.56.x  |    70    | October 30, 2018   | November 6, 2018    | 1 week freeze |
-| 0.57.x  |    71    | November 20, 2018  | December 4, 2018    | 2 week freeze |
-| 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | 3 week freeze |
-| 0.59.x  |    72    |                    |                     | 3 week freeze |
-| 0.60.x  |    72    |                    |                     | 3 week freeze |
-| 0.61.x  |    73    |                    |                     | 3 week freeze |
-| 0.62.x  |    73    |                    |                     | 3 week freeze |
+| Version | Chromium | Freeze Date        | Release Date        | Comments                       |
+| ------- | ---------|--------------------|---------------------|--------------------------------|
+| 0.55.x  |    70    | October 16, 2018   | October 18, 2018    |                                |
+| 0.56.x  |    70    | October 30, 2018   | November 6, 2018    |                                |
+| 0.57.x  |    71    | November 20, 2018  | December 4, 2018    |                                |
+| 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | Early release due to holidays  |
+| 0.59.x  |    72    |                    | January 29, 2019    |                                |
+| 0.60.x  |    72    |                    | February 19, 2019   |                                |
+| 0.61.x  |    73    |                    | Mar 12th, 2019      |                                |
+| 0.62.x  |    73    |                    | April 2, 2019       |                                |
+| 0.63.x  |    74    |                    | April 23, 2019      |                                |
+| 0.64.x  |    74    |                    | May 14, 2019        |                                |
+| 0.65.x  |    75    |                    | June 4th, 2019      |                                |
+| 0.66.x  |    75    |                    | July 2, 2019        |                                |
+| 0.67.x  |    76    |                    | July 30th, 2019     |                                |
+| 0.68.x  |    76    |                    | August 20, 2019     |                                |
+| 0.69.x  |    77    |                    | Sept 10th, 2019     |                                |
+| 0.70.x  |    77    |                    | October 1, 2019     |                                |
+| 0.71.x  |    78    |                    | October 22, 2019    |                                |
+| 0.72.x  |    78    |                    | November 12, 2019   |                                |
+| 0.73.x  |    79    |                    | December 10, 2019   |                                |
+
 
 - CI will do builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
