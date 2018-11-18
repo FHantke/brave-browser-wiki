@@ -48,10 +48,8 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.73.x  |    79    | November 12, 2019  | December 10, 2019   |                                |
 
 
-- CI will do builds for release channel once a day if there are changes or as requested.
+- CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
-- Branches here never get re-created, they were created when they were spawned for Dev channel.
-- Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
 
 ---
 
@@ -79,12 +77,8 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.73.x  |    79    | November 12, 2019  |              
 
 
- 
-- CI will eventually do builds for beta channel once a day if there are changes or as requested.
-- Updates will be released twice a week or as requested.
-- Branches here never get re-created, they were created when they were spawned for Dev channel.
-- Actual builds are NOT produced here yet even if the date is displayed above until they pass security review.
-- `brave/brave-browser`'s `package.json` specifies brave-core branch version explicitly.
+- CI does builds for Beta channel once a day if there are changes or as requested.
+- Updates are released as there are builds as long as tests pass.
 
 ---
 
@@ -114,23 +108,18 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 
 - This channel will sometimes get merges from master to speed up the delivery of features. 
-- Chromium versions are targets and may not be ready in time for the dates.  If a Chromium upgrade is not ready in time for a branch date, the branch still happens,  but the Chromium upgrade itself will be uplifted onto the Beta channel.
-- CI will eventually do builds for Dev channel once a day if there are changes or as requested.
-- Updates will be released twice a week or as requested.
-- `x` in the version above will increase for each build.
-- Branches are created from master on the dates specified.
-- `brave/brave-browser`'s `package.json` specifies brave-core branch version explicitly.
+- CI does builds for Dev channel once a day if there are changes or as requested.
+- Updates are released as there are builds as long as tests pass.
+- Branches are created from master around the dates specified in this table.
 
 ---
 
 # Nightly channel:
 
-- CI will eventually do builds for Dev channel once a day if there are changes.
-- No updates will be made for Nightly builds.
-- See the chart at the top for the version number for Nightly builds.
-- With a version such as 0.60.x, the `x` is equal to 0 when dev-channel gets the previous 0.59.y version.
+- We don't currently offer nightly builds from master, but we may in the future.
 - Developers work off of master.
-- We keep master stable, when it is not we backout what broke it.
+- We keep master stable, when it is not, we backout what broke it.
+- If something fails tests, that thing should be backed out.
 - `brave/brave-browser`'s `package.json` specifies brave-core branch to be `master`.
 
 
