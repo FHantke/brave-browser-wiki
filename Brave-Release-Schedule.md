@@ -19,7 +19,7 @@ Freeze time is defined to be a period of time where only bug fixes, Chromium min
 
 If a feature being worked on just misses the freeze time, then it will land on the next branch which is 1 release cycle higher.  This happens even if the feature was originally wanted for a certain version.
 
-Freezing is a concept that is per version branch and not per channel.  Every version has a 3 week freeze before release date.
+Freezing is a concept that is per version branch and not per channel.  Every version has a 3-week freeze before the release date.
 
 
 ---
@@ -105,9 +105,20 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.57.x  |    71           | October 16, 2018   |
 | 0.58.x  |    71           | November 6, 2018   |
 | 0.59.x  |    72           | December 4, 2018   |
-| 0.60.x  |    72           | January 15, 2019   |
-| 0.61.x  |    73           |                    |                     
-| 0.62.x  |    73           |                    |              
+| 0.60.x  |    72           | December 20, 2018  |
+| 0.61.x  |    73           | January 29, 2019   |                     
+| 0.62.x  |    73           | February 19, 2019  |              
+| 0.63.x  |    74           | March 12, 2019     |                     
+| 0.64.x  |    74           | April 2, 2019      |              
+| 0.65.x  |    75           | April 23, 2019     |                     
+| 0.66.x  |    75           | May 14, 2019       |              
+| 0.67.x  |    76           | June 4, 2019       |                     
+| 0.68.x  |    76           | July 2, 2019       |              
+| 0.69.x  |    77           | July 30, 2019      |                     
+| 0.70.x  |    77           | August 20, 2019    |              
+| 0.71.x  |    78           | September 10, 2019 |                     
+| 0.72.x  |    78           | October 1, 2019    |              
+| 0.73.x  |    79           | October 22, 2019   |              
 
 
 - This channel will sometimes get merges from master to speed up the delivery of features. 
