@@ -40,9 +40,9 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.64.x  |    74    | April 23, 2019     | May 14, 2019        |                                |
 | 0.65.x  |    75    | May 14, 2019       | June 4, 2019        |                                |
 | 0.66.x  |    75    | June 4, 2019       | July 2, 2019        |                                |
-| 0.67.x  |    76    | July 2, 2019       | July 30th, 2019     |                                |
+| 0.67.x  |    76    | July 2, 2019       | July 30, 2019       |                                |
 | 0.68.x  |    76    | July 30, 2019      | August 20, 2019     |                                |
-| 0.69.x  |    77    | August 20, 2019    | Sept 10, 2019       |                                |
+| 0.69.x  |    77    | August 20, 2019    | September 10, 2019  |                                |
 | 0.70.x  |    77    | Septemer 10, 2019  | October 1, 2019     |                                |
 | 0.71.x  |    78    | October 1, 2019    | October 22, 2019    |                                |
 | 0.72.x  |    78    | October 22, 2019   | November 12, 2019   |                                |
@@ -68,9 +68,20 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.57.x  |    71    | November 6, 2018   |
 | 0.58.x  |    71    | December 4, 2018   |
 | 0.59.x  |    72    | December 20, 2018  |
-| 0.60.x  |    72    |                    |                     
-| 0.61.x  |    73    |                    |                     
-| 0.62.x  |    73    |                    |              
+| 0.60.x  |    72    | January 29, 2019   |                     
+| 0.61.x  |    73    | February 19, 2019  |                     
+| 0.62.x  |    73    | March 12, 2019     |  
+| 0.63.x  |    74    | April 2, 2019      |              
+| 0.64.x  |    74    | April 23, 2019     |              
+| 0.65.x  |    75    | May 14, 2019       |              
+| 0.66.x  |    75    | June 4, 2019       |              
+| 0.67.x  |    76    | July 2, 2019       |              
+| 0.68.x  |    76    | July 30, 2019      |              
+| 0.69.x  |    77    | August 20, 2019    |              
+| 0.70.x  |    77    | September 10, 2019 |              
+| 0.71.x  |    78    | October 1, 2019    |              
+| 0.72.x  |    78    | October 22, 2019   |              
+| 0.73.x  |    79    | November 12, 2019  |              
 
 
  
