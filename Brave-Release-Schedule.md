@@ -28,7 +28,6 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 | Version | Chromium | Freeze Date        | Release Date        | Comments                       |
 | ------- | ---------|--------------------|---------------------|--------------------------------|
-| 0.55.x  |    70    | October 16, 2018   | October 18, 2018    |                                |
 | 0.56.x  |    70    | October 30, 2018   | November 6, 2018    |                                |
 | 0.57.x  |    71    | November 20, 2018  | December 4, 2018    |                                |
 | 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | Early release due to holidays  |
@@ -60,10 +59,6 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 | Version | Chromium | Date               | Comments                                  |
 | ------- | ---------|--------------------|-------------------------------------------|
-| 0.52.x  |    68    | July 24, 2018      | Will not ship on Beta channel
-| 0.53.x  |    69    | August 14, 2018    | Will not ship on Beta channel
-| 0.54.x  |    69    | September 4, 2018  | Will not ship on Beta channel
-| 0.55.x  |    70    | September 24, 2018 | Will ship on Beta channel
 | 0.56.x  |    70    | October 16, 2018   |
 | 0.57.x  |    71    | November 6, 2018   |
 | 0.58.x  |    71    | December 4, 2018   |
@@ -97,9 +92,6 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 | Version | Target Chromium | Date               | Comments                                  |
 | ------- | ----------------|--------------------|-------------------------------------------|
-| 0.52.x  |    68           | July 3, 2018       |
-| 0.53.x  |    69           | July 24, 2018      |
-| 0.54.x  |    69           | August 14, 2018    |
 | 0.55.x  |    70           | September 4, 2018  | 
 | 0.56.x  |    70           | September 24, 2018 |
 | 0.57.x  |    71           | October 16, 2018   |
