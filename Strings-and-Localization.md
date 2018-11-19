@@ -3,8 +3,10 @@ Most strings are provided as resources, so that they may be translated to the ma
 They can be split in to two categories: those that are provided and referenced only from Brave code, and those that are provided and referenced from within Chromium code.
 
 ## Brave-only strings
-All brave-only strings are referenced from `brave/app/brave_generated_resources.grd`
-Modifications and additions should be made directly to this file.
+
+All brave-only strings are referenced from one of the files listed in `lib/l10nUtil.js` in `braveNonGeneratedPaths`.
+
+Modifications and additions should be made directly to one of the files listed there.
 Translated versions of modified or added strings will only happen once per release cycle.
 
 ## Chromium strings
