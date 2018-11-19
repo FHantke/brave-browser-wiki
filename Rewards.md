@@ -53,4 +53,15 @@ short-retries | bool | Enables short retries intervals that can be used for test
 * `... -- --rewards=env=stag,reconcile-interval=5` (multiple)
 
 # Logging
-TODO
+We have two 6 levels of logging. Difference between them is in how detailed and severe log is. Bellow you can see the table.
+
+```
+  LOG_ERROR = 1,
+  LOG_WARNING = 2,
+  LOG_INFO = 3,
+  LOG_DEBUG = 4,
+  LOG_REQUEST = 5,
+  LOG_RESPONSE = 6
+```
+
+You can trigger level 1-3 with adding flag `--v=num`. `Num` should be replaced with number 1, 2 or 3. If you want to go even deeper you can use flag `--vmodule=*rewards*=num`, where you replace `num` with 4, 5 or 6. This two flags can be used at the same time like `--v=3 ----vmodule=*rewards*=6` if you want to print out all logs (levels 1-6).
