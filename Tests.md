@@ -140,3 +140,8 @@ Note requests that return 307 are not actually sent over the network
 ---
 
 `GOOGLE_OWNED_SERVICE` is a very good search term to find all the places in Chromium that hit Google servers for any reason. https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
+
+
+# Debugging tips
+
+It's sometimes useful to see the console while browser tests are running.  When it is in this state, you can't enter user input or focus the window, but you can right click and `Inspect` to see the console and show the devtools.
