@@ -7,7 +7,6 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Check https://github.com/brave/bittorrent-tracker is up to date with its latest upstream.
 - [ ] Check https://github.com/brave/torrent-discovery is up to date with its latest upstream.
 - [ ] Check Tor is up to date with its latest upstream.
-
 - [ ] At freeze date, consult with the security team to ensure that all security issues have been included.
 - [ ] At freeze date, consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverables.
 
