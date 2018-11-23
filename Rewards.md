@@ -42,9 +42,9 @@ This are flags that you can use for rewards. Flags can help you out testing thin
 ### Options
 Option name | Option value | Description
 ------------ | ------------- | -------------
-env | `stag` or `prod` | You can use this option for switching between production and staging servers
+staging | boolean | You can use this option for switching between production and staging servers
 reconcile-interval |integer | Define what the interval should be between monthly contributions in minutes.
-short-retries | bool | Enables short retries intervals that can be used for testing contribution failures 
+short-retries | boolean | Enables short retries intervals that can be used for testing contribution failures 
 
 ### Usage
 (replace ... with examples from How to run it)
