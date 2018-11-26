@@ -8,3 +8,6 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 
 * `https://dl.google.com/release2/chrome_component/*crl-set*`: `https://crlsets1.brave.com/<same>`
 * `https://*.gvt1.com/edgedl/release2/chrome_component/*crl-set*`: `https://crlsets2.brave.com/<same>`
+* `https://safebrowsing.googleapis.com/`: `https://safebrowsing.brave.com`
+* `https://ssl.gstatic.com`: `https://static.brave.com`
+* `https://gstatic.com`: `https://static1.brave.com`
