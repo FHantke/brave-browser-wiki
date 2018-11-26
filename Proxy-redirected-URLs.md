@@ -7,4 +7,4 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 `<same<>` indicates that everything after the host in the URL is passed through to the new URL.
 
 * `https://dl.google.com/release2/chrome_component/*crl-set*`: `https://crlsets1.brave.com/<same>`
-* `https://*.gvt1.com/edgedl/release2/chrome_component/*crl-set*`: ``https://crlsets2.brave.com/<same>`
+* `https://*.gvt1.com/edgedl/release2/chrome_component/*crl-set*`: `https://crlsets2.brave.com/<same>`
