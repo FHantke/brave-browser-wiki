@@ -49,8 +49,8 @@ short-retries | boolean | Enables short retries intervals that can be used for t
 ### Usage
 (replace ... with examples from How to run it)
 
-* `... -- --rewards=env=stag` (single)
-* `... -- --rewards=env=stag,reconcile-interval=5` (multiple)
+* `... -- --rewards=staging=false` (single)
+* `... -- --rewards=staging=false,reconcile-interval=5` (multiple)
 
 # Logging
 We have two 6 levels of logging. Difference between them is in how detailed and severe log is. Bellow you can see the table.
