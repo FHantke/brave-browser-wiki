@@ -34,6 +34,22 @@
   2. If not approved, they will indicate the decision in the issue with something like "This is too risky so we won't uplift to Beta, you can bring it up at the next triage meeting to dispute it.".  Then they will remove the label.
 - Approvers are expected to work with people across the org to help make decisions.
 
+# Priority labels
+
+We use priority labels from 1-5 as a way to describe which issues should be worked on next. The general principle is:
+- if there's a P1 issue you could work on, you should do that at your earliest possible convenience
+- don't start work on a P(n+1) issue if there's a P(n) issue you could start working on instead
+
+The rest of this is a rough rubric about how to prioritize issues.
+
+- [`priority/P1`](https://github.com/brave/brave-browser/labels/priority%2FP1): A very extremely bad problem. We might push a hotfix for it. [This should only be for a very few rare issues.]
+- [`priority/P2`](https://github.com/brave/brave-browser/labels/priority%2FP2): A bad problem. We might uplift this to the next planned release. [We don't expect to see many of these.]
+- [`priority/P3`](https://github.com/brave/brave-browser/labels/priority%2FP3): The next thing for us to work on. It'll ride the trains. [Our bread and butter work.]
+- [`priority/P4`](https://github.com/brave/brave-browser/labels/priority%2FP4): Planned work. We expect to get to it "soon". [A larger backlog of things we're getting to.]
+- [`priority/P5`](https://github.com/brave/brave-browser/labels/priority%2FP5): Not scheduled. Don't anticipate work on this any time soon. [Not necessarily wontfix, but not in the work queue at all.]
+
+Ultimately, go by the expectation that folks will pick up issues in priority order. If you're noting a task to add to your team's backlog: probably P4. If you're noting a new important task, probably P3 unless unusually severe. If you're triaging a suggestion which shouldn't edge out anything we've already planned: P5.
+
 # QA triage
 
 - Never remove `QA/Yes` and `QA/No` labels
