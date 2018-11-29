@@ -9,8 +9,8 @@
 
 | **Channel**     | Release |  Beta  | Dev       | Nightly|
 | ----------------| ------- | ------ | --------- | ------ |
-| **Milestone**   | 0.56.x  | 0.57.x | 0.58.x    | 0.59.x |
-| **Branch name** | 0.56.x  | 0.57.x | 0.58.x    | master |
+| **Milestone**   | 0.57.x  | 0.58.x | 0.59.x    | 0.60.x |
+| **Branch name** | 0.57.x  | 0.58.x | 0.59.x    | master |
 
 
 # Freeze
