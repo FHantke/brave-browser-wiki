@@ -216,14 +216,14 @@ Then, when it's time to actually call `SimpleURLLoader`, use `url_loader_factory
 
 ## Your Callback Function
 
-When `SimpleURLLoader` is done, it will call the callback function that you specified when you called the download method. The callback function looks like this:
+When `SimpleURLLoader` is done, it will call the callback function that you specified when you called the download method. In the case of the `DownloadToString*` methods, your callback function looks like this:
 
 ```
 void MyClass:OnSimpleLoaderComplete(std::unique_ptr<std::string> response_body) {
 }
 ```
 
-If there was any sort of error, `response_body` will be `null`. Always null-check `response_body`.
+`response_body` is the body of the HTTP response, normalized into an `std::string` (i.e. not bytes). If there was any sort of error, `response_body` will be `null`. Always null-check `response_body`.
 
 If there were any HTTP headers included in the response, the `headers` field on the original `simple_url_loader_` object will contain the response headers. The `headers` field can be null. Always null-check `simple_url_loader_->headers`.
 
