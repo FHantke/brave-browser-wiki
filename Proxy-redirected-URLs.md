@@ -11,3 +11,5 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 * `https://safebrowsing.googleapis.com/`: `https://safebrowsing.brave.com`
 * `https://ssl.gstatic.com`: `https://static.brave.com`
 * `https://gstatic.com`: `https://static1.brave.com`
+* `https://update.googleapis.com`: `https://componentupdater.brave.com`
+* `https://clients2.googleusercontent.com`: `https://crxdownload.brave.com`
