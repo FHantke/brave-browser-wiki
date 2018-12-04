@@ -102,21 +102,29 @@
 - [x] Referral promo
 - [x] Tipping and donations
 
-### Milestone 6: Releasable builds for 0.56.x
+### Milestone 6: 0.56.x
 
-- [ ] New shields redesign
-- [ ] More UI work
-- [ ] Uphold widget
-- [ ] 2-way wallet?
-- [ ] Get automated C++ tests running on Travis
+- [x] New shields redesign
+- [x] More UI work
+- [x] Get automated C++ tests running on Travis
 
-### Milestone 6: Releasable builds for 0.57.x
+### Milestone 6: 0.57.x
 
+- [x] Migrate muon users
+
+### Milestone 6: 0.58.x
 - [ ] Sync (Alexey, Cezar, Anthony, BrianJ)
-- [ ] Ads integration into Brave-core
-- [ ] Restyling bookmarks, history, preferences (Cezar)
 
-### Beyond release Milestone 6
+
+### Milestone 6: 0.59.x
+
+- [ ] Uphold widget / 2 way wallet?
+
+### Milestone 7: 0.60.x
+
+- [ ] Ads integration into Brave-core
+
+### Beyond
 
 - [ ] Make extensions.brave.com store
 - [ ] Private tabs instead of just private windows
@@ -126,4 +134,7 @@
 - [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
 - [ ] Clear private data on shutdown
-- [ ] Session windows (Brian Johnson)
+- [ ] Session windows
+- [ ] Restyling bookmarks, history, preferences
+- [ ] IPFS integration
+
