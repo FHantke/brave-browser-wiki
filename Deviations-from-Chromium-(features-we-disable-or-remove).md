@@ -56,6 +56,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 _Google does not receive any information about which client is performing these requests (not even your IP address)._
 
 - [SafeBrowsing requests are proxied](https://github.com/brave/brave-core/pull/108)
+- [Geolocation requests are proxied](https://github.com/brave/brave-core/pull/19)
 - [Plugin updates are proxied](https://github.com/brave/brave-core/pull/680)
 - [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
 
