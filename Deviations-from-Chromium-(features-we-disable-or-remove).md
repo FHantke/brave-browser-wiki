@@ -49,6 +49,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Push client channel updates are disabled](https://github.com/brave/brave-core/pull/912)
 - [Network time tracker is disabled](https://github.com/brave/brave-core/pull/792)
 - [Google-assisted address normalization is disabled](https://github.com/brave/brave-core/pull/769)
+- [RAPPOR log uploading is disabled](https://github.com/brave/brave-core/pull/963)
 
 ### Services We Proxy Through Brave Servers
 
