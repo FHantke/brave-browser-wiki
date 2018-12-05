@@ -60,7 +60,7 @@ _Google does not receive any information about which client is performing these 
 
 ### Comments
 
-Some of the above (along with other issues) are previously tracked in https://github.com/brave/brave-browser/issues/13.
+Some of the above (along with other issues) were previously tracked in https://github.com/brave/brave-browser/issues/13.
 
 You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates, such as for PDFJS (which is our built-in PDF reader).
 
