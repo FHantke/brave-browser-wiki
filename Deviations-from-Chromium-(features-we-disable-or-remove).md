@@ -23,28 +23,46 @@ As part of the setup process, we also fetch our own code. The [`brave-core` repo
 ### Hooks are run
 After the gclient sync runs and fetches all the code (including `brave-core`), the hooks are run. One of the hooks that runs applies the patches ([which you can see here](https://github.com/brave/brave-core/tree/master/patches)) that are contained in `brave-core`. If you'd like to know more details about HOW the patching works, you can [take a peek at our patching wiki page](https://github.com/brave/brave-browser/wiki/Patching-Chromium)
 
-
 ## What Chromium features are removed for privacy/security reasons?
 
-### Specific issues
-- Disabling domain service reliability: https://github.com/brave/brave-core/pull/246
-- Disable Chrome Google URL Tracker: https://github.com/brave/brave-core/pull/248
-- Disable google services in privacy settings: https://github.com/brave/brave-core/pull/244
-- <abbr title="Google Accounts and ID Administration">GAIA</abbr> URLs are set to `no-thanks.invalid` in brave-core: https://github.com/brave/brave-core/pull/512
-- Disable DNS prefetching: https://github.com/brave/brave-core/pull/340
-- Disable chrome.webstore.install for inline extensions: https://github.com/brave/brave-browser/issues/614
-- Disable background sync: https://github.com/brave/brave-browser/issues/515
-- Disable google accounts integration and chrome sync
-- SafeBrowsing requests are proxied https://github.com/brave/brave-core/pull/108
+### Services & Features We Disable Entirely
+
+- [Google accounts integration ("<abbr title="Google Accounts and ID Administration">GAIA</abbr>") is disabled](https://github.com/brave/brave-core/pull/512)
+- [All features that send data to Google are removed from settings](https://github.com/brave/brave-core/pull/244)
+- [DNS prefetching is disabled](https://github.com/brave/brave-core/pull/340)
+- [Page translation is disabled](https://github.com/brave/brave-core/pull/562)
+- [Chrome Google URL Tracker is disabled](https://github.com/brave/brave-core/pull/248)
+- [Domain service reliability is disabled](https://github.com/brave/brave-core/pull/246)
+- [Inline extensions are disabled](https://github.com/brave/brave-browser/issues/614)
+- [Background sync is disabled](https://github.com/brave/brave-browser/issues/515)
+- [Hyperlink `ping` attribute is disabled](https://github.com/brave/brave-browser/issues/764)
+- [Battery API is disabled](https://github.com/brave/brave-core/pull/114)
+- [WebUSB API is disabled](https://github.com/brave/brave-core/pull/114)
+- [WebBluetooth API is disabled](https://github.com/brave/brave-core/pull/114)
+- [WebRTC debug log uploading is disabled](https://github.com/brave/brave-core/pull/809)
+- [Uploading settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/745)
+- [Retrieving OEM default settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/978)
+- [Tracing crash log uploading is disabled](https://github.com/brave/brave-browser/issues/2121)
+- [Remote debugging is disabled](https://github.com/brave/brave-core/pull/790)
+- [Google Cloud Messaging is disabled](https://github.com/brave/brave-browser/issues/1716)
+- [Firebase Cloud Messaging is disabled](https://github.com/brave/brave-core/pull/908)
+- [Push client channel updates are disabled](https://github.com/brave/brave-core/pull/912)
+- [Network time tracker is disabled](https://github.com/brave/brave-core/pull/792)
+- [Google-assisted address normalization is disabled](https://github.com/brave/brave-core/pull/769)
+
+### Services We Proxy Through Brave Servers
+
+_Google does not receive any information about which client is performing these requests (not even your IP address)._
+
+- [SafeBrowsing requests are proxied](https://github.com/brave/brave-core/pull/108)
+- [Plugin updates are proxied](https://github.com/brave/brave-core/pull/680)
+- [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
 
 ### Comments
-Some of the above (along with other issues) were tracked in https://github.com/brave/brave-browser/issues/13.
+
+Some of the above (along with other issues) are previously tracked in https://github.com/brave/brave-browser/issues/13.
 
 You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates, such as for PDFJS (which is our built-in PDF reader).
-
-Google translate is disabled as of this commit: https://github.com/brave/brave-core/commit/3351db79213b04d0879b9e284c4914c3da214a16
-
-<abbr title="Google Accounts and ID Administration">GAIA</abbr> (Google's sign-in code) is effectively disabled by setting the service URL to an invalid endpoint: https://github.com/brave/brave-browser/issues/1312
 
 ## How does Brave compare to `ungoogled-chromium`?
 Description of [`ungoogled-chromium`](https://github.com/Eloston/ungoogled-chromium), per their GitHub page:
