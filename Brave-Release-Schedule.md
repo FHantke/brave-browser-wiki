@@ -127,11 +127,13 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 Follow this checklist:
 
-- [ ] Create a new branch off of master of brave-core for the new version. `cd src/brave && git checkout master && git pull`
-- [ ] Create a new branch off of master of brave-browser for the new version.  `git checkout master && git pull`
+- [ ] Create a new branch off of `master` of `brave/brave-core` for the new version. `cd src/brave && git checkout master && git pull`
+- [ ] Create a new branch off of `master` of `brave/brave-browser` for the new version.  `git checkout master && git pull`
+- [ ] Create a new branch off of `master` of `brave-intl/bat-native-ledger` for the new version.  `git checkout master && git pull`
 - [ ] Update info in the chart at the top of https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule 
-- [ ] Turn on branch protections for the new branch for brave-browser
-- [ ] Turn on branch protections for the new branch for brave-core
+- [ ] Turn on branch protections for the new branch for `brave/brave-browser`
+- [ ] Turn on branch protections for the new branch for `brave/brave-core`
+- [ ] Turn on branch protections for the new branch for `brave-intl/bat-native-ledger`
 - [ ] Update versions on brave-browser with a commit like this: https://github.com/brave/brave-browser/commit/b6e3f38df2519d86c983e12e04a7c0ed70607453
 - [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/dbba50b4bc272ac007522d1e39706594bf78522a
 - [ ] Update the `merged/` labels on brave-browser to add the correct prefix for the different versions.
@@ -139,7 +141,7 @@ Follow this checklist:
 - [ ] Update the `uplift/` labels on brave-browser to add the correct prefix for the different versions.
 - [ ] Update the `uplift/` labels on brave-core to add the correct prefix for the different versions.
 - [ ] Update milestone names with the channel name.
-- [ ] Message everyone in slack in #brave-core about a each branch and where it lives.
+- [ ] Message everyone in slack in #brave-core about each branch and where it lives.
 
 Example Slack ping:
 
