@@ -111,6 +111,8 @@
 ### Milestone 6: 0.57.x
 
 - [x] Migrate muon users
+- [x] Fix extensions compat
+- [x] Fix some blocking issues
 
 ### Milestone 6: 0.58.x
 - [ ] Sync (Alexey, Cezar, Anthony, BrianJ)
