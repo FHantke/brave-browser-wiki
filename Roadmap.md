@@ -120,11 +120,12 @@
 
 ### Milestone 6: 0.59.x
 
+- [ ] Some ads integration into brave-core possibly disabled behind a flag
 - [ ] Uphold widget / 2 way wallet?
 
 ### Milestone 7: 0.60.x
 
-- [ ] Ads integration into Brave-core
+- [ ] Ads integration into Brave-core w/ blind token confirmations
 
 ### Beyond
 
