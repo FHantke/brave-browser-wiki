@@ -1,5 +1,8 @@
 ## Milestones
 
+This is a working document, things will update and move around to reflect reality. 
+Things are not set in stone in this document.
+
 ### Milestone 1: Open sourceable (December 2017 - February 2018)
 - [x] Adblock off the main thread
 - [x] Tracking protection off the main thread
