@@ -1,7 +1,7 @@
 ## Milestones
 
 This is a working document, things will update and move around to reflect reality. 
-Things are not set in stone in this document.
+Things are not set in stone in this document.  Brave members are expected to update this document to reflect reality to share current status with community.
 
 ### Milestone 1: Open sourceable (December 2017 - February 2018)
 - [x] Adblock off the main thread
