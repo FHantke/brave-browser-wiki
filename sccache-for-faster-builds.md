@@ -30,7 +30,7 @@ If you already have rust installed but you're not sure if it's current, you can 
 
 #### Mac/Linux installation
 Install Rust via [rustup](https://rustup.rs/)
-```
+```bash
 curl https://sh.rustup.rs -sSf | sh
 ```
 On Linux, you may need to install `libssl-dev` and `pkg-config` using apt/yum/dnf
@@ -41,11 +41,25 @@ Download and install Rust via [rustup](https://rustup.rs/) and follow the on=scr
 
 ### Install sccache
 With rust setup, you can install the `sccache` cargo package
-```
+```bash
 cargo install --force sccache
 ```
 
-### Troubleshooting
+### Paths
+You'll want to make sure rust / cargo binaries can be found by modifying your path in your shell profile, e.g. ~/.bashrc:
+```bash
+export PATH="$PATH:$HOME/.cargo/bin"
+```
+You may have to use `${HOME}` instead of `~` in the `PATH` variable in `.bashrc` since [it might break depot_tools](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#install).
+
+For convenience, you may also want to symlink the sccache binary into `/usr/local/bin`:
+```bash
+ln -s ~/.cargo/bin/sccache /usr/local/bin/sccache
+```
+
+Test it's working by running `which sccache` and observing that your shell has found the program.
+
+### Troubleshooting the install
 - You'll need to have OpenSSL installed on your machine
   - On macOS, you can install via Homebrew (`brew install openssl`), but some manual linking may be needed (for the include files)
   - Also on macOS, you can also run `brew doctor` to help try to identify problems with your installed packages
@@ -54,24 +68,29 @@ cargo install --force sccache
 - When installing sccache v0.2.7 on Windows, you are likely to get an error `failed to compile`. This is a known error (https://github.com/mozilla/sccache/issues/292) and is due to a compilation warning issued during the build of ring-0.12.1 and the setting to treat warnings as errors. To get around this, in your cmd shell, `set _CL_=/wd5045` and `set _LINK_=/WX:NO` (this one may not be necessary), then rerun the cargo install command.
 
 ## Configuring sccache
-You'll need to export some variables used by sccache to your `.bashrc`
-```
-export PATH="$PATH:~/.cargo/bin/"  # path to binaries like sccache
+
+You'll need to export some variables used by sccache to your `.bashrc`. Sccache is aimed to be distributed so it supports a number of providers: s3, redis, etc, as well as a local disk cache for only caching your own output.
+Examples:
+
+```bash
+# disk cache
 export SCCACHE_CACHE_SIZE=100G     # some of us use 100GB; you can use less if needed
 export SCCACHE_DIR=~/sccache       # where the cache is physically stored
 ```
 
-You may have to use `${HOME}` instead of `~` in the `PATH` variable in `.bashrc` since [it might break depot_tools](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#install).
-
-For convenience, you may also want to symlink the sccache binary into `/usr/local/bin`:
+```bash
+# s3 cache
+export SCCACHE_BUCKET=sccache-macos-bucket # bucket must exist and your access key must have read/write perm
+export SCCACHE_ENDPOINT=optional-host:123
+export AWS_ACCESS_KEY_ID=XXX
+export AWS_SECRET_ACCESS_KEY=YYY
 ```
-ln -s ~/.cargo/bin/sccache /usr/local/bin/sccache
-```
 
-## Setting the .npmrc
+## Configuring brave-browser to use sccache
+
+### Setting the environment variable
 This is the most important part. In your `brave-browser` root directory, you'll want to open the `.npmrc` file. To enable `sccache`, you'll need to add a line:
 ```
 sccache = sccache
 ```
-
-For legacy purposes, it's important to note that this works with Muon also (and should work with any project really)
+This will make sure when running any npm script in brave-browser that the `sccache` environment variable is set to the string `"sccache"`. This could instead be set in any other way: via an export in `~/.npmrc` or even via `.bashrc`.
