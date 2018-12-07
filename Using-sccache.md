@@ -68,48 +68,6 @@ For convenience, you may also want to symlink the sccache binary into `/usr/loca
 ln -s ~/.cargo/bin/sccache /usr/local/bin/sccache
 ```
 
-With macOS, it's also handy to setup a launch agent that will re-launch `sccache` if it quits/dies. You can create a new file at `~/Library/LaunchAgents/com.sccache.agent.plist`:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-        <key>EnvironmentVariables</key>
-        <dict>
-           <key>SCCACHE_DIR</key>
-           <string>/Users/clifton/sccache</string>
-           <!-- <key>SCCACHE_REDIS</key> -->
-           <!-- <string>SCCACHE_REDIS_URL</string> -->
-           <key>SCCACHE_CACHE_SIZE</key>
-           <string>100G</string>
-        </dict>
-        <key>Label</key>
-        <string>com.sccache.agent</string>
-        <key>ProgramArguments</key>
-        <array>
-          <string>/usr/local/bin/sccache</string>
-                <string>-s</string>
-        </array>
-        <key>StandardErrorPath</key>
-        <string>/dev/null</string>
-        <key>StandardOutPath</key>
-        <string>/dev/null</string>
-        <key>StartInterval</key>
-        <integer>60</integer>
-</dict>
-</plist>
-```
-Be sure to update values there (such as cache size or the actual path to the binary) to match your install. Once that file is created, you can run the following:
-```
-launchctl load ~/Library/LaunchAgents/com.sccache.agent.plist
-launchctl start ~/Library/LaunchAgents/com.sccache.agent.plist
-```
-
-And then finally, you can verify it's loaded by running:
-```
-launchctl list
-```
-
 ## Setting the .npmrc
 This is the most important part. In your `brave-browser` root directory, you'll want to open the `.npmrc` file. To enable `sccache`, you'll need to add a line:
 ```
