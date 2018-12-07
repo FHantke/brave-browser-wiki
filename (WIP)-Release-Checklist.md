@@ -15,20 +15,25 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
 - [ ] Stage release notes to brave.com/release/ 
 
-### Test Staging for Updates (needs input from devops)
-- [ ] Install a prior version of the app
-- [ ] `BRAVE_UPDATE_HOST=https://laptop-updates-pre.brave.com open -a ./Brave.app`
-- [ ] Confirm SHA in about:brave matches expectations
-
 ### Certification and Builds
+- [ ] Upload builds to Omaha test channels (`86-r-test`, `64-r-test`, `test`(mac))
+- [ ] Log into Fastly, clear CDN cache for: `updates-cdn.bravesoftware.com`, `updates.bravesoftware.com`
+
+### Test Staging for Updates
+- [ ] Install a prior version of the app from test channels (`86-r-test`, `64-r-test`, `test`(mac))
+- [ ] Go to "About Brave" page to update
+- [ ] Confirm version matches expectations
 - [ ] QA summary and build verification report.
-- [ ] Devops starts release process. (need input from devops)
 
-### Fastly (need input from devops)
-- [ ] Log into Fastly and purge the cache
+### Release to production download locations
+- [ ] Publish github release (remove 'pre-release' checkmark)
+- [ ] Upload Mac/Win build to Omaha production channels (`x86-rel`, `x64-rel`, `stable`(mac))
+- [ ] Sign Linux builds and upload to S3 repositories
+- [ ] Upload Mac `.dmg` and `.pkg` to S3 bucket (i.e. `aws s3 cp ./Brave-Browser-Dev.dmg s3://brave-browser-downloads/latest/Brave-Browser-Dev.dmg --acl public-read`)
+- [ ] Upload Windows stub and silent installer to S3 bucket using similar command to Mac dmg above (i.e `BraveBrowserSetup.exe`, `BraveBrowserSetup32.exe`, `BraveBrowserSilentSetup.exe`, `BraveBrowserSilentSetup32.exe`)
 
-### Push To Production (need input from devops)
-- [ ] `git push heroku`
+### Clear Production Fastly cache
+- [ ] Log into Fastly, clear CDN cache for: `brave-browser-downloads.s3.brave.com`, `brave-browser-apt-release.s3.brave.com`, `brave-browser-rpm-release.s3.brave.com`, `updates-cdn.bravesoftware.com`, `updates.bravesoftware.com`
 
 ### Updates Testing on Production
 - [ ] Wait for confirmation that Windows live update works
