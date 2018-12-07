@@ -64,7 +64,7 @@ _Google does not receive any information about which client is performing these 
 
 Some of the above (along with other issues) were previously tracked in https://github.com/brave/brave-browser/issues/13.
 
-You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates if you installed extensions.  Our built-in PDF reader only goes to our own extension server for updates.
+You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates if you installed extensions.  Our built-in PDF reader (PDF.js) only goes to our own extension server for updates.
 
 ## How does Brave compare to `ungoogled-chromium`?
 Description of [`ungoogled-chromium`](https://github.com/Eloston/ungoogled-chromium), per their GitHub page:
