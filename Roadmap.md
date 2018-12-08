@@ -134,7 +134,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [ ] Make extensions.brave.com store
 - [ ] Private tabs instead of just private windows
-- [ ] More UI customizations
+- [ ] More UI customizations to differentiate from Chrome look
 - [ ] Tab pages?
 - [ ] Tab previews
 - [ ] Translations (Chrome parity)
@@ -143,4 +143,5 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] Session windows
 - [ ] Restyling bookmarks, history, preferences
 - [ ] IPFS integration
+- [ ] Settings redesign
 
