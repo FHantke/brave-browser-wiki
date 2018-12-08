@@ -113,13 +113,14 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 6: 0.57.x
 
-- [x] Migrate muon users
+- [x] Add import of more Brave legacy things
+- [x] Start migrate muon users
 - [x] Fix extensions compat
 - [x] Fix some blocking issues
 
 ### Milestone 6: 0.58.x
-- [ ] Sync (Alexey, Cezar, Anthony, BrianJ)
 
+- [ ] Sync
 
 ### Milestone 6: 0.59.x
 
