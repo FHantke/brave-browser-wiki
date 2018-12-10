@@ -30,9 +30,10 @@
 - Current approvers are @rebron @kjozwiak @Sri (Slack usernames).
 - They are expected to keep on top of issues tagged with labels similar to: `uplift-request/0.56.x-Beta`.
 - They should be working to keep that list at 0 issues. This happens in 1 of 2 ways.
-  1. If approved, they will work with someone to get it merged to Beta.  This includes updating the PR merged label and the issues milestone. Then they will remove the label.
-  2. If not approved, they will indicate the decision in the issue with something like "This is too risky so we won't uplift to Beta, you can bring it up at the next triage meeting to dispute it.".  Then they will remove the label.
+  1. If approved, they will add an `uplift-approved/0.56.x-Beta` label. 
+  2. If not approved, they will indicate the decision in the issue with something like "This is too risky so we won't uplift to Beta, you can bring it up at the next triage meeting to dispute it.".  Then they will remove the uplift request label.
 - Approvers are expected to work with people across the org to help make decisions.
+- The person doing the original request must see that it actually gets merged. This includes updating the PR merged label and the issues milestone.
 
 # Priority labels
 
