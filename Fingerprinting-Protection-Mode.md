@@ -1,4 +1,4 @@
-*This article is also available here: https://community.brave.com/t/all-about-fingerprinting-protection-mode*
+*This article is also available here but less up to date: https://community.brave.com/t/all-about-fingerprinting-protection-mode*
 
 ## What is Fingerprinting Protection?
 
@@ -26,7 +26,7 @@ Because most browser fingerprinting defense requires disabling web features that
 
 * 3rd party cookies and referers blocked by default
 * User-Agent is set to Chrome except on a few sites that need it for major functionality to work
-* [TODO] `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash. When Flash is enabled via click-to-play on a given site, both of these only report Flash.
+* `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash
 * Connections to known tracking domains are blocked via the Tracking Protection library
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled
 * `navigator.credentials` is disabled on desktop
@@ -41,10 +41,10 @@ See https://community.brave.com/t/how-do-i-turn-on-browser-fingerprinting-protec
 Although useful for raising awareness of fingerprinting techniques, sites like Panopticlick are not a perfect indicator of how fingerprintable your browser is. Some known limitations are:
 
 * Panopticlick only reports your uniqueness relative to the population of users visiting Panopticlick, which is almost certainly skewed relative to the entire population of users on the web. For instance, imagine that a very large number of Tor Browser users visit Panopticlick because they're trying to test their Tor Browser privacy settings. If you then visit Panopticlick in Chrome with default settings, you will then appear as more identifiable than Tor Browser users despite the fact that Chrome with default settings is more popular than Tor Browser overall. Similarly, because many Panopticlick users care about privacy and turn on Do Not Track, Panopticlick reports that users are *less* unique when they have DNT turned on than off, even though probably [less than 12%](https://blog.mozilla.org/netpolicy/2013/05/03/mozillas-new-do-not-track-dashboard-firefox-users-continue-to-seek-out-and-enable-dnt/) of web users have DNT enabled.
-* Panopticlick also compares you against old browsers. For instance, if the plurality of Panopticlick visits were from people using Firefox 3 many years ago, then a person using Firefox 3 could appear as not-very-identifiable even though there are extremely few Firefox 3 users on the web in 2017 (or at least one would hope).
+* **[EDIT (12/11/18): This appears to no longer be true.]** Panopticlick also compares you against old browsers. For instance, if the plurality of Panopticlick visits were from people using Firefox 3 many years ago, then a person using Firefox 3 could appear as not-very-identifiable even though there are extremely few Firefox 3 users on the web in 2017 (or at least one would hope).
 * Panopticlick does not account for the fact that randomized fingerprint values are an effective way to prevent real-world fingerprinting. For instance, if Brave browser randomized canvas fingerprints on every page request, then it would be impossible for a site to track a specific Brave user across requests using canvas fingerprinting. However, because the randomized values would be unique, Panopticlick would report Brave as being highly canvas-fingerprintable.
 
-One way to "trick" Panopticlick is to open the site in various Brave session tabs and re-run the fingerprinting test. Panopticlick will then report that your Brave configuration is less identifiable because there have been other "users" visiting the site with the same configuration.
+**[EDIT (12/11/18): This may no longer work.]** One way to "trick" Panopticlick is to open the site in various Brave session tabs and re-run the fingerprinting test. Panopticlick will then report that your Brave configuration is less identifiable because there have been other "users" visiting the site with the same configuration.
 
 ## TODO
 
