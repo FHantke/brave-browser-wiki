@@ -36,7 +36,7 @@ curl https://sh.rustup.rs -sSf | sh
 On Linux, you may need to install `libssl-dev` and `pkg-config` using apt/yum/dnf
 
 #### Windows installation
-Download and install Rust via [rustup](https://rustup.rs/) and follow the on=screen instructions
+Download and install Rust via [rustup](https://rustup.rs/) and follow the on-screen instructions
 
 
 ### Install sccache
