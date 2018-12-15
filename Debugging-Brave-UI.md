@@ -1,11 +1,15 @@
 # Debugging Brave UI
 
-You can use the Chrome remote developer tools to debug aura UI views (Windows and Linux).
+You can use the Chrome remote developer tools to debug aura UI views (only available to Windows, Linux and ChromeOS).
 
-1. Run `src/out/Debug/brave --enable-ui-devtools`
-2. Run `chromium-browser --enable-ui-devtools` (you can also use Chrome if you prefer)
-3. In the Chromium browser, go to `chrome://inspect`
-4. Click on Other and in the section entitled "UiDevToolsClient" click on the `inspect` link.
+## Instructions
+
+1. `cd` to `src/out/Debug`
+2. Run `brave.exe --enable-ui-devtools` This will start Brave with the UiDevToolsClient flag enabled.
+3. `cd` to the application folder of Chromium or Chrome. Note: This can not be a stable release of Chrome. UI Devtools are [not available in stable releases of Chrome any longer.](https://cs.chromium.org/chromium/src/chrome/browser/about_flags.cc?l=4410)
+4. Run `chromium-browser.exe --enable-ui-devtools` This will start Chromium with the UiDevToolsClient flag enabled.
+5. In the Chromium browser, type `chrome://inspect` into the URL bar.
+4. Click on the `Other` tab and in the section entitled "UiDevToolsClient" click on the `inspect` link.
 
 You can now use the DOM inspector and some of the other devtools.
 
