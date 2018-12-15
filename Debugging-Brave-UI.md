@@ -13,6 +13,11 @@ You can use the Chrome remote developer tools to debug aura UI views (only avail
 
 You can now use the DOM inspector and some of the other devtools.
 
+### Further Reading
+
+1. https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/eHeHP4RuvC0
+2. https://www.chromium.org/developers/how-tos/inspecting-ash
+
 <img width="1712" alt="screen shot 2018-06-10 at 12 50 46 pm" src="https://user-images.githubusercontent.com/831718/41204013-268f97d6-6cad-11e8-80c4-641e7f998aac.png">
 
 ## Changing the port
