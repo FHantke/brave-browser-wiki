@@ -59,6 +59,9 @@ Strings are matched using filename (not path). This is something we control in t
 
 ## Information for localizers:
 
+- The following resources should be manually translated in transifex:
+`brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`
+
 - Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. 
 - Sometimes strings have variables in them which should look like this:
 
