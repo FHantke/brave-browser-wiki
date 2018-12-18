@@ -55,3 +55,11 @@ Strings are matched using filename (not path). This is something we control in t
 - Use `<if expr=“”>` to inform the compiler which string to select. This is useful for platform variations or platform-specific strings. For example:
   - Strings that should have a different case on different systems such as title-case for macOS menus and lower-case for menus on other platforms (`<if expr="use_titlecase">`)
   - Strings that only appear on a single platform, such as Android (`<if expr="is_android">`)
+
+
+## Information for localizers:
+
+- Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. 
+- Sometimes strings have variables in them which should look like this:
+
+<img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
