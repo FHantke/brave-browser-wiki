@@ -120,16 +120,19 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 6: 0.58.x
 
-- [ ] Sync
+- [x] Tipping banner
+- [x] More import settings from Brave old (search settings)
+- [x] Fix relaunch after update
+- [x] Fixed PDFs not loading on certain websites when they are behind basic authentication
 
 ### Milestone 6: 0.59.x
 
 - [ ] Ads integration landing into brave-core possibly disabled behind a flag
-- [ ] Uphold widget / 2 way wallet?
+- [ ] Sync
 
 ### Milestone 7: 0.60.x
 
-- [ ] More focus with ads integration into Brave-core w/ blind token confirmations
+- [ ] Ads integration into Brave-core w/ blind token confirmations
 
 ### Beyond
 
@@ -145,4 +148,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] Restyling bookmarks, history, preferences
 - [ ] IPFS integration
 - [ ] Settings redesign
+- [ ] Uphold widget / 2 way wallet?
+- [ ] Tipping on individual sub-content
 
