@@ -127,9 +127,11 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 6: 0.59.x
 
-- [ ] Ads integration landing into brave-core possibly disabled behind a flag
-- [ ] Sync
-- [ ] Allow disabling PDF.js in settings
+- [x] Bookmarks Sync
+- [x] Ads integration landing into brave-core possibly disabled behind a flag
+- [x] Add Widevine detection to show up for install any time Widevine is attempted to be accessed.
+- [x] Allow disabling PDF.js in settings
+
 
 ### Milestone 7: 0.60.x
 
@@ -151,4 +153,5 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] Settings redesign
 - [ ] Uphold widget / 2 way wallet?
 - [ ] Tipping on individual sub-content
+- [ ] Sync for other types of data
 
