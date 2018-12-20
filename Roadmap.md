@@ -129,6 +129,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [ ] Ads integration landing into brave-core possibly disabled behind a flag
 - [ ] Sync
+- [ ] Allow disabling PDF.js in settings
 
 ### Milestone 7: 0.60.x
 
