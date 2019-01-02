@@ -18,7 +18,7 @@
 # Uplifting
 
 - By default everything is PR'ed against master and only lands in master.
-- If something is wanted in Dev channel, then a PR must be made to the current version branch which is in Dev channel and it must get an approval (Via reviewer).  That PR must contain the issue link and it requires 1 approval from anyone, most likely the same person that reviewed and accepted the original PR.
+- If something is wanted in Dev channel, then a PR must be made to the current version branch which is in Dev channel and it must get an approval (Via reviewer).  That PR must contain the issue link and it requires 1 approval from anyone, most likely the same person that reviewed and accepted the original separate PR against master.
 - If something is wanted in Beta channel, then a PR must be made to the current version branch which is in Beta. An approval (Via reviewer) is required by someone on the uplift approvers list below. 
 - If something is wanted in Release channel, then a PR must be made to the current version branch which is in Release. An approval (Via reviewer) is required by someone on the uplift approvers list below.   
 - Milestone on the issue should match only the smallest version where it is landed currently and NOT where you want it ideally.
