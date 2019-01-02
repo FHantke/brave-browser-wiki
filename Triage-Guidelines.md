@@ -11,7 +11,6 @@
       -  Get a status on each issue
       - Move issues along the process from the left most column to the right most depending on status.
       - Make sure the Untriaged Backlog column is empty and we add appropriate `priority/p1` - `priority/p5` labels
-    - Go through closed PRs that were merged to master recently.  Flag anything that we'd like to uplift, add an uplift label.  
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
 
