@@ -15,25 +15,22 @@
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
 
-
 # Uplifting
 
-- By default everything only lands in master.
-- For now no approval is needed if you also want it in Dev channel.  This is subject to change in the future.
-- Milestone on the issue should match only where it is currently and not where you want it ideally.  Merged label on the PR should match only where it is merged up to and not where you want it ideally.
-- Beta requires special permissions now. You can simply add a label to the PR of for example: `uplift-request/0.56.x-Beta` and it'll be either approved or not by one of the approvers (See below).  Once merged milestone will be updated accordingly on the issue and merge label will be updated accordingly as well. 
-- When something is uplifted, a changeset SHA of the merge commit should be pasted into the pull request for each branch it is uplifted to.
-- A single label should be added similar to `merged/0.55.x` where right hand side version is the first version this change appears in.    If something is one version it must be in every version above it all the way back up to master. For example if master is 0.58.x and it is marked with `merged/0.55.x`. Then this would go into 0.55.x, 0.56.x, 0.57.x, and master.
+- By default everything is PR'ed against master and only lands in master.
+- If something is wanted in Dev channel, then a PR must be made to the current version branch which is in Dev channel and it must get an approval (Via reviewer).  That PR must contain the issue link and it requires 1 approval from anyone, most likely the same person that reviewed and accepted the original PR.
+- If something is wanted in Beta channel, then a PR must be made to the current version branch which is in Beta. An approval (Via reviewer) is required by someone on the uplift approvers list below. 
+- If something is wanted in Release channel, then a PR must be made to the current version branch which is in Release. An approval (Via reviewer) is required by someone on the uplift approvers list below.   
+- Milestone on the issue should match only the smallest version where it is landed currently and NOT where you want it ideally.
+- Milestones on the PRs should match only the version branch that the PR is being merged to.
 
 # Uplift approvers
 
-- Current approvers are @rebron @kjozwiak @Sri (Slack usernames).
-- They are expected to keep on top of issues tagged with labels similar to: `uplift-request/0.56.x-Beta`.
-- They should be working to keep that list at 0 issues. This happens in 1 of 2 ways.
-  1. If approved, they will add an `uplift-approved/0.56.x-Beta` label. 
-  2. If not approved, they will indicate the decision in the issue with something like "This is too risky so we won't uplift to Beta, you can bring it up at the next triage meeting to dispute it.".  Then they will remove the uplift request label.
-- Approvers are expected to work with people across the org to help make decisions.
-- The person doing the original request must see that it actually gets merged. This includes updating the PR merged label and the issues milestone.
+- Current approvers are @rebron @kjozwiak @Sri @bbondy (Slack usernames).
+- If you are not an approver, do NOT approve any requests made to a Beta or Release branch
+- They are expected to keep on top of PRs tagged with labels similar to: `uplift-request/0.56.x-Beta`.
+- They should be working to keep PRs to version branches at 0 issues. 
+- The person doing the original request must see that it actually gets merged.
 
 # Priority labels
 
