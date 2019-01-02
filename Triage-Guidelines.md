@@ -26,7 +26,7 @@
 
 # Uplift approvers
 
-- Current approvers are @rebron @kjozwiak @Sri @bbondy (Slack usernames).
+- Current approvers are @rebron @kjozwiak @Sri @bbondy @clifton (Slack usernames).
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
 - They are expected to keep on top of PRs tagged with labels similar to: `uplift-request/0.56.x-Beta`.
 - They should be working to keep PRs to version branches at 0 issues. 
