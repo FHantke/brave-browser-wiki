@@ -27,8 +27,8 @@
 
 - Current approvers are @rebron @kjozwiak @Sri @bbondy @clifton (Slack usernames).
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
-- They should be working to keep PRs to version branches at 0 issues. 
-- The person doing the original request must see that it actually gets merged.
+- Approvers should be working to keep PRs to version branches at 0 issues. 
+- The person doing the original request must see that the PR actually gets merged.
 
 # Priority labels
 
