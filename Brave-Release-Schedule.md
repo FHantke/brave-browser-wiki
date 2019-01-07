@@ -137,12 +137,8 @@ Follow this checklist:
 - [ ] Verify branch protection is still in effect for `brave/brave-browser` and `brave/brave-core` for the new version. If it is of the format `0.*.x` then it will be.
 - [ ] Update versions on brave-browser with a commit like this: https://github.com/brave/brave-browser/commit/b6e3f38df2519d86c983e12e04a7c0ed70607453
 - [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/dbba50b4bc272ac007522d1e39706594bf78522a
-- [ ] Update the `merged/` labels on brave-browser to add the correct prefix for the different versions.
-- [ ] Update the `merged/` labels on brave-core to add the correct prefix for the different versions.
-- [ ] Update the `merged/` labels on brave-ui to add the correct prefix for the different versions.
-- [ ] Update the `uplift/` labels on brave-browser to add the correct prefix for the different versions. Make sure not to rename the version numbers on the labels because you would be changing where a developer intended to uplift something to!
-- [ ] Update the `uplift/` labels on brave-core to add the correct prefix for the different versions.  Make sure not to rename the version numbers on the labels because you would be changing where a developer intended to uplift something to!
-- [ ] Update the `uplift/` labels on brave-ui to add the correct prefix for the different versions.  Make sure not to rename the version numbers on the labels because you would be changing where a developer intended to uplift something to!
+- [ ] Add a new `[version]` label on brave-browser.
+- [ ] Add a new '[version]` label on brave-core.
 - [ ] Update milestone names with the channel name.
 - [ ] Message everyone in slack in #brave-core about each branch and where it lives.
 
