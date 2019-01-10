@@ -11,7 +11,7 @@ You will need Git, Python 2.7, NodeJS >= 7.x, and npm.
 If you are using Ubuntu, additionally install:
 
 ```
-apt-get install build-essential libgnome-keyring-dev python-setuptools rpm
+apt-get install build-essential libgnome-keyring-dev python-setuptools npm
 ```
 
 You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `npm run init` is finished, there is one final step to finish installing build dependencies. This shell script only works on Debian and Ubuntu but check [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#system-requirements) for other distros: 
