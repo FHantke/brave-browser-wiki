@@ -58,6 +58,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Announce release on https://community.brave.com/ (@brave-matt)
 - [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
 - [ ] Notify #general, #brave-core, #pr, #testers of the latest release with a link to the release notes
+- [ ] Notify #marketing for 3rd party download distribution
 
 ### Update Release channel wiki
 - [ ] Update entries here as needed: https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule
