@@ -37,7 +37,7 @@ This are flags that you can use for rewards. Flags can help you out testing thin
 `npm run start -- --rewards=[options]`
 
 #### Packaged version
-`[path-to-your-package] -- --rewards=[options]`
+`[path-to-your-package] --rewards=[options]`
 
 ### Options
 Option name | Option value | Description
