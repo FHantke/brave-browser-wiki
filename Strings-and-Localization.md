@@ -63,6 +63,6 @@ Strings are matched using filename (not path). This is something we control in t
 `brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`
 
 - Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. 
-- Sometimes strings have variables in them which should look like this:
+- Sometimes strings have variables in them which should look like this, in these cases you should use < and > and not `&lt;` and not `&gt;`.  These are `ph` and `em` elements:
 
 <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
