@@ -41,3 +41,9 @@ Add this to `~/.bashrc`:
 and put the following in `~/.boto`:
 
     [Boto]
+
+## `npm run sync -- --all` fails
+
+Did you remember to do a `git pull` of the main `brave-browser` repository first?
+
+If it's still not working, try deleting your `src/out` directory.
