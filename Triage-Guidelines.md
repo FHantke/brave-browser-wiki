@@ -21,7 +21,7 @@
 - If something is wanted in Beta channel, then a PR must be made to the current [version branch which is in Beta](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-channel-information). An approval (Via reviewer) is required by someone on the [uplift approvers list](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) below. 
 - If something is wanted in Release channel, then a PR must be made to the current [version branch which is in Release](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-channel-information). An approval (Via reviewer) is required by a member on the [uplift approvers list](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) below.   
 - Milestone on the issue should match only the smallest version where it is landed currently and NOT where you want it ideally.
-- Labels on the PRs should match only the version branch that the PR is being merged to.
+- Milestones on the PRs should match only the version branch that the PR is being merged to.
 
 # Uplift approvers
 
