@@ -45,7 +45,7 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.67.x  |    76    | July 2, 2019       | July 30, 2019       |                                |
 | 0.68.x  |    76    | July 30, 2019      | August 20, 2019     |                                |
 | 0.69.x  |    77    | August 20, 2019    | September 10, 2019  |                                |
-| 0.70.x  |    77    | Septemer 10, 2019  | October 1, 2019     |                                |
+| 0.70.x  |    77    | September 10, 2019 | October 1, 2019     |                                |
 | 0.71.x  |    78    | October 1, 2019    | October 22, 2019    |                                |
 | 0.72.x  |    78    | October 22, 2019   | November 12, 2019   |                                |
 | 0.73.x  |    79    | November 12, 2019  | December 10, 2019   |                                |
