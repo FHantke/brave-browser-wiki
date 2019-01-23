@@ -153,4 +153,7 @@ try {
   * CdmService loads cdm library into its process by using installed cmd library file
     * It's done by CmdModule
 
-To support widevine in linux, custom installer/updater should registers it to `CdmRegistry`.
+* To support widevine in linux
+  * installed/updated cmd info is added to `CdmRegistry`
+  * custom installer/updater is needed
+  * it should be updated via `brave://components`
