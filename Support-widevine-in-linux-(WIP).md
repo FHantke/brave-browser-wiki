@@ -126,6 +126,7 @@
 
 * CdmService
   * It is utility process that services cdm to renderer via browser
-  * CdmService loads cdm library into its process
+  * CdmService loads cdm library into its process by using installed cmd library file
+    * It's done by CmdModule
 
 To support widevine in linux, custom installer/updater should registers it to `CdmRegistry`.
