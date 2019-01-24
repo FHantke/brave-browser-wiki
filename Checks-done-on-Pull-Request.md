@@ -7,7 +7,11 @@ There are two jobs setup under the `ci` tab.
 - brave-browser-build-pr
 - brave-core-build-pr
 
-Each of these is setup in Jenkins as a GitHub repository. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. *Each time a pull request has a change pushed, it will queue up a new check*. You can see the history of checks by going into the specific pull request in Jenkins
+Each of these is setup in Jenkins as a GitHub repository. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up.
+
+Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. *Each time a pull request has a change pushed, it will queue up a new check*. You can see the history of checks by going into the specific pull request in Jenkins
+
+![Brave Core PR builder jobs in Jenkins](https://media.clifton.io/brave/wiki/jenkins-jobs.png)
 
 ## GitHub overview
 On each pull request, you should see the checks section
