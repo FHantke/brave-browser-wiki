@@ -171,6 +171,8 @@ Why cdm library was not loaded? service process can't load external library at r
 [1:1:0124/114652.096430:ERROR:cdm_module.cc(137)] Error: /home/simon/.config/BraveSoftware/Brave-Browser-Development/WidevineCdm/libwidevinecdm.so: cannot open shared object file: Operation not permitted
 
 ```
+
+Test patches
 ```
 diff --git a/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc b/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc
 index ebecea6f4..bc5bff9be 100644
@@ -210,7 +212,7 @@ index ebecea6f4..bc5bff9be 100644
 +  manifest.SetKey("x-cdm-codecs", base::Value("vp8,vp9.0,avc1"));
 +  manifest.SetKey("x-cdm-host-versions", base::Value("8"));
 +  manifest.SetKey("x-cdm-interface-versions", base::Value("8"));
-+  manifest.SetKey("x-cdm-module-versions", base::Value("4"));
++  manifest.SetKey("x-cdm-module-versions", base::Value("8"));
 +
 +  // This check must be a subset of the check in VerifyInstallation() to
 +  // avoid the case where the CDM is accepted by the component updater
@@ -245,4 +247,24 @@ index ebecea6f4..bc5bff9be 100644
    }
  #endif  // defined(ENABLE_WIDEVINE_CDM_COMPONENT)
  }
+```
+```
+diff --git a/third_party/widevine/cdm/widevine.gni b/third_party/widevine/cdm/widevine.gni
+index e10d9b9b8d2975a731adfee2eb0086afd7975f97..82471dcc81e59c75c418ca50b0270067415111ca 100644
+--- a/third_party/widevine/cdm/widevine.gni
++++ b/third_party/widevine/cdm/widevine.gni
+@@ -31,7 +31,7 @@ enable_library_widevine_cdm =
+ # and Windows. The CDM can be bundled regardless whether it's a component. See
+ # below.
+ enable_widevine_cdm_component =
+-    enable_library_widevine_cdm && (is_win || is_mac)
++    enable_library_widevine_cdm && (is_win || is_mac || is_desktop_linux)
+ 
+ # Widevine CDM is bundled as part of Google Chrome builds.
+ bundle_widevine_cdm = enable_library_widevine_cdm && is_chrome_branded
+
+```
+```
+Set true in lib/config.js
+enable_widevine: true,
 ```
