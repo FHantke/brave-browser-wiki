@@ -272,9 +272,9 @@ Set true in lib/config.js
 enable_widevine: true,
 ```
 
-Both bundle and component type uses cdm service that loads cdm library from file system.
-Why `--no-sandbox` is needed for this test?
-According to the comments of `PreloadLibraryCdms()` below, library should be loaded before sandbox of zygote process is initialized. After that, any forked process from zygote process can't load library from filesystem.
+Both bundle and component type uses cdm service that loads cdm library from file system. <br>
+Why `--no-sandbox` is needed for this test?<br>
+According to the comments of `PreloadLibraryCdms()` below, library should be loaded before<br> sandbox of zygote process is initialized. After that, any forked process from zygote process<br> can't load library from filesystem.
 ```
 // Loads registered library CDMs but does not initialize them. This is needed by
 // the zygote on Linux to get access to the CDMs before entering the sandbox.
