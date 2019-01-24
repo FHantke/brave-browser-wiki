@@ -172,6 +172,9 @@ Why cdm library was not loaded? service process can't load external library at r
 
 ```
 
+With below three patches and copying `libwidevinecdm.so` of google chrome into userdata/WidevineCdm/ <br>
+start brave with `--no-sandbox`. Then, can see netflix.
+
 Test patches
 ```
 diff --git a/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc b/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc
