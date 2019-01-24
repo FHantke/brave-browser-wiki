@@ -13,10 +13,18 @@ Each of these is setup in Jenkins as a GitHub repository. A scan is done every 5
 On each pull request, you should see the checks section
 ![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
 
-You can click the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use travis-ci.org which should be publicly accessible.
+You can click the `Details` link for the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use travis-ci.org which should be publicly accessible.
 
 ## brave-browser checks
-TODO...
+- Original work done with https://github.com/brave/brave-browser/pull/2226
+- Windows added with https://github.com/brave/brave-browser/pull/2985
+
+TODO
 
 ## brave-core
-TODO...
+- Original work done with https://github.com/brave/brave-core/pull/1172
+
+TODO
+
+## Questions?
+For employees, join the `#brave-core-ci` channel and we'll be happy to answer questions. 
