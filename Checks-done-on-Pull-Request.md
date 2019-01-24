@@ -34,6 +34,8 @@ This logic currently only runs on Linux and macOS (Windows is WIP) and runs the 
 - unit tests and browser tests
 - keeps build artifacts (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
 
+_**Note to reviewers**_: All checks should be passing before you merge a pull request.
+
 ## brave-core checks
 - Original work done with https://github.com/brave/brave-core/pull/1172
 
@@ -44,6 +46,13 @@ This `Jenkinsfile` does the following:
 - Creates a new branch in `brave-browser`
 - Updates the `brave-browser` package.json to have the commit hash from the `brave-core` branch
 - Creates an instance of the `brave-browser` check
+
+Besides the checks done by our Jenkins job, there are some additional checks done via Travis:
+- JavaScript lint / unit tests
+- security checks
+- Python lint (pep8)
+
+_**Note to reviewers**_: All checks should be passing before you merge a pull request.
 
 ## Questions?
 - For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions.
