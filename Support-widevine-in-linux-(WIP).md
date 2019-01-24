@@ -157,3 +157,8 @@ try {
   * installed/updated cmd info is added to `CdmRegistry`
   * custom installer/updater is needed
   * it should be updated via `brave://components`
+
+Action Items
+  * Verify widevine works properly when CmdRegistry has proper CmdInfo
+    *  For testing, copy widevine cmd library into user data and add CmdInfo manually.
+    *  If this works fine, we only need to focus install/update and CdmRegistry.
