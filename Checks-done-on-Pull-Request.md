@@ -34,11 +34,17 @@ This logic currently only runs on Linux and macOS (Windows is WIP) and runs the 
 - unit tests and browser tests
 - keeps build artifacts (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
 
-## brave-core
+## brave-core checks
 - Original work done with https://github.com/brave/brave-core/pull/1172
 
-The checks that are done are defined in the `Jenkinsfile` at the root of the project:
-https://github.com/brave/brave-browser/blob/master/Jenkinsfile
+The checks that are done are the same as done with `brave-browser`. There is a `Jenkinsfile` at the root of the project:
+https://github.com/brave/brave-core/blob/master/Jenkinsfile
+
+This `Jenkinsfile` does the following:
+- Creates a new branch in `brave-browser`
+- Updates the `brave-browser` package.json to have the commit hash from the `brave-core` branch
+- Creates an instance of the `brave-browser` check
 
 ## Questions?
-For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions. 
+- For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions.
+- Non-employees (community!), we would like to have the content of these checks be publicly viewable, but there aren't any plans to address that at the moment.
