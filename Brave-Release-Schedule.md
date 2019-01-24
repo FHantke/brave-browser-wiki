@@ -137,8 +137,8 @@ Follow this checklist:
 - [ ] Verify branch protection is still in effect for `brave/brave-browser` and `brave/brave-core` for the new version. If it is of the format `0.*.x` then it will be.
 - [ ] Rename milestone names with the channel name on brave-browser.  Create a new one for the new Nightly.
 - [ ] Rename milestone names with the channel name on brave-core. Create a new one for the new Nightly.
-- [ ] Update versions on brave-browser with a commit like this: https://github.com/brave/brave-browser/commit/b6e3f38df2519d86c983e12e04a7c0ed70607453
-- [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/dbba50b4bc272ac007522d1e39706594bf78522a
+- [ ] Update versions on brave-browser with a PR like this: https://github.com/brave/brave-browser/commit/2a118fc38cc6357c15678db37a57dfd030328877
+- [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/f65158c72d65f83194a72e5b6386693e61b48c8c
 - [ ] Message everyone in slack in #brave-core about each branch and where it lives.
 
 Example Slack ping:
