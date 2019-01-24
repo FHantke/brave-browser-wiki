@@ -274,3 +274,19 @@ enable_widevine: true,
 
 Both bundle and component type uses cdm service that loads cdm library from file system.
 Why `--no-sandbox` is needed for this test?
+According to the comments of `PreloadLibraryCdms()` below, library should be loaded before sandbox of zygote process is initialized. After that, any forked process from zygote process can't load library from filesystem.
+```
+// Loads registered library CDMs but does not initialize them. This is needed by
+// the zygote on Linux to get access to the CDMs before entering the sandbox.
+void PreloadLibraryCdms() {
+  std::vector<CdmInfo> cdms;
+  GetContentClient()->AddContentDecryptionModules(&cdms, nullptr);
+  for (const auto& cdm : cdms) {
+    base::NativeLibraryLoadError error;
+    base::NativeLibrary library = base::LoadNativeLibrary(cdm.path, &error);
+    VLOG_IF(1, !library) << "Unable to load CDM " << cdm.path.value()
+                         << " (error: " << error.ToString() << ")";
+    ignore_result(library);  // Prevent release-mode warning.
+  }
+}
+```
