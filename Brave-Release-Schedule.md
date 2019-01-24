@@ -138,7 +138,7 @@ Follow this checklist:
 - [ ] Update versions on brave-browser with a commit like this: https://github.com/brave/brave-browser/commit/b6e3f38df2519d86c983e12e04a7c0ed70607453
 - [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/dbba50b4bc272ac007522d1e39706594bf78522a
 - [ ] Add a new `[version]` label on brave-browser.
-- [ ] Add a new '[version]` label on brave-core.
+- [ ] Add a new `[version]` label on brave-core.
 - [ ] Update milestone names with the channel name.
 - [ ] Message everyone in slack in #brave-core about each branch and where it lives.
 
