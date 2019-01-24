@@ -164,7 +164,8 @@ Action Items
     *  If this works fine, we only need to focus install/update and CdmRegistry.
     
 After copying `libwidevinecdm.so` to userdir/WidevineCdm/, runs with below patch.<br>
-Then, cdm service is launched but failed with below error. Why cdm library was not loaded?
+Then, cdm service is launched but failed with below error.<br>
+Why cdm library was not loaded? service process can't load external library at runtime because of sandbox?
 ```
 [1:1:0124/114652.096244:ERROR:cdm_module.cc(136)] CDM at /home/simon/.config/BraveSoftware/Brave-Browser-Development/WidevineCdm/libwidevinecdm.so could not be loaded.
 [1:1:0124/114652.096430:ERROR:cdm_module.cc(137)] Error: /home/simon/.config/BraveSoftware/Brave-Browser-Development/WidevineCdm/libwidevinecdm.so: cannot open shared object file: Operation not permitted
