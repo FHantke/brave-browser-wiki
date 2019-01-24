@@ -162,3 +162,86 @@ Action Items
   * Verify widevine works properly when CdmRegistry has proper CdmInfo
     *  For testing, copy widevine cmd library into user data and add CdmInfo manually.
     *  If this works fine, we only need to focus install/update and CdmRegistry.
+    
+After copying `libwidevinecdm.so` to userdir/WidevineCdm/, runs with below patch.<br>
+Then, cdm service is launched but failed with below error. Why cdm library was not loaded?
+```
+[1:1:0124/114652.096244:ERROR:cdm_module.cc(136)] CDM at /home/simon/.config/BraveSoftware/Brave-Browser-Development/WidevineCdm/libwidevinecdm.so could not be loaded.
+[1:1:0124/114652.096430:ERROR:cdm_module.cc(137)] Error: /home/simon/.config/BraveSoftware/Brave-Browser-Development/WidevineCdm/libwidevinecdm.so: cannot open shared object file: Operation not permitted
+
+```
+```
+diff --git a/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc b/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc
+index ebecea6f4..bc5bff9be 100644
+--- a/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc
++++ b/chromium_src/chrome/browser/component_updater/widevine_cdm_component_installer.cc
+@@ -15,6 +15,9 @@
+ #include "components/prefs/pref_service.h"
+ #include "third_party/widevine/cdm/buildflags.h"
+ 
++#include "base/path_service.h"
++#include "chrome/common/chrome_paths.h"
++
+ namespace component_updater {
+ 
+ #if BUILDFLAG(ENABLE_WIDEVINE_CDM_COMPONENT)
+@@ -40,6 +43,48 @@ void RegisterAndInstallWidevine() {
+ 
+ #endif
+ 
++void RegisterWidevineCdmWithChromeForTest() {
++  DCHECK_CURRENTLY_ON(BrowserThread::UI);
++
++  const base::Version cdm_version("1.4.8.903");
++
++  base::FilePath widevine_dir;
++  bool success = base::PathService::Get(chrome::DIR_USER_DATA, &widevine_dir);
++  DCHECK(success);
++
++  base::DictionaryValue manifest;
++  manifest.SetKey("arch", base::Value("x64"));
++  manifest.SetKey("description", base::Value("Widevine Content Decryption Module"));
++  manifest.SetKey("manifest_version", base::Value(2));
++  manifest.SetKey("name", base::Value("WidevineCdm"));
++  manifest.SetKey("offline_enabled", base::Value(false));
++  manifest.SetKey("os", base::Value("linux"));
++  manifest.SetKey("version", base::Value("1.4.8.903"));
++  manifest.SetKey("x-cdm-codecs", base::Value("vp8,vp9.0,avc1"));
++  manifest.SetKey("x-cdm-host-versions", base::Value("8"));
++  manifest.SetKey("x-cdm-interface-versions", base::Value("8"));
++  manifest.SetKey("x-cdm-module-versions", base::Value("4"));
++
++  // This check must be a subset of the check in VerifyInstallation() to
++  // avoid the case where the CDM is accepted by the component updater
++  // but not registered.
++  content::CdmCapability capability;
++  if (!ParseManifest(manifest, &capability)) {
++    VLOG(1) << "Not registering Widevine CDM due to malformed manifest.";
++    return;
++  }
++
++  VLOG(1) << "Register Widevine CDM with Chrome";
++
++  const base::FilePath cdm_path =
++      widevine_dir.AppendASCII(kWidevineCdmBaseDirectory).AppendASCII(
++          base::GetNativeLibraryName(kWidevineCdmLibraryName));
++  CdmRegistry::GetInstance()->RegisterCdm(
++      content::CdmInfo(kWidevineCdmDisplayName, kWidevineCdmGuid, cdm_version,
++                       cdm_path, kWidevineCdmFileSystemId,
++                       std::move(capability), kWidevineKeySystem, false));
++}
++
+ // Do nothing unless the user opts in!
+ void RegisterWidevineCdmComponent(ComponentUpdateService* cus) {
+ #if BUILDFLAG(ENABLE_WIDEVINE_CDM_COMPONENT)
+@@ -48,7 +93,8 @@ void RegisterWidevineCdmComponent(ComponentUpdateService* cus) {
+   bool widevine_opted_in =
+       prefs->GetBoolean(kWidevineOptedIn);
+   if (widevine_opted_in) {
+-    RegisterAndInstallWidevine();
++//    RegisterAndInstallWidevine();
++    RegisterWidevineCdmWithChromeForTest();
+   }
+ #endif  // defined(ENABLE_WIDEVINE_CDM_COMPONENT)
+ }
+```
