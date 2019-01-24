@@ -271,3 +271,6 @@ index e10d9b9b8d2975a731adfee2eb0086afd7975f97..82471dcc81e59c75c418ca50b0270067
 Set true in lib/config.js
 enable_widevine: true,
 ```
+
+Both bundle and component type uses cdm service that loads cdm library from file system.
+Why `--no-sandbox` is needed for this test?
