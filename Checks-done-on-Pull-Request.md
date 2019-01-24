@@ -1,4 +1,4 @@
-When a pull request is issued for [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks
+When a pull request is issued for [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
 
 ## Jenkins overview
 We have a non-public Jenkins server setup at https://staging.ci.brave.com/ (access limited to Brave employees - NOTE: VPN is required).
