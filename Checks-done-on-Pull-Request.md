@@ -17,14 +17,23 @@ You can click the `Details` link for the individual check and (for Jenkins check
 
 ## brave-browser checks
 - Original work done with https://github.com/brave/brave-browser/pull/2226
-- Windows added with https://github.com/brave/brave-browser/pull/2985
+- Windows is in progress with https://github.com/brave/brave-browser/pull/2985
 
-TODO
+The checks that are done are defined in the `Jenkinsfile` at the root of the project:
+https://github.com/brave/brave-browser/blob/master/Jenkinsfile
+
+This logic currently only runs on Linux and macOS (Windows in progress) and runs the following:
+- initialize the repository (`npm install`, then `npm run init` if needed and finally `npm run sync --all`)
+- run an official build
+- Security checks (`npm run test-security`)
+- Unit tests and Browser tests
+- Upload artifacts to AWS (`.rpm` file, `.dmg` file, etc). Viewable in Jenkins
 
 ## brave-core
 - Original work done with https://github.com/brave/brave-core/pull/1172
 
-TODO
+The checks that are done are defined in the `Jenkinsfile` at the root of the project:
+https://github.com/brave/brave-core/blob/master/Jenkinsfile
 
 ## Questions?
-For employees, join the `#brave-core-ci` channel and we'll be happy to answer questions. 
+For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions. 
