@@ -91,6 +91,6 @@ export AWS_SECRET_ACCESS_KEY=YYY
 ### Setting the environment variable
 This is the most important part. In your `brave-browser` root directory, you'll want to open the `.npmrc` file. To enable `sccache`, you'll need to add a line:
 ```
-sccache = sccache
+sccache = /path/to/sccache
 ```
 This will make sure when running any npm script in brave-browser that the `sccache` environment variable is set to the string `"sccache"`. This could instead be set in any other way: via an export in `~/.npmrc` or even via `.bashrc`.
