@@ -27,7 +27,6 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Release to production download locations
 - [ ] Publish github release (remove 'pre-release' checkmark)
-- [ ] Create tag in brave-core branch (i.e. v0.57.18) on commit used in brave-browser build
 - [ ] Upload Mac/Win build to Omaha production channels (`x86-rel`, `x64-rel`, `stable`(mac))
 - [ ] Sign Linux builds and upload to S3 repositories
 - [ ] Upload Mac `.dmg` and `.pkg` to S3 bucket (i.e. `aws s3 cp ./Brave-Browser-Dev.dmg s3://brave-browser-downloads/latest/Brave-Browser-Dev.dmg --acl public-read`)
