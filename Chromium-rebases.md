@@ -63,7 +63,7 @@ Open these files one by one and resolve the merge conflicts manually.
 
 Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
 
-Once you are done updating all the patches remove with `rm` not `git rm` all the patches in `brave/patches` and then run `npm run update_patches`.  cd `brave/patches` and `git add` everything.
+Once you are done updating all the Chromium src files, the -3 option above will actually stage files in src to be added, we don't want that because our patch generation script doesn't work well with it.  So inside the src directory run `git reset HEAD *`.  Then run `npm run update_patches`
 
 Commit what you have in a commit to update patches for the Chromium update.
 
