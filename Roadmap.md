@@ -137,6 +137,12 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [ ] Ads integration into Brave-core w/ blind token confirmations
 
+### Milestone 7: 0.61.x
+
+### Milestone 8: 0.62.x
+
+### Milestone 8: 0.63.x
+
 ### Beyond
 
 - [ ] Make extensions.brave.com store
