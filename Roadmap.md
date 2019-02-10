@@ -141,7 +141,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 8: 0.62.x
 
-### Milestone 8: 0.63.x
+### Milestone 9: 0.63.x
 
 ### Beyond
 
