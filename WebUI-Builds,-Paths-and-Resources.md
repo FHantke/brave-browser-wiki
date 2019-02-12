@@ -36,7 +36,7 @@ _This lets the script know that the current directory that the `BUILD.gn` file i
 
 ### Debug builds
 Only Release builds are optimized in this way. For Debug builds, usually all the source files are bundled in to a PAK file directly and served individually from a UrlDataSource. That is, the chrome://settings WebUI will serve chrome://settings/module1 and chrome://settings/module2 directly, and without flattening or minifying.
-It is important to test any additions or changes to module loading with the `opmize_web_ui` build flag set on and off.
+It is important to test any additions or changes to module loading with the `optimize_web_ui` build flag set on and off.
 
 ## Brave-specific WebUI Pages
 WebUIs which are created wholly for Brave do not use optimize_webui. Instead, they use Webpack, which handles type checking, module resolution, module concatentation or chunking, and minifying. It also generates the GRD file dynamically based on Javascript module imports and optimization settings.
