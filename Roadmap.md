@@ -135,11 +135,16 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 7: 0.60.x
 
-- [ ] Ads integration into Brave-core w/ blind token confirmations
+- [x] Rust support for brave-core.
+- [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations
 
 ### Milestone 7: 0.61.x
 
+- [ ] More ads work 
+
 ### Milestone 8: 0.62.x
+
+- [ ] More ads work
 
 ### Milestone 9: 0.63.x
 
