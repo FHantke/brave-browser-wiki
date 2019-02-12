@@ -1,4 +1,3 @@
-# WebUI Resources Wiki
 ## Chromium WebUI Pages
 Chromium HTML will refer to resources either _relatively_ (e.g. `../my_module.html`) or via _full url_ (e.g. `chrome://history/my_module.html`). It is important that these can be accessed **both** via HTTP and via FileSystem. The corresponding filesystem path is defined in the `opmize_web_ui` build action as the `input` param. For example `chrome://settings/` corresponds to `$target_gen_dir/settings_resources.unpak/`.
 
