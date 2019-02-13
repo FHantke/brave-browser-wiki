@@ -1,3 +1,11 @@
+## What are uplifts?
+- All of our pull requests typically go against master ("nightly")
+- If approved, the owner can submit the same pull request against the other branches ("dev", "beta", "release") as needed
+- The [uplift approvers](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) will take a look at those pull requests and approve/deny
+
+## Using automation to create those pull requests
+TODO:
+
 ## Example command line usage(s):
 NOTE: you can either pass the token in as an environment variable OR put it in your `~/.npmrc`. Either way would work. The NAME of the variable needs to be: `BRAVE_GITHUB_TOKEN`
 
@@ -19,12 +27,11 @@ NOTE: you can either pass the token in as an environment variable OR put it in y
 6. Uplift an already existing pull request (https://github.com/brave/brave-core/pull/1632) to dev.
 `./script/pr.py --reviewers=bbondy,petemill,NejcZdovc --owners=bsclifton --uplift-to=dev --labels=ui --dry-run --uplift-using-pr=1632`
 
-## Example use-cases
+## FIX ME
 - You finish work on a feature/bug fix/patch. You know it needs to go to BETA. You can use this and specify `--uplift-to=beta`. A PR will then be created against `master`, `dev`, and `beta`.
 - You submitted a PR to `master` and it was approved/merged. You now need to merge this to RELEASE. You can specify `----uplift-using-pr=12345` (putting the actual PR number), along with `--uplift-to=release` and `--start-from=dev` (since master was already approved). A PR would then be created against `dev`, `beta`, and `release`.
 
 ## Notes
-- This PR was created using the task! 😎 
 - The "version" used by `master` is determined by looking at the package.json in `brave-browser`. For example, `0.62.0` will map itself to the milestone `0.62.x`
 - You can create a personal token via GitHub on your settings page
 - You can get verbose output with `--verbose`
@@ -33,7 +40,7 @@ NOTE: you can either pass the token in as an environment variable OR put it in y
 - You can override the title using `--title`
 - You can provide labels you'd like to apply to each pr using `--labels` (comma separated list)
 
-## Quick notes
+## Implementation notes
 - Available in 0.61.x and newer
 - Implemented in https://github.com/brave/brave-core/pull/1632
 - Bug fixes in https://github.com/brave/brave-core/pull/1655 and https://github.com/brave/brave-core/pull/1662
