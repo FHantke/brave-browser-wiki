@@ -138,6 +138,7 @@ Follow this checklist:
 - [ ] Rename milestone names with the channel name on brave-browser.  Create a new one for the new Nightly.
 - [ ] Rename milestone names with the channel name on brave-core. Create a new one for the new Nightly.
 - [ ] Update versions on brave-browser with a PR like this: https://github.com/brave/brave-browser/commit/2a118fc38cc6357c15678db37a57dfd030328877
+- [ ] Update the version for brave-core in package.json to the branch, similar to: https://github.com/brave/brave-browser/blame/0.59.x/package.json#L45
 - [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/f65158c72d65f83194a72e5b6386693e61b48c8c
 - [ ] Message everyone in slack in #brave-core about each branch and where it lives.
 
