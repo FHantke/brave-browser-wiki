@@ -1,3 +1,12 @@
+Painfully hand-created table of contents:
+- [What are uplifts?](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#what-are-uplifts)
+- [Using automation to create those pull requests](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#using-automation-to-create-those-pull-requests)
+    - [Getting started](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#getting-started) 
+    - [General overview of what happens](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#general-overview-of-what-happens)
+    - [Practical examples](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#practical-examples)
+    - [Advanced command line usage](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#advanced-command-line-usage)
+- [Getting help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#getting-help)
+    - [Command line help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#command-line-help)
 ## What are uplifts?
 - Most of our pull requests go against master ("nightly")
 - If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("dev", "beta", "release") as needed
@@ -46,7 +55,7 @@ Notice how you can set the reviewers (as a comma separated list)! These will be 
 ```
 A PR would then be created against `dev`, `beta`, and `release`.
 
-### Advanced command line usage:
+### Advanced command line usage
 There are a log of flags you can include. Here are the ones currently present:
 
 1. Want to verify what'll happen (without actually pushing anything!). *Do a dry run*:
@@ -122,7 +131,7 @@ optional arguments:
                         commit)
 ```
 
-## Notes
+### Helpful notes
 - The "version" used by `master` is determined by looking at the `package.json` in the root of the `brave-browser` repo. At the time of this writing, `0.62.0` is master. When the PR is created for master, this assigns the milestone `0.62.x`
 - You can get verbose output with `--verbose`
 - You can do a "dry run" with `--dry-run`
@@ -135,7 +144,13 @@ optional arguments:
     - You can override the title using `--title`
 - You can provide labels you'd like to apply to each pr using `--labels` (comma separated list)
 
-## Implementation notes
+### Implementation notes
 - Available in 0.61.x and newer
 - Implemented in https://github.com/brave/brave-core/pull/1632
 - Bug fixes in https://github.com/brave/brave-core/pull/1655 and https://github.com/brave/brave-core/pull/1662
+
+## Also see
+If you enjoyed this document, check out the following docs too!
+- [Triage Guidelines](https://github.com/brave/brave-browser/wiki/Triage-Guidelines)
+- [Checks done on Pull Request](https://github.com/brave/brave-browser/wiki/Checks-done-on-Pull-Request)
+- [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule)
