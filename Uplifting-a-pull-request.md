@@ -95,8 +95,8 @@ This will show the raw responses sent back from GitHub
 ```
 
 ## Getting help
-- Hit up [@bsclifton](https://github.com/bsclifton) (@clifton on Slack)
-- On Slack, ask in #brave-core or #brave-core-ci
+- Hit up [@bsclifton](https://github.com/bsclifton) (`@clifton` on Slack)
+- On Slack, ask in `#brave-core` or `#brave-core-ci`
 
 ### Command line help
 You can run the script with `--help` to see all the available inputs:
@@ -154,7 +154,7 @@ optional arguments:
 - Bug fixes in https://github.com/brave/brave-core/pull/1655 and https://github.com/brave/brave-core/pull/1662
 
 ## Also see
-If you enjoyed this document, check out the following docs too!
+If you enjoyed this document, check out the following docs too! 😎 
 - [Triage Guidelines](https://github.com/brave/brave-browser/wiki/Triage-Guidelines)
 - [Checks done on Pull Request](https://github.com/brave/brave-browser/wiki/Checks-done-on-Pull-Request)
 - [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule)
