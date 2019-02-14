@@ -8,10 +8,10 @@ Painfully hand-created table of contents:
 - [Getting help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#getting-help)
     - [Command line help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#command-line-help)
     - [Helpful notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#helpful-notes)
-## What are uplifts?
     - [Implementation notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#implementation-notes)
 - [Also see](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#also-see)
 
+## What are uplifts?
 - Most of our pull requests go against master ("nightly")
 - If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("dev", "beta", "release") as needed
 - The [uplift approvers](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) will take a look at those pull requests and approve/deny
