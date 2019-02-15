@@ -161,6 +161,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 ### Milestone 10: 0.63.x (~April 23, 2019)
 
 - [ ] Upgrade to Chromium 74
+- [ ] In page translations
 
 ### Beyond
 
