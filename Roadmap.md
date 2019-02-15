@@ -162,6 +162,8 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [ ] Upgrade to Chromium 74
 - [ ] In page translations
+- [ ] Override regional ad-block selection in about:adblock
+- [ ] Custom ABP filter rules in about:adblock
 
 ### Beyond
 
