@@ -141,6 +141,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations
 - [x] Build out PR builder to do builds for each PR
 - [x] Build out daily Dev channel and Beta builds CI
+- [x] Fix Twitch tipping
 
 ### Milestone 8: 0.61.x
 
@@ -151,10 +152,12 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [x] Widevine support for Linux
 - [ ] More ads work
+- [ ] Fix Brave shields localization
+- [ ] Add support for more locales
 
 ### Milestone 10: 0.63.x
 
-[ ] Upgrade to Chromium 74
+- [ ] Upgrade to Chromium 74
 
 ### Beyond
 
@@ -163,7 +166,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] More UI customizations to differentiate from Chrome look
 - [ ] Tab pages?
 - [ ] Tab previews
-- [ ] Translations (Chrome parity)
 - [ ] Pinned tab differences
 - [ ] Clear private data on shutdown
 - [ ] Session windows
