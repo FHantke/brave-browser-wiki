@@ -134,7 +134,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Upgrade to Chromium 72
 
 
-### Milestone 7: 0.60.x
+### Milestone 7: 0.60.x (~February 19, 2019)
 
 - [x] Rust support for brave-core.
 - [x] Webcompat fixes (including sportsnet)
@@ -143,20 +143,22 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Build out daily Dev channel and Beta builds CI
 - [x] Fix Twitch tipping
 - [x] New tab UI tweaks
+- [x] Rewards stability fixes
 
-### Milestone 8: 0.61.x
+### Milestone 8: 0.61.x (~March 12, 2019)
 
 - [x] More ads work 
 - [x] Upgrade to Chromium 73
+- [x] Rewards stability fixes
 
-### Milestone 9: 0.62.x
+### Milestone 9: 0.62.x (~April 2, 2019)
 
 - [x] Widevine support for Linux
 - [ ] More ads work
 - [ ] Fix Brave shields localization
 - [ ] Add support for more locales
 
-### Milestone 10: 0.63.x
+### Milestone 10: 0.63.x (~April 23, 2019)
 
 - [ ] Upgrade to Chromium 74
 
