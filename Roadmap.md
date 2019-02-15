@@ -142,6 +142,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Build out PR builder to do builds for each PR
 - [x] Build out daily Dev channel and Beta builds CI
 - [x] Fix Twitch tipping
+- [x] New tab UI tweaks
 
 ### Milestone 8: 0.61.x
 
