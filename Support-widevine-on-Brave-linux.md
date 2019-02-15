@@ -43,6 +43,8 @@
 ## brave-browser changes ##
 * To build Brave with bundling mode, there are some prerequisites. They are `widevine_cdm_verison.h`(header file that specifies version of bundled cdm lib) and `libwidevinecdm.so`(cdm lib). Version string and cdm lib is used in core when creating `CdmInfo` and zygotes loads. So, gn file checks them the existence of during the build. So, brave-browser prepares version file and cdm lib. This cdm lib is fake one. Fake cdm lib is just for build time. During the runtime, Brave uses real cdm lib that we downloads. To do that, `chrome::FILE_WIDEVINE_CDM` is changed.
 
+## Widevine version update ##
+When we need to update widevine, we just need to set new version string to `config.widevine.version` in `brave-browser/package.json`.
 
 ## Issue and PRs ##
 * https://github.com/brave/brave-browser/issues/413
