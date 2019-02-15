@@ -142,17 +142,17 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Build out PR builder to do builds for each PR
 - [x] Build out daily Dev channel and Beta builds CI
 
-### Milestone 7: 0.61.x
+### Milestone 8: 0.61.x
 
 - [x] More ads work 
 - [x] Upgrade to Chromium 73
 
-### Milestone 8: 0.62.x
+### Milestone 9: 0.62.x
 
 - [x] Widevine support for Linux
 - [ ] More ads work
 
-### Milestone 9: 0.63.x
+### Milestone 10: 0.63.x
 
 [ ] Upgrade to Chromium 74
 
