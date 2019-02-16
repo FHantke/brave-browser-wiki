@@ -134,7 +134,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [x] Upgrade to Chromium 72
 
 
-### Milestone 7: 0.60.x (~February 19, 2019)
+### Milestone 7: 0.60.x (~February 20, 2019)
 
 - [x] Rust support for brave-core.
 - [x] Webcompat fixes (including sportsnet)
