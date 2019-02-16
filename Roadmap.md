@@ -138,7 +138,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 - [x] Rust support for brave-core.
 - [x] Webcompat fixes (including sportsnet)
-- [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations
+- [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations in a disabled state.
 - [x] Build out PR builder to do builds for each PR
 - [x] Build out daily Dev channel and Beta builds CI
 - [x] Fix Twitch tipping
