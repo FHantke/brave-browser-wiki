@@ -147,7 +147,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 ### Milestone 8: 0.61.x (~March 12, 2019)
 
-- [x] More ads work 
+- [x] More ads work. This will be in a disabled state in Release channel until related work is completed in a future milestones.
 - [x] Upgrade to Chromium 73
 - [x] Rewards stability fixes
 
