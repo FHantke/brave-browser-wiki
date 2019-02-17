@@ -157,11 +157,13 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] More ads work
 - [ ] Fix Brave shields localization
 - [ ] Add support for more locales
+- [ ] MacOS OS theme controls theme
 
 ### Milestone 10: 0.63.x (~April 23, 2019)
 
 - [ ] Upgrade to Chromium 74
 - [ ] In page translations
+- [ ] Make Widevine UI more noticeable
 - [ ] Override regional ad-block selection in about:adblock
 - [ ] Custom ABP filter rules in about:adblock
 
