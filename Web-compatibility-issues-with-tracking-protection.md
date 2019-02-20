@@ -6,7 +6,7 @@ Related issues: https://github.com/brave/browser-laptop/issues/780, https://gith
 
 Notes: We may be able to fix some of these issues by loading FB's SDK from a local file or polyfill instead of calling out to their domains. The SDK is often used for "Login with Facebook" buttons.
 
-Domains which are excluded (desktop only?):
+Domains which are excluded (desktop/android only?):
 * connect.facebook.net
 * connect.facebook.com
 * staticxx.facebook.com
@@ -25,7 +25,7 @@ Web compatibility observations without these exclusions:
 
 Related issues: https://github.com/brave/browser-laptop/issues/2014, https://github.com/brave/browser-laptop/issues/1208
 
-Domains which are excluded (desktop only?):
+Domains which are excluded (desktop/android only?):
 * platform.twitter.com
 * syndication.twitter.com
 * pbs.twimg.com
