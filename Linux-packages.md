@@ -21,3 +21,9 @@ In particular, make sure you don't specify `--official_build=false` or your [bui
 The `--debug_build=true` argument is optional but should speed up the build.
 
 Once the build is done, you'll find the `.deb` and `.rpm` directly in `src/out/Release/`.
+
+## Beta / dev packages
+
+To build beta or dev packages, use the `--channel` argument:
+
+    npm run create_dist Release -- --channel=beta
