@@ -17,7 +17,7 @@
 # Uplifting
 
 - By default everything is PR'ed against master and only lands in master.
-- If something is wanted in Dev, Beta, or Release channel, then a PR must be made to the current [version branch](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-channel-information) and it must get an approval from someone on the [uplift approvers list](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) below. That PR must contain the issue link.
+- If something is wanted in Dev, Beta, or Release channel, then a PR must be made to the current [version branch](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-channel-information) and it must get an approval from someone on the [uplift approvers list](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) below. That PR must contain the issue link, one PR per channel.
 - Milestone on the issue should match only the smallest version where it is landed currently and NOT where you want it ideally.
 - Milestones on the PRs should match only the version branch that the PR is being merged to.
 
