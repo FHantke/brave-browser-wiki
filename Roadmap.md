@@ -154,18 +154,29 @@ Things are not set in stone in this document.  Brave members are expected to upd
 ### Milestone 9: 0.62.x (~April 2, 2019)
 
 - [x] Widevine support for Linux
-- [ ] More ads work
-- [ ] Fix Brave shields localization
-- [ ] Add support for more locales
-- [ ] MacOS OS theme controls theme
+- [x] More ads work
+- [ ] MacOS OS theme controls theme (Simon, in progress)
 
 ### Milestone 10: 0.63.x (~April 23, 2019)
 
-- [ ] Upgrade to Chromium 74
-- [ ] In page translations
-- [ ] Make Widevine UI more noticeable
+- [x] Unify exception handling 
+- [x] Fix Brave shields localization
+- [ ] Upgrade to Chromium 74 (Max, in progress)
+- [ ] Make Widevine UI more noticeable (Simon, in review)
+- [ ] Custom ABP filter rules in about:adblock (Emerick, in progress)
+- [ ] eTLD+1 matching for about:adblock (pes, in review)
+- [ ] Add options for allowing FB login / embeds and Twitter embeds
+- [ ] More ads work
+
+### Milestone 11: 0.64.x (~May 14, 2019)
+
 - [ ] Override regional ad-block selection in about:adblock
-- [ ] Custom ABP filter rules in about:adblock
+- [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected
+- [ ] In page translations
+- [ ] Ad-block tokenization performance improvements
+- [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
+- [ ] Add support for more locales
+
 
 ### Beyond
 
