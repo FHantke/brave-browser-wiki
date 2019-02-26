@@ -25,6 +25,7 @@
 # Uplift approvers
 
 - Current approvers are @rebron @kjozwiak @Sri @bbondy @clifton (Slack usernames).
+- There is a [formal GitHub team for the approvers](https://github.com/orgs/brave/teams/uplift-approvers)
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
 - Approvers should be working to keep PRs to version branches at 0 issues. 
 - The person doing the original request must see that the PR actually gets merged.
