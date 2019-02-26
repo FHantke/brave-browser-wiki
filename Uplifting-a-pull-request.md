@@ -2,6 +2,7 @@ Painfully hand-created table of contents:
 - [What are uplifts?](#what-are-uplifts)
 - [Using automation to create those pull requests](#using-automation-to-create-those-pull-requests)
     - [Jenkins job](#jenkins-job)
+    - [Running locally](#running-locally)
         - [Getting started](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#getting-started) 
         - [General overview of what happens](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#general-overview-of-what-happens)
         - [Example usage](#example-usage)
@@ -45,7 +46,7 @@ In order to use this, you'll need to create a GitHub personal access token
 
 If you don't want to store this in your `.npmrc`, you can always set the environment variable or include the environment variable in the usage:
 ```
-BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/pr.py --options-go-here
+BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py --options-go-here
 ```
 
 #### General overview of what happens
@@ -95,7 +96,7 @@ This will show the raw responses sent back from GitHub
 
 6. Do you only want to submit a patch against RELEASE and BETA? (not dev). *Use start-from*:
 ```
-./script/pr.py --uplift-to=release --start-from=beta --uplift-using-pr=1632
+./script/uplift.py --uplift-to=release --start-from=beta --uplift-using-pr=1632
 ```
 
 ## Getting help
