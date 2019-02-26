@@ -48,6 +48,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [ ] Ad-block tokenization performance improvements
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 - [ ] Add support for more locales
+- [ ] Smart Tracking Protection (Pranjal, in progress)
 
 ### Beyond
 
