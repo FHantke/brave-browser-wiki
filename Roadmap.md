@@ -3,6 +3,8 @@
 This is a working document, things will update and move around to reflect reality. 
 Things are not set in stone in this document.  Brave members are expected to update this document to reflect reality to share current status with community.
 
+Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
+
 ### Milestone 0.60.x (~February 19, 2019)
 
 - [x] Rust support for brave-core.
@@ -36,7 +38,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] eTLD+1 matching for about:adblock (pes, in review)
 - [ ] Add options for allowing FB login / embeds and Twitter embeds
 - [ ] More ads work
-- [ ] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
 
 ### Milestone 0.64.x (~May 14, 2019)
 
@@ -59,6 +60,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 - [ ] Session windows
 - [ ] Restyling bookmarks, history, preferences
 - [ ] IPFS integration
+- [ ] Settings redesign
 - [ ] Uphold widget / 2 way wallet?
 - [ ] Tipping on individual sub-content
 - [ ] Sync for other types of data
