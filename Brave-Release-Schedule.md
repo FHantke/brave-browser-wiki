@@ -128,6 +128,13 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 # How to do branch migrations:
 
+This process has recently been automated!
+- Visit https://staging.ci.brave.com/job/branch-migrations/
+- Queue the job
+- Verify results
+
+## Manual process (for reference)
+
 Follow this checklist:
 
 - [ ] Create a new branch off of `master` of `brave/brave-core` for the new version. `cd src/brave && git checkout master && git pull`
