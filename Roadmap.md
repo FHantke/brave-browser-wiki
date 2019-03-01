@@ -33,7 +33,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Unify exception handling 
 - [x] Fix Brave shields localization
 - [ ] Upgrade to Chromium 74 (Max, in progress)
-- [ ] Make Widevine UI more noticeable (Simon, in review)
+- [x] Make Widevine UI more noticeable
 - [ ] Custom ABP filter rules in about:adblock (Emerick, in progress)
 - [ ] eTLD+1 matching for about:adblock (pes, in review)
 - [ ] Add options for allowing FB login / embeds and Twitter embeds
