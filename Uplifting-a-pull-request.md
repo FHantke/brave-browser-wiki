@@ -19,6 +19,8 @@ Painfully hand-created table of contents:
 - The [uplift approvers](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) will take a look at those pull requests and approve/deny 
 
 ## Using automation to create those pull requests
+_**NOTE: this script only works for clean uplifts. If there are merge conflicts, you'll have to do it manually. Regardless, this should save some time.**_
+
 ### Jenkins job
 This is the preferred way to do it!
 
@@ -28,8 +30,6 @@ This is the preferred way to do it!
     - pick the channel you want to uplift to
     - click `build`
 - uplifts are created (no need to use CLI)
-
-_**NOTE: this script only works for clean uplifts. If there are merge conflicts, you'll have to do it manually. Regardless, this should save some time.**_
 
 ### Running locally
 #### Getting started
