@@ -26,7 +26,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 - [x] Widevine support for Linux
 - [x] More ads work
-- [ ] MacOS OS theme controls theme (Simon, in progress)
+- [ ] MacOS OS theme controls theme (Simon, in review)
 
 ### Milestone 0.63.x (~April 23, 2019)
 
