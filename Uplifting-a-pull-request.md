@@ -34,6 +34,8 @@ This is the preferred way to do it!
 ![Uplift your pull request with Jenkins](http://media.clifton.io/brave/wiki/jenkins-uplift-pr.png)
 
 ### Running locally
+If you don't want to use Jenkins, you can run the script locally. This is a great option if you want to help fix bugs with the script or add a new feature 😄 
+
 #### Getting started
 There's a script available in brave-core which helps automate the tedious task of creating all the pull requests:
 `./script/uplift.py`
