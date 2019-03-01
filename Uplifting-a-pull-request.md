@@ -20,14 +20,16 @@ Painfully hand-created table of contents:
 
 ## Using automation to create those pull requests
 ### Jenkins job
-This is a work in progress by Mihai and Clifton!
-You can view it here:
-https://staging.ci.brave.com/view/wip/job/mihai-create-uplift-prs/
+This is the preferred way to do it!
 
-The goal would be:
-- visit this page
-- queue new job, specifying the params
+- visit https://staging.ci.brave.com/view/Main/job/create-uplift-prs/
+- click `Build with Parameters`:
+    - put the pull request number (must already be merged)
+    - pick the channel you want to uplift to
+    - click `build`
 - uplifts are created (no need to use CLI)
+
+_**NOTE: this script only works for clean uplifts. If there are merge conflicts, you'll have to do it manually. Regardless, this should save some time.**_
 
 ### Running locally
 #### Getting started
