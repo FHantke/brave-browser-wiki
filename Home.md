@@ -60,3 +60,17 @@ To start release build:
 # Staying up to date
 
 You can run `npm run sync -- --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**. This typically triggers a full rebuild. If you'd prefer to manually update, you can re-run the brave-core patches by running `npm run sync -- --run_hooks`.
+
+# Troubleshooting
+
+1. Rustup error on build:
+ 
+```
+FAILED: gen/challenge_bypass_ristretto/out/x86_64-unknown-linux-gnu/release/libchallenge_bypass_ristretto.a 
+python ../../brave/script/cargo.py --rustup_home=../../brave/build/rustup/ --cargo_home=../../brave/build/rustup/ --manifest_path=../../brave/vendor/challenge_bypass_ristretto_ffi/Cargo.toml --build_path=gen/challenge_bypass_ristretto/out --target=x86_64-unknown-linux-gnu --is_debug=false --rust_flags=
+Traceback (most recent call last):
+  File "../../brave/script/cargo.py", line 104, in <module>
+    sys.exit(main())
+```
+
+Remove `src/out`, `src/brave/vendor`, `src/brave/build/`, run `npm run init` and start the build again. 
