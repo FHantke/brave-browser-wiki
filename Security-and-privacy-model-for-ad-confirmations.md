@@ -36,6 +36,7 @@
 * MITM on internet between user and ads server
 * Crash / power loss
 * Timing based loss of privacy
+* Malicious advertisers
 
 ### Attack surfaces
 
