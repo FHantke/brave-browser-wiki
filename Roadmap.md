@@ -34,7 +34,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Fix Brave shields localization
 - [x] Make Widevine UI more noticeable
 - [x] eTLD+1 matching for about:adblock
-- [x] More ads work
+- [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
 - [x] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
 - [ ] Add options for allowing FB login / embeds and Twitter embeds
 - [ ] Upgrade to Chromium 74 (Max, in progress)
