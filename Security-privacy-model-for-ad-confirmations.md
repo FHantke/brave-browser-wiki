@@ -1,5 +1,3 @@
-# Security / privacy model for ads-confirmations
-
 ## Application
 
 ### Parties
