@@ -23,6 +23,14 @@
 * Pay out for redeemed tokens on-demand after offering a notification to the user to claim their earnings.
 * Prevent double spend attacks by ensuring each payment token can only be spent once.
 
+#### Specific user privacy goals
+
+* Brave/Advertiser cannot learn that a user in Segment X and a user in Segment Y are the same user (AKA, user unlinkability across segments)
+* Brave/Advertiser cannot learn that a user who has viewed or interacted with Creative Set X and a user who has viewed or interacted with Creative Set Y are the same user (AKA, user unlinkability across creative sets)
+* Brave/Advertiser cannot figure out any personally-identifiable or sensitive information about the user without explicit consent of the user.
+
+"Personally-identifiable or sensitive information" in this context includes but is not limited to: the user's browsing history, their email address and contact info, their real name, their Brave payments history, what ads they have seen, what segments they are in, their payments wallet address and anything considered personal info under GDPR.
+
 ### Threat model
 
 * MITM on internet between user and ads server
