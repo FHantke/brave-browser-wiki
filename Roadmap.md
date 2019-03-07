@@ -34,11 +34,11 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Fix Brave shields localization
 - [x] Make Widevine UI more noticeable
 - [x] eTLD+1 matching for about:adblock
+- [x] More ads work
+- [x] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
 - [ ] Add options for allowing FB login / embeds and Twitter embeds
 - [ ] Upgrade to Chromium 74 (Max, in progress)
-- [ ] Custom ABP filter rules in about:adblock (Emerick, in progress)
-- [ ] More ads work
-- [ ] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
+
 
 ### Milestone 0.64.x (~May 14, 2019)
 
@@ -49,6 +49,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 - [ ] Add support for more locales
 - [ ] Smart Tracking Protection (Pranjal, in progress)
+- [ ] Custom ABP filter rules in about:adblock (Emerick, in progress)
 
 ### Beyond
 
