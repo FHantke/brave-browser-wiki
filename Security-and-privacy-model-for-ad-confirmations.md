@@ -21,7 +21,7 @@
 * Upon receiving a valid confirmation, grant the user a redeemable payment token that is worth ~70% of the observation price charged to the advertiser.
 * Allow a user to redeem their payment tokens, this redemption should be unlinkable to the original confirmation events.
 * Pay out for redeemed tokens on-demand after offering a notification to the user to claim their earnings.
-* Prevent double spend attacks by ensuring each payment token can only be spent once.
+* Prevent double spend attacks by ensuring each payment token can be spent at most once.
 
 #### Specific user privacy goals
 
@@ -111,7 +111,7 @@ they were issued provided:
 1. There is a sufficient anonymity set formed by users who are creating confirmation tokens.
 2. The time between token issuance and confirmation is not predictable.
 3. The confirmation metadata does not include information unique to the user (that is not otherwise unique to this event.)
-4. The user is not made re-identifiable through other side channels such as IP address information. We ensure this by configuring our CDN to neither log or forward client address information.
+4. The user is not made re-identifiable through other side channels such as IP address information. We ensure this by configuring our CDN to neither log nor forward client address information.
 5. The signing keys used to sign both confirmation and payment tokens are widely used, we do not use unique keys for small user cohorts. To this effect we publish all signing keys publicly and instruct the browser to verify DLEQ proofs.
 
 #### Weekly
@@ -119,10 +119,11 @@ they were issued provided:
 1. A user takes all stored payment tokens that they have accumulated and forms
    a bulk token redemption request, submitting their wallet identifier as the 
    metadata that is "signed".
-1. Using the included [`PublicKey`] for each token redemption request the looks
-   up the issuers for each - and thus the corresponding value.
-1. The ads server forwards the token redemption requests to corresponding issuers endpoint of
-   the challenge bypass microservice, which marks the [`TokenPreimage`] of each as spent.
+1. Using the included [`PublicKey`] for each token redemption request the ads server 
+   looks up the issuers for each - and thus the corresponding value.
+1. The ads server forwards the token redemption requests to the corresponding issuer endpoints of
+   the challenge bypass microservice, which marks the [`TokenPreimage`] of each as spent and ensures
+   that a double spend has not occured.
 1. The ads server makes a request to the eyeshade server, submitting a
    request for payment for the value of each token.
 
