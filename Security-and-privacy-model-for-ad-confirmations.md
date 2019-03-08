@@ -129,9 +129,9 @@ they were issued provided:
 
 #### During the first week of the month
 
-1. A Brave operator will pull a list of balances owed to each wallet for ads
-   earnings.
 1. Ad earnings will be made available to users to claim
+2. An operator will pull the balances against the confirmations to be paid - only when the confirmations are received, earnings are earmarked for the client
+3. Ad earnings are then made available for users to claim
 
 [`BlindedToken`]: https://docs.rs/challenge-bypass-ristretto/latest/challenge_bypass_ristretto/voprf/struct.UnblindedToken.html
 [`SigningKey`]: https://docs.rs/challenge-bypass-ristretto/latest/challenge_bypass_ristretto/voprf/struct.SigningKey.html
