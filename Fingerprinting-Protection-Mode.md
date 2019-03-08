@@ -29,7 +29,7 @@ Because most browser fingerprinting defense requires disabling web features that
 * `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash
 * Connections to known tracking domains are blocked via the Tracking Protection library
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled
-* `navigator.credentials` is disabled on desktop
+* `navigator.credentials` is disabled on desktop prior to C73; we are re-enabling it to support [webauthn](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/).
 * Web USB and Web Bluetooth are disabled on desktop 
 
 ## How to check that it's working
