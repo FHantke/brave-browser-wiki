@@ -5,7 +5,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.60.x (~February 19, 2019)
+### Milestone 0.60.x (~February 19, 2019) - Completed & Released
 
 - [x] Rust support for brave-core.
 - [x] Webcompat fixes (including sportsnet)
