@@ -80,6 +80,11 @@ SUCCESS: all tests passed.
 
 `npm run test -- brave_browser_tests --filter=BraveContentSettingsObserverBrowserTest.*`
 
+# Running tests headless on Linux
+
+Make sure xvfb, openbox, and xcompmgr are installed; then run, e.g.:
+
+`./src/testing/xvfb.py npm run test -- brave_browser_tests`
 
 # Running tests in release mode
 
