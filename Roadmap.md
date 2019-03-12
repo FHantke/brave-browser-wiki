@@ -21,6 +21,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] More ads work. This will be in a disabled state in Release channel until related work is completed in a future milestones.
 - [x] Upgrade to Chromium 73
 - [x] Rewards stability fixes
+- [x] Webcompat fixes including third-party detection and ad-block rule parsing fixes
 
 ### Milestone 0.62.x (~April 2, 2019)
 
