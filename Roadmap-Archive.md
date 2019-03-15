@@ -127,3 +127,14 @@
 - [x] Add Widevine detection to show up for install any time Widevine is attempted to be accessed.
 - [x] Allow disabling PDF.js in settings
 - [x] Upgrade to Chromium 72
+
+### Milestone 0.60.x (~February 19, 2019) - Completed & Released
+
+- [x] Rust support for brave-core.
+- [x] Webcompat fixes (including sportsnet)
+- [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations.  This will be in a disabled state in Release channel until related work is completed in future milestones.
+- [x] Build out PR builder to do builds for each PR
+- [x] Build out daily Dev channel and Beta builds CI
+- [x] Fix Twitch tipping
+- [x] New tab UI tweaks
+- [x] Rewards stability fixes
