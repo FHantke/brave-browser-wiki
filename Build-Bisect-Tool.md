@@ -20,7 +20,7 @@ In order to use this, you'll need to create a GitHub personal access token
 
 If you don't want to store this in your `.npmrc`, you can always set the environment variable or include the environment variable in the usage:
 ```
-BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py --options-go-here
+BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/build-bisect.py --options-go-here
 ```
 
 ## Example usage
