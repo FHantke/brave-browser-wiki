@@ -34,7 +34,7 @@ BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py -
 
     For example, in the above- 0.60.0 isn't a real version, but it'll match the first 0.60.x release. This is intended to be a version where the feature WAS working. `--good` and `--bad` are both optional; if you only know one of them, that's OK!
 
-## Other flags
+### Other flags
 - To get more info (debug logs), use the `--verbose` parameter 
 - Restrict bisect to a particular channel with `--channel`. ex: `--channel=dev`, `--channel=beta`, `--channel=release`
 - If for some reason you wanted to use your actual profile directories (instead of the temp ones), you can use the `--real-profile` parameter
