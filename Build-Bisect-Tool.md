@@ -48,3 +48,4 @@ BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py -
 
 ## History
 - Originally implemented with https://github.com/brave/brave-core/pull/1833
+- Issue tracking feature requests: https://github.com/brave/brave-browser/issues/3746
