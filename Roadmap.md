@@ -17,7 +17,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Widevine support for Linux
 - [x] More ads work
 - [x] Add options for allowing FB login / embeds and Twitter embeds
-- [x] MacOS OS theme controls theme (Simon, in review)
+- [x] MacOS OS theme controls theme
 
 ### Milestone 0.63.x (~April 23, 2019)
 
