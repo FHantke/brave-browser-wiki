@@ -24,9 +24,23 @@ BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py -
 ```
 
 ## Example usage
-TODO
+### Search all versions
+- With no parameters, all releases will be fetched
+    `./script/build-bisect.py`
 
-## Limitations
+- If you know good and/or bad versions, you can provide those with the optional parameters:
+    `./script/build-bisect.py --good=0.60.0 --bad=0.61.36`
+
+    For example, in the above- 0.60.0 isn't a real version, but it'll match the first 0.60.x release. This is intended to be a version where the feature WAS working. `--good` and `--bad` are both optional; if you only know one of them, that's OK!
+
+- To get more info (debug logs), use the `--verbose` parameter 
+- If for some reason you wanted to use your actual profile directories (instead of the temp ones), you can use the `--real-profile` parameter
+- You can provide a zip file that will get downloaded for each version and unzipped into the temporary profile directory. For example, I have a 5000 bookmarks profile which you can use to seed your profile. You would enable this via the following command line argument:
+`--use-profile="https://github.com/brave/qa-resources/blob/bsc-profile/profiles/5000-bookmarks.zip?raw=true"`
+
+## Notes / Limitations
+- Temporary profile directories are created for each run. No need to worry about your real browser data being modified 😄 
+- 
 - Only works for macOS at the moment (edits welcome for Windows and/or Linux)
 - Tool could also be used to find first appearance of a feature. However, it's confusing because it prompts you asking if build is broke or not. When using for this purpose, you would just answer `y` for versions that DON'T have the feature and `n` for versions that DO.
 
