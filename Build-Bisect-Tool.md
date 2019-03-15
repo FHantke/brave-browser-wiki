@@ -40,7 +40,6 @@ BRAVE_GITHUB_TOKEN=0a0aaa00a0000aa0aaa0000000a0a0000a00aa0a ./script/uplift.py -
 
 ## Notes / Limitations
 - Temporary profile directories are created for each run. No need to worry about your real browser data being modified 😄 
-- 
 - Only works for macOS at the moment (edits welcome for Windows and/or Linux)
 - Tool could also be used to find first appearance of a feature. However, it's confusing because it prompts you asking if build is broke or not. When using for this purpose, you would just answer `y` for versions that DON'T have the feature and `n` for versions that DO.
 
