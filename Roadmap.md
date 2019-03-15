@@ -16,6 +16,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 - [x] Widevine support for Linux
 - [x] More ads work
+- [x] Add options for allowing FB login / embeds and Twitter embeds
 - [ ] MacOS OS theme controls theme (Simon, in review)
 
 ### Milestone 0.63.x (~April 23, 2019)
@@ -26,7 +27,6 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] eTLD+1 matching for about:adblock
 - [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
 - [x] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
-- [ ] Add options for allowing FB login / embeds and Twitter embeds
 - [ ] Upgrade to Chromium 74 (Max, in progress)
 
 
