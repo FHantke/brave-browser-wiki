@@ -32,14 +32,19 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Milestone 0.64.x (~May 14, 2019)
 
+- [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
 - [ ] Override regional ad-block selection in about:adblock
-- [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
 - [ ] In page translations (Jocelyn, in progress)
 - [ ] Ad-block tokenization performance improvements (bbondy)
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 - [ ] Add support for more locales
 - [ ] Smart Tracking Protection (Pranjal, in progress)
-- [ ] Custom ABP filter rules in about:adblock (Emerick, in progress)
+
+### Milestone 0.65.x
+
+- [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
+
+
 
 ### Beyond
 
