@@ -5,17 +5,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.60.x (~February 19, 2019) - Completed & Released
-
-- [x] Rust support for brave-core.
-- [x] Webcompat fixes (including sportsnet)
-- [x] Ads integration into Brave-core with foundations to support Rust based blind token confirmations.  This will be in a disabled state in Release channel until related work is completed in future milestones.
-- [x] Build out PR builder to do builds for each PR
-- [x] Build out daily Dev channel and Beta builds CI
-- [x] Fix Twitch tipping
-- [x] New tab UI tweaks
-- [x] Rewards stability fixes
-
 ### Milestone 0.61.x (~March 12, 2019) - Completed & Released
 
 - [x] More ads work. This will be in a disabled state in Release channel until related work is completed in a future milestones.
