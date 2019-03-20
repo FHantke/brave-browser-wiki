@@ -118,6 +118,8 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 # Nightly channel:
 
+| Version | Target Chromium | Date               | Comments                                  |
+| ------- | ----------------|--------------------|-------------------------------------------|
 | 0.65.x  |    77           | April 2, 2019      |              
 | 0.66.x  |    75           | April 23, 2019     |                     
 | 0.67.x  |    76           | May 14, 2019       |              
