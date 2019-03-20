@@ -33,7 +33,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 ### Milestone 0.64.x (~May 14, 2019)
 
 - [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
-- [x] Shields panel UI improvements and support for theming
+- [x] UI improvements and support for theming in the Brave shields panel
 - [x] Support for Nightly builds
 - [ ] Override regional ad-block selection in about:adblock
 - [ ] In page translations (Jocelyn, in progress)
