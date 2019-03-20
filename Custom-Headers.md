@@ -7,5 +7,5 @@ Since Brave still has a relatively small user base, we avoid sharing extra infor
 | cheddar.com     | To provide [free subscriptions](https://brave.com/cheddar-partnership/) to Brave users.
 | coinbase.com    | For detection of using Brave for the [Earn BAT](https://brave.com/coinbase-earn-bat/) campaign.
 | marketwatch.com & barrons.com | To provide [free subscriptions](https://www.brave.com/dow-jones/) to Brave users.
-| townsquare.com & related sites | https://basicattentiontoken.org/townsquare-partnership/
+| townsquare.com & related sites | [Offer to users](https://basicattentiontoken.org/townsquare-partnership) that are not in Brave to download Brave.
 | uphold.com | Brave integration
