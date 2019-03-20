@@ -3,7 +3,7 @@ Since Brave still has a relatively small user base, we avoid sharing extra infor
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
-| Brave           | `X-Brave-Partner: uphold` |To present marketing information differently.
+| Brave           | `X-Brave-Access-Key: key` | [Dow Jones Media Group related](https://github.com/brave/brave-browser/issues/1805)
 | cheddar.com     |        | To provide [free subscriptions](https://brave.com/cheddar-partnership/) to Brave users.
 | coinbase.com    |        | For detection of using Brave for the [Earn BAT](https://brave.com/coinbase-earn-bat/) campaign.
 | marketwatch.com & barrons.com | `X-Brave-Partner: dowjones` | To provide [free subscriptions](https://www.brave.com/dow-jones/) to Brave users.
