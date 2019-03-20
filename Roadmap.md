@@ -27,12 +27,14 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] eTLD+1 matching for about:adblock
 - [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
 - [x] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
-- [ ] Upgrade to Chromium 74 (Max, in progress)
+- [x] Upgrade to Chromium 74 (Max, in progress)
 
 
 ### Milestone 0.64.x (~May 14, 2019)
 
 - [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
+- [x] Shields panel UI improvements and support for theming
+- [x] Support for Nightly builds
 - [ ] Override regional ad-block selection in about:adblock
 - [ ] In page translations (Jocelyn, in progress)
 - [ ] Ad-block tokenization performance improvements (bbondy)
