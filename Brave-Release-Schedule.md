@@ -110,7 +110,6 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 | 0.73.x  |    79           | October 22, 2019   |              
 
 
-- This channel will sometimes get merges from master to speed up the delivery of features. 
 - CI does builds for Dev channel once a day if there are changes or as requested.
 - Updates are released as there are builds as long as tests pass.
 - Branches are created from master around the dates specified in this table.
@@ -119,7 +118,19 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 # Nightly channel:
 
-- We don't currently offer nightly builds from master, but we may in the future.
+| 0.65.x  |    77           | April 2, 2019      |              
+| 0.66.x  |    75           | April 23, 2019     |                     
+| 0.67.x  |    76           | May 14, 2019       |              
+| 0.68.x  |    76           | June 4, 2019       |                     
+| 0.69.x  |    77           | July 2, 2019       |              
+| 0.70.x  |    77           | July 30, 2019      |                     
+| 0.71.x  |    78           | August 20, 2019    |              
+| 0.72.x  |    78           | September 10, 2019 |                     
+| 0.73.x  |    79           | October 1, 2019    |              
+| 0.74.x  |    79           | October 22, 2019   |              
+
+- Nightly builds will be made from master for this channel.
+- This means that within a day of any change you can start testing it.
 - Developers work off of master.
 - We keep master stable, when it is not, we backout what broke it.
 - If something fails tests, that thing should be backed out.
