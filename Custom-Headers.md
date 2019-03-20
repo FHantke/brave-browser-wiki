@@ -5,7 +5,7 @@ Since Brave still has a relatively small user base, we avoid sharing extra infor
 | ----------------| -------| ------- |
 | Brave           | `X-Brave-Access-Key: key` | [Show subscription page for Dow Jones Media Group](https://github.com/brave/brave-browser/issues/1805).
 | cheddar.com     |        | To provide [free subscriptions](https://brave.com/cheddar-partnership/) to Brave users.
-| coinbase.com    |        | For detection of using Brave for the [Earn BAT](https://brave.com/coinbase-earn-bat/) campaign.
+| coinbase.com    | `X-Brave-Partner: coinbase` | For detection of using Brave for the [Earn BAT](https://brave.com/coinbase-earn-bat/) campaign.
 | marketwatch.com & barrons.com | `X-Brave-Partner: dowjones` | To provide [free subscriptions](https://www.brave.com/dow-jones/) to Brave users.
 | townsquare.com & related sites | `X-Brave-Partner: townsquare` |  [Offer to users](https://basicattentiontoken.org/townsquare-partnership) that are not in Brave to download Brave.
 | uphold.com | | Shows different UI to brave users for payments as a publisher.
