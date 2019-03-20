@@ -116,7 +116,7 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 ---
 
-# Nightly channel:
+# Nightly channel dates:
 
 | Version | Target Chromium | Date               | Comments                                  |
 | ------- | ----------------|--------------------|-------------------------------------------|
