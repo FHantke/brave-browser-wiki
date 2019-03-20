@@ -120,7 +120,7 @@ Freezing is a concept that is per version branch and not per channel.  Every ver
 
 | Version | Target Chromium | Date               | Comments                                  |
 | ------- | ----------------|--------------------|-------------------------------------------|
-| 0.65.x  |    77           | April 2, 2019      |              
+| 0.65.x  |    75           | April 2, 2019      |              
 | 0.66.x  |    75           | April 23, 2019     |                     
 | 0.67.x  |    76           | May 14, 2019       |              
 | 0.68.x  |    76           | June 4, 2019       |                     
