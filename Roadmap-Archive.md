@@ -1,3 +1,5 @@
+See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for recent version information.
+
 ### Milestone 1: Open sourceable (December 2017 - February 2018)
 - [x] Adblock off the main thread
 - [x] Tracking protection off the main thread
