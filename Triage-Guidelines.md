@@ -29,6 +29,7 @@
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
 - Approvers should be working to keep PRs to version branches at 0 issues. 
 - The person doing the original request must see that the PR actually gets merged.
+- This person must only merge, after they see their change in Nightly and test that it works.
 
 # Priority labels
 
