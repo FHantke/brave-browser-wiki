@@ -162,6 +162,28 @@ optional arguments:
 - Bug fixes in https://github.com/brave/brave-core/pull/1655 and https://github.com/brave/brave-core/pull/1662
 - Script renamed / functionality modified in https://github.com/brave/brave-core/pull/1775
 
+
+## Uplift templates
+
+### Uplift approval template
+
+Approved, please ensure that before merging:
+
+- [ ] You have checked CI and the builds, lint, and tests all pass or are not related to your PR.
+- [ ] You have tested your change on Nightly.
+- [ ] The PR milestones match the branch they're landing to.
+
+After you merge:
+
+- [ ] The associated issue milestone is set to the smallest version that the changes is landed on.
+
+
+
+
+
+### Uplift denial template
+
+
 ## Also see
 If you enjoyed this document, check out the following docs too! 😎 
 - [Triage Guidelines](https://github.com/brave/brave-browser/wiki/Triage-Guidelines)
