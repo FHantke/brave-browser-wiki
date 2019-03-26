@@ -21,6 +21,9 @@
 - Milestone on the issue should match only the smallest version where it is landed currently and NOT where you want it ideally.
 - Milestones on the PRs should match only the version branch that the PR is being merged to.
 - There is a handy script you can use for uplifting! [Check out the docs here](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request)
+- The person doing the original request must see that the PR actually gets merged.
+- This person must only merge, after they see their change in Nightly and test that it works.
+
 
 # Uplift approvers
 
@@ -28,8 +31,6 @@
 - There is a [formal GitHub team for the approvers](https://github.com/orgs/brave/teams/uplift-approvers)
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
 - Approvers should be working to keep PRs to version branches at 0 issues. 
-- The person doing the original request must see that the PR actually gets merged.
-- This person must only merge, after they see their change in Nightly and test that it works.
 
 # Priority labels
 
