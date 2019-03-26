@@ -14,9 +14,10 @@ Painfully hand-created table of contents:
 - [Also see](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#also-see)
 
 ## What are uplifts?
-- Most of our pull requests go against master ("nightly")
-- If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("dev", "beta", "release") as needed
+- Most of our pull requests go against master ("Nightly")
+- If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("Dev", "Beta", "Release") as needed
 - The [uplift approvers](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) will take a look at those pull requests and approve/deny 
+- These PRs cannot be merged until the owner of the PR tests that their fix works on Nightly.
 
 ## Using automation to create those pull requests
 _**NOTE: this script only works for clean uplifts. If there are merge conflicts, you'll have to do it manually. Regardless, this should save some time.**_
