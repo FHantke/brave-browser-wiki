@@ -178,10 +178,9 @@ After you merge:
 - [ ] The associated issue milestone is set to the smallest version that the changes is landed on.
 
 
-
-
-
 ### Uplift denial template
+
+Uplift declined. Reason here...
 
 
 ## Also see
