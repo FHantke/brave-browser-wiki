@@ -1,3 +1,5 @@
+## Configure and init the new Chromium version.
+
 Create a new cloned dir.
 
 `npm install`
@@ -9,6 +11,8 @@ Since you’re using a new cloned dir you should not already have an `src` dir.
 `npm run init`
 
 If patches apply correctly, simply run `npm run update_patches` and commit the changes.
+
+## Fix patches.
 
 If patches do not apply, then stash any changes:
 
@@ -22,6 +26,8 @@ Get a list of the patches:
 
 Do a vim git macro to add `git apply -3 ./brave/patches/` before each line.
 Save the list of `git apply` script file `:wq a`
+
+(Alternatively: `ls -1 brave/patches/ | sed 's!^!git apply -3 ./brave/patches/!' > a`)
 
 Make it runnable:
 
@@ -67,9 +73,19 @@ Once you are done updating all the Chromium src files, the -3 option above will 
 
 Commit what you have in a commit to update patches for the Chromium update.
 
+## Check for changes in the build tool chain.
+* For Mac check `mac_sdk_min` in `src/build/config/mac/mac_sdk_overrides.gni` and `MAC_TOOLCHAIN_VERSION` in `src/build/mac_toolchain.py`,
+* For Windows check `CURRENT_DEFAULT_TOOLCHAIN_VERSION` in `src/build/win_toolchain.py`.
+
+Update your tool chain if needed and alert dev and CI teams on tool chain changes. 
+
+## Fix build.
+
 Do a build like normal, fix errors as they come up.
 
 `npm run build`
+
+###  Fix strings.
 
 Eventually you’ll start getting some string errors when you build.
 Commit what you have in a updates to brave-core commit.
@@ -86,6 +102,8 @@ Note: Filled some custom strings to brave_strings.grd by https://github.com/brav
 
 Do a commit for the updated source strings, `grd` files.
 
+### Update localization.
+
 Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
 If you need access talk to devops.
 
@@ -99,8 +117,9 @@ Run this to pull down new xtb and translation files:
 
 Do a commit for all the string translation updates, `xtb` files.
 
-Continue the build after that runs successfully.
+### Fix remaining build errors.
 
+Continue the build after that runs successfully.
 
 If you have more fixes you can add them to the commit before the string commit which has the brave-core updates.
 
