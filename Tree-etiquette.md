@@ -12,3 +12,4 @@
 
 - Each pull request has CI run, if the tree is in a broken state, then you risk breaking every PR's build status. 
 - It wastes time at scale for every person that spends time thinking that their own changes are breaking things. 
+- QA and other departments are completely blocked if they can't get builds.
