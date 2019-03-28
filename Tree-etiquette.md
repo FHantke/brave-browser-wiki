@@ -1,4 +1,4 @@
 - Only merge something if brave-browser jenkins CI status passes for the pipeline steps. If you don't know how to do this, check with @mihaiplesa for training.
-- If you see something that's broken, or tests failing, instantly revert it. Do not wait to talk to the person that broke it, especially if they are not alone.  Re-open the issue that broke it.
+- If you see something that's broken, or tests failing, instantly revert it. Do not wait to talk to the person that broke it, especially if they are not there.  Re-open the issue that broke it.
 - If you accidentally break the build, apologize and pay it forward by helping out when someone else breaks the build.
 - Check #brave-core Slack and only merge things if the channel topic indicates the branch you're landing to is open.
