@@ -5,7 +5,7 @@
 - If you accidentally break the build, apologize and pay it forward by helping out when someone else breaks the build.
 - Check #brave-core Slack and only merge things if the channel topic indicates the branch you're landing to is open.
 
-## Common fixes for tree breakage
+# Common fixes for tree breakage
 - When dependencies are updated (for example, fixing `npm run audit`), please be sure the `DEPS` file is updated too! This is extremely important. Each channel will need a separate `DEPS` bump
 
 # When does a tree close?
