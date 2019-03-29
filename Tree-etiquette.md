@@ -7,6 +7,7 @@
 
 # Common fixes for tree breakage
 - When dependencies are updated (for example, fixing `npm run audit`), please be sure the `DEPS` file is updated too! This is extremely important. Each channel will need a separate `DEPS` bump
+- Before reverting, make sure to get latest (re-run sync / patches). You may be on an out-of-date version. You can also check CI for the last PR that was merged.
 
 # When does a tree close?
 - A tree branch closes when builds fail, brave_unit_tests fail, brave_browser_tests fail, audit-deps fails, or the network audit fails. 
