@@ -47,3 +47,17 @@ and put the following in `~/.boto`:
 Did you remember to do a `git pull` of the main `brave-browser` repository first?
 
 If it's still not working, try deleting your `src/out` directory.
+
+## Rustup error on build:
+
+If you see the following `rustup` error while running `npm run build`:
+
+```
+FAILED: gen/challenge_bypass_ristretto/out/x86_64-unknown-linux-gnu/release/libchallenge_bypass_ristretto.a 
+python ../../brave/script/cargo.py --rustup_home=../../brave/build/rustup/ --cargo_home=../../brave/build/rustup/ --manifest_path=../../brave/vendor/challenge_bypass_ristretto_ffi/Cargo.toml --build_path=gen/challenge_bypass_ristretto/out --target=x86_64-unknown-linux-gnu --is_debug=false --rust_flags=
+Traceback (most recent call last):
+  File "../../brave/script/cargo.py", line 104, in <module>
+    sys.exit(main())
+```
+
+remove `src/out`, `src/brave/vendor`, `src/brave/build/`, run `npm run init` and start the build again.
