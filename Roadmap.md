@@ -26,8 +26,8 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Make Widevine UI more noticeable
 - [x] eTLD+1 matching for about:adblock
 - [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
-- [x] Settings/Bookmarks/History/Downloads facelift (petemill, in progress; partially merged)
-- [x] Upgrade to Chromium 74 (Max, in progress)
+- [x] Settings/Bookmarks/History/Downloads facelift
+- [x] Upgrade to Chromium 74
 
 
 ### Milestone 0.64.x (~May 14, 2019)
@@ -35,17 +35,18 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
 - [x] UI improvements and support for theming in the Brave shields panel
 - [x] Support for Nightly builds
-- [ ] Override regional ad-block selection in about:adblock
-- [ ] In page translations (Jocelyn, in progress)
-- [ ] Ad-block tokenization performance improvements (bbondy)
-- [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
+- [x] Override regional ad-block selection in about:adblock
+
+### Milestone 0.65.x
+- [x] In page translations (Jocelyn, in progress)
 - [ ] Add support for more locales
 - [ ] Smart Tracking Protection (Pranjal, in progress)
 
-### Milestone 0.65.x
-
+### Milestone 0.66.x
+- [ ] Ad-block tokenization performance improvements (bbondy)
+- [ ] Ethereum wallet support (likely to be done in 0.67.x but tracking here)
 - [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
-
+- [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 
 
 ### Beyond
