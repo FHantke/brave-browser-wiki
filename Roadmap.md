@@ -41,6 +41,9 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 
+### Milestone 0.67.x
+
+- [ ] Add the ability to have social media login options into the Brave shields panel
 
 ### Beyond
 
