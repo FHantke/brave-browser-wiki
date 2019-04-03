@@ -102,27 +102,27 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Referral promo
 - [x] Tipping and donations
 
-### Milestone 6: 0.56.x
+### Milestone 6: 0.56.x - Completed & Released
 
 - [x] New shields redesign
 - [x] More UI work
 - [x] Get automated C++ tests running on Travis
 
-### Milestone 6: 0.57.x
+### Milestone 6: 0.57.x - Completed & Released
 
 - [x] Add import of more Brave legacy things
 - [x] Start migrate muon users
 - [x] Fix extensions compat
 - [x] Fix some blocking issues
 
-### Milestone 6: 0.58.x
+### Milestone 6: 0.58.x - Completed & Released
 
 - [x] Tipping banner
 - [x] More import settings from Brave old (search settings)
 - [x] Fix relaunch after update
 - [x] Fixed PDFs not loading on certain websites when they are behind basic authentication
 
-### Milestone 6: 0.59.x
+### Milestone 6: 0.59.x - Completed & Released
 
 - [x] Bookmarks Sync
 - [x] Ads integration landing into brave-core possibly disabled behind a flag
