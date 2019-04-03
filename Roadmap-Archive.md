@@ -140,3 +140,10 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Fix Twitch tipping
 - [x] New tab UI tweaks
 - [x] Rewards stability fixes
+
+### Milestone 0.61.x (~March 12, 2019) - Completed & Released
+
+- [x] More ads work. This will be in a disabled state in Release channel until related work is completed in a future milestones.
+- [x] Upgrade to Chromium 73
+- [x] Rewards stability fixes
+- [x] Webcompat fixes including third-party detection and ad-block rule parsing fixes
