@@ -44,7 +44,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Milestone 0.66.x
 - [ ] Ad-block tokenization performance improvements (bbondy)
-- [ ] Ethereum wallet support (Will possibly move to 0.67.x, but tracking here for now!)
+- [ ] Ethereum HD wallet support (Will possibly move to 0.67.x, but tracking here for now!)
 - [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 
