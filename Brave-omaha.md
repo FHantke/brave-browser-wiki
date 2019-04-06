@@ -253,7 +253,7 @@ A) *GoogleUpdateSetup.exe* registers task that executes *GoogleUpdateCore.exe* i
 # Customization
 To use Omaha by brave, manual customization is needed.
 
-Omaha customization repo is https://github.com/simonhong/omaha/tree/brave_omaha
+Omaha customization repo is https://github.com/brave/omaha
 
 ### Create tagged metainstaller
 For Omaha installation test, we need to make tagged metainstaller by using `ApplyTag.exe`.
@@ -321,7 +321,7 @@ with newly updated `goopdate.dll` because shell is quite simple and it just load
 
 If not, omaha itself replaces old shell with new. It is determined by `SetupFiles::ShouldCopyShell()`.
 
-# Test silent installer (brave_installer.exe)
+# Test mini installer (we rename it to brave_installer.exe)
 
 `brave_installer.exe` installs user mode stable version
 
