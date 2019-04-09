@@ -3,6 +3,7 @@ _**NOTE: this page is a work in progress! It should by no means be considered a 
 --------
 - [How it works](#how-it-works)
 - [What Chromium features are removed for privacy/security reasons?](#what-chromium-features-are-removed-for-privacysecurity-reasons)
+    - [Services & Features We Disable Entirely](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services--features-we-disable-entirely)
     - [Services We Proxy Through Brave Servers](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers)
 - [How does Brave compare to ungoogled-chromium?](#how-does-brave-compare-to-ungoogled-chromium)
 
