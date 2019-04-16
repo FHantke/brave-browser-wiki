@@ -63,6 +63,7 @@ _Google does not receive any information about which client is performing these 
 - [Plugin updates are proxied](https://github.com/brave/brave-core/pull/680)
 - [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
 - [Page translation requests are proxied and replaced with Microsoft cognitive services](https://github.com/brave/brave-core/pull/2006)
+- [Requests for CRLSets are proxied](https://github.com/brave/brave-core/pull/1581)
 
 ### Comments
 
