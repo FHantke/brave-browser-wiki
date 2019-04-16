@@ -6,13 +6,14 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 
 `<same<>` indicates that everything after the host in the URL is passed through to the new URL.
 
-* `https://dl.google.com/release2/chrome_component/*crl-set*`: `https://crlsets1.brave.com/<same>`
-* `https://*.gvt1.com/edgedl/release2/chrome_component/*crl-set*`: `https://crlsets2.brave.com/<same>`
+* `https://dl.google.com/release2/chrome_component/*crl-set*`: `https://crlsets.brave.com/<same>`
+* `https://*.gvt1.com/edgedl/release2/chrome_component/*crl-set*`: `https://crlsets.brave.com/<same>`
 * `https://safebrowsing.googleapis.com/`: `https://safebrowsing.brave.com`
 * `https://ssl.gstatic.com`: `https://static.brave.com`
 * `https://gstatic.com`: `https://static1.brave.com`
 * `https://update.googleapis.com`: `https://componentupdater.brave.com`
 * `https://clients2.googleusercontent.com`: `https://crxdownload.brave.com`
+* `https://clients2.google.com`: `https://extensionupdater.google.com`
 - Page translation requests
   * `https://translate.googleapis.com/translate_a/element.js*`: `https://translate.brave.com/<same>`
   * `https://translate.googleapis.com/element/*/js/element/element_main.js`: `https://translate.brave.com/<same>`
