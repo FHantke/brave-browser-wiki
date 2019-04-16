@@ -24,13 +24,16 @@ Because most browser fingerprinting defense requires disabling web features that
 
 ## Privacy protection enabled regardless of whether Fingerprinting Protection Mode is on
 
-* 3rd party cookies and referers blocked by default
-* User-Agent is set to Chrome except on a few sites that need it for major functionality to work
-* `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash
+This list is not complete. See https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove) for other things which are disabled in Brave but not in Chrome.
+
+* 3rd party cookies and referers blocked by default due to the third party tracking risk
+* User-Agent is set to Chrome except on a few sites that need it for major functionality to work to prevent sites from using Brave's UA as a tracking mechanism.
+* `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash to trigger HTML5 fallback for Flash whenever possible.
 * Connections to known tracking domains are blocked via the Tracking Protection library
-* [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled
+* [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled because the battery level can be used as a tracking signal.
 * `navigator.credentials` is disabled on desktop prior to C73; we are re-enabling it to support [webauthn](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/).
-* Web USB and Web Bluetooth are disabled on desktop 
+* Web USB and Web Bluetooth are disabled on desktop due to us not seeing much benefit to enabling it right now
+* We are also planning on disabling client-hints, see https://github.com/brave/brave-browser/issues/3539#issuecomment-483826927 for rationale
 
 ## How to check that it's working
 
