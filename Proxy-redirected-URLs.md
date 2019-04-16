@@ -14,8 +14,8 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 * `https://update.googleapis.com`: `https://componentupdater.brave.com`
 * `https://clients2.googleusercontent.com`: `https://crxdownload.brave.com`
 - Page translation requests
-  * `https://translate.googleapis.com/translate_a/element.js*`: `https://translate-relay.brave.com/<same>`
-  * `https://translate.googleapis.com/element/*/js/element/element_main.js`: `https://translate-relay.brave.com/<same>`
-  * `https://translate.googleapis.com/translate_static/js/element/main.js`: `https://translate-relay.brave.com/<same>`
+  * `https://translate.googleapis.com/translate_a/element.js*`: `https://translate.brave.com/<same>`
+  * `https://translate.googleapis.com/element/*/js/element/element_main.js`: `https://translate.brave.com/<same>`
+  * `https://translate.googleapis.com/translate_static/js/element/main.js`: `https://translate.brave.com/<same>`
   * `https://translate.googleapis.com/translate_static/css/translateelement.css`: `https://translate.brave.com/<same>`
   * `https://www.gstatic.com/images/branding/product/*x/translate_24dp.png`: `https://translate-static.brave.com/<same>`
