@@ -21,6 +21,7 @@ Because most browser fingerprinting defense requires disabling web features that
 * [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
 * [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
 * [SVG fingerprinting](https://github.com/brave/browser-laptop/issues/10288) (specifically, the `SVGTextContentElement.prototype.getComputedTextLength` and `SVGPathElement.prototype.getTotalLength` methods)
+* [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
 
 ## Privacy protection enabled regardless of whether Fingerprinting Protection Mode is on
 
@@ -51,7 +52,6 @@ Although useful for raising awareness of fingerprinting techniques, sites like P
 
 ## TODO
 
-* [Double-key HSTS/HPKP](https://trac.torproject.org/projects/tor/ticket/6458) (and cookies/localstorage)?
 * Decrease JS timer resolution
 
 ## Further reading
