@@ -22,33 +22,33 @@ Freeze time is defined to be a period of time where only bug fixes, Chromium min
 
 If a feature being worked on just misses the freeze time, then it will land on the next branch which is 1 release cycle higher.  This happens even if the feature was originally wanted for a certain version.
 
-Freezing is a concept that is per version branch and not per channel.  Every version has a 3-week freeze before the release date.
+Release, Beta, and Dev channels are considered to be Frozen.
 
 
 ---
 
 # Release channel dates:
 
-| Version | Chromium | Freeze Date        | Release Date        | Comments                       |
-| ------- | ---------|--------------------|---------------------|--------------------------------|
-| 0.56.x  |    70    | October 30, 2018   | November 6, 2018    |                                |
-| 0.57.x  |    71    | November 20, 2018  | December 4, 2018    |                                |
-| 0.58.x  |    71    | December 4, 2018   | December 20, 2018   | Early release due to holidays  |
-| 0.59.x  |    72    | December 20, 2018  | January 29, 2019    |                                |
-| 0.60.x  |    72    | January 29, 2019   | February 19, 2019   |                                |
-| 0.61.x  |    73    | February 19, 2019  | March 12, 2019      |                                |
-| 0.62.x  |    73    | March 12, 2019     | April 2, 2019       |                                |
-| 0.63.x  |    74    | April 2, 2019      | April 23, 2019      |                                |
-| 0.64.x  |    74    | April 23, 2019     | May 14, 2019        |                                |
-| 0.65.x  |    75    | May 14, 2019       | June 4, 2019        |                                |
-| 0.66.x  |    75    | June 4, 2019       | July 2, 2019        |                                |
-| 0.67.x  |    76    | July 2, 2019       | July 30, 2019       |                                |
-| 0.68.x  |    76    | July 30, 2019      | August 20, 2019     |                                |
-| 0.69.x  |    77    | August 20, 2019    | September 10, 2019  |                                |
-| 0.70.x  |    77    | September 10, 2019 | October 1, 2019     |                                |
-| 0.71.x  |    78    | October 1, 2019    | October 22, 2019    |                                |
-| 0.72.x  |    78    | October 22, 2019   | November 12, 2019   |                                |
-| 0.73.x  |    79    | November 12, 2019  | December 10, 2019   |                                |
+| Version | Chromium |  Release Date        | Comments                       |
+| ------- | ---------|----------------------|--------------------------------|
+| 0.56.x  |    70    |  November 6, 2018    |                                |
+| 0.57.x  |    71    |  December 4, 2018    |                                |
+| 0.58.x  |    71    |  December 20, 2018   | Early release due to holidays  |
+| 0.59.x  |    72    |  January 29, 2019    |                                |
+| 0.60.x  |    72    |  February 19, 2019   |                                |
+| 0.61.x  |    73    |  March 12, 2019      |                                |
+| 0.62.x  |    73    |  April 2, 2019       |                                |
+| 0.63.x  |    74    |  April 23, 2019      |                                |
+| 0.64.x  |    74    |  May 14, 2019        |                                |
+| 0.65.x  |    75    |  June 4, 2019        |                                |
+| 0.66.x  |    75    |  July 2, 2019        |                                |
+| 0.67.x  |    76    |  July 30, 2019       |                                |
+| 0.68.x  |    76    |  August 20, 2019     |                                |
+| 0.69.x  |    77    |  September 10, 2019  |                                |
+| 0.70.x  |    77    |  October 1, 2019     |                                |
+| 0.71.x  |    78    |  October 22, 2019    |                                |
+| 0.72.x  |    78    |  November 12, 2019   |                                |
+| 0.73.x  |    79    |  December 10, 2019   |                                |
 
 
 - CI does builds for release channel once a day if there are changes or as requested.
