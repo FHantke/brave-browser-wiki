@@ -54,6 +54,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Specific features are disabled on startup via the CLI](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc) (search for `disabled_features`)
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
+- [Limit cookie lifetime to 7 days](https://github.com/brave/brave-browser/issues/3443)
 
 ### Services We Proxy Through Brave Servers
 
