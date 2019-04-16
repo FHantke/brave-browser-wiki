@@ -32,7 +32,6 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Google accounts integration ("<abbr title="Google Accounts and ID Administration">GAIA</abbr>") is disabled](https://github.com/brave/brave-core/pull/512)
 - [All features that send data to Google are removed from settings](https://github.com/brave/brave-core/pull/244)
 - [DNS prefetching is disabled](https://github.com/brave/brave-core/pull/340)
-- [Page translation is disabled](https://github.com/brave/brave-core/pull/562)
 - [Chrome Google URL Tracker is disabled](https://github.com/brave/brave-core/pull/248)
 - [Domain service reliability is disabled](https://github.com/brave/brave-core/pull/246)
 - [Inline extensions are disabled](https://github.com/brave/brave-browser/issues/614)
@@ -63,6 +62,7 @@ _Google does not receive any information about which client is performing these 
 - [Geolocation requests are proxied](https://github.com/brave/brave-core/pull/19)
 - [Plugin updates are proxied](https://github.com/brave/brave-core/pull/680)
 - [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
+- [Page translation requests are proxied and replaced with Microsoft cognitive services](https://github.com/brave/brave-core/pull/2006)
 
 ### Comments
 
