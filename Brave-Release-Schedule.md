@@ -29,21 +29,21 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 # Release channel dates:
 
-| Version | Chromium |  Migration Date      | Release Date        | Comments                       |
-| ------- | ---------|----------------------|---------------------|--------------------------------|
-| 0.61.x  |    73    |  March 5, 2019       | March 12, 2019      |                                |
-| 0.62.x  |    73    |  March 26, 2019      | April 2, 2019       |                                |
-| 0.63.x  |    74    |  April 16, 2019      | April 23, 2019      |                                |
-| 0.64.x  |    74    |  May 7, 2019         | May 14, 2019        |                                |
-| 0.65.x  |    75    |  May 28, 2019        | June 4, 2019        |                                |
-| 0.66.x  |    75    |  June 25, 2019       | July 2, 2019        |                                |
-| 0.67.x  |    76    |  July 23, 2019       | July 30, 2019       |                                |
-| 0.68.x  |    76    |  August 13, 2019     | August 20, 2019     |                                |
-| 0.69.x  |    77    |  September 3, 2019   | September 10, 2019  |                                |
-| 0.70.x  |    77    |  September 24, 2019  | October 1, 2019     |                                |
-| 0.71.x  |    78    |  October 15, 2019    | October 22, 2019    |                                |
-| 0.72.x  |    78    |  November 5, 2019    | November 12, 2019   |                                |
-| 0.73.x  |    79    |  December 3, 2019    | December 10, 2019   |                                |
+| Version | Chromium | Migration Date      | Release Date        | Comments                       |
+| ------- | ---------|---------------------|---------------------|--------------------------------|
+| 0.61.x  |    73    | March 5, 2019       | March 12, 2019      |                                |
+| 0.62.x  |    73    | March 26, 2019      | April 2, 2019       |                                |
+| 0.63.x  |    74    | April 16, 2019      | April 23, 2019      |                                |
+| 0.64.x  |    74    | May 7, 2019         | May 14, 2019        |                                |
+| 0.65.x  |    75    | May 28, 2019        | June 4, 2019        |                                |
+| 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                |
+| 0.67.x  |    76    | July 23, 2019       | July 30, 2019       |                                |
+| 0.68.x  |    76    | August 13, 2019     | August 20, 2019     |                                |
+| 0.69.x  |    77    | September 3, 2019   | September 10, 2019  |                                |
+| 0.70.x  |    77    | September 24, 2019  | October 1, 2019     |                                |
+| 0.71.x  |    78    | October 15, 2019    | October 22, 2019    |                                |
+| 0.72.x  |    78    | November 5, 2019    | November 12, 2019   |                                |
+| 0.73.x  |    79    | December 3, 2019    | December 10, 2019   |                                |
 
 
 - CI does builds for release channel once a day if there are changes or as requested.
