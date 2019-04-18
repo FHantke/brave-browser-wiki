@@ -53,6 +53,9 @@ Although useful for raising awareness of fingerprinting techniques, sites like P
 ## TODO
 
 * Decrease JS timer resolution
+* Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
+* Limit fingerprinting via viewport/screen size: https://github.com/brave/brave-browser/issues/720
+* Lots more at https://github.com/brave/brave-browser/labels/feature%2Fshields%2Ffingerprint and https://github.com/brave/brave-browser/labels/privacy%2Ftracking
 
 ## Further reading
 * [W3C note in progress on browser fingerprinting](https://w3c.github.io/fingerprinting-guidance/)
