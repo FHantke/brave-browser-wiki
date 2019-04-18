@@ -33,7 +33,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 ### Milestone 0.65.x
 - [x] In page translations (Jocelyn, in progress)
 - [ ] Add support for more locales
-- [ ] Smart Tracking Protection (Pranjal, in progress)
+- [x] Smart Tracking Protection (off by default) (Pranjal, in progress)
 
 ### Milestone 0.66.x
 - [ ] Ad-block tokenization performance improvements (bbondy)
