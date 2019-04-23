@@ -1,3 +1,15 @@
+## Table of Contents
+<!-- TOC -->
+
+- [Table of Contents](#table-of-contents)
+- [Jenkins overview](#jenkins-overview)
+- [GitHub overview](#github-overview)
+- [brave-browser checks](#brave-browser-checks)
+- [brave-core checks](#brave-core-checks)
+- [Questions?](#questions)
+
+<!-- /TOC -->
+
 When a pull request is issued for [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
 
 ## Jenkins overview
@@ -56,4 +68,5 @@ _**Note to reviewers**_: All checks should be passing before you merge a pull re
 
 ## Questions?
 - For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions.
+    - Additional non-public information is available in the [devops wiki](https://github.com/brave/devops/wiki/PR-Builder-Non-public-information)
 - Non-employees (community!), we would like to have the content of these checks be publicly viewable, but there aren't any plans to address that at the moment.
