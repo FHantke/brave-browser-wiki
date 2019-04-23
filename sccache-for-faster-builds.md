@@ -66,6 +66,12 @@ Test it's working by running `which sccache` and observing that your shell has f
 - If you are doing this on a new Mac, make sure you have XCode installed and that you've installed the command-line tools via `xcode-select --install`
 - Clifton was getting an error `error: failed to run custom build command for 'rust-crypto v0.2.36'`, followed by errors about nested includes going too deep. The solution was to delete/move `/usr/local/include/stdint.h` (which must have been left over from an old install) which was referenced in the error
 - When installing sccache v0.2.7 on Windows, you are likely to get an error `failed to compile`. This is a known error (https://github.com/mozilla/sccache/issues/292) and is due to a compilation warning issued during the build of ring-0.12.1 and the setting to treat warnings as errors. To get around this, in your cmd shell, `set _CL_=/wd5045` and `set _LINK_=/WX:NO` (this one may not be necessary), then rerun the cargo install command.
+- Using sccache v0.2.8, you may notice that nothing is cacheable anymore when looking at `sccache --show-stats`:
+
+      Non-cacheable reasons:
+      Can't handle UnknownFlag arguments with -Xclang
+To fix this, reinstall v0.2.7: `cargo install -f --git https://github.com/petemill/sccache.git --rev 5ce26c30c16ecd14ff16ec53bb242340ca402423`
+
 
 ## Configuring sccache
 
