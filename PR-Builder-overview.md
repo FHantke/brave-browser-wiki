@@ -11,9 +11,11 @@
 
 [brave-core checks](#brave-core-checks)
 
-[Advanced](#advanced)
+[Advanced steps](#advanced-steps)
 
 [Debugging](#debugging)
+
+[Upcoming features](#upcoming-features)
 
 [Resources](#resources)
 
@@ -42,7 +44,7 @@ Using the UI, you can go into either one of these and then view `Branches` and `
 ![Brave Core PR builder jobs in Jenkins](jenkins-jobs.png)
 
 ## brave-browser checks
-The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/brave-browser/blob/master/Jenkinsfile
+The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/brave-browser/blob/master/Jenkinsfile.
 
 This `Jenkinsfile` defines the pipeline that builds in parallel for Linux, macOS and Windowx x64 with the steps below:
 - initialize the repository (`npm install --no-optional`, then `npm run init` if needed and finally `npm run sync -- --all`)
@@ -56,7 +58,9 @@ This `Jenkinsfile` defines the pipeline that builds in parallel for Linux, macOS
 We use ephemeral nodes in AWS for building Linux and Windows x64 (which get shutdown if idle for 30m - if no other builds start on them). For macOS we use physical machines (which means higher chance to re-use workspaces).
 
 ## brave-core checks
-The checks here are executed by calling the `brave-browser` pipeline as defined in https://github.com/brave/brave-core/blob/master/Jenkinsfile
+The checks here are executed by calling the `brave-browser` pipeline as defined in https://github.com/brave/brave-core/blob/master/Jenkinsfile.
+
+To navigate from the `brave-core` build to the `brave-browser` one please go to `Console Ouput` and press the link to it.
 
 This `Jenkinsfile` defines the pipeline that does:
 - create a new branch in `brave-browser` if it doesn't exist
@@ -82,6 +86,7 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - BUILD_MAC - `true` by default
 - BUILD_WINDOWS_X64 - `true` by default
 - BUILD_WINDOWS_IA32 - `false` by default
+- SKIP_SIGNING - coming soon
 - DEBUG - `false` by default
 
 When on a specific build from the build history there are some helpful links:
@@ -93,6 +98,13 @@ When on a specific build from the build history there are some helpful links:
 - `Workspaces` - view files in the build workspaces
 
 ## Debugging
+
+## Upcoming features
+- parameterize build verbosity
+- add signing for macOS and Windows
+- setup sccache for Windows
+- re-enable browser tests on Windows
+- add notifications (Slack or e-mail)
 
 ## Resources
 - for employees, join the `#brave-core-ci` Slack channel
