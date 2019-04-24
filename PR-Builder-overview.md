@@ -72,7 +72,7 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 
 ## Advanced steps
 
-To start a build manually press on the `Build with Parameters` link from the Jenkins job view. The following options are available:
+To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view. The following parameters are available:
 - BRANCH - `master` by default (ignored if you're building a PR)
 - CHANNEL - `dev` by default but can be `nightly`, `beta` or `release` as well
 - WIPE_WORKSPACE - `false` by default
@@ -83,6 +83,14 @@ To start a build manually press on the `Build with Parameters` link from the Jen
 - BUILD_WINDOWS_X64 - `true` by default
 - BUILD_WINDOWS_IA32 - `false` by default
 - DEBUG - `false` by default
+
+When on a specific build from the build history there are some helpful links:
+- `Console Output` - view full build output
+- `Parameters` - view parameter values that have been passed to the build (as defined above)
+- `Test Result` - view test results (unit and browser tests together)
+- `Replay` - replay build (with option to alter pipeline)
+- `Pipeline Steps` - best view for seeing the full list of steps and debugging (can view status and output of individual steps)
+- `Workspaces` - view files in the build workspaces
 
 ## Debugging
 
