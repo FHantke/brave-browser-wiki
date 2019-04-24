@@ -1,23 +1,18 @@
 ## Table of Contents
 <!-- TOC -->
 
-[Table of Contents](#table-of-contents)
-
-[GitHub overview](#github-overview)
-
-[Jenkins overview](#jenkins-overview)
-
-[brave-browser checks](#brave-browser-checks)
-
-[brave-core checks](#brave-core-checks)
-
-[Advanced steps](#advanced-steps)
-
-[Debugging](#debugging)
-
-[Upcoming features](#upcoming-features)
-
-[Resources](#resources)
+- [Table of Contents](#table-of-contents)
+- [GitHub overview](#github-overview)
+- [Jenkins overview](#jenkins-overview)
+  - [Helpful Jenkins links](#helpful-jenkins-links)
+- [brave-browser checks](#brave-browser-checks)
+- [brave-core checks](#brave-core-checks)
+- [Advanced steps](#advanced-steps)
+  - [Restart PR builder Jenkins job](#restart-pr-builder-jenkins-job)
+  - [Rebase a PR when failures occur](#rebase-a-pr-when-failures-occur)
+- [Debugging](#debugging)
+- [Upcoming features](#upcoming-features)
+- [Resources](#resources)
 
 <!-- /TOC -->
 
@@ -42,6 +37,16 @@ Each of these is setup in Jenkins as a multibranch pipeline. A scan is done ever
 Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. You can see the history of checks by going into the specific PR or associated branch in Jenkins.
 
 ![Brave Core PR builder jobs in Jenkins](jenkins-jobs.png)
+
+### Helpful Jenkins links
+
+When on a specific build from the build history there are some helpful links:
+- `Console Output` - view full build output
+- `Parameters` - view parameter values that have been passed to the build (as defined above)
+- `Test Result` - view test results (unit and browser tests together)
+- `Replay` - replay build (with option to alter pipeline)
+- `Pipeline Steps` - best view for seeing the full list of steps and debugging (can view status and output of individual steps)
+- `Workspaces` - view files in the build workspaces
 
 ## brave-browser checks
 The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/brave-browser/blob/master/Jenkinsfile.
@@ -76,6 +81,8 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 
 ## Advanced steps
 
+### Restart PR builder Jenkins job
+
 To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view. The following parameters are available:
 - BRANCH - `master` by default (ignored if you're building a PR)
 - CHANNEL - `dev` by default but can be `nightly`, `beta` or `release` as well
@@ -89,13 +96,18 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - SKIP_SIGNING - coming soon
 - DEBUG - `false` by default
 
-When on a specific build from the build history there are some helpful links:
-- `Console Output` - view full build output
-- `Parameters` - view parameter values that have been passed to the build (as defined above)
-- `Test Result` - view test results (unit and browser tests together)
-- `Replay` - replay build (with option to alter pipeline)
-- `Pipeline Steps` - best view for seeing the full list of steps and debugging (can view status and output of individual steps)
-- `Workspaces` - view files in the build workspaces
+### Rebase a PR when failures occur
+
+This can happen when the upstream master branch is updated but your PR branch gets behind. A common occurrence is that the nightly build job will bump the version and you will see a version mismatch between the brave-core and brave-browser, the error will look something like:
+
+`Version mismatch between brave-browser and brave-core in package.json! Please try rebasing this branch in brave-core as well.`
+
+To fix this rebase your branch:
+
+    git fetch origin
+    git checkout BRANCH
+    git rebase origin/master
+    git push origin BRANCH --force
 
 ## Debugging
 
