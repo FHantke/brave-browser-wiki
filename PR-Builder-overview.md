@@ -10,7 +10,6 @@
 - [Advanced steps](#advanced-steps)
   - [Restart PR builder Jenkins job](#restart-pr-builder-jenkins-job)
   - [Rebase a PR when failures occur](#rebase-a-pr-when-failures-occur)
-- [Debugging](#debugging)
 - [Upcoming features](#upcoming-features)
 - [Resources](#resources)
 
@@ -60,7 +59,7 @@ This `Jenkinsfile` defines the pipeline that builds in parallel for Linux, macOS
 - unit tests and browser tests (`npm run test -- brave_unit_tests` and `npm run test -- brave_browser_tests`)
 - upload build artifacts to S3 (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
 
-We use ephemeral nodes in AWS for building Linux and Windows x64 (which get shutdown if idle for 30m - if no other builds start on them). For macOS we use physical machines (which means higher chance to re-use workspaces).
+We use ephemeral nodes in AWS for building Linux and Windows x64 (which get shutdown if idle for 30m (if no other builds start on them). For macOS we use physical machines (which means higher chance to re-use workspaces).
 
 ## brave-core checks
 The checks here are executed by calling the `brave-browser` pipeline as defined in https://github.com/brave/brave-core/blob/master/Jenkinsfile.
@@ -108,8 +107,6 @@ To fix this rebase your branch:
     git checkout BRANCH
     git rebase origin/master
     git push origin BRANCH --force
-
-## Debugging
 
 ## Upcoming features
 - parameterize build verbosity
