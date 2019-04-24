@@ -13,7 +13,8 @@
 When a pull request is created in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
 
 ## GitHub overview
-On each pull request, you should see the checks section (unless it'a draft PR or has the `CI/Skip` label applied)
+On each pull request, you should see the checks section as below (unless it's a draft PR or has the `CI/Skip` label applied).
+
 ![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
 
 You can click the `Details` link for the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use https://travis-ci.org which should be publicly accessible.
