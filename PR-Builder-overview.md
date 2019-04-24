@@ -39,29 +39,29 @@ Using the UI, you can go into either one of these and then view `Branches` and `
 
 ## brave-browser checks
 
-The checks that are done are defined in the `Jenkinsfile` at the root of the project:
-https://github.com/brave/brave-browser/blob/master/Jenkinsfile
+The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/brave-browser/blob/master/Jenkinsfile
 
-This logic currently only runs on Linux and macOS (Windows is WIP) and runs the following:
-- initialize the repository (`npm install`, then `npm run init` if needed and finally `npm run sync --all`)
-- run lint
-- run an official build
+This `Jenkinsfile` defines the pipeline that does:
+- initialize the repository (`npm install --no-optional`, then `npm run init` if needed and finally `npm run sync -- --all`)
+- run lint (`npm run lint`)
+- build as an official build
+- create distributables
 - security checks (`npm run test-security`)
-- unit tests and browser tests
-- keeps build artifacts (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
+- unit tests and browser tests (`npm run test -- brave_unit_tests` and `npm run test -- brave_browser_tests`)
+- upload build artifacts to S3 (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
 
 _**Note to reviewers**_: All checks should be passing before you merge a PR.
 
 ## brave-core checks
-- Original work done with https://github.com/brave/brave-core/pull/1172
 
-The checks that are done are the same as done with `brave-browser`. There is a `Jenkinsfile` at the root of the project:
-https://github.com/brave/brave-core/blob/master/Jenkinsfile
+The checks here are executed by calling the `brave-browser` pipeline as defined in https://github.com/brave/brave-core/blob/master/Jenkinsfile
 
-This `Jenkinsfile` does the following:
-- Creates a new branch in `brave-browser`
-- Updates the `brave-browser` package.json to have the commit hash from the `brave-core` branch
-- Creates an instance of the `brave-browser` check
+This `Jenkinsfile` defines the pipeline that does:
+- create a new branch in `brave-browser` if it doesn't exist
+- pin the `brave-core` branch in package.json from `brave-browser`
+- if versions from `package.json` are different between the 2 repos then do a rebase on `brave-browser` against PR target branch
+- waits for 6m for the new branch to be discovered by the `brave-browser` pipeline
+- calls the `brave-browser` pipeline
 
 Besides the checks done by our Jenkins job, there are some additional checks done via Travis:
 - JavaScript lint and unit tests
