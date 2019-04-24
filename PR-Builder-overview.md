@@ -35,7 +35,7 @@ Each of these is setup in Jenkins as a multibranch pipeline. A scan is done ever
 
 Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. You can see the history of checks by going into the specific PR or associated branch in Jenkins.
 
-![Brave Core PR builder jobs in Jenkins](https://media.clifton.io/brave/wiki/jenkins-jobs.png)
+![Brave Core PR builder jobs in Jenkins](jenkins-jobs.png)
 
 ## brave-browser checks
 
@@ -64,7 +64,7 @@ This `Jenkinsfile` does the following:
 - Creates an instance of the `brave-browser` check
 
 Besides the checks done by our Jenkins job, there are some additional checks done via Travis:
-- JavaScript lint / unit tests
+- JavaScript lint and unit tests
 - security checks
 - Python lint (pep8)
 
