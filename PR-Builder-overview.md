@@ -2,10 +2,15 @@
 <!-- TOC -->
 
 [Table of Contents](#table-of-contents)
+
 [GitHub overview](#github-overview)
+
 [Jenkins overview](#jenkins-overview)
+
 [brave-browser checks](#brave-browser-checks)
+
 [brave-core checks](#brave-core-checks)
+
 [Questions?](#questions)
 
 <!-- /TOC -->
