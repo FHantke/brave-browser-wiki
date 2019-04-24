@@ -4,13 +4,13 @@
 - [Table of Contents](#table-of-contents)
 - [GitHub overview](#github-overview)
 - [Jenkins overview](#jenkins-overview)
-    - [PR Builder process lifecycle](#pr-builder-process-lifecycle)
-    - [Helpful Jenkins links](#helpful-jenkins-links)
+  - [PR Builder process lifecycle](#pr-builder-process-lifecycle)
+  - [Helpful Jenkins links](#helpful-jenkins-links)
 - [brave-browser checks](#brave-browser-checks)
 - [brave-core checks](#brave-core-checks)
 - [Advanced steps](#advanced-steps)
-    - [Restart PR builder Jenkins job](#restart-pr-builder-jenkins-job)
-    - [Rebase a PR when failures occur](#rebase-a-pr-when-failures-occur)
+  - [Restart PR builder Jenkins job](#restart-pr-builder-jenkins-job)
+  - [Rebase a PR when failures occur](#rebase-a-pr-when-failures-occur)
 - [Upcoming features](#upcoming-features)
 - [Resources](#resources)
 
@@ -21,7 +21,7 @@ Every PR in [brave-browser](https://github.com/brave/brave-browser) or [brave-co
 ## GitHub overview
 On each PR, you should see the checks section as below (unless it's a draft PR or has the `CI/Skip` label applied).
 
-![GitHub checks section](github-checks.png)
+![GitHub checks section](images/github-checks.png)
 
 `Details` link will take you to the actual check results (Jenkins private, Travis publicly accessible).
 
@@ -36,7 +36,7 @@ Each of these is setup in Jenkins as a multibranch pipeline. A scan is done ever
 
 Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. You can see the history of checks by going into the specific PR or associated branch in Jenkins.
 
-![Brave Core PR builder jobs in Jenkins](jenkins-jobs.png)
+![Brave Core PR builder jobs in Jenkins](images/jenkins-jobs.png)
 
 ### PR Builder process lifecycle
 
