@@ -147,3 +147,10 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Upgrade to Chromium 73
 - [x] Rewards stability fixes
 - [x] Webcompat fixes including third-party detection and ad-block rule parsing fixes
+
+### Milestone 0.62.x (~April 2, 2019) - Completed & Released
+
+- [x] Widevine support for Linux
+- [x] More ads work
+- [x] Add options for allowing FB login / embeds and Twitter embeds
+- [x] MacOS OS theme controls theme
