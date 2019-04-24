@@ -5,14 +5,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.62.x (~April 2, 2019) - Completed & Released
-
-- [x] Widevine support for Linux
-- [x] More ads work
-- [x] Add options for allowing FB login / embeds and Twitter embeds
-- [x] MacOS OS theme controls theme
-
-### Milestone 0.63.x (~April 23, 2019)
+### Milestone 0.63.x (~April 23, 2019) - Completed & Released
 
 - [x] Unify exception handling 
 - [x] Fix Brave shields localization
