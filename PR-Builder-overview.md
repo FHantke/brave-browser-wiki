@@ -17,7 +17,7 @@ On each pull request, you should see the checks section as below (unless it's a 
 
 ![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
 
-You can click the `Details` link for the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use https://travis-ci.org which should be publicly accessible.
+`Details` link will take you to the actual check results (Jenkins private, Travis publicly accessible).
 
 ## Jenkins overview
 We have a private Jenkins server available at https://staging.ci.brave.com (behind VPN).
