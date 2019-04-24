@@ -16,7 +16,7 @@ Once you've installed the [pre-requisites](https://github.com/brave/brave-browse
 
     npm run create_dist Release -- --debug_build=true
 
-In particular, make sure you don't specify `--official_build=false` or your [build might fail](https://github.com/brave/brave-core/pull/1078#issuecomment-454969015).
+In particular, make sure you don't specify `--official_build=false` or your [build might fail](https://github.com/brave/brave-core/pull/1078#issuecomment-454969015) (see [#305](https://github.com/brave/brave-browser/issues/305)).
 
 The `--debug_build=true` argument is optional but should speed up the build.
 
