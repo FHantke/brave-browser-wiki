@@ -12,6 +12,12 @@
 
 When a pull request is created in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
 
+## GitHub overview
+On each pull request, you should see the checks section
+![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
+
+You can click the `Details` link for the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use https://travis-ci.org which should be publicly accessible.
+
 ## Jenkins overview
 We have a private Jenkins server available at https://staging.ci.brave.com (behind VPN).
 
@@ -25,15 +31,7 @@ Using the UI, you can go into either one of these and then view `Branches` and `
 
 ![Brave Core PR builder jobs in Jenkins](https://media.clifton.io/brave/wiki/jenkins-jobs.png)
 
-## GitHub overview
-On each pull request, you should see the checks section
-![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
-
-You can click the `Details` link for the individual check and (for Jenkins checks) it'll launch into the Jenkins interface so you can see the console output.  There are also checks which use https://travis-ci.org which should be publicly accessible.
-
 ## brave-browser checks
-- Original work done with https://github.com/brave/brave-browser/pull/2226
-- Windows is in progress with https://github.com/brave/brave-browser/pull/2985
 
 The checks that are done are defined in the `Jenkinsfile` at the root of the project:
 https://github.com/brave/brave-browser/blob/master/Jenkinsfile
