@@ -42,7 +42,7 @@ Using the UI, you can go into either one of these and then view `Branches` and `
 
 The PR builder lifecycle has multiple steps that are described in this image:
 
-[![PR builder process lifecycle](images/pr-builder-process.png)](images/pr-builder-process.png)
+![PR builder process lifecycle](images/pr-builder-process.png)
 
 ### Helpful Jenkins links
 
