@@ -1,14 +1,5 @@
 ## Table of Contents
-<!-- TOC -->
-
-- [Table of Contents](#table-of-contents)
-- [Jenkins overview](#jenkins-overview)
-- [GitHub overview](#github-overview)
-- [brave-browser checks](#brave-browser-checks)
-- [brave-core checks](#brave-core-checks)
-- [Questions?](#questions)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Table of Contents](#table-of-contents)auto- [GitHub overview](#github-overview)auto- [Jenkins overview](#jenkins-overview)auto- [brave-browser checks](#brave-browser-checks)auto- [brave-core checks](#brave-core-checks)auto- [Questions?](#questions)autoauto<!-- /TOC -->
 
 When a pull request is created in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
 
