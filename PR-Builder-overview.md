@@ -97,7 +97,7 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 
 ### Rebase a PR when failures occur
 
-This can happen when the upstream master branch is updated but your PR branch gets behind. A common occurrence is that the nightly build job will bump the version and you will see a version mismatch between the brave-core and brave-browser, the error will look something like:
+This can happen when the upstream master branch is updated but your PR branch gets behind. A common occurrence is that the nightly build job will bump the version and you will see a version mismatch between the `brave-core` and `brave-browser`, the error will look something like:
 
 `Version mismatch between brave-browser and brave-core in package.json! Please try rebasing this branch in brave-core as well.`
 
