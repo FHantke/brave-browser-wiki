@@ -15,12 +15,12 @@
 
 <!-- /TOC -->
 
-When a pull request is created in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core), a series of checks are done. The intention of this page is to describe those checks.
+Every PR in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core) needs to pass a series of automated checks before merging. The intention of this page is to describe those checks.
 
 ## GitHub overview
-On each pull request, you should see the checks section as below (unless it's a draft PR or has the `CI/Skip` label applied).
+On each PR, you should see the checks section as below (unless it's a draft PR or has the `CI/Skip` label applied).
 
-![GitHub checks section](http://media.clifton.io/brave/wiki/github-checks.png)
+![GitHub checks section](github-checks.png)
 
 `Details` link will take you to the actual check results (Jenkins private, Travis publicly accessible).
 
@@ -33,7 +33,7 @@ There are two jobs setup under the `ci` tab:
 
 Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up.
 
-Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. You can see the history of checks by going into the specific pull request or associated branch in Jenkins.
+Using the UI, you can go into either one of these and then view `Branches` and `Pull Requests`. You can see the history of checks by going into the specific PR or associated branch in Jenkins.
 
 ![Brave Core PR builder jobs in Jenkins](https://media.clifton.io/brave/wiki/jenkins-jobs.png)
 
@@ -50,7 +50,7 @@ This logic currently only runs on Linux and macOS (Windows is WIP) and runs the 
 - unit tests and browser tests
 - keeps build artifacts (`.dmg` file, `.deb` file, `.rpm` file, `.exe` files)
 
-_**Note to reviewers**_: All checks should be passing before you merge a pull request.
+_**Note to reviewers**_: All checks should be passing before you merge a PR.
 
 ## brave-core checks
 - Original work done with https://github.com/brave/brave-core/pull/1172
@@ -68,7 +68,7 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 - security checks
 - Python lint (pep8)
 
-_**Note to reviewers**_: All checks should be passing before you merge a pull request.
+_**Note to reviewers**_: All checks should be passing before you merge a PR.
 
 ## Questions?
 - For employees, join the `#brave-core-ci` Slack channel and we'll be happy to answer questions.
