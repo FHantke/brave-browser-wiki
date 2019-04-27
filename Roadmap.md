@@ -13,8 +13,8 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] eTLD+1 matching for about:adblock
 - [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
 - [x] Settings/Bookmarks/History/Downloads facelift
+- [x] Clear private data on exit
 - [x] Upgrade to Chromium 74
-
 
 ### Milestone 0.64.x (~May 14, 2019)
 
@@ -33,6 +33,8 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [ ] Ethereum HD wallet support (Will possibly move to 0.67.x, but tracking here for now!)
 - [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
 - [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
+- [ ] Social tipping
+- [ ] P3A
 
 ### Milestone 0.67.x
 
@@ -40,13 +42,17 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Beyond
 
+- [ ] Sync v2
+- [ ] Speedreader
+- [ ] Dark mode for content
+- [ ] Playlist
+- [ ] BYOW Rewards
 - [ ] Make extensions.brave.com store
 - [ ] Private tabs instead of just private windows
 - [ ] More UI customizations to differentiate from Chrome look
 - [ ] Tab pages?
 - [ ] Tab previews
 - [ ] Pinned tab differences
-- [ ] Clear private data on shutdown
 - [ ] Session windows
 - [ ] Restyling bookmarks, history, preferences
 - [ ] IPFS integration
