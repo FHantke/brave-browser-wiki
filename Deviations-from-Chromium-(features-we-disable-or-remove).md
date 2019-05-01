@@ -67,6 +67,7 @@ _Google does not receive any information about which client is performing these 
 - [Page translation requests are proxied and replaced with Microsoft cognitive services](https://github.com/brave/brave-core/pull/2006)
 - [Requests for CRLSets are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
+- [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
 
 ### Comments
 
