@@ -90,6 +90,14 @@ Do a build like normal, fix errors as they come up.
 Eventually you’ll start getting some string errors when you build.
 Commit what you have in a updates to brave-core commit.
 
+Reset Chromium strings to the original state:
+```
+cd src
+git checkout -- *.xtb
+git checkout -- *.grd
+git checkout -- *.grdp
+```
+
 Update `grd` and `grdp` files from the Chromium ones:
 
 ```
