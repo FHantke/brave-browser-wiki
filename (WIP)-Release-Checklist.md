@@ -51,12 +51,13 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] download binary to test promos https://brave.com/red194 - Twitch (redPwnie) [Production]
 - [ ] download binary to test promos https://brave.com/kam253 - YT (kamiljoz) [Production]
 - [ ] download binary to test promos https://brave.com/bra941 - YT (braveqa1) [Production]
+- [ ] download binary to test promos https://brave.com/reb402 - YT (reb402) [Production]
 
 ### Announcements
 - [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
 - [ ] Announce release on https://community.brave.com/ (@brave-matt)
 - [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
-- [ ] Notify #general, #community, #testers of the latest release with a link to the release notes
+- [ ] Notify #announcements, #community of the latest release with a link to the release notes
 
 ### Update Release channel wiki
 - [ ] Update entries here as needed: https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule
