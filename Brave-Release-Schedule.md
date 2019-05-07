@@ -9,8 +9,8 @@
 
 | **Channel**     | Release |  Beta  | Dev       | Nightly|
 | ----------------| ------- | ------ | --------- | ------ |
-| **Milestone**   | 0.63.x  | 0.64.x | 0.65.x    | 0.66.x |
-| **Branch name** | 0.63.x  | 0.64.x | 0.65.x    | master |
+| **Milestone**   | 0.64.x  | 0.65.x | 0.66.x    | 0.67.x |
+| **Branch name** | 0.64.x  | 0.65.x | 0.66.x    | master |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
