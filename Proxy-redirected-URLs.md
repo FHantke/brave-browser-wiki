@@ -11,6 +11,7 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 * `https://*.gvt1.com/edgedl/chrome/dict/*.bdic`: `https://crlsets.brave.com/<same>`
 * `https://storage.googleapis.com/update-delta/hfnkpimlhhgieaddgfemjhofmfblmnib/.+crxd`: `https://crlsets.brave.com/<same>`
 * `https://safebrowsing.googleapis.com/`: `https://safebrowsing.brave.com`
+* `https://sb-ssl.google.com/`: `https://sb-ssl.brave.com`
 * `https://ssl.gstatic.com`: `https://static.brave.com`
 * `https://gstatic.com`: `https://static1.brave.com`
 * `https://update.googleapis.com`: `https://componentupdater.brave.com`
