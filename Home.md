@@ -11,7 +11,7 @@ Follow the instructions for your platform:
 
 - [[macOS|macOS Development Environment]]
 - [[Windows|Windows Development Environment]]
-- [[Linux|Linux Development Environment]]
+- [[Linux/Android|Linux Development Environment]]
 
 ## Clone and initialize the repo
 
