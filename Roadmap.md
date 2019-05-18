@@ -25,23 +25,31 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Milestone 0.65.x
 - [x] In page translations (Jocelyn, in progress)
-- [ ] Add support for more locales
 - [x] Smart Tracking Protection (off by default) (Pranjal, in progress)
 
 ### Milestone 0.66.x
 - [ ] Ad-block tokenization performance improvements (bbondy)
-- [ ] Ethereum HD wallet support (Will possibly move to 0.67.x, but tracking here for now!)
 - [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
-- [ ] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 - [ ] Social tipping
 - [ ] P3A
 
 ### Milestone 0.67.x
 
+- [x] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
+- [x] Tie Brave Core Android builds to CI
 - [ ] Add the ability to have social media login options into the Brave shields panel
+
+### Milestone 0.68.x
+
+- [ ] Ongoing work for Brave Core Android builds
+
+### Milestone 0.69.x
+
+- [ ] [Ethereum HD wallet support](https://github.com/brave/brave-browser/issues/4494)
 
 ### Beyond
 
+- [ ] Add support for more locales
 - [ ] Sync v2
 - [ ] Speedreader
 - [ ] Dark mode for content
