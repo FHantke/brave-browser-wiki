@@ -19,7 +19,7 @@ Unsupported compiler calls       0
 Average cache write          0.009 s
 Average cache read miss      8.833 s
 Average cache read hit       0.025 s
-Cache location             Local disk: "/Users/clifton/sccache"
+Cache location             Local disk: "/Users/bsclifton/sccache"
 Cache size                      19 GiB
 Max cache size                 100 GiB
 ```
@@ -104,7 +104,7 @@ This will make sure when running any npm script in brave-browser that the `sccac
 ## (macOS) configuring sccache to restart
 If you're running macOS and sick of sccache dying and then failing to start automatically with the build, you can do the following:
 
-1. Create a file `com.sccache.agent.plist` (be sure to edit `SCCACHE_DIR` and the executable path)
+1. Create a file `com.sccache.agent.plist`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -122,7 +122,7 @@ If you're running macOS and sick of sccache dying and then failing to start auto
         <key>ProgramArguments</key>
         <array>
           <string>/usr/local/bin/sccache</string>
-                <string>-s</string>
+          <string>-s</string>
         </array>
         <key>StandardErrorPath</key>
         <string>/dev/null</string>
@@ -134,10 +134,12 @@ If you're running macOS and sick of sccache dying and then failing to start auto
 </plist>
 ```
 
-2. Put this file into place at ~/Library/LaunchAgents/com.sccache.agent.plist
-3. `launchctl load ~/Library/LaunchAgents/com.sccache.agent.plist`
-4. `launchctl start ~/Library/LaunchAgents/com.sccache.agent.plist`
-5. `launchctl list` to check your service is launched or not
+2. Edit the VALUE for `SCCACHE_DIR` (ex: replace `/Users/bsclifton/sccache` with a folder you'd like to use for your cache storage.
+3. Edit the path (under `ProgramArguments`) for the `sccache` binary (if needed). For example, mine is shown in config as `/usr/local/bin/sccache` (which is a symlink I created using `ln -s /Users/bsclifton/.cargo/bin/sccache /usr/local/bin/sccache`)
+4. Put this file into place at ~/Library/LaunchAgents/com.sccache.agent.plist
+5. `launchctl load ~/Library/LaunchAgents/com.sccache.agent.plist`
+6. `launchctl start ~/Library/LaunchAgents/com.sccache.agent.plist`
+7. `launchctl list` to check your service is launched or not
 
 
 This will basically just ping sccache once a minute to keep it alive (or restart it it died). 
