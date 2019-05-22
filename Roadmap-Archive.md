@@ -154,3 +154,14 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] More ads work
 - [x] Add options for allowing FB login / embeds and Twitter embeds
 - [x] MacOS OS theme controls theme
+
+### Milestone 0.63.x (~April 23, 2019) - Completed & Released
+
+- [x] Unify exception handling 
+- [x] Fix Brave shields localization
+- [x] Make Widevine UI more noticeable
+- [x] eTLD+1 matching for about:adblock
+- [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
+- [x] Settings/Bookmarks/History/Downloads facelift
+- [x] Clear private data on exit
+- [x] Upgrade to Chromium 74
