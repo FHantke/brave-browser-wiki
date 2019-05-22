@@ -5,7 +5,7 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.64.x (~May 14, 2019)
+### Milestone 0.64.x (~May 14, 2019) - Completed & Released
 
 - [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
 - [x] UI improvements and support for theming in the Brave shields panel
