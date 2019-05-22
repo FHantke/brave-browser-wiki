@@ -5,17 +5,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.63.x (~April 23, 2019) - Completed & Released
-
-- [x] Unify exception handling 
-- [x] Fix Brave shields localization
-- [x] Make Widevine UI more noticeable
-- [x] eTLD+1 matching for about:adblock
-- [x] Working ads model, Rust-based blinded tokens for privacy-safe confirmation of ad views and interaction, and ability to give BAT monthly to users who see ads
-- [x] Settings/Bookmarks/History/Downloads facelift
-- [x] Clear private data on exit
-- [x] Upgrade to Chromium 74
-
 ### Milestone 0.64.x (~May 14, 2019)
 
 - [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
