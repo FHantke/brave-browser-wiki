@@ -62,10 +62,19 @@ Strings are matched using filename (not path). This is something we control in t
 - Login to Transifex and navigate to the Brave dashboard https://www.transifex.com/brave/brave/dashboard/
 - Click `Order`
 - You can pick from 3 providers gengo, TextMaster, and e2f
-- You will repeat this process 3 times, one for each provider. Start with gengo and translate the languages which are applicable in the below list of locales for the below list of resources.  Then select what's missing from TextMaster, then select what's missing from e2f. 
+- You will repeat this process 3 times, one for each provider. Start with gengo.
+- Some services have a "Tone" to translate in, usually I select something like Technical and Software.  This screen also allows you to write information to the localizer.  Simply put this in that box:
+```
+Please read this!
+
+https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information-for-localizers
+```
+- Press Next and it should take a minute or two to load, I think this happens because we have a lot of strings.
 - The following resources should be manually translated in Transifex:
-`brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`.
+`brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`.  Leave the rest unchecked.
 - The officially supported languages to order are: `am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW`
+- For the languages you haven't translated yet, repeat these steps for TextMaster.
+- For the languages you haven't translated yet, repeat these steps for e2f. 
 
 
 ## Information for localizers:
