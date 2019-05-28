@@ -4,7 +4,7 @@
 - Minor / Chemspill frequency: As needed 
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
 
-Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Roadmap).
+Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
 
 # Current channel information:
 
