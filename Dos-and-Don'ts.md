@@ -1,6 +1,6 @@
 ## Accessing value in `base::ListValue`
 
-:x: No
+:x:
 ```cpp
 void FooDOMHandler::Function(const base::ListValue* args) {
   std::string param1;
@@ -11,7 +11,7 @@ void FooDOMHandler::Function(const base::ListValue* args) {
 }
 ```
 
-:heavy_check_mark: Yes
+:heavy_check_mark:
 ```cpp
 void FooDOMHandler::Function(const base::ListValue* args) {
   CHECK_EQ(2U, args->GetSize());
