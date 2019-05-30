@@ -13,24 +13,26 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Override regional ad-block selection in about:adblock
 
 ### Milestone 0.65.x
-- [x] In page translations (Jocelyn, in progress)
 - [x] Smart Tracking Protection (off by default) (Pranjal, in progress)
 
 ### Milestone 0.66.x
-- [ ] Ad-block tokenization performance improvements (bbondy)
-- [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
-- [ ] Social tipping
+
 - [ ] P3A
+- [x] In page translations (Jocelyn, completed in 0.65.x but not enabled on Release channel for cost performance needs)
 
 ### Milestone 0.67.x
 
 - [x] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
 - [x] Tie Brave Core Android builds to CI
-- [ ] Add the ability to have social media login options into the Brave shields panel
+- [x] Twitter tipping
+- [x] Build a Rust based ad-block library with best of class performance.
+- [ ] Rust based ad-block integration (bbondy)
+
 
 ### Milestone 0.68.x
 
 - [ ] Ongoing work for Brave Core Android builds
+- [ ] New work in social tipping
 
 ### Milestone 0.69.x
 
@@ -38,6 +40,8 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Beyond
 
+- [ ] Ad-block exceptions to be disabled by default and have UI asking to turn on when it is first detected (todo design)
+- [ ] Add the ability to have social media login options into the Brave shields panel
 - [ ] Add support for more locales
 - [ ] Sync v2
 - [ ] Speedreader
