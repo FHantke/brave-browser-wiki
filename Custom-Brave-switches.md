@@ -12,3 +12,4 @@ In addition to supporting all Chromium command line switches, the following swit
 ## Useful Chromium switches which must be passed to the binary
 
 - `--show-component-extension-options`
+- `--simulate-outdated` simulate Brave being out of date (should show downloading in brave://settings/help)
