@@ -70,7 +70,9 @@
 - Cookie blocking is managed here: `brave/browser/brave_content_browser_client.cc`
 
 ## Referrer blocking:
-- Referrer blocking works by TLD+1 comparisons, and if they are different it will override a referring URL as its own origin.
+- Referrer blocking works by TLD+1 comparisons, and if they are different it will:
+  - override a referring URL as its own origin for sub-resources (e.g. images, iframes)
+  - strip the referrer out entirely for navigations
 
 ## Fingerprinting protection:
 - Talk to Jocelyn for more details
