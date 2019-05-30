@@ -17,7 +17,6 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 ### Milestone 0.66.x
 
-- [ ] P3A
 - [x] In page translations (Jocelyn, completed in 0.65.x but not enabled on Release channel for cost performance needs)
 
 ### Milestone 0.67.x
@@ -33,6 +32,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 
 - [ ] Ongoing work for Brave Core Android builds
 - [ ] New work in social tipping
+- [ ] P3A
 
 ### Milestone 0.69.x
 
