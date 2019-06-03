@@ -15,8 +15,6 @@ Older Brave Release Schedules are available in the [Brave Release Schedules Arch
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
-
-
 # Freeze
 
 Freeze time is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be [uplifted](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) in these periods of time.  Text changes are also not accepted unless it's a very bad typo that we missed.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
@@ -36,7 +34,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.62.x  |    73    | March 26, 2019      | April 2, 2019       |                                |
 | 0.63.x  |    74    | April 16, 2019      | April 23, 2019      |                                |
 | 0.64.x  |    74    | May 7, 2019         | May 14, 2019        |                                |
-| 0.65.x  |    75    | May 29, 2019        | June 4, 2019        |                                |
+| 0.65.x  |    75    | May 29, 2019        | June 5, 2019        |                                |
 | 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                |
 | 0.67.x  |    76    | July 23, 2019       | July 30, 2019       |                                |
 | 0.68.x  |    76    | August 13, 2019     | August 20, 2019     |                                |
