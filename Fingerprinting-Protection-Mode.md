@@ -32,7 +32,7 @@ This list is not complete. See https://github.com/brave/brave-browser/wiki/Devia
 * Connections to known tracking domains are blocked via the Tracking Protection library
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled because the battery level can be used as a tracking signal.
 * `navigator.credentials` is disabled on desktop prior to C73; we are re-enabling it to support [webauthn](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/).
-* Web USB and Web Bluetooth are disabled on desktop due to us not seeing much benefit to enabling it right now
+* Web Bluetooth is disabled on desktop due to us not seeing much benefit to enabling it right now
 * We are also planning on disabling client-hints, see https://github.com/brave/brave-browser/issues/3539#issuecomment-483826927 for rationale
 
 ## How to check that it's working
