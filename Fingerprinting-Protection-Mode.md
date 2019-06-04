@@ -28,6 +28,7 @@ Because most browser fingerprinting defense requires disabling web features that
 This list is not complete. See https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove) for other things which are disabled in Brave but not in Chrome.
 
 * 3rd party cookies and referers blocked by default due to the third party tracking risk
+* User-Agent is set to Chrome except on a few sites that need it for major functionality to work to prevent sites from using Brave's UA as a tracking mechanism.
 * `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash to trigger HTML5 fallback for Flash whenever possible.
 * Connections to known tracking domains are blocked via the Tracking Protection library
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled because the battery level can be used as a tracking signal.
