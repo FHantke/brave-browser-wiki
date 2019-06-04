@@ -38,7 +38,6 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Background sync is disabled](https://github.com/brave/brave-browser/issues/515)
 - [Hyperlink `ping` attribute is disabled](https://github.com/brave/brave-browser/issues/764)
 - [Battery API is disabled](https://github.com/brave/brave-core/pull/114)
-- [WebUSB API is disabled](https://github.com/brave/brave-core/pull/114)
 - [WebBluetooth API is disabled](https://github.com/brave/brave-core/pull/114)
 - [WebRTC debug log uploading is disabled](https://github.com/brave/brave-core/pull/809)
 - [Uploading settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/745)
