@@ -1,5 +1,3 @@
-***NOTE***: As of https://github.com/brave/brave-core/pull/2442, below custom header is not set anymore on desktop.
-
 Since Brave still has a relatively small user base, we avoid sharing extra information like a custom UA where possible.  We do have some exceptions though where we will share that a user is a Brave user through a custom header.
 
 
