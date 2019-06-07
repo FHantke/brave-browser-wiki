@@ -165,3 +165,10 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Settings/Bookmarks/History/Downloads facelift
 - [x] Clear private data on exit
 - [x] Upgrade to Chromium 74
+
+### Milestone 0.64.x (~May 14, 2019) - Completed & Released
+
+- [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
+- [x] UI improvements and support for theming in the Brave shields panel
+- [x] Support for Nightly builds
+- [x] Override regional ad-block selection in about:adblock
