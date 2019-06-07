@@ -5,15 +5,8 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.64.x (~May 14, 2019) - Completed & Released
-
-- [x] Custom ABP filter rules in about:adblock (Emerick, in progress)
-- [x] UI improvements and support for theming in the Brave shields panel
-- [x] Support for Nightly builds
-- [x] Override regional ad-block selection in about:adblock
-
-### Milestone 0.65.x
-- [x] Smart Tracking Protection (off by default) (Pranjal, in progress)
+### Milestone 0.65.x (~June 4, 2019) - Completed & Released
+- [x] Smart Tracking Protection (off by default)
 
 ### Milestone 0.66.x
 
