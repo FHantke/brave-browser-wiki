@@ -22,3 +22,41 @@ void FooDOMHandler::Function(const base::ListValue* args) {
   }
 }
 ```
+
+## Assigning values
+
+:x:
+```cpp
+const std::string val("10");
+```
+
+:heavy_check_mark:
+```cpp
+const std::string val = "10";
+```
+
+## Passing/assigning empty string
+
+:x:
+```cpp
+void Foo(bool ok) {
+  std::string val = ":(";
+  if (ok) {
+    val = std::string();
+  }
+
+  FooSecond(val, std::string());
+}
+```
+
+:heavy_check_mark:
+```cpp
+void Foo(bool ok) {
+  std::string val = ":(";
+  if (ok) {
+    val = "";
+  }
+
+  FooSecond(val, "");
+}
+```
