@@ -18,11 +18,11 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Tie Brave Core Android builds to CI
 - [x] Twitter tipping
 - [x] Build a Rust based ad-block library with best of class performance.
-- [ ] Rust based ad-block integration (bbondy)
 
 
 ### Milestone 0.68.x
 
+- [x] Rust based ad-block integration
 - [ ] Ongoing work for Brave Core Android builds
 - [ ] New work in social tipping
 - [ ] P3A
