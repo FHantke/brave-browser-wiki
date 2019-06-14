@@ -40,9 +40,22 @@ We aim to make the only patches required to be trivial changes, and not nested l
 
 Patch changes which affect the flow of execution should ideally be wrapped in `#if defined(BRAVE_CHROMIUM_BUILD)` and `#endif` blocks.
 
+You should almost never patch in two methods calls in a row. We should prefer extensible patches. For instance https://github.com/brave/brave-core/pull/2693/files#diff-a9c9a8da7aa4df821394352a0ca04a27R12:
+```
+CopyBraveExtensionLocalization(config, staging_dir, g_archive_inputs)
+CopyBraveRewardsExtensionLocalization(config, staging_dir, g_archive_inputs)
+```
+inside `CopyAllFilesToStagingDir` would be collapsed to
+```
+CopyBraveFilesToStagingDir
+```
+
 Make sure you do NOT have the following in your `~/.gitconfig`:
 
     [apply]
             whitespace = fix
 
 as trailing whitespace can be essential in patch files.
+
+## Patching gn/gni files
+gn patches should 
