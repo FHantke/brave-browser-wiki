@@ -58,4 +58,4 @@ Make sure you do NOT have the following in your `~/.gitconfig`:
 as trailing whitespace can be essential in patch files.
 
 ## Patching gn/gni files
-gn patches should 
+TDB
