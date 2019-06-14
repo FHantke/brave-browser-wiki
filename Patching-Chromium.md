@@ -67,4 +67,8 @@ Make sure you do NOT have the following in your `~/.gitconfig`:
 as trailing whitespace can be essential in patch files.
 
 ## Patching gn/gni files
-We should also prefer extensible patches in gn files where possible. Multiple deps should never be added to the same target. Always create a generic brave dep and then add other deps (public_deps if needed) inside that. The same thing goes for sources, but those should be added as `sources += my_brave_sources` where `my_brave_sources` is defined in a brave gni file. We have a gni file that is already included in nearly every gn build file in chromium through a patch in chrome_build.gni (currently `import("//brave/build/features.gni")`, but soon to be renamed to `import("//brave/build/config/brave_guild.gni")`. Add new gni imports inside that instead of patching them into another gn/gni file
+We should also prefer extensible patches in gn files where possible. 
+
+Multiple deps should never be added to the same target. Always create a generic brave dep and then add other deps (public_deps if needed) inside that. 
+
+The same thing goes for sources, but those should be added as `sources += my_brave_sources` where `my_brave_sources` is defined in a brave gni file. We have a gni file that is already included in nearly every gn build file in chromium through a patch in chrome_build.gni (currently `import("//brave/build/features.gni")`, but soon to be renamed to `import("//brave/build/config/brave_guild.gni")`. Add new gni imports inside that instead of patching them into another gn/gni file
