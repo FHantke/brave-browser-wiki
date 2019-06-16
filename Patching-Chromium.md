@@ -37,9 +37,15 @@ No BUILD.gn changes are needed for this.
 When other options are exhausted, you can patch the code directly in `src/`. After making the changes, you can run the npm command `npm run update_patches`.   This will update the patches which are stored in  `src/brave/patches`.   Please note that removed changes in `src` currently will not update the patches, so you will have to do that manually. 
 
 We aim to make the only patches required to be trivial changes, and not nested logic changes. 
-If possible write the patch to add a new line vs appending/prepending to an existing line. 
-https://github.com/brave/brave-core/blob/master/patches/chrome-browser-translate-translate_service.cc.patch#L10
-should be
+If possible write the patch to add a new line vs appending/prepending to an existing line.
+
+For example, instead of 
+```
+-  return !url.is_empty() && !url.SchemeIs(content::kChromeUIScheme) &&
++  return IsBraveTranslateEnabled() && !url.is_empty() && !url.SchemeIs(content::kChromeUIScheme) &&
+!url.SchemeIs(content::kChromeDevToolsScheme) &&
+``` 
+it should be
 ```
 return !url.is_empty() && !url.SchemeIs(content::kChromeUIScheme) &&
 +  IsBraveTranslateEnabled() &&
