@@ -45,7 +45,7 @@ Option name | Option value | Description
 staging | boolean | You can use this option for switching between production and staging servers
 reconcile-interval |integer | Define what the interval should be between monthly contributions in minutes.
 short-retries | boolean | Enables short retries intervals that can be used for testing contribution failures 
-current-country (Proposed) | string | Indicates the country that this installation should be considered. Currently, only "JP" is effective but any string value will be evaluated.
+current-country | string | Indicates the country that this installation should be considered. Currently, only "JP" is effective but any string value will be evaluated.
 
 ### Usage
 (replace ... with examples from How to run it)
