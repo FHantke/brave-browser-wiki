@@ -69,6 +69,14 @@ _Google does not receive any information about which client is performing these 
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
 
+### Modified Features and Functionality
+
+- Cookies are given a maximum lifetime of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
+- Referrer values are modified in the following ways
+  * *cross-origin* requests for iframes and sub-resources have their referrer set to be the origin of the requested resource
+  * *cross-origin* navigations have no referrer at all
+  * *same-origin* requests of all kinds have the same behavior as Chromium
+
 ### Comments
 
 Some of the above (along with other issues) were previously tracked in https://github.com/brave/brave-browser/issues/13.
