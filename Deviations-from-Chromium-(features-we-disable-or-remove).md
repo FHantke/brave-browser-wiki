@@ -53,7 +53,6 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Specific features are disabled on startup via the CLI](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc) (search for `disabled_features`)
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
-- [Limit cookie lifetime to 7 days](https://github.com/brave/brave-browser/issues/3443)
 - [Disable field trials](https://github.com/brave/brave-browser/issues/4283)
 
 ### Services We Proxy Through Brave Servers
@@ -71,7 +70,7 @@ _Google does not receive any information about which client is performing these 
 
 ### Modified Features and Functionality
 
-- Cookies are given a maximum lifetime of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
+- Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
 - Referrer values are modified in the following ways
   * *cross-origin* requests for iframes and sub-resources have their referrer set to be the origin of the requested resource
   * *cross-origin* navigations have no referrer at all
