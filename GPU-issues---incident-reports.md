@@ -30,8 +30,11 @@ Work-around suggested by support for these folks has been to disable hardware ac
 ### Bad Web GL performance
 - https://github.com/brave/brave-browser/issues/4279 **(Windows 10 x64 / 0.69.24)**
 
-Still bad after the field trial updates ☹️ 
+
 > Whilst playing around with some WebGL 2 code I noticed that fps seemed to be roughly half of what Chrome was chucking out. Rendering 2 million cubes produced around 29fps whilst in Chrome it easily hit 60fps.
+
+Still bad after the field trial updates ☹️ 
+
 > Hi @bsclifton, unfortunately performance is the same. Still down at around 10fps (I've changed the test a bit so fps has dropped but it's same on Stable) on my test whereas Chrome is getting about 45fps.
 
 Tested on Version 0.69.24 Chromium: 75.0.3770.100 (Official Build) nightly (64-bit) that I just installed.
