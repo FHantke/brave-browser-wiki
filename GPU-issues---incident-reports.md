@@ -54,7 +54,8 @@ all other browsers are working correctly (chrome, opera, firefox)
 
 - https://github.com/brave/brave-browser/issues/3071 **(Windows / 0.58.21)**
 > Whenever I open the browser, strange text fragmentation can be seen. It sometimes happens when I open the site, sometimes only after I interact with it. This isn't contained to website, also Brave intern sites like the settings or the DevTools are affected. Also on scrolling the text flickers into different fragmentations.
-- https://github.com/brave/brave-browser/issues/2824 (Windows / 0.58.18)
+
+- https://github.com/brave/brave-browser/issues/2824 **(Windows / 0.58.18)**
 > On many sites, text is showing as glitched/half showing. I've had this issue since moving to muon
 
 
