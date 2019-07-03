@@ -36,8 +36,8 @@ Work-around suggested by support for these folks has been to disable hardware ac
 Still bad after the field trial updates ☹️ 
 
 > Hi @bsclifton, unfortunately performance is the same. Still down at around 10fps (I've changed the test a bit so fps has dropped but it's same on Stable) on my test whereas Chrome is getting about 45fps.
-
-Tested on Version 0.69.24 Chromium: 75.0.3770.100 (Official Build) nightly (64-bit) that I just installed.
+>
+> Tested on Version 0.69.24 Chromium: 75.0.3770.100 (Official Build) nightly (64-bit) that I just installed.
 
 - https://www.reddit.com/r/brave_browser/comments/c8oe0b/webgl_is_very_slow_in_brave_compared_to_chrome/ **(macOS / 0.66.99)**
 > A while ago when it first released, I tried playing [Minecraft Classic](https://classic.minecraft.net/) in Brave but it was very laggy and basically unplayable. I thought it was an issue with that specific game until last night when I released a [simple game](https://gamejolt.com/games/super-ball-dodge/423602) I made with a WebGL version and I tried to play it in Brave but it was extremely slow, especially when going into fullscreen mode
