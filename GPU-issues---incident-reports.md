@@ -24,12 +24,14 @@ Work-around suggested by support for these folks has been to disable hardware ac
 
 - https://community.brave.com/t/brave-wont-change-back-to-integrated-gpu-and-high-battery-usage/47295 **(macOS / 0.60.47)**
     > I have a problem with GPU usage in macos Mojave.  When a webpage activates the dedicated GPU it will never go back to the integrated GPU when the webpage is closed. This then reflects in a much higher battery usage. I checked on chrome using the same webpages to trigger the dedicated GPU, and when I close them, always revert automatically to the integrated.
+- https://www.reddit.com/r/brave_browser/comments/c1fyal/absurd_cpu_and_gpu_performance/ (macOS / ??)
+    > Is there a reason it is using my radeon gpu chip instead of my intel chip? Some games I run do not even use the high performance chip; I just do not understand why it requires high performance when certain game do not (mac from used 2016), let alone a browser
 
 ### Bad Web GL performance
 - https://github.com/brave/brave-browser/issues/4279 **(Windows 10 x64 / 0.66.24)**
 > Whilst playing around with some WebGL 2 code I noticed that fps seemed to be roughly half of what Chrome was chucking out. Rendering 2 million cubes produced around 29fps whilst in Chrome it easily hit 60fps.
 
-- https://www.reddit.com/r/brave_browser/comments/c8oe0b/webgl_is_very_slow_in_brave_compared_to_chrome/ (macOS / 0.66.99)
+- https://www.reddit.com/r/brave_browser/comments/c8oe0b/webgl_is_very_slow_in_brave_compared_to_chrome/ **(macOS / 0.66.99)**
 > A while ago when it first released, I tried playing [Minecraft Classic](https://classic.minecraft.net/) in Brave but it was very laggy and basically unplayable. I thought it was an issue with that specific game until last night when I released a [simple game](https://gamejolt.com/games/super-ball-dodge/423602) I made with a WebGL version and I tried to play it in Brave but it was extremely slow, especially when going into fullscreen mode
 
 ### GPU related artifacts
@@ -64,15 +66,15 @@ This would ship to release channel on August 20th. Work was done in the followin
 
 
 ## Untriaged list of links / occurrences / etc that should be looked at
-- https://www.reddit.com/r/brave_browser/comments/c1fyal/absurd_cpu_and_gpu_performance/
-- https://www.reddit.com/r/brave_browser/comments/aifpob/slow_scroll_performamce_on_sites_with_a_lot_of/
 - https://www.reddit.com/r/brave_browser/comments/bpv26f/flickering_when_watching_full_screen_video/
-- https://www.reddit.com/r/brave_browser/comments/c7nuhw/please_someone_tell_me_why_hardware_acceleration/
 - https://www.reddit.com/r/brave_browser/comments/btku7u/hardware_acceleration/
 - https://www.reddit.com/r/brave_browser/comments/c0dhbb/screen_tearing_in_youtube_with_hardware/
-- https://www.reddit.com/r/brave_browser/comments/c1sufr/brave_performance_issues/
 - https://www.reddit.com/r/brave_browser/comments/bf4dtx/minor_issues_with_brave_pc_browser/
 
+## Reported links that don't seen to be associated
+- https://www.reddit.com/r/brave_browser/comments/c7nuhw/please_someone_tell_me_why_hardware_acceleration/
+- https://www.reddit.com/r/brave_browser/comments/aifpob/slow_scroll_performamce_on_sites_with_a_lot_of/
+- https://www.reddit.com/r/brave_browser/comments/c1sufr/brave_performance_issues/
 
 ## Actions we can take (help needed)
 - [ ] Values that were changed with the field trials should be examined. This config change will make us more closely match Chrome/Chromium. We may have had a flag enabled which made Brave prefer the discrete GPU - or perhaps we had a flag on which bypassed the driver blacklist
