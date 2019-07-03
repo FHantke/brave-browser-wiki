@@ -24,7 +24,7 @@ Work-around suggested by support for these folks has been to disable hardware ac
 
 - https://community.brave.com/t/brave-wont-change-back-to-integrated-gpu-and-high-battery-usage/47295 **(macOS / 0.60.47)**
     > I have a problem with GPU usage in macos Mojave.  When a webpage activates the dedicated GPU it will never go back to the integrated GPU when the webpage is closed. This then reflects in a much higher battery usage. I checked on chrome using the same webpages to trigger the dedicated GPU, and when I close them, always revert automatically to the integrated.
-- https://www.reddit.com/r/brave_browser/comments/c1fyal/absurd_cpu_and_gpu_performance/ (macOS / ??)
+- https://www.reddit.com/r/brave_browser/comments/c1fyal/absurd_cpu_and_gpu_performance/ **(macOS / ??)**
     > Is there a reason it is using my radeon gpu chip instead of my intel chip? Some games I run do not even use the high performance chip; I just do not understand why it requires high performance when certain game do not (mac from used 2016), let alone a browser
 
 ### Bad Web GL performance
@@ -71,7 +71,7 @@ This would ship to release channel on August 20th. Work was done in the followin
 - https://www.reddit.com/r/brave_browser/comments/c0dhbb/screen_tearing_in_youtube_with_hardware/
 - https://www.reddit.com/r/brave_browser/comments/bf4dtx/minor_issues_with_brave_pc_browser/
 
-## Reported links that don't seen to be associated
+### Reported links that don't seem to be associated
 - https://www.reddit.com/r/brave_browser/comments/c7nuhw/please_someone_tell_me_why_hardware_acceleration/
 - https://www.reddit.com/r/brave_browser/comments/aifpob/slow_scroll_performamce_on_sites_with_a_lot_of/
 - https://www.reddit.com/r/brave_browser/comments/c1sufr/brave_performance_issues/
