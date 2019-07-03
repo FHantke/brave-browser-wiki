@@ -89,3 +89,5 @@ This would ship to release channel on August 20th. Work was done in the followin
 - [ ] Values that were changed with the field trials should be examined. This config change will make us more closely match Chrome/Chromium. We may have had a flag enabled which made Brave prefer the discrete GPU - or perhaps we had a flag on which bypassed the driver blacklist
 - [ ] Triage the above occurrences and break down by OS / Brave version
 - [ ] Find more occurrences and triage
+- [x] Verify on macOS that we have added the `NSSupportsAutomaticGraphicsSwitching` key to Brave's info.plist _**(UPDATE: @bsclifton verified it is there and set to `true`)**_
+- [ ] Join https://groups.google.com/a/chromium.org/d/forum/graphics-dev and share occurrences / details
