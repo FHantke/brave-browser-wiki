@@ -1,3 +1,5 @@
+This wiki intended to track the problem(s) that folks are experiencing and what steps we've already done / need to do. Will fill this in with more details
+
 <!-- MarkdownTOC -->
 
 - [Reported customer incidents](#reported-customer-incidents)
@@ -10,9 +12,6 @@
 - Actions we can take \(help needed\)
 
 <!-- /MarkdownTOC -->
-
-This wiki intended to track the problem(s) that folks are experiencing and what steps we've already done / need to do. Will fill this in with more details
-
 
 ## Reported customer incidents
 ### GPU taking too much power (using discrete not integrated)
