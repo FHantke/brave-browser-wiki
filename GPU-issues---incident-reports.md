@@ -28,7 +28,8 @@ Work-around suggested by support for these folks has been to disable hardware ac
     > Is there a reason it is using my radeon gpu chip instead of my intel chip? Some games I run do not even use the high performance chip; I just do not understand why it requires high performance when certain game do not (mac from used 2016), let alone a browser
 
 ### Bad Web GL performance
-- https://github.com/brave/brave-browser/issues/4279 **(Windows 10 x64 / 0.66.24)**
+- https://github.com/brave/brave-browser/issues/4279 **(Windows 10 x64 / 0.69.24)**
+Still bad after the field trial updates ☹️ 
 > Whilst playing around with some WebGL 2 code I noticed that fps seemed to be roughly half of what Chrome was chucking out. Rendering 2 million cubes produced around 29fps whilst in Chrome it easily hit 60fps.
 
 - https://www.reddit.com/r/brave_browser/comments/c8oe0b/webgl_is_very_slow_in_brave_compared_to_chrome/ **(macOS / 0.66.99)**
