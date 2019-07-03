@@ -6,10 +6,10 @@ This wiki intended to track the problem(s) that folks are experiencing and what 
   - [GPU taking too much power \(using discrete not integrated\)](#gpu-taking-too-much-power-using-discrete-not-integrated)
   - [Bad Web GL performance](#bad-web-gl-performance)
   - [GPU related artifacts](#gpu-related-artifacts)
-- Things that have been done which may help
-  - Field trial config was changed in 0.68.x
-- Untriaged list of links / occurrences / etc that should be looked at
-- Actions we can take \(help needed\)
+- [Things that have been done which may help](#things-that-have-been-done-which-may-help)
+  - [Field trial config was changed in 0.68.x](#field-trial-config-was-changed-in-068x)
+- [Untriaged list of links / occurrences / etc that should be looked at](#untriaged-list-of-links--occurrences--etc-that-should-be-looked-at)
+- [Actions we can take \(help needed\)](#actions-we-can-take-help-needed)
 
 <!-- /MarkdownTOC -->
 
