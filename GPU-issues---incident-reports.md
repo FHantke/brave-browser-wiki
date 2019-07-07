@@ -66,6 +66,8 @@ all other browsers are working correctly (chrome, opera, firefox)
 - https://github.com/brave/brave-browser/issues/2824 **(Windows / 0.58.18)**
 > On many sites, text is showing as glitched/half showing. I've had this issue since moving to muon
 
+- https://community.brave.com/t/the-ui-is-disintegrating/68684 **(Windows / 0.66.99, also on Nightly)**
+> The ui is disintegrating. it keeps on disintegraating. i tried uninstalling and installing the browser. also i tried ll the releases like beta, dev, nightly but in all there’s a same problem. can you help me solve it?
 
 ## Things that have been done which may help
 ### Field trial config was changed in 0.68.x
