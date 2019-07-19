@@ -8,7 +8,7 @@ PageGraph Currently Does the Following
 * Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.)
 * Tracking most resource requests (see below for exceptions, but currently covers AJAX, images, scripts and CSS), include response headers and size
 * Track all DOM node creations, deletions and modifications (note small exceptions below)
-* Track interactions with shields and network requests
+* Track interactions with shields and network requests (including keeping track of which rules filter rules resulted in the behavior)
 * Track when scripts call common Web API fingerprinting methods
 * Puppeteer integration
 * GraphML export for offline / after the fact analysis
