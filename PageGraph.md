@@ -3,6 +3,8 @@ PageGraph Goal
 PageGraph is a under development, research effort to instrument Brave, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
 It currently lives in the [`page-graph-integration`](https://github.com/brave/brave-core/tree/page-graph-integration/) branch of [`brave/brave-core`](https://github.com/brave/brave-core).  A test suite is maintained at [brave-experiments/page-graph-tests](https://github.com/brave-experiments/page-graph-tests).
 
+PageGraph's name comes from the graph-based representation of the document's execution it builds in history.  Every relevant event in the document (a node being created, a network request being triggered, a script being executed, etc) is recorded in the graph, both noting the relevant event, and the cause of the event.  The resulting graph allows for the analysis of the proximate and upstream causes of every modification in the document. We expect this information will be useful for a variety of filter list generation, privacy-preserving feature restrictions, and web compatibility analysis, among other uses.
+
 PageGraph Currently Does the Following
 ---
 * Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.)
@@ -12,6 +14,7 @@ PageGraph Currently Does the Following
 * Track when scripts call common Web API fingerprinting methods
 * Puppeteer integration
 * GraphML export for offline / after the fact analysis
+* Chromium devtools integration, for in-browser analysis of the graph.  Currently allows for observing the full history of any node in the document.
 
 Not Done But Will Be Done Shortly
 ---
