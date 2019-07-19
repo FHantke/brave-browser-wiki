@@ -1,9 +1,9 @@
 PageGraph Goal
 ---
-PageGraph is a under development, research effort to instrument Brave, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
+PageGraph is an under-development, research effort to instrument Brave, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
 It currently lives in the [`page-graph-integration`](https://github.com/brave/brave-core/tree/page-graph-integration/) branch of [`brave/brave-core`](https://github.com/brave/brave-core).  A test suite is maintained at [brave-experiments/page-graph-tests](https://github.com/brave-experiments/page-graph-tests).
 
-PageGraph's name comes from the graph-based representation of the document's execution it builds in history.  Every relevant event in the document (a node being created, a network request being triggered, a script being executed, etc) is recorded in the graph, both noting the relevant event, and the cause of the event.
+PageGraph's name comes from the graph-based representation of the document's execution it builds in memory.  Every relevant event in the document (a node being created, a network request being triggered, a script being executed, etc.) is recorded in the graph, noting both the relevant event, and the event's cause.
 
 The resulting graph allows for the analysis of the proximate and upstream causes of every modification in the document. We expect this information will be useful for a variety of filter list generation, privacy-preserving feature restrictions, and web compatibility analysis, among other uses.
 
