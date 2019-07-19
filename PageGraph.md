@@ -1,7 +1,7 @@
 PageGraph Goal
 ---
 PageGraph is a under development, research effort to instrument Brave, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
-It currently lives in the [`page-graph-integration`](https://github.com/brave/brave-core/tree/page-graph-integration/) branch of [`brave/brave-core`](https://github.com/brave/brave-core).  A test suite is maintained here [brave-experiments/page-graph-tests](https://github.com/brave-experiments/page-graph-tests).
+It currently lives in the [`page-graph-integration`](https://github.com/brave/brave-core/tree/page-graph-integration/) branch of [`brave/brave-core`](https://github.com/brave/brave-core).  A test suite is maintained at [brave-experiments/page-graph-tests](https://github.com/brave-experiments/page-graph-tests).
 
 PageGraph Currently Does the Following
 ---
