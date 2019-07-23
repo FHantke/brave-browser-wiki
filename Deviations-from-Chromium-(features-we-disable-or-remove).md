@@ -76,6 +76,7 @@ _Google does not receive any information about which client is performing these 
   * *cross-origin* requests for iframes and sub-resources have their referrer set to be the origin of the requested resource
   * *cross-origin* navigations have no referrer at all
   * *same-origin* requests of all kinds have the same behavior as Chromium
+- Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 
 ### Comments
 
