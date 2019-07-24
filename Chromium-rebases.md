@@ -27,7 +27,7 @@ Get a list of the patches:
 Do a vim git macro to add `git apply -3 ./brave/patches/` before each line.
 Save the list of `git apply` script file `:wq a`
 
-(Alternatively: `ls -1 brave/patches/ | sed 's!^!git apply -3 ./brave/patches/!' > a`)
+(Alternatively: `ls -1 brave/patches/*.patch | sed 's!^!git apply -3 ./!' > a`)
 
 Make it runnable:
 
