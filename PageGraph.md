@@ -32,3 +32,4 @@ Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 * Including request headers (currently only response headers are recorded)
 * Better handling of HSTS and URL tracking. Currently requests are tracked w/o URL fragments (b/c they're ignored by the blink cache) or protocol (so that the same response can be matched with its request, even if it was HTST upgraded).  This works "well enough", but it's not 100% precise, and will loose information in some cases.
 * Any kind of tracking of worker behaviors
+* Module scripts
