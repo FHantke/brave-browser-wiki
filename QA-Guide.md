@@ -13,7 +13,7 @@
 - Component updater is used for updating extensions.
 - There are 2 component updaters: Google server, Brave server.
 - Test that components come from Chrome's server by default and not Brave server.
-- Test that Brave extensions go from Brave component updater (ad-block, tracking-protection, https-everywhere).
+- Test that Brave extensions go from Brave component updater (ad-block, https-everywhere).
 - Widevine goes to the Google server.
 
 ## Flash:
