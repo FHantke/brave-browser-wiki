@@ -95,7 +95,7 @@ If using S3, store your AWS credentials in `~/.aws/credentials` like so:
 aws_access_key_id = XXXXXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
-Please review our [AWS Access Key guidelines](https://github.com/brave/devops/wiki/Developing-With-AWS-Access-Keys) for more info. 
+You should `chmod 600 ~/.aws/credentials` and review our [AWS Access Key guidelines](https://github.com/brave/devops/wiki/Developing-With-AWS-Access-Keys) for more info. 
 
 (For those who are curious: `aws-vault` will work as well, but it's not recommended for sccache credentials because it has some usability problems. You will need to make sure that the sccache server daemon is started with `aws vault`, e.g. `aws-value exec <profile> -- sccache --start-server` before starting any builds, otherwise it will be automatically started but won't have the right credentials, and all cache writes will fail. Also, note that the server will stop on its own after 10 minutes of inactivity. If you figure out a way to make this work that isn't so painful, please update this page!)
 
