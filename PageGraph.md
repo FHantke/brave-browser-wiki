@@ -34,3 +34,14 @@ Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 * Including request headers (currently only response headers are recorded)
 * Better handling of HSTS and URL tracking. Currently requests are tracked w/o URL fragments (b/c they're ignored by the blink cache) or protocol (so that the same response can be matched with its request, even if it was HTST upgraded).  This works "well enough", but it's not 100% precise, and will loose information in some cases.
 * Any kind of tracking of worker behaviors
+
+Building
+---
+```
+git clone git@github.com:brave/brave-browser.git
+cd brave-browser
+npm install
+npm run init
+npm run sync -- --all --brave_core_ref=page-graph --run_sync
+npm run build -- Release --debug_build=true --official_build=false
+```
