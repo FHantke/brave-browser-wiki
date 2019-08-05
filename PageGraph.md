@@ -34,7 +34,7 @@ Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 * Including request headers (currently only response headers are recorded)
 * Better handling of HSTS and URL tracking. Currently requests are tracked w/o URL fragments (b/c they're ignored by the blink cache) or protocol (so that the same response can be matched with its request, even if it was HTST upgraded).  This works "well enough", but it's not 100% precise, and will loose information in some cases.
 * Any kind of tracking of worker behaviors
-* Resources fetched b/c of CSS rules are currently tracked in the graph, but not attributed to either the relevant CSS document / rule, or the DOM element that triggered the request.
+* Resources fetched b/c of CSS rules are currently tracked in the graph, but not attributed to either the relevant CSS document / rule, or the DOM element that triggered the request.  Would be nice to tie the request to either or both.
 
 Building
 ---
