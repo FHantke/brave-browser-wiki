@@ -17,7 +17,7 @@ These obey Chromium's glob matching rules. https://developer.chrome.com/extensio
 * `https://update.googleapis.com`: `https://componentupdater.brave.com`
 * `https://clients2.googleusercontent.com`: `https://crxdownload.brave.com`
 * `https://clients2.google.com`: `https://extensionupdater.google.com`
-- Page translation requests (These are only proxied when ENABLE_BRAVE_TRANSLATE build flag is enabled.)
+- Page translation requests (These are only proxied when `ENABLE_BRAVE_TRANSLATE` build flag is enabled.)
   * `https://translate.googleapis.com/translate_a/element.js*`: `https://translate.brave.com/<same>`
   * `https://translate.googleapis.com/element/*/js/element/element_main.js`: `https://translate.brave.com/<same>`
   * `https://translate.googleapis.com/translate_static/js/element/main.js`: `https://translate.brave.com/<same>`
