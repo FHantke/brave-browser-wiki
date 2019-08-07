@@ -1,6 +1,5 @@
 
-
-cosmetic filtering API call:
+# cosmetic filtering API call:
 
 ```
         chrome.tabs.insertCSS({
@@ -28,3 +27,16 @@ page does have !important: user stylesheet !important > author !important
 
 spec: https://www.w3.org/TR/css3-cascade/#cascading-origins
 
+
+# Performance
+
+
+CPU performance measurements:
+
+https://docs.google.com/spreadsheets/d/1IpNUU2nKehBndFUI2ERQbvwSmF00ZosbwYWDotAVAtQ/edit?usp=sharing
+
+uBO: ~17% more CPU time (ms) than without
+blanket injection method: ~4% more CPU time than without
+mutation observer: 22% more CPU time than without
+
+It needs to be determined whether the increased 4-5MB RAM usage is per tab or per frame.
