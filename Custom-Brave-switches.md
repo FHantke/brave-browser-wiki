@@ -2,7 +2,7 @@
 
 In addition to supporting all Chromium command line switches, the following switches are supported:
 
-- `npm start --disable_brave_extension`: Disable loading Brave extension on startup
+- `npm start --disable_brave_extension`: Disable loading Brave extension on startup (note: this only disable the extension control view, not Shields)
 - `npm start --disable_pdfjs_extension`: Prevent installing the PDFJS extension
 - `npm start --disable_webtorrent_extension`: Disable loading Brave WebTorrent extension on startup
 
