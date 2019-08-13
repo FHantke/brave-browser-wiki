@@ -31,3 +31,7 @@ All key/seed/hash lengths are 32 bytes. HKDF salt is empty unless otherwise spec
 5. S_b is passed to brave-core and used as an AES-GCM-SIV key to encrypt the "master seed" on disk. Nonce is unnecessary here but generated randomly (12 bytes) and stored on disk anyway.
 6. The "master seed" is 32 random bytes generated in C++. This seed is intended to be used to derive other secret key material in the future (sync, rewards, etc.) as well as for metamask. Right now it's only used for metamask.
 7. In C++, the "master seed" is HKDF'ed to produce a private key which is passed back to metamask to be used as the wallet private key. Specifically, using `HKDF-SHA256(masterseed, info='ethwallet', salt='brave-ethwallet-salt')` 
+
+## Note on salts
+
+The password hashes are salted to mitigate multi-target attacks on users' passwords.  The HKDF subkey derivations all involve fixed salts.  We do this because our internal libraries don't provide separate HKDF-Extract and HKDF-Expand steps so we have to specify _some_ salt.  But the HKDF initial key material is always 256 bits, with no danger of multi-target attacks, so there is no need to store additional salts for the HKDFs -- it is safe to use a fixed salt.
