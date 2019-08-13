@@ -16,7 +16,7 @@ Note that Metamask uses https://github.com/danfinlay/browser-passworder/blob/mas
 - Generates a master seed (a 32-byte random array buffer using `crypto/random.h` and use `crypto::RandBytes`.
 - Uses the passphrase-derived `key` to encrypt the master seed using `AES-GCM-SIV-256` with a random 12-byte nonce.
 - Stores the encrypted master seed and nonce on preferences: `brave.wallet.aes_256_gcm_siv_nonce`, `brave.wallet.encrypted_seed`.
-- Calls the callback function supplied as the second parameter with an array buffer. The array buffer has 32 bytes of output from HKDF-Expand-SHA256(masterseed, info='ethwallet') to the extension, asynchronously.
+- Calls the callback function supplied as the second parameter with an array buffer. The array buffer has 32 bytes of output from HKDF-SHA256(masterseed, info='ethwallet') to the extension, asynchronously.
 - Future calls to getWalletSeed (after a seed has already been generated) will decrypt the seed stored on disk using the passphrase and return the output above.
 
 
@@ -30,4 +30,4 @@ All key/seed/hash lengths are 32 bytes. HKDF salt is empty. HKDF uses sha-512 un
 4. S_m is used in place of what metamask upstream uses the raw passphrase for. so this gets put through their key derivation function (PBKDF2) to derive an AES-GCM encryption key. This AES-GCM key is used to encrypt the metamask wallet private key on disk after it is generated later. I realize the PBKDF2 step is totally unnecessary so we could remove it if we wanted to, but that's slightly more work than just keeping it.
 5. S_b is passed to brave-core and used as an AES-GCM-SIV key to encrypt the "master seed" on disk. Nonce is unnecessary here but generated randomly (12 bytes) and stored on disk anyway.
 6. The "master seed" is 32 random bytes generated in C++. This seed is intended to be used to derive other secret key material in the future (sync, rewards, etc.) as well as for metamask. Right now it's only used for metamask.
-7. In C++, the "master seed" is HKDF'ed to produce a private key which is passed back to metamask to be used as the wallet private key. Specifically, using HKDF-Expand-SHA256(masterseed, info='ethwallet') 
+7. In C++, the "master seed" is HKDF'ed to produce a private key which is passed back to metamask to be used as the wallet private key. Specifically, using HKDF-SHA256(masterseed, info='ethwallet') 
