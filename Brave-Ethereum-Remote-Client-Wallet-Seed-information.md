@@ -1,3 +1,5 @@
+# High level overview
+
 Brave implements [a fork](https://github.com/brave/ethereum-remote-client) of [MetaMask](https://github.com/MetaMask/metamask-extension) named Ethereum Remote Client to provide wallet functionality and Dapp browsing.
 
 One major difference of this fork, is the way the seed key is generated. In particular it uses 24-word BIP39 format. The way the seed is generated differs and is handled by Brave Core.
@@ -18,7 +20,7 @@ Note that Metamask uses https://github.com/danfinlay/browser-passworder/blob/mas
 - Future calls to getWalletSeed (after a seed has already been generated) will decrypt the seed stored on disk using the passphrase and return the output above.
 
 
-## protocol
+## Protocol
 
 All key/seed/hash lengths are 32 bytes. HKDF salt is empty. HKDF uses sha-512 unless otherwise specified.
 
