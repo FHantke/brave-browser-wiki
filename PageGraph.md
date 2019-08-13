@@ -17,10 +17,10 @@ PageGraph Currently Does the Following
 * Puppeteer integration
 * GraphML export for offline / after the fact analysis
 * Chromium devtools integration, for in-browser analysis of the graph.  Currently allows for observing the full history of any node in the document.
+* Timestamp all events
 
 Not Done But Will Be Done Shortly
 ---
-* Timestamp all events
 * Module scripts
 * Scripts in SVG documents
 
