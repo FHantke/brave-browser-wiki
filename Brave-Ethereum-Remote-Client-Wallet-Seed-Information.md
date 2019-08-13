@@ -16,7 +16,7 @@ Note that Metamask uses https://github.com/danfinlay/browser-passworder/blob/mas
 - Generates a master seed (a 32-byte random array buffer using `crypto/random.h` and use `crypto::RandBytes`.
 - Uses the passphrase-derived `key` to encrypt the master seed using `AES-GCM-SIV-256` with a random 12-byte nonce.
 - Stores the encrypted master seed and nonce on preferences: `brave.wallet.aes_256_gcm_siv_nonce`, `brave.wallet.encrypted_seed`.
-- Calls the callback function supplied as the second parameter with an array buffer. The array buffer has 32 bytes of output from HKDF-SHA256(masterseed, info='ethwallet') to the extension, asynchronously.
+- Calls the callback function supplied as the second parameter with an array buffer. The array buffer has 32 bytes of output from HKDF-SHA256(masterseed, salt='brave-ethwallet-salt', info='ethwallet') to the extension, asynchronously.
 - Future calls to getWalletSeed (after a seed has already been generated) will decrypt the seed stored on disk using the passphrase and return the output above.
 
 
