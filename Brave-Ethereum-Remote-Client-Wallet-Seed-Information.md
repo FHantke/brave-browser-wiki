@@ -34,4 +34,4 @@ All key/seed/hash lengths are 32 bytes. HKDF salt is empty unless otherwise spec
 
 ## Note on salts
 
-The password hashes are salted to mitigate multi-target attacks on users' passwords.  The HKDF subkey derivations all involve fixed salts.  We do this because our internal libraries don't provide separate HKDF-Extract and HKDF-Expand steps so we have to specify _some_ salt.  But the HKDF initial key material is always 256 bits, with no danger of multi-target attacks, so there is no need to store additional salts for the HKDFs -- it is safe to use a fixed salt.
+The password hashes are salted to mitigate multi-target attacks on users' passwords.  The HKDF subkey derivations all involve fixed salts, empty if not specified.  We do this because our internal libraries don't provide separate HKDF-Extract and HKDF-Expand steps so we have to specify _some_ salt.  But the HKDF initial key material is always 256 bits, with no danger of multi-target attacks, so there is no need to store additional salts for the HKDFs -- it is safe to use a fixed salt.
