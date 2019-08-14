@@ -55,10 +55,13 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Announcements
 - [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
-- [ ] Announce release on https://community.brave.com/ (@brave-matt)
-- [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@brave-matt)
+- [ ] Announce release on https://community.brave.com/ (@Hollons)
+- [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@Hollons)
 - [ ] Notify #announcements, #community of the latest release with a link to the release notes
 
 ### Update Release channel wiki
 - [ ] Update entries here as needed: https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule
 
+### Closing milestones
+- [ ] Set a release date and close the appropriate milestone under https://github.com/brave/brave-browser/milestones
+- [ ] Set a release date and close the appropriate milestone under https://github.com/brave/brave-core/milestones
