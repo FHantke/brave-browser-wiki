@@ -41,6 +41,7 @@ Building
 ```
 git clone git@github.com:brave/brave-browser.git
 cd brave-browser
+git checkout 957ef0f28
 npm install
 npm run init
 npm run sync -- --all --brave_core_ref=page-graph --run_sync
