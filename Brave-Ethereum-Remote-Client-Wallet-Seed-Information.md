@@ -1,4 +1,4 @@
-# High level overview
+## High level overview
 
 Brave implements [a fork](https://github.com/brave/ethereum-remote-client) of [MetaMask](https://github.com/MetaMask/metamask-extension) named Ethereum Remote Client to provide wallet functionality and Dapp browsing.
 
@@ -35,3 +35,11 @@ All key/seed/hash lengths are 32 bytes. HKDF salt is empty unless otherwise spec
 ## Note on salts
 
 The password hashes are salted to mitigate multi-target attacks on users' passwords.  The HKDF subkey derivations all involve fixed salts, empty if not specified.  We do this because our internal libraries don't provide separate HKDF-Extract and HKDF-Expand steps so we have to specify _some_ salt.  But the HKDF initial key material is always 256 bits, with no danger of multi-target attacks, so there is no need to store additional salts for the HKDFs -- it is safe to use a fixed salt.
+
+## Restoring from a mnemonic
+
+The client allows users to restore a wallet from a mnemonic. We plan to support both Brave's 24-word passphrases as well as Metamask's 12-word passphrases.
+
+Currently, the mnemonic that is shown to users for backup encodes the wallet private key, **not the master seed**. (In future once there is code that uses the master seed for other key derivations like sync/rewards, we would tell them to backup the master seed instead of the wallet/rewards/sync keys.)
+
+This means that when a user restores a wallet, we don't restore or generate a master seed for them. We still generate both S_m and S_b; S_m is used to encrypt the wallet key on disk and S_b is currently unused.
