@@ -8,17 +8,17 @@
 3. 30min - 5hrs
 4. 5hrs+
 
-### Q2: Have you made Brave your default browser? (desktop and Android)
+### Q2: Have you made Brave your default browser?
 1. No
 2. Yes
 
-### Q3: Did you follow the on-boarding process (desktop-only for now)
+### Q3: Did you follow the on-boarding process
 1. Did not click within welcome screen
 2. Clicked once 
 3. Clicked twice or more but did not make it to the end
 4. Made it to end of on-boarding flow
 
-### Q4: Did you import settings and bookmarks, and if so from where? (desktop-only)
+### Q4: Did you import settings and bookmarks, and if so from where?
 1. Did not import
 2. Imported from Brave
 3. Imported from Chrome
@@ -32,7 +32,7 @@
 3. 20-100
 4. Over 100
 
-### Q6: How many open windows do you have? (desktop-only)
+### Q6: How many open windows do you have?
 1. 0-1
 2. 2-5
 3. 5+
