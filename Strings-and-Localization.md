@@ -89,6 +89,8 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 
 ## Ethereum Remote Client
 
+These steps should be done any time we have new strings and any time we rebase on top of MetaMask.
+
 Pushing changes to Transifex:
 
 ```
