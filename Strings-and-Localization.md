@@ -100,3 +100,5 @@ Pulling changes from Transifex:
 ```
 npm run pull_l10n -- --extension=ethereum-remote-client
 ```
+
+A rule for developing w/ strings for this extension: Never change a MetaMask source string text, instead change the l10n ID that's being used and add the string into `brave/app/_locales/en/messages.json`
