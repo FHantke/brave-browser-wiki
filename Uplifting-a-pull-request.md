@@ -25,7 +25,7 @@ _**NOTE: this script only works for clean uplifts. If there are merge conflicts,
 ### Jenkins job
 This is the preferred way to do it!
 
-- visit https://staging.ci.brave.com/view/Main/job/create-uplift-prs/
+- visit https://staging.ci.brave.com/job/brave-core-create-uplift-prs/
 - click `Build with Parameters`:
     - put the pull request number (must already be merged)
     - pick the channel you want to uplift to
