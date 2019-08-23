@@ -84,3 +84,19 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 - Sometimes strings have variables in them which should look like this, in these cases you should use < and > and not `&lt;` and not `&gt;`.  These are `ph` and `em` elements.  Even know the source translation looks like `&lt;ph` it should use `<` and `>`:
 
 <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
+
+# Localizing extensions
+
+## Ethereum Remote Client
+
+Pushing changes to Transifex:
+
+```
+npm run push_l10n -- --extension=ethereum-remote-client
+```
+
+Pulling changes from Transifex:
+
+```
+npm run pull_l10n -- --extension=ethereum-remote-client
+```
