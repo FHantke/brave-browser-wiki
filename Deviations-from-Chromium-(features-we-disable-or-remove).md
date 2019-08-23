@@ -55,7 +55,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
 - [Disable field trials](https://github.com/brave/brave-browser/issues/4283)
-- [Disable Lookalike URLs Navigation Suggestions] (https://github.com/brave/brave-core/pull/2382/files)
+- [Disable Lookalike URLs Navigation Suggestions](https://github.com/brave/brave-core/pull/2382/files)
 
 ### Services We Proxy Through Brave Servers
 
