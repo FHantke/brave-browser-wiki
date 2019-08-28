@@ -40,11 +40,10 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Wait for confirmation that Linux live update works
 
-### Download Binaries from Brave.com
-- [ ] download binary from https://brave.com
-- [ ] download binary from https://brave.com on `Win x64` via `https://laptop-updates.brave.com/latest/winx64`
-- [ ] download binary from https://brave.comd on `Win x86` via `https://laptop-updates.brave.com/latest/winia32`
-- [ ] download binary from https://brave.comd on `macOS` via `https://laptop-updates.brave.com/latest/osx`
+### Download & Install Binaries from Brave.com
+- [ ] download binary from https://brave.com on `Win x64` (https://laptop-updates.brave.com/latest/winx64)
+- [ ] download binary from https://brave.com on `Win x86` (https://laptop-updates.brave.com/latest/winia32)
+- [ ] download binary from https://brave.com on `macOS` (https://laptop-updates.brave.com/latest/osx)
 - [ ] download the `.pkg` binary from a referral page (Production) on `macOS` (check `brave://local-state`)
 - [ ] download the `.exe` binary from a referral page (Production) on `Win x64` (check `brave://local-state`)
 - [ ] download the `.exe` binary from a referral page (Production) on `Win x86` (check `brave://local-state`)
