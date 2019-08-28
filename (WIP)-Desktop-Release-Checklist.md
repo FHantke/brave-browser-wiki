@@ -39,19 +39,15 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Wait for confirmation that Windows live update works
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Wait for confirmation that Linux live update works
-- [ ] Update the Brave Snap Package under Ubuntu
 
 ### Download Binaries from Brave.com
 - [ ] download binary from https://brave.com
-- [ ] download binary from https://brave.com/download
-- [ ] download binary using https://laptop-updates.brave.com/latest/winx64
-- [ ] download binary using https://laptop-updates.brave.com/latest/winia32
-- [ ] download binary using https://laptop-updates.brave.com/latest/osx
-- [ ] download binary to test promos https://brave.com/kjo527 - kjozwiak.github.io [Production]
-- [ ] download binary to test promos https://brave.com/red194 - Twitch (redPwnie) [Production]
-- [ ] download binary to test promos https://brave.com/kam253 - YT (kamiljoz) [Production]
-- [ ] download binary to test promos https://brave.com/bra941 - YT (braveqa1) [Production]
-- [ ] download binary to test promos https://brave.com/reb402 - YT (reb402) [Production]
+- [ ] download binary from https://brave.com on `Win x64` via `https://laptop-updates.brave.com/latest/winx64`
+- [ ] download binary from https://brave.comd on `Win x86` via `https://laptop-updates.brave.com/latest/winia32`
+- [ ] download binary from https://brave.comd on `macOS` via `https://laptop-updates.brave.com/latest/osx`
+- [ ] download the `.pkg` binary from a referral page (Production) on `macOS` (check `brave://local-state`)
+- [ ] download the `.exe` binary from a referral page (Production) on `Win x64` (check `brave://local-state`)
+- [ ] download the `.exe` binary from a referral page (Production) on `Win x86` (check `brave://local-state`)
 
 ### Announcements
 - [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
