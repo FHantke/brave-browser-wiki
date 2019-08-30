@@ -26,7 +26,7 @@ Not Done But Will Be Done Shortly
 
 Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 ---
-* Tracking large requests (`<audio>` and `<video>`)
+* Tracking large, streamed, requests (`<audio>` and `<video>`)
 * Dealing with WebSockets in anyway
 * Better handling of JS urls (currently these are treated as originating from the document node, instead of the node with the relevant URL, b/c of how blink is structured)
 * Tracking css `@imports`
