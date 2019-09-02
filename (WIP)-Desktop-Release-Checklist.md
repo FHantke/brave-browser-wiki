@@ -13,7 +13,6 @@ Be super sure that <version> is replaced with the version you wish to use.
 ### Release Notes to Staging
 - [ ] Mark closed issues in github as release-notes/exclude or release-notes/include.
 - [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
-- [ ] Stage release notes to brave.com/release/ 
 
 ### Certification and Builds
 - [ ] Upload builds to Omaha test channels (`86-r-test`, `64-r-test`, `test`(mac))
