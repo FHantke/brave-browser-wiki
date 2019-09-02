@@ -19,10 +19,9 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Log into Fastly, clear CDN cache for: `updates-cdn.bravesoftware.com`, `updates.bravesoftware.com`
 
 ### Test Staging for Updates
-- [ ] Install a prior version of the app from test channels (`86-r-test`, `64-r-test`, `test`(mac))
-- [ ] Go to "About Brave" page to update
-- [ ] Confirm version matches expectations
-- [ ] QA summary and build verification report.
+- [ ] Install a prior version of Brave and update via `test` channels (`86-r-test`, `64-r-test`, `test`(macOS))
+   - [ ] Confirm version matches expectations
+- [ ] QA summary and sign off report under #release via Slack.
 
 ### Release to production download locations
 - [ ] Publish github release (remove 'pre-release' checkmark)
