@@ -112,3 +112,6 @@ When making an order you want to select both of these projects:
 - `brave_ethereum_remote_client_extension`
 
 Note, they don't fully match the list from MetaMask.
+
+MetaMask supports `hn`, `ht`, and `ph` that Brave does not.
+This is changing but it uses `tml` for `ta` as well.
