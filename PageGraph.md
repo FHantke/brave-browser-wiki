@@ -9,7 +9,7 @@ The resulting graph allows for the analysis of the proximate and upstream causes
 
 PageGraph Currently Does the Following
 ---
-* Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.)
+* Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.) and how the script got on the page.
 * Tracking most resource requests (see below for exceptions, but currently covers AJAX, fetch, images, scripts and CSS), include response headers and size
 * Track all DOM node creations, deletions and modifications (note small exceptions below)
 * Track interactions with shields and network requests (including keeping track of which rules filter rules resulted in the behavior)
