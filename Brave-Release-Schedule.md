@@ -62,7 +62,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.67.x  |    76    | June 25, 2019      |              
 | 0.68.x  |    76    | July 23, 2019      |              
 | 0.69.x  |    77    | August 13, 2019    |              
-| 0.70.x  |    77    | September 3, 2019  |              
+| 0.70.x  |    77    | September 4, 2019  |              
 | 0.71.x  |    78    | September 24, 2019 |              
 | 0.72.x  |    78    | October 15, 2019   |              
 | 0.73.x  |    79    | November 5, 2019   |              
@@ -86,7 +86,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.68.x  |    76           | June 25, 2019      |              
 | 0.69.x  |    77           | July 23, 2019      |                     
 | 0.70.x  |    77           | August 13, 2019    |              
-| 0.71.x  |    78           | September 3, 2019  |                     
+| 0.71.x  |    78           | September 4, 2019  |                     
 | 0.72.x  |    78           | September 24, 2019 |              
 | 0.73.x  |    79           | October 15, 2019   | 
 | 0.74.x  |    79           | November 5, 2019   |              
@@ -109,7 +109,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.69.x  |    77           | June 25, 2019      |              
 | 0.70.x  |    77           | July 23, 2019      |                     
 | 0.71.x  |    78           | August 13, 2019    |              
-| 0.72.x  |    78           | September 3, 2019  |                     
+| 0.72.x  |    78           | September 4, 2019  |                     
 | 0.73.x  |    79           | September 24, 2019 |              
 | 0.74.x  |    79           | October 15, 2019   |              
 | 0.75.x  |    80           | November 5, 2019   |              
