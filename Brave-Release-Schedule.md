@@ -63,10 +63,9 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.68.x  |    76    | July 23, 2019      |              
 | 0.69.x  |    77    | August 13, 2019    |              
 | 0.70.x  |    77    | September 4, 2019  |              
-| 0.71.x  |    78    | September 24, 2019 |              
-| 0.72.x  |    78    | October 15, 2019   |              
-| 0.73.x  |    79    | November 5, 2019   |              
-| 0.74.x  |    79    | December 3, 2019   |              
+| 0.71.x  |    78    | October 15, 2019   |              
+| 0.72.x  |    79    | November 5, 2019   |              
+| 0.73.x  |    79    | December 3, 2019   |              
 
 
 - CI does builds for Beta channel once a day if there are changes or as requested.
@@ -87,10 +86,9 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.69.x  |    77           | July 23, 2019      |                     
 | 0.70.x  |    77           | August 13, 2019    |              
 | 0.71.x  |    78           | September 4, 2019  |                     
-| 0.72.x  |    78           | September 24, 2019 |              
-| 0.73.x  |    79           | October 15, 2019   | 
-| 0.74.x  |    79           | November 5, 2019   |              
-| 0.75.x  |    80           | December 3, 2019   |              
+| 0.72.x  |    79           | October 15, 2019   | 
+| 0.73.x  |    79           | November 5, 2019   |              
+| 0.74.x  |    80           | December 3, 2019   |              
 
 - CI does builds for Dev channel once a day if there are changes or as requested.
 - Updates are released as there are builds as long as tests pass.
@@ -110,10 +108,9 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.70.x  |    77           | July 23, 2019      |                     
 | 0.71.x  |    78           | August 13, 2019    |              
 | 0.72.x  |    78           | September 4, 2019  |                     
-| 0.73.x  |    79           | September 24, 2019 |              
-| 0.74.x  |    79           | October 15, 2019   |              
-| 0.75.x  |    80           | November 5, 2019   |              
-| 0.76.x  |    80           | December 3, 2019   |              
+| 0.73.x  |    79           | October 15, 2019   |              
+| 0.74.x  |    80           | November 5, 2019   |              
+| 0.75.x  |    80           | December 3, 2019   |              
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
