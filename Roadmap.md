@@ -5,28 +5,6 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
-### Milestone 0.65.x (~June 4, 2019) - Completed & Released
-- [x] Smart Tracking Protection (off by default)
-
-### Milestone 0.66.x
-
-- [x] In page translations (Jocelyn, completed in 0.65.x but not enabled on Release channel for cost performance needs)
-
-### Milestone 0.67.x
-
-- [x] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
-- [x] Tie Brave Core Android builds to CI
-- [x] Twitter tipping
-- [x] Build a Rust based ad-block library with best of class performance.
-
-
-### Milestone 0.68.x
-
-- [x] Rust based ad-block integration
-- [ ] Ongoing work for Brave Core Android builds
-- [ ] New work in social tipping
-- [ ] P3A
-
 ### Milestone 0.69.x
 
 - [ ] [Ethereum HD wallet support](https://github.com/brave/brave-browser/issues/4494)
