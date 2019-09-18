@@ -5,6 +5,14 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
+### Milestone 0.72.x
+
+- [ ] New monthly contribution banner for publishers - [#5996](https://github.com/brave/brave-browser/issues/5996)
+- [ ] Ability to disable Tor via admin policy - [#454](https://github.com/brave/brave-browser/issues/454)
+- [ ] WebCompat Reporter via (Report a broken site)
+
+### Milestone 0.71.x
+
 ### Milestone 0.70.x
 
 - [ ] Ability to disable the Brave Shields activity count using brave://settings - [#3121](https://github.com/brave/brave-browser/issues/3121)
