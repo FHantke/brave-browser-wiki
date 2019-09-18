@@ -5,6 +5,16 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
+### Milestone 0.70.x
+
+- [ ] Ability to disable the Brave Shields activity count using brave://settings - [#3121](https://github.com/brave/brave-browser/issues/3121)
+- [x] Add Japan as a supported region for Brave ads - [#5656](https://github.com/brave/brave-browser/issues/5656)
+- [x] Ability to disable Brave Wallet using brave://settings  - [#5673](https://github.com/brave/brave-browser/issues/5673)
+- [x] Ability to save all files from WebTorrent via “Save All Files” - [#1230](https://github.com/brave/brave-browser/issues/1230)
+- [x] Greaselion - [#5674](https://github.com/brave/brave-browser/issues/5674)
+- [x] Simplifying Profile Manager
+- [x] Improving Brave ads frequency so the same ad isn’t displayed more than once per hour - [#5281](https://github.com/brave/brave-browser/issues/5281)
+
 ### Milestone 0.69.x
 
 - [x] Ethereum Wallet - [#4494](https://github.com/brave/brave-browser/issues/4494)
