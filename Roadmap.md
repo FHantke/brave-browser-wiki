@@ -21,7 +21,7 @@ Older milestones are available in the [Roadmap Archive page](https://github.com/
 - [x] Ability to save all files from WebTorrent via “Save All Files” - [#1230](https://github.com/brave/brave-browser/issues/1230)
 - [x] Greaselion - [#5674](https://github.com/brave/brave-browser/issues/5674)
 - [x] Simplifying Profile Manager
-- [x] Improving Brave ads frequency so the same ad isn’t displayed more than once per hour - [#5281](https://github.com/brave/brave-browser/issues/5281)
+- [x] Improving Brave ads frequency so same ad isn’t displayed more than once per hour - [#5281](https://github.com/brave/brave-browser/issues/5281)
 
 ### Milestone 0.69.x
 
