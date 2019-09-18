@@ -172,3 +172,23 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] UI improvements and support for theming in the Brave shields panel
 - [x] Support for Nightly builds
 - [x] Override regional ad-block selection in about:adblock
+
+### Milestone 0.65.x (~June 4, 2019) - Completed & Released
+- [x] Smart Tracking Protection (off by default)
+
+### Milestone 0.66.x - (~July 2, 2019) Completed & Released
+
+- [x] In page translations (Jocelyn, completed in 0.65.x but not enabled on Release channel for cost performance needs)
+
+### Milestone 0.67.x - (~August 1, 2019) Completed & Released
+
+- [x] Ability to compile Brave and produce an Android based APK (nothing close to releasable yet)
+- [x] Tie Brave Core Android builds to CI
+- [x] Twitter tipping
+- [x] Build a Rust based ad-block library with best of class performance.
+
+
+### Milestone 0.68.x - (~August 21, 2019) Completed & Released
+
+- [x] Rust based ad-block integration
+- [x] Ongoing work for Brave Core Android builds
