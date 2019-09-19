@@ -53,7 +53,8 @@ Be super sure that <version> is replaced with the version you wish to use.
    - check `brave://local-state` and ensure the `promoCode` is being listed
 
 ### Announcements
-- [ ] Publish the release notes to github and brave.com/releases. (@rebron) 
+- [ ] Publish the release notes to `GitHub`
+- [ ] Publish the release notes to `https://www.brave.com/latest`
 - [ ] Announce release on https://community.brave.com/ (@Hollons)
 - [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@Hollons)
 - [ ] Notify #announcements, #community of the latest release with a link to the release notes
