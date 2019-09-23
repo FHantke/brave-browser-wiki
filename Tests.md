@@ -161,6 +161,12 @@ It's sometimes useful to see the console while browser tests are running.  When 
 4. List installed emulators: `~/Android/Sdk/emulator/emulator -list-avds`
 5. Start an emulator: `$ ~/Android/Sdk/emulator/emulator @EMULATOR_ID`. Note: use EMULATOR_ID from the list command, and pre-pend an @ symbol
 
+I've only tested with x86 emulators per the recommendation, but it should probably work for other emulator types.
+
+```
+npm run init -- --target_os=android --target_arch=x86
+npm run build -- --target_os=android --target_arch=x86
+```
 ## Running tests
 
 `npm run test -- brave_unit_tests --target_os=android --target_arch=x86`
