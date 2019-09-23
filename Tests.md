@@ -150,3 +150,17 @@ Note requests that return 307 are not actually sent over the network
 # Debugging tips
 
 It's sometimes useful to see the console while browser tests are running.  When it is in this state, you can't enter user input or focus the window, but you can right click and `Inspect` to see the console and show the devtools.
+
+# Android
+
+## Setting up the environment for tests
+
+1. Start Android Studio ` /usr/local/android-studio/bin/studio.sh`
+2. Open AVD Manager (Phone icon with Android robot on the toolbar)
+3. Create a new Emulator, I used Nexus 6P API level 29, CPU x86, make sure to set the Size on disk to 10GB and SD card to 1GB or else there will be errors when copying the test files.
+4. List installed emulators: `~/Android/Sdk/emulator/emulator -list-avds`
+5. Start an emulator: `$ ~/Android/Sdk/emulator/emulator @EMULATOR_ID`. Note: use EMULATOR_ID from the list command, and pre-pend an @ symbol
+
+## Running tests
+
+`npm run test -- brave_unit_tests --target_os=android --target_arch=x86`
