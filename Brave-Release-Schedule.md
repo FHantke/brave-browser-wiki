@@ -39,7 +39,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                |
 | 0.67.x  |    76    | July 23, 2019       | August 1, 2019      |                                |
 | 0.68.x  |    76    | August 13, 2019     | August 21, 2019     |                                |
-| 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.138 hotfix 2 to incl c77  |
+| 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.138 hotfix 2 with c77     |
 | 0.69.x  |    77    | September 4, 2019   | October 3, 2019     |                                |
 | 0.70.x  |    78    | October 15, 2019    | October 22, 2019    |                                |
 | 0.71.x  |    78    | November 5, 2019    | November 12, 2019   |                                |
