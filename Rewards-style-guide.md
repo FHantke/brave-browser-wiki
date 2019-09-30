@@ -60,3 +60,19 @@ void Foo(bool ok) {
   FooSecond(val, "");
 }
 ```
+
+## Const
+
+:x:
+```cpp
+int Foo(int ok) {
+  return ok + 1;
+}
+```
+
+:heavy_check_mark:
+```cpp
+int Foo(const int ok) {
+  return ok + 1;
+}
+```
