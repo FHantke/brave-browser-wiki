@@ -61,7 +61,7 @@ void Foo(bool ok) {
 }
 ```
 
-## Const
+## Const for function parameters
 
 :x:
 ```cpp
@@ -74,5 +74,21 @@ int Foo(int ok) {
 ```cpp
 int Foo(const int ok) {
   return ok + 1;
+}
+```
+
+
+## Brackets for single lines
+
+:x:
+```cpp
+if (true)
+  return;
+```
+
+:heavy_check_mark:
+```cpp
+if (true) {
+  return;
 }
 ```
