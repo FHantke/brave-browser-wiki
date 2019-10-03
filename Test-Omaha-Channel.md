@@ -1,6 +1,6 @@
 Before releasing on the release channel, we need to be able to test upgrades. Omaha has a test channel that we can use and this page has those details (NOTE: x86 and x64 use different channels). macOS uses Sparkle (works similar to Omaha) 
 
-(for overall Omaha information, see [Brave-omaha](https://github.com/brave/brave-browser/wiki/Brave-omaha)
+(for overall Omaha information, see [Brave-omaha](https://github.com/brave/brave-browser/wiki/Brave-omaha))
 
 ## Upgrading on Windows
 Install the latest publicly available release version. Login to a few sites and create a session.
