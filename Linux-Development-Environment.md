@@ -27,3 +27,9 @@ Use `./src/build/install-build-deps-android.sh` for android builds
 # Troubleshooting
 
 Check out the upstream [Checking out and building Chromium on Linux](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md) docs before filing an issue.
+
+# Installing a build on Android
+
+Both for devices and if you have a started emulator:
+
+` ./src/build/android/adb_install_apk.py ./src/out/android_Debug_x86/apks/Bravex86.apk `
