@@ -51,7 +51,7 @@ git reset --hard HEAD
 cd v8
 git reset --hard HEAD
 cd ../..
-git checkout 957ef0f28
+git checkout 1cfdb92cd
 npm run sync -- --all --brave_core_ref=page-graph --run_sync
 npm run build -- Release --debug_build=true --official_build=false
 ```
