@@ -86,6 +86,7 @@ After that just create the new class via `new ...` where the old class created.
 
 ## Patching Android xml files
 
+- AndroidManifest.xml: Brave's addition to the manifest is included in the original chromium's and located in that place https://github.com/brave/brave-core/blob/master/android/java/AndroidManifest.xml. Add new items inside it.
 - layouts: Layouts could be included in original chromium's layouts `<include layout="@layout/brave_toolbar" android:layout_height="wrap_content" android:layout_width="match_parent" />`
 - styles: Add new style to https://github.com/brave/brave-core/blob/master/android/java/res/values/brave_styles.xml
 - preferences: create your preference in a separate xml file https://github.com/brave/brave-core/blob/master/android/java/res/xml/brave_main_preferences.xml and inject it in runtime from java code https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/preferences/BraveMainPreferencesBase.java#L51
