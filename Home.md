@@ -27,6 +27,7 @@ npm install
 npm run init
 ```
 brave-core based android builds should use `npm run init -- --target_os=android --target_cpu=arm`
+
 You can also set the target_os and target_cpu for init and build using
 ```
 npm config set target_os android
