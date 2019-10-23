@@ -40,13 +40,14 @@ The default build is debug.
 # start the debug compile
 npm run build
 ```
-brave-core based android builds should use `npm run build -- --target_os=android --target_arch=arm` or set the npm config variables as specified above for `init`
 
 To do a release build:
 ```
 # start the release compile
 npm run build Release
 ```
+
+brave-core based android builds should use `npm run build -- --target_os=android --target_arch=arm` or set the npm config variables as specified above for `init`
 
 ### Speed up the builds
 
