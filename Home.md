@@ -26,7 +26,12 @@ npm install
 # the Chromium source is downloaded which has a large history
 npm run init
 ```
-brave-core based android builds should use `npm run init -- --target_os=android`
+brave-core based android builds should use `npm run init -- --target_os=android --target_cpu=arm`
+You can also set the target_os and target_cpu for init and build using
+```
+npm config set target_os android
+npm config set target_cpu arm
+```
 
 ## Build Brave
 The default build is debug.
@@ -34,6 +39,7 @@ The default build is debug.
 # start the debug compile
 npm run build
 ```
+brave-core based android builds should use `npm run build -- --target_os=android --target_cpu=arm` or set the npm config variables as specified above for `init`
 
 To do a release build:
 ```
