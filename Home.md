@@ -48,8 +48,6 @@ To do a release build:
 npm run build Release
 ```
 
-brave-core based android builds should use `npm run build -- --target_os=android` or `npm run build -- --target_os=android Release`
-
 ### Speed up the builds
 
 Running a release build with `npm run build Release` can be very slow and use a lot of RAM especially on Linux with the Gold LLVM plugin.  To speed things up we recommend doing a build with debug symbols and without being an official build.  Instead you'd run 
