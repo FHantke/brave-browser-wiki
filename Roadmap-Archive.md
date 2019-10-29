@@ -214,3 +214,13 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Bookmark bar visible under New Tap Page by default - [#5781](https://github.com/brave/brave-browser/issues/5781)
 - [x] Ability to change “Always show bookmark bar” on New Tab Page via brave://settings - [#4782](https://github.com/brave/brave-browser/issues/4782)
 - [x] Optimized publishers list database - [#5907](https://github.com/brave/brave-browser/issues/5907)
+
+### Milestone 0.70.x
+
+- [x] Ability to disable the Brave Shields activity count using brave://settings - [#3121](https://github.com/brave/brave-browser/issues/3121)
+- [x] Add Japan as a supported region for Brave ads - [#5656](https://github.com/brave/brave-browser/issues/5656)
+- [x] Ability to disable Brave Wallet using brave://settings  - [#5673](https://github.com/brave/brave-browser/issues/5673)
+- [x] Ability to save all files from WebTorrent via “Save All Files” - [#1230](https://github.com/brave/brave-browser/issues/1230)
+- [x] Greaselion - [#5674](https://github.com/brave/brave-browser/issues/5674)
+- [x] Simplifying Profile Manager
+- [x] Improving Brave ads frequency so same ad isn’t displayed more than once per hour - [#5281](https://github.com/brave/brave-browser/issues/5281)
