@@ -215,7 +215,7 @@ See the [Roadmap page](https://github.com/brave/brave-browser/wiki/Roadmap) for 
 - [x] Ability to change “Always show bookmark bar” on New Tab Page via brave://settings - [#4782](https://github.com/brave/brave-browser/issues/4782)
 - [x] Optimized publishers list database - [#5907](https://github.com/brave/brave-browser/issues/5907)
 
-### Milestone 0.70.x
+### Milestone 0.70.x - (~October 24, 2019) Completed & Released
 
 - [x] Ability to disable the Brave Shields activity count using brave://settings - [#3121](https://github.com/brave/brave-browser/issues/3121)
 - [x] Add Japan as a supported region for Brave ads - [#5656](https://github.com/brave/brave-browser/issues/5656)
