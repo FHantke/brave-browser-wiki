@@ -5,6 +5,12 @@ Things are not set in stone in this document.  Brave members are expected to upd
 
 Older milestones are available in the [Roadmap Archive page](https://github.com/brave/brave-browser/wiki/Roadmap-Archive).
 
+### Milestone 0.73.x
+
+- [ ] Desktop Bookmark Platform Alignment (Will improving Syncing across platforms - [#5158](https://github.com/brave/brave-browser/issues/5158)
+- [ ] Terminating/Disabling Rewards extension process when disabled Rewards - [#3436](https://github.com/brave/brave-browser/issues/3436)
+- [ ] WebTorrent extension should be non-persistent - [#6372](https://github.com/brave/brave-browser/issues/6372)
+
 ### Milestone 0.72.x
 
 - [ ] New monthly contribution banner for publishers - [#5996](https://github.com/brave/brave-browser/issues/5996)
