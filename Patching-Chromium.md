@@ -14,7 +14,34 @@ You will need to patch (see the below documentation) for some small trivial thin
 - Create instances of your class instead of the Chromium class.
 - Possibly add a `friend` member to the base class you're subclassing.
 - Possibly add a `virtual` keyword to functions you'd like to subclass.
+Header patches should use preprocessor defines when possible. The define should always be the last thing in `public` so you can change to `protected` or `private` inside the define.
+```
+  bool ShouldRunUnloadListenerBeforeClosing(content::WebContents* web_contents);
+  bool RunUnloadListenerBeforeClosing(content::WebContents* web_contents);
 
+  // Set if the browser is currently participating in a tab dragging process.
+  // This information is used to decide if fast resize will be used during
+  // dragging.
+  void SetIsInTabDragging(bool is_in_tab_dragging);
+
+  BRAVE_BROWSER_H
+ private:
+```
+with chromium_src override
+```
+#ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
+#define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
+
+#define BRAVE_BROWSER_H \
+ private: \
+  friend class BookmarkPrefsService;
+
+#include "../../../../../chrome/browser/ui/browser.h"  // NOLINT
+
+#undef BRAVE_BROWSER_H
+
+#endif  // BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
+```
 ## Using the preprocessor to use base implementations inside override files
 
 One strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` and `.h` files but still use the source in the original Chromium code too.  To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium implementation inside of it.
