@@ -14,6 +14,7 @@ You will need to patch (see the below documentation) for some small trivial thin
 - Create instances of your class instead of the Chromium class.
 - Possibly add a `friend` member to the base class you're subclassing.
 - Possibly add a `virtual` keyword to functions you'd like to subclass.
+
 Header patches should use preprocessor defines when possible. The define should always be the last thing in `public` so you can change to `protected` or `private` inside the define.
 ```
   bool ShouldRunUnloadListenerBeforeClosing(content::WebContents* web_contents);
