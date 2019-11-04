@@ -1,6 +1,6 @@
 This wiki intended to track the problem(s) that folks are experiencing and what steps we've already done / need to do. Will fill this in with more details
 
-For folks having this problem, it's recommended that you update all your video card drivers to the latest official supported version (ex: download latest official drivers from [intel.com](https://downloadcenter.intel.com/product/80939/Graphics-Drivers), [nvidia.com](https://www.nvidia.com/Download/index.aspx?lang=en-us), or [amd.com](https://www.amd.com/en/support/kb/faq/gpu-driver-autodetect)). That has resolved many folks
+**For folks having this problem, it's recommended that you update all your video card drivers to the latest official supported version (ex: download latest official drivers from [intel.com](https://downloadcenter.intel.com/product/80939/Graphics-Drivers), [nvidia.com](https://www.nvidia.com/Download/index.aspx?lang=en-us), or [amd.com](https://www.amd.com/en/support/kb/faq/gpu-driver-autodetect)). That has resolved many folks**
 
 <!-- MarkdownTOC -->
 
