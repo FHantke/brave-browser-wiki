@@ -2,6 +2,8 @@ This wiki intended to track the problem(s) that folks are experiencing and what 
 
 **For folks having this problem, it's recommended that you update all your video card drivers to the latest official supported version (ex: download latest official drivers from [intel.com](https://downloadcenter.intel.com/product/80939/Graphics-Drivers), [nvidia.com](https://www.nvidia.com/Download/index.aspx?lang=en-us), or [amd.com](https://www.amd.com/en/support/kb/faq/gpu-driver-autodetect)). That has resolved many folks**
 
+Also worth noting: the driver may expose settings relating to switching between the integrated and discrete video cards in the control panel that is installed. On Windows, you can also right click Brave to check the context menu for an entry like: `Run with graphics processor -> High performance NVIDIA processor`
+
 <!-- MarkdownTOC -->
 
 - [Reported customer incidents](#reported-customer-incidents)
