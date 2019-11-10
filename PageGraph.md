@@ -7,6 +7,8 @@ PageGraph's name comes from the graph-based representation of the document's exe
 
 The resulting graph allows for the analysis of the proximate and upstream causes of every modification in the document. We expect this information will be useful for a variety of filter list generation, privacy-preserving feature restrictions, and web compatibility analysis, among other uses.
 
+PageGraph is the next, production-ish version of [AdGraph](https://arxiv.org/abs/1805.09155), an earlier system for representing page execution as a directed graph.  PageGraph advances AdGraph in a large number of ways, increasing the breath and accuracy of attributions, enabling GraphML export, being kept up to date with Brave and Chromium, among many other improvements. 
+
 PageGraph Currently Does the Following
 ---
 * Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.) and how the script got on the page.
