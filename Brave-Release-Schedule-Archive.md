@@ -26,6 +26,8 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 0.68.x  |    76    | August 13, 2019     | August 21, 2019     |                                |
 | 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.x hotfix 2 w/ c77         |
 | 0.69.x  |    77    | September 4, 2019   | October 3, 2019     |                                |
+| 0.70.x  |    78    | October 15, 2019    | October 24, 2019    |                                |
+| 0.71.x  |    78    | November 5, 2019    | November 12, 2019   |  
 ---
 
 # Beta channel dates:
