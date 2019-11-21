@@ -39,7 +39,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 1.7.x   |    82    | April 21, 2020      | April 28, 2020      |                                            |
 | 1.8.x   |    82    | May 12, 2020        | May 19, 2020        |                                            |
 | 1.9.x   |    83    | June 2, 2020        | June 9, 2020        |                                            |
-| 1.10.x  |    83    | June 30, 2020       | July, 7, 2020       | 4 week cycle to sync with CR               |
+| 1.10.x  |    83    | June 30, 2020       | July, 7, 2020       | 4 week cycle to sync with Chromium |
 | 1.11.x  |    84    | July 28, 2020       | August 4, 2020      | 4 week cycle to sync with CR               |
 | 1.12.x  |    84    | August 18, 2020     | August 25, 2020     |                                            |
 | 1.13.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
