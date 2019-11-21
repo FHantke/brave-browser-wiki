@@ -39,13 +39,13 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 1.7.x   |    82    | April 21, 2020      | April 28, 2020      |                                            |
 | 1.8.x   |    82    | May 12, 2020        | May 19, 2020        |                                            |
 | 1.9.x   |    83    | June 2, 2020        | June 9, 2020        |                                            |
-| 1.10.x  |    83    | June 30, 2020       | July, 7, 2020       |4 week cycle to keep in sync with Chromium  |
-| 1.11.x  |    84    | July 28, 2020       | August 4, 2020      |4 week cycle to keep in sync with Chromium  |
+| 1.10.x  |    83    | June 30, 2020       | July, 7, 2020       | 4 week cycle to sync with Chromium         |
+| 1.11.x  |    84    | July 28, 2020       | August 4, 2020      | 4 week cycle to sync with Chromium         |
 | 1.12.x  |    84    | August 18, 2020     | August 25, 2020     |                                            |
 | 1.13.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
 | 1.14.x  |    85    | September 29, 2020  | October 6, 2020     |                                            |
 | 1.15.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
-| 1.16.x  |    86    | November 17, 2020   | November 24, 2020   | 4 week cycle to keep in sync with Chromium |
+| 1.16.x  |    86    | November 17, 2020   | November 24, 2020   | 4 week cycle to sync with Chromium         |
 | 1.17.x  |    87    | December 8, 2020    | December 15, 2020   |                                            |
 
 - All dates are approximate and are subject to change.
