@@ -71,6 +71,9 @@ _Google does not receive any information about which client is performing these 
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
 
+More information about Proxy redirected URLs can be found here:
+https://github.com/brave/brave-browser/wiki/Proxy-redirected-URLs
+
 ### Modified Features and Functionality
 
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
@@ -86,7 +89,7 @@ _Google does not receive any information about which client is performing these 
 
 Some of the above (along with other issues) were previously tracked in https://github.com/brave/brave-browser/issues/13.
 
-You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates if you installed extensions. 
+You may notice some requests to Google domains. Some of these, such as `clients*.google.com` and `update.googleapis.com` are needed to check for extension updates if you installed extensions.
 
 ## How does Brave compare to `ungoogled-chromium`?
 Description of [`ungoogled-chromium`](https://github.com/Eloston/ungoogled-chromium), per their GitHub page:
