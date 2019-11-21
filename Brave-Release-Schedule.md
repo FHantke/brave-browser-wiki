@@ -24,30 +24,54 @@ If a feature being worked on just misses the freeze time, then it will land on t
 
 Release, Beta, and Dev channels are considered to be Frozen.
 
-
 ---
 
 # Release channel dates:
 
-| Version | Chromium | Migration Date      | Release Date        | Comments                       |
-| ------- | ---------|---------------------|---------------------|--------------------------------|
-| 0.61.x  |    73    | March 5, 2019       | March 12, 2019      |                                |
-| 0.62.x  |    73    | March 26, 2019      | April 2, 2019       |                                |
-| 0.63.x  |    74    | April 16, 2019      | April 23, 2019      |                                |
-| 0.64.x  |    74    | May 7, 2019         | May 14, 2019        |                                |
-| 0.65.x  |    75    | May 29, 2019        | June 6, 2019        |                                |
-| 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                |
-| 0.67.x  |    76    | July 23, 2019       | August 1, 2019      |                                |
-| 0.68.x  |    76    | August 13, 2019     | August 21, 2019     |                                |
-| 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.x hotfix 2 w/ c77         |
-| 0.69.x  |    77    | September 4, 2019   | October 3, 2019     |                                |
-| 0.70.x  |    78    | October 15, 2019    | October 24, 2019    |                                |
-| 0.71.x  |    78    | November 5, 2019    | November 12, 2019   |                                |
-| 0.72.x  |    79    | December 3, 2019    | December 10, 2019   |                                |
+| Version | Chromium | Migration Date      | Release Date        | Comments                                   |
+| ------- | ---------|---------------------|---------------------|--------------------------------------------|
+| 1.1.x   |    79    | December 3, 2019    | December 10, 2019   |                                            |
+| 1.2.x   |    79    | December 30, 2019   | January 6, 2020     | Late release due to holidays               |
+| 1.3.x   |    80    | January 28, 2020    | February 4, 2020    |                                            |
+| 1.4.x   |    80    | February 18, 2020   | February 25, 2020   |                                            |
+| 1.5.x   |    81    | March 10, 2020      | March 17, 2020      |                                            |
+| 1.6.x   |    81    | March 31, 2020      | April 7, 2020       |                                            |
+| 1.7.x   |    82    | April 21, 2020      | April 28, 2020      |                                            |
+| 1.8.x   |    82    | May 12, 2020        | May 19, 2020        |                                            |
+| 1.9.x   |    83    | June 2, 2020        | June 9, 2020        |                                            |
+| 1.10.x  |    83    | June 30, 2020       | July, 7, 2020       |4 week cycle to keep in sync with Chromium  |
+| 1.11.x  |    84    | July 28, 2020       | August 4, 2020      |4 week cycle to keep in sync with Chromium  |
+| 1.12.x  |    84    | August 18, 2020     | August 25, 2020     |                                            |
+| 1.13.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
+| 1.14.x  |    85    | September 29, 2020  | October 6, 2020     |                                            |
+| 1.15.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
+| 1.16.x  |    86    | November 17, 2020   | November 24, 2020   | 4 week cycle to keep in sync with Chromium |
+| 1.17.x  |    87    | December 8, 2020    | December 15, 2020   |                                            |
 
-
+- All dates are approximate and are subject to change.
 - CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
+
+### Number of days between each release on Release channel
+
+
+| Version         | # of days between releases| Comments                                   |
+|-----------------|---------------------------|---------------------------------------------
+| 1.2.x - 1.3.x   | 30 days                   | 4 week cycle due to holidays               |
+| 1.3.x - 1.4.x   | 22 days                   |                                            |
+| 1.4.x - 1.5.x   | 22 days                   |                                            |
+| 1.5.x - 1.6.x   | 22 days                   |                                            |
+| 1.6.x - 1.7.x   | 22 days                   |                                            |
+| 1.7.x - 1.8.x   | 22 days                   |                                            |
+| 1.8.x - 1.9.x   | 22 days                   |                                            |
+| 1.9.x - 1.10.x  | 29 days                   | 4 week cycle to keep in sync with Chromium |
+| 1.10.x - 1.11.x | 29 days                   | 4 week cycle to keep in sync with Chromium |
+| 1.11.x - 1.12.x | 22 days                   |                                            |
+| 1.12.x - 1.13.x | 22 days                   |                                            |
+| 1.13.x - 1.14.x | 22 days                   |                                            |
+| 1.14.x - 1.15.x | 22 days                   |                                            |
+| 1.15.x - 1.16.x | 29 days                   | 4 week cycle to keep in sync with Chromium |
+| 1.16.x - 1.17.x | 22 days                   |                                            |
 
 ---
 
@@ -67,7 +91,6 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 0.71.x  |    78    | October 15, 2019   |              
 | 0.72.x  |    79    | November 5, 2019   |              
 | 0.73.x  |    79    | December 3, 2019   |              
-
 
 - CI does builds for Beta channel once a day if there are changes or as requested.
 - Updates are released as there are builds as long as tests pass.
