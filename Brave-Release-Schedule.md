@@ -45,7 +45,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 1.13.x  |    85    | September 8, 2020   | September 15, 2020  |                              |
 | 1.14.x  |    85    | September 29, 2020  | October 6, 2020     |                              |
 | 1.15.x  |    86    | October 20, 2020    | October 27, 2020    |                              |
-| 1.16.x  |    86    | November 17, 2020   | November 24, 2020   | 4 week cycle to sync with CR |
+| 1.16.x  |    86    | November 17, 2020   | November 24, 2020   | 4 week cycle due to holidays               |
 | 1.17.x  |    87    | December 8, 2020    | December 15, 2020   |                              |
 
 - All dates are approximate and are subject to change.
