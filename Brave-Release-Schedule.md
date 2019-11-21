@@ -56,7 +56,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 
 | Version         | # of days between releases| Comments                                   |
-|-----------------|---------------------------|---------------------------------------------
+|:---------------:|:-------------------------:|---------------------------------------------
 | 1.2.x - 1.3.x   | 30 days                   | 4 week cycle due to holidays               |
 | 1.3.x - 1.4.x   | 22 days                   |                                            |
 | 1.4.x - 1.5.x   | 22 days                   |                                            |
