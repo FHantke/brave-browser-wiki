@@ -29,7 +29,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 # Release channel dates:
 
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
-|:-------:|:--------:|-------------------------|---------------------|--------------------------------------------|
+|:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.1.x   |    79    | December 3, 2019    | December 10, 2019   |                                            |
 | 1.2.x   |    79    | December 30, 2019   | January 6, 2020     |Late release due to holidays                |
 | 1.3.x   |    80    | January 28, 2020    | February 4, 2020    |                                            |
@@ -54,7 +54,6 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 ### Number of days between each release on Release channel
 
-
 | Version         | # of days between releases| Comments                                   |
 |:---------------:|:-------------------------:|---------------------------------------------
 | 1.2.x - 1.3.x   | 30 days                   | 4 week cycle due to holidays               |
@@ -77,20 +76,25 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 # Beta channel dates:
 
-| Version | Chromium | Migration Date     | Comments                                  |
-| ------- | ---------|--------------------|-------------------------------------------|
-| 0.62.x  |    73    | March 5, 2019      |  
-| 0.63.x  |    74    | March 26, 2019     |              
-| 0.64.x  |    74    | April 16, 2019     |              
-| 0.65.x  |    75    | May 7, 2019        |              
-| 0.66.x  |    75    | May 28, 2019       |              
-| 0.67.x  |    76    | June 25, 2019      |              
-| 0.68.x  |    76    | July 23, 2019      |              
-| 0.69.x  |    77    | August 13, 2019    |              
-| 0.70.x  |    77    | September 4, 2019  |              
-| 0.71.x  |    78    | October 15, 2019   |              
-| 0.72.x  |    79    | November 5, 2019   |              
-| 0.73.x  |    79    | December 3, 2019   |              
+| Version | Target Chromium   | Migration Date      | Comments                                  |
+|:-------:|:-----------------:|---------------------|-------------------------------------------|
+| 1.2.x   | 79                | December 3, 2019    |                                           |
+| 1.3.x   | 79                | December 30, 2019   |                                           |
+| 1.4.x   | 80                | January 28, 2020    |                                           |
+| 1.5.x   | 80                | February 18, 2020   |                                           |
+| 1.6.x   | 81                | March 10, 2020      |                                           |
+| 1.7.x   | 81                | March 31, 2020      |                                           |
+| 1.8.x   | 82                | April 21, 2020      |                                           |
+| 1.9.x   | 82                | May 12, 2020        |                                           |
+| 1.10.x  | 83                | June 2, 2020        |                                           |
+| 1.11.x  | 83                | June 30, 2020       |                                           |
+| 1.12.x  | 84                | July 28, 2020       |                                           |
+| 1.13.x  | 84                | August 18, 2020     |                                           |
+| 1.14.x  | 85                | September 8, 2020   |                                           |
+| 1.15.x  | 85                | September 29, 2020  |                                           |
+| 1.16.x  | 86                | October 20, 2020    |                                           |
+| 1.17.x  | 86                | November 17, 2020   |                                           |
+| 1.18.x  | 87                | December 8, 2020    |                                           |
 
 - CI does builds for Beta channel once a day if there are changes or as requested.
 - Updates are released as there are builds as long as tests pass.
@@ -99,20 +103,25 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 # Dev channel dates:
 
-| Version | Target Chromium | Migration Date     | Comments                                  |
-| ------- | ----------------|--------------------|-------------------------------------------|
-| 0.63.x  |    74           | March 5, 2019      |                     
-| 0.64.x  |    74           | March 26, 2019     |              
-| 0.65.x  |    75           | April 16, 2019     |                     
-| 0.66.x  |    75           | May 7, 2019        |              
-| 0.67.x  |    76           | May 28, 2019       |                     
-| 0.68.x  |    76           | June 25, 2019      |              
-| 0.69.x  |    77           | July 23, 2019      |                     
-| 0.70.x  |    77           | August 13, 2019    |              
-| 0.71.x  |    78           | September 4, 2019  |                     
-| 0.72.x  |    79           | October 15, 2019   | 
-| 0.73.x  |    79           | November 5, 2019   |              
-| 0.74.x  |    80           | December 3, 2019   |              
+| Version | Target Chromium   | Migration Date      | Comments                                  |
+|:-------:|:-----------------:|---------------------|-------------------------------------------|
+| 1.3.x   | 79                | December 3, 2019    |                                           |
+| 1.4.x   | 79                | December 30, 2019   |                                           |
+| 1.5.x   | 80                | January 28, 2020    |                                           |
+| 1.6.x   | 80                | February 18, 2020   |                                           |
+| 1.7.x   | 81                | March 10, 2020      |                                           |
+| 1.8.x   | 81                | March 31, 2020      |                                           |
+| 1.9.x   | 82                | April 21, 2020      |                                           |
+| 1.10.x  | 82                | May 12, 2020        |                                           |
+| 1.11.x  | 83                | June 2, 2020        |                                           |
+| 1.12.x  | 83                | June 30, 2020       |                                           |
+| 1.13.x  | 84                | July 28, 2020       |                                           |
+| 1.14.x  | 84                | August 18, 2020     |                                           |
+| 1.15.x  | 85                | September 8, 2020   |                                           |
+| 1.16.x  | 85                | September 29, 2020  |                                           |
+| 1.17.x  | 86                | October 20, 2020    |                                           |
+| 1.18.x  | 86                | November 17, 2020   |                                           |
+| 1.19.x  | 87                | December 8, 2020    |                                           |
 
 - CI does builds for Dev channel once a day if there are changes or as requested.
 - Updates are released as there are builds as long as tests pass.
