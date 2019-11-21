@@ -48,8 +48,14 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 0.63.x  |    74    | March 26, 2019     |              
 | 0.64.x  |    74    | April 16, 2019     |              
 | 0.65.x  |    75    | May 7, 2019        |              
-| 0.66.x  |    75    | May 28, 2019       |              
-
+| 0.66.x  |    75    | May 28, 2019       |
+| 0.67.x  |    76    | June 25, 2019      |              
+| 0.68.x  |    76    | July 23, 2019      |              
+| 0.69.x  |    77    | August 13, 2019    |              
+| 0.70.x  |    77    | September 4, 2019  |              
+| 0.71.x  |    78    | October 15, 2019   |              
+| 0.72.x  |    79    | November 5, 2019   |              
+| 0.73.x  |    79    | December 3, 2019   |                     
 ---
 
 # Dev channel dates:
@@ -72,7 +78,13 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 0.65.x  |    75           | April 16, 2019     |                     
 | 0.66.x  |    75           | May 7, 2019        |              
 | 0.67.x  |    76           | May 28, 2019       |                     
-              
+| 0.68.x  |    76           | June 25, 2019      |              
+| 0.69.x  |    77           | July 23, 2019      |                     
+| 0.70.x  |    77           | August 13, 2019    |              
+| 0.71.x  |    78           | September 4, 2019  |                     
+| 0.72.x  |    79           | October 15, 2019   | 
+| 0.73.x  |    79           | November 5, 2019   |              
+| 0.74.x  |    80           | December 3, 2019   |                         
 ---
 
 # Nightly channel dates:
@@ -82,4 +94,11 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 0.65.x  |    75           | March 26, 2019     |              
 | 0.66.x  |    75           | April 16, 2019     |                     
 | 0.67.x  |    76           | May 7, 2019        |              
-| 0.68.x  |    76           | May 28, 2019       |                                  
+| 0.68.x  |    76           | May 28, 2019       |                     
+| 0.69.x  |    77           | June 25, 2019      |              
+| 0.70.x  |    77           | July 23, 2019      |                     
+| 0.71.x  |    78           | August 13, 2019    |              
+| 0.72.x  |    78           | September 4, 2019  |                     
+| 0.73.x  |    79           | October 15, 2019   |              
+| 0.74.x  |    80           | November 5, 2019   |              
+| 0.75.x  |    80           | December 3, 2019   |                                
