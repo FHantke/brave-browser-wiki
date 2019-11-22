@@ -1,7 +1,7 @@
 Here is a checklist to help with writing specs.
 
-- [ ] The team who is assigned including QA, Designer, PM, and devs per platform.
-- [ ] An objective: Generic description of what's being planned.
+- [ ] List the team who is assigned including QA, Designer, PM, and devs per platform.
+- [ ] Add an objective - Generic description of what's being planned.
 - [ ] The status of the spec `Pre-draft` (not ready for review), `Draft`, `In Development`, or `Complete` which signals that it is landed on Nightly.
 - [ ] How does the feature relate to high level objectives of the company.
 - [ ] Non-goals of the spec.
