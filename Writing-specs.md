@@ -27,8 +27,13 @@ If there are UI component
 If there are technical components
 - [ ] Provide technical information when possible, work with a developer if needed.
 
-When there are security sensitive or privacy concerns
-- [ ] File a security review issue.
+Privacy / security
+- [ ] Is there any kind of pings being made to a remote server?
+- [ ] Is there any encryption being done?
+- [ ] Is any information being hashed?
+- [ ] Is there privacy or security sensitive information being persisted?
+- [ ] Does anything make you think the security or privacy team might be interested in the work?
+- [ ] Did you file a security / privacy review if any of the above are true.
 
 Process considerations
 - [ ] Post the specs for review on #specs.
