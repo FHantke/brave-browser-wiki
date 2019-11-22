@@ -23,3 +23,7 @@ If there are technical components
 
 When there are security sensitive or privacy concerns
 - [ ] File a security review issue
+
+Process considerations
+- [ ] Post the specs for review on #specs
+- [ ] Callout major status changes when the draft enters new status's.
