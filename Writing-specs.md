@@ -3,7 +3,7 @@ Here is a checklist to help with writing specs.
 - [ ] The team who is assigned including QA, Designer, PM, and devs per platform.
 - [ ] An objective: Generic description of what's being planned.
 - [ ] The status of the spec `Pre-draft` (not ready for review), `Draft`, `In Development`, or `Complete` which signals that it is landed on Nightly.
-- [ ] How does the feature relate to high level objectives of the company (ACRE).
+- [ ] How does the feature relate to high level objectives of the company.
 - [ ] Non-goals of the spec.
 - [ ] Target platforms that will be supported (e.g. Desktop, iOS, Android, or which sites it applies to etc.)
 - [ ] Does clearing browsing data affect the thing being spec'ed?
@@ -15,6 +15,7 @@ Here is a checklist to help with writing specs.
 - [ ] Did you specify not only how things should be but what has to change from the current way?
 - [ ] Can a time estimation be provided? 
 - [ ] Are things consistent with design guidelines that exist? 
+- [ ] Are acronyms being used defined somewhere? 
 
 
 If there are UI component
