@@ -14,6 +14,7 @@ Here is a checklist to help with writing specs.
 - [ ] Which state is persistent and which state is not.
 - [ ] Did you specify not only how things should be but what has to change from the current way?
 - [ ] Can a time estimation be provided? 
+- [ ] Are things consistent with design guidelines that exist? 
 
 
 If there are UI component
@@ -40,3 +41,4 @@ Process considerations
 - [ ] Callout major status changes when the draft enters a new status.
 - [ ] Specs should be updated forever unless there is documentation that exists. Then a spec can be a diff on the documentation.
 - [ ] Can the work be done in iterations or phases? If so you might want to indicate priority on things within the spec or consider splitting up the spec. 
+- [ ] Once work is about to begin, schedule a kick-off meeting to start the work.
