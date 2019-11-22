@@ -39,3 +39,4 @@ Process considerations
 - [ ] Post the specs for review on #specs.
 - [ ] Callout major status changes when the draft enters a new status.
 - [ ] Specs should be updated forever unless there is documentation that exists. Then a spec can be a diff on the documentation.
+- [ ] Can the work be done in iterations or phases? If so you might want to indicate priority on things within the spec or consider splitting up the spec. 
