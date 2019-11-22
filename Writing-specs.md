@@ -15,6 +15,7 @@ Here is a checklist to help with writing specs.
 - [ ] Did you specify not only how things should be but what has to change from the current way?
 - [ ] Can a time estimation be provided? 
 - [ ] Are things consistent with design guidelines that exist? 
+- [ ] Are there conflicting in-progress specs that should be considered?
 - [ ] Are acronyms being used defined somewhere? 
 - [ ] Are the strings defined that will be used? Remember to follow up after seeing real builds and get all string changes in by the time it is on Dev channel.
 - [ ] Does your spec mention a specific version? In most cases this shouldn't be done, it's ok to drive for a specific version but most things should ride the trains.
