@@ -17,6 +17,7 @@ Here is a checklist to help with writing specs.
 - [ ] Are things consistent with design guidelines that exist? 
 - [ ] Are acronyms being used defined somewhere? 
 - [ ] Are the strings defined that will be used? Remember to follow up after seeing real builds and get all string changes in by the time it is on Dev channel.
+- [ ] Does your spec mention a specific version? In most cases this shouldn't be done, it's ok to drive for a specific version but most things should ride the trains.
 
 If there are UI component
 - [ ] Do you have mockups for every view and every state?
