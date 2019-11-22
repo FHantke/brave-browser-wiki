@@ -26,4 +26,4 @@ When there are security sensitive or privacy concerns
 
 Process considerations
 - [ ] Post the specs for review on #specs
-- [ ] Callout major status changes when the draft enters new status's.
+- [ ] Callout major status changes when the draft enters a new status.
