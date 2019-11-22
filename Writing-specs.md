@@ -12,7 +12,7 @@ Here is a checklist to help with writing specs.
 - [ ] Are there any open questions? List them explicitly. 
 - [ ] What are the states of what you are designing?
 - [ ] Which state is persistent and which state is not.
-- [ ] Did you specify not only how things should be but what has to change?
+- [ ] Did you specify not only how things should be but what has to change from the current way?
 - [ ] Can a time estimation be provided? 
 
 
