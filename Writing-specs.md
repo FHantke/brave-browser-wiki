@@ -44,3 +44,4 @@ Process considerations
 - [ ] Can the work be done in iterations or phases? If so you might want to indicate priority on things within the spec or consider splitting up the spec. 
 - [ ] Once work is about to begin, schedule a kick-off meeting to start the work.
 - [ ] Push to make sure tests are defined.
+- [ ] Is a QA plan defined?
