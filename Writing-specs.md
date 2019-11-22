@@ -36,7 +36,14 @@ Privacy / security
 - [ ] Is any information being hashed?
 - [ ] Is there privacy or security sensitive information being persisted?
 - [ ] Does anything make you think the security or privacy team might be interested in the work?
-- [ ] Did you file a security / privacy review if any of the above are true.
+- [ ] Did you file a security / privacy review if any of the above are true?
+
+Devops involvement
+- [ ] Does the spec need to use a service?
+- [ ] Does the spec list anything that needs to be downloaded and possibly be behind a CDN?
+- [ ] Are there things that will need ongoing process or maintenance that could be added to Jenkins?
+- [ ] Does the change need to proxy any network traffic?
+- [ ] Did you file a devops issue if any of the above are true?
 
 Process considerations
 - [ ] Post the specs for review on #specs.
