@@ -16,7 +16,7 @@ Here is a checklist to help with writing specs.
 - [ ] Can a time estimation be provided? 
 - [ ] Are things consistent with design guidelines that exist? 
 - [ ] Are acronyms being used defined somewhere? 
-
+- [ ] Are the strings defined that will be used? Remember to follow up after seeing real builds and get all string changes in by the time it is on Dev channel.
 
 If there are UI component
 - [ ] Do you have mockups for every view and every state?
@@ -43,3 +43,4 @@ Process considerations
 - [ ] Specs should be updated forever unless there is documentation that exists. Then a spec can be a diff on the documentation.
 - [ ] Can the work be done in iterations or phases? If so you might want to indicate priority on things within the spec or consider splitting up the spec. 
 - [ ] Once work is about to begin, schedule a kick-off meeting to start the work.
+- [ ] Push to make sure tests are defined.
