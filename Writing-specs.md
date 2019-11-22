@@ -9,6 +9,9 @@ Here is a checklist to help with writing specs.
 - [ ] Does the thing being spec'ed change with different window types? E.g. Private window and Tor window?
 - [ ] Will the feature be available on all channels? Is a feature flag needed so that work can land incrementally without reaching Release channel until it's ready?
 - [ ] Are there any open questions? List them explicitly. 
+- [ ] What are the states of what you are designing?
+- [ ] Which state is persistent and which state is not.
+
 
 If there are UI component
 - [ ] Have mockups
