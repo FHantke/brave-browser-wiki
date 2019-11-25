@@ -72,7 +72,7 @@ Less common load_flags:
  - `net::LOAD_DISABLE_CACHE`
  - `net::LOAD_DO_NOT_SEND_AUTH_DATA`
 
-Other possible load_flags are listed in `net/base/load_flags_list.h`
+Other possible load_flags are listed in `net/base/load_flags_list.h`. You should include `net/base/load_flags.h` for those flags.
 
 ***
 
