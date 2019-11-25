@@ -6,7 +6,7 @@ Before you begin, make sure your system satisfies the [system requirements](http
 
 ## Visual Studio
 
-Install Visual Studio Community 2017 from https://www.visualstudio.com/downloads/.
+Install Visual Studio Community 2019 from https://www.visualstudio.com/downloads/.
 Follow guidance from the ["Visual Studio" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#visual-studio) of the Chromium Windows build instructions.
 
 ## Git
