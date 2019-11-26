@@ -21,6 +21,7 @@ Here is a checklist to help with writing specs.
 - [ ] Does your spec mention a specific version? In most cases this shouldn't be done, it's ok to drive for a specific version but most things should ride the trains.
 - [ ] Are there any Privacy-Preserving Product Analytics (P3A) needs? 
 - [ ] Have you considered accessibility? You should, specify any relevant details. 
+- [ ] Is every error condition possible along with how to handle them spelt out explicitly?
 
 If there are UI component
 - [ ] Do you have mockups for every view and every state?
