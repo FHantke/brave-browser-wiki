@@ -33,8 +33,8 @@
 ### Q5: How many bookmarks do you have?
 (_`Brave.Core.BookmarksCountOnProfileLoad`_)
 1. 0-5
-2. 5-20
-3. 20-100
+2. 6-20
+3. 21-100
 4. Over 100
 
 ### Q6: How many open windows do you have?
