@@ -82,7 +82,7 @@
 ### Q12: How much BAT, excluding grants, is in your wallet?
 (_`Brave.Rewards.WalletBalance`_)
 1. No wallet created
-2. 0-10 BAT, excluding grants
+2. Less than 10 BAT (0-9), excluding grants
 3. 10-50 BAT, excluding grants
 4. Over 50 BAT, excluding grants
 
@@ -126,9 +126,9 @@
 ### Q18: How many questions the browser was able to answer within a week?
 (_`Brave.P3A.SentAnswersCount`_)
 1. None
-2. Between 1 and 5
-3. Between 5 and 10
-4. More than 10
+2. Between 1 and 4
+3. Between 5 and 9
+4. 10 or more
 
 
 ## Metrics Proposed/Under Development
