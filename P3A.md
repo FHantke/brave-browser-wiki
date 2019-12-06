@@ -109,7 +109,7 @@
 3. Sync enabled more than two devices
 
 ### Q16: How many extensions have you installed?
-(_`Brave.Core.NumberOfExtensions`_)
+(_`Brave.Core.NumberOfExtensions`_ - only queried on program start)
 1. None
 2. One extension
 3. Two to four extensions
