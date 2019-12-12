@@ -72,6 +72,8 @@ Test it's working by running `which sccache` and observing that your shell has f
       Can't handle UnknownFlag arguments with -Xclang
 To fix this, reinstall v0.2.7: `cargo install -f --git https://github.com/petemill/sccache.git --rev 5ce26c30c16ecd14ff16ec53bb242340ca402423`
 
+If you can't compile v0.2.7 because your operating system's version of OpenSSL is too new: `cargo install -f --git https://github.com/antonok-edm/sccache.git --rev 2bf7ff480fbd70e43c167af193a4fc68d385df3a`
+
 
 ## Configuring sccache
 
