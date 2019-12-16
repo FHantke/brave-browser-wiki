@@ -57,3 +57,65 @@ git checkout fbec2d65e
 npm run sync -- --all --brave_core_ref=page-graph --run_sync
 npm run build -- Release --debug_build=true --official_build=false
 ```
+
+# PageGraph Documentation
+## Types created by PageGraph
+C++ definition locations below are relative to the `src/brave/third_party_blink_brave_page_graph/graph_item` directory of the `brave-core` repository.
+### Node types
+
+| Node type                 | C++ Definition                          |
+|---------------------------|-----------------------------------------|
+| `"extensions"`            | node_extensions.cc                      |
+| `"remote frame"`          | node_remote_frame.cc                    |
+| `"resource"`              | node_resource.cc                        |
+| `"ad filter"`             | filter/node_ad_filter.cc                |
+| `"tracker filter"`        | filter/node_tracker_filter.cc           |
+| `"fingerprinting filter"` | filter/node_fingerprinting_filter.cc    |
+| `"web API"`               | js/node_js_webapi.cc                    |
+| `"JS builtin"`            | js/node_js_builtin.cc                   |
+| `"HTML element"`          | html/node_html_element.cc               |
+| `"text node"`             | html/node_html_text.cc                  |
+| `"DOM root"`              | html/node_dom_root.cc                   |
+| `"frame owner"`           | html/node_frame_owner.cc                |
+| `"storage"`               | storage/node_storage_root.cc            |
+| `"local storage"`         | storage/node_storage_localstorage.cc    |
+| `"session storage"`       | storage/node_storage_sessionstorage.cc  |
+| `"cookie jar"`            | storage/node_storage_cookiejar.cc       |
+| `"script"`                | actor/node_script.cc                    |
+| `"parser"`                | actor/node_parser.cc                    |
+| `type_ + " shield"`       | shield/node_shield.cc                   |
+| `"Brave Shields"`         | shield/node_shields.cc                  |
+
+### Edge types
+
+| Edge Type                  | C++ Definition                               |
+|----------------------------|----------------------------------------------|
+| `"filter"`                 | edge_filter.cc                               |
+| `"structure"`              | edge_html.cc                                 |
+| `"cross DOM"`              | edge_cross_dom.cc                            |
+| `"resource block"`         | edge_resource_block.cc                       |
+| `"shield"`                 | edge_shield.cc                               |
+| `"text change"`            | edge_text_change.cc                          |
+| `"remove node"`            | node/edge_node_remove.cc                     |
+| `"delete node"`            | node/edge_node_delete.cc                     |
+| `"insert node"`            | node/edge_node_insert.cc                     |
+| `"create node"`            | node/edge_node_create.cc                     |
+| `"js result"`              | js/edge_js_result.cc                         |
+| `"js call"`                | js/edge_js_call.cc                           |
+| `"request complete"`       | request/edge_request_complete.cc             |
+| `"request error"`          | request/edge_request_error.cc                |
+| `"request start"`          | request/edge_request_start.cc                |
+| `"request response"`       | request/edge_request_response.cc             |
+| `"add event listener"`     | event_listener/edge_event_listener_add.cc    |
+| `"remove event listener"`  | event_listener/edge_event_listener_remove.cc |
+| `"event listener"`         | event_listener/edge_event_listener.cc        |
+| `"storage set"`            | storage/edge_storage_set.cc                  |
+| `"storage read result"`    | storage/edge_storage_read_result.cc          |
+| `"delete storage"`         | storage/edge_storage_delete.cc               |
+| `"read storage call"`      | storage/edge_storage_read_call.cc            |
+| `"clear storage"`          | storage/edge_storage_clear.cc                |
+| `"storage bucket"`         | storage/edge_storage_bucket.cc               |
+| `"execute from attribute"` | execute/edge_execute_attr.cc                 |
+| `"execute"`                | execute/edge_execute.cc                      |
+| `"set attribute"`          | attribute/edge_attribute_set.cc              |
+| `"delete attribute"`       | attribute/edge_attribute_delete.cc           |
