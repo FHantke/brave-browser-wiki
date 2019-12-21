@@ -67,7 +67,7 @@
 5. Never used
 
 ### Q10: Have you ever used a Tor private window?
-(_`Brave.Core.LastTimeIncognitoUsed`_)
+(_`Brave.Core.TorEverUsed`_)
 1. Yes
 2. No
 
