@@ -66,13 +66,9 @@ npm run build -- Debug
 You may also want to try [[using sccache|sccache-for-faster-builds]].
 
 ## Run Brave
-To start debug build:
+To start the build:
 
-`npm start`
-
-To start release build:
-
-`npm start Release`
+`npm start [Release|Component|Static|Debug]`
 
 # Staying up to date
 
