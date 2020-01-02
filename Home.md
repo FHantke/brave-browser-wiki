@@ -35,9 +35,9 @@ npm config set target_arch arm
 ```
 
 ## Build Brave
-The default build is debug.
+The default build is component.
 ```
-# start the debug compile
+# start the component build compile
 npm run build
 ```
 
@@ -58,9 +58,9 @@ To run a statically linked build (takes longer to build, but starts faster)
 npm run build -- Static
 ```
 
-To run a dynamically linked build (faster to build, but starts slower)
+To run a debug build (Component build with is_debug=true)
 ```bash
-npm run build -- Component
+npm run build -- Debug
 ```
 
 You may also want to try [[using sccache|sccache-for-faster-builds]].
