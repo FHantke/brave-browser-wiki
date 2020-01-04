@@ -78,7 +78,7 @@ Blocking web notification servers, protecting user privacy, security and stoppin
 **Address:** https://github.com/brave/adblock-lists/blob/master/brave-notifications.txt<br>
 **Support:** https://github.com/brave/adblock-lists/issues
 
-* **Disconnect List** (Based on https://github.com/disconnectme/disconnect-tracking-protection)<br>
+* **Disconnect List** (Based on https://github.com/disconnectme/disconnect-tracking-protection, but transformed into adblock filter rule format by Brave)<br>
 
 Disconnect list is used to block 3rd-party content such as trackers, adservers and social media servers<br>
 **Type of Rules**: `#network`<br>
