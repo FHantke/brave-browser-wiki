@@ -80,7 +80,7 @@ Blocking web notification servers, protecting user privacy, security and stoppin
 
 * **Disconnect List** (Based on https://github.com/disconnectme/disconnect-tracking-protection)<br>
 
-Disconnect list is used to block 3rd-party content such as social media servers<br>
+Disconnect list is used to block 3rd-party content such as trackers, adservers and social media servers<br>
 **Type of Rules**: `#network`<br>
 **Address:** https://github.com/brave/adblock-lists/blob/master/brave-disconnect.txt<br>
 **Support:** **Support:** https://github.com/brave/adblock-lists/issues
