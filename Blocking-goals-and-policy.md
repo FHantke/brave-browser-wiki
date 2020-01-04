@@ -43,14 +43,14 @@ Primary filter list that removes most advertisements from webpages.<br>
 
 * **Easyprivacy**
 
-Removes tracking scripts, infomation collectors and other tracking elements. Protecting your privacy.<br>
+Removes tracking scripts, information collectors and other tracking elements. Protecting your privacy.<br>
 **Type of Rules**: #network<br>
 **Address:** https://easylist.to/easylist/easyprivacy.txt<br>
 **Support:** https://forums.lanik.us/
 
 * **Brave-unbreak (Brave specific list)**
 
-A specific list for filters and fixes not included in Easylist or Easyprivacy.<br>
+Brave-generated filter rules to address web compatibility issues unique to Brave, and to target anti-adblock resources.<br>
 **Type of Rules**: `#network`<br>
 **Address:** https://github.com/brave/adblock-lists/blob/master/brave-unbreak.txt<br>
 **Support:** https://github.com/brave/adblock-lists/issues
@@ -64,7 +64,7 @@ Filters to prevent coinmining scripts being loaded in the browser.<br>
 
 * **uBlock Lists**
 
-Ublock origin specific fixes not included in Easylist<br>
+Ublock origin specific fixes to counter broken sites and to address privacy scripts.<br>
 **Type of Rules**: `#network` `#cosmetic`<br>
 **Address:** https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt<br>
 **Address:** https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt<br>
@@ -78,8 +78,9 @@ Blocking web notification servers, protecting user privacy, security and stoppin
 **Address:** https://github.com/brave/adblock-lists/blob/master/brave-notifications.txt<br>
 **Support:** https://github.com/brave/adblock-lists/issues
 
-* **Disconnect List** (Based on https://github.com/disconnectme/disconnect-tracking-protection)
+* **Disconnect List** (Based on https://github.com/disconnectme/disconnect-tracking-protection)<br>
 
+Disconnect list is used to block 3rd-party content such as social media servers<br>
 **Type of Rules**: `#network`<br>
 **Address:** https://github.com/brave/adblock-lists/blob/master/brave-disconnect.txt<br>
 **Support:** **Support:** https://github.com/brave/adblock-lists/issues
