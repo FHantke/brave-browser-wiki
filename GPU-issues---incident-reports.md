@@ -31,6 +31,9 @@ Work-around suggested by support for these folks has been to disable hardware ac
 - https://www.reddit.com/r/brave_browser/comments/c1fyal/absurd_cpu_and_gpu_performance/ **(macOS / ??)**
     > Is there a reason it is using my radeon gpu chip instead of my intel chip? Some games I run do not even use the high performance chip; I just do not understand why it requires high performance when certain game do not (mac from used 2016), let alone a browser
 
+- https://twitter.com/samwightt/status/1213668945678475265
+    > Only thing that's keeping me from using it is that on my Surface Book 2 it defaults to using my GTX 1060 instead of integrated graphics, which DRAINS the battery. Using Chrome for now :(
+
 ### Bad Web GL performance
 - https://github.com/brave/brave-browser/issues/4279 **(Windows 10 x64 / 0.69.24)**
 
