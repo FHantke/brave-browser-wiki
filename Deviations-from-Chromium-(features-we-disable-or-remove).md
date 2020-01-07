@@ -83,7 +83,7 @@ https://github.com/brave/brave-browser/wiki/Proxy-redirected-URLs
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 - Plugins, sensors and background-sync page permissions are disabled by default. Users can override these using the usual page permission settings.
 - Download protection remote lookups are currently disabled (https://github.com/brave/brave-browser/issues/4341).
-- Remote debugging is disabled by default. Can be toggled on brave://settings/privacy (implemented with https://github.com/brave/brave-core/pull/4044). This will hit Google servers and is not proxied (yet).
+- Remote debugging is disabled by default. Can be toggled on brave://settings/privacy (implemented with https://github.com/brave/brave-core/pull/4044). This will hit Google servers and is not proxied (yet). There is an [issue created for proxying and enabling this by default](https://github.com/brave/brave-browser/issues/7645). 
 
 ### Comments
 
