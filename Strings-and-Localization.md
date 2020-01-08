@@ -88,6 +88,13 @@ Note, that the text inside `ex` should not be translated - it's an example of va
 
 <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
 
+## When to submit orders and what to do when they're done
+For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
+
+When submitting, we can submit the strings for *master*. When those are complete, we'd pull them into master and then look at back-porting the strings. If release channel is 1.2 and nightly is 1.5, we'd submit uplifts for 1.4 back to 1.2 with the string changes. This can cause problems if the names of the strings (the key) change.
+
+Once translations are ordered, we should make every effort to NOT make string changes to the product. The strings in the product should be considered frozen by reviewers.
+
 # Localizing extensions
 
 ## Ethereum Remote Client
