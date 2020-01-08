@@ -1,5 +1,7 @@
 Brave displays a warning for extensions that have not been verified by Brave.
 
+![](https://github.com/jumde/jumde.github.io/blob/master/img/review.png)
+
 Brave Developers have reviewed a list of extensions which are safe to use. This list of extensions is available here: https://github.com/brave/extension-whitelist/blob/master/data/whitelist.json
 
 To get an extension added to the list, please follow the following process:
