@@ -1,11 +1,13 @@
-Brave displays a warning for extensions that have not been verified by Brave.
+Extensions are a source of risk for people who use web browsers. Despite being hosted on credible sites operated by browser vendors, extensions are not vetted or endorsed by the people who make browsers — with sparingly few exceptions. Extensions are made for malicious purposes or subverted or compromised to do mischief.
+
+To minimize exposure to these risks, it's safest to use the smallest practical set of extensions, and then only from trustworthy and competent developers. To ensure that people are aware of this risk, Brave displays a warning when you try to install an extension:
 
 ![](https://github.com/jumde/jumde.github.io/blob/master/img/review.png)
 
-Brave Developers have reviewed a list of extensions which are safe to use. This list of extensions is available here: https://github.com/brave/extension-whitelist/blob/master/data/whitelist.json
+Brave's developers have reviewed a [short public list of extensions which we believe are safe to use]https://github.com/brave/extension-whitelist/blob/master/data/whitelist.json).
 
-To get an extension added to the list, please follow the following process:
+To add an extension to this list, please follow the following process:
 
-1. Create an issue asking for consideration to add to the extension whitelist
-2. Security team will go through, as time allows
-3. If approved, extension whitelist is updated.
+1. Create an issue detailing the extension to be added. Make sure to note factors & evidence supporting credibility and integrity of the developers & maintainers.
+2. The security team will review the issue, and may request additional information.
+3. If approved, extension whitelist will updated.
