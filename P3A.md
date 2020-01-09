@@ -10,7 +10,7 @@
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-(_`DefaultBrowser.State`_)
+(_Brave.Core.IsDefault_) ~~(_`DefaultBrowser.State`_)~~
 1. No
 2. Yes
 
