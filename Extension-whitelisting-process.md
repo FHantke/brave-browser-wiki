@@ -4,7 +4,7 @@ To minimize exposure to these risks, it's safest to use the smallest practical s
 
 ![](https://github.com/jumde/jumde.github.io/blob/master/img/review.png)
 
-Brave's developers have reviewed a [short public list of extensions which we believe are [safe to use]( https://github.com/brave/extension-whitelist/blob/master/data/whitelist.json).
+Brave's developers have reviewed a [short public list of extensions which we believe are safe to use]( https://github.com/brave/extension-whitelist/blob/master/data/whitelist.json).
 
 To add an extension to this list, please follow the following process:
 
