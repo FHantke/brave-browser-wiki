@@ -41,6 +41,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Battery API is disabled](https://github.com/brave/brave-core/pull/114)
 - [WebBluetooth API is disabled](https://github.com/brave/brave-core/pull/114)
 - [WebRTC debug log uploading is disabled](https://github.com/brave/brave-core/pull/809)
+- [WebXR is disabled](https://github.com/brave/brave-core/commit/f460ff7d782545019aa4a49eb0efa34067fa9325)
 - [Uploading settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/745)
 - [Retrieving OEM default settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/978)
 - [Tracing crash log uploading is disabled](https://github.com/brave/brave-browser/issues/2121)
