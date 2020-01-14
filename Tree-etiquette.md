@@ -1,5 +1,4 @@
-- Congratulations, if you're reading this wiki and you're part of the Brave team, you're a Tree Sheriff.
-- Only merge something if brave-browser jenkins [[CI status|Checks-done-on-Pull-Request]] passes for the pipeline steps. If you don't know how to do this, check with @mihaiplesa for training.
+- Only merge something if brave-browser jenkins [[CI status|Checks-done-on-Pull-Request]] passes for the pipeline steps. If you don't know how to do this, check with @mihaiplesa for training.  If a PR comes in from a fork, then someone needs to cherry-pick it into a new branch so that CI will run and make sure it passes for that PR before merging.
 - If you don't see the results from Jenkins, it might be because the branch is on a fork and not directly on `brave-core` or `brave-browser`.
 - If you see something that's broken, or tests failing, instantly revert it. Do not wait to talk to the person that broke it, especially if they are not there.  Re-open the issue that broke it.
 - If you accidentally break the build, apologize and pay it forward by helping out when someone else breaks the build.
