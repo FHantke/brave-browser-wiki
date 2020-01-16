@@ -1,6 +1,6 @@
 # System Requirements
 
-Before you begin, ensure your system satisfies the [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md#system-requirements).
+Before you begin, ensure your system satisfies the [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/linux/build_instructions.md#system-requirements).
 
 # Install additional build dependencies
 
