@@ -88,7 +88,7 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 Note, that the text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.
     <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
 
-- Do not translate capitalized feature names, such as "Brave Rewards" and "Brave Ads".
+- Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
 ## When to submit orders and what to do when they're done
 For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
