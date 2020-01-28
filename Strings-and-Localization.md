@@ -72,8 +72,8 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 ```
 - Press Next and it should take a minute or two to load, I think this happens because we have a lot of strings.
 - Uncheck `All`, then only select these resources for translation, the rest are taken from Chromium but we just store them in Transifex:
-`brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`.  Leave the rest unchecked!
-- The officially supported languages to order are: `am, ar, bg, bn, ca, cs, da, de, el, en-GB, es, es-419, et, fa, fi, fil, fr, gu, hi, hr, hu, id, it, he, ja, kn, ko, lt, lv, ml, mr, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW`
+`android_brave_strings`, `brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension`.  Leave the rest unchecked!
+- The officially supported languages to order are: `af, am, ar, as, be, bg, bn, bs, ca, cs, da, de, el, en-GB, es, es-419, et, eu, fa, fi, fil, fr, fr-CA, gl, gu, hi, hr, hu, hy, id, is, it, he, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, or, pa, pl, pt-BR, pt-PT, ro, ru, si, sk, sl, sq, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
 - For the languages you haven't translated yet, repeat these steps for TextMaster.
 - For the languages you haven't translated yet, repeat these steps for e2f. 
 - The total cost is usually in the hundreds to thousands range, but usually below 10k.  If it's above 10k then please get special approval and make sure everything is being selected correctly.
