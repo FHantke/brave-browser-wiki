@@ -8,6 +8,10 @@ In addition to supporting all Chromium command line switches, the following swit
 
 > Note: If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 
+## Sponsored New Tab Page
+If a CLI flag `--ntp-branded-data-path` is provided with a valid FS directory path, then that directory will be used and the remote component will not be used or fetched.
+
+This is a great way to create a folder with a `photo.json` to test new integrations with the new tab page.
 
 ## Useful Chromium switches which must be passed to the binary
 
