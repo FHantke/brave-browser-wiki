@@ -85,6 +85,7 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 - Sometimes strings have variables in them which should look like this, in these cases you should use < and > and not `&lt;` and not `&gt;`.  These are `ph` and `ex` elements.  Even though the source looks like `&lt;ph` the translation  should use `<` and `>`.<br/> In the example below the translation should look like this:
 `<ph name="EXTENSION_NAME">$1</ph> (translate this "<ph name="EXTENSION_ID">$2<ex>do not translate this</ex></ph>") translate this too.`<br/>
 Note, that the text inside `ex` should not be translated - it's an example of values that would be used in this variable.
+- Do not translate capitalized feature names, such as "Brave Rewards" and "Brave Ads".
 
 <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
 
