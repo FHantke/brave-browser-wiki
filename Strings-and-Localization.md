@@ -82,12 +82,13 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 ## Information for localizers:
 
 - Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. 
-- Sometimes strings have variables in them which should look like this, in these cases you should use < and > and not `&lt;` and not `&gt;`.  These are `ph` and `ex` elements.  Even though the source looks like `&lt;ph` the translation  should use `<` and `>`.<br/> In the example below the translation should look like this:
-`<ph name="EXTENSION_NAME">$1</ph> (translate this "<ph name="EXTENSION_ID">$2<ex>do not translate this</ex></ph>") translate this too.`<br/>
-Note, that the text inside `ex` should not be translated - it's an example of values that would be used in this variable.
-- Do not translate capitalized feature names, such as "Brave Rewards" and "Brave Ads".
 
-<img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
+- Sometimes strings have variables in them which should look like the graphic below. In these cases you should use `<` and `>` and not `&lt;` and not `&gt;`.  These are `ph` and `ex` elements.  Even though the source looks like `&lt;ph` the translation  should use `<` and `>`.<br/> In the example below the translation should look like this:
+`<ph name="EXTENSION_NAME">$1</ph> (translate this "<ph name="EXTENSION_ID">$2<ex>do not translate this</ex></ph>") translate this too.`<br/>
+Note, that the text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.
+    <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
+
+- Do not translate capitalized feature names, such as "Brave Rewards" and "Brave Ads".
 
 ## When to submit orders and what to do when they're done
 For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
