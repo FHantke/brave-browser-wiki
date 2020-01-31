@@ -9,7 +9,7 @@ A user can install Crypto Wallets by either navigating to `brave://wallet`, or b
 Before Crypto Wallets is installed, the browser does something called Dapp detection.
 This is the process of injecting a content script to see if window.web3 is accessed without actually injecting web3.
 
-If window.web3 is accessed, then we show an infobar to install Crypto Wallets.  If MetaMask is already installed, we prompt the user to see if they'd like to use Crypto Wallets or MetaMask as their Dapp provider.
+If `window.web3` is accessed, then we show an infobar to install Crypto Wallets.  If MetaMask is already installed, we prompt the user to see if they'd like to use Crypto Wallets or MetaMask as their Dapp provider.
 
 
 ## Settings
@@ -36,3 +36,5 @@ A web3 provider can be selected in `brave://settings` in the Extensions section.
 <img width="626" alt="Screen Shot 2019-12-20 at 12 09 30 PM" src="https://user-images.githubusercontent.com/831718/71272482-9b9ef400-2321-11ea-8472-0e18e5c3cca9.png">
 
 This setting indicates which (if any) web3 provider should be used. It has values for `Ask`, `None`, `Crypto Wallets`, and if it is installed, `MetaMask`.
+
+The way this setting works is that it will actively disable the extension's content-script which injects `window.web3` for MetaMask and Crypto Wallets, and only enable content scripts for the extension that was selected.
