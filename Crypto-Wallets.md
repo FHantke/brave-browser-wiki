@@ -38,3 +38,7 @@ A web3 provider can be selected in `brave://settings` in the Extensions section.
 This setting indicates which (if any) web3 provider should be used. It has values for `Ask`, `None`, `Crypto Wallets`, and if it is installed, `MetaMask`.
 
 The way this setting works is that it will actively disable the extension's content-script which injects `window.web3` for MetaMask and Crypto Wallets, and only enable content scripts for the extension that was selected.
+
+## APIs
+
+There are a number of [Brave extension APIs](https://github.com/brave/brave-core/blob/master/common/extensions/api/brave_wallet.json) that are exposed to the brave-extension (for Dapp detection), Ethereum Remote Client, and MetaMask.
