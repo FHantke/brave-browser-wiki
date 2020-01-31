@@ -25,4 +25,14 @@ Deprecated settings:
 
 Other settings:
 - `brave.wallet.pref_version` - The version of the prefs the browser is running.
-- `brave.wallet.web3_provider` - The web3 provider to use, it's an integer with values for: Ask, None, Crypto Wallets, and MetaMask.
+- `brave.wallet.web3_provider` - The web3 provider to use, it's an integer with values for: `Ask`, `None`, `Crypto Wallets`, and `MetaMask`.
+
+
+## Selecting a web3 provider:
+
+A web3 provider can be selected in `brave://settings` in the Extensions section.
+
+
+<img width="626" alt="Screen Shot 2019-12-20 at 12 09 30 PM" src="https://user-images.githubusercontent.com/831718/71272482-9b9ef400-2321-11ea-8472-0e18e5c3cca9.png">
+
+This setting indicates which (if any) web3 provider should be used. It has values for `Ask`, `None`, `Crypto Wallets`, and if it is installed, `MetaMask`.
