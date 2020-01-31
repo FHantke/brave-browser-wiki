@@ -10,3 +10,19 @@ Before Crypto Wallets is installed, the browser does something called Dapp detec
 This is the process of injecting a content script to see if window.web3 is accessed without actually injecting web3.
 
 If window.web3 is accessed, then we show an infobar to install Crypto Wallets.  If MetaMask is already installed, we prompt the user to see if they'd like to use Crypto Wallets or MetaMask as their Dapp provider.
+
+
+## Settings
+
+A number of settings are kept relating to Crypto Wallets.
+
+Seed related keys: 
+- `brave.wallet.aes_256_gcm_siv_nonce`
+- `brave.wallet.encrypted_seed`
+
+Deprecated settings:
+- `brave.wallet.enabled` - It used to be used to actively disable Crypto Wallets.
+
+Other settings:
+- `brave.wallet.pref_version` - The version of the prefs the browser is running.
+- `brave.wallet.web3_provider` - The web3 provider to use, it's an integer with values for: Ask, None, Crypto Wallets, and MetaMask.
