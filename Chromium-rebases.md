@@ -152,6 +152,8 @@ To rebaseline:
 
 # Audit for new network services
 
+When submitting PR on Github add `CI/run-network-audit` label to the PR to ensure that the CI runs `audit-network`.
+
 For now just follow the instructions in https://github.com/brave/brave-browser/wiki/Tests#privacy-network-audit.
 
 We should build some automation to find new things added here:
