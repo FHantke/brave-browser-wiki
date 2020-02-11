@@ -14,20 +14,23 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 0.59.x  |    72    | December 20, 2018   | January 29, 2019    |                                |
 | 0.60.x  |    72    | January 29, 2018    | February 19, 2019   |                                |
 
-| Version | Chromium | Migration Date      | Release Date        | Comments                       |
-| ------- | ---------|---------------------|---------------------|--------------------------------|
-| 0.61.x  |    73    | March 5, 2019       | March 12, 2019      |                                |
-| 0.62.x  |    73    | March 26, 2019      | April 2, 2019       |                                |
-| 0.63.x  |    74    | April 16, 2019      | April 23, 2019      |                                |
-| 0.64.x  |    74    | May 7, 2019         | May 14, 2019        |                                |
-| 0.65.x  |    75    | May 29, 2019        | June 6, 2019        |                                |
-| 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                |
-| 0.67.x  |    76    | July 23, 2019       | August 1, 2019      |                                |
-| 0.68.x  |    76    | August 13, 2019     | August 21, 2019     |                                |
-| 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.x hotfix 2 w/ c77         |
-| 0.69.x  |    77    | September 4, 2019   | October 3, 2019     |                                |
-| 0.70.x  |    78    | October 15, 2019    | October 24, 2019    |                                |
-| 1.0.0   |    78    | November 5, 2019    | November 13, 2019   |  
+| Version | Chromium | Migration Date      | Release Date        | Comments                                   |
+| ------- | ---------|---------------------|---------------------|--------------------------------------------|
+| 0.61.x  |    73    | March 5, 2019       | March 12, 2019      |                                            |
+| 0.62.x  |    73    | March 26, 2019      | April 2, 2019       |                                            |
+| 0.63.x  |    74    | April 16, 2019      | April 23, 2019      |                                            |
+| 0.64.x  |    74    | May 7, 2019         | May 14, 2019        |                                            |
+| 0.65.x  |    75    | May 29, 2019        | June 6, 2019        |                                            |
+| 0.66.x  |    75    | June 25, 2019       | July 2, 2019        |                                            |
+| 0.67.x  |    76    | July 23, 2019       | August 1, 2019      |                                            |
+| 0.68.x  |    76    | August 13, 2019     | August 21, 2019     |                                            |
+| 0.68.x  |    77    | August 13, 2019     | September 16, 2019  | 0.68.x hotfix 2 w/ c77                     |
+| 0.69.x  |    77    | September 4, 2019   | October 3, 2019     |                                            |
+| 0.70.x  |    78    | October 15, 2019    | October 24, 2019    |                                            |
+| 1.0.0   |    78    | November 5, 2019    | November 13, 2019   |                                            |
+| 1.1.x   |    79    | December 3, 2019    | December 10, 2019   |                                            |
+| 1.2.x   |    79    | December 30, 2019   | January 6, 2020     |Late release due to holidays                |
+| 1.3.x   |    80    | February 4, 2020.   | February 7, 2020    |Originally released Feb. 4th but reverted   |
 ---
 
 # Beta channel dates:
