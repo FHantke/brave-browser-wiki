@@ -30,7 +30,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
-| 1.4.x   |    80    | February 18, 2020   | February 25, 2020   |                                            |
+| 1.4.x   |    80    | February 19, 2020   | February 25, 2020   |                                            |
 | 1.5.x   |    81    | March 10, 2020      | March 17, 2020      |                                            |
 | 1.6.x   |    81    | March 31, 2020      | April 7, 2020       |                                            |
 | 1.7.x   |    82    | April 21, 2020      | April 28, 2020      |                                            |
