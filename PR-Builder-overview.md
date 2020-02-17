@@ -34,7 +34,6 @@ There are two jobs setup under the `ci` tab:
 Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Forks are ignored. When a new build starts it will cancel the previously running ones, unless it gets aborted for the following reasons:
 - `CI/skip` label present
 - build started from `brave-browser` PR when a matching `brave-core` PR or branch exists (build should be started from there to correctly report status on both PRs)
-- version mismatch in `package.json` across the 2 repos
 
 Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-ios`, `CI/skip-linux`, `CI/skip-macos`, `CI/skip-windows` labels. They are recommended just to save time and resources during development, before merge please take them out and re-run build (unless agreed otherwise with reviewer or uplift approvers).
 
@@ -65,7 +64,7 @@ This `Jenkinsfile` defines the pipeline that builds in parallel for Android `arm
 - checkout source code
 - pin locally branch in `package.json` if branch also exists in `brave-core`
 - install dependencies (`npm install --no-optional`) and remove `gclient` lock files
-- initialize the repository (across runs we do `rm -rf src/brave` to force fetching the latest code and avoid version mismatch then `npm run init`)
+- initialize the repository (across runs we do `rm -rf src/brave` to force fetching the latest code then `npm run init`)
 - run lint (`npm run lint`)
 - audit dependencies (`npm run audit_deps`)
 - enable `sccache`
@@ -106,19 +105,6 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - DISABLE_SCCACHE - `false` by default (only on Android, Linux and macOS)
 - SKIP_SIGNING - `true` by default
 - DEBUG - `false` by default
-
-### Rebase a PR when failures occur
-
-This can happen when the upstream master branch is updated but your PR branch gets behind. A common occurrence is that the nightly build job will bump the version and you will see a version mismatch between the `brave-core` and `brave-browser`, the error will look something like:
-
-`Version mismatch between brave-browser and brave-core in package.json! Please try rebasing this branch in brave-core as well.`
-
-To fix this rebase your branch:
-
-    git fetch origin
-    git checkout BRANCH
-    git rebase origin/master
-    git push origin BRANCH --force
 
 ## Resources
 - for employees, join the `#brave-core-ci` Slack channel
