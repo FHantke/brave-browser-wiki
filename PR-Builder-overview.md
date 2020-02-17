@@ -10,7 +10,6 @@
 - [brave-core checks](#brave-core-checks)
 - [Advanced steps](#advanced-steps)
   - [Start a PR builder Jenkins job](#start-a-pr-builder-jenkins-job)
-  - [Rebase a PR when failures occur](#rebase-a-pr-when-failures-occur)
 - [Resources](#resources)
 
 <!-- /TOC -->
@@ -83,7 +82,6 @@ To navigate from the `brave-core` build to the `brave-browser` one please go to 
 
 This `Jenkinsfile` defines the pipeline that does:
 - create a new branch in `brave-browser` if it doesn't exist
-- do a rebase on `brave-browser` against PR target branch (if versions in `package.json` are different across the 2 repos)
 - push new branch
 - wait for 6m for the new branch to be discovered by the `brave-browser` pipeline
 - calls the `brave-browser` pipeline
