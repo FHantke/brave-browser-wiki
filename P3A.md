@@ -80,27 +80,30 @@
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
 ### Q12: How much BAT, excluding grants, is in your wallet?
-(_`Brave.Rewards.WalletBalance`_)
+(_`Brave.Rewards.WalletBalance.2`_)
 1. No wallet created
-2. Less than 10 BAT (0-9), excluding grants
-3. 10-50 BAT, excluding grants
-4. Over 50 BAT, excluding grants
+2. Rewards Disabled
+3. Less than 10 BAT (0-9), excluding grants
+4. 10-50 BAT, excluding grants
+5. Over 50 BAT, excluding grants~~
 
 ### Q13: Have you made use of Auto-contribute in Brave Rewards?
-(_`Brave.Rewards.AutoContributionsState`_)
+(_`Brave.Rewards.AutoContributionsState.2`_)
 1. No wallet created
-2. Wallet created, Auto-Contribute off
-2. Auto-contribute enabled, no contribution so far
-3. Auto-contribute enabled, one successful contribution so far
-4. Auto-contribute enabled, more than one successful contribution so far
+2. Rewards Disabled
+3. Wallet created, Auto-Contribute off
+4. Auto-contribute enabled, no contribution so far
+5. Auto-contribute enabled, one successful contribution so far
+6. Auto-contribute enabled, more than one successful contribution so far
 
 ### Q14: Have you made use of tips within Brave Rewards?
-(_`Brave.Rewards.TipsState`_)
+(_`Brave.Rewards.TipsState.2`_)
 1. No wallet created
-2. Wallet created, no tips sent
-3. Wallet created, one-time tip sent
-4. Wallet created, at least one monthly tip queued up or sent
-5. Wallet created, one-time sent and at least one monthly tip queued up or sent
+2. Rewards Disabled
+3. Wallet created, no tips sent
+4. Wallet created, one-time tip sent
+5. Wallet created, at least one monthly tip queued up or sent
+6. Wallet created, one-time sent and at least one monthly tip queued up or sent
 
 ### Q15: Have you enabled sync?
 (_`Brave.Sync.Status`_)
@@ -116,12 +119,13 @@
 4. Five or more extensions
 
 ### Q17: Have you enabled Brave Ads?
-(_`Brave.Rewards.AdsState`_)
+(_`Brave.Rewards.AdsState.2`_)
 1. No wallet created
-2. Wallet created, ads not enabled
-3. Wallet created and ads enabled 
-4. Wallet created, ads enabled, then disabled, while Brave Rewards remains on
-5. Wallet created, ads enabled, then disabled, Brave Rewards disabled
+2. Rewards Disabled
+3. Wallet created, ads not enabled
+4. Wallet created and ads enabled 
+5. Wallet created, ads enabled, then disabled, while Brave Rewards remains on
+6. Wallet created, ads enabled, then disabled, Brave Rewards disabled
 
 ### Q18: How many questions the browser was able to answer within a week?
 (_`Brave.P3A.SentAnswersCount`_)
