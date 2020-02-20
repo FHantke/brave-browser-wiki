@@ -10,17 +10,24 @@ Fingerprinting Protection is a privacy feature that makes it harder for sites to
 
 Brave includes best-effort defense against [browser fingerprinting](https://www.torproject.org/projects/torbrowser/design/#fingerprinting-linkability). Broadly speaking, browser fingerprinting is the detection of browser and operating system features that differ between users for the purpose of covertly identifying users and tracking them across the web. Although fingerprinting attacks will always be possible, it is worthwhile for us to make these attacks as slow / costly / difficult as possible.
 
-Because most browser fingerprinting defense requires disabling web features that are required for many sites to work properly, it is implemented as off-by-default for now (can be turned on in `about:preferences` globally, or on a per-site basis in the Bravery panel). We will consider turning it on-by-default when we have fingerprinting detection heuristics with a sufficiently-low false positive rate.
+Brave includes two types of fingerprinting protections, (i) blocking, removing or modifying APIs, to make Brave instances look as similar as possible, and (ii) randomizing values from APIs, to prevent cross session and site linking (e.g. making Brave instances look different to websites each time).
+
+In cases where we block, remove or modify API behavior, we attempt to return empty, or non-identifying values, that have the "shape" of expected values, to minimize web compatibility issues.
+
+In cases where we randomize API values, we attempt to make modifications that are imperceivable to humans, but distinguishing to computers / fingerprinters.  These randomization values are derived from a seed that changes per session, and per eTLD+1.  Third party frames and script share the seed value of the top level, eTLD+1 domain. This approach is especially useful in fingerprinters that hash together a large number of semi-identifiers into a single identifier, since randomizing just one value "poisons" the entire fingerprint.
 
 ## Fingerprinting methods blocked in Fingerprinting Protection Mode
 
-* [Canvas fingerprinting](https://www.browserleaks.com/canvas): it should report a fixed value on tests like panopticlick
-* [WebGL fingerprinting](https://amiunique.org/faq): it should report as undefined on tests like panopticlick
-* [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
 * [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
 * [SVG fingerprinting](https://github.com/brave/browser-laptop/issues/10288) (specifically, the `SVGTextContentElement.prototype.getComputedTextLength` and `SVGPathElement.prototype.getTotalLength` methods)
 * [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
 * [Client Hints](https://github.com/brave/brave-browser/issues/3539)
+
+## Fingerprinting methods randomizes 
+
+* [Canvas fingerprinting](https://www.browserleaks.com/canvas): it should report a fixed value on tests like panopticlick
+* [WebGL fingerprinting](https://amiunique.org/faq): it should report as undefined on tests like panopticlick
+* [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
 
 
 ## Privacy protection enabled regardless of whether Fingerprinting Protection Mode is on
