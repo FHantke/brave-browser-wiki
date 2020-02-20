@@ -25,8 +25,8 @@ In cases where we randomize API values, we attempt to make modifications that ar
 
 ## Fingerprinting methods randomizes 
 
-* [Canvas fingerprinting](https://www.browserleaks.com/canvas): it should report a fixed value on tests like panopticlick
-* [WebGL fingerprinting](https://amiunique.org/faq): it should report as undefined on tests like panopticlick
+* [Canvas fingerprinting](https://www.browserleaks.com/canvas)
+* [WebGL fingerprinting](https://amiunique.org/faq)
 * [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
 
 
