@@ -23,7 +23,7 @@ In cases where we randomize API values, we attempt to make modifications that ar
 * [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
 * [Client Hints](https://github.com/brave/brave-browser/issues/3539)
 
-## Fingerprinting methods randomizes 
+## Fingerprinting methods randomized with Fingerprinting Protection Mode
 
 * [Canvas fingerprinting](https://www.browserleaks.com/canvas)
 * [WebGL fingerprinting](https://amiunique.org/faq)
