@@ -22,6 +22,7 @@ In cases where we randomize API values, we attempt to make modifications that ar
 * [SVG fingerprinting](https://github.com/brave/browser-laptop/issues/10288) (specifically, the `SVGTextContentElement.prototype.getComputedTextLength` and `SVGPathElement.prototype.getTotalLength` methods)
 * [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
 * [Client Hints](https://github.com/brave/brave-browser/issues/3539)
+* [Media Streams: Enumerate Devices](https://github.com/brave/brave-browser/issues/4464)
 
 ## Fingerprinting methods randomized with Fingerprinting Protection Mode
 
