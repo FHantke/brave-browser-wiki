@@ -1,3 +1,4 @@
+# (OUTDATED)
 # Contribution
 
 ## How does it work?
