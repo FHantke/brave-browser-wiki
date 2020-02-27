@@ -165,6 +165,8 @@ Include `shared_url_loader_factory.h` at the top of your `.cc` file:
 
 Now, where do you get a `SharedURLLoaderFactory`? If you have a `Profile` or `BrowserContext`, use the one from the profile's default storage partition. If not, use the system-wide one from the system network context manager.
 
+**Important**: you need to know whether your `SimpleURLLoader` could ever be used in a private window. If the answer is "yes," you MUST use the profile-specific `SharedURLLoaderFactory`, because it is proxied through Tor if the user has enabled that option. The system-wide `SharedURLLoaderFactory` is NEVER PROXIED, so using it for any reason in a private window could cause a privacy leak.
+
 For the profile-specific `SharedURLLoaderFactory`, include these headers in the `.cc` file of the class that creates your class:
 
 ```
