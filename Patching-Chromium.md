@@ -13,7 +13,7 @@ When you can't make a change directly in existing brave-core code, it's often be
 You will need to patch (see the below documentation) for some small trivial things in this case:
 - Create instances of your class instead of the Chromium class.
 - Possibly add a `friend` member to the base class you're subclassing.
-- Possibly add a `virtual` keyword to functions you'd like to subclass.
+- Possibly add a `virtual` keyword to functions you'd like to subclass https://github.com/brave/brave-browser/wiki/Patching-Chromium#making-methods-virtual
 
 Header patches should use preprocessor defines when possible. The define should always be the last thing in `public` so you can change to `protected` or `private` inside the define.
 ```
