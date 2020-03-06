@@ -52,6 +52,16 @@ https://github.com/brave/brave-core/blob/5293f0cab08816819bb307d02e404c2061e4368
 
 No BUILD.gn changes are needed for this.
 
+## Making methods virtual
+There are two methods depending on whether you have a pointer or non-pointer return value.
+For pointer return values
+```
+#define GetExtensionAction           \
+  UnusedMethod() { return nullptr; } \
+  virtual ExtensionAction* GetExtensionAction
+```
+otherwise https://github.com/brave/brave-core/blob/master/chromium_src/components/browsing_data/core/counters/browsing_data_counter.h
+
 ## Override a .cc file completely
 
 If you want to provide a completely different implementation of a file, it is often not safe, but sometimes applicable. You can just provide the alternate implementation inside the `src/brave/chromium_src` directory.
