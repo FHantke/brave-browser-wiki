@@ -60,7 +60,9 @@ For pointer return values
   UnusedMethod() { return nullptr; } \
   virtual ExtensionAction* GetExtensionAction
 ```
-otherwise https://github.com/brave/brave-core/blob/master/chromium_src/components/browsing_data/core/counters/browsing_data_counter.h
+
+and for non-pointer types
+https://github.com/brave/brave-core/commit/a85a399a16df59b99b18382e2a4106d63e1a32c1#diff-925a04f8f2bcee20b47c338c1a3c70b9
 
 ## Override a .cc file completely
 
