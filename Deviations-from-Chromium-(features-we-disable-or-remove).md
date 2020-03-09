@@ -55,6 +55,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
 - [Disable field trials and variations service](https://github.com/brave/brave-browser/issues/4283)
 - [Disable Lookalike URLs Navigation Suggestions](https://github.com/brave/brave-core/pull/2382/files)
+- [Disable Reporting Observers and Reporting API](https://github.com/brave/brave-core/pull/4578)
 
 ### Services We Proxy Through Brave Servers
 
