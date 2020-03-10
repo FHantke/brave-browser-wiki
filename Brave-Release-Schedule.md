@@ -9,10 +9,10 @@ Information about channel differences available in the [Release Channel Descript
 
 # Current channel information:
 
-| **Channel**     | Release |  Beta  | Dev       | Nightly|
-| ----------------| ------- | ------ | --------- | ------ |
-| **Milestone**   | 1.5.x  | 1.7.x | 1.7.x    | 1.8.x |
-| **Branch name** | 1.5.x  | 1.7.x | 1.7.x    | master |
+| **Channel**     | Release |  Beta & Dev | Nightly|
+| ----------------| ------- | ------ | ------ |
+| **Milestone**   | 1.5.x  | 1.7.x   | 1.8.x |
+| **Branch name** | 1.5.x  | 1.7.x   | master |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
