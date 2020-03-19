@@ -12,6 +12,10 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 * Our continuous integration bots run VS2017
 * [The newest version of VS2019 can not build Chromium](https://crbug.com/1058860)
 
+## Windows 10 SDK
+
+[Install Windows 10 SDK 10.0.18362.0](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/). (VS2017 installer does not include this version.)
+
 ## Git
 
 Install Git from https://git-scm.com/downloads.
