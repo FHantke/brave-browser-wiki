@@ -6,8 +6,11 @@ Before you begin, make sure your system satisfies the [system requirements](http
 
 ## Visual Studio
 
-Install Visual Studio Community 2019 from https://www.visualstudio.com/downloads/.
-Follow guidance from the ["Visual Studio" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#visual-studio) of the Chromium Windows build instructions.
+Install the latest version of Visual Studio Community 2017 from https://my.visualstudio.com/Downloads?q=visual%20studio%20community%202017.
+Follow guidance from the ["Visual Studio" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#visual-studio) of the Chromium Windows build instructions. The 2017 edition is currently preferred because
+
+* Our continuous integration bots run VS2017
+* [The newest version of VS2019 can not build Chromium](https://crbug.com/1058860)
 
 ## Git
 
