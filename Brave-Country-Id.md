@@ -47,3 +47,4 @@ Once you've converted `countryid_at_install` into binary, you'll need to split i
 | 21843                | US      | 
 | 17217                | CA      |
 | 18766                | IN      |
+| 16725                | AU      |
