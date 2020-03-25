@@ -10,6 +10,8 @@ One of the best ways to see which features are coming down the pipeline and what
 
 **`Disclaimer`** - the following timelines are approximations and are not set in stone. There's a lot of thought and work that goes into developing something complex like Brave. Sometimes schedules slip, sometimes certain feature are de-prioritized and others are prioritized. Given the disclaimer, this list should be pretty accurate in terms of when we expect certain features to be released.
 
+This list assumes you're on the `Release` channel. Features land on the `Nightly` channel first and make their way through the train model as described via [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule).
+
 ### Q1 2020 [January - March]:
 
 ### Q2 2020 [April - June]:
