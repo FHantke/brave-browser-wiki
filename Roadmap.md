@@ -14,6 +14,8 @@ One of the best ways to see which features are coming down the pipeline and what
 
 ### Q2 2020 [April - June]:
 
+* Binance widget on the New Tab Page
+
 ### Q3 2020 [July - September]
 
 ### Q4 2020 [October - December]
