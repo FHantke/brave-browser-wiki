@@ -2,7 +2,7 @@
 
 - Major Release frequency: ~3 weeks
 - Minor / Chemspill frequency: As needed 
-- Every 2nd release is tied to a fuzzy [Chromium release date](https://www.chromium.org/developers/calendar).
+- Every 2nd release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
 
 Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
 Information about channel differences available in the [Release Channel Descriptions](https://github.com/brave/brave-browser/wiki/Release-Channel-Descriptions).
@@ -31,18 +31,18 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.4.x   |    80    | February 19, 2020   | February 25, 2020   |                                            |
-| 1.5.x   |    80    | March 10, 2020      | March 17, 2020      |                                            |
+| 1.5.x   |    80    | March 10, 2020      | March 17, 2020      | [M81 release delayed because of COVID-19](https://chromereleases.googleblog.com/2020/03/upcoming-chrome-and-chrome-os-releases.html) |
 | 1.7.x   |    81    | March 31, 2020      | April 7, 2020       |                                            |
-| 1.8.x   |    82    | April 21, 2020      | April 28, 2020      |                                            |
-| 1.9.x   |    82    | May 12, 2020        | May 19, 2020        |                                            |
+| 1.8.x   |    81    | April 21, 2020      | April 28, 2020      |                                            |
+| 1.9.x   |    83    | May 12, 2020        | May 19, 2020        | [Skipping over M82 to M83 after prior delay for M81](https://chromereleases.googleblog.com/2020/03/chrome-and-chrome-os-release-updates.html) |
 | 1.10.x  |    83    | June 2, 2020        | June 9, 2020        |                                            |
-| 1.11.x  |    83    | June 30, 2020       | July, 7, 2020       |4 week cycle to keep in sync with Chromium  |
+| 1.11.x  |    84    | June 30, 2020       | July, 7, 2020       |4 week cycle to keep in sync with Chromium  |
 | 1.12.x  |    84    | July 28, 2020       | August 4, 2020      |4 week cycle to keep in sync with Chromium  |
-| 1.13.x  |    84    | August 18, 2020     | August 25, 2020     |                                            |
+| 1.13.x  |    85    | August 18, 2020     | August 25, 2020     |                                            |
 | 1.14.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
-| 1.15.x  |    85    | September 29, 2020  | October 6, 2020     |                                            |
+| 1.15.x  |    86    | September 29, 2020  | October 6, 2020     |                                            |
 | 1.16.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
-| 1.17.x  |    86    | November 17, 2020   | November 24, 2020   |4 week cycle to keep in sync with Chromium  |
+| 1.17.x  |    87    | November 17, 2020   | November 24, 2020   |4 week cycle to keep in sync with Chromium  |
 | 1.18.x  |    87    | December 8, 2020    | December 15, 2020   |                                            |
 
 - All dates are approximate and are subject to change.
@@ -78,7 +78,7 @@ Release, Beta, and Dev channels are considered to be Frozen.
 | 1.7.x   | 81                | March 10, 2020      |                                           |
 | 1.8.x   | 82                | March 31, 2020      |                                           |
 | 1.9.x   | 82                | April 21, 2020      |                                           |
-| 1.10.x   | 83                | May 12, 2020        |                                           |
+| 1.10.x   | 83               | May 12, 2020        |                                           |
 | 1.11.x  | 83                | June 2, 2020        |                                           |
 | 1.12.x  | 84                | June 30, 2020       |                                           |
 | 1.13.x  | 84                | July 28, 2020       |                                           |
@@ -99,23 +99,23 @@ Release, Beta, and Dev channels are considered to be Frozen.
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.4.x   | 80                | December 3, 2019    |                                           |
-| 1.5.x   | 81                | December 30, 2019   |                                           |
-| 1.7.x   | 81                | January 28, 2020    |                                           |
-| 1.8.x   | 82                | February 18, 2020   |                                           |
-| 1.9.x   | 82                | March 10, 2020      |                                           |
-| 1.10.x  | 83                | March 31, 2020      |                                           |
-| 1.11.x  | 83                | April 21, 2020      |                                           |
-| 1.12.x  | 84                | May 12, 2020        |                                           |
-| 1.13.x  | 84                | June 2, 2020        |                                           |
-| 1.14.x  | 85                | June 30, 2020       |                                           |
-| 1.15.x  | 85                | July 28, 2020       |                                           |
-| 1.16.x  | 86                | August 18, 2020     |                                           |
-| 1.17.x  | 86                | September 8, 2020   |                                           |
-| 1.18.x  | 87                | September 29, 2020  |                                           |
-| 1.19.x  | 87                | October 20, 2020    |                                           |
-| 1.20.x  | 88                | November 17, 2020   |                                           |
-| 1.21.x  | 88                | December 8, 2020    |                                           |
+| 1.4.x   | 80                | [December 3, 2019](https://ci.brave.com/job/branch-migrations/7) | |
+| 1.5.x   | 80                | [December 30, 2019](https://ci.brave.com/job/branch-migrations/8) | |
+| 1.6.x   | 80                | [February 4, 2020](https://ci.brave.com/job/branch-migrations/9/) | branch abandoned (beta+dev consolidated) |
+| 1.7.x   | 81                | [February 19, 2020](https://ci.brave.com/job/branch-migrations/10/)| |
+| 1.8.x   | 81                | [March 10, 2020](https://ci.brave.com/job/branch-migrations/13/) | |
+| 1.9.x   | 83                | March 31, 2020      |                                           |
+| 1.10.x  | 83                | April 21, 2020      |                                           |
+| 1.11.x  | 84                | May 12, 2020        |                                           |
+| 1.12.x  | 84                | June 2, 2020        |                                           |
+| 1.13.x  | 85                | June 30, 2020       |                                           |
+| 1.14.x  | 85                | July 28, 2020       |                                           |
+| 1.15.x  | 86                | August 18, 2020     |                                           |
+| 1.16.x  | 86                | September 8, 2020   |                                           |
+| 1.17.x  | 87                | September 29, 2020  |                                           |
+| 1.18.x  | 87                | October 20, 2020    |                                           |
+| 1.19.x  | 88                | November 17, 2020   |                                           |
+| 1.20.x  | 88                | December 8, 2020    |                                           |
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
