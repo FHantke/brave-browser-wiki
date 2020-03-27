@@ -30,6 +30,9 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
 * Improvements to importer on Desktop (import extensions, bug fixes)
 * Enterprise support (group policy templates / documentation)
+* Speedreader
+* Super Referral program
+* iOS Playlist feature
 
 ### Q3 2020 [July - September]
 
