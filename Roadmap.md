@@ -19,6 +19,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * [Fingerprinting randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
 * [Tap network integration](https://brave.com/brave-and-tap-network-partnership-connects-consumers-and-brands-via-blockchain/)
 * [Sponsored images support](https://brave.com/sponsored-images-now-available-on-all-brave-platforms/)
+* [Cosmetic filtering support](https://brave.com/whats-brave-done-for-my-privacy-lately-episode2/)
 
 ### Q2 2020 [April - June]:
 
