@@ -21,7 +21,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 * Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
 * Sync v2
-* Basic extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
+* Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 
 ### Q3 2020 [July - September]
 
