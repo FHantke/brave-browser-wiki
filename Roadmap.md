@@ -15,8 +15,8 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 ### Q1 2020 [January - March]:
 
 * Android browser rewrite on Brave Core code base
-* Binance widget on the New Tab Page buy widget
-
+* [Binance widget](https://brave.com/binance/) on the New Tab Page buy widget
+* [Fingerprinting randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
 
 ### Q2 2020 [April - June]:
 
