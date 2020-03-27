@@ -21,13 +21,15 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * [Sponsored images support](https://brave.com/sponsored-images-now-available-on-all-brave-platforms/)
 * [Cosmetic filtering support](https://brave.com/whats-brave-done-for-my-privacy-lately-episode2/)
 * [Web resource replacement](https://brave.com/whats-brave-done-for-my-privacy-lately-episode1/)
+* Ability to detect Brave ([Desktop / Android](https://github.com/brave/brave-core/pull/4721) / [iOS](https://github.com/brave/brave-ios/pull/2374))
 
 ### Q2 2020 [April - June]:
 
 * Sync v2
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
-
+* Improvements to importer on Desktop (import extensions, bug fixes)
+* Enterprise support (group policy templates / documentation)
 
 ### Q3 2020 [July - September]
 
