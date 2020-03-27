@@ -14,14 +14,16 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q1 2020 [January - March]:
 
-* Binance widget on the New Tab Page buy widget
 * Android browser rewrite on Brave Core code base
+* Binance widget on the New Tab Page buy widget
+
 
 ### Q2 2020 [April - June]:
 
-* Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
 * Sync v2
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
+* Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
+
 
 ### Q3 2020 [July - September]
 
