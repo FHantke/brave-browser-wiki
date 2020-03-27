@@ -14,9 +14,12 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q1 2020 [January - March]:
 
+* Binance widget on the New Tab Page buy widget
+
+
 ### Q2 2020 [April - June]:
 
-* Binance widget on the New Tab Page
+* Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
 
 ### Q3 2020 [July - September]
 
