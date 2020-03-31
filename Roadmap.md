@@ -33,7 +33,11 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Speedreader
 * Super Referral program
 * iOS Playlist feature
+* Reworking of fingerprinting protections to be randomization-based
+* Privacy preserving replacements for stateless social media widgets
 
 ### Q3 2020 [July - September]
+* Reworking storage protections, moving from blocking all 3p storage to integrating Storage Access API
+* Top level URL blocking
 
 ### Q4 2020 [October - December]
