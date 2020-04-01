@@ -121,13 +121,11 @@ The same thing goes for sources, but those should be added as `sources += my_bra
 
 ## Patching java files
 
+Many java patches can be replaced by using asm. In order to use asm properly you have to ensure that things compile correctly pre-asm and then make the changes in the asm step that will produce the actual calls you want. Examples:
+Changing private methods to public - https://github.com/brave/brave-core/pull/4716/files and https://github.com/brave/brave-core/pull/5127/files
+
 Try to extend Java class like in that example https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/BraveActivity.java or https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/toolbar/top/BraveToolbarLayout.java. 
 After that just create the new class via `new ...` where the old class created.
-
-## Patching java files
-Many java patches can be replaced by using asm. In order to use asm properly you have to ensure that things compile correctly pre-asm and then make the changes in the asm step that will produce the actual calls you want. Examples:
-Changing private methods to public - https://github.com/brave/brave-core/pull/4716/files
-more examples to follow
 
 ## Patching Android xml files
 
