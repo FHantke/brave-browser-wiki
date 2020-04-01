@@ -1,0 +1,1 @@
+This has been moved to [https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections](https://github.com/brave/brave-browser/wiki/Fingerprinting-Protections).
