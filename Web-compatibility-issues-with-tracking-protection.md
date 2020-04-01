@@ -72,15 +72,4 @@ Web compatibility observations without these exclusions:
 
 ### Other
 
-These were added in https://github.com/brave/tracking-protection/blame/132ac934be9dd0113a4bb4d041f7602a72c60662/data/disconnect.json#L9348-L9375 and apply to all platforms. Serg says the websites were broken without these exceptions. Note that the exceptions are double-keyed (applies only for a specific subresource domain on a specific first-party domain).
-
-TODO: Check if sites are still broken in any way without these exceptions.
-
-Domains which are excluded:
-* 2mdn.net on https://www.cnet.com/
-* pcache.alexa.com on http://www.alexa.com/ (shouldn't be needed any more if the domains are considered first party based on eTLD+1)
-* google-analytics.com on https://www.saturn.at/ and https://www.mediamarkt.at/
-
-
-
-
+Additional exceptions for cross-site-tracking rules are generally recorded in [brave/adblock-lists/brave-unbreak.txt](https://github.com/brave/adblock-lists/blob/master/brave-unbreak.txt).
