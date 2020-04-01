@@ -1,5 +1,3 @@
-*This article is also available here but less up to date: https://community.brave.com/t/all-about-fingerprinting-protection-mode*
-
 ## What is Fingerprinting Protection?
 
 Fingerprinting Protection is a privacy feature that makes it harder for sites to track you while you browse.
@@ -57,8 +55,10 @@ Although useful for raising awareness of fingerprinting techniques, sites like P
 
 **[EDIT (12/11/18): This may no longer work.]** One way to "trick" Panopticlick is to open the site in various Brave session tabs and re-run the fingerprinting test. Panopticlick will then report that your Brave configuration is less identifiable because there have been other "users" visiting the site with the same configuration.
 
-## TODO
+## Exceptions
+Brave makes a small number of exceptions for sites that require functionality that could be used for fingerprinting, but which is used for benign and user-serving purposes.  These exceptions are built into Brave, and can be found [in Brave's source code](https://github.com/brave/brave-core/blob/master/common/shield_exceptions.cc#L41).
 
+## TODO
 * Decrease JS timer resolution
 * Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
 * Limit fingerprinting via viewport/screen size: https://github.com/brave/brave-browser/issues/720
