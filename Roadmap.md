@@ -31,7 +31,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Improvements to importer on Desktop (import extensions, bug fixes)
 * Enterprise support (group policy templates / documentation)
 * Speedreader
-* Super Referral program
+* Super Referral program - Custom new tab page image and links for select referrers
 * iOS Playlist feature
 * Reworking of fingerprinting protections to be randomization-based
 * Privacy preserving replacements for stateless social media widgets
