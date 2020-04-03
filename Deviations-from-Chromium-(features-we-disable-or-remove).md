@@ -65,8 +65,6 @@ _Google does not receive any information about which client is performing these 
 - [Geolocation requests are proxied](https://github.com/brave/brave-core/pull/19)
 - [Plugin updates are proxied](https://github.com/brave/brave-core/pull/680)
 - [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
-- [Page translation requests are proxied and replaced with Microsoft cognitive services](https://github.com/brave/brave-core/pull/2006)
- (currently disabled by `ENABLE_BRAVE_TRANSLATE_GO` build flag)
 - [Requests for CRLSets are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
