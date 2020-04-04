@@ -45,6 +45,7 @@ Select `S3` located under Storage
 Select `rust-pkg-brave-core`
 Select `Upload`
 Upload `rust_deps_mac_0.1.3.gz` to https://s3-us-west-2.amazonaws.com/rust-pkg-brave-core
+Set the new version in `script/rust_deps_config.py` and create a pull request for your changes
 ```
 
 Windows
