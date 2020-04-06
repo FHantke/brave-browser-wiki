@@ -9,7 +9,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Release Notes to Staging
 - [ ] Mark closed issues in github as release-notes/exclude or release-notes/include.
-- [ ] Commit release notes to [CHANGELOG.md](https://github.com/brave/brave-browser/blob/master/CHANGELOG.md) in brave-browser master branch, must be completed before release to production Jenkins build job is run.
+- [ ] Commit release notes to [CHANGELOG_DESKTOP.md](https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md) in brave-browser master branch, must be completed before release to production Jenkins build job is run.
 - [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
 
 ### Certification and Builds
