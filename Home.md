@@ -72,8 +72,8 @@ To start the build:
 
 # Staying up to date
 
-- Run `npm run sync -- --all` to grab the latest source. **It's important to note that this will overwrite your local changes, so please back up work before running this**.
-- Run `npm run sync -- --all --run_hooks --run_sync` if you've updated brave-core checkout manually before the command.
+- Run `npm run sync` to update the brave-core ref specified in `package.json`. **It's important to note that this will overwrite your local changes, so please back up work before running this**.
+- Run `npm run sync -- --all` to update both brave-core and chromium. **It's important to note that this will overwrite your local changes, so please back up work before running this**.
 
 _See below for more advanced options for branch-switching and dependency updating._
 
@@ -90,29 +90,13 @@ These flags can be combined to fit different workflows
 
 | flag | Description |
 |---|---|
-|`[no flags]`|Will re-apply any patches that are out of date, e.g. after you manually switch branch in brave-core or manually change the target chromium file, and do nothing else.|
+|`[no flags]`|updates _brave-core_ to the latest remote commit on the branch specified in brave-browser/package.json (e.g. `master` or `74.0.0.103`). Will re-apply only patches that changed. Will update child dependencies **only if any project needed updating during this script run** <br> **Use this if you want the script to manage keeping you up to date instead of pulling or switching branch manually. **|
 |`--all`| updates both _Chromium_ and _brave-core_ to the latest remote commit on the branch specified in brave-browser/package.json (e.g. `master` or `74.0.0.103`). Will re-apply only patches that changed. Will update child dependencies **only if any project needed updating during this script run** <br> **Use this if you want the script to manage keeping you up to date instead of pulling or switching branch manually. **|
-|`--brave_core_ref=[commitish]`| Updates brave-core to the specified commit, does not update chromium. Otherwise same as `--all`.|
-|`--chrome_ref=[committish]`| Updates chromium to the specified reference, does not update brave-core. Otherwise same as `--all`.|
-|`--run_sync`| Update gclient DEPS dependencies|
-|`--init`| Performs a hard reset on chromium and brave-core. Will always result in a large re-build due to all patches getting re-applied. Should only be used at the beginning of a project, or if needing to reset _all_ changes. Instead use the safe `npm run sync -- --all --run_sync --run_hooks` to make sure all projects and dependencies are up to date.|
 
 ### Scenarios
 
-#### Manually change branch but keep up to date
-```bash
-brave-core> git checkout branchA
-brave-browser> npm run sync -- --run_sync --run_hooks
-...Updating 2 patches...
-...Updating child dependencies...
-...Running hooks...
-brave-browser> npm run build
-```
-
 #### Automatically get latest on brave-browser master, brave-core master and chromium
 ```bash
-# go back to master so that the branch ref doesn't get moved by the script
-brave-core> git checkout master
 brave-browser> git checkout master
 brave-browser> git pull
 brave-browser> npm run sync -- --all
@@ -121,21 +105,11 @@ brave-browser> npm run sync -- --all
 ...Running hooks...
 ```
 
-#### Manually get latest on master but keep deps up to date
-```bash
-brave-core> git checkout master
-brave-core> git pull
-brave-browser> npm run sync -- --run_hooks --run_sync
-...Applying 1 patch...
-...Updating DEPS dependencies...
-...Running hooks...
-```
-
 #### When you know that DEPS didn't change, but .patch files did (quickest)
 ```bash
 brave-core> git checkout featureB
 brave-core> git pull
-brave-browser> npm run sync
+brave-browser> npm run update_patches
 ...Applying 2 patches...
 brave-browser>
 ```
