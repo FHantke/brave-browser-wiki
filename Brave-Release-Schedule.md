@@ -20,7 +20,7 @@ Note: These versions represent which channel our CI builds things on. It may not
 
 The following is our automated schedule for creating and uploading builds to our Sparkle (macOS), Omaha (Windows) servers and our Linux repositories.
 
-| Channel | Time | Dates      | Public Build (Sparkle/Omaha        |
+| Channel | Time | Dates      | Public Build (Sparkle/Omaha)       |
 |:-------:|:--------:|:---------------------:|:---------------------:|
 | `Dev`| 4am UTC (9pm PST/12am EST) | Monday - Saturday| Yes|
 | `Beta`| 7am UTC (12am PST/3am EST)| Tuesday & Thursday| Yes|
