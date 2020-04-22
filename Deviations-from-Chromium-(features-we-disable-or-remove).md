@@ -56,6 +56,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable field trials and variations service](https://github.com/brave/brave-browser/issues/4283)
 - [Disable Lookalike URLs Navigation Suggestions](https://github.com/brave/brave-core/pull/2382/files)
 - [Disable Reporting Observers and Reporting API](https://github.com/brave/brave-core/pull/4578)
+- [Disable Scroll To Text Fragment](https://github.com/brave/brave-core/pull/4548/commits/3221538c3b2939d11a3074be3d5c8f44b2540a6c)
 
 ### Services We Proxy Through Brave Servers
 
