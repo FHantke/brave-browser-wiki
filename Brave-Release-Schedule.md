@@ -24,6 +24,18 @@ If a feature being worked on just misses the freeze time, then it will land on t
 
 Release, Beta, and Dev channels are considered to be Frozen.
 
+# Current build schedule:
+
+The following is our automated schedule for creating and uploading builds to our Sparkle (macOS) and Omaha (Windows) servers.
+
+| Channel | Time | Dates      | Public Build (Sparkle/Omaha        |
+|:-------:|:--------:|:---------------------:|:---------------------:|
+| `Dev`| 4:00 am UTC (9:00 pm PST/12:00 am EST) | Monday - Saturday| Yes|
+| `Beta`| 7:00 am UTC (12:00 am PST/3:00 am EST)| Tuesday & Thursday| Yes|
+| `Nightly`| 10:00 am UTC (3:00 am PST/6:00 am EST)| Monday - Saturday| Yes|
+| `Nightly`| 6:00 pm UTC (11:00 am PST/2:00 pm EST)| Monday - Friday| No (GitHub Only)|
+| `Nightly`| 12:00am UTC (5pm PST/8pm EST)| Monday - Friday| No (GitHub Only)|
+
 ---
 
 # Release channel dates:
