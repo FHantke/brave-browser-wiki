@@ -16,14 +16,6 @@ Information about channel differences available in the [Release Channel Descript
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
-# Freeze
-
-Freeze time is defined to be a period of time where only bug fixes, Chromium minor upgrades, security issues, and privacy issues are accepted. Nothing that smells like a feature can be [uplifted](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) in these periods of time.  Text changes are also not accepted unless it's a very bad typo that we missed.  This is important for stability reasons, localization, and making sure there's time to QA and dogfood changes.
-
-If a feature being worked on just misses the freeze time, then it will land on the next branch which is 1 release cycle higher.  This happens even if the feature was originally wanted for a certain version.
-
-Release, Beta, and Dev channels are considered to be Frozen.
-
 # Current build schedule:
 
 The following is our automated schedule for creating and uploading builds to our Sparkle (macOS), Omaha (Windows) servers and our Linux repositories.
