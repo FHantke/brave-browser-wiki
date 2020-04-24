@@ -7,7 +7,8 @@ We currently have 3 different types of protocol handlers in Brave:
 Below is a description of changes and patching we've had to do for schemes:
 
 - `AddAdditionalSchemes` is only used for adding `brave://` to the same list of URLs as `chrome://`. [Example](https://github.com/brave/brave-core/blob/master/common/brave_content_client.cc#L14) 
-`GrantRequestScheme` -  Allows a webui to access it so no reason for that. [Example](https://github.com/brave/brave-core/blob/master/patches/content-browser-child_process_security_policy_impl.cc.patch)
+
+- `GrantRequestScheme` -  Allows a webui to access it so no reason for that. [Example](https://github.com/brave/brave-core/blob/master/patches/content-browser-child_process_security_policy_impl.cc.patch)
 
 - `RegisterURLSchemeAsNotAllowingJavascriptURLs` - Registers an URL scheme to not allow manipulation of the loaded page by bookmarklets or javascript: URLs typed in the omnibox. [Example](https://github.com/brave/brave-core/blob/master/patches/content-renderer-render_thread_impl.cc.patch)
 
