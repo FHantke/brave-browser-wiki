@@ -109,7 +109,7 @@ brave-browser> npm run sync -- --all
 ```bash
 brave-core> git checkout featureB
 brave-core> git pull
-brave-browser> npm run update_patches
+brave-browser> npm run apply_patches
 ...Applying 2 patches...
 brave-browser>
 ```
