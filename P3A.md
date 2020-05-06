@@ -167,13 +167,13 @@ Note: we count only omnibox events that trigger a search.
 Note: this is based on a predictive algorithm running strictly client-side
 
 1. 0
-2. >0-50mb
+2. \>0-50mb
 3. 51-100mb
 4. 101-200mb
 5. 201-400mb 
 6. 401-700mb
 7. 701-1500mb
-8. >1501mb
+8. more than 1501mb
 
 ## Metrics Proposed/Under Development
 TBD
