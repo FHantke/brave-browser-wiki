@@ -145,14 +145,23 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 (_`Brave.Omnibox.SearchCount`_)
 Note: we count only omnibox events that trigger a search.
 
-0. Never
-1. 1 to 5 times
-2. 6 to 10 times
-3. 11 to 20 times
-4. 21 to 50 times
-5. 51 to 100 times
-6. 101 to 500 times
-7. More than 500 times 
+2. Never
+2. 1 to 5 times
+3. 6 to 10 times
+4. 11 to 20 times
+5. 21 to 50 times
+6. 51 to 100 times
+7. 101 to 500 times
+8. More than 500 times 
+
+### Q20: Which is your currently selected search engine? 
+(_`Brave.Search.DefaultEngine`_)
+1. Other
+2. Google
+3. DDG
+4. Startpage
+5. Bing
+6. Qwant
 
 ## Metrics Proposed/Under Development
 TBD
