@@ -141,6 +141,17 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 3. Between 5 and 9
 4. 10 or more
 
+### Q19:How many times did you search last week?
+(_`Brave.Omnibox.SearchCount`_)
+Note: we count only omnibox events that trigger a search.
+0. Never
+1. 1 to 5 times
+2. 6 to 10 times
+3. 11 to 20 times
+4. 21 to 50 times
+5. 51 to 100 times
+6. 101 to 500 times
+7. More than 500 times 
 
 ## Metrics Proposed/Under Development
 TBD
