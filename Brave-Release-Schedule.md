@@ -1,5 +1,7 @@
 # Overview 
 
+For iOS Release Schedule, please see https://docs.google.com/spreadsheets/d/14uGbc2rupJd0QbdBzqpUcivwLpix41siIR8mUP5lITs
+
 - Major Release frequency: ~3 weeks
 - Minor / Chemspill frequency: As needed 
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
