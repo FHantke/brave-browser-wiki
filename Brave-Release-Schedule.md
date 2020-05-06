@@ -4,9 +4,9 @@
 - Minor / Chemspill frequency: As needed 
 - Every 2nd release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
 
-- Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
-- Information about channel differences available in the [Release Channel Descriptions](https://github.com/brave/brave-browser/wiki/Release-Channel-Descriptions).
-- For iOS Release Schedule, please see https://docs.google.com/spreadsheets/d/14uGbc2rupJd0QbdBzqpUcivwLpix41siIR8mUP5lITs
+Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
+Information about channel differences available in the [Release Channel Descriptions](https://github.com/brave/brave-browser/wiki/Release-Channel-Descriptions).
+For iOS Release Schedule, please see https://docs.google.com/spreadsheets/d/14uGbc2rupJd0QbdBzqpUcivwLpix41siIR8mUP5lITs
 
 
 # Current channel information:
