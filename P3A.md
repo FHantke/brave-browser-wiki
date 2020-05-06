@@ -166,6 +166,8 @@ Note: we count only omnibox events that trigger a search.
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
 
+(`Brave.Savings.BandwidthSavingsMB`)
+
 1. 0
 2. \>0-50mb
 3. 51-100mb
