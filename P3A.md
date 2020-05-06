@@ -144,6 +144,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 ### Q19: How many times did you search last week?
 (_`Brave.Omnibox.SearchCount`_)
 Note: we count only omnibox events that trigger a search.
+
 0. Never
 1. 1 to 5 times
 2. 6 to 10 times
