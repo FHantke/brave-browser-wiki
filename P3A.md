@@ -38,11 +38,15 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Imported from Safari (answer only possible on macOS)
 
 ### Q5: How many bookmarks do you have?
-(_`Brave.Core.BookmarksCountOnProfileLoad`_)
+(_`Brave.Core.BookmarksCountOnProfileLoad.2`_)
 1. 0-5
 2. 6-20
 3. 21-100
-4. Over 100
+4. 101-500
+5. 501-1000
+6. 1001-5000
+7. 5001-10000
+9. More than 10000
 
 ### Q6: How many open windows do you have?
 (_`Brave.Core.WindowCount`_)
