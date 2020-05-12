@@ -17,7 +17,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-(_Brave.Core.IsDefault_) ~~(_`DefaultBrowser.State`_)~~
+(`_Brave.Core.IsDefault_`) ~~(_`DefaultBrowser.State`_)~~
 1. No
 2. Yes
 
@@ -49,10 +49,11 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 9. More than 10000
 
 ### Q6: How many open windows do you have?
-(_`Brave.Core.WindowCount`_)
-1. 0-1
-2. 2-5
-3. 5+
+(_`Brave.Core.WindowCount.2`_)
+1. 0
+2. 1
+3. 2-5
+4. 5+
 
 ### Q7: How many open tabs do you have?
 (_`Brave.Core.TabCount`_)
