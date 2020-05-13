@@ -20,10 +20,10 @@ PageGraph Currently Does the Following
 * GraphML export for offline / after the fact analysis
 * Chromium devtools integration, for in-browser analysis of the graph.  Currently allows for observing the full history of any node in the document.
 * Timestamp all events
+* Module scripts
 
 Not Done But Will Be Done Shortly
 ---
-* Module scripts
 * Scripts in SVG documents
 
 Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
