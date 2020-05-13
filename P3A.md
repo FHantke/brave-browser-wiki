@@ -150,7 +150,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 (_`Brave.Omnibox.SearchCount`_)
 Note: we count only omnibox events that trigger a search.
 
-2. Never
+1. Never
 2. 1 to 5 times
 3. 6 to 10 times
 4. 11 to 20 times
