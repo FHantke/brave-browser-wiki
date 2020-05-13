@@ -53,7 +53,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 1. 0
 2. 1
 3. 2-5
-4. 5+
+4. 6+
 
 ### Q7: How many open tabs do you have?
 (_`Brave.Core.TabCount`_)
