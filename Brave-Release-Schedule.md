@@ -15,8 +15,8 @@ For iOS Release Schedule, please see https://docs.google.com/spreadsheets/d/14uG
 
 | **Channel**     | Release |  Beta & Dev | Nightly|
 | ----------------| ------- | ------ | ------ |
-| **Milestone**   | 1.8.x  | 1.9.x    | 1.10.x |
-| **Branch name** | 1.8.x | 1.9.x    | master |
+| **Milestone**   | 1.9.x  | 1.10.x    | 1.11.x |
+| **Branch name** | 1.9.x | 1.10.x    | master |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
