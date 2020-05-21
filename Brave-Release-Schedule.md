@@ -42,7 +42,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.5.x   |    80    | March 10, 2020      | March 17, 2020      | [M81 release delayed because of COVID-19](https://chromereleases.googleblog.com/2020/03/upcoming-chrome-and-chrome-os-releases.html) |
 | 1.7.x   |    80    | April 2, 2020       | April 14, 2020      |                                            |
 | 1.8.x   |    81    | April 21, 2020      | April 30, 2020      |                                            |
-| 1.9.x   |    81    | May 14, 2020        | May 19, 2020        |                                            |
+| 1.9.x   |    81    | May 14, 2020        | May 21, 2020        |                                            |
 | 1.10.x  |    83    | June 2, 2020        | June 9, 2020        |  [Skipping over M82 to M83 after prior delay for M81](https://chromereleases.googleblog.com/2020/03/chrome-and-chrome-os-release-updates.html)                                           |
 | 1.11.x  |    84    | June 30, 2020       | July, 7, 2020       |4 week cycle to keep in sync with Chromium  |
 | 1.12.x  |    84    | July 28, 2020       | August 4, 2020      |4 week cycle to keep in sync with Chromium  |
