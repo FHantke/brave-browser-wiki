@@ -39,7 +39,7 @@ When on a specific build from the build history there are some helpful links:
 ## Process overview
 The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/devops/blob/master/jenkins/jobs/browser/Jenkinsfile.
 
-The above gets called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile.
+The above gets called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will looks for a PR in the other repo and update its status.
 
 We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get shutdown if idle for 30m (if no other builds start on them). For macOS we use physical machines (which means higher chance to re-use workspaces).
 
@@ -69,13 +69,15 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 
 ### Start a PR builder Jenkins job
 
-To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view. The following parameters are available:
+To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-browser-build-pr` or `brave-core-build-pr`). The following parameters are available:
 - CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
 - BUILD_TYPE - `Release` by default but can be `Debug` as well
 - WIPE_WORKSPACE - `false` by default
 - SKIP_INIT - `false` by default
 - DISABLE_SCCACHE - `false` by default (available only for Android, Linux and macOS)
 - SKIP_SIGNING - `true` by default
+
+Same is valid for restarts, always do them from the top level jobs for proper status reporting.
 
 ## Resources
 - for employees, join the `#brave-browser-ci` Slack channel
