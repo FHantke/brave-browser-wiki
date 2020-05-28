@@ -4,5 +4,7 @@ If you navigate to `brave://settings/socialBlocking`, you will see an option to 
 
 When this option is enabled:
 
-1. It adds an exception for accounts.google.com so sites using `Login with Google` can work correctly.
-2. It enables chrome.identity for extensions so extensions like Google Keep and Google Calendar can use an OAuth token from google to use these services in extensions.
+1. It adds a third-party cookie exception for accounts.google.com so sites using `Login with Google` can work correctly.
+2. It enables `chrome.identity` for extensions so extensions like Google Keep and Google Calendar can retrieve an OAuth token from google to authenticate users.
+
+If you are not logged into Google, this option has no effect for you..
