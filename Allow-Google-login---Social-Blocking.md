@@ -1,4 +1,4 @@
-If you navigate to brave://settings/socialBlocking, you will see an option to enable Allow Google Login in extensions and third party.
+If you navigate to `brave://settings/socialBlocking`, you will see an option to enable `Allow Google Login in extensions and third party`.
 
 ![social-blocking](https://jumde.github.io/img/social_blocking.png)
 
