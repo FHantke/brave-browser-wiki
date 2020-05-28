@@ -7,4 +7,4 @@ When this option is enabled:
 1. It adds a third-party cookie exception for accounts.google.com so sites using `Login with Google` can work correctly.
 2. It enables `chrome.identity` for extensions so extensions like Google Keep and Google Calendar can retrieve an OAuth token from google to authenticate users.
 
-If you are not logged into Google, this option has no effect for you..
+If you are not logged into Google, this option has no effect for you.
