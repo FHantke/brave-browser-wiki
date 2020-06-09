@@ -32,7 +32,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Upload Windows stub and silent installer to S3 bucket using similar command to Mac dmg above (i.e `BraveBrowserSetup.exe`, `BraveBrowserSetup32.exe`, `BraveBrowserSilentSetup.exe`, `BraveBrowserSilentSetup32.exe`)
 
 ### Clear Production Fastly cache
-- [ ] Log into Fastly, clear CDN cache for: `brave-browser-downloads.s3.brave.com`, `brave-browser-apt-release.s3.brave.com`, `brave-browser-rpm-release.s3.brave.com`, `updates-cdn.bravesoftware.com`, `updates.bravesoftware.com`
+- [ ] Clear Fastly cache for: `brave-browser-downloads.s3.brave.com`, `brave-browser-apt-release.s3.brave.com`, `brave-browser-rpm-release.s3.brave.com`
 
 ### Updates Testing on Production
 - [ ] Wait for confirmation that Windows live update works
