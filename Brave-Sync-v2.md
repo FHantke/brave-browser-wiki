@@ -1,0 +1,51 @@
+# Sync v2 overview
+Brave Sync version 2 aims to make a wire compatible server side protocol which understands `components/sync/protocol/sync.proto` used by the official Google sync service. Server code is at https://github.com/brave/go-sync
+
+## Differences from chromium sync
+1. Enforce client side encryption
+2. Doesn't require sign-in to use sync, we use the same "Sync Chain" concept from v1
+### Authentication
+A "Sync Chain" is configured using a 32 octets pseudo-randomly generated seed by the initial client.
+Then the seed will be encoded using BIP39. If other client wants to join the sync chain, they can enter BIP39 key phrases from initial client.
+The HKDF with a SHA-512 MAC is used to derive the Ed25519 key pair used for signing.
+
+Client will compose access token following the format `base64(timestamp_hex|signed_timestamp_hex|public_key_hex)`.
+Timestamp is fetched from network time, if network time is not available at the moment, client uses local time. And every server response contains `Sane-Time-Millis` header which will update the network time
+
+### Client side encryption
+We derive key from `custom passphrase` of chromium and encrypt everything on client. The passphrase is BIP39 key phrases which means sync seed is key-stretched using `scrypt`. Then the key is used directly as the AES-CTR-HMAC encryption key
+#### What gets encrypted
+In `components/sync/protocol/sync.proto`, each `SyncEntity` contains `EntitySpecifics` which is actual data of each date type. For example, 
+```protobuf
+message BookmarkSpecifics {
+  optional string url = 1;
+  optional bytes favicon = 2;
+  // Contains legacy title which is truncated and may contain escaped symbols.
+  optional string legacy_canonicalized_title = 3;
+  // Corresponds to BookmarkNode::date_added() represented as microseconds since
+  // the Windows epoch.
+  optional int64 creation_time_us = 4;
+  optional string icon_url = 5;
+  repeated MetaInfo meta_info = 6;
+  reserved 7;
+  reserved 8;
+  reserved 9;
+  // Introduced in M81, it represents a globally unique and immutable ID.
+  //
+  // If present, it must be the same as originator_client_item_id in lowercase,
+  // unless originator client item ID is not a valid GUID. In such cases (which
+  // is the case for bookmarks created before 2015), this GUID must match the
+  // value inferred from the combination of originator cache GUID and
+  // originator client item ID, see InferGuidForLegacyBookmark().
+  //
+  // If not present, the value can be safely inferred using the very same
+  // methods listed above.
+  optional string guid = 10;
+  // Contains full title as is. |legacy_canonicalized_title| is a prefix of
+  // |full_title| with escaped symbols.
+  optional string full_title = 11;
+}
+```
+So that is the field will get encrypted and can only be seen by client.
+#### What sync server is able to see
+Other essential fields used for communication will remain plaintext, like `version`, `id_string`, `parent_id_string`...etc
