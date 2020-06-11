@@ -4,7 +4,7 @@ Brave Sync version 2 aims to make a wire compatible server side protocol which u
 ## Differences from chromium sync
 1. Enforce client side encryption
 2. Doesn't require sign-in to use sync (we use the same "Sync Chain" concept from v1)
-3. Uses a Brave-operated sync server
+3. Uses a Brave-operated sync server so no data is sent to Google servers
 
 
 ### Authentication
@@ -55,5 +55,6 @@ message BookmarkSpecifics {
 }
 ```
 So that is the field will get encrypted and can only be seen by client.
+
 #### What sync server is able to see
-Other essential fields used for communication will remain plaintext, like `version`, `id_string`, `parent_id_string`...etc
+Other essential fields used for communication and sync conflict resolution will remain plaintext, like device name and type, opaque IDs for synced items and their parents, item version, creation time, etc.
