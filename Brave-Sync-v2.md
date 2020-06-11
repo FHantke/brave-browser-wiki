@@ -13,7 +13,7 @@ Client will compose access token following the format `base64(timestamp_hex|sign
 Timestamp is fetched from network time, if network time is not available at the moment, client uses local time. And every server response contains `Sane-Time-Millis` header which will update the network time
 
 ### Client side encryption
-We derive key from `custom passphrase` of chromium and encrypt everything on client. The passphrase is BIP39 key phrases which means sync seed is key-stretched using `scrypt`. Then the key is used directly as the AES-CTR-HMAC encryption key
+We derive key from `custom passphrase` of chromium and encrypt everything on client. The passphrase is BIP39 key phrases which means sync seed is key-stretched using `scrypt`(N = 2^13, r = 8, p = 11). Client will also need to exchange random salt in order to derive the key. Then the key is used directly as the AES-CTR-HMAC encryption key
 #### What gets encrypted
 In `components/sync/protocol/sync.proto`, each `SyncEntity` contains `EntitySpecifics` which is actual data of each date type. For example, 
 ```protobuf
