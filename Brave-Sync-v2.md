@@ -1,5 +1,5 @@
 # Sync v2 overview
-Brave Sync version 2 aims to make a wire compatible server side protocol which understands `components/sync/protocol/sync.proto` used by the official Google sync service. Server code is at https://github.com/brave/go-sync
+Brave Sync version 2 aims to make a wire compatible server side protocol which understands [components/sync/protocol/sync.proto](https://source.chromium.org/chromium/chromium/src/+/master:components/sync/protocol/sync.proto) used by the official Google sync service. Server code is at https://github.com/brave/go-sync
 
 ## Differences from chromium sync
 1. Enforce client side encryption
