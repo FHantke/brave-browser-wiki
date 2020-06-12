@@ -23,7 +23,7 @@ The rest of the encryption is handled by Chromium as follows:
 2. Then the stretched key is used directly as a AES128-CTR-HMAC encryption key.
 
 #### What gets encrypted
-In `components/sync/protocol/sync.proto`, each `SyncEntity` contains `EntitySpecifics` which is actual data of each date type. For example, 
+In `components/sync/protocol/sync.proto`, each `SyncEntity` contains `EntitySpecifics` which is the actual data of each data type. For example, 
 ```protobuf
 message BookmarkSpecifics {
   optional string url = 1;
@@ -54,7 +54,7 @@ message BookmarkSpecifics {
   optional string full_title = 11;
 }
 ```
-So that is the field will get encrypted and can only be seen by client.
+That is the field that will get encrypted and can only be seen by the client.
 
 #### What sync server is able to see
 Other essential fields used for communication and sync conflict resolution will remain plaintext, like device name and type, opaque IDs for synced items and their parents, item version, creation time, etc.
