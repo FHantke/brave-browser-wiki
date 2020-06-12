@@ -70,8 +70,29 @@ _Google does not receive any information about which client is performing these 
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
 
-More information about Proxy redirected URLs can be found here:
-https://github.com/brave/brave-browser/wiki/Proxy-redirected-URLs
+#### Proxied endpoints
+- `https://dl.google.com/release2/chrome_component/*crl-set*`
+- `https://*.gvt1.com/edgedl/release2/chrome_component/*`
+- `https://*.gvt1.com/edgedl/chrome/dict/*.bdic`
+- `https://storage.googleapis.com/update-delta/hfnkpimlhhgieaddgfemjhofmfblmnib/.+crxd`
+- `https://safebrowsing.googleapis.com/`
+- `https://sb-ssl.google.com/`
+- `https://ssl.gstatic.com`
+- `https://static1.brave.com`
+- `https://componentupdater.brave.com`
+- `https://clients2.googleusercontent.com`
+- `https://clients2.google.com`
+- `https://clients4.google.com`
+- `https://chrome-devtools-frontend.appspot.com`
+- `https://*.infura.io`
+- `https://*.gvt1.com/edgel/chromewebstore/*/*`
+- `https://*.gvt1.com/edgedl/release2/*/*`
+- `http://dl.google.com/release2/*/*`
+- `https://translate.googleapis.com/translate_a/element.js*`
+- `https://translate.googleapis.com/element/*/js/element/element_main.js`
+- `https://translate.googleapis.com/translate_static/js/element/main.js`
+- `https://translate.googleapis.com/translate_static/css/translateelement.css`
+- `https://www.gstatic.com/images/branding/product/*x/translate_24dp.png`
 
 ### Modified Features and Functionality
 
