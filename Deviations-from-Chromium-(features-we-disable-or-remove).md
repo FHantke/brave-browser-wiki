@@ -97,10 +97,21 @@ _Google does not receive any information about which client is performing these 
 ### Modified Features and Functionality
 
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
-- Referrer values are modified in the following ways:
-  * *cross-site* requests for iframes and sub-resources have their referrer set to be the origin of the requested resource
-  * *cross-site* navigations have no referrer at all
-  * *same-site* requests of all kinds have the same behavior as Chromium
+- Referrer values are modified using the following algorithm:
+  1. Set effective policy to `strict-origin-when-cross-origin`.
+  2. Is this a cross-site navigation?
+     - `GET` / `HEAD`?
+       - If yes, change effective policy to `no-referrer`
+     - Otherwise:
+       - Requested policy of `origin`?
+         - If yes, change effective policy to `strict-origin`
+       - Requested policy of `no-referrer`, `same-origin`, or `strict-origin`?
+         - If yes, change effective policy to the requested policy. 
+  3. Is this a sub-resource or iframe request?
+     - Requested policy of `origin`?
+       - If yes, change effective policy to `strict-origin`
+     - Requested policy of `no-referrer`, `same-origin`, or `strict-origin`?
+       - If yes, change effective policy to the requested policy.
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 - Plugins, sensors and background-sync page permissions are disabled by default. Users can override these using the usual page permission settings.
 - Download protection remote lookups are currently disabled (https://github.com/brave/brave-browser/issues/4341).
