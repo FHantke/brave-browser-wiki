@@ -33,7 +33,8 @@ In cases where we randomize API values, we attempt to make modifications that ar
 
 This list is not complete. See https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove) for other things which are disabled in Brave but not in Chrome.
 
-* 3rd party cookies and referers blocked by default due to the third party tracking risk
+* 3rd party cookies blocked by default due to the third party tracking risk
+* referrers trimmed or blocked by default
 * User-Agent is set to Chrome except on a few sites that need it for major functionality to work to prevent sites from using Brave's UA as a tracking mechanism.
 * `navigator.plugins` and `navigator.mimeTypes` is empty unless you've enabled Flash to trigger HTML5 fallback for Flash whenever possible.
 * Connections to known tracking domains are blocked via the Ad block Rust library in a list similar to Disconnect.
