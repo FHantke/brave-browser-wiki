@@ -159,3 +159,9 @@ For now just follow the instructions in https://github.com/brave/brave-browser/w
 We should build some automation to find new things added here:
 
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
+
+
+# Notify Security team of feature changes
+
+Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes to https://chromium.googlesource.com/chromium/src/+diff/<Previous Version>..<New Version>/content/public/common/content_features.cc
+in #security-discussion Slack channel. 
