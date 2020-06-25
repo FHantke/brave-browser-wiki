@@ -163,5 +163,5 @@ https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=pac
 
 # Notify Security team of feature changes
 
-Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/&lt;Previous Version&gt;..&lt;New Version&gt;/content/public/common/content_features.cc
+Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
 in #security-discussion Slack channel. 
