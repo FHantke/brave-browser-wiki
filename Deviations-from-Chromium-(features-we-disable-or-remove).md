@@ -78,12 +78,13 @@ _Google does not receive any information about which client is performing these 
 - `https://safebrowsing.googleapis.com/`
 - `https://sb-ssl.google.com/`
 - `https://ssl.gstatic.com`
-- `https://static1.brave.com`
-- `https://componentupdater.brave.com`
+- `https://gstatic.com`
+- `https://update.googleapis.com`
 - `https://clients2.googleusercontent.com`
 - `https://clients2.google.com`
 - `https://clients4.google.com`
 - `https://chrome-devtools-frontend.appspot.com`
+- `https://accounts.google.com`
 - `https://*.infura.io`
 - `https://*.gvt1.com/edgel/chromewebstore/*/*`
 - `https://*.gvt1.com/edgedl/release2/*/*`
