@@ -1,3 +1,11 @@
+Our implementation of cosmetic filters tries to avoid hiding entirely first-party elements:
+
+1. If its ID'ed with a [well-known ad ID](https://github.com/brave/brave-core/blob/5a42fe6f57f23b2ae0e85cf9daabb9ff39f3fa23/components/brave_extension/extension/brave_extension/content_cosmetic.ts#L253-L255) (currently `google_ads_iframe_`, `div-gpt-ad`, and `adfox_`), hide it.
+2. If it has a [first-party resource](https://github.com/brave/brave-core/blob/73c843859bcc5f47176f4f052d01d768b83b9349/components/brave_extension/extension/brave_extension/content_cosmetic.ts#L288), don't hide it.
+3. If it contains a [third-party resource](https://github.com/brave/brave-core/blob/73c843859bcc5f47176f4f052d01d768b83b9349/components/brave_extension/extension/brave_extension/content_cosmetic.ts#L311), hide it.
+4. If it has [more than 5 words of text in it](https://github.com/brave/brave-core/blob/73c843859bcc5f47176f4f052d01d768b83b9349/components/brave_extension/extension/brave_extension/content_cosmetic.ts#L315), don't hide it.
+5. Otherwise apply the filter and hide it.
+
 
 # cosmetic filtering API call:
 
