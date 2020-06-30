@@ -88,7 +88,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.9.x   | 82                | April 21, 2020      |                                           |
 | 1.10.x   | 83               | May 12, 2020        |                                           |
 | 1.11.x  | 83                | June 2, 2020        |                                           |
-| 1.12.x  | 84                | June 30, 2020       |                                           |
+| 1.12.x  | 84                | July 7, 2020        |                                           |
 | 1.13.x  | 84                | July 28, 2020       |                                           |
 | 1.14.x  | 85                | August 18, 2020     |                                           |
 | 1.15.x  | 85                | September 8, 2020   |                                           |
@@ -116,7 +116,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.10.x  | 83                | April 21, 2020      |                                           |
 | 1.11.x  | 84                | May 12, 2020        |                                           |
 | 1.12.x  | 84                | June 2, 2020        |                                           |
-| 1.13.x  | 85                | June 30, 2020       |                                           |
+| 1.13.x  | 85                | July 7, 2020        |                                           |
 | 1.14.x  | 85                | July 28, 2020       |                                           |
 | 1.15.x  | 86                | August 18, 2020     |                                           |
 | 1.16.x  | 86                | September 8, 2020   |                                           |
