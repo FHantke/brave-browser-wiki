@@ -28,6 +28,13 @@ Use `./src/build/install-build-deps-android.sh` for android builds
 
 Check out the upstream [Checking out and building Chromium on Linux](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md) docs before filing an issue.
 
+# Making debug build for Android
+If you are building debug apk for Android and doing debugging, you may want to add `--gn=enable_proguard_obfuscation:false` to build command:
+```
+npm run build -- --target_os=android --target_arch=arm --gn=enable_proguard_obfuscation:false
+```
+This will give you nice stacks from Java crashes or exceptions without need to run retrace script.
+
 # Installing a build on Android
 
 Both for devices and if you have a started emulator:
