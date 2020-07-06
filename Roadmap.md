@@ -3,8 +3,8 @@
 
 One of the best ways to see which features are coming down the pipeline and what Brave is currently working on is taking a look through the different [milestones](https://github.com/brave/brave-browser/milestones). Each milestone has a set release date that can be found via the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule).
 
-* [1.7.x - Beta](https://github.com/brave/brave-browser/milestone/84?closed=1) - Scheduled to be released on `April 7, 2020` and can be downloaded [here](http://brave.com/download-beta).
-* [1.8.x - Nightly](https://github.com/brave/brave-browser/milestone/92?closed=1) - Scheduled to be released on `April 28, 2020` and can be downloaded [here](http://brave.com/download-nightly).
+* [1.11.x - Beta](https://github.com/brave/brave-browser/milestone/112?closed=1) - Scheduled to be released on `July 14, 2020` and can be downloaded [here](http://brave.com/download-beta).
+* [1.12.x - Nightly](https://github.com/brave/brave-browser/milestone/115?closed=1) - Scheduled to be released on `August 4, 2020` and can be downloaded [here](http://brave.com/download-nightly).
 
 ## Upcoming Features
 
