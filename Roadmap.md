@@ -45,4 +45,6 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q4 2020 [October - December]:
 
-### Q1 2020 [January - March]:
+### Q1 2021 [January - March]:
+
+### Q2 2021 [April - June]:
