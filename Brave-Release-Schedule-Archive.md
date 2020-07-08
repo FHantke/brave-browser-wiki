@@ -31,6 +31,12 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.1.x   |    79    | December 3, 2019    | December 10, 2019   |                                            |
 | 1.2.x   |    79    | December 30, 2019   | January 6, 2020     |Late release due to holidays                |
 | 1.3.x   |    80    | February 4, 2020.   | February 7, 2020    |Originally released Feb. 4th but reverted   |
+| 1.4.x   |    80    | February 19, 2020   | February 25, 2020   |                                            |
+| 1.5.x   |    80    | March 10, 2020      | March 17, 2020      | [M81 release delayed because of COVID-19](https://chromereleases.googleblog.com/2020/03/upcoming-chrome-and-chrome-os-releases.html) |
+| 1.7.x   |    80    | April 2, 2020       | April 14, 2020      |                                            |
+| 1.8.x   |    81    | April 21, 2020      | April 30, 2020      |                                            |
+| 1.9.x   |    81    | May 14, 2020        | May 21, 2020        |                                            |
+| 1.10.x  |    83    | June 4, 2020        | June 15, 2020        |  [Skipping over M82 to M83 after prior delay for M81](https://chromereleases.googleblog.com/2020/03/chrome-and-chrome-os-release-updates.html)                                           |
 ---
 
 # Beta channel dates:
