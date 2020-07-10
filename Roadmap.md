@@ -25,7 +25,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q2 2020 [April - June]:
 
-* ☑️ Sync v2 (live on Desktop and Android 1.12)
+* ☑️ Sync v2 (live on Desktop and Android 1.12; still working on iOS version)
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * ✅ Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
 * ✅ Improvements to importer on Desktop (import extensions, bug fixes)
