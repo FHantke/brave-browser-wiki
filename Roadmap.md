@@ -27,11 +27,11 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 * ☑️ Sync v2 (live on Desktop and Android 1.12; still working on iOS version)
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
-* ✅ Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
+* ✅ [Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy](https://brave.com/binance-widget/)
 * ✅ Improvements to importer on Desktop (import extensions, bug fixes)
 * ✅ Speedreader (live on Desktop 1.12)
 * ✅ Super Referral program - Custom new tab page image and links for select referrers
-* ✅ Reworking of fingerprinting protections to be randomization-based
+* ✅ [Reworking of fingerprinting protections to be randomization-based](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
 * Privacy preserving replacements for stateless social media widgets
 * ✅ User wallets on Android
 
