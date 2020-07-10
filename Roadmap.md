@@ -31,10 +31,10 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * ✅ Speedreader (live on Desktop 1.12)
 * ✅ Super Referral program - Custom new tab page image and links for select referrers
 * ✅ [Reworking of fingerprinting protections to be randomization-based](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
-* Privacy preserving replacements for stateless social media widgets
 * ✅ User wallets on Android
 
 ### Q3 2020 [July - September]:
+* Privacy preserving replacements for stateless social media widgets
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * iOS Playlist feature
 * Enterprise support (group policy templates / documentation)
