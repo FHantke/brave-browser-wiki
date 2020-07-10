@@ -14,32 +14,32 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q1 2020 [January - March]:
 
-* Android browser rewrite on Brave Core code base
-* [Binance widget](https://brave.com/binance/) on the New Tab Page buy widget
-* [Fingerprinting randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
-* [Tap network integration](https://brave.com/brave-and-tap-network-partnership-connects-consumers-and-brands-via-blockchain/)
-* [Sponsored images support](https://brave.com/sponsored-images-now-available-on-all-brave-platforms/)
-* [Cosmetic filtering support](https://brave.com/whats-brave-done-for-my-privacy-lately-episode2/)
-* [Web resource replacement](https://brave.com/whats-brave-done-for-my-privacy-lately-episode1/)
-* Ability to detect Brave ([Desktop / Android](https://github.com/brave/brave-core/pull/4721) / [iOS](https://github.com/brave/brave-ios/pull/2374))
+* ✅ Android browser rewrite on Brave Core code base
+* ✅ [Binance widget](https://brave.com/binance/) on the New Tab Page buy widget
+* ✅ [Fingerprinting randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
+* ✅ [Tap network integration](https://brave.com/brave-and-tap-network-partnership-connects-consumers-and-brands-via-blockchain/)
+* ✅ [Sponsored images support](https://brave.com/sponsored-images-now-available-on-all-brave-platforms/)
+* ✅ [Cosmetic filtering support](https://brave.com/whats-brave-done-for-my-privacy-lately-episode2/)
+* ✅ [Web resource replacement](https://brave.com/whats-brave-done-for-my-privacy-lately-episode1/)
+* ✅ Ability to detect Brave ([Desktop / Android](https://github.com/brave/brave-core/pull/4721) / [iOS](https://github.com/brave/brave-ios/pull/2374))
 
 ### Q2 2020 [April - June]:
 
-* Sync v2
+* ☑️ Sync v2 (live on Desktop and Android 1.12)
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
-* Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
-* Improvements to importer on Desktop (import extensions, bug fixes)
-* Enterprise support (group policy templates / documentation)
-* Speedreader
-* Super Referral program - Custom new tab page image and links for select referrers
-* iOS Playlist feature
-* Reworking of fingerprinting protections to be randomization-based
+* ✅ Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy
+* ✅ Improvements to importer on Desktop (import extensions, bug fixes)
+* ✅ Speedreader (live on Desktop 1.12)
+* ✅ Super Referral program - Custom new tab page image and links for select referrers
+* ✅ Reworking of fingerprinting protections to be randomization-based
 * Privacy preserving replacements for stateless social media widgets
-* Improved Brave Rewards tipping using Greaselion, making it easier add and manage new platforms
-* User wallets on Android
-* Improved advertising relevance for purchasing and by state (in the US)
+* ✅ User wallets on Android
 
 ### Q3 2020 [July - September]:
+* iOS Playlist feature
+* Enterprise support (group policy templates / documentation)
+* Improved Brave Rewards tipping using Greaselion, making it easier add and manage new platforms
+* Improved advertising relevance for purchasing and by state (in the US)
 * Reworking storage protections, moving from blocking all 3p storage to integrating Storage Access API
 * Top level URL blocking
 
