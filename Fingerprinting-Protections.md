@@ -27,7 +27,7 @@ In cases where we randomize API values, we attempt to make modifications that ar
 * Plugins: [#9435](https://github.com/brave/brave-browser/issues/9435), [#10597](https://github.com/brave/brave-browser/issues/10597)
 
 
-## Privacy protection enabled regardless of whether Fingerprinting Protection Mode is on
+## Privacy protections always enabled
 
 This list is not complete. See https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove) for other things which are disabled in Brave but not in Chrome.
 
@@ -60,7 +60,6 @@ More information about Brave's "privacy through randomization" systems can be fo
 ## TODO
 * Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
 * Limit fingerprinting via viewport/screen size: https://github.com/brave/brave-browser/issues/720
-* Lots more at https://github.com/brave/brave-browser/labels/feature%2Fshields%2Ffingerprint and https://github.com/brave/brave-browser/labels/privacy%2Ftracking
 
 ## Further reading
 * [W3C note in progress on browser fingerprinting](https://w3c.github.io/fingerprinting-guidance/)
