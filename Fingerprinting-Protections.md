@@ -27,6 +27,10 @@ More information about Brave's "privacy through randomization" systems can be fo
 - [What’s Brave Done For My Privacy Lately? Episode #4: Fingerprinting Defenses 2.0
 ](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
 
+## How to check that it's working
+
+See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536
+
 ## Fingerprinting methods blocked in Fingerprinting Protection Mode
 
 * [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
@@ -53,11 +57,6 @@ This list is not complete. See https://github.com/brave/brave-browser/wiki/Devia
 * `navigator.credentials` is disabled on desktop prior to C73; we are re-enabling it to support [webauthn](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/).
 * Web Bluetooth is disabled on desktop due to us not seeing much benefit to enabling it right now
 * We are also planning on disabling client-hints, see https://github.com/brave/brave-browser/issues/3539#issuecomment-483826927 for rationale
-
-## How to check that it's working
-
-See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536
-
 
 ## TODO
 * Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
