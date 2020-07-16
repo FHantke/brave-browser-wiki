@@ -2,7 +2,7 @@
 
 Fingerprinting Protection is a privacy feature that makes it harder for sites to track you while you browse.
 
-## Technical Details
+## Technical details
 
 Brave includes best-effort defense against [browser fingerprinting](https://www.torproject.org/projects/torbrowser/design/#fingerprinting-linkability). Broadly speaking, browser fingerprinting is the detection of browser and operating system features that differ between users for the purpose of covertly identifying users and tracking them across the web. Although fingerprinting attacks will always be possible, it is worthwhile for us to make these attacks as slow / costly / difficult as possible.
 
@@ -27,9 +27,16 @@ More information about Brave's "privacy through randomization" systems can be fo
 - [What’s Brave Done For My Privacy Lately? Episode #4: Fingerprinting Defenses 2.0
 ](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
 
+
 ## How to check that it's working
 
 See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536
+
+## Differences between "standard" and "strict" protections
+
+Brave has two levels of fingerprinting protections.  In the default, "standard" configuration, Brave adds subtle noise to APIs commonly used for fingeprinting. This small amount of noise is enough to make you look different to fingerprinting scripts, without breaking websites, and will provide good protections against web-scale online trackers.
+
+Brave also includes a "strict" option. When set to "strict" mode, Brave only returns random values from APIs commonly used by fingerprinters.  This provides a higher level of protection against highly determined attackers, who may attempt statistical and / or targeted attacks to identify users. This mode will also break websites who depend on these features to work correctly.
 
 ## Fingerprinting methods randomized
 
