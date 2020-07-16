@@ -45,7 +45,7 @@ See https://community.brave.com/t/how-do-i-turn-on-browser-fingerprinting-protec
 
 ## Why does panopticlick.eff.org or some other site say that I am fingerprintable?
 
-TL;DR; these sites wrongly detect Brave as identifiable because they are designed to measure a different (weaker) form of fingerprinting protection than Brave uses. Most tools try to make as many browsers look identical as possible, and sites like panopticlick.eff.org look to see if your browser matches any they've seen previously.  If not, then they determine that you're fingerprintable.
+**TL;DR;** these sites wrongly detect Brave as identifiable because they are designed to measure a different (weaker) form of fingerprinting protection than Brave uses. Most tools try to make as many browsers look identical as possible, and sites like panopticlick.eff.org look to see if your browser matches any they've seen previously.  If not, then they determine that you're fingerprintable.
 
 Brave's system for protecting users against fingerprinting works differently. Instead of trying to make Brave users look identical (a goal that is not achievable for many users in many cases, without breaking websites or turning off useful browser functionality), Brave tries to make you look as _different_ as possible, for each website, for each session.  This prevents browsers from identifying you when you visit other sites, or when you return to the same site in the future.
 
