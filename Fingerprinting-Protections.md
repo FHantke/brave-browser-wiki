@@ -12,6 +12,21 @@ In cases where we block, remove or modify API behavior, we attempt to return emp
 
 In cases where we randomize API values, we attempt to make modifications that are imperceivable to humans, but distinguishing to computers / fingerprinters.  These randomization values are derived from a seed that changes per session, and per eTLD+1.  Third party frames and script share the seed value of the top level, eTLD+1 domain. This approach is especially useful in fingerprinters that hash together a large number of semi-identifiers into a single identifier, since randomizing just one value "poisons" the entire fingerprint.
 
+
+## Why does panopticlick.eff.org or some other site say that I am fingerprintable?
+
+These sites wrongly detect Brave as identifiable because they are designed to measure a different form of fingerprinting protection than Brave uses. Most tools try to make as many browsers look identical as possible, and sites like panopticlick.eff.org look to see if your browser matches any they've seen previously.  If not, then they determine that you're fingerprintable.
+
+Brave's system for protecting users against fingerprinting works differently. Instead of trying to make Brave users look identical (a goal that is not achievable for many users in many cases, without breaking websites or turning off useful browser functionality), Brave tries to make you look as _different_ as possible, for each website, for each session.  This prevents browsers from identifying you when you visit other sites, or when you return to the same site in the future.
+
+Brave uses this anonymity-through-randomization approach for several reasons including i) it better protects users with browser / computer / language / etc configurations, and ii) its more web compatible, since it doesn't require disabling browser features.
+
+More information about Brave's "privacy through randomization" systems can be found in the following blog posts:
+
+- [What’s Brave Done For My Privacy Lately? Episode #3: Fingerprint Randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
+- [What’s Brave Done For My Privacy Lately? Episode #4: Fingerprinting Defenses 2.0
+](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
+
 ## Fingerprinting methods blocked in Fingerprinting Protection Mode
 
 * [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
@@ -41,21 +56,8 @@ This list is not complete. See https://github.com/brave/brave-browser/wiki/Devia
 
 ## How to check that it's working
 
-See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536/3
+See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536
 
-## Why does panopticlick.eff.org or some other site say that I am fingerprintable?
-
-These sites wrongly detect Brave as identifiable because they are designed to measure a different form of fingerprinting protection than Brave uses. Most tools try to make as many browsers look identical as possible, and sites like panopticlick.eff.org look to see if your browser matches any they've seen previously.  If not, then they determine that you're fingerprintable.
-
-Brave's system for protecting users against fingerprinting works differently. Instead of trying to make Brave users look identical (a goal that is not achievable for many users in many cases, without breaking websites or turning off useful browser functionality), Brave tries to make you look as _different_ as possible, for each website, for each session.  This prevents browsers from identifying you when you visit other sites, or when you return to the same site in the future.
-
-Brave uses this anonymity-through-randomization approach for several reasons including i) it better protects users with browser / computer / language / etc configurations, and ii) its more web compatible, since it doesn't require disabling browser features.
-
-More information about Brave's "privacy through randomization" systems can be found in the following blog posts:
-
-- [What’s Brave Done For My Privacy Lately? Episode #3: Fingerprint Randomization](https://brave.com/whats-brave-done-for-my-privacy-lately-episode3/)
-- [What’s Brave Done For My Privacy Lately? Episode #4: Fingerprinting Defenses 2.0
-](https://brave.com/whats-brave-done-for-my-privacy-lately-episode-4-fingerprinting-defenses-2-0/)
 
 ## TODO
 * Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
