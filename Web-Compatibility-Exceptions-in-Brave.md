@@ -1,7 +1,8 @@
 This is a list of URL patterns that we have had to intentionally exclude from tracking protection due to site features breaking and user complaints. Note that these sites are not allowed access to third party cookies/storage.
 
-We're in the process of adding options to control these exceptions as outlined in the "Summary of the plan"section of [this issue](https://github.com/brave/brave-browser/issues/3475).
+We're in the process of adding options to control these exceptions as outlined in the "Summary of the plan" section of [this issue](https://github.com/brave/brave-browser/issues/3475).
 
+## Filter lists
 
 ### Facebook login buttons
 
@@ -22,17 +23,6 @@ Notes: We may be able to fix some of these issues by loading FB's SDK from a loc
 @@||staticxx.facebook.com/connect/
 @@||graph.facebook.com/
 ```
-
-Web compatibility observations without these exceptions:
-* quora.com FB login is broken
-* twitch.tv FB login is broken
-* quora.com FB login is broken
-* espn.com FB login is broken
-* etsy.com FB login is broken
-* digg.com FB login is broken
-* fitbit.com FB login is broken
-* FB login on airbnb.com works fine without the exceptions
-
 
 ### Facebook embeds
 
@@ -73,3 +63,7 @@ Web compatibility observations without these exclusions:
 ### Other
 
 Additional exceptions for cross-site-tracking rules are generally recorded in [brave/adblock-lists/brave-unbreak.txt](https://github.com/brave/adblock-lists/blob/master/brave-unbreak.txt).
+
+## Referrers
+
+Brave currently ships some exceptions 
