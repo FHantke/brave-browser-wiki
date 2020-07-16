@@ -31,32 +31,20 @@ More information about Brave's "privacy through randomization" systems can be fo
 
 See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536
 
-## Fingerprinting methods blocked in Fingerprinting Protection Mode
-
-* [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
-* [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
-* [Client Hints](https://github.com/brave/brave-browser/issues/3539)
-* [Media Streams: Enumerate Devices](https://github.com/brave/brave-browser/issues/4464)
-
-## Fingerprinting methods randomized with Fingerprinting Protection Mode
+## Fingerprinting methods randomized
 
 * [Canvas fingerprinting](https://www.browserleaks.com/canvas)
 * [WebGL fingerprinting](https://amiunique.org/faq)
 * [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
 * Plugins: [#9435](https://github.com/brave/brave-browser/issues/9435), [#10597](https://github.com/brave/brave-browser/issues/10597)
 
+## Fingerprinting methods blocked
 
-## Privacy protections always enabled
-
-This list is not complete. See https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove) for other things which are disabled in Brave but not in Chrome.
-
-* 3rd party cookies blocked by default due to the third party tracking risk
-* referrers trimmed or blocked by default
-* Connections to known tracking domains are blocked via the Ad block Rust library in a list similar to Disconnect.
+* [WebRTC IP leakage](https://github.com/brave/browser-laptop/issues/260)
+* [HSTS fingerprinting](https://github.com/brave/brave-browser/issues/3419)
+* [Client Hints](https://github.com/brave/brave-browser/issues/3539)
 * [Battery Status API](https://github.com/brave/browser-laptop/issues/1885) is disabled because the battery level can be used as a tracking signal.
-* `navigator.credentials` is disabled on desktop prior to C73; we are re-enabling it to support [webauthn](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/).
 * Web Bluetooth is disabled on desktop due to us not seeing much benefit to enabling it right now
-* We are also planning on disabling client-hints, see https://github.com/brave/brave-browser/issues/3539#issuecomment-483826927 for rationale
 
 ## TODO
 * Limit fonts fingerprinting: https://github.com/brave/brave-browser/issues/816
