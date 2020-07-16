@@ -60,9 +60,32 @@ Web compatibility observations without these exclusions:
 * Embedded tweets show up without images/video. Example page: https://www.buzzfeed.com/jesseszewczyk/martha-stewart-scrambled-eggs-hack
 * On some sites, embedded tweets and follow buttons don't show up at all.
 
-### Other
+### Other filter list exceptions
 
 Additional exceptions for cross-site-tracking rules are generally recorded in [brave/adblock-lists/brave-unbreak.txt](https://github.com/brave/adblock-lists/blob/master/brave-unbreak.txt).
+
+### Policy on filter list exceptions
+
+Brave ships a large number of filter rules to protect user privacy. These come from many projects, including EasyList, EasyPrivacy and uBlock Origin, among others.
+
+Sometimes these rules not only block tracking related resources, but also resources related to desirable / benign website functionality, causing websites to "break". In those cases, Brave may add exception rules to allow some limited advertising and tracking resources, to "unbreak" a site.
+
+This section details Brave's general policy on when to create such exceptions, how to tailor them, and for how long to maintain them.
+
+#### Resource Exception Policy
+
+- If a tracking or advertising resource is only needed to "unbreak" a small number of sites, Brave will generally prefer improving webcompat, over both some risk of privacy loss on that site, and dedicating significant developer time to custom-build a narrower solution.
+- If a tracking or advertising resource is needed to "unbreak" a large number sites (web-scale), Brave will prefer dedicating developer or research resources to develop a privacy preserving solution.
+- All privacy-risking resources excepted / allowed by Brave for web compatibility reasons will be tagged in Github so future solutions can improve the situation.
+
+#### Relevant Tags
+
+Relevant Tags
+---
+- [revist](https://github.com/brave/adblock-lists/pulls?utf8=✓&q=label%3Arevisit+): rules that were added that don't have a clear alternative, but which Brave hopes to develop general protections against in the future (at which point these exceptions may no longer be needed).
+- [revist after uBO parity](https://github.com/brave/adblock-lists/pulls?utf8=✓&q=label%3A"revisit+after+uBO+parity"+): rules that were added to "unbreak" a website, but which may not be needed once Brave gains the ability to apply [uBlock Origin's rules for replacing / rewriting resource requests](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt).
+
+Ping pes@brave.com / @pes10k with questions.
 
 ## Referrer Policy
 
