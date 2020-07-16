@@ -80,8 +80,6 @@ This section details Brave's general policy on when to create such exceptions, h
 
 #### Relevant Tags
 
-Relevant Tags
----
 - [revist](https://github.com/brave/adblock-lists/pulls?utf8=✓&q=label%3Arevisit+): rules that were added that don't have a clear alternative, but which Brave hopes to develop general protections against in the future (at which point these exceptions may no longer be needed).
 - [revist after uBO parity](https://github.com/brave/adblock-lists/pulls?utf8=✓&q=label%3A"revisit+after+uBO+parity"+): rules that were added to "unbreak" a website, but which may not be needed once Brave gains the ability to apply [uBlock Origin's rules for replacing / rewriting resource requests](https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt).
 
