@@ -41,7 +41,7 @@ This list is not complete. See https://github.com/brave/brave-browser/wiki/Devia
 
 ## How to check that it's working
 
-See https://community.brave.com/t/how-do-i-turn-on-browser-fingerprinting-protection-and-make-sure-that-its-working.
+See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-working/134536/3
 
 ## Why does panopticlick.eff.org or some other site say that I am fingerprintable?
 
