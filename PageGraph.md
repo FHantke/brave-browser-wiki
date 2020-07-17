@@ -9,6 +9,8 @@ The resulting graph allows for the analysis of the proximate and upstream causes
 
 PageGraph is the next, production-ish version of [AdGraph](https://arxiv.org/abs/1805.09155), an earlier system for representing page execution as a directed graph.  PageGraph advances AdGraph in a large number of ways, increasing the breath and accuracy of attributions, enabling GraphML export, being kept up to date with Brave and Chromium, among many other improvements. 
 
+If you have any questions about PageGraph, or would like to use / extend it for your research purposes, feel free to ping pes@brave.com / @pes10k
+
 PageGraph Currently Does the Following
 ---
 * Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.) and how the script got on the page.
