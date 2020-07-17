@@ -6,8 +6,6 @@ We're in the process of adding options to control these exceptions as outlined i
 
 ### Facebook login buttons
 
-Related issues: https://github.com/brave/browser-laptop/issues/780, https://github.com/brave/browser-laptop/issues/880, https://bugzilla.mozilla.org/show_bug.cgi?id=1226498, https://github.com/brave/browser-laptop/issues/2014
-
 Notes: We may be able to fix some of these issues by loading FB's SDK from a local file or polyfill instead of calling out to their domains. The SDK is often used for "Login with Facebook" buttons.
 
 ```
