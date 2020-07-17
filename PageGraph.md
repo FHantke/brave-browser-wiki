@@ -13,8 +13,9 @@ Questions / Clarifications
 ---
 If you have any questions about PageGraph, or would like to use / extend it for your research purposes, feel free to ping pes@brave.com / [@pes10k](https://twitter.com/pes10k).
 
-PageGraph Currently Does the Following
----
+## Features 
+
+### PageGraph Currently Does the Following
 * Tracking the execution and results of all script execution (inline, remote, attributes, eval, etc.) and how the script got on the page.
 * Tracking most resource requests (see below for exceptions, but currently covers AJAX, fetch, images, scripts and CSS), include response headers and size
 * Track all DOM node creations, deletions and modifications (note small exceptions below)
@@ -28,13 +29,11 @@ PageGraph Currently Does the Following
 * Handling remote frames
 * Instrumenting what parts of JS are responsible for which API calls
 
-Not Done But Will Be Done Shortly
----
+### Not Done But Will Be Done Shortly
 * Scripts in SVG documents
 
-Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
----
-* Tracking large, streamed, requests (`<audio>` and `<video>`)
+### Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
+* Recording the body of large, streamed, requests (`<audio>` and `<video>`)
 * Dealing with WebSockets in anyway
 * Better handling of JS urls (currently these are treated as originating from the document node, instead of the node with the relevant URL, b/c of how blink is structured)
 * Tracking css `@imports`
@@ -54,10 +53,17 @@ npm run init
 npm run build -- Static
  ```
 
-# PageGraph Documentation
-## Types created by PageGraph
+## Publications
+
+- [Detecting Filter List Evasion With Event-Loop-Turn Granularity JavaScript Signatures](https://arxiv.org/abs/2005.11910), Quan Chen, Peter Snyder, Benjamin Livshits, Alexandros Kapravelos, **S&P 2021**
+- [Filter List Generation for Underserved Regions](https://arxiv.org/abs/1910.07303), Alexander Sjosten, Peter Snyder, Antonio Pastor, Panagiotis Papadopoulos, Benjamin Livshits, **WWW 2020**
+- [Keeping Out the Masses: Understanding the Popularity and Implications of Internet Paywalls](https://arxiv.org/abs/1903.01406), Panagiotis Papadopoulos, Peter Snyder, Benjamin Livshits, **WWW 2020**
+
+
+## PageGraph Documentation
+### Types created by PageGraph
 C++ definition locations below are relative to the `src/brave/third_party_blink_brave_page_graph/graph_item` directory of the `brave-core` repository.
-### Node types
+#### Node types
 
 | Node type                 | C++ Definition                          | Attributes                                 |
 |---------------------------|-----------------------------------------|--------------------------------------------|
@@ -82,7 +88,7 @@ C++ definition locations below are relative to the `src/brave/third_party_blink_
 | `type_ + " shield"`       | shield/node_shield.cc                   |                                            |
 | `"Brave Shields"`         | shield/node_shields.cc                  |                                            |
 
-### Edge types
+#### Edge types
 
 | Edge Type                  | C++ Definition                               | Attributes                                                        |
 |----------------------------|----------------------------------------------|-------------------------------------------------------------------|
