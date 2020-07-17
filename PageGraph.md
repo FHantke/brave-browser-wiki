@@ -21,6 +21,8 @@ PageGraph Currently Does the Following
 * Chromium devtools integration, for in-browser analysis of the graph.  Currently allows for observing the full history of any node in the document.
 * Timestamp all events
 * Module scripts
+* Handling remote frames
+* Instrumenting what parts of JS are responsible for which API calls
 
 Not Done But Will Be Done Shortly
 ---
@@ -41,22 +43,12 @@ Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 Building
 ---
 ```
-git clone git@github.com:brave/brave-browser.git
+git clone -b page-graph https://github.com/brave/brave-browser
 cd brave-browser
 npm install
 npm run init
-cd src/brave
-git reset --hard HEAD
-git checkout page-graph
-cd ..
-git reset --hard HEAD
-cd v8
-git reset --hard HEAD
-cd ../..
-git checkout 6f092eb9c
-npm run sync -- --all --brave_core_ref=page-graph --run_sync
 npm run build -- Static
-```
+ ```
 
 # PageGraph Documentation
 ## Types created by PageGraph
