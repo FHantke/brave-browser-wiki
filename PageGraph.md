@@ -53,7 +53,7 @@ npm run init
 npm run build -- Static
  ```
 
-## Publications
+## Publications Using PageGraph
 
 - [Detecting Filter List Evasion With Event-Loop-Turn Granularity JavaScript Signatures](https://arxiv.org/abs/2005.11910), Quan Chen, Peter Snyder, Benjamin Livshits, Alexandros Kapravelos, **S&P 2021**
 - [Filter List Generation for Underserved Regions](https://arxiv.org/abs/1910.07303), Alexander Sjosten, Peter Snyder, Antonio Pastor, Panagiotis Papadopoulos, Benjamin Livshits, **WWW 2020**
