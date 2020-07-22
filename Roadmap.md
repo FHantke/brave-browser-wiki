@@ -34,6 +34,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * ✅ User wallets on Android
 
 ### Q3 2020 [July - September]:
+* ✅ Delta updates (live for x64)
 * Privacy preserving replacements for stateless social media widgets
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * iOS Playlist feature
@@ -42,7 +43,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Improved advertising relevance for purchasing and by state (in the US)
 * Reworking storage protections, moving from blocking all 3p storage to integrating Storage Access API
 * Top level URL blocking
-* Delta updates
+
 
 ### Q4 2020 [October - December]:
 
