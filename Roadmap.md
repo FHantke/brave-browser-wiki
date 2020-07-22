@@ -42,6 +42,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Improved advertising relevance for purchasing and by state (in the US)
 * Reworking storage protections, moving from blocking all 3p storage to integrating Storage Access API
 * Top level URL blocking
+* Delta updates
 
 ### Q4 2020 [October - December]:
 
