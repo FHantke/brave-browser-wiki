@@ -25,7 +25,7 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q2 2020 [April - June]:
 
-* ☑️ Sync v2 (live on Desktop and Android 1.12; still working on iOS version)
+* ✅ Sync v2 (live on Desktop and Android 1.12; still working on iOS version)
 * ✅ [Expanded Binance widget on the New Tab Page w/ Binance API for deposit, convert, buy](https://brave.com/binance-widget/)
 * ✅ Improvements to importer on Desktop (import extensions, bug fixes)
 * ✅ Speedreader (live on Desktop 1.12)
