@@ -35,7 +35,12 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 
 ### Q3 2020 [July - September]:
 * ✅ Delta updates (live for x64)
+* ✅ [Reworking referrer policy to improve web-comapt and privacy-protections](https://brave.com/whats-brave-done-for-my-privacy-lately-episode5/)
+* ✅ [Filtering tracking query-parameters out of URLs](https://brave.com/whats-brave-done-for-my-privacy-lately-episode5/)
+* ✅ Completion of randomization based fingerprinting improvements, and the removal of all fingerprinting exceptions
 * Privacy preserving replacements for stateless social media widgets
+* Adding CNAME filtering for ad-and-tracking blocking
+* Improvements to default filter lists, for better blocking and web compat
 * Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * iOS Playlist feature
 * Enterprise support (group policy templates / documentation)
