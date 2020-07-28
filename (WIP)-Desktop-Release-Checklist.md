@@ -3,7 +3,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Prerequisites
 
-- [ ] Check that Brave is pulling the correct Tor executable listed under https://github.com/brave/tor_build_scripts/blob/master/env.sh#L9
+- [ ] Check that Brave is pulling the correct Tor executable listed under https://github.com/brave/tor_build_scripts/blob/master/env.sh#L6
   - [ ] macOS
   - [ ] Windows
   - [ ] Linux
