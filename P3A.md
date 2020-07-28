@@ -160,13 +160,14 @@ Note: we count only omnibox events that trigger a search.
 8. More than 500 times 
 
 ### Q20: Which is your currently selected search engine? 
-(_`Brave.Search.DefaultEngine`_)
+(_`Brave.Search.DefaultEngine.2`_)
 1. Other
 2. Google
 3. DDG
 4. Startpage
 5. Bing
 6. Qwant
+7. Yahoo
 
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
