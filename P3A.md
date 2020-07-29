@@ -183,5 +183,14 @@ Note: this is based on a predictive algorithm running strictly client-side
 7. 701-1500mb
 8. more than 1501mb
 
+### Q22: Is crash reporting enabled?
+Note: Records the corresponding preference (`"Help improve Brave's features and performance
+"`) state during a startup.
+
+(`Brave.Core.CrashReportsEnabled`)
+
+1. no
+2. yes
+
 ## Metrics Proposed/Under Development
 TBD
