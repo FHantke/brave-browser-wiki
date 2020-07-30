@@ -69,6 +69,7 @@ _Google does not receive any information about which client is performing these 
 - [Requests for CRLSets are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
+- [Requests in devtools are proxied](https://github.com/brave/brave-core/pull/5500)
 
 #### Proxied endpoints
 - `https://dl.google.com/release2/chrome_component/*crl-set*`
