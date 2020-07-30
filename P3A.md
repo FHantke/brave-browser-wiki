@@ -192,5 +192,24 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 1. no
 2. yes
 
+### Q23: Have you used SpeedReader?
+
+(`Brave.SpeedReader.Enabled`)
+
+1. Never Used
+2. Used but not recently (in reporting interval)
+3. Used within the last week
+
+### Q24: Number of times user clicked on SpeedReader button to toggle the feature?
+
+(`Brave.SpeedReader.ToggleCount`)
+
+1. 0
+2. 1-5
+3. 5-10
+4. 10-20
+5. 20-30
+6. 30+
+
 ## Metrics Proposed/Under Development
 TBD
