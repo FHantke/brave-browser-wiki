@@ -80,6 +80,7 @@ _Google does not receive any information about which client is performing these 
 - `https://ssl.gstatic.com`
 - `https://gstatic.com`
 - `https://update.googleapis.com`
+- `https://chrome-devtools-frontend.appspot.com`
 - `https://clients2.googleusercontent.com`
 - `https://clients2.google.com`
 - `https://clients4.google.com`
@@ -116,7 +117,6 @@ _Google does not receive any information about which client is performing these 
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 - Plugins, sensors and background-sync page permissions are disabled by default. Users can override these using the usual page permission settings.
 - Download protection remote lookups are currently disabled (https://github.com/brave/brave-browser/issues/4341).
-- Remote debugging is disabled by default. Can be toggled on brave://settings/privacy (implemented with https://github.com/brave/brave-core/pull/4044). This will hit Google servers and is not proxied (yet). There is an [issue created for proxying and enabling this by default](https://github.com/brave/brave-browser/issues/7645). 
 
 ### Comments
 
