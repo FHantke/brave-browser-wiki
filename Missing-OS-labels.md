@@ -12,9 +12,13 @@ The available OS labels are:
 - `OS/Desktop`
 - `OS/iOS`
 
+If an issue applies to all desktop operating systems, it's preferred to use `OS/Desktop` over the more specific ones. Although if you want to over emphasize that testing is needed on every platform, use the specific ones.
+
 # When to apply a label
 
 If the change in code will affect the platform, then you should specify the label for that platform.
+Alternatively, if the changes will affect the builds which are produced, then you should specify those platform labels.
+Alternatively, if the change is just internal to developers, such as build scripts, then specify the platforms that will be affected for developers on those platforms. 
 
 # How does QA use OS labels?
 
