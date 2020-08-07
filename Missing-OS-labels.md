@@ -1,6 +1,7 @@
 # Labeling
 
-We use the same repository for both Android and Desktop. Additionally, we sometimes have code which only applies to one particular operating system. To help QA we ask that each valid issue in a release should have at least one OS label.
+We use the same repository for both Android and Desktop, and iOS uses this repository as a dependency.
+Additionally, we sometimes have code which only applies to one particular operating system. To help QA we ask that each valid issue in a release should have at least one OS label.
 
 The available OS labels are:
 
@@ -9,6 +10,7 @@ The available OS labels are:
 - `OS/Linux`
 - `OS/Android`
 - `OS/Desktop`
+- `OS/iOS`
 
 # How does QA use OS labels?
 
