@@ -12,6 +12,10 @@ The available OS labels are:
 - `OS/Desktop`
 - `OS/iOS`
 
+# When to apply a label
+
+If the change in code will affect the platform, then you should specify the label for that platform.
+
 # How does QA use OS labels?
 
 OS labels will be ignored for the purpose of testing by the QA team if the issue has a `QA/No` label.
