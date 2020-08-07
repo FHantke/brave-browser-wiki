@@ -17,9 +17,10 @@ If an issue applies to all desktop operating systems, it's preferred to use `OS/
 # When to apply a label
 
 If the change in code will affect the platform, then you should specify the label for that platform.
-Alternatively, if the changes will affect the builds which are produced, then you should specify those platform labels.
-Alternatively, if the change is just internal to developers, such as build scripts, then specify the platforms that will be affected for developers on those platforms. 
-Alternatively, if the change affects an extension that we track in brave-browser, it is probably only for desktop since we only have extensions on desktop.
+
+Alternatively, if the changes will affect the builds which are produced, then you should specify those platform labels.  
+Alternatively, if the change is just internal to developers, such as build scripts, then specify the platforms that will be affected for developers on those platforms.   
+Alternatively, if the change affects an extension that we track in brave-browser, it is probably only for desktop since we only have extensions on desktop.  
 
 # How does QA use OS labels?
 
