@@ -66,6 +66,8 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 - security checks
 - Python lint (pep8)
 
+We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks.
+
 ## Advanced steps
 
 ### Start a PR builder Jenkins job
