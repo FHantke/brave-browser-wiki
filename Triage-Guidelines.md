@@ -1,6 +1,6 @@
 # General guidelines
 
-- All work has an issue.
+- All work has an issue.  Even if it's a small pull request, link it to an issue.
 - If you'd like to have an issue schedule to a particular release, use Asana.
 - High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
 
