@@ -5,7 +5,7 @@ Each valid closed issue should specify a milestone for the version it landed in.
 ## What is a valid closed issue?
 
 A valid issue is an issue that is closed and does not have one of these labels: `closed/invalid`, `closed/not-actionable`, `closed/fixed-by-component-update`, `closed/works-for-me`, `closed/no-milestone`, `duplicate`,
-`wontfix`, `question`, `support`, `stale`
+`wontfix`, `question`, `support`, `closed/stale`
 
 ## My issue should not be considered as part of a release, what do I do?
 
