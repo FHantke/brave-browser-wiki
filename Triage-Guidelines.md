@@ -12,10 +12,11 @@
 - If an issue should be locked into a particular milestone, and it is not implemented yet, then put a `release/blocking` label on it. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
 - Please do not change milestones / priority / boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
 - Pull requests should go into milestones where they land
+- There is a milestone for every major / minor version bump. Example 1.13.x. If Desktop releases before Android for 1.13.x and the 1.13.x milestone is closed out, then a new 1.13.x milestone should be created and a link to the milestone it is based on should be mentioned in the description.  QA will go through both milestones.
 
 # Projects
 
-- Projects boards track areas of work, they should be 1:1 with Pods. 
+- Project boards track areas of work, they should be 1:1 with Pods. 
 - A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
 
 ## Triaging project boards
