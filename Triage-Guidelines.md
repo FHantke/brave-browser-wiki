@@ -2,19 +2,32 @@
 
 - All work has an issue.
 - If you'd like to have an issue schedule to a particular release, use Asana.
+- High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
+
+# Milestones
+
+- Milestones track releases.
+- Issues only get assigned to a milestone once they are completed and merged into that milestone.
+- Milestones generally do not track open issues.
+- If an issue should be locked into a particular milestone, and it is not implemented yet, then put a `release/blocking` label on it. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
+- Please do not change milestones / priority / boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
+- Pull requests should go into milestones where they land
+
+# Projects
+
 - Projects boards track areas of work, they should be 1:1 with Pods. 
 - A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
-- Issues only get assigned to a milestone once they are completed and merged into that milestone.
-- Issues that should be locked into a particular milestone without consultation to the person putting it there, should get the `release/blocking` label added to it and can go into a milestone while the issue is still open. This should be rare though.  E.g. a security critical bug, or a Chromium upgrade.
-- Please do not change milestones/priority/boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
-- High level summaries should be maintained on this Roadmap wiki for at least everything up to and including the version which is on master: https://github.com/brave/brave-browser/wiki/Roadmap.
-- We have weekly triage meetings which includeds the following schedule:
+
+## Triaging project boards
+
+- We have weekly triage meetings which includes the following schedule:
     - Go through the projects listed here https://github.com/brave/brave-browser/projects
       - Get a status on each issue
       - Move issues along the process from the left most column to the right most depending on status.
       - Make sure the Untriaged Backlog column is empty and we add appropriate `priority/p1` - `priority/p5` labels
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
+
 
 # Uplifting
 
@@ -26,7 +39,6 @@
 - The person doing the original request must see that the PR actually gets merged.
 - This person must only merge, after they see their change in Nightly and test that it works.
 
-
 # Uplift approvers
 
 - Current approvers are @rebron @kjozwiak @Sri @clifton (Slack usernames).
@@ -34,7 +46,9 @@
 - If you are not an approver, do NOT approve any requests made to a Beta or Release branch
 - Approvers should be working to keep PRs to version branches at 0 issues. 
 
-# Priority labels
+# Labels
+
+## Priority labels
 
 We use priority labels from 1-5 as a way to describe which issues should be worked on next. The general principle is:
 - if there's a P1 issue you could work on, you should do that at your earliest possible convenience
@@ -46,11 +60,11 @@ The rest of this is a rough rubric about how to prioritize issues.
 - [`priority/P2`](https://github.com/brave/brave-browser/labels/priority%2FP2): A bad problem. We might uplift this to the next planned release. [We don't expect to see many of these.]
 - [`priority/P3`](https://github.com/brave/brave-browser/labels/priority%2FP3): The next thing for us to work on. It'll ride the trains. [Our bread and butter work.]
 - [`priority/P4`](https://github.com/brave/brave-browser/labels/priority%2FP4): Planned work. We expect to get to it "soon". [A larger backlog of things we're getting to.]
-- [`priority/P5`](https://github.com/brave/brave-browser/labels/priority%2FP5): Not scheduled. Don't anticipate work on this any time soon. [Not necessarily wontfix, but not in the work queue at all.]
+- [`priority/P5`](https://github.com/brave/brave-browser/labels/priority%2FP5): Not scheduled. Don't anticipate work on this any time soon. [Not necessarily closed/wontfix, but not in the work queue at all.]
 
 Ultimately, go by the expectation that folks will pick up issues in priority order. If you're noting a task to add to your team's backlog: probably P4. If you're noting a new important task, probably P3 unless unusually severe. If you're triaging a suggestion which shouldn't edge out anything we've already planned: P5.
 
-# QA triage
+## QA triage
 
 - Never remove `QA/Yes` and `QA/No` labels
 - Things that should get a `QA/No` label: Things that are internal or tooling related only, things that are impossible for QA to test, meta issues, things that are covered by something else fully with a test plan in the same milestone.
@@ -64,7 +78,7 @@ Ultimately, go by the expectation that folks will pick up issues in priority ord
   - Windows: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Win64" -label:"QA/No"`
 
 
-# Release notes
+## Release notes
 
 - Every issue should be tagged with either `release-notes/include` or `release-notes/exclude`.
 - You can use a search term like this to see all unlabeled issues: `is:issue milestone:"0.56.x - Beta" -label:"release-notes/include" -label:"release-notes/exclude"`
