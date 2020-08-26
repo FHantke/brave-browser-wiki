@@ -40,10 +40,14 @@ Brave also includes a "strict" option. When set to "strict" mode, Brave only ret
 
 ## Fingerprinting methods randomized
 
-* [Canvas fingerprinting](https://www.browserleaks.com/canvas)
-* [WebGL fingerprinting](https://amiunique.org/faq)
-* [AudioContext fingerprinting](https://audiofingerprint.openwpm.com/)
+* Canvas: [#9186](https://github.com/brave/brave-browser/issues/9186)
+* WebGL: [#9188](https://github.com/brave/brave-browser/issues/9188)
+* Web Audio: [#9187](https://github.com/brave/brave-browser/issues/9187)
 * Plugins: [#9435](https://github.com/brave/brave-browser/issues/9435), [#10597](https://github.com/brave/brave-browser/issues/10597)
+* Hardware Concurrency: [#10808](https://github.com/brave/brave-browser/issues/10808)
+* Enumerate Devices (order): [#11271](https://github.com/brave/brave-browser/issues/11271)
+
+Progress on the randomization for additional fingerprint-able sources can be found here: https://github.com/brave/brave-browser/issues/8787
 
 ## Fingerprinting methods blocked
 
