@@ -23,8 +23,8 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Channel | Time | Dates      | Public Build (Sparkle/Omaha)       |
 |:-------:|:--------:|:---------------------:|:---------------------:|
-| `Beta`| 4am UTC (9pm PST/12am EST) | Monday - Saturday| Yes|
-| `Dev`| 7am UTC (12am PST/3am EST)| Tuesday & Thursday| Yes|
+| `Beta`| 4am UTC (9pm PST/12am EST) | Tuesday & Thursday | Yes|
+| `Dev`| 7am UTC (12am PST/3am EST)| Monday-Saturday | Yes|
 | `Nightly`| 10am UTC (3am PST/6am EST)| Monday - Saturday| Yes|
 | `Nightly`| 6pm UTC (11am PST/2pm EST)| Monday - Friday| No (GitHub Only)|
 | `Nightly`| 12am UTC (5pm PST/8pm EST)| Monday - Friday| No (GitHub Only)|
@@ -36,7 +36,7 @@ The following is our automated schedule for creating and uploading builds to our
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.11.x  |    84    | July 7, 2020        | July 16, 2020       |4 week cycle to keep in sync with Chromium  |
-| 1.12.x  |    84    | July 28, 2020       | August 13, 2020      |4 week cycle to keep in sync with Chromium  |
+| 1.12.x  |    84    | July 28, 2020       | August 13, 2020      |4 week cycle to keep in sync with Chromium |
 | 1.13.x  |    85    | August 18, 2020     | August 27, 2020     |                                            |
 | 1.14.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
 | 1.15.x  |    86    | September 29, 2020  | October 6, 2020     |                                            |
