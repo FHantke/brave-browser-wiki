@@ -10,7 +10,7 @@ If you navigate to `brave://settings/socialBlocking`, you will see an option to 
 
 If you navigate to `brave://settings/extensions`, you will see an option to enable `Allow extensions to use chrome.identity api`.
 
-![google-login-for-extensions](https://jumde.github.io/img/google_login_for_extensions.png)
+![chrome-identity-for-extensions](https://jumde.github.io/img/google_login_for_extensions.png)
 
 **When this option is enabled:** It enables `chrome.identity` for extensions so extensions like Google Keep and Google Calendar can retrieve an OAuth token from google to authenticate users. The OAuth token can be used to retrieve personal information like email id, profile. You can read more about chrome.identity here: https://developer.chrome.com/apps/identity
 
