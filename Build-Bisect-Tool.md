@@ -1,9 +1,6 @@
 ## Introduction
 In the `brave-core` repo, there is a script you can use to find regressions on Desktop. It will fetch releases from our GitHub page and download/install them. Based on the user input (does this work?) a binary search is done to narrow down possible builds until the actual bad release is found. At that point, the commit log for that version is shown
 
-For Brave employees, an overview of the tool was given and recorded which can be found here:
-https://drive.google.com/a/brave.com/file/d/16RYK-yHj1A9S4iLhWiorn6py6jMbpjPY/view?usp=sharing
-
 ## Getting started
 There's a Python 2 script available in brave-core which helps automate the tedious task of creating all the pull requests:
 `./script/build-bisect.py`
