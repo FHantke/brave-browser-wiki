@@ -41,7 +41,6 @@ This list assumes you're on the `Release` channel. Features land on the `Nightly
 * Privacy preserving replacements for stateless social media widgets
 * Adding CNAME filtering for ad-and-tracking blocking
 * Improvements to default filter lists, for better blocking and web compat
-* Basic Android extension support for a subset of extension API and hand picked extensions (content scripts and background pages)
 * iOS Playlist feature
 * Enterprise support (group policy templates / documentation)
 * Improved Brave Rewards tipping using Greaselion, making it easier add and manage new platforms
