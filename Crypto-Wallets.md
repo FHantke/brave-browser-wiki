@@ -83,3 +83,7 @@ You can use a clean profile without clearing with this as well: `--user-data-dir
 If you're using a development build, you can set the dev server via this npmrc environment in ~/.npmrc:
 
 `updater_dev_endpoint=https://go-updater-dev.bravesoftware.com/extensions` 
+
+### Sign off
+
+After QA gives sign off in Slack on #releases, run the `brave-core-ext-ethereum-remote-client-update-publish` Jenkins job.
