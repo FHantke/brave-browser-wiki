@@ -44,7 +44,7 @@ The way this setting works is that it will actively disable the extension's cont
 There are a number of [Brave extension APIs](https://github.com/brave/brave-core/blob/master/common/extensions/api/brave_wallet.json) that are exposed to the brave-extension (for Dapp detection), Ethereum Remote Client, and MetaMask.
 
 
-## Testing Crypto Wallets
+## Testing and publishing new Crypto Wallets releases
 
 
 ### General info about the component extension
