@@ -63,7 +63,7 @@ You can see the list of extensions and versions that are being served via this e
 - Run the Jenkins job `brave-ethereum-remote-client-build`
 - Update the version pinned in brave-core [here](https://github.com/brave/brave-core-crx-packager/blob/master/package.json#L11) and in the lock file. 
 - Commit and merge that change :)
-- Run the Jenkins job 'brave-core-ext-ethereum-remote-client-update-publish-dev`
+- Run the Jenkins job `brave-core-ext-ethereum-remote-client-update-publish-dev`
 
 After pushing up a component you need to Purge the Fastly cache. You can do this via Slack with:  
 
@@ -86,4 +86,8 @@ If you're using a development build, you can set the dev server via this npmrc e
 
 ### Sign off
 
-After QA gives sign off in Slack on #releases, run the `brave-core-ext-ethereum-remote-client-update-publish` Jenkins job.
+After QA gives sign off in Slack on #releases
+
+- Run the `brave-core-ext-ethereum-remote-client-update-publish` Jenkins job.
+- Purge production go-update Fastly with: `@Fastly purge go-updater.brave.com`
+
