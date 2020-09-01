@@ -42,3 +42,44 @@ The way this setting works is that it will actively disable the extension's cont
 ## APIs
 
 There are a number of [Brave extension APIs](https://github.com/brave/brave-core/blob/master/common/extensions/api/brave_wallet.json) that are exposed to the brave-extension (for Dapp detection), Ethereum Remote Client, and MetaMask.
+
+
+## Testing Crypto Wallets
+
+
+### General info about the component extension
+
+The Crypto Wallets Extension ID is: `odbfpeeihdkbihmopkbjmoonfanlbfcl`
+
+You can see the list of extensions and versions that are being served via this endpoint:
+
+- [Production Server](https://go-updater-dev.bravesoftware.com/extensions/test)
+- [Dev Server](https://go-updater.brave.com/extensions/test)
+
+
+### Pushing up an update
+
+- Make sure all changes are committed to brave/ethereum-remote-client
+- Run the Jenkins job `brave-ethereum-remote-client-build`
+- Update the version pinned in brave-core [here](https://github.com/brave/brave-core-crx-packager/blob/master/package.json#L11) and in the lock file. 
+- Commit and merge that change :)
+- Run the Jenkins job 'brave-core-ext-ethereum-remote-client-update-publish-dev`
+
+After pushing up a component you need to Purge the Fastly cache. You can do this via Slack with:  
+
+`@Fastly purge go-updater-dev.bravesoftware.com`
+
+### Testing
+
+It's a good idea to check the version number before and after you start QA'ing to make sure the new one is available. 
+Please note that the automatic version of extensions generated on the development server is different from the production server. 
+
+To QA new Crypto Wallets releases use the development component updater with a fresh profile.  
+
+To do this you can use the command line argument `--use-dev-goupdater-url`.
+
+You can use a clean profile without clearing with this as well: `--user-data-dir=<tmp-dir>`.
+
+If you're using a development build, you can set the dev server via this npmrc environment in ~/.npmrc:
+
+`updater_dev_endpoint=https://go-updater-dev.bravesoftware.com/extensions` 
