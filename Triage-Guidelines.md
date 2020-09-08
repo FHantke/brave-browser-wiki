@@ -7,6 +7,7 @@
 # Milestones
 
 ## Milestones and releases
+
 - Every time a release happens for something on the Release channel, there is a sign-off on Slack by QA in the #release channel.
 - There is 1 milestone per release, but as noted below, a milestone is often based on another milestone in a chain like fashion.
 
@@ -35,6 +36,7 @@
 
 - Project boards track areas of work, they should be 1:1 with Pods. 
 - A list of all project boards can be found here: https://github.com/brave/brave-browser/projects
+- Project boards are a great way to organize priorities (via labels) for a given functional area of work.
 
 ## Triaging project boards
 
