@@ -9,7 +9,7 @@
 ## Milestones and releases
 
 - Every time a release happens for something on the Release channel, there is a sign-off on Slack by QA in the #release channel.
-- There is 1 milestone per release, but as noted below, a milestone is often based on another milestone in a chain like fashion.
+- There is 1 milestone per release, but as noted below, a milestone is often based on another milestone in a chain like fashion.  Only one milestone per branch is opened at any given time.
 
 
 ## The QA process around milestones
