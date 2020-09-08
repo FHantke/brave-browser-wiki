@@ -17,7 +17,13 @@
 - There is no difference between an Android milestone and a Desktop milestone. There should just be for example a 1.13.x milestone.
 - If there is a second release within a particular branch (e.g. the 1.13.x branch), then we number it 1.13.x Release #2.  If there's a third, 1.13.x Release #3.
 - Each milestone within a particular branch, is based on the one before it.  The description of the milestone should link to the milestone before it.
-- The description of these milestones will be updated as things are released for them.  QA will make sure that the whole chain of milestones are tested for the release on the platform that's happening.
+- The description of these milestones will be updated as things are released for them.  QA will make sure that the whole chain of milestones -are tested for the release on the platform that's happening.
+- As an example, we can have a `1.13.x Release #2` as the title.  And the description could even be:  
+  ```
+  Based on 1.13.x Release <link>
+  Desktop Hotfix 2
+  Android Release 1 
+  ```
 
 ## Milestones and pull requests
 
