@@ -6,13 +6,30 @@
 
 # Milestones
 
-- Milestones track releases.
+## Milestones and releases
+- Every time a release happens for something on the Release channel, there is a sign-off on Slack by QA in the #release channel.
+- There is 1 milestone per release, but as noted below, a milestone is often based on another milestone in a chain like fashion.
+
+
+## The QA process around milestones
+
+- There is no difference between an Android milestone and a Desktop milestone. There should just be for example a 1.13.x milestone.
+- If there is a second release within a particular branch (e.g. the 1.13.x branch), then we number it 1.13.x Release #2.  If there's a third, 1.13.x Release #3.
+- Each milestone within a particular branch, is based on the one before it.  The description of the milestone should link to the milestone before it.
+- The description of these milestones will be updated as things are released for them.  QA will make sure that the whole chain of milestones are tested for the release on the platform that's happening.
+
+## Milestones and pull requests
+
+- Pull requests should go into milestones matching the branch name for where they are landing. For master see [src/brave/package.json](https://github.com/brave/brave-core/blob/master/package.json) for the milestone version.
+
+## Milestones and issues
+
 - Issues only get assigned to a milestone once they are completed and merged into that milestone.
 - Milestones generally do not track open issues.
-- If an issue should be locked into a particular milestone, and it is not implemented yet, then put a `release/blocking` label on it. This should be rare though.  E.g. a security critical bug, a big regression, or a Chromium upgrade.
-- Please do not change milestones / priority / boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
-- Pull requests should go into milestones where they land
-- There is a milestone for every major / minor version bump. Example 1.13.x. If Desktop releases before Android for 1.13.x and the 1.13.x milestone is closed out, then a new 1.13.x milestone should be created and a link to the milestone it is based on should be mentioned in the description.  QA will go through both milestones for the Android release in that case.
+  - If an issue should be locked into a particular milestone, and it is not implemented yet, then put a `release/blocking` label on it. This should be rare though.  E.g. a security critical bug, a big regression, or a Chromium upgrade.
+  - Please do not change milestones / priority / boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
+
+
 
 # Projects
 
