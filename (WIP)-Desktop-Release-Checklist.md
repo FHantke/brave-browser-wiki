@@ -7,6 +7,8 @@ Be super sure that <version> is replaced with the version you wish to use.
   - [ ] macOS
   - [ ] Windows
   - [ ] Linux
+- [ ] Double check the previous release/milestone and ensure everything has been QA'd
+  - **Note:** If there's issues that need to be checked, create a `master` GH issue that lists the issues that need to be QA'd
 - [ ] Consult with the security team to ensure that all security issues have been included.
 - [ ] Consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverables.
 
