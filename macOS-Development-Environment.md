@@ -14,7 +14,7 @@ You will need the following prerequisites to build Brave on macOS 10.15+:
 
 # Installing macOS SDK
 
-You'll need at least version 10.15 of the macOS SDK from https://github.com/phracker/MacOSX-SDKs.
+You'll need at least version 10.15.1 of the macOS SDK from https://github.com/phracker/MacOSX-SDKs.
 
 For example:
 ```
