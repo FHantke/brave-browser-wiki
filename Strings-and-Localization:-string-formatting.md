@@ -62,9 +62,10 @@ const TranslatedText = (
 
 ### Placeholder values
 Any text inside a `<ph></ph>` tag will be preserved and not translated. In the above example, we used `$1` and `$2` for easy replacement. It can be tempting to use actual markup values, especially if the string is for HTML-based UI (and not, for example, native UI controls). For example: `<ph>%lt;a href="https://somewhere"%gt;</ph>`.
-There are two reasons to avoid this temptation:
+There are at least three reasons to avoid this temptation:
 1. Consider that we may want to change this constant value, which would unfortunately invalidate all translations of that entire string unneccessarily. 
 2. The string would now be specifically tied to a single UI framework implementation. If it needs to be re-used for native and web UI, it becomes complicated to strip out the HTML.
+3. These strings would have to be injected as HTML into the UI, which opens up a large security risk.
 Instead, using simple tokens (`$1`, `$n`, `|`) ensures re-usability and simple code.
 
 There are further documentation surrounding more advanced topics such as numerical values, pluralization, which can be found in the chromium source. Documentation link not found yet!
