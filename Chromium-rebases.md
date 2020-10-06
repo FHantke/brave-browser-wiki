@@ -160,10 +160,11 @@ We should build some automation to find new things added here:
 
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
 
-
 # Notify Security team of feature changes
 
-Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
+- [ ] Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
 in #security-discussion Slack channel. 
 
-Besides new settings, we'll want to look at brave://components and see if there are new components registered. For example, there are components we have either missed (when added) or we never triaged captured in [this GitHub issue](https://github.com/brave/brave-browser/issues/11544). There's an issue created to automate this process which you [can find here](https://github.com/brave/brave-browser/issues/11811).
+- [ ] Besides new settings, we'll want to look at brave://components and see if there are new components registered. For example, there are components we have either missed (when added) or we never triaged captured in [this GitHub issue](https://github.com/brave/brave-browser/issues/11544). There's an issue created to automate this process which you [can find here](https://github.com/brave/brave-browser/issues/11811).
+
+- [ ] Entitlements to enable new features specific to Chrome are added to `https://source.chromium.org/chromium/chromium/src/+/master:chrome/app/app-entitlements-chrome.plist`. This file is not included in Brave but review the new entitlements for each CR bump when new features are added to Chrome. If new entitlements are needed these should be added to `brave/app/app-entitlements-brave.plist`
