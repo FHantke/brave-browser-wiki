@@ -69,21 +69,12 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.4.x   | 80                | January 28, 2020    |                                           |
-| 1.5.x   | 81                | February 18, 2020   |                                           |
-| 1.7.x   | 81                | March 10, 2020      |                                           |
-| 1.8.x   | 82                | March 31, 2020      |                                           |
-| 1.9.x   | 82                | April 21, 2020      |                                           |
-| 1.10.x   | 83               | May 12, 2020        |                                           |
-| 1.11.x  | 83                | June 2, 2020        |                                           |
-| 1.12.x  | 84                | July 7, 2020        |                                           |
-| 1.13.x  | 84                | July 28, 2020       |                                           |
 | 1.14.x  | 85                | August 18, 2020     |                                           |
-| 1.15.x  | 85                | September 8, 2020   |                                           |
+| 1.15.x  | 86                | September 8, 2020   |                                           |
 | 1.16.x  | 86                | September 29, 2020  |                                           |
-| 1.17.x  | 86                | October 20, 2020    |                                           |
+| 1.17.x  | 87                | October 20, 2020    |                                           |
 | 1.18.x  | 87                | November 17, 2020   |                                           |
-| 1.19.x  | 87                | December 8, 2020    |                                           |
+| 1.19.x  | 88                | December 8, 2020    |                                           |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
