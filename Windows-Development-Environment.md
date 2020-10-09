@@ -11,7 +11,7 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 
 ## Windows 10 SDK
 
-[Install Windows 10 SDK 10.0.18362.0](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/). (VS2017 installer does not include this version.)
+[Install Windows 10 SDK 10.0.19041.1](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/). (VS2017 installer does not include this version.)
 
 ## Git
 
