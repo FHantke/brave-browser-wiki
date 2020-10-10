@@ -94,7 +94,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.22.x  | 89                | February 2, 2021    |                                           |
 | 1.23.x  | 90                | February 23, 2021   |                                           |
 | 1.24.x  | 90                | March 16, 2021      |                                           |
-| 1.25.x  | 90                | April 6, 2021       |                                           |
+| 1.25.x  | 91                | April 6, 2021       |                                           |
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
