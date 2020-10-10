@@ -90,7 +90,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.18.x  | 87                | October 20, 2020    |                                           |
 | 1.19.x  | 88                | November 10, 2020   |                                           |
 | 1.20.x  | 88                | December 1, 2020    |                                           |
-| 1.21.x  | 89                | January 12, 2021    |                                           |
+| 1.21.x  | 89                | January 12, 2021    | Longer Cycle/Late release due to Holidays |
 | 1.22.x  | 89                | February 2, 2021    |                                           |
 | 1.23.x  | 90                | February 23, 2021   |                                           |
 | 1.24.x  | 90                | March 16, 2021      |                                           |
