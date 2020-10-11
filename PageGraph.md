@@ -9,6 +9,10 @@ The resulting graph allows for the analysis of the proximate and upstream causes
 
 PageGraph is the next, production-ish version of [AdGraph](https://arxiv.org/abs/1805.09155), an earlier system for representing page execution as a directed graph.  PageGraph advances AdGraph in a large number of ways, increasing the breath and accuracy of attributions, enabling GraphML export, being kept up to date with Brave and Chromium, among many other improvements. 
 
+Getting the GraphML Data
+---
+The current suggested way of getting the recorded graphs is through PageGraph extensions to [the chromium devtools protocol](https://chromedevtools.github.io/devtools-protocol/).  If you're looking to use PageGraph, we suggest using the [pagegraph-crawl](https://github.com/brave-experiments/pagegraph-crawl) tools, which abstracts away a lot of the tricky parts (e.g., dealing with child frames, managing Brave Shields, etc).
+
 Questions / Clarifications
 ---
 If you have any questions about PageGraph, or would like to use / extend it for your research purposes, feel free to ping pes@brave.com / [@pes10k](https://twitter.com/pes10k).
