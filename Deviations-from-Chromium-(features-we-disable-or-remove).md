@@ -117,7 +117,7 @@ _Google does not receive any information about which client is performing these 
        - If yes, change effective policy to the requested policy.
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 - Plugins, sensors and background-sync page permissions are disabled by default. Users can override these using the usual page permission settings.
-- Download protection remote lookups are currently disabled (https://github.com/brave/brave-browser/issues/4341).
+- Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
 
 ### Comments
 
