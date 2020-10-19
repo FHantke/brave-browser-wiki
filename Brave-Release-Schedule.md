@@ -44,12 +44,16 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.23.x  |    90    | April 6, 2021       | April 13, 2021      |                                            |
 | 1.24.x  |    90    | April 27, 2021      | May 4, 2021         |                                            |
 | 1.25.x  |    91    | May 18, 2021        | May 25, 2021        |                                            |
-| 1.26.x  |    91    | June 15, 2021       | June 22, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
-| 1.27.x  |    92    | July 13, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.26.x  |    91    | June 15, 2021       | June 22, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.27.x  |    92    | July 13, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.28.x  |    92    | August 3, 2021      | August 10, 2021     |                                            |
 | 1.29.x  |    93    | August 24, 2021     | August 31, 2021     |                                            |
 | 1.30.x  |    93    | September 14, 2021  | September 21, 2021  |                                            |
 | 1.31.x  |    94    | October 5, 2021     | October 12, 2021    |                                            |
+| 1.32.x  |    94    | October 26, 2021    | November 2, 2021    |                                            |
+| 1.33.x  |    95    | November 23, 2021   | November 30, 2021   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
+| 1.34.x  |    95    | December 14, 2021   | December 21, 2021   |                                            |
+| 1.35.x  |    96    | January 18, 2022    | January 25, 2022    | Longer cycle/late release due to Holidays  |
 
 - All dates are approximate and are subject to change.
 - CI does builds for release channel once a day if there are changes or as requested.
@@ -69,12 +73,16 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.22.x - 1.23.x | 21 days                   |                                            |
 | 1.23.x - 1.24.x | 21 days                   |                                            |
 | 1.24.x - 1.25.x | 21 days                   |                                            |
-| 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
-| 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.27.x - 1.28.x | 21 days                   |                                            |
 | 1.28.x - 1.29.x | 21 days                   |                                            |
 | 1.29.x - 1.30.x | 21 days                   |                                            |
 | 1.30.x - 1.31.x | 21 days                   |                                            |
+| 1.31.x - 1.32.x | 21 days                   |                                            |
+| 1.32.x - 1.33.x | 28 days                   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
+| 1.33.x - 1.34.x | 21 days                   |                                            |
+| 1.34.x - 1.35.x | 35 days                   | Longer cycle/late release due to Holidays  |
 ---
 
 # Beta & Dev channel dates:
@@ -91,13 +99,17 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.23.x  | 90                | March 16, 2021      |                                           |
 | 1.24.x  | 90                | April 6, 2021       |                                           |
 | 1.25.x  | 91                | April 27, 2021      |                                           |
-| 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
-| 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.28.x  | 92                | July 13, 2021       |                                           |
 | 1.29.x  | 93                | August 3, 2021      |                                           |
 | 1.30.x  | 93                | August 24, 2021     |                                           |
 | 1.31.x  | 94                | September 14, 2021  |                                           |
 | 1.32.x  | 94                | October 5, 2021     |                                           |
+| 1.33.x  | 95                | October 26, 2021    |                                           |
+| 1.34.x  | 95                | November 23, 2021   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
+| 1.35.x  | 96                | December 14, 2021   |                                           |
+| 1.36.x  | 96                | January 18, 2022    | Longer cycle/late release due to Holidays |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
@@ -120,13 +132,18 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.24.x  | 90                | March 16, 2021      |                                           |
 | 1.25.x  | 91                | April 6, 2021       |                                           |
 | 1.26.x  | 91                | April 27, 2021      |                                           |
-| 1.27.x  | 92                | May 18, 2021        | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days.|
-| 1.28.x  | 92                | June 15, 2021       | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.27.x  | 92                | May 18, 2021        | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.28.x  | 92                | June 15, 2021       | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.29.x  | 93                | July 13, 2021       |                                           |
 | 1.30.x  | 93                | August 3, 2021      |                                           |
 | 1.31.x  | 94                | August 24, 2021     |                                           |
 | 1.32.x  | 94                | September 14, 2021  |                                           |
 | 1.33.x  | 95                | October 5, 2021     |                                           |
+| 1.34.x  | 95                | October 26, 2021    |                                           |
+| 1.35.x  | 96                | November 23, 2021   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
+| 1.36.x  | 96                | December 14, 2021   |                                           |
+| 1.37.x  | 97                | January 18, 2022    | Longer cycle/late release due to Holidays |
+
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
