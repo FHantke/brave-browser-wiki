@@ -46,6 +46,8 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.25.x  |    91    | May 18, 2021        | May 25, 2021        |                                            |
 | 1.26.x  |    91    | June 15, 2021       | June 22, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.27.x  |    92    | July 13, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.28.x  |    92    | August 3, 2021      | August 10, 2021     |                                            |
+| 1.29.x  |    93    | August 24, 2021     | August 31, 2021     |                                            |
 
 - All dates are approximate and are subject to change.
 - CI does builds for release channel once a day if there are changes or as requested.
@@ -67,6 +69,8 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.24.x - 1.25.x | 21 days                   |                                            |
 | 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
+| 1.27.x - 1.28.x | 21 days                   |                                            |
+| 1.28.x - 1.29.x | 21 days                   |                                            |
 ---
 
 # Beta & Dev channel dates:
@@ -86,6 +90,8 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.28.x  | 92                | July 13, 2021       |                                           |
+| 1.29.x  | 93                | August 3, 2021      |                                           |
+| 1.30.x  | 93                | August 24, 2021     |                                           |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
@@ -111,6 +117,8 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.27.x  | 92                | May 18, 2021        | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.28.x  | 92                | June 15, 2021       | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days.|
 | 1.29.x  | 93                | July 13, 2021       |                                           |
+| 1.30.x  | 93                | August 3, 2021      |                                           |
+| 1.31.x  | 94                | August 24, 2021     |                                           |
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
