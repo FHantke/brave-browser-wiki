@@ -45,12 +45,11 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Wait for confirmation that Linux live update works
 
 ### Download & Install Binaries from Brave.com
-- [ ] download binary from https://brave.com on `Win x64`
-   - should be using `https://laptop-updates.brave.com/latest/winx64`
-- [ ] download binary from https://brave.com on `Win x86`
-   - should be using `https://laptop-updates.brave.com/latest/winia32`
-- [ ] download binary from https://brave.com on `macOS`
-   - should be using `https://laptop-updates.brave.com/latest/osx`
+- [ ] download binary from https://brave.com on `Win x64` - `https://laptop-updates.brave.com/latest/winx64`
+- [ ] download binary from https://brave.com on `Win x86` - `https://laptop-updates.brave.com/latest/winia32`
+- [ ] download binary from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
+
+### Download & Install Binaries from Brave.com (Referrals)
 - [ ] download the `.exe` binary from a referral page (Production) on `Win x64`
    - check `brave://local-state` and ensure the `promoCode` is being listed
 - [ ] download the `.exe` binary from a referral page (Production) on `Win x86`
@@ -63,14 +62,11 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Publish the release notes to `https://www.brave.com/latest`
 - [ ] Announce release on https://community.brave.com/ (@Hollons)
 - [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@Hollons)
-- [ ] Notify #announcements, #community of the latest release with a link to the release notes
-
-### Update Release channel wiki
-- [ ] Update entries here as needed: https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule
+- [ ] Notify #announcements of the latest release with a link to the release notes
 
 ### Closing milestones
-- [ ] Set a release date and close the appropriate milestone under https://github.com/brave/brave-browser/milestones
-- [ ] Set a release date and close the appropriate milestone under https://github.com/brave/brave-core/milestones
+- [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-browser/milestones
+- [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-core/milestones
 
 ---------
 
