@@ -40,7 +40,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Wait for confirmation that Windows live update works
   - [ ] Ensure that `delta` upgrades are working on `Win x64` platforms
     - Save the [`configuration`](https://github.com/brave/brave-browser/wiki/(WIP)-Desktop-Release-Checklist#example-of-delta-upgrade-occurring) into a file named `BraveUpdate.ini` and move into `C:\`
-    - Run through upgrade and you should see `C:\Omaha log.txt`. Confirm that a [`delta`](https://github.com/brave/brave-browser/wiki/(WIP)-Desktop-Release-Checklist#example-of-delta-upgrade-occurring) upgrade has occurred.
+    - Upgrade and you should see `C:\Omaha log.txt`. Confirm that a [`delta`](https://github.com/brave/brave-browser/wiki/(WIP)-Desktop-Release-Checklist#example-of-delta-upgrade-occurring) upgrade has occurred.
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Wait for confirmation that Linux live update works
 
