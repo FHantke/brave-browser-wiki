@@ -9,21 +9,6 @@ On each PR, you should see the checks section as below (unless it's a draft PR o
 
 `Details` link will take you to the actual check results (Jenkins private, Travis publicly accessible).
 
-## Jenkins overview
-We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are 10 pipelines at https://ci.brave.com/view/ci, per repo and per platform.
-
-Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Forks are ignored. When a new build starts it will cancel the previously running ones, unless it gets aborted for the following reasons:
-- PR labeled with `CI/skip`
-- PR is in draft
-
-Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-ios`, `CI/skip-linux`, `CI/skip-macos`, `CI/skip-windows` labels for PRs that do not need to run checks on all platforms.
-
-Slack notifications will be sent to PR author based on a map that associates the GitHub user with their corresponding Slack username. To update, copy the value from our password manager, edit, then update in the Jenkins credential store `github-to-slack-username-map` variable.
-
-You can see the history of checks by going into the specific PR Jenkins as seen in the list below.
-
-![Brave Core PR builder jobs in Jenkins](images/jenkins-jobs.png)
-
 ### Helpful Jenkins links
 
 When on a specific build from the build history there are some helpful links:
@@ -34,15 +19,42 @@ When on a specific build from the build history there are some helpful links:
 - `Pipeline Steps` - best view for seeing the full list of steps and debugging (can view status and output of individual steps)
 - `Workspaces` - view files in the build workspaces and nodes allocated to the build
 
+### Start a PR builder Jenkins job
+
+To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-browser-build-pr` or `brave-core-build-pr`). The following parameters are available:
+- CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
+- BUILD_TYPE - `Release` by default but can be `Debug` as well
+- TERMINATE_NODE - `false` by default
+- WIPE_WORKSPACE - `false` by default
+- SKIP_INIT - `false` by default
+- DISABLE_SCCACHE - `false` by default (only for Linux and macOS)
+- SKIP_SIGNING - `true` by default
+- DCHECK_ALWAYS_ON - `true` by default
+- NODE_LABEL - empty by default - build node label where to execute
+- SLACK_NOTIFY - empty by default - comma-separated list of Slack destinations to notify about build (@mplesa,#build-bot)
+
+Same is valid for restarts, always do them from the top level jobs for proper status reporting.
+
+## Jenkins overview
+We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are 10 pipelines at https://ci.brave.com/view/ci, per repo and per platform.
+
+Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Forks are ignored. When a new build starts it will cancel the previously running ones, unless it gets aborted for the following reasons:
+- PR labeled with `CI/skip`
+- PR is in draft
+
+Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-ios`, `CI/skip-linux`, `CI/skip-macos`, `CI/skip-windows` labels for PRs that do not need to run checks on all platforms.
+
+Slack notifications will be sent to PR author based on a map that associates the GitHub user with their corresponding Slack username. To update, copy the value from our password manager, edit, then update in the Jenkins credential store `github-to-slack-username-map` variable. For extra notifications 
+
 ## Process overview
-The checks that are done are defined in the `Jenkinsfile` at the root of the project https://github.com/brave/devops/blob/master/jenkins/jobs/browser/Jenkinsfile.
+The checks that are done are defined in the Jenkinsfiles at https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-PLATFORM.Jenkinsfile
 
-The above gets called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will look for a PR in the other repo and update its status.
+The above get called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will look for a PR in the other repo and update its status.
 
-We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get shutdown if idle for 30m - if no other builds start on them). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
+We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get stopped after the build). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
 
-This `Jenkinsfile` defines the pipeline that builds in parallel for Android `x86`, iOS `arm64`, Linux, macOS and Windowx `x64` with the steps below:
-- notify the PR author on Slack that build has started
+This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, Linux, macOS and Windowx `x64` with the steps below:
+- notify the PR author (or extra destinations) on Slack that build has started
 - checkout source code
 - pin locally branch in `package.json` if branch also exists in `brave-core`
 - install dependencies (`npm install --no-optional`) and remove `gclient` lock files
@@ -67,21 +79,6 @@ Besides the checks done by our Jenkins job, there are some additional checks don
 - Python lint (pep8)
 
 We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks.
-
-## Advanced steps
-
-### Start a PR builder Jenkins job
-
-To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-browser-build-pr` or `brave-core-build-pr`). The following parameters are available:
-- CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
-- BUILD_TYPE - `Release` by default but can be `Debug` as well
-- WIPE_WORKSPACE - `false` by default
-- SKIP_INIT - `false` by default
-- DISABLE_SCCACHE - `false` by default (only for Linux and macOS)
-- SKIP_SIGNING - `true` by default
-- DCHECK_ALWAYS_ON - `true` by default
-
-Same is valid for restarts, always do them from the top level jobs for proper status reporting.
 
 ## Resources
 - for employees, join the `#brave-browser-ci` Slack channel
