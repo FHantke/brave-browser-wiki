@@ -1,4 +1,7 @@
 Android and Linux
+
+Automated at https://ci.brave.com/job/brave-browser-rust-deps-linux
+
 ```
 npm run init
 Open Terminal
@@ -24,6 +27,8 @@ Set the new version in `script/rust_deps_config.py` and create a pull request fo
 ```
 
 iOS and macOS
+
+Automated at https://ci.brave.com/job/brave-browser-rust-deps-macos
 ```
 npm run init
 Open Terminal
@@ -49,6 +54,8 @@ Set the new version in `script/rust_deps_config.py` and create a pull request fo
 ```
 
 Windows
+
+Automated at https://ci.brave.com/job/brave-browser-rust-deps-windows
 ```
 npm run init
 Open "Command Prompt"
