@@ -58,6 +58,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable Reporting Observers and Reporting API](https://github.com/brave/brave-core/pull/4578)
 - [Disable Scroll To Text Fragment](https://github.com/brave/brave-core/pull/4548/commits/3221538c3b2939d11a3074be3d5c8f44b2540a6c)
 - [Farble navigator.deviceMemory](https://github.com/brave/brave-core/pull/6964)
+- [Disable navigator.credentials](https://github.com/brave/brave-browser/issues/13#issuecomment-376991976)
 
 ### Services We Proxy Through Brave Servers
 
