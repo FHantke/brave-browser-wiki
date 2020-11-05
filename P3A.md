@@ -236,7 +236,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 (`Brave.NTP.SponsoredNewTabsCreated`)
 
 0. 0%
-1. > 0% and < 10%
+1. &gt; 0% and < 10%
 2. 10% to < 20%
 3. 20% to < 30%
 4. 30% to < 40%
