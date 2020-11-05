@@ -211,5 +211,45 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 5. 20-30
 6. 30+
 
+### Q25: On average, how many New Tab Pages did you create per day?
+
+(`Brave.NTP.NewTabsCreated`)
+
+0. 0 
+1. 1 to 3
+2. 4 to 8
+3. 9 to 20
+4. 21 to 50
+5. 51 to 100
+6. More than 100
+
+
+### Q26: Is the sponsored new tab page option enabled?
+
+(`Brave.NTP.SponsoredImagesEnabled`)
+
+0. Disabled
+1. Enabled
+
+### Q27: On average, how many of the New Tab Pages you saw per day were sponsored?
+
+(`Brave.NTP.SponsoredNewTabsCreated`)
+
+0. 0%
+1. > 0% and < 10%
+2. 10% to < 20%
+3. 20% to < 30%
+4. 30% to < 40%
+5. 40% to < 50%
+6. 50% or more
+
+### Q28: On the New Tab Page, did you click the Customize Settings icon?
+
+(`Brave.NTP.CustomizeUsageStatus`)
+
+0. No
+1. Yes, but I didn't make any changes
+2. Yes, and I did make a change
+
 ## Metrics Proposed/Under Development
 TBD
