@@ -12,5 +12,5 @@ The described mechanism ensures that Brave will never receive any linkable user-
 
 This mechanism is only for Brave Ads and is disabled by opting out of Brave Ads and/or Brave Rewards.
 
-The current set of questions is measuring the composition of ad opportunities and impressions with respect to their top-level advertising segments: _Architecture, Arts & Entertainment, Automotive, Business, Careers, Cellphones, Crypto, Education, Family & parenting, Fashion, Folklore, Food & Drink, Gaming, Health & Fitness, History, Hobbies & Interests, Home, Law, Military, Other, Personal Finance, Pets, Real-estate, Science, Sports, Technology & Computing, Travel and Weather_ (full list on [GitHub](https://github.com/brave/brave-core/)).
+The current set of questions is measuring the composition of ad opportunities and impressions with respect to their top-level advertising segments: _Architecture, Arts & Entertainment, Automotive, Business, Careers, Cellphones, Crypto, Education, Family & parenting, Fashion, Folklore, Food & Drink, Gaming, Health & Fitness, History, Hobbies & Interests, Home, Law, Military, Other, Personal Finance, Pets, Real-estate, Science, Sports, Technology & Computing, Travel and Weather_ (full list on [GitHub](https://github.com/brave/brave-core/blob/165c202f2d85dee42f4cdc8f6bd17af10abb2756/components/brave_ads/browser/ads_p2a.cc#L21)).
 
