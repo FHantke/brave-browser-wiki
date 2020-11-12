@@ -91,7 +91,7 @@ The following is our automated schedule for creating and uploading builds to our
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
 | 1.16.x  | 86                | September 29, 2020  |                                           |
 | 1.17.x  | 87                | October 20, 2020    |                                           |
-| 1.18.x  | 87                | November 10, 2020   |                                           |
+| 1.18.x  | 87                | November 10, 2020   | Migration was delayed/occurred on Nov 11, 2020|
 | 1.19.x  | 88                | December 1, 2020    |                                           |
 | 1.20.x  | 88                | January 12, 2021    | Longer cycle/late release due to Holidays |
 | 1.21.x  | 89                | February 2, 2021    |                                           |
@@ -124,7 +124,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.16.x  | 86                | September 8, 2020   |                                           |
 | 1.17.x  | 87                | September 29, 2020  |                                           |
 | 1.18.x  | 87                | October 20, 2020    |                                           |
-| 1.19.x  | 88                | November 10, 2020   |                                           |
+| 1.19.x  | 88                | November 10, 2020   | Migration was delayed/occurred on Nov 11, 2020|
 | 1.20.x  | 88                | December 1, 2020    |                                           |
 | 1.21.x  | 89                | January 12, 2021    | Longer cycle/late release due to Holidays |
 | 1.22.x  | 89                | February 2, 2021    |                                           |
