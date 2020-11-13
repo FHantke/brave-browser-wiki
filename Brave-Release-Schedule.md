@@ -35,7 +35,7 @@ The following is our automated schedule for creating and uploading builds to our
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.16.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
-| 1.17.x  |    87    | November 10, 2020   | November 17, 2020   | Migration was delayed till Nov 11. Release was delayed till Nov 19|
+| 1.17.x  |    87    | November 10, 2020   | November 17, 2020   | Migration was delayed till Nov 11, 200 & Release was delayed till Nov 19, 2020|
 | 1.18.x  |    87    | December 1, 2020    | December 8, 2020    |                                            |
 | 1.19.x  |    88    | January 12, 2021    | January 19, 2021    | Longer cycle/late release due to Holidays  |
 | 1.20.x  |    88    | February 2, 2021    | February 9, 2021    |                                            |
