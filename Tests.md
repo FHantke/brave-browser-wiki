@@ -154,14 +154,17 @@ It's sometimes useful to see the console while browser tests are running.  When 
 # Android
 
 ## Setting up the environment for tests
+By default we use predefined emulator, so there is no need to set up emulator for tests.
 
+If you want to run tests on specific emulator, follow these steps:
 1. Start Android Studio ` /usr/local/android-studio/bin/studio.sh`
 2. Open AVD Manager (Phone icon with Android robot on the toolbar)
 3. Create a new Emulator, I used Nexus 6P API level 29, CPU x86, make sure to set the Size on disk to 10GB and SD card to 1GB or else there will be errors when copying the test files.
 4. List installed emulators: `~/Android/Sdk/emulator/emulator -list-avds`
 5. Start an emulator: `$ ~/Android/Sdk/emulator/emulator @EMULATOR_ID`. Note: use EMULATOR_ID from the list command, and pre-pend an @ symbol
+6. Specify `manual_android_test_device` parameter to indicate that Android test device is run manually.
 
-I've only tested with x86 emulators per the recommendation, but it should probably work for other emulator types.
+`x86` emulators are recommended as `arm` emulators are extremely slow and tests will fail with timeout error.
 
 ```
 npm run init -- --target_os=android --target_arch=x86
