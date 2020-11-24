@@ -251,5 +251,41 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 1. Yes, but I didn't make any changes
 2. Yes, and I did make a change
 
+
+### Q29: Is IPFS Companion installed?
+
+(`Brave.IPFS.IPFSCompanionInstalled`)
+
+0. No
+1. Yes
+
+### Q30: How many lifetime times are IPFS detection prompts shown without installing
+
+(`Brave.IPFS.DetectionPromptCount`)
+
+0. 0 times
+1. 1 time
+3. 2-5 times
+4. 5+ times or more
+
+### Q30: How does IPFS resolve ipfs/ipns protocol?
+
+(`Brave.IPFS.GatewaySetting`)
+
+0. Ask
+1. Gateway
+2. Local Node
+3. Disabled
+
+
+### Q31: How long did the daemon run?
+
+(`Brave.IPFS.DaemonRunTime`)
+
+0. 0-5min
+1. 5-60min
+3. 1h-24h
+4. 24h+
+
 ## Metrics Proposed/Under Development
 TBD
