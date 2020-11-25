@@ -1,5 +1,15 @@
 You can check the list of components installed in Brave Browser by navigating to brave://components:
 
+| Component                 | Supported By Brave     | What it does  | Comments      |
+| ------------------------- | ---------------------- | ------------- | ------------- |
+| Brave Local Data Updater  | Yes                    | Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist  |               |
+| Brave Ad Block Updater    | Yes           | Updates the ad-block lists regularly |               |
+| NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |               |
+| Brave User Model Installer (en)      | Yes           |  |               |
+| Crowd Deny      | Yes           |  |               |
+| CRLSet      | Yes           |  |               |
+| Safety Tips      | Yes           |  |               |
+
 ## Components supported by Brave
 
 1. **Brave Local Data Updater**: Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist.
