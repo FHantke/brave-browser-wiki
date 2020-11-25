@@ -2,36 +2,17 @@ You can check the list of components installed in Brave Browser by navigating to
 
 | Component                 | Supported By Brave     | What it does  | Comments      |
 | ------------------------- | ---------------------- | ------------- | ------------- |
-| Brave Local Data Updater  | Yes                    | Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist  |               |
 | Brave Ad Block Updater    | Yes           | Updates the ad-block lists regularly |               |
-| NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |               |
+| Brave HTTPS Everywhere Updater      | Yes           |  |               |
+| Brave Local Data Updater  | Yes                    | Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist  |               |
+| Brave SpeedReader Updater      | Yes           |  |               |
 | Brave User Model Installer (en)      | Yes           |  |               |
-| Crowd Deny      | Yes           |  |               |
 | CRLSet      | Yes           |  |               |
+| Crowd Deny      | No           |  | Work to enable tracked here: https://github.com/brave/brave-browser/issues/10280               |
+| Federated Learning of Cohorts      | Yes           |  |               |
+| File Type Policies      | Yes           |  |               |
+| Legacy TLS Deprecation Configuration | No           | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  |               |
+| MEI Preload      | Yes           |  |               |
+| NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |               |
 | Safety Tips      | Yes           |  |               |
-
-## Components supported by Brave
-
-1. **Brave Local Data Updater**: Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist.
-2. **Brave Ad Block Updater (Base + Regional)**: Updates the ad-block lists regularly
-3. **Brave User Model Installer (en)**: 
-4. **NTP Sponsored Images (US)**:
-5. **Crowd Deny**:
-6. **CRLSet**:
-7. **Safety Tips**:
-8. **Brave SpeedReader Updater**:
-9. **File Type Policies**:
-10. **Brave User Model Installer (US)**:
-11. **Brave HTTPS Everywhere Updater**:
-
-## Components not supported by Brave:
-
-1. **Legacy TLS Deprecation Configuration**: This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.
-2. **Federated Learning of Cohorts**: This component
-3. **Zxcvbn Data Dictionaries**: This component includes a list of patterns that can be used to determine the password strength. Brave has disabled the password check feature in brave and will be working on a custom version. Work is being tracked here: https://github.com/brave/brave-browser/issues/12001
-4. 
-
-## In discussion:
-
-1. **MEI Preload**: Currently supported. We should disable it to prevent media being preloaded by Brave.
-2. 
+| Zxcvbn Data Dictionaries      | No           |  |               |
