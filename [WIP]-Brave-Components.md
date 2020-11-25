@@ -12,7 +12,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | CRLSet      | Yes           | Maintains a list of websites with bad certificates so that users can be protected from harmful websites  |               |
 | Crowd Deny      | No           | Revokes all permissions for sites in the list | Work to enable tracked here: https://github.com/brave/brave-browser/issues/10280               |
 | Federated Learning of Cohorts      | No           | Has data to support FLOC | This feature has significant privacy risks and should not be enabled in Brave |
-| File Type Policies      | Yes           | Contains a list of file handling policies | This is used by Safe Browsing |
+| File Type Policies      | Yes           | List of file extensions and how they are handled in download protection | This is used by Safe Browsing |
 | Legacy TLS Deprecation Configuration | No           | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  |               |
 | MEI Preload      | Yes           | Used to pre-load media from websites |               |
 | NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |               |
