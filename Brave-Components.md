@@ -8,7 +8,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | Brave Local Data Updater  | Yes                    | Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist  |  https://github.com/brave/autoplay-whitelist, https://github.com/brave/referrer-whitelist, https://github.com/brave/extension-whitelist, https://github.com/brave/brave-site-specific-scripts             | |
 | Brave SpeedReader Updater      | Yes           | Maintains data files to support Brave Speedreader | https://github.com/brave-experiments/SpeedReader | |
 | Brave Tor Client Updater      | Yes           | Contains the Brave tor client required to support Tor windows | https://github.com/brave/tor_build_scripts/ |
-| Brave User Model Installer      | Yes           | Maintains data files to support Brave Ads  | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageClientModelParameterComponent.js | |
+| Brave User Model Installer      | Yes           | Maintains data files to support Brave Ads  | https://github.com/brave/brave-core/tree/master/components/brave_user_model | |
 | Certificate Error Assistant      | No           | Helps fix errors in misconfigured SSL certificates | | Not able to trigger Certificate Error Assistant in Chrome or Brave              |
 | CRLSet      | Yes           | Maintains a list of websites with bad certificates so that users can be protected from harmful websites  |               |
 | Crowd Deny      | No           | Revokes all permissions for sites in the list | | Work to enable tracked here: https://github.com/brave/brave-browser/issues/10280 |
