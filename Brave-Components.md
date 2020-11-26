@@ -16,7 +16,10 @@ You can check the list of components installed in Brave Browser by navigating to
 | File Type Policies      | Yes           | List of file extensions and how they are handled in download protection | | This is used by Safe Browsing |
 | Legacy TLS Deprecation Configuration | No           | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  |               |
 | MEI Preload      | Yes           | Used to pre-load media from websites |               |
-| NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |               |
+| NTP Sponsored Images      | Yes           | Updates the NTP Sponsored image assets |https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSponsoredImagesComponents.js |
+| NTP Super Referral      | Yes           | Updates the NTP Super Referral image assets | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerComponent.js |
+| NTP Super Referral mapping table | Yes           | Manage NTP SR mapping table (promo code and NTP SR Component id | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerMappingTableComponent.js|
+| youtubedown.js | Yes           | Used to update youtubedown.js script | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageYoutubedown.js |
 | Origin Trials      | No           | Metadata for origin trials |               |
 | Safety Tips      | No           |  Protobuf of malicious domains | | Not able to trigger Safety tips in Chrome or Brave |
 | Subresource Filter Rules      | No           | Contains rules to block websites which don’t follow the better Ads Standard. Its often used to block phishing domains |               |
