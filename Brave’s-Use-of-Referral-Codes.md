@@ -1,3 +1,5 @@
+**Update: As of 11/23/20, Brave only supports referral codes for a small (50-100) list of referrers who are manually reviewed by Brave staff.** See https://brave.com/referral-program-update/ for details.
+
 ## What are referral codes?
 
 Referral codes, or ref codes for short, are 6-character alphanumeric codes used in Brave on all platforms, including mobile, to identify where the build was downloaded from.
