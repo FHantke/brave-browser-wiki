@@ -74,8 +74,65 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 - Uncheck `All`, then only select these resources for translation, the rest are taken from Chromium but we just store them in Transifex:
 `android_brave_strings`, `brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension` and all `*_override` files.  Leave the rest unchecked!
 - The officially supported languages to order are: `af, am, ar, as, be, bg, bn, bs, ca, cs, da, de, el, en-GB, es, es-419, et, eu, fa, fi, fil, fr, fr-CA, gl, gu, hi, hr, hu, hy, id, is, it, he, hr-Latn, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, or, pa, pl, pt-BR, pt-PT, ro, ru, si, sk, sl, sq, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
-- For the languages you haven't translated yet, repeat these steps for TextMaster.
-- For the languages you haven't translated yet, repeat these steps for e2f. 
+
+```
+# Gengo
+
+Arabic        (ar)
+Bulgarian     (bg)
+Catalan       (ca)
+Chinese-TW    (zh-TW)
+Czech         (cs)
+Danish        (da)
+Dutch         (nl)
+Finnish       (fi)
+French        (fr)
+French-CA     (fr-CA)
+German        (de)
+Greek         (el)
+Hebrew        (he)
+Hindi         (hi)
+Hungarian     (hu)
+Indonesian    (id)
+Italian       (it)
+Japanese      (ja)
+Korean        (ko)
+Malay         (ms)
+Norwegian     (no)
+Polish        (pl)
+Portuguese-BR (pt-BR)
+Romanian      (ro)
+Russian       (ru)
+Serbian       (sr)
+Slovak        (sk)
+Spanish       (es)
+Swedish       (sv)
+Thai          (th)
+Turkish       (tr)
+Ukranian      (uk)
+Vietnamese    (vi)
+
+# TextMaster
+Portuguese-PT (pt-PT)
+
+# e2f
+
+Amharic    (am)
+Bengali    (bn)
+Chinese-CN (zh-CN)
+Croatian   (hr)
+English-GB (en-GB)
+Estonian   (et)
+Filipino   (fil)
+Kannada    (kn)
+Latvian    (lv)
+Lithuanian (lt)
+Persian    (fa)
+Slovenian  (sl)
+Spanish-LA (es-419)
+Swahili    (sw)
+```
+
 - The total cost is usually in the hundreds to thousands range, but usually below 10k.  If it's above 10k then please get special approval and make sure everything is being selected correctly.
  
 
