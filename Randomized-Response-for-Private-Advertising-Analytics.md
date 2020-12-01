@@ -8,9 +8,7 @@ To that end we employ a form of local differential privacy (LDP) called [Randomi
 * Before the answer leaves a user’s device the report will be scrambled by sending a random non-truthful answer roughly 75% of the time and sending the true answer only 1 in 4 times (the code is open source and can be inspected on [GitHub](https://github.com/brave/brave-core/blob/58d7380e3d78fc0f850ffc41e7f703a05221cc2d/components/p3a/brave_p2a_protocols.cc#L26)).
 * In addition to client-side LDP, a reverse proxy (Cloudflare Spectrum) will blind our server from user IP addresses and establish unlinkability of the randomized reports.
 
-The described mechanism ensures that Brave will never receive any linkable user-level data that could be revealed or analysed by Brave or a third party.
-
-This mechanism is only for Brave Ads and is disabled by opting out of Brave Ads and/or Brave Rewards.
+The described mechanism ensures that Brave will never receive any linkable user-level data that could be revealed or analysed by Brave or a third party. This mechanism is enabled only after opting-in to Brave Ads.
 
 The current set of questions is measuring the composition of ad opportunities and impressions with respect to their top-level advertising segments: _Architecture, Arts & Entertainment, Automotive, Business, Careers, Cellphones, Crypto, Education, Family & parenting, Fashion, Folklore, Food & Drink, Gaming, Health & Fitness, History, Hobbies & Interests, Home, Law, Military, Other, Personal Finance, Pets, Real-estate, Science, Sports, Technology & Computing, Travel and Weather_ (full list on [GitHub](https://github.com/brave/brave-core/blob/165c202f2d85dee42f4cdc8f6bd17af10abb2756/components/brave_ads/browser/ads_p2a.cc#L21)).
 
