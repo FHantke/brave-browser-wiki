@@ -72,7 +72,14 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 ```
 - Press Next and it should take a minute or two to load, I think this happens because we have a lot of strings.
 - Uncheck `All`, then only select these resources for translation, the rest are taken from Chromium but we just store them in Transifex:
-`ethereum_remote_client_extension`, `android_brave_strings`, `brave_generated_resources`, `brave_components_resources`, `brave_extension`, `rewards_extension` and all `*_override` files.  Leave the rest unchecked!
+  - `android_brave_strings`,
+  - `brave_components_resources`,
+  - `brave_extension`,
+  - `brave_generated_resources`,
+  - `ethereum_remote_client_extension`,
+  - `rewards_extension`, and
+  - all `*_override` files.
+  - Leave the rest unchecked!
 - The officially supported languages to order are: `af, am, ar, as, be, bg, bn, bs, ca, cs, da, de, el, en-GB, es, es-419, et, eu, fa, fi, fil, fr, fr-CA, gl, gu, hi, hr, hu, hy, id, is, it, he, hr-Latn, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, or, pa, pl, pt-BR, pt-PT, ro, ru, si, sk, sl, sq, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
 - Here are the things we currently select:
 ```
@@ -124,6 +131,7 @@ Croatian   (hr)
 English-GB (en-GB)
 Estonian   (et)
 Filipino   (fil)
+Galician   (gl)
 Kannada    (kn)
 Latvian    (lv)
 Lithuanian (lt)
