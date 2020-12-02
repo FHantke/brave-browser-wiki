@@ -38,4 +38,4 @@ Only Release builds are optimized in this way. For Debug builds, usually all the
 It is important to test any additions or changes to module loading with the `optimize_web_ui` build flag set on and off.
 
 ## Brave-specific WebUI Pages
-WebUIs which are created wholly for Brave do not use optimize_webui. Instead, they use Webpack, which handles type checking, module resolution, module concatentation or chunking, and minifying. It also generates the GRD file dynamically based on Javascript module imports and optimization settings.
+WebUIs which are created wholly for Brave do not use optimize_webui. Instead, they use Webpack, which handles type checking, module resolution, module concatentation or chunking, and minifying. It also generates the GRD file dynamically based on Javascript module imports and optimization settings. More information about that is on the wiki page https://github.com/brave/brave-browser/wiki/Javascript-and-Typescript-Bundling
