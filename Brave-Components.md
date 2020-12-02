@@ -21,7 +21,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | NTP Super Referral mapping table | Yes           | Manage NTP SR mapping table (promo code and NTP SR Component id | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerMappingTableComponent.js|
 | youtubedown.js | Yes           | Used to get youtubedown.js script | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageYoutubedown.js |
 | Origin Trials      | No           | Metadata for origin trials |               |
-| Safety Tips      | No           |  Protobuf of malicious domains | | Not able to trigger Safety tips in Chrome or Brave |
+| Safety Tips      | No           |  Protobuf of whitelisted domains for client side lookalike URL detection | | Work to enable safety tips is tracked here: https://github.com/brave/brave-browser/issues/12999 |
 | Subresource Filter Rules      | No           | Contains rules to block websites which don’t follow the better Ads Standard. Its often used to block phishing domains |               |
 | Widevine      | Yes           | Widevine’s DRM solution provides the capability to license, securely distribute and protect playback of content on any consumer device |           |
 | Zxcvbn Data Dictionaries      | No           | This contains the data like popular English words and names to higlight password strength.    | | The work to develop a custom password check is being tracked here: https://github.com/brave/brave-browser/issues/12001 |
