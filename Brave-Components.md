@@ -9,7 +9,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | Brave SpeedReader Updater      | Yes           | Maintains data files to support Brave Speedreader | https://github.com/brave-experiments/SpeedReader | |
 | Brave Tor Client Updater      | Yes           | Contains the Brave tor client required to support Tor windows | https://github.com/brave/tor_build_scripts/ |
 | Brave User Model Installer      | Yes           | Maintains data files to support Brave Ads  | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageClientModelParameterComponent.js | |
-| Certificate Error Assistant      | No           | Helps fix errors in misconfigured SSL certificates | | Not able to trigger Certificate Error Assistant in Chrome or Brave              |
+| Certificate Error Assistant      | No           | Helps fix errors in misconfigured SSL certificates | | Work to enable is being tracked here: https://github.com/brave/brave-browser/issues/13010 |
 | CRLSet      | Yes           | Maintains a list of websites with bad certificates so that users can be protected from harmful websites  |               |
 | Crowd Deny      | No           | Revokes all permissions for sites in the list | | Work to enable tracked here: https://github.com/brave/brave-browser/issues/10280 |
 | Federated Learning of Cohorts      | No           | Has data to support FLOC | | This feature has significant privacy risks and should not be enabled in Brave |
