@@ -64,13 +64,13 @@ on.
 
 ## Implementation Plan
 
-Note: The initial PRS for ephemeral storage are not dependent on whether or not
+Note: The initial PRs for ephemeral storage are not dependent on whether or not
 storage is blocked. Instead ephemeral storage is used for *all* third-party
 storage that is not blocked. This changes in PR #4, which brings ephemeral
 storage in line with the final design.
 
-* Stage 1: Add ephemeral storage support for DOM Storage
-* Stage 2: Add ephemeral storage support for `document.cookie`
-* Stage 3: Add ephemeral storage support for navigation cookies
-* Stage 4: For all types of ephemeral storage, only use ephemeral storage when a cookie or storage is otherwise blocked.
+* Stage 1: [Add ephemeral storage support for DOM Storage](https://github.com/brave/brave-core/pull/6560)
+* Stage 2: [Add ephemeral storage support for `document.cookie`](https://github.com/brave/brave-core/pull/7154)
+* Stage 3: [Add ephemeral storage support for navigation cookies](https://github.com/brave/brave-core/pull/7387)
+* Stage 4: [For all types of ephemeral storage, only use ephemeral storage when a cookie or storage is otherwise blocked](https://github.com/brave/brave-core/pull/7207)
 * Stage 5: Enable ephemeral storage by default
