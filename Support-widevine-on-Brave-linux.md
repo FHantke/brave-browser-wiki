@@ -1,3 +1,5 @@
+####  Note: As Brave on linux also uses component for widevine since 1.20.x, this document is deprecated.
+
 # Background #
 * What is CDM?
   * A Content Decryption Module (CDM) refers to the client-side DRM component of an application which performs the decryption, decoding, or enables playback of encrypted video content. Different platforms use different CDM technology. ([source](https://castlabs.com/resources/faq/drm/))
