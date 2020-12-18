@@ -6,3 +6,6 @@ Each valid pull request should specify a milestone for the version it landed in.
 
 If you're landing in `master`, you can obtain the correct milestone by looking in `brave-core`'s `package.json`
 If you're landing in an uplift in a specific branch such as `1.11.x`, then you should specify `1.11.x` as the milestone.
+
+
+If PR was landed and then reverted, you must put label `reverted`.
