@@ -1,8 +1,6 @@
-| Provider name | Added with | Referral codes (if any) | Regions (2 digit country code) |
-| ------------- | ---------- | ----------------------- | ------------------------------ |
-| Ecosia | https://github.com/brave/brave-core/pull/7494 | Android: `tt=42b8ae98`<br>iOS: `tt=d188c5da` | US, UK, GB, FR, DE, NL, BE, CH, SE |
-| Startpage | https://github.com/brave/brave-core/pull/6916 | `segment=startpage.brave`| All |
-| Yahoo  | https://github.com/brave/brave-core/pull/6201 | `fr=brave_yset` | AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, HK, ID, IE, IN, IT, MX, MY, NL, NO, NZ, PE, PH, SE, SG, TH, TW, GB, VE, VN |
-| Yandex | https://github.com/brave/brave-core/pull/7090 | Android: `clid=2423859`<br>Desktop/iOS: `clid=2353835` | AM, AZ, BY, KG, KZ, MD, RU, TJ, TM, UZ |
-
-Work in progress...
+| Provider name | Added with | Referral code (part of query string) | Regions (2 digit country code) | Deployed in |
+| ------------- | ---------- | ----------------------- | ------------------------------ | ----------- |
+| Ecosia | Desktop/Android https://github.com/brave/brave-core/pull/7494 | Desktop: ??<br><br>Android: `tt=42b8ae98`<br><br>iOS: `tt=d188c5da` | US, UK, GB, FR, DE, NL, BE, CH, SE | n/a |
+| Startpage | Desktop https://github.com/brave/brave-core/pull/6916 <br><br> iOS https://github.com/brave/brave-ios/pull/3003 | `segment=startpage.brave`| All | Desktop/Android: 1.16<br><br>iOS: 1.22 |
+| Yahoo  | Desktop/Android https://github.com/brave/brave-core/pull/6201<br><br>iOS https://github.com/brave/brave-ios/pull/2755 | `fr=brave_yset` | AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, HK, ID, IE, IN, IT, MX, MY, NL, NO, NZ, PE, PH, SE, SG, TH, TW, GB, VE, VN | Desktop/Android: 1.12<br><br>iOS: 1.19.1 |
+| Yandex | Desktop https://github.com/brave/brave-core/pull/7090<br><br>Android<br> - https://github.com/brave/brave-core/pull/7258<br>- https://github.com/brave/brave-core/pull/7376<br><br>iOS https://github.com/brave/brave-ios/pull/3050 | Android: `clid=2423859`<br><br>Desktop/iOS: `clid=2353835` | AM, AZ, BY, KG, KZ, MD, RU, TJ, TM, UZ | Desktop/Android: 1.18<br><br>iOS: 1.22 |
