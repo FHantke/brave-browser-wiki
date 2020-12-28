@@ -11,6 +11,6 @@ For details about adding a search engine, please see [Criteria for adding new se
 | **Yandex** | Desktop: https://github.com/brave/brave-core/pull/7090<br><br>Android: https://github.com/brave/brave-core/pull/7258<br> https://github.com/brave/brave-core/pull/7376<br><br>iOS: https://github.com/brave/brave-ios/pull/3050 | Android: `clid=2423859`<br><br>Desktop/iOS: `clid=2353835` | AM, AZ, BY, KG, KZ, MD, RU, TJ, TM, UZ | Desktop/Android: 1.18<br><br>iOS: 1.22 |
 
 ## Deprecated integrations
-| Provider name | Added with | Referral code (part of query string) | Regions (2 digit country code) | Deployed in | Removed in |
+| Provider name | Links to code | Referral code (part of query string) | Regions (2 digit country code) | Deployed in | Removed in |
 | ------------- | ---------- | ----------------------- | ------------------------------ | ----------- | ------ |
-| **Yahoo** | Desktop/Android https://github.com/brave/brave-core/pull/6201<br><br>iOS https://github.com/brave/brave-ios/pull/2755 | `fr=brave_yset` | AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, HK, ID, IE, IN, IT, MX, MY, NL, NO, NZ, PE, PH, SE, SG, TH, TW, GB, VE, VN | Desktop/Android: 1.12<br><br>iOS: 1.19.1 | TBD |
+| **Yahoo** | **Added with**<br>Desktop/Android: https://github.com/brave/brave-core/pull/6201<br><br>iOS: https://github.com/brave/brave-ios/pull/2755<br><br>**Removed with**<br>Desktop/Android: https://github.com/brave/brave-core/pull/7494<br><br>iOS: TBD| `fr=brave_yset` | AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, HK, ID, IE, IN, IT, MX, MY, NL, NO, NZ, PE, PH, SE, SG, TH, TW, GB, VE, VN | Desktop/Android: 1.12<br><br>iOS: 1.19.1 | TBD |
