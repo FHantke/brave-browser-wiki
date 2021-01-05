@@ -1,6 +1,6 @@
 # What it does 
 
-Brave's component updater server is an implementation of the Chromium component update server. The Brave browser will first try to ask our component updater for information about an extension. The component update server will will either return information directly to the Brave browser for our own extensions and components, or redirect the client so that the client requests the component from Chrome's component update server.
+Brave's component updater server is an implementation of the Chromium component update server. The Brave browser will first try to ask our component updater for information about an extension. The component update server will either return information directly to the Brave browser for our own extensions and components, or redirect the client so that the client requests the component from Chrome's component update server.
 
 We have both a dev component updater and a prod component updater.
 
