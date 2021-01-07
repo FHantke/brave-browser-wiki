@@ -20,7 +20,7 @@ There is a process that seems pretty dependable in converting icons that are sha
 
 4. Using the [SVGOMG](https://jakearchibald.github.io/svgomg/) cleaner, paste in our SVG code. I have toyed with these settings a bit and I'm unsure the absolute best combination but the one setting that is mandatory is to make sure the "Remove viewBox" setting is disabled. We need the viewbox declarations to create our canvas size in Skia.
 
-5. Copy the compressed SVG code, bring it to [Skiafy](https://alexeybarabash.github.io/skiafy/) and paste it in. Since we are typically designing to size, I leave my scale at 1.0 and click Skiafy. Your code should have a canvas declaration and varying degrees of Move/Close declarations: 
+5. Copy the compressed SVG code, bring it to [Skiafy](https://github.com/evanstade/skiafy) and paste it in. Since we are typically designing to size, I leave my scale at 1.0 and click Skiafy. Your code should have a canvas declaration and varying degrees of Move/Close declarations: 
 
 ```
 CANVAS_DIMENSIONS, 32,
