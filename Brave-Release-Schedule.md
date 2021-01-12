@@ -37,7 +37,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.16.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
 | 1.17.x  |    87    | November 11, 2020   | November 19, 2020   | Migration delayed, originally `Nov 10, 2020` & Release delayed, originally `Nov 17, 2020`|
 | 1.18.x  |    87    | December 1, 2020    | December 10, 2020    | Release delayed, originally `Dec. 8, 2020`|
-| 1.19.x  |    88    | January 12, 2021    | January 19, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 13, 2020` |
+| 1.19.x  |    88    | January 13, 2021    | January 19, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
 | 1.20.x  |    88    | February 2, 2021    | February 9, 2021    |                                            |
 | 1.21.x  |    89    | February 23, 2021   | March 2, 2021       |                                            |
 | 1.22.x  |    89    | March 16, 2021      | March 23, 2021      |                                            |
@@ -66,7 +66,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.15.x - 1.16.x | 20 days                   |                                            |
 | 1.16.x - 1.17.x | 21 days                   |                                            |
 | 1.17.x - 1.18.x | 21 days                   |                                            |
-| 1.18.x - 1.19.x | 42 days                   | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 13, 2020` |
+| 1.18.x - 1.19.x | 42 days                   | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
 | 1.19.x - 1.20.x | 21 days                   |                                            |
 | 1.20.x - 1.21.x | 21 days                   |                                            |
 | 1.21.x - 1.22.x | 21 days                   |                                            |
@@ -93,7 +93,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.17.x  | 87                | October 20, 2020    |                                           |
 | 1.18.x  | 87                | November 10, 2020   | Migration was delayed till `Nov 11, 2020` |
 | 1.19.x  | 88                | December 1, 2020    |                                           |
-| 1.20.x  | 88                | January 12, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 13, 2020` |
+| 1.20.x  | 88                | January 13, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
 | 1.21.x  | 89                | February 2, 2021    |                                           |
 | 1.22.x  | 89                | February 23, 2021   |                                           |
 | 1.23.x  | 90                | March 16, 2021      |                                           |
@@ -126,7 +126,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.18.x  | 87                | October 20, 2020    |                                           |
 | 1.19.x  | 88                | November 10, 2020   | Migration was delayed till `Nov 11, 2020` |
 | 1.20.x  | 88                | December 1, 2020    |                                           |
-| 1.21.x  | 89                | January 12, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 13, 2020` |
+| 1.21.x  | 89                | January 13, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
 | 1.22.x  | 89                | February 2, 2021    |                                           |
 | 1.23.x  | 90                | February 23, 2021   |                                           |
 | 1.24.x  | 90                | March 16, 2021      |                                           |
