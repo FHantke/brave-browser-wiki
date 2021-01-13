@@ -17,10 +17,16 @@ Search for SUFeedURL:
 <string>https://updates.bravesoftware.com/sparkle/Brave-Browser/stable/appcast.xml</string>
 ```
 
-To "get onto" the test channel, you can change the above to the following:
+To "get onto" the test channel using `x64 (Intel)`, you can change the above to the following:
 ```xml
 <key>SUFeedURL</key>
 <string>https://updates.bravesoftware.com/sparkle/Brave-Browser/test/appcast.xml</string>
+```
+
+To "get onto" the test channel using `Arm64`, you can change the above to the following:
+```xml
+<key>SUFeedURL</key>
+<string>https://updates.bravesoftware.com/sparkle/Brave-Browser/test-arm64/appcast.xml</string>
 ```
 
 You can now re-launch into Brave and use the menu `Brave` => `About Brave` (or visit brave://settings/help) and it should check for an update on the test channel using Sparkle.
