@@ -7,10 +7,13 @@ Install the latest publicly available release version. Login to a few sites and 
 
 When ready to do the upgrade, quit Brave and download the stub binaries for your platform (x86 or x64) from https://drive.google.com/drive/u/0/folders/1OX1MvNdPMrFggAOkKPGKORjrFeBzsyFF. You can then install this on top of your existing installation.
 
+Alternatively, the update channel can be replaced through Windows RegEdit.
+
 ## Upgrading on macOS
 Install the latest publicly available release version. Login to a few sites and create a session.
 
 On macOS, quit Brave and then you can edit the application's `Info.plist` file:
+
 Search for SUFeedURL:
 ```xml
 <key>SUFeedURL</key>
