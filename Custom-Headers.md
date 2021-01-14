@@ -1,4 +1,4 @@
-## Why use custom headers?
+## Why use Custom Headers?
 
 Brave has reached the size where we would like to add `brave` to the User-Agent string. However, in testing this, we found that many sites don't work correctly with this UA.
 
@@ -11,15 +11,8 @@ In all cases, the header is the same for **all users** of Brave Desktop and ther
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
-| Brave           | `X-Brave-Access-Key: key` | [Show subscription page for Dow Jones Media Group](https://github.com/brave/brave-browser/issues/1805).
-| cheddar.com     | `X-Brave-Partner: cheddar` | To provide [free subscriptions](https://brave.com/cheddar-partnership/) to Brave users.
-| coinbase.com & subdomains | `X-Brave-Partner: coinbase` | For detection of using Brave for the [Earn BAT](https://brave.com/coinbase-earn-bat/) campaign.
-| marketwatch.com & barrons.com | `X-Brave-Partner: dowjones` | To provide [free subscriptions](https://www.brave.com/dow-jones/) to Brave users.
-| townsquare.com & related sites | `X-Brave-Partner: townsquare` |  [Offer to users](https://basicattentiontoken.org/townsquare-partnership) that are not in Brave to download Brave.
-| softonic.[com\|cn\|jp\|pl\|com.br] | `X-Brave-Partner: softonic` | Avoid showing download Brave promotions to Brave users.
-| upbit.com, upbitit.com, upbitit.be, upbitit.tv and subdomains | X-Brave-Partner: upbit | For detection of using Brave for co-marketing.
-| uphold.com & subdomains | `X-Brave-Partner: uphold` | Shows different UI to Brave users for payments as a publisher.
 | eaff.com & subdomains | `X-Brave-Partner: eaff` | Custom content for Brave users.
+| uphold.com & subdomains | `X-Brave-Partner: uphold` | Shows different UI to Brave users for payments as a publisher.
 | grammarly.com & subdomains | `X-Brave-Partner: grammarly` | Attribution & Error Reporting
 
 ## Yandex CLID
