@@ -160,6 +160,9 @@ We should build some automation to find new things added here:
 
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
 
+# Check for changes in supported OS versions.
+- [ ] For MacOS check `mac_deployment_target` and `mac_min_system_version` in `build/config/mac/mac_sdk.gni`
+
 # Notify Security team of feature changes
 
 - [ ] Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
