@@ -296,4 +296,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 4. 24h+
 
 ## Metrics Proposed/Under Development
-TBD
+
+Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
+
+https://github.com/brave/brave-browser/labels/feature%2Fnew-metric
