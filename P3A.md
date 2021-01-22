@@ -9,10 +9,9 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 
 ## Current Metrics
 
-```
-[D] = supported on Desktop
-[A] = supported on Android
-```
+**[D]** = supported on Desktop ([merged and enabled in 1.1.x](https://github.com/brave/brave-core/pull/3242))
+
+**[A]** = supported on Android ([merged in 1.19.x](https://github.com/brave/brave-core/pull/7016) and [enabled in 1.20.x](https://github.com/brave/brave-core/pull/7550))
 
 ### Q1: How long has this browser been open for the last seven days?
 _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
@@ -22,7 +21,7 @@ _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-`_Brave.Core.IsDefault_` **[D]**
+`_Brave.Core.IsDefault_` **[D]** **[A]**
 1. No
 2. Yes
 
@@ -43,7 +42,7 @@ _`Brave.Importer.ImporterSource`_ **[D]**
 6. Imported from Safari (answer only possible on macOS)
 
 ### Q5: How many bookmarks do you have?
-_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]**
+_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]** **[A]**
 1. 0-5
 2. 6-20
 3. 21-100
@@ -61,7 +60,7 @@ _`Brave.Core.WindowCount.2`_ **[D]**
 4. 6+
 
 ### Q7: How many open tabs do you have?
-_`Brave.Core.TabCount`_ **[D]**
+_`Brave.Core.TabCount`_ **[D]** **[A]**
 1. 0-1
 2. 2-5
 3. 6-10
@@ -69,7 +68,7 @@ _`Brave.Core.TabCount`_ **[D]**
 5. 50+
 
 ### Q8: What has been your interaction with the shields icon?
-_`Brave.Shields.UsageStatus`_ **[D]**
+_`Brave.Shields.UsageStatus`_ **[D]** **[A]**
 1. Never clicked on shields icon
 2. Clicked on it, but never made a change
 3. Clicked on it, shut off shields for one or more sites
@@ -97,7 +96,7 @@ _`Brave.Core.TorEverUsed`_ **[D]**
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
 ### Q12: How much BAT, excluding grants, is in your wallet?
-_`Brave.Rewards.WalletBalance.2`_ **[D]**
+_`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
 3. Less than 10 BAT (0-9), excluding grants
@@ -105,7 +104,7 @@ _`Brave.Rewards.WalletBalance.2`_ **[D]**
 5. Over 50 BAT, excluding grants~~
 
 ### Q13: Have you made use of Auto-contribute in Brave Rewards?
-_`Brave.Rewards.AutoContributionsState.2`_ **[D]**
+_`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, Auto-Contribute off
@@ -114,7 +113,7 @@ _`Brave.Rewards.AutoContributionsState.2`_ **[D]**
 6. Auto-contribute enabled, more than one successful contribution so far
 
 ### Q14: Have you made use of tips within Brave Rewards?
-_`Brave.Rewards.TipsState.2`_ **[D]**
+_`Brave.Rewards.TipsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, no tips sent
@@ -136,7 +135,7 @@ _`Brave.Core.NumberOfExtensions`_ (only queried on program start) **[D]**
 4. Five or more extensions
 
 ### Q17: Have you enabled Brave Ads?
-_`Brave.Rewards.AdsState.2`_ **[D]**
+_`Brave.Rewards.AdsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, ads not enabled
@@ -145,7 +144,7 @@ _`Brave.Rewards.AdsState.2`_ **[D]**
 6. Wallet created, ads enabled, then disabled, Brave Rewards disabled
 
 ### Q18: How many questions the browser was able to answer within a week?
-_`Brave.P3A.SentAnswersCount`_ **[D]**
+_`Brave.P3A.SentAnswersCount`_ **[D]** **[A]**
 1. None
 2. Between 1 and 4
 3. Between 5 and 9
