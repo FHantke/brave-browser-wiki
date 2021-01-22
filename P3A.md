@@ -164,7 +164,7 @@ Note: we count only omnibox events that trigger a search.
 8. More than 500 times 
 
 ### Q20: Which is your currently selected search engine? 
-_`Brave.Search.DefaultEngine.4`_ **[D]**
+_`Brave.Search.DefaultEngine.4`_ **[D]** **[A]**
 1. Other
 2. Google
 3. DuckDuckGo
@@ -177,7 +177,7 @@ _`Brave.Search.DefaultEngine.4`_ **[D]**
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
 
-`Brave.Savings.BandwidthSavingsMB` **[D]**
+`Brave.Savings.BandwidthSavingsMB` **[D]** **[A]**
 
 1. 0
 2. \>0-50mb
@@ -192,7 +192,7 @@ Note: this is based on a predictive algorithm running strictly client-side
 Note: Records the corresponding preference (`"Help improve Brave's features and performance
 "`) state during a startup.
 
-`Brave.Core.CrashReportsEnabled` **[D]**
+`Brave.Core.CrashReportsEnabled` **[D]** **[A]**
 
 1. no
 2. yes
@@ -218,7 +218,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q25: On average, how many New Tab Pages did you create per day?
 
-`Brave.NTP.NewTabsCreated` **[D]**
+`Brave.NTP.NewTabsCreated` **[D]** **[A]**
 
 0. 0 
 1. 1 to 3
@@ -231,14 +231,14 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q26: Is the sponsored new tab page option enabled?
 
-`Brave.NTP.SponsoredImagesEnabled` **[D]**
+`Brave.NTP.SponsoredImagesEnabled` **[D]** **[A]**
 
 0. Disabled
 1. Enabled
 
 ### Q27: On average, how many of the New Tab Pages you saw per day were sponsored?
 
-`Brave.NTP.SponsoredNewTabsCreated` **[D]**
+`Brave.NTP.SponsoredNewTabsCreated` **[D]** **[A]**
 
 0. 0%
 1. &gt; 0% and < 10%
