@@ -292,6 +292,52 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 3. 1h-24h
 4. 24h+
 
+### Q32: Have you ever used Brave Today?
+
+`Brave.Today.HasEverInteracted` **[D]**
+
+0. Yes
+
+### Q33: How many times did you use Brave Today in the last week that Brave Today was used?*
+
+`Brave.Today.WeeklySessionCount` **[D]**
+
+0. Never _(won't ever be sent)_
+1. Once
+2. 2-3 times
+3. 4-7 times
+4. 8-12 times
+5. 13-18 times
+6. 19-25 times
+7. 26+ times
+
+### Q34: How many articles did you visit (or read) in your largest article-reading session in the preceeding week of the last time you visited a Brave Today article?*
+
+`Brave.Today.WeeklyMaxCardVisitsCount` **[D]**
+
+0. None _(won't ever be sent)_
+1. 1
+2. 2-3
+3. 4-6
+4. 7-10
+5. 11-15
+6. 16+
+
+### Q35: How many rows of articles did you view in your largest row-viewing session in the preceeding week of the last time you used Brave Today?*
+
+`Brave.Today.WeeklyMaxCardViewsCount` **[D]**
+
+0. None _(won't ever be sent)_
+1. 1
+2. 2-4
+3. 5-12
+4. 13-20
+5. 21-40
+6. 41-80
+7. 81+
+
+_* Refers to the issue whereby stats won't be reset or updated if the corresponding feature is not used in the next time period._
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
