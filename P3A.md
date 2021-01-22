@@ -22,8 +22,6 @@ _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-~~_`DefaultBrowser.State`_~~
-
 `_Brave.Core.IsDefault_` **[D]**
 1. No
 2. Yes
