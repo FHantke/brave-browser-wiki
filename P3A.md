@@ -9,27 +9,34 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 
 ## Current Metrics
 
+```
+[D] = supported on Desktop
+[A] = supported on Android
+```
+
 ### Q1: How long has this browser been open for the last seven days?
-(_`Brave.Uptime.BrowserOpenMinutes`_)
+_`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 1. N/A -- seven days have not passed since first open
 2. 0 - 30min
 3. 30min - 5hrs
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-(`_Brave.Core.IsDefault_`) ~~(_`DefaultBrowser.State`_)~~
+~~_`DefaultBrowser.State`_~~
+
+`_Brave.Core.IsDefault_` **[D]**
 1. No
 2. Yes
 
 ### Q3: Did you follow the on-boarding process
-(_`Brave.Welcome.InteractionStatus`_)
+_`Brave.Welcome.InteractionStatus`_ **[D]**
 1. Did not click within welcome screen
 2. Clicked once 
 3. Clicked twice or more but did not make it to the end
 4. Made it to end of on-boarding flow
 
 ### Q4: Did you import settings and bookmarks, and if so from where?
-(_`Brave.Importer.ImporterSource`_)
+_`Brave.Importer.ImporterSource`_ **[D]**
 1. Did not import
 2. Imported from Brave
 3. Imported from Chrome
@@ -38,7 +45,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Imported from Safari (answer only possible on macOS)
 
 ### Q5: How many bookmarks do you have?
-(_`Brave.Core.BookmarksCountOnProfileLoad.2`_)
+_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]**
 1. 0-5
 2. 6-20
 3. 21-100
@@ -49,14 +56,14 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 9. More than 10000
 
 ### Q6: How many open windows do you have?
-(_`Brave.Core.WindowCount.2`_)
+_`Brave.Core.WindowCount.2`_ **[D]**
 1. 0
 2. 1
 3. 2-5
 4. 6+
 
 ### Q7: How many open tabs do you have?
-(_`Brave.Core.TabCount`_)
+_`Brave.Core.TabCount`_ **[D]**
 1. 0-1
 2. 2-5
 3. 6-10
@@ -64,14 +71,14 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 5. 50+
 
 ### Q8: What has been your interaction with the shields icon?
-(_`Brave.Shields.UsageStatus`_)
+_`Brave.Shields.UsageStatus`_ **[D]**
 1. Never clicked on shields icon
 2. Clicked on it, but never made a change
 3. Clicked on it, shut off shields for one or more sites
 4. Clicked on it, changed Shields defaults or per-site shield settings in addition to (or in place of) shutting off shields on one or more sites
 
 ### Q9: Have you ever used a private window?
-(_`Brave.Core.LastTimeIncognitoUsed`_)
+_`Brave.Core.LastTimeIncognitoUsed`_ **[D]**
 1. Used in last 24h
 2. Used in last week but not 24h
 3. Used in last 28 days but not week
@@ -79,7 +86,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 5. Never used
 
 ### Q10: Have you ever used a Tor private window?
-(_`Brave.Core.TorEverUsed`_)
+_`Brave.Core.TorEverUsed`_ **[D]**
 1. Yes
 2. No
 
@@ -92,7 +99,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
 ### Q12: How much BAT, excluding grants, is in your wallet?
-(_`Brave.Rewards.WalletBalance.2`_)
+_`Brave.Rewards.WalletBalance.2`_ **[D]**
 1. No wallet created
 2. Rewards Disabled
 3. Less than 10 BAT (0-9), excluding grants
@@ -100,7 +107,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 5. Over 50 BAT, excluding grants~~
 
 ### Q13: Have you made use of Auto-contribute in Brave Rewards?
-(_`Brave.Rewards.AutoContributionsState.2`_)
+_`Brave.Rewards.AutoContributionsState.2`_ **[D]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, Auto-Contribute off
@@ -109,7 +116,7 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Auto-contribute enabled, more than one successful contribution so far
 
 ### Q14: Have you made use of tips within Brave Rewards?
-(_`Brave.Rewards.TipsState.2`_)
+_`Brave.Rewards.TipsState.2`_ **[D]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, no tips sent
@@ -118,20 +125,20 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Wallet created, one-time sent and at least one monthly tip queued up or sent
 
 ### Q15: Have you enabled sync?
-(_`Brave.Sync.Status`_)
+_`Brave.Sync.Status`_ **[D]**
 1. No
 2. Sync enabled with two devices
 3. Sync enabled more than two devices
 
 ### Q16: How many extensions have you installed?
-(_`Brave.Core.NumberOfExtensions`_ - only queried on program start)
+_`Brave.Core.NumberOfExtensions`_ (only queried on program start) **[D]**
 1. None
 2. One extension
 3. Two to four extensions
 4. Five or more extensions
 
 ### Q17: Have you enabled Brave Ads?
-(_`Brave.Rewards.AdsState.2`_)
+_`Brave.Rewards.AdsState.2`_ **[D]**
 1. No wallet created
 2. Rewards Disabled
 3. Wallet created, ads not enabled
@@ -140,14 +147,14 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 6. Wallet created, ads enabled, then disabled, Brave Rewards disabled
 
 ### Q18: How many questions the browser was able to answer within a week?
-(_`Brave.P3A.SentAnswersCount`_)
+_`Brave.P3A.SentAnswersCount`_ **[D]**
 1. None
 2. Between 1 and 4
 3. Between 5 and 9
 4. 10 or more
 
 ### Q19: How many times did you search last week?
-(_`Brave.Omnibox.SearchCount`_)
+_`Brave.Omnibox.SearchCount`_ **[D]**
 Note: we count only omnibox events that trigger a search.
 
 1. Never
@@ -160,7 +167,7 @@ Note: we count only omnibox events that trigger a search.
 8. More than 500 times 
 
 ### Q20: Which is your currently selected search engine? 
-(_`Brave.Search.DefaultEngine.4`_)
+_`Brave.Search.DefaultEngine.4`_ **[D]**
 1. Other
 2. Google
 3. DuckDuckGo
@@ -173,7 +180,7 @@ Note: we count only omnibox events that trigger a search.
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
 
-(`Brave.Savings.BandwidthSavingsMB`)
+`Brave.Savings.BandwidthSavingsMB` **[D]**
 
 1. 0
 2. \>0-50mb
@@ -188,14 +195,14 @@ Note: this is based on a predictive algorithm running strictly client-side
 Note: Records the corresponding preference (`"Help improve Brave's features and performance
 "`) state during a startup.
 
-(`Brave.Core.CrashReportsEnabled`)
+`Brave.Core.CrashReportsEnabled` **[D]**
 
 1. no
 2. yes
 
 ### Q23: Have you used SpeedReader?
 
-(`Brave.SpeedReader.Enabled`)
+`Brave.SpeedReader.Enabled` **[D]**
 
 1. Never Used
 2. Used but not recently (in reporting interval)
@@ -203,7 +210,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q24: Number of times user clicked on SpeedReader button to toggle the feature?
 
-(`Brave.SpeedReader.ToggleCount`)
+`Brave.SpeedReader.ToggleCount` **[D]**
 
 1. 0
 2. 1-5
@@ -214,7 +221,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q25: On average, how many New Tab Pages did you create per day?
 
-(`Brave.NTP.NewTabsCreated`)
+`Brave.NTP.NewTabsCreated` **[D]**
 
 0. 0 
 1. 1 to 3
@@ -227,14 +234,14 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q26: Is the sponsored new tab page option enabled?
 
-(`Brave.NTP.SponsoredImagesEnabled`)
+`Brave.NTP.SponsoredImagesEnabled` **[D]**
 
 0. Disabled
 1. Enabled
 
 ### Q27: On average, how many of the New Tab Pages you saw per day were sponsored?
 
-(`Brave.NTP.SponsoredNewTabsCreated`)
+`Brave.NTP.SponsoredNewTabsCreated` **[D]**
 
 0. 0%
 1. &gt; 0% and < 10%
@@ -246,7 +253,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q28: On the New Tab Page, did you click the Customize Settings icon?
 
-(`Brave.NTP.CustomizeUsageStatus`)
+`Brave.NTP.CustomizeUsageStatus` **[D]**
 
 0. No
 1. Yes, but I didn't make any changes
@@ -255,14 +262,14 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q29: Is IPFS Companion installed?
 
-(`Brave.IPFS.IPFSCompanionInstalled`)
+`Brave.IPFS.IPFSCompanionInstalled` **[D]**
 
 0. No
 1. Yes
 
 ### Q30: How many lifetime times are IPFS detection prompts shown without installing
 
-(`Brave.IPFS.DetectionPromptCount`)
+`Brave.IPFS.DetectionPromptCount` **[D]**
 
 0. 0 times
 1. 1 time
@@ -271,7 +278,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q30: How does IPFS resolve ipfs/ipns protocol?
 
-(`Brave.IPFS.GatewaySetting`)
+`Brave.IPFS.GatewaySetting` **[D]**
 
 0. Ask
 1. Gateway
@@ -281,7 +288,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q31: How long did the daemon run?
 
-(`Brave.IPFS.DaemonRunTime`)
+`Brave.IPFS.DaemonRunTime` **[D]**
 
 0. 0-5min
 1. 5-60min
