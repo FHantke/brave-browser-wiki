@@ -22,9 +22,9 @@ You can check the list of components installed in Brave Browser by navigating to
 | Brave SpeedReader Updater      | Yes           | jicbkmdloagakknpihibphagfckhjdih | Maintains data files to support Brave Speedreader | https://github.com/brave-experiments/SpeedReader | |
 | Brave Tor Client Updater      | Yes           | cldoidikboihgcjfkhdeidbpclkineef<br/> cpoalefficncklhjfpglfiplenlpccdb<br/>    biahpgbdmdkfgndcmfiipgcebobojjkp<br/>  | Contains the Brave Tor client required to support Tor windows | https://github.com/brave/tor_build_scripts/ |
 | Brave User Model Installer      | Yes           | kkjipiepeooghlclkedllogndmohhnhi | Maintains data files to support Brave Ads  | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageClientModelParameterComponent.js | |
-| Certificate Error Assistant      | No           | SSLErrorAssistant | Helps fix errors in misconfigured SSL certificates | | Work to enable is being tracked here: https://github.com/brave/brave-browser/issues/13010 |
+| Certificate Error Assistant      | Yes           | SSLErrorAssistant | Helps fix errors in misconfigured SSL certificates | | |
 | CRLSet      | Yes           | CertificateRevocation | Maintains a list of websites with bad certificates so that users can be protected from harmful websites  |               |
-| Crowd Deny      | No           | Crowd Deny | Revokes all permissions for sites in the list | | Work to enable tracked here: https://github.com/brave/brave-browser/issues/10280 |
+| Crowd Deny      | Yes          | Crowd Deny | Revokes all permissions for sites in the list | | |
 | Federated Learning of Cohorts      | No           | Floc | Has data to support FLOC | | This feature has significant privacy risks and should not be enabled in Brave |
 | File Type Policies      | Yes           | FileTypePolicies | List of file extensions and how they are handled in download protection | | This is used by Safe Browsing |
 | Legacy TLS Deprecation Configuration | No           | TLSDeprecationConfig | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  |               |
@@ -33,7 +33,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | NTP Super Referral      | Yes           | | Updates the NTP Super Referral image assets | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerComponent.js |
 | NTP Super Referral mapping table | Yes           | | Manage NTP SR mapping table (promo code and NTP SR Component id | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerMappingTableComponent.js|
 | Origin Trials      | No           | OriginTrials | Metadata for origin trials |               |
-| Safety Tips      | No           | SafetyTips | Protobuf of whitelisted domains for client side lookalike URL detection | | Work to enable safety tips is tracked here: https://github.com/brave/brave-browser/issues/12999 |
+| Safety Tips      | Yes         | SafetyTips | Protobuf of domains for client side lookalike URL detection | | |
 | Subresource Filter Rules      | No           | Subresource Filter | Contains rules to block websites which don’t follow the better Ads Standard. Its often used to block phishing domains |               |
 | Widevine      | Yes           | oimompecagnajdejgnnjijobebaeigek | Widevine’s DRM solution provides the capability to license, securely distribute and protect playback of content on any consumer device |           |
 | youtubedown.js | Yes           | | Used to get youtubedown.js script | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageYoutubedown.js |
