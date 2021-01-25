@@ -27,6 +27,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | Crowd Deny      | Yes          | Crowd Deny | Revokes all permissions for sites in the list | | |
 | Federated Learning of Cohorts      | No           | Floc | Has data to support FLOC | | This feature has significant privacy risks and should not be enabled in Brave |
 | File Type Policies      | Yes           | FileTypePolicies | List of file extensions and how they are handled in download protection | | This is used by Safe Browsing |
+| Hyphenation | Yes           | Hyphenation | |  Data that assists css-hyphens in chromium  | |
 | Legacy TLS Deprecation Configuration | No           | TLSDeprecationConfig | | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  | Not needed. We disable TLS 1.0/1.1 completely in Brave. |
 | MEI Preload      | Yes           | MEIPreload | Used to pre-load media from websites |               |
 | NTP Sponsored Images      | Yes           | gccbbckogglekeggclmmekihdgdpdgoe | Updates the NTP Sponsored image assets |https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSponsoredImagesComponents.js |
