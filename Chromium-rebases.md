@@ -74,8 +74,8 @@ Once you are done updating all the Chromium src files, the -3 option above will 
 Commit what you have in a commit to update patches for the Chromium update.
 
 ## Check for changes in the build tool chain.
-* For Mac check `mac_sdk_min` in `src/build/config/mac/mac_sdk_overrides.gni` and `MAC_TOOLCHAIN_VERSION` in `src/build/mac_toolchain.py`,
-* For Windows check `MSVS_VERSIONS` in `src/build/vs_toolchain.py` (`CURRENT_DEFAULT_TOOLCHAIN_VERSION` in `src/build/win_toolchain.py` prior to C75).
+* For Mac, check `mac_sdk_min` in `src/build/config/mac/mac_sdk_overrides.gni` for the SDK version, the comment above `MAC_BINARIES_TAG` and `MAC_MINIMUM_OS_VERSION` in `src/build/mac_toolchain.py` for the XCode version and the OS version,
+* For Windows check `MSVS_VERSIONS` in `src/build/vs_toolchain.py` (`CURRENT_DEFAULT_TOOLCHAIN_VERSION` in `src/build/win_toolchain.py` prior to C75) for Visual Studio versions.
 
 Update your tool chain if needed and alert dev and CI teams on tool chain changes. 
 
