@@ -23,9 +23,9 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Channel | Time | Dates      | Public Build (Sparkle/Omaha)       |
 |:-------:|:--------:|:---------------------:|:---------------------:|
-| `Beta`| 4am UTC (8pm PST/11pm EST) | Tuesday & Thursday | Yes (incl. iOS framework and Android)|
-| `Dev`| 8am UTC (12am PST/3am EST)| Monday - Saturday | Yes|
-| `Nightly`| 12pm UTC (4am PST/7am EST)| Monday - Saturday| Yes (incl. iOS framework, Android and macOS arm64)|
+| `Beta`| 4am UTC (8pm PST/11pm EST) | Monday - Friday | Tue + Thu (incl. iOS framework and Android)|
+| `Dev`| 8am UTC (12am PST/3am EST)| Tuesday & Thursday | Yes|
+| `Nightly`| 12pm UTC (4am PST/7am EST)| Monday - Friday| Yes (incl. iOS framework, Android and macOS arm64)|
 | `Nightly`| 6pm UTC (10am PST/1pm EST)| Monday - Friday| No (GitHub Only)|
 | `Nightly`| 12am UTC (4pm PST/7pm EST)| Monday - Friday| No (GitHub Only)|
 ---
