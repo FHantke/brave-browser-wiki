@@ -83,12 +83,6 @@ This section details Brave's general policy on when to create such exceptions, h
 
 Ping pes@brave.com / @pes10k with questions.
 
-## Referrer Policy
-
-Brave currently ships some exceptions to our general referrer policy.  These exceptions are open and can be found [in our referrer exceptions repo](https://github.com/brave/referrer-whitelist/blob/master/data/ReferrerWhitelist.json).
-
-However, once our [new referrer policy](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#modified-features-and-functionality) reaches the stable channel, we expect to no longer need any referrer special casing, and plan on removing this list.  This is on track for version 1.12.
-
 ## Third Party Cookies
 
 Brave makes a small number of exceptions, where we enable third party cookies to unbreak sites.  These exceptions are all narrow, meaning we enabling sending cookies to a specific third party, when on a specific first party.  These exceptions can be found in Brave's [source code](https://github.com/brave/brave-core/blob/master/chromium_src/components/content_settings/core/common/cookie_settings_base.cc#L39).  We are working on a new issue that we expect will reduce or completely remove the need for these exceptions.  The details and status of that work can be found in [issue #8514](https://github.com/brave/brave-browser/issues/8514).
