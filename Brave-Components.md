@@ -16,7 +16,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | Component                 | Supported By Brave     | Component ID  | What it does  | Repo          | Comments      |
 | ------------------------- | ---------------------- | ------------- | ------------- | ------------- | ------------- |
 | Autofill States Data      | No           | AutofillStates | Contains a mapping of acronyms of state names in different countries to the full names. Helps ease autofilling of state data. | |   |               |
-| Brave Ad Block Updater    | Yes | cffkpbalmllkdoenhmdmpbkajipdjfam | Updates the ad-block lists supported by Brave regularly | https://github.com/brave/adblock-rust |  |
+| Brave Ad Block Updater    | Yes | cffkpbalmllkdoenhmdmpbkajipdjfam | Updates the ad-block lists supported by Brave regularly | https://github.com/brave/brave-core-crx-packager |  |
 | Brave HTTPS Everywhere Updater      | Yes           | oofiananboodjbbmdelgdommihjbkfag | Maintains the HTTPSEverywhere database which is used to upgrade insecure navigations to secure when the matching rules are found |  https://github.com/brave/https-everywhere-builder | |
 | Brave Local Data Updater  | Yes                    | afalakplffnnnlkncjhbmahjfjhmlkal | Used to update AutoplayWhitelist, ExtensionWhitelist, Greaselion scripts and ReferrerWhitelist |  https://github.com/brave/autoplay-whitelist, https://github.com/brave/referrer-whitelist, https://github.com/brave/extension-whitelist, https://github.com/brave/brave-site-specific-scripts             | |
 | Brave SpeedReader Updater      | Yes           | jicbkmdloagakknpihibphagfckhjdih | Maintains data files to support Brave Speedreader | https://github.com/brave-experiments/SpeedReader | |
