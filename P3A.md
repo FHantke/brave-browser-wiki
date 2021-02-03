@@ -21,7 +21,7 @@ _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 4. 5hrs+
 
 ### Q2: Have you made Brave your default browser?
-`_Brave.Core.IsDefault_` **[D]** **[A]**
+`_Brave.Core.IsDefault_` **[D]**
 1. No
 2. Yes
 
@@ -68,7 +68,7 @@ _`Brave.Core.TabCount`_ **[D]** **[A]**
 5. 50+
 
 ### Q8: What has been your interaction with the shields icon?
-_`Brave.Shields.UsageStatus`_ **[D]** **[A]**
+_`Brave.Shields.UsageStatus`_ **[D]**
 1. Never clicked on shields icon
 2. Clicked on it, but never made a change
 3. Clicked on it, shut off shields for one or more sites
