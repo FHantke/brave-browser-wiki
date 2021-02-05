@@ -95,7 +95,7 @@ _`Brave.Core.TorEverUsed`_ **[D]**
 5. Wallet created: grant(s) claimed; funds added
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
-### Q12: How much BAT, excluding grants, is in your wallet?
+### Q12: How much BAT, excluding grants, is in your wallet? **[BROKEN]**
 _`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
@@ -103,7 +103,7 @@ _`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
 4. 10-50 BAT, excluding grants
 5. Over 50 BAT, excluding grants~~
 
-### Q13: Have you made use of Auto-contribute in Brave Rewards?
+### Q13: Have you made use of Auto-contribute in Brave Rewards? **[BROKEN]**
 _`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
@@ -112,7 +112,7 @@ _`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
 5. Auto-contribute enabled, one successful contribution so far
 6. Auto-contribute enabled, more than one successful contribution so far
 
-### Q14: Have you made use of tips within Brave Rewards?
+### Q14: Have you made use of tips within Brave Rewards? **[BROKEN]**
 _`Brave.Rewards.TipsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
@@ -134,7 +134,7 @@ _`Brave.Core.NumberOfExtensions`_ (only queried on program start) **[D]**
 3. Two to four extensions
 4. Five or more extensions
 
-### Q17: Have you enabled Brave Ads?
+### Q17: Have you enabled Brave Ads? **[BROKEN]**
 _`Brave.Rewards.AdsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
