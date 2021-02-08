@@ -55,7 +55,7 @@ To navigate to the top-level `brave-browser-build-pr-*` or the `brave-core-build
 
 We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get stopped after the build and reused at next one - unless TERMINATE_NODE is checked). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
 
-This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, Linux, macOS and Windowx `x64` with the steps below:
+This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, Linux `x64`, macOS `x64` and Windowx `x64` with the steps below:
 - notify the PR author (or extra destinations) on Slack that build has started
 - checkout source code
 - pin locally branch in `package.json` if branch also exists in `brave-core`
