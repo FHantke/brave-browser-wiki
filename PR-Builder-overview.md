@@ -1,6 +1,6 @@
 # PR Builder overview
 
-Every PR in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core) needs to pass a series of automated checks before merging as described below.
+Every PR in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core) needs to pass a series of automated checks before merging as described below. A list of recently built PRs is at https://ci.brave.com/view/pr/
 
 ## GitHub overview
 On each PR, you should see the checks section as below (unless it's a draft PR or has the `CI/skip` label applied).
