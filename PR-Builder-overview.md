@@ -31,12 +31,12 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - SKIP_SIGNING - `true` by default
 - DCHECK_ALWAYS_ON - `true` by default
 - NODE_LABEL - empty by default - build node label where to execute
-- SLACK_NOTIFY - empty by default - comma-separated list of Slack destinations to notify about build (@mplesa,#build-bot)
+- SLACK_NOTIFY - empty by default - comma-separated list of Slack destinations to notify about build (`@mplesa,#build-bot` for example)
 
 Same is valid for restarts, always do them from the top level jobs for proper status reporting.
 
 ## Jenkins overview
-We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are 10 pipelines at https://ci.brave.com/view/ci, per repo and per platform.
+We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are 13 pipelines at https://ci.brave.com/view/ci, per repo and per platform.
 
 Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Forks are ignored. When a new build starts it will cancel the previously running ones, unless it gets aborted for the following reasons:
 - PR labeled with `CI/skip`
@@ -47,11 +47,13 @@ Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-i
 Slack notifications will be sent to PR author based on a map that associates the GitHub user with their corresponding Slack username. To update, copy the value from our password manager, edit, then update in the Jenkins credential store `github-to-slack-username-map` variable. For extra notifications 
 
 ## Process overview
-The checks that are done are defined in the Jenkinsfiles at https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-PLATFORM.Jenkinsfile
+The checks that are done are defined in the Jenkinsfiles at https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-*.Jenkinsfile
 
 The above get called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will look for a PR in the other repo and update its status.
 
-We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get stopped after the build). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
+To navigate to the top-level `brave-browser-build-pr-*` or the `brave-core-build-pr-*` pipeline please go to `Console Output` and press the link to `pr-brave-browser-...`. This will take you to where actually everything gets executed. Alternatively, the GitHub build links would take you there.
+
+We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get stopped after the build and reused at next one - unless TERMINATE_NODE is checked). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
 
 This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, Linux, macOS and Windowx `x64` with the steps below:
 - notify the PR author (or extra destinations) on Slack that build has started
@@ -71,16 +73,15 @@ This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, L
 - upload build artifacts to S3 (`.apk`, `.zip`, `.dmg`, `.pkg`, `.deb`, `.rpm`, `.exe`)
 - report build results and link to artifacts via Slack (to PR author and #build-downloads-bot)
 
-To navigate from the `brave-browser-build-pr-*` or the `brave-core-build-pr-*` pipeline please go to `Console Output` and press the link to `pr-brave-browser-...`. This will take you to where actually everything gets executed.
-
-Besides the checks done by our Jenkins job, there are some additional checks done via Travis:
+Besides the platform builds, there are pipelines that do platform-agnostic pre-init or post-init checks like:
 - JavaScript lint and unit tests
+- Storybook tests
 - security checks
 - Python lint (pep8)
 
-We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks.
+We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks and [CodeQL](https://securitylab.github.com/tools/codeql) for security checks.
 
 ## Resources
-- for employees, join the `#brave-browser-ci` Slack channel
+- for employees, join the `#brave-browser-ci-guest` Slack channel
 - for external contributors (community), we would like to have the content of these checks be publicly viewable in the future
 - additional non-public information is available in the [devops wiki](https://github.com/brave/devops/wiki/PR-Builder-Non-public-information)
