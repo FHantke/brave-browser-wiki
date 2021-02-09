@@ -24,6 +24,14 @@ Cache size                      19 GiB
 Max cache size                 100 GiB
 ```
 
+## Table of contents
+- [Install pre-requisites](#install-pre-requisites)
+- [Configuring sccache](#configuring-sccache)
+  - [Shared S3 cache](#shared-s3-cache)
+  - [Local disk cache](#local-disk-cache)
+- [Configuring brave-browser to use sccache](#configuring-brave-browser-to-use-sccache)
+- [(macOS) configuring sccache to restart](#macos-configuring-sccache-to-restart)
+
 ## Install pre-requisites
 ### Install rust
 If you already have rust installed but you're not sure if it's current, you can run `rustup update`
@@ -78,20 +86,15 @@ If you can't compile v0.2.7 because your operating system's version of OpenSSL i
 ## Configuring sccache
 
 You'll need to export some variables used by sccache to your `.bashrc`. Sccache is aimed to be distributed so it supports a number of providers: s3, redis, etc, as well as a local disk cache for only caching your own output.
-Examples:
 
-```bash
-# disk cache
-export SCCACHE_CACHE_SIZE=100G     # some of us use 100GB; you can use less if needed
-export SCCACHE_DIR=~/sccache       # where the cache is physically stored
-```
-
+### Shared S3 cache
+This is a great option if compiling takes a while on your machine. The cache is stored in an S3 bucket and multiple people can read/write to the bucket as they are compiling to take advantage of the cache.
 ```bash
 # s3 cache
 export SCCACHE_BUCKET=sccache-macos-bucket # bucket must exist and your access key must have read/write perm
 ```
 
-If using S3, store your AWS credentials in `~/.aws/credentials` like so:
+If using S3, you will need to ask for credentials (and the bucket name) from the Release Engineering team (see #devops in Slack). Once you have this information, you can store your AWS credentials in `~/.aws/credentials` like so:
 ```
 [default]
 aws_access_key_id = XXXXXXXXXXXXX
@@ -100,6 +103,16 @@ aws_secret_access_key = XXXXXXXXXXXXXXXXXXXXXXXXXXX
 You should `chmod 600 ~/.aws/credentials` and review our [AWS Access Key guidelines](https://github.com/brave/devops/wiki/Developing-With-AWS-Access-Keys) for more info. 
 
 (For those who are curious: `aws-vault` will work as well, but it's not recommended for sccache credentials because it has some usability problems. You will need to make sure that the sccache server daemon is started with `aws vault`, e.g. `aws-value exec <profile> -- sccache --start-server` before starting any builds, otherwise it will be automatically started but won't have the right credentials, and all cache writes will fail. Also, note that the server will stop on its own after 10 minutes of inactivity. If you figure out a way to make this work that isn't so painful, please update this page!)
+
+_**NOTE**_: if you use aws-cli then you may have multiple profiles. If you set the `default` profile to the `sccache` credentials, you should be good to go. Otherwise, `sccache` should support multiple profiles via environment variable. Try setting either `AWS_PROFILE` or `AWS_DEFAULT_PROFILE` to the name of the profile you'd like to use before you compile.
+
+### Local disk cache
+If your machine is pretty powerful you can still benefit from sccache. Local disk cache is a nice way to optimize your setup. It can take up quite a bit of space though (make sure you have enough room).
+```bash
+# disk cache
+export SCCACHE_CACHE_SIZE=100G     # some of us use 100GB; you can use less if needed
+export SCCACHE_DIR=~/sccache       # where the cache is physically stored
+```
 
 ## Configuring brave-browser to use sccache
 
