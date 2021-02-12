@@ -65,9 +65,7 @@ You can see the list of extensions and versions that are being served via this e
 - Commit and merge that change :)
 - Run the Jenkins job `brave-core-ext-ethereum-remote-client-update-publish-dev`
 
-After pushing up a component you need to Purge the Fastly cache. You can do this via Slack with:  
-
-`@Fastly purge go-updater-dev.bravesoftware.com`
+There is no need to manually purge the dev updater cache, it does so every 5 - 15 minutes. 
 
 ### Testing
 
@@ -89,5 +87,5 @@ If you're using a development build, you can set the dev server via this npmrc e
 After QA gives sign off in Slack on #releases
 
 - Run the `brave-core-ext-ethereum-remote-client-update-publish` Jenkins job.
-- Purge production go-update Fastly with: `@Fastly purge go-updater.brave.com`
+- The production updater self purges its cache every 5 - 10 minutes.
 
