@@ -23,6 +23,11 @@ Building can take a long time! Luckily, we can use sccache to speed things up. Y
 
 You can follow the instructions under [Configuring sccache](https://github.com/brave/brave-browser/wiki/sccache-for-faster-builds#configuring-sccache) > [Shared S3 cache](https://github.com/brave/brave-browser/wiki/sccache-for-faster-builds#shared-s3-cache)
 
+### FAQs
 
-## TODOs
-- get jenkins job compiling the iOS bucket (multiple branches? debug/release? how often?)
+1. `sccache` dying causes the build to fail. How to get around this?  
+Setup a launch agent to request `sccache` status regularly.  
+Instructions here: [Configuring sccache to restart](https://github.com/brave/brave-browser/wiki/sccache-for-faster-builds#macos-configuring-sccache-to-restart.)
+
+2. How are object files added to the S3 bucket?  
+`sccache` is used by CI, so every time a PR is run the `S3` buckets are updated with the new object files.
