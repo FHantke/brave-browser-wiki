@@ -169,7 +169,9 @@ If you're running macOS and sick of sccache dying and then failing to start auto
 </plist>
 ```
 
-2. Edit the VALUE for `SCCACHE_DIR` (ex: replace `/Users/bsclifton/sccache` with a folder you'd like to use for your cache storage. Note that if you don't have a custom config on the storage path and just want to use the default cache path (default path is under `/Users/bsclifton/Library/Caches/sccache`), it is not necessary to have `SCCACHE_DIR` key and its string config here.
+2. Edit the environment variables:
+  - If you're using local cache, edit the VALUE for `SCCACHE_DIR` (ex: replace `/Users/bsclifton/sccache` with a folder you'd like to use for your cache storage. Note that if you don't have a custom config on the storage path and just want to use the default cache path (default path is under `/Users/bsclifton/Library/Caches/sccache`), it is not necessary to have `SCCACHE_DIR` key and its string config here.
+  - If you're using S3 bucket, you can add a variable for the bucket name and (if needed) which AWS profile
 3. Edit the path (under `ProgramArguments`) for the `sccache` binary (if needed). For example, mine is shown in config as `/usr/local/bin/sccache` (which is a symlink I created using `ln -s /Users/bsclifton/.cargo/bin/sccache /usr/local/bin/sccache`)
 4. Put this file into place at ~/Library/LaunchAgents/com.sccache.agent.plist
 5. `launchctl load ~/Library/LaunchAgents/com.sccache.agent.plist`
