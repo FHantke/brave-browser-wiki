@@ -29,6 +29,7 @@ Max cache size                 100 GiB
 - [Configuring sccache](#configuring-sccache)
   - [Shared S3 cache](#shared-s3-cache)
   - [Local disk cache](#local-disk-cache)
+- [Starting / stopping sccache](#starting--stopping-sccache)
 - [Configuring brave-browser to use sccache](#configuring-brave-browser-to-use-sccache)
 - [(macOS) configuring sccache to restart](#macos-configuring-sccache-to-restart)
 
