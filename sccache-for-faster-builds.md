@@ -114,6 +114,18 @@ export SCCACHE_CACHE_SIZE=100G     # some of us use 100GB; you can use less if n
 export SCCACHE_DIR=~/sccache       # where the cache is physically stored
 ```
 
+## Starting / stopping sccache
+sccache is running as a daemon; before you start a compile you need to start it with:
+`sccache --start-server`
+
+If you need to stop it, you can stop by using the following:
+`sccache --stop-server`
+
+At any time you can pull up the stats for sccache using:
+`sccache -s`
+
+You'll see hits (object file will be downloaded from cache) and misses (computer will compile and upload to cache)
+
 ## Configuring brave-browser to use sccache
 
 ### Setting the environment variable
