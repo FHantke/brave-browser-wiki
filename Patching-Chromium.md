@@ -93,8 +93,6 @@ return !url.is_empty() && !url.SchemeIs(content::kChromeUIScheme) &&
 ```
 Do not add comments in patches and ignore lint line length rules to squash patches onto one line whenever possible
 
-Patch changes which affect the flow of execution should ideally be wrapped in `#if defined(BRAVE_CHROMIUM_BUILD)` and `#endif` blocks.
-
 You should almost never patch in two methods calls in a row. We should prefer extensible patches. For instance https://github.com/brave/brave-core/pull/2693/files#diff-a9c9a8da7aa4df821394352a0ca04a27R12:
 ```
 CopyBraveExtensionLocalization(config, staging_dir, g_archive_inputs)
