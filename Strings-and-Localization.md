@@ -153,6 +153,8 @@ Swahili    (sw)
 Note, that the text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.
     <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
 
+- If you see `&#8217;` in the text, that is an encoded apostrophe(`'`). For example, `you&#8217;re` is just `you're`. 
+
 - Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
 ## When to submit orders and what to do when they're done
