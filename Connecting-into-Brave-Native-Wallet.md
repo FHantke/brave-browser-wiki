@@ -6,7 +6,7 @@ if (!ethereum || !ethereum.isBraveWallet) {
 }
 
 let currentChainId = null
-ethereum.request('eth_chainId')
+ethereum.request('eth_chainId', [])
   .then(handleChainChanged)
   .catch(err => console.error(err))
 
