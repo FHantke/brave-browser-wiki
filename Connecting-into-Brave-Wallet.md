@@ -1,7 +1,10 @@
-This is how to detect the new Brave Wallet. It is not released yet but is expected to be released sometime in 2021.
+This is how to detect the Brave Wallet
 
 ```
-if (!ethereum || !ethereum.isBraveWallet) {
+// Only the new Brave native wallet in 2021 will have ethereum.isBraveWallet
+// It will have both isBraveWallet true and isMetaMask true since it is compatible 
+// with MetaMask.  It will do this for better webcompat.
+if (!ethereum || (!ethereum.isBraveWallet && !ethereum.isMetaMask)) {
   throw new Error('Brave Wallet is not available')
 }
 
