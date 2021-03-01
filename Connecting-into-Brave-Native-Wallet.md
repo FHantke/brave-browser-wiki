@@ -47,7 +47,7 @@ function handleAccountsChanged (accounts) {
 
 function connect () {
   // This is equivalent to ethereum.enable()
-  ethereum.send('eth_requestAccounts')
+  ethereum.request('eth_requestAccounts', [])
     .then(handleAccountsChanged)
     .catch(err => {
       if (err.code === 4001) {
