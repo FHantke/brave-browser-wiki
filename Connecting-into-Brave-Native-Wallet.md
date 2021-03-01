@@ -7,12 +7,12 @@ if (!ethereum || !ethereum.isBraveWallet) {
 
 let currentChainId = null
 ethereum.request('eth_chainId')
-  .then(handleChainIdChanged)
+  .then(handleChainChanged)
   .catch(err => console.error(err))
 
-ethereum.on('chainIdChanged', handleChainIdChanged)
+ethereum.on('chainChanged', handleChainChanged)
 
-function handleChainIdChanged(chainId) {
+function handleChainChanged(chainId) {
   if (currentChainId !== chainId) {
     currentChainId = chainId
   }
