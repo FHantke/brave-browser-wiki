@@ -6,7 +6,7 @@ if (!ethereum || !ethereum.isBraveWallet) {
 }
 
 let currentChainId = null
-ethereum.send('eth_chainId')
+ethereum.request('eth_chainId')
   .then(handleChainIdChanged)
   .catch(err => console.error(err))
 
@@ -19,23 +19,27 @@ function handleChainIdChanged(chainId) {
 }
 
 let currentAccount = null
-ethereum.send('eth_accounts')
-  .then(handleAccountsChanged)
-  .catch(err => {
-    if (err.code === 4100) {
-      console.log('Please connect to Brave first.')
-    } else {
-      console.error(err)
-    }
-  })
+function getAccounts() {
+  ethereum.request('eth_accounts')
+    .then(handleAccountsChanged)
+    .catch(err => {
+      if (err.code === 4100) {
+        console.log('Please connect to Brave first.')
+      } else {
+        console.error(err)
+      }
+    })
+}
 
 ethereum.on('accountsChanged', handleAccountsChanged)
 
 function handleAccountsChanged (accounts) {
+  console.log('handleAccounts: ', accounts)
   if (accounts.length === 0) {
     console.log('Please connect to Brave Wallet.')
   } else if (accounts[0] !== currentAccount) {
     currentAccount = accounts[0]
+    console.log('current account is: ', currentAccount)
   }
 }
 
@@ -52,9 +56,14 @@ function connect () {
     })
 }
 
-const button = document.createElement('button')
-button.type = 'button'
-button.innerHTML = ' Connect! '
-button.addEventListener('click', connect)
-document.body.appendChild(button)
+const connectButton = document.createElement('button')
+connectButton.innerHTML = ' Connect! '
+connectButton.addEventListener('click', connect)
+document.body.appendChild(connectButton)
+
+const accountsButton = document.createElement('button')
+accountsButton.innerHTML = ' Get accounts to console! '
+accountsButton.addEventListener('click', getAccounts)
+document.body.appendChild(accountsButton)
+
 ```
