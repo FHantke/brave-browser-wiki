@@ -16,7 +16,7 @@ function handleChainIdChanged(chainId) {
   if (currentChainId !== chainId) {
     currentChainId = chainId
   }
-})
+}
 
 let currentAccount = null
 ethereum.send('eth_accounts')
