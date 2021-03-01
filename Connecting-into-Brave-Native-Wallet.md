@@ -7,7 +7,7 @@ if (!ethereum || !ethereum.isBraveWallet) {
 
 let currentChainId = null
 function getCurrentChainId() {
-  ethereum.request('eth_chainId', [])
+  ethereum.request({ method: 'eth_chainId' })
     .then(handleChainChanged)
     .catch(err => console.error(err))
 }
@@ -22,7 +22,7 @@ function handleChainChanged(chainId) {
 
 let currentAccount = null
 function getAccounts() {
-  ethereum.request('eth_accounts', [])
+  ethereum.request({ method: 'eth_accounts' })
     .then(handleAccountsChanged)
     .catch(err => {
       if (err.code === 4100) {
@@ -47,7 +47,7 @@ function handleAccountsChanged (accounts) {
 
 function connect () {
   // This is equivalent to ethereum.enable()
-  ethereum.request('eth_requestAccounts', [])
+  ethereum.request({ method: 'eth_requestAccounts' })
     .then(handleAccountsChanged)
     .catch(err => {
       if (err.code === 4001) {
