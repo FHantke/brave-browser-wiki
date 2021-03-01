@@ -54,7 +54,7 @@ function connect () {
 
 const button = document.createElement('button')
 button.type = 'button'
-button.value = 'Connect!'
+button.innerHTML = ' Connect! '
 button.addEventListener('click', connect)
 document.body.appendChild(button)
 ```
