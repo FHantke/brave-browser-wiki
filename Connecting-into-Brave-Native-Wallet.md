@@ -6,9 +6,11 @@ if (!ethereum || !ethereum.isBraveWallet) {
 }
 
 let currentChainId = null
-ethereum.request('eth_chainId', [])
-  .then(handleChainChanged)
-  .catch(err => console.error(err))
+function getCurrentChainId() {
+  ethereum.request('eth_chainId', [])
+    .then(handleChainChanged)
+    .catch(err => console.error(err))
+}
 
 ethereum.on('chainChanged', handleChainChanged)
 
@@ -20,7 +22,7 @@ function handleChainChanged(chainId) {
 
 let currentAccount = null
 function getAccounts() {
-  ethereum.request('eth_accounts')
+  ethereum.request('eth_accounts', [])
     .then(handleAccountsChanged)
     .catch(err => {
       if (err.code === 4100) {
@@ -65,5 +67,7 @@ const accountsButton = document.createElement('button')
 accountsButton.innerHTML = ' Get accounts to console! '
 accountsButton.addEventListener('click', getAccounts)
 document.body.appendChild(accountsButton)
+
+getCurrentChainId()
 
 ```
