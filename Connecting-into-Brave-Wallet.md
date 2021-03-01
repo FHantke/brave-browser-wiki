@@ -1,4 +1,4 @@
-This is how to detect the Brave Wallet
+This is how to detect Brave Wallet from a web page, to connect, and to get the connected accounts.
 
 ```
 // Only the new Brave native wallet in 2021 will have ethereum.isBraveWallet
