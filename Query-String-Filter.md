@@ -15,7 +15,7 @@ All issues related to this feature are tagged with the [privacy/query-filter lab
 
 ### List
 
-The current list of parameters we filter can be seen in [brave/browser/net/brave_site_hacks_network_delegate_helper.cc::GetQueryStringTrackers()](https://github.com/brave/brave-core/blob/master/browser/net/brave_site_hacks_network_delegate_helper.cc#L32).
+The current list of parameters we filter can be seen in [brave/browser/net/brave_site_hacks_network_delegate_helper.cc::GetQueryStringTrackers()](https://github.com/brave/brave-core/blob/master/browser/net/brave_site_hacks_network_delegate_helper.cc#L41).
 
 ### QA
 
