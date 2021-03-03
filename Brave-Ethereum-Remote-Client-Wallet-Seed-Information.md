@@ -1,3 +1,5 @@
+**UPDATE (2/3/21):** The following only applies to Crypto Wallets Version 1.0.26 or earlier. Later versions use the same key derivation path as Metamask.
+
 ## High level overview
 
 Brave implements [a fork](https://github.com/brave/ethereum-remote-client) of [MetaMask](https://github.com/MetaMask/metamask-extension) named Ethereum Remote Client to provide wallet functionality and Dapp browsing.
