@@ -42,4 +42,9 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.13.x  |    85    | August 18, 2020     | August 27, 2020     |                                            |
 | 1.14.x  |    85    | September 8, 2020   | September 15, 2020  |                                            |
 | 1.15.x  |    86    | September 29, 2020  | October 7, 2020     |                                            |
+| 1.16.x  |    86    | October 20, 2020    | October 27, 2020    |                                            |
+| 1.17.x  |    87    | November 11, 2020   | November 19, 2020   | Migration delayed, originally `Nov 10, 2020` & Release delayed, originally `Nov 17, 2020`|
+| 1.18.x  |    87    | December 1, 2020    | December 10, 2020    | Release delayed, originally `Dec. 8, 2020`|
+| 1.19.x  |    88    | January 13, 2021    | January 19, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
+| 1.20.x  |    88    | February 3, 2021    | February 10, 2021    | Migration delayed, originally `Feb 2, 2021`& Release delayed, originally `Feb 9, 2020`|
 ---                           
