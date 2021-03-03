@@ -1,4 +1,4 @@
-**UPDATE (2/3/21):** The following only applies to Crypto Wallets Version 1.0.26 or earlier. Later versions use the same key derivation path as Metamask.
+**UPDATE (2/3/21):** The following only applies to Crypto Wallets Version 1.0.26 or earlier. Later versions use the same key derivation path and passphrase encryption scheme as Metamask.
 
 ## High level overview
 
