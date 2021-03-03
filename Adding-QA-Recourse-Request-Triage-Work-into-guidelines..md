@@ -112,7 +112,7 @@ Ultimately, go by the expectation that folks will pick up issues in priority ord
 - Release notes should be included in a file on the root of brave-browser named CHANGELOG.md.
 - On each release, release notes (or a link to release notes) should also be included in the published release.
 
-# QA Recourse Request/Triage Work
+# Requesting QA resources
 
 QA Work Priority List - https://github.com/brave/qa-resources/projects/2
 
