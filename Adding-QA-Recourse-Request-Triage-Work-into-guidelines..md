@@ -11,7 +11,6 @@
 - Every time a release happens for something on the Release channel, there is a sign-off on Slack by QA in the #release channel.
 - There is 1 milestone per release, but as noted below, a milestone is often based on another milestone in a chain like fashion.  Only one milestone per branch is opened at any given time.
 
-
 ## The QA process around milestones
 
 - There is no difference between an Android milestone and a Desktop milestone. There should just be for example a 1.13.x milestone.
@@ -36,8 +35,6 @@
   - If an issue should be locked into a particular milestone, and it is not implemented yet, then put a `release/blocking` label on it. This should be rare though.  E.g. a security critical bug, a big regression, or a Chromium upgrade.
   - Please do not change milestones / priority / boards on issues labeled `security` without consulting the security team in Slack (`#security` or `#security-discussion`).
 
-
-
 # Projects
 
 - Project boards track areas of work, they should be 1:1 with Pods. 
@@ -53,7 +50,6 @@
       - Make sure the Untriaged Backlog column is empty and we add appropriate `priority/p1` - `priority/p5` labels
     - Some Projects may have a special triage meeting only for that project.
     - Projects will be added and removed over time.
-
 
 # Uplifting
 
@@ -106,7 +102,6 @@ Ultimately, go by the expectation that folks will pick up issues in priority ord
   - macOS: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-macOS" -label:"QA/No"`
   - Windows: `is:issue is:closed milestone:"Releasable builds 0.55.x" -label:"QA/QA Pass-Win64" -label:"QA/No"`
 
-
 ## Release notes
 
 - Every issue should be tagged with either `release-notes/include` or `release-notes/exclude`.
@@ -116,3 +111,17 @@ Ultimately, go by the expectation that folks will pick up issues in priority ord
 - PR team should get a rough draft at the start of the Beta period of what will be included in the Beta release. 
 - Release notes should be included in a file on the root of brave-browser named CHANGELOG.md.
 - On each release, release notes (or a link to release notes) should also be included in the published release.
+
+# QA Recourse Request/Triage Work
+
+QA Work Priority List - https://github.com/brave/qa-resources/projects/2
+
+- When QA resources are needed, create an issue using https://github.com/brave/qa-resources/issues/new/choose and select the appropriate template
+- Change the issues `Project` to `QA Work Priority List` via the `Repository` tab which will add the issue into the `Requested/Untriaged Work` column
+- If the issue is important and needs immediate attention, label it a `P1` and let QA know via #testers so we can appropriately prioritize/start needed work
+- QA will triage the issue(s) within the `Requested/Untriaged Work` column during our Friday standup and move the issue(s) into the `Upcoming/Triaged Work` column
+- Once work as been started, QA will move the issue into one of the following columns to indicate that work as been started/is in progress:
+  - `Desktop - In Progress`, `Mobile - In Progress` or `Components - In Progress`
+- Once completed, the issue will be closed and automatically moved into the `Completed` column
+
+**`Note`**: Nothing changes for releases scheduled via https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule. QA will create the issues/items under https://github.com/brave/qa-resources/projects/2 and prioritize as needed. This also includes hotfixes.
