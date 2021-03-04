@@ -117,11 +117,10 @@ Ultimately, go by the expectation that folks will pick up issues in priority ord
 QA Work Priority List - https://github.com/brave/qa-resources/projects/2
 
 - When QA resources are needed, create an issue using https://github.com/brave/qa-resources/issues/new/choose and select the appropriate template
-- Change the issues `Project` to `QA Work Priority List` via the `Repository` tab which will add the issue into the `Requested/Untriaged Work` column
+- Change the issues `Project` to `QA Work Priority List` which will add the issue into the `Requested/Untriaged Work` column
 - If the issue is important and needs immediate attention, label it a `P1` and let QA know via #testers so we can appropriately prioritize/start needed work
 - QA will triage the issue(s) within the `Requested/Untriaged Work` column during our Friday standup and move the issue(s) into the `Upcoming/Triaged Work` column
-- Once work as been started, QA will move the issue into one of the following columns to indicate that work as been started/is in progress:
-  - `Desktop - In Progress`, `Mobile - In Progress` or `Components - In Progress`
+- QA will move the issue into the `In Progress` column to indicate that work as been started/is in progress.
 - Once completed, the issue will be closed and automatically moved into the `Completed` column
 
-**`Note`**: Nothing changes for releases scheduled via https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule. QA will create the issues/items under https://github.com/brave/qa-resources/projects/2 and prioritize as needed. This also includes hotfixes.
+**`Note`**: Nothing changes for releases that are already scheduled via https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule. QA will continue creating the issues/items under https://github.com/brave/qa-resources/projects/2 and prioritize as needed. This also includes hotfixes.
