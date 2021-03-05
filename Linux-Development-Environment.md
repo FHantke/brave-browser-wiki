@@ -43,3 +43,11 @@ This will give you nice stacks from Java crashes or exceptions without need to r
 Both for devices and if you have a started emulator:
 
 ` ./src/build/android/adb_install_apk.py ./src/out/android_Debug_x86/apks/Bravex86.apk `
+
+# Getting crash dumps
+
+`adb logcat -d | third_party/android_platform/development/scripts/stack --output-directory out/android_Component_arm`
+
+# Other debugging instructions
+
+https://chromium.googlesource.com/chromium/src/+/master/docs/android_debugging_instructions.md
