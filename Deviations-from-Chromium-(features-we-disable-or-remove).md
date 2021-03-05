@@ -80,6 +80,7 @@ _Google does not receive any information about which client is performing these 
 - `https://storage.googleapis.com/update-delta/hfnkpimlhhgieaddgfemjhofmfblmnib/.+crxd`
 - `https://safebrowsing.googleapis.com/`
 - `https://sb-ssl.google.com/`
+- `https://safebrowsing.google.com`
 - `https://ssl.gstatic.com`
 - `https://gstatic.com`
 - `https://update.googleapis.com`
