@@ -44,10 +44,10 @@ Both for devices and if you have a started emulator:
 
 ` ./src/build/android/adb_install_apk.py ./src/out/android_Debug_x86/apks/Bravex86.apk `
 
-# Getting crash dumps
+# Getting crash dumps for Android
 
 `adb logcat -d | third_party/android_platform/development/scripts/stack --output-directory out/android_Component_arm`
 
-# Other debugging instructions
+# Other debugging instructions for Android
 
 https://chromium.googlesource.com/chromium/src/+/master/docs/android_debugging_instructions.md
