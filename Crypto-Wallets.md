@@ -67,6 +67,15 @@ You can see the list of extensions and versions that are being served via this e
 
 There is no need to manually purge the dev updater cache, it does so every 5 - 15 minutes. 
 
+Send a message to #wallet something like this:
+
+```
+Crypto Wallets release candidate 1.0.27 is ready for testing on: https://go-updater-dev.bravesoftware.com/extensions/test
+When it goes to the prod server it will be 1.0.27
+On the dev server it is 1.0.25
+Release tag is: https://github.com/brave/ethereum-remote-client/releases/tag/0.1.88
+```
+
 ### Testing
 
 It's a good idea to check the version number before and after you start QA'ing to make sure the new one is available. 
