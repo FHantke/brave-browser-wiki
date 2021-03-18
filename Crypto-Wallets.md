@@ -61,6 +61,7 @@ You can see the list of extensions and versions that are being served via this e
 
 - Make sure all changes are committed to brave/ethereum-remote-client
 - Run the Jenkins job `brave-ethereum-remote-client-build`
+- In the `publish` phase it will ask for OTP, get it from 1password in the Developers Shared vault under "npm - devops"
 - Update the version pinned in brave-core-crx-packager [here](https://github.com/brave/brave-core-crx-packager/blob/master/package.json#L11) and in the lock file. 
 - Commit and merge that change :)
 - Run the Jenkins job `brave-core-ext-ethereum-remote-client-update-publish-dev`
