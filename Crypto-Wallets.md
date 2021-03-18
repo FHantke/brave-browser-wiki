@@ -71,10 +71,11 @@ There is no need to manually purge the dev updater cache, it does so every 5 - 1
 Send a message to #wallet something like this:
 
 ```
-Crypto Wallets release candidate 1.0.27 is ready for testing on: https://go-updater-dev.bravesoftware.com/extensions/test
-When it goes to the prod server it will be 1.0.27
-On the dev server it is 1.0.25
-Release tag is: https://github.com/brave/ethereum-remote-client/releases/tag/0.1.88
+Crypto Wallets release candidate is ready for testing
+When it goes to the prod server it will be 1.0.28
+On the dev server it is 1.0.26
+Release tag is: https://github.com/brave/ethereum-remote-client/releases/tag/0.1.89
+Milestone: https://github.com/brave/brave-browser/milestone/182?closed=1
 ```
 
 ### Testing
