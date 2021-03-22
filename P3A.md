@@ -338,6 +338,11 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 _* Refers to the issue whereby stats won't be reset or updated if the corresponding feature is not used in the next time period._
 
+### Q36: Was reset sync progress marker procedure ever done?
+_`Brave.Sync.ProgressTokenEverReset`_ **[D]** **[A]**
+1. 0-Normal reset of progress marker due to 7th failure
+2. 1-Reset progress marker due to 7th failure happening twice in a row in less than 30 minutes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
