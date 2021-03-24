@@ -93,6 +93,9 @@ If you're using a development build, you can set the dev server via this npmrc e
 
 `updater_dev_endpoint=https://go-updater-dev.bravesoftware.com/extensions` 
 
+You can test a new profile using the dev component with something like this:   
+`open -a Brave\ Browser\ Beta.app --args --use-dev-goupdater-url --user-data-dir=$(mktemp -d)`
+
 ### Sign off
 
 After QA gives sign off in Slack on #releases
