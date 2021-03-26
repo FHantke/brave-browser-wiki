@@ -51,8 +51,6 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Google-assisted address normalization is disabled](https://github.com/brave/brave-core/pull/769)
 - [RAPPOR log uploading is disabled](https://github.com/brave/brave-core/pull/963)
 - [Specific features are disabled on startup via the CLI](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc) (search for `disabled_features`)
-     - [`switches::kExtensionsInstallVerification` enabled](https://github.com/brave/brave-core/pull/2471)
-     - [`switches::kExtensionContentVerificationEnforceStrict` enabled](https://github.com/brave/brave-core/pull/2471)
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
 - [Disable field trials and variations service](https://github.com/brave/brave-browser/issues/4283)
