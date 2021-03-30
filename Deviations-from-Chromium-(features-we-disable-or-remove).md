@@ -118,9 +118,16 @@ _Google does not receive any information about which client is performing these 
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened.
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
 - Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
+- Have StorageManager.estimate report a fixed value [#11543](https://github.com/brave/brave-browser/issues/11543)
 - Many features have randomness added or values generalized as a defense against fingerprinting, including:
     * [Canvas readback methods](https://github.com/brave/brave-browser/issues/9186)
     * [User Agent](https://github.com/brave/brave-browser/issues/9190#issuecomment-707172886), follow ups in [#12097](https://github.com/brave/brave-browser/issues/12097), [#12638](https://github.com/brave/brave-browser/issues/12638), [#14740](https://github.com/brave/brave-browser/issues/14740)
+    * [enumerateDevices](https://github.com/brave/brave-browser/issues/11271)
+    * [Web Audio Serialization](https://github.com/brave/brave-browser/issues/9187)
+    * [WebGL Debug](https://github.com/brave/brave-browser/issues/9188)
+    * [Plugins](https://github.com/brave/brave-browser/issues/9435)
+    * [hardwareConcurrency](https://github.com/brave/brave-browser/issues/10808)
+    * [deviceMemory](https://github.com/brave/brave-browser/issues/12348)
 
 ### Comments
 
