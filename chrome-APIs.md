@@ -1,3 +1,5 @@
+Brave exposes some additional APIs to extensions on top of the chrome APIs.
+
 # chrome.ipfs
 
 Allows a user to get information about the local IPFS node.
