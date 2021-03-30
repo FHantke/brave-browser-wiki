@@ -38,8 +38,8 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Inline extensions are disabled](https://github.com/brave/brave-browser/issues/614)
 - [Background sync is disabled](https://github.com/brave/brave-browser/issues/515)
 - [Hyperlink `ping` attribute is disabled](https://github.com/brave/brave-browser/issues/764)
-- [Battery API is disabled](https://github.com/brave/brave-core/pull/114)
-- [WebBluetooth API is disabled](https://github.com/brave/brave-core/pull/114)
+- [Disable Battery API](https://github.com/brave/brave-core/pull/114)
+- [Disable WebBluetooth API](https://github.com/brave/brave-core/pull/114)
 - [WebRTC debug log uploading is disabled](https://github.com/brave/brave-core/pull/809)
 - [Uploading settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/745)
 - [Retrieving OEM default settings after resetting profile is disabled](https://github.com/brave/brave-core/pull/978)
@@ -57,8 +57,21 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable Lookalike URLs Navigation Suggestions](https://github.com/brave/brave-core/pull/2382/files)
 - [Disable Reporting Observers and Reporting API](https://github.com/brave/brave-core/pull/4578)
 - [Disable Scroll To Text Fragment](https://github.com/brave/brave-core/pull/4548/commits/3221538c3b2939d11a3074be3d5c8f44b2540a6c)
-- [Farble navigator.deviceMemory](https://github.com/brave/brave-core/pull/6964)
+- [Disable Motion Sensors](https://github.com/brave/brave-browser/issues/4789)
 - [Disable navigator.credentials](https://github.com/brave/brave-browser/issues/13#issuecomment-376991976)
+- [Disable Android OTP integration](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc)
+- [Disable SXG](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc)
+- [Disable NFC](https://github.com/brave/brave-core/blob/master/renderer/brave_content_renderer_client.cc#L30)
+- [Disable WebBundles](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc)
+- [Disable Client Hints (lang)](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc#L221)
+- [Disable Direct / Raw Sockets](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc#L219)
+- [Disable Idle Detection](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc)
+- [Disable Notification Triggers](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc)
+- [Disable File System API](https://github.com/brave/brave-browser/issues/11407)
+- [Disable Digital Goods API](https://github.com/brave/brave-core/blob/master/chromium_src/third_party/blink/renderer/core/origin_trials/origin_trials.cc#L23)
+- [Disable Shared Array Buffer](https://github.com/brave/brave-core/blob/master/renderer/brave_content_renderer_client.cc#L30)
+- [Disable Serial API](https://github.com/brave/brave-core/blob/master/renderer/brave_content_renderer_client.cc#L38)
+- [Farble navigator.deviceMemory](https://github.com/brave/brave-core/pull/6964)
 
 ### Services We Proxy Through Brave Servers
 
@@ -101,12 +114,13 @@ _Google does not receive any information about which client is performing these 
 - `https://www.gstatic.com/images/branding/product/*x/translate_24dp.png`
 
 ### Modified Features and Functionality
-
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened.
 - Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
-- Plugins, sensors and background-sync page permissions are disabled by default. Users can override these using the usual page permission settings.
 - Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
+- Many features have randomness added or values generalized as a defense against fingerprinting, including:
+    * [Canvas readback methods](https://github.com/brave/brave-browser/issues/9186)
+    * [User Agent](https://github.com/brave/brave-browser/issues/9190#issuecomment-707172886), follow ups in [#12097](https://github.com/brave/brave-browser/issues/12097), [#12638](https://github.com/brave/brave-browser/issues/12638), [#14740](https://github.com/brave/brave-browser/issues/14740)
 
 ### Comments
 
