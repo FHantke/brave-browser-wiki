@@ -90,3 +90,11 @@ Prevents third-party social media elements from loading to protect user privacy.
 **Type of Rules**: `#network`<br>
 **Address:** https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-social.txt<br>
 **Support:** https://github.com/brave/adblock-lists
+
+## iOS implementation (and deviations from Android / Desktop)
+Per Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/#software-requirements) (section `2.5.6`):
+> _Apps that browse the web must use the appropriate WebKit framework and WebKit Javascript._
+
+The iOS version of Brave is constrained by what is available to [WKWebview](https://developer.apple.com/documentation/webkit/wkwebview). Brave utilizes the [Content Blocker extension](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ContentBlocker.html) to implement a subset of the lists available to Android and Desktop, called [Slim List](https://github.com/brave/slim-list-lambda). Each week, the code from [Slim List Lambda](https://github.com/brave/slim-list-lambda) will execute from a Brave host and generate a new list for use in iOS. This list is then uploaded to AWS S3 where the iOS browser will fetch it at run-time ([at program launch and then every 6 hours afterwards](https://github.com/brave/brave-ios/pull/3130)).
+
+The Content Blocker implementation on iOS does not currently handle cosmetic filtering. This is something we're interested in implementing progress against this can be tracked here: https://github.com/brave/brave-ios/issues/2683
