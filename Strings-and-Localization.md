@@ -162,6 +162,8 @@ Note, that the text inside `ex` should _not_ be included in the translation - it
 
 - Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
+- Do not translate terms inside double square brackets - they are placeholders (for example `[[user]]` should be left as is).
+
 ## When to submit orders and what to do when they're done
 For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
 
