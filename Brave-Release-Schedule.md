@@ -36,7 +36,7 @@ The following is our automated schedule for creating and uploading builds to our
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.21.x  |    89    | February 23, 2021   | March 3, 2021       | Release delayed, originally `March 2, 2021`|
 | 1.22.x  |    89    | March 16, 2021      | March 23, 2021      |                                            |
-| 1.23.x  |    90    | April 6, 2021       | April 13, 2021      |                                            |
+| 1.23.x  |    90    | April 7, 2021       | April 13, 2021      | Migration delayed, originally `April 6, 2021`|
 | 1.24.x  |    90    | April 27, 2021      | May 4, 2021         |                                            |
 | 1.25.x  |    91    | May 18, 2021        | May 25, 2021        |                                            |
 | 1.26.x  |    91    | June 15, 2021       | June 22, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
@@ -92,7 +92,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.21.x  | 89                | February 3, 2021    | Migration delayed, originally `Feb 2, 2021`|
 | 1.22.x  | 89                | February 23, 2021   |                                           |
 | 1.23.x  | 90                | March 16, 2021      |                                           |
-| 1.24.x  | 90                | April 6, 2021       |                                           |
+| 1.24.x  | 90                | April 6, 2021       | Migration delayed, originally `April 6, 2021`|
 | 1.25.x  | 91                | April 27, 2021      |                                           |
 | 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
@@ -125,7 +125,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.22.x  | 89                | February 3, 2021    | Migration delayed, originally `Feb 2, 2021`|
 | 1.23.x  | 90                | February 23, 2021   |                                           |
 | 1.24.x  | 90                | March 16, 2021      |                                           |
-| 1.25.x  | 91                | April 6, 2021       |                                           |
+| 1.25.x  | 91                | April 6, 2021       | Migration delayed, originally `April 6, 2021`|
 | 1.26.x  | 91                | April 27, 2021      |                                           |
 | 1.27.x  | 92                | May 18, 2021        | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.28.x  | 92                | June 15, 2021       | Longer Cycle due to CR91 - CR92 being 56 days rather than 42 days|
