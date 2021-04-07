@@ -61,7 +61,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.15.x - 1.16.x | 20 days                   |                                            |
 | 1.16.x - 1.17.x | 21 days                   |                                            |
 | 1.17.x - 1.18.x | 21 days                   |                                            |
-| 1.18.x - 1.19.x | 42 days                   | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
+| 1.18.x - 1.19.x | 42 days                   | Longer cycle/late release due to Holidays  |
 | 1.19.x - 1.20.x | 21 days                   |                                            |
 | 1.20.x - 1.21.x | 21 days                   |                                            |
 | 1.21.x - 1.22.x | 21 days                   |                                            |
