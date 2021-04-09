@@ -168,11 +168,11 @@ Swahili    (sw)
      <table>
        <tr>
          <td><b>Source:</b></td>
-         <td>&amp;lt;ph name="BEGIN_BOLD1"&amp;gt;&amp;amp;lt;b1&amp;amp;gt;&amp;lt;/ph&amp;gt;`</td>
+         <td>&amp;lt;ph name="BEGIN_BOLD1"&amp;gt;&amp;amp;lt;b1&amp;amp;gt;&amp;lt;/ph&amp;gt;</td>
        </tr>
        <tr>
          <td><b>Translation:</b></td>
-         <td>&lt;ph name="BEGIN_BOLD1"&gt;&amp;amp;lt;b1&amp;amp;gt;&lt;/ph&gt;`.</td>
+         <td>&lt;ph name="BEGIN_BOLD1"&gt;&amp;amp;lt;b1&amp;amp;gt;&lt;/ph&gt;</td>
        </tr>
      </table> 
 
