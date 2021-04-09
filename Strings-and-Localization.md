@@ -146,15 +146,38 @@ Swahili    (sw)
 
 ## Information for localizers:
 
-- Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. 
+- Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. Sometimes, you may encounter incorrectly double-escaped encodings like `&amp;lt;` (instead of `&lt;`); it's ok to leave those as they are.
 
-- Sometimes strings have variables in them which should look like the graphic below. In these cases you should use `<` and `>` and not `&lt;` and not `&gt;`.  These are `ph` and `ex` elements.  Even though the source looks like `&lt;ph` the translation  should use `<` and `>`.<br/> In the example below the translation should look like this:
-`<ph name="EXTENSION_NAME">$1</ph> (translate this "<ph name="EXTENSION_ID">$2<ex>do not translate this</ex></ph>") translate this too.`<br/>
-Note, that the text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.
-    <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png">
+- Sometimes strings have variables (placeholders) which look like the graphic below.<br/>
+  <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png"><br/>
+  In these cases you should:
+    - use `<` and `>` and not `&lt;` and not `&gt;` **with `ph` and `ex` elements**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`.
+    - The text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.<br/>
+    - In the example in the graphic above, the translation should look like this:
+      <table>
+        <tr>
+          <td><b>Source:</b></td>
+          <td>&amp;lt;ph name="EXTENSION_NAME"&amp;gt;$1&amp;lt;/ph&amp;gt; (extension ID "&amp;lt;ph name="EXTENSION_ID"&amp;gt;$2&amp;lt;ex&amp;lt;abacabadabacabaeabacabadabacabaf&amp;lt;/ex&amp;lt;&amp;lt;/ph&amp;gt;") is not allowed in Brave.</td>
+        </tr>
+        <tr>
+          <td><b>Translation:</b></td>
+          <td>&lt;ph name="EXTENSION_NAME"&gt;$1&lt;/ph&gt;<b> (translate this "</b>&lt;ph name="EXTENSION_ID"&gt;$2&lt;ex&gt;<b>do not translate this</b>&lt;/ex&gt;&lt;/ph&gt;<b>") translate this too.</b></td>
+        </tr>
+      </table>
+   - You may encounter other encoded tags inside the `ph` tags: for example, `&lt;ph name="BEGIN_BOLD1"&gt;&amp;lt;b1&amp;gt;&lt;/ph&gt;`. These encoded tags inside `ph` tags should be left encoded, in this case resulting in:
+     <table>
+       <tr>
+         <td><b>Source:</b></td>
+         <td>&amp;lt;ph name="BEGIN_BOLD1"&amp;gt;&amp;amp;lt;b1&amp;amp;gt;&amp;lt;/ph&amp;gt;`</td>
+       </tr>
+       <tr>
+         <td><b>Translation:</b></td>
+         <td>&lt;ph name="BEGIN_BOLD1"&gt;&amp;amp;lt;b1&amp;amp;gt;&lt;/ph&gt;`.</td>
+       </tr>
+     </table> 
 
-- If you see `&#8217;` in the text, that is an encoded apostrophe(`’`). For example, `you&#8217;re` is just `you're`.
-  <br>Other common codes:
+- If you see `&#8217;` in the text, that is an encoded apostrophe(`’`). For example, `you&#8217;re` is just `you're` in which case you don't need to preserve this encoded sequence in the translation.
+  <br/>Other common codes:
   - `&#8211;` - en dash(`–`)
   - `&#8212;` - em dash(`—`)
   - `&#8216;` - opening single quote(`‘`)
@@ -162,7 +185,8 @@ Note, that the text inside `ex` should _not_ be included in the translation - it
 
 - Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
-- Do not translate terms inside double square brackets - they are placeholders (for example `[[user]]` should be left as is).
+- Do not translate terms inside double square or squiggly brackets - they are placeholders (for example `[[user]]` or `{{user}}` should be left as is).
+
 
 ## When to submit orders and what to do when they're done
 For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
