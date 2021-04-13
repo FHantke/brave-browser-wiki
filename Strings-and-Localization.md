@@ -176,6 +176,21 @@ Swahili    (sw)
        </tr>
      </table> 
 
+- Sometimes strings support single/plural versions. Such strings support [ICU plural rules](http://cldr.unicode.org/index/cldr-spec/plural-rules) and look similar to this:
+  <table>
+    <tr>
+      <td>{COUNT, plural,<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=0 {<b>Open all in &amp;amp;private window</b>}<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=1 {<b>Open in &amp;amp;private window</b>}<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other {<b>Open all (</b>{COUNT}<b>) in &amp;amp;private window</b>}}<br/>
+      </td>
+    </tr>
+    <tr>
+      <td>Only the bolded text in the above example should be translated. Terms <i>COUNT</i> (or any other term after the initial <i>'{'</i>), <i>plural</i>, <i>other</i> should <b>NOT</b> be translated.
+      </td>
+    </tr>
+  </table>
+
 - If you see `&#8217;` in the text, that is an encoded apostrophe(`’`). For example, `you&#8217;re` is just `you're` in which case you don't need to preserve this encoded sequence in the translation.
   <br/>Other common codes:
   - `&#8211;` - en dash(`–`)
