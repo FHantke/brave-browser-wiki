@@ -22,6 +22,7 @@ If those two criteria can't be met, the WebUI should be using `RegisterMessageCa
 
 ## Related
 - For an overview of WebUI, check out [WebUI Explainer](https://chromium.googlesource.com/chromium/src/+/lkgr/docs/webui_explainer.md)
+- For more information about Extension APIs, check out [Extension API Functions](https://chromium.googlesource.com/chromium/src/+/lkgr/extensions/docs/api_functions.md)
 - For how Brave builds WebUI resources, check out [WebUI Builds, Paths and Resources](https://github.com/brave/brave-browser/wiki/WebUI-Builds,-Paths-and-Resources)
 
 
