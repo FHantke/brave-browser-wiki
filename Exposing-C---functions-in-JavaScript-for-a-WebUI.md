@@ -12,7 +12,7 @@ The WebUI can then access that method in JavaScript.
 - When using extension methods, you'd use the path you exposed. For example: `chrome.braveTheme.setBraveThemeType('Dark')`
 
 ## Which is preferred?
-We should always prefer using `RegisterMessageCallback` in a WebUI. Additionally, it we should avoid adding any logic to our Extension API.
+We should always prefer using `RegisterMessageCallback` in a WebUI. Additionally, we should avoid adding any logic to our extension API.
 
 An exception can be made for using an extension API on a WebUI page if:
 - We need to call the API from an extension page as well (prevent having to duplicate code) AND
