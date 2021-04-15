@@ -49,14 +49,6 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] download binary from https://brave.com on `Win x86` - `https://laptop-updates.brave.com/latest/winia32`
 - [ ] download binary from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
 
-### Download & Install Binaries from Brave.com (Referrals)
-- [ ] download the `.exe` binary from a referral page (Production) on `Win x64`
-   - check `brave://local-state` and ensure the `promoCode` is being listed
-- [ ] download the `.exe` binary from a referral page (Production) on `Win x86`
-   - check `brave://local-state` and ensure the `promoCode` is being listed
-- [ ] download the `.pkg` binary from a referral page (Production) on `macOS`
-   - check `brave://local-state` and ensure the `promoCode` is being listed
-
 ### Announcements
 - [ ] Publish the release notes to `GitHub`
 - [ ] Publish the release notes to `https://www.brave.com/latest`
