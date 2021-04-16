@@ -38,6 +38,16 @@ npm run build -- --target_os=android --target_arch=arm --gn=enable_proguard_obfu
 ```
 This will give you nice stacks from Java crashes or exceptions without need to run retrace script.
 
+In order to make sure output format is apk, add `--target_android_output_format=apk` to build command:
+```
+npm run build -- Debug --target_os=android --target_arch=arm --target_android_output_format=apk
+```
+
+To change target SDK level, add `--target_android_base`, e.g.:
+```
+npm run build -- Debug --target_os=android --target_arch=arm --target_android_output_format=apk --target_android_base=mono
+```
+
 # Installing a build on Android
 
 Both for devices and if you have a started emulator:
