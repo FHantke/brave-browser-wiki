@@ -54,6 +54,12 @@ Both for devices and if you have a started emulator:
 
 ` ./src/build/android/adb_install_apk.py ./src/out/android_Debug_x86/apks/Bravex86.apk `
 
+If you have an aab file:
+```
+bundletool build-apks --connected-device --bundle=out/android_Debug_x86/apks/Bravex86.aab --output=out/android_Debug_x86/apks/Bravex86.apks
+bundletool install-apks --apks=out/android_Debug_x86/apks/Bravex86.apks
+```
+
 # Getting crash dumps for Android
 
 `adb logcat -d | third_party/android_platform/development/scripts/stack --output-directory out/android_Component_arm`
