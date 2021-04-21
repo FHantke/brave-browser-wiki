@@ -19,7 +19,7 @@ Timestamp is fetched from network time; if network time is not available at the 
 We use the built-in `custom passphrase` feature from Chromium sync and encrypt everything client-side. Instead of letting the user pick a passphrase, which may be weak, we force the passphrase to be the BIP39 encoding of the sync seed.
 
 The rest of the encryption is handled by Chromium as follows:
-1. BIP39 phrase is key-stretched using `scrypt`(N = 2^13, r = 8, p = 11). New clients need the scrypt salt (which they will get from the server) in order to derive the key.
+1. BIP39 phrase is key-stretched using `scrypt`(N = 2^13, r = 8, p = 11). The first client generates a random salt and sends it to the server. Future clients will receive the salt from the server so that they can derive the same key.
 2. Then the stretched key is used directly as a AES128-CTR-HMAC encryption key.
 
 #### What gets encrypted
