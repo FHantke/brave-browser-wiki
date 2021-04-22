@@ -51,6 +51,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.35.x  |    96    | January 18, 2022    | January 25, 2022    | Longer cycle/late release due to Holidays  |
 
 - All dates are approximate and are subject to change.
+- `Migration Date` is also the cutoff date to add strings that need to be localized for the release. 
 - CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
 
