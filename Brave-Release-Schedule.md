@@ -12,8 +12,8 @@ Information about channel differences available in the [Release Channel Descript
 
 | **Channel**     | Release |  Beta & Dev | Nightly|
 | ----------------| ------- | ------ | ------ |
-| **Milestone**   | 1.23.x  | 1.24.x    | 1.25.x |
-| **Branch name** | 1.23.x | 1.24.x    | master |
+| **Milestone**   | 1.24.x  | 1.25.x    | 1.26.x |
+| **Branch name** | 1.24.x | 1.25.x    | master |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
