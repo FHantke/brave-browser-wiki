@@ -1,77 +1,68 @@
 ## Configure and init the new Chromium version.
 
-Create a new cloned dir.
+1. Create a new cloned dir.
 
-`npm install`
+&emsp;`npm install`
 
-Open `package.json` in the root repo and change the string at the path `config.projects.chrome.dir.tag` to the new Chromium version.
+2. Open `package.json` in the root repo and change the string at the path `config.projects.chrome.dir.tag` to the new Chromium version.
 
-Since you’re using a new cloned dir you should not already have an `src` dir. 
+3. Since you’re using a new cloned dir you should not already have an `src` dir and should run `init`.
 
-`npm run init`
+&emsp;`npm run init`
 
-If patches apply correctly, simply run `npm run update_patches` and commit the changes.
+4. If all patches apply correctly, simply run
+
+&emsp;`npm run update_patches`
+
+&emsp;then, commit the changes with the comment "Updated patches from Chromium XXX to Chromium YYY."
+
+&emsp;Typically, however, some patches will fail to apply.
 
 ## Fix patches.
 
-If patches do not apply, then stash any changes:
+1. Resolve errors for each patch that didn't apply.
+
+&emsp;The most common situations are: 
+ * The file being patches got moved/renamed -> rename the patch accordingly.
+ * The content of the file changed so that the lines surrounding the patched in lines don't match -> adjust the patch to fit the new content.
+ Once the patch is fixed, apply it, then, update:
+ 
+ ```
+  cd src
+  git apply brave/patches/patch_name.patch
+  git diff <CHROMIUM_VERSION> --src-prefix=a/ --dst-prefix=b/ --full-index path/to/file/being/patched > brave/patches/patch_name.patch
+ ```
+
+ &emsp;When all such failing patches have been fixed, commit the changed patches with the comment "Conflict-resolved patches from Chromium XXX to Chromium YYY."
+
+ * The content that was being patched or the entire file was removed -> determine if the patch can just be removed or other changes need to made to compensate for the removed code. Remove the patch and commit. The commit message should include the links to the relevant upstream changes on https://chromium.googlesource.com/ or https://source.chromium.org/, as well as the upstream commit messages for those changes.
+
+2. Once all patching error have been resolved, run update:
+
+&emsp;`npm run update_patches`
+
+&emsp;This will update patches that applied correctly in the first place. Commit the changes with the comment "Updated patches from Chromium XXX to Chromium YYY."
+
+3. Since the `init` was interrupted by patching errors run `sync`:
+
+&emsp;`npm run sync`
+
+**Note:** Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
+
+
+###  Fix strings.
+
+Update `grd` and `grdp` files from the Chromium ones:
 
 ```
-cd src/
-git stash
+cd ..
+npm run chromium_rebase_l10n
+```
+```
+Note: Filled some custom strings to brave_strings.grd by https://github.com/brave/brave-core/pull/214/commits/256f5aa8e781d266ad23f863ac7b613615ad2a5a
 ```
 
-Get a list of the patches:
-`ls -la brave/patches/ | mvim -`
-
-Do a vim git macro to add `git apply -3 ./brave/patches/` before each line.
-Save the list of `git apply` script file `:wq a`
-
-(Alternatively: `ls -1 brave/patches/*.patch | sed 's!^!git apply -3 ./!' > a`)
-
-Make it runnable:
-
-`chmod u+x ./a`
-
-Run it:
-
-`./a`
-
-You should see a bunch of files that were a) applied successfully, b) failed to apply but worked on 3-way merge, c) failed to apply and failed to apply on 3-way merge, and d) could not be applied because the file no longer exists (moved most likely).
-
-Copy out the files that did not apply, you should have a list something like this:
-
-```
-error: patch failed: chrome/app/chrome_main.cc:7
-error: patch failed: chrome/browser/browser_process_impl.cc:987
-error: patch failed: chrome/browser/chrome_browser_main.cc:978
-error: patch failed: chrome/browser/content_settings/host_content_settings_map_factory.cc:81
-error: patch failed: chrome/browser/extensions/component_extensions_whitelist/whitelist.cc:9
-error: chrome/browser/ui/cocoa/new_tab_button.mm: No such file or directory
-error: patch failed: chrome/browser/ui/cocoa/tabs/tab_controller.mm:101
-error: patch failed: chrome/browser/ui/layout_constants.cc:25
-error: patch failed: chrome/browser/ui/webui/chrome_web_ui_controller_factory.cc:11
-error: patch failed: chrome/common/BUILD.gn:528
-error: patch failed: chrome/common/importer/BUILD.gn:12
-error: patch failed: chrome/common/importer/profile_import.mojom:7
-error: patch failed: chrome/installer/mini_installer/BUILD.gn:129
-error: patch failed: chrome/renderer/chrome_content_renderer_client.cc:20
-error: patch failed: chrome/utility/chrome_content_utility_client.h:36
-error: patch failed: components/vector_icons/vector_icons.gni:40
-error: patch failed: extensions/browser/extension_event_histogram_value.h:430
-error: patch failed: third_party/WebKit/Source/core/svg/SVGPathElement.cpp:20
-error: patch failed: third_party/WebKit/Source/modules/webgl/WebGLRenderingContextBase.cpp:2688
-error: patch failed: tools/gritsettings/resource_ids:149
-```
-
-Treat this new text document as your todo list.
-Open these files one by one and resolve the merge conflicts manually.
-
-Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
-
-Once you are done updating all the Chromium src files, the -3 option above will actually stage files in src to be added, we don't want that because our patch generation script doesn't work well with it.  So inside the src directory run `git reset HEAD *`.  Then run `npm run update_patches`
-
-Commit what you have in a commit to update patches for the Chromium update.
+Do a commit for the updated source strings, `grd` files with the comment "Updated strings for Chromium XXX".
 
 ## Check for changes in the build tool chain.
 * For Mac, check `mac_sdk_min` in `src/build/config/mac/mac_sdk_overrides.gni` for the SDK version, the comment above `MAC_BINARIES_TAG` and `MAC_MINIMUM_OS_VERSION` in `src/build/mac_toolchain.py` for the XCode version and the OS version,
@@ -85,59 +76,43 @@ Do a build like normal, fix errors as they come up.
 
 `npm run build`
 
-###  Fix strings.
-
-Eventually you’ll start getting some string errors when you build.
-Commit what you have in a updates to brave-core commit.
-
-Reset Chromium strings to the original state:
-```
-cd src
-git checkout -- *.xtb
-git checkout -- *.grd
-git checkout -- *.grdp
-```
-
-Update `grd` and `grdp` files from the Chromium ones:
-
-```
-cd ..
-npm run chromium_rebase_l10n
-```
-```
-Note: Filled some custom strings to brave_strings.grd by https://github.com/brave/brave-core/pull/214/commits/256f5aa8e781d266ad23f863ac7b613615ad2a5a
-```
-
-Do a commit for the updated source strings, `grd` files.
-
-### Update localization.
-
-Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
-If you need access talk to devops.
-
-```
-npm run push_l10n
-```
-
-Run this to pull down new xtb and translation files:
-
-`npm run pull_l10n`
-
-Do a commit for all the string translation updates, `xtb` files.
-
-### Fix remaining build errors.
-
-Continue the build after that runs successfully.
-
-If you have more fixes you can add them to the commit before the string commit which has the brave-core updates.
-
-`git rebase -i HEAD~2` to do that.
-
-Continue to build with:
-
-`npm run build`
-
 If there's anything that should be called out as a non-trivial change, you should do it as a separate commit.
+
+For each error fixed, the commit message should include the links to the relevant upstream changes on https://chromium.googlesource.com/ or https://source.chromium.org/, as well as the upstream commit messages for those changes.
+
+If you have more fixes caused by the same upstream change, use git commit --fixup and rebase -i to squash them.
+
+```
+git log
+1234567 Fix for upstream change A.
+8910112 Fix for upstream change B.
+```
+
+```
+git commit -a --fixup 1234567 
+git rebase -i --autosquash @~3
+```
+
+## Fix chromium_src overrides
+
+Run `brave/script/check_chromium_src.py` to locate any override files in `chromium_src` override directory:
+
+* whose targets under `src` no longer exist
+* that contain definitions for symbols that are no longer present in the target file
+
+Make an appropriate fix for each situation.
+
+
+## Fix unit and browser tests build.
+
+Build unit and browser tests as usual:
+
+`npm run test -- brave_unit_tests`
+
+`npm run test -- brave_browser_tests`
+
+Use the same commit practices as for fixing the main build.
+
 
 ***
 ***MIDL issue on Windows***
@@ -173,3 +148,20 @@ in #security-discussion Slack channel.
 - [ ] Entitlements to enable new features specific to Chrome are added to `https://source.chromium.org/chromium/chromium/src/+/master:chrome/app/app-entitlements-chrome.plist`.Review the new entitlements for each CR bump when new features are added to Chrome.
 
 - [ ] On Android, new permissions can be added in */AndroidManifest.xml or */AndroidManifest.xml.expected. Users often ask questions about new permissions on update. Any new permissions should be reviewed by the @android-team or @security-team before merge.
+
+### Update localization.
+
+See https://github.com/brave/brave-browser/wiki/Strings-and-Localization
+
+Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
+If you need access talk to devops.
+
+```
+npm run push_l10n
+```
+
+Run this to pull down new xtb and translation files:
+
+`npm run pull_l10n`
+
+Do a commit for all the string translation updates, `xtb` files.
