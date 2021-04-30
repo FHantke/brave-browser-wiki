@@ -87,7 +87,8 @@ _`Brave.Core.TorEverUsed`_ **[D]**
 1. Yes
 2. No
 
-### Q11: What is the state of your Brave Rewards wallet? [NOT IMPLEMENTED]
+### Q11: What is the state of your Brave Rewards wallet? 
+_`Brave.Rewards.WalletState`_ **[D]** (ANDROID?)
 1. No wallet created
 2. Wallet created; no grants claimed; no funds added
 3. Wallet created; grant(s) claimed; no funds added
