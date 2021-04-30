@@ -104,7 +104,7 @@ _`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
 4. 10-50 BAT, excluding grants
 5. Over 50 BAT, excluding grants~~
 
-### Q13: Have you made use of Auto-contribute in Brave Rewards? **[BROKEN]**
+### Q13: Have you made use of Auto-contribute in Brave Rewards?
 _`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
@@ -113,7 +113,7 @@ _`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
 5. Auto-contribute enabled, one successful contribution so far
 6. Auto-contribute enabled, more than one successful contribution so far
 
-### Q14: Have you made use of tips within Brave Rewards? **[BROKEN]**
+### Q14: Have you made use of tips within Brave Rewards?
 _`Brave.Rewards.TipsState.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
