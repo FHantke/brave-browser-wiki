@@ -17,7 +17,7 @@ The request is encoded with the following rules:
 * The weekly flag is set to true if the browser is used for the first time in a calendar week, starting on Monday.
 * The monthly flag is set to true if the browser is used for the first time in a calendar month, starting on the 1st of the month.
 * The first flag is set to true if this is the first day the browser was installed.
-* The woi (week of installation), ref (referral code) if any, and dtoi (date of installation) are retrieved from browser state.
+* The woi (week of installation), ref (referral code, not used if default), and dtoi (date of installation) are retrieved from browser state.
 * The adsEnabled flag, set to true if ads are enabled in the browser.
 * The arch field, which has the CPU architecture Brave was compiled for. This is sent only if ads are enabled in the browser.
 
@@ -46,7 +46,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | monthly | Monthly flag | true or false | Browser | false |
 | first | First day of installation flag | true or false | Browser | false |
 | woi | Week of installation - date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
-| ref | Referral code (now limited to a small set of 50 to 100 referrers) if this Brave instance was downloaded via a referral link | ABC123 formatted string or the value none | Browser | ABC123 |
+| ref | Referral code (now limited to a small set of 50 to 100 referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
 | country_code | Country Code | 2 digit string containing the country code | CDN | US |
 | region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
 | dtoi | Date of installation - date of the browser installation (held in browser state for 14 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
