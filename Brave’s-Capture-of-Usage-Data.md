@@ -2,32 +2,32 @@ Note: This document is a complement to the referral system described at https://
 
 # Why does Brave capture usage data?
 
-Usage data is used to guide business decisions, inform product development and guide support resource allocation.
+Usage data is used to guide business decisions, inform product development and support resource allocation.
 
 # What are usage requests?
 
-A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personally identifying information.
+A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personally data or personally identifying information.
 
 Note: All fields are described in the table below with example values.
 
 The request is encoded with the following rules:
 
-* The platform, channel, and version strings are retrieved from browser state
-* The daily flag is set to true
-* The weekly flag is set to true if the browser is used for the first time in a calendar week, starting on Monday
-* The monthly flag is set to true if the browser is used for the first time in a calendar month, starting on the 1st
-* The first flag is set to true if this is the first day the browser was installed
-* The woi (week of installation), ref (referral code) and dtoi (date of installation) are retrieved from browser state
+* The platform, channel, and version strings are retrieved from browser state.
+* The daily flag is set to true.
+* The weekly flag is set to true if the browser is used for the first time in a calendar week, starting on Monday.
+* The monthly flag is set to true if the browser is used for the first time in a calendar month, starting on the 1st of the month.
+* The first flag is set to true if this is the first day the browser was installed.
+* The woi (week of installation), ref (referral code) if any, and dtoi (date of installation) are retrieved from browser state.
 * The adsEnabled flag, set to true if ads are enabled in the browser.
-* The arch field, which has the CPU architecture Brave was compiled for. This is only sent if ads are enabled in the browser.
+* The arch field, which has the CPU architecture Brave was compiled for. This is sent only if ads are enabled in the browser.
 
 The request is routed to a CDN before it is forwarded to Brave for capture. The CDN performs the following:
 
-* Infers country code from IP address (countries with a small number of users < 1000 are excluded)
-* Infers region code (https://en.wikipedia.org/wiki/ISO_3166-2) from IP address
-* Removes IP address from data sent to Brave
+* Infers country code from IP address (countries with a small number of users < 1000 are excluded from this inference step).
+* Infers region code (https://en.wikipedia.org/wiki/ISO_3166-2) from IP address.
+* Removes IP address from data sent to Brave.
 
-The CDN modified request is sent to Brave for data capture. Brave performs the following at capture:
+The CDN-modified request is sent to Brave for data capture. Brave performs the following at capture:
 
 * The current date (year_month_day) is stored
 
@@ -46,7 +46,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | monthly | Monthly flag | true or false | Browser | false |
 | first | First day of installation flag | true or false | Browser | false |
 | woi | Week of installation - date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
-| ref | Referral code (now limited to a small set of 50 to 100 referrers) | ABC123 formatted string or the value none | Browser | ABC123 |
+| ref | Referral code (now limited to a small set of 50 to 100 referrers) if this Brave instance was downloaded via a referral link | ABC123 formatted string or the value none | Browser | ABC123 |
 | country_code | Country Code | 2 digit string containing the country code | CDN | US |
 | region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
 | dtoi | Date of installation - date of the browser installation (held in browser state for 14 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
