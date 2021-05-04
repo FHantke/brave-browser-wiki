@@ -29,7 +29,7 @@ The request is routed to a CDN before it is forwarded to Brave for capture. The 
 
 The CDN-modified request is sent to Brave for data capture. Brave performs the following at capture:
 
-* The current date (year_month_day) is stored
+* The current date (year_month_day) is stored.
 
 Once a day Brave aggregates the captured data, storing it for analysis and reporting.
 
