@@ -6,7 +6,7 @@ Usage data is used to guide business decisions, inform product development and s
 
 # What are usage requests?
 
-A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personally data or personally identifying information.
+A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personal data or personally identifying information.
 
 Note: All fields are described in the table below with example values.
 
