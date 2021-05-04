@@ -14,7 +14,7 @@ Referral codes are not personally identifiable and are not unique to a user unle
 ## Why does Brave use referral codes?
 * Referral codes are used for the Brave [creator referral program](https://brave.com/refer/) to track how many installs of Brave a creator has driven through their referral program. We use these codes in a 30-day confirmation ping to check if a referred user is using Brave 30 days after install, at which point the referrer is eligible for a BAT payout.
 * Referral codes are used to identify builds downloaded via partnerships or paid ads that Brave is running. We use this data to track user retention for these partnerships/ads.
-* As of https://github.com/brave/brave-core/pull/1982, a default referral code `BRV001` is used for builds that would otherwise have no referral code; AKA “organic” downloads of Brave, such as from https://brave.com/download. This helps us determine a baseline rate of retention. After merging https://github.com/brave/brave-core/pull/8103, the referral service is no longer initialized in this scenario.
+* As of https://github.com/brave/brave-core/pull/1982, a default referral code `BRV001` is used for builds that would otherwise have no referral code; AKA “organic” downloads of Brave, such as from https://brave.com/download. This helped us determine a baseline rate of retention. Since merging https://github.com/brave/brave-core/pull/8103, the referral service is no longer initialized in this default referral code scenario.
 
 ## What data is sent with the referral code in pings?
 
