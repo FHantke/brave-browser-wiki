@@ -46,7 +46,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | monthly | Monthly flag | true or false | Browser | false |
 | first | First day of installation flag | true or false | Browser | false |
 | woi | Week of installation - date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
-| ref | Referral code (now limited to a small set of 50 to 100 referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
+| ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
 | country_code | Country Code | 2 digit string containing the country code | CDN | US |
 | region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
 | dtoi | Date of installation - date of the browser installation (held in browser state for 14 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
