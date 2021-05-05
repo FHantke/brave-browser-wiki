@@ -27,9 +27,9 @@ The request is routed to a CDN before it is forwarded to Brave for capture. The 
 * Infers region code (https://en.wikipedia.org/wiki/ISO_3166-2) from IP address.
 * Removes IP address from data sent to Brave.
 
-The CDN-modified request is sent to Brave for data capture. Brave performs the following at capture:
+The CDN-modified request is sent to Brave for data capture. Brave performs the following:
 
-* The current date (year_month_day) is stored.
+* The current date (year_month_day) is added to the request and the usage request is stored.
 
 Once a day Brave aggregates the captured data, storing it for analysis and reporting.
 
