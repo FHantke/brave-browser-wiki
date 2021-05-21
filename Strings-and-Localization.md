@@ -197,7 +197,7 @@ Swahili    (sw)
   - `&#8212;` - em dash(`—`)
   - `&#8216;` - opening single quote(`‘`)
   - `&#8230;` - ellipsis(`…`)
-  - **Note:** standalone `&amp;` (or `&amp;amp;`), `&lt;` (or `&amp;lt;`), or `&gt;` (or `&amp;gt;`) should be left as they are. For example, `Bob &amp; Jim`, or `System &gt; Settings` should stay that way.
+  - **Note:** standalone `&amp;` (or `&amp;amp;`), `&lt;` (or `&amp;lt;`), or `&gt;` (or `&amp;gt;`), if needed in the localized string, should be left as they are. For example, `Bob &amp; Jim`, or `System &gt; Settings` should stay that way.
 
 - Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
