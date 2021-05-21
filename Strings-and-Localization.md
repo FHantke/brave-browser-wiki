@@ -151,7 +151,7 @@ Swahili    (sw)
 - Sometimes strings have variables (placeholders) which look like the graphic below.<br/>
   <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png"><br/>
   In these cases you should:
-    - use `<` and `>` and not `&lt;` and not `&gt;` **with `ph` and `ex` elements**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`.
+    - use `<` and `>` and not `&lt;` and not `&gt;` **with `ph` and `ex` elements (and only those elements!)**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`.
     - The text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.<br/>
     - In the example in the graphic above, the translation should look like this:
       <table>
@@ -197,6 +197,7 @@ Swahili    (sw)
   - `&#8212;` - em dash(`—`)
   - `&#8216;` - opening single quote(`‘`)
   - `&#8230;` - ellipsis(`…`)
+  - **Note:** standalone `&amp;` (or `&amp;amp;`), `&lt;` (or `&amp;lt;`), or `&gt;` (or `&amp;gt;`) should be left as they are. For example, `Bob &amp; Jim`, or `System &gt; Settings` should stay that way.
 
 - Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
 
