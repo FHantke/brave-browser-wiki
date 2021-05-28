@@ -96,7 +96,7 @@ _`Brave.Rewards.WalletState`_ **[D]** (ANDROID?)
 5. Wallet created: grant(s) claimed; funds added
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
-### Q12: How much BAT, excluding grants, is in your wallet? **[BROKEN]**
+### Q12: How much BAT, excluding grants, is in your wallet?
 _`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
 1. No wallet created
 2. Rewards Disabled
