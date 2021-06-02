@@ -69,5 +69,26 @@ lib.unstripped/libmonochrome.so => lib.unstripped/libchrome.so
 lib.unstripped/libmonochrome__combined.so => lib.unstripped/libmonochrome__combined.so
 lib.unstripped/chrome__combined.so.map.gz => lib.unstripped/chrome__combined.so.map.gz
 ```
-and try to run script again
- 
+and try to run script again.
+
+
+### Troubleshooting some cases when symbolize script does not work well:
+
+I. if there are more than one apk at `symbols_dir/apks` dir, then the script `src/third_party/android_platform/development/scripts/stack_core.py` `_FindSharedLibraryFromAPKs` finds both `MonochromePublic.apk` and `BraveMonoarm.apk`,  and gives `(None, None)` result and stack cannot be symbolized.
+
+In such cases it is required to remove `MonochromePublic.apk` from `out/{config}/apks` and re-run symbolize script.
+
+II. The situation actual for arm64 mono aab installed from Google Play.
+Symbolize script needs the exactly base.apk which was installed on the device. Take these steps:
+1. Remove all from your downloaded symbols `apks` folder
+2. create apks from the bundle, like `java -jar ./src/third_party/android_build_tools/bundletool/bundletool-all-1.4.0.jar build-apks --connected-device --bundle=./src/out/android_Component_arm/apks/Bravearm64.aab --output=./src/out/android_Com
+ponent_arm/apks/Bravearm64.apks  --adb=./src/third_party/android_sdk/public/platform-tools/adb  --aapt2=./src/third_party/android_build_tools/aapt2/aapt2`
+3. unzip apks file and copy all the apk files into `apks` folder
+4. run symbolize script.
+
+Also you may use the other ways to get the proper apk for the bundle:
+
+- if your device is rooted, then just copy this file from `/data/app/{brave_browser_folder}/base.apk`;
+
+- go to `Google Play console` => choose the app (`Nightly`, `Beta` or `Stable`) => `Production` => `Releases` => `Release history` => choose your release => find your bundle, for most modern devices this is `arm64-v8a` => `right arrow` to details => `Explore app bundle` => `Downloads` => add filter to your device => download the apk, it will be zip-file.
+Then unpack the zip, and it has a proper base.apk.
