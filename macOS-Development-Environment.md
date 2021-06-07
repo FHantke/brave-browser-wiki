@@ -4,8 +4,10 @@ You will need the prerequisites below to build Brave on macOS 10.15+. There are 
 
 - Xcode 12.2+ (can install through the App Store, or by running `xcode-select --install`)
 - MacOS SDK 11.0+
-- NodeJS (LTS Version - currently 12.x)
+- NodeJS LTS Version - currently 12.x (`brew install node@12`) - can also use `nvm`
+> - If `node --version` fails when installing `node@12` through Homebrew or reports a different version, run `brew link --force --overwrite node@12`
 - npm 6.x (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable))
+> - npm is automatically installed if you install NodeJS through Homebrew. Please ensure that you're really using npm 6.x by running `npm --version`, npm 7 (or later) does not work.
 - Rust >= 1.47.0 (`brew install rust`)
 - Git >= 2.17.0
   - Git is included with Xcode's "Command Line Tools," but the version provided by Apple is old and sometimes has problems interoperating with current Git stable, e.g. when generating diffs using the default settings. You should install a newer version of Git, e.g. via Homebrew.
