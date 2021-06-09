@@ -59,6 +59,8 @@ npm run build -- Static
 
 ## Publications Using PageGraph
 
+- [SugarCoat: Programmatically Generating Privacy-Preserving, Web-Compatible Resource Replacements For Content Blocking](https://www.peteresnyder.com/static/papers/sugarcoat-ccs-2021.pdf), Michael Smith, Peter Snyder, Ben Livshits, Deian Stefan, **CCS 2021**
+- [Hiding in Plain Site: Detecting JavaScript Obfuscation through Concealed Browser API Usage](https://kapravelos.com/publications/jsobf-imc20.pdf), Shaown Sarker, Jordan Jueckstock, Alexandros Kapravelos, **IMC 2020**
 - [Detecting Filter List Evasion With Event-Loop-Turn Granularity JavaScript Signatures](https://arxiv.org/abs/2005.11910), Quan Chen, Peter Snyder, Benjamin Livshits, Alexandros Kapravelos, **S&P 2021**
 - [Filter List Generation for Underserved Regions](https://arxiv.org/abs/1910.07303), Alexander Sjosten, Peter Snyder, Antonio Pastor, Panagiotis Papadopoulos, Benjamin Livshits, **WWW 2020**
 - [Keeping Out the Masses: Understanding the Popularity and Implications of Internet Paywalls](https://arxiv.org/abs/1903.01406), Panagiotis Papadopoulos, Peter Snyder, Benjamin Livshits, **WWW 2020**
