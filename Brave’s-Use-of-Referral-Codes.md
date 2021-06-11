@@ -4,7 +4,7 @@
 
 Referral codes, or ref codes for short, are 6-character alphanumeric codes used in Brave on all platforms, including mobile, to identify where the build was downloaded from.
 
-* On desktop, these codes are either hard-coded in the build or embedded in the binary’s filename and then extracted from the filename on first run.
+* On Windows and macOS, these codes are either hard-coded in the build or embedded in the binary’s filename and then extracted from the filename on first run.
 * On iOS, when a user visits a referral page and chooses to visit the App Store to install Brave, their IP address is hashed and temporarily saved with the 6 digit referral code. When the user launches Brave on iOS for the first time, the app makes a request and matches their IP address hashes to identify the referral code they used to install Brave. At this time, the IP hash entry is permanently deleted.
 * On Android, when a user visits a referral page, the website redirects to Google Play with the corresponding ref code. When a user launches Brave on Android for the first time, we retrieve the corresponding ref code from the source of installation.
 
