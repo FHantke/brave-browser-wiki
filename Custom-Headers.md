@@ -8,11 +8,13 @@ In all cases, the header is the same for **all users** of Brave Desktop and ther
 
 ## X-Brave-Partner
 
+The latest list can always be found at <https://laptop-updates.brave.com/promo/custom-headers>.
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
 | eaff.com & subdomains | `X-Brave-Partner: eaff` | Custom content for Brave users.
 | uphold.com & subdomains | `X-Brave-Partner: uphold` | Shows different UI to Brave users for payments as a publisher.
+| grammarly.com & subdomain | `X-Brave-Partner: grammarly`
 
 ## Yandex CLID
 
