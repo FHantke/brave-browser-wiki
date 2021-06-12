@@ -29,7 +29,7 @@ You can check the list of components installed in Brave Browser by navigating to
 | File Type Policies      | Yes           | FileTypePolicies | List of file extensions and how they are handled in download protection | | This is used by Safe Browsing |
 | Hyphenation | Yes           | Hyphenation | |  Data that assists css-hyphens in chromium  | |
 | Legacy TLS Deprecation Configuration | No           | TLSDeprecationConfig | | This component adds a whitelist of domains that can use deprecated TLS 1.0/1.1 components.  | Not needed. We disable TLS 1.0/1.1 completely in Brave. |
-| MEI Preload      | Yes           | MEIPreload | Used to pre-load media from websites |               |
+| MEI Preload      | Yes           | MEIPreload | Used to pre-seed the Media Engagement Index which determines whether auto-play is enabled on a site | https://www.chromium.org/audio-video/autoplay/autoplay-pre-seeding-in-chrome   |
 | NTP Sponsored Images      | Yes           | gccbbckogglekeggclmmekihdgdpdgoe | Updates the NTP Sponsored image assets |https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSponsoredImagesComponents.js |
 | NTP Super Referral      | Yes           | | Updates the NTP Super Referral image assets | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerComponent.js |
 | NTP Super Referral mapping table | Yes           | | Manage NTP SR mapping table (promo code and NTP SR Component id | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageNTPSuperReferrerMappingTableComponent.js|
