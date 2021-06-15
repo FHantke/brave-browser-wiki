@@ -4,6 +4,7 @@ There are 2 types of tests currently in use by Brave: unit tests and browser tes
 
 # Unit tests
 
+## C++ unit tests
 Unit tests are compiled C++ tests that test a specific function or thing.
 
 ```
@@ -41,6 +42,17 @@ Using 8 parallel jobs.
 SUCCESS: all tests passed.
 Tests took 0 seconds.
 ```
+## JavaScript unit tests
+You can run the JavaScript unit tests from the command line with:
+```
+npm run test-unit
+```
+
+This will run all tests and additionally will provide a code coverage report. If you'd like to filter tests, you can do that like so:
+```
+npm run test-unit -- --findRelatedTests ./components/test/object1_test.ts ./components/test/object2_test.ts ./components/test/object3_test.ts
+```
+You basically provide the path to files you want to test as arguments after `--findRelatedTests`. Code coverage will also run in that case after the filtered tests.
 
 # Browser tests
 
