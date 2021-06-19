@@ -2,6 +2,12 @@ The [Brave Private CDN](https://brave.com/brave-private-cdn/) is a way to
 serve static files in a way that no single organization is able to see both
 the client IP address and the nature of the request or response.
 
+# Should I use the Private CDN?
+
+If your service **accepts data from users** and needs to strip the IP addresses, then the Private CDN is **not** for you. Use a TCP load-balancer instead.
+
+If the content you're serving is the **same for all users** then the nature of the request/response doesn't need to be hidden and so all you need to do is strip the IP address.
+
 # How to use the Private CDN
 
 Here's a typical workflow:
