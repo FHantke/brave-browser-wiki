@@ -14,6 +14,7 @@
   * Install/Start/Stop localnode
   * Show diagnostic information(Node Info, Repo Stats, Addresses, Connected Peers)
   * Perform a garbage collection sweep
+
 - IPNS keys management:
   * importing keys
   * pinning content with ipns key
