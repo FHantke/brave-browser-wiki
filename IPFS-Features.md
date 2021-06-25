@@ -99,4 +99,7 @@
 - [ ] Verify you can choose `IPFS > Share Local Folder Using IPFS` to share a folder of your choosing.  Confirm the file contents and sizes are identical to the originals.  Confirm a shareable, loadable `'dweb.link` link is copied to your clipboard, and that it loads the file.
 
 ### Peers
+## adding
+## removing
 ### Key management
+### Pinning content using keys
