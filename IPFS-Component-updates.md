@@ -3,13 +3,14 @@
 Make sure all changes are committed to brave/brave-core-crx-packager which updates to the version of go-ipfs we want to use.
 Run the Jenkins job `brave-core-ext-ipfs-component-publish-dev`
 
-Send a message to Sri/Kamil, something like this:
+Send a message to #ipfs-internal, something like this:
 
 go-ipfs is ready for testing. 
 When it goes to the prod server it will be 1.0.4. 
 On the dev server it is 1.0.5. 
 Information about IPFS updates can be found here: https://github.com/brave/brave-browser/wiki/IPFS-Component-updates
 
+Also cross post to `#protocol-labs-shared' for them to test.
 
 
 # Testing
