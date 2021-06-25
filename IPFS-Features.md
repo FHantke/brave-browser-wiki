@@ -35,6 +35,16 @@
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
 
+### Diagnostic page
+- [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`
+- [ ] Verify, on a clean profile, visiting `brave://ipfs` will present you with an `Install and start` button, which will install and start an IPFS local node.  Confirm you see `Node is running` under `IPFS node status`, `Stop`, `Restart`, and `My Node` buttons, and a dynamically updating `Connected peers:` count.
+- [ ] Verify that clicking `Stop` resets all statistics, paths, and config information.
+- [ ] Verify that clicking `Start` populates all statistics, paths, and config information, and you see `Stop`, `Restart`, and `My Node` buttons, along with a dynamically updating `Connected peers:` count. 
+- [ ] Verify that clicking `Restart` resets and repopulates all stats, paths, and config information, and you see `Stop`, `Restart`, and `My Node` button, along with a dynamically updating `Connected peers:` count.
+- [ ] Verify that clicking on `Perform a garbage collection sweep` resets and repopulates the `Objects:` and `Size:` stats beneath `Repo Stats`.
+- [ ] Verify that clicking `My Node` takes you to the `Status` page of the IPFS dashboard, with a URL similar to `127.0.0.1:45002/ipfs/bafy..../#/`, where you see `Connected to IPFS`, MB count of files shared, and dynamically updating peers count, as well as your `PEER ID` and `AGENT`.
+
+
 ### Import
 - [ ] Verify you can context-click on `wikipedia.org`, choose `Import to IPFS > This page` and see a `www.wikipedia.org` folder with assets, in the `Files` pane of the IPFS dashboard.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the resource.
 - [ ] Verify you can context-click on the player UI for `https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.ogg`, choose `Import to IPFS > Selected audio`, and play the audio file found in the imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the audio file.
