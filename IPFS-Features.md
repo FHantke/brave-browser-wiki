@@ -7,7 +7,7 @@
 - IPFS address bar badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
 - IPFS protocol menu in addressbar
 - IPFS protocol system handler
-
+- Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 # Local node features IPFS cache
 - Cache size configuration
 - Peers list modification
