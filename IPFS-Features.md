@@ -35,6 +35,22 @@
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
 
+### IPFS URLs
+- [ ] Ensure each of the following IPFS URLs load over both `Gateway` and `Local node` modes:
+* `ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html`
+* `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi/`
+* `ipfs://QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Tokyo_National_Museum.html`
+* `ipfs:QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/readme`
+
+### IPNS URLs
+- [ ] Ensure each of the following IPNS URLs load over both `Gateway` and `Local node` modes:
+* `ipns://brantly.eth`
+* `ipns://en.wikipedia-on-ipfs.org`
+* `ipns://libp2p.io/`
+* `ipns://en.wikipedia-on-ipfs.org/wiki/Tokyo_National_Museum.html`
+* `ipns://browsers.today`
+* `ipns://ipfs.io`
+
 ### Gateway
 - [ ] Verify, on a new profile, you can load `brave://settings/ipfs`, click on the `Change` button for `IPFS public gateway address`, enter `https://cloudflare-ipfs.com/` and are presented with an interstitial page after loading `ipns://brantly.eth`.  Click `Use a public gateway` and confirm you're taken to `https://cloudflare-ipfs.com/ipns/brantly.eth/#/`.
 - [ ] Verify, on a new profile, you can load `https://wikipedia-on-ipfs.org`, switch `Method to resolve IPFS resources` to either `Gateway` or `Local node` in `brave://settings/ipfs`, and then see an `Open using IPFS` badge/icon in the URL bar.
