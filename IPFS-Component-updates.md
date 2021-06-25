@@ -5,9 +5,10 @@ Run the Jenkins job `brave-core-ext-ipfs-component-publish-dev`
 
 Send a message to Sri/Kamil, something like this:
 
-go-ipfs is ready for testing
-When it goes to the prod server it will be 1.0.4
-On the dev server it is 1.0.5
+go-ipfs is ready for testing. 
+When it goes to the prod server it will be 1.0.4. 
+On the dev server it is 1.0.5. 
+Information about IPFS updates can be found here: https://github.com/brave/brave-browser/wiki/IPFS-Component-updates
 
 
 
