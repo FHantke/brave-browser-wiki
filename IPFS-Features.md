@@ -35,7 +35,12 @@
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
 
+### Automatic redirects
+
+## IPFS
 ## DNSLink
+
+### DNSLink
 
 ### IPFS Companion
 - [ ] Verify that toggling `IPFS Companion` to `On` via `brave://settings/ipfs` prompts you to install the extension.  After clicking `Add extension`, confirm you get a notification that IPFS Companion was added to Brave, and are then taken to the `Set your IPFS preference` interstitial page.
