@@ -35,6 +35,10 @@
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
 
+### IPFS Companion
+- [ ] Verify that toggling `IPFS Companion` to `On` via `brave://settings/ipfs` prompts you to install the extension.  After clicking `Add extension`, confirm you get a notification that IPFS Companion was added to Brave, and are then taken to the `Set your IPFS preference` interstitial page.
+- [ ] Verify that clicking on the puzzle-piece icon on the browser toolbar, then `IPFS Companion` will load a popup.  Click on the gears (settings) icon and confirm it loads the `Companion Preferences` page.
+
 ### IPFS URLs
 - [ ] Ensure each of the following IPFS URLs load over both `Gateway` and `Local node` modes:
 * `ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html`
