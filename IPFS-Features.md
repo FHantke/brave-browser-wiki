@@ -4,7 +4,9 @@
 - Public gateway customization
 - Automatic redirection IPFS resources to IPFS gateway
 - Automatic redirect DNSLink to an IPFS version of a website when possible
-- IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
+- IPFS address bar badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
+- IPFS protocol menu in addressbar
+- IPFS protocol system handler
 
 # Local node features IPFS cache
 - Cache size configuration
