@@ -1,4 +1,4 @@
-# List of IPFS features
+## List of IPFS features
 
 - Support of ipfs/ipns urls via gateway and localnode
 - Public gateway customization
@@ -9,7 +9,7 @@
 - IPFS protocol system handler
 - Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 
-# Local node features
+## Local node only features
 - Updating local node to new version
 - Cache size configuration
 - Peers list modification
