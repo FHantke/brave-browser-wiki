@@ -37,8 +37,8 @@
 
 ### Automatic redirects
 
-## IPFS
-## DNSLink
+#### IPFS
+#### DNSLink
 
 ### DNSLink
 
