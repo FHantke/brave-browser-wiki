@@ -4,17 +4,18 @@
 - Public gateway customization
 - Automatic redirection IPFS resources to IPFS gateway
 - Automatic redirect DNSLink to an IPFS version of a website when possible
+- IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
 
 # Local node features IPFS cache
-
 - Cache size configuration
 - Peers list modification
-- IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
 - Diagnostic page (brave://ipfs)
   * Install/Start/Stop localnode
   * Show diagnostic information(Node Info, Repo Stats, Addresses, Connected Peers)
   * Perform a garbage collection sweep
-
+  * Link to my node webui
+  * Link to connected peers details
+  
 - IPNS keys management:
   * importing keys
   * pinning content with ipns key
@@ -29,5 +30,3 @@
   * importing selected video
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
-
-## Public gateway
