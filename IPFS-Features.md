@@ -79,3 +79,6 @@
 - [ ] Verify you can context-click on any selected text, choose `Import Selected Text to IPFS`, and... [TBD]
 - [ ] Verify you can context-click on `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`, choose `Import to IPFS > Selected video`, and play the video, found in its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the video file.
 - [ ] Verify you can choose `IPFS > Share Local File Using IPFS` to share a file of your choosing.  Confirm you can view/play the file from its imported folder.  Confirm a shareable, loadable `dweb.link` is copied to your clipboard, and that it loads the file.
+
+### Peers
+### Key management
