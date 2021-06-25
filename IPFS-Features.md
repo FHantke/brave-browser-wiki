@@ -98,6 +98,11 @@
 - [ ] Verify you can choose `IPFS > Share Local File Using IPFS` to share a file of your choosing.  Confirm you can view/play the file from its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the file.
 - [ ] Verify you can choose `IPFS > Share Local Folder Using IPFS` to share a folder of your choosing.  Confirm the file contents and sizes are identical to the originals.  Confirm a shareable, loadable `'dweb.link` link is copied to your clipboard, and that it loads the file.
 
+### Protocol system handler/OS integration
+- [ ] Verify (`Windows`) that pressing `Win+R`, typing `ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege`, and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
+- [ ] Verify (`macOS`): opening Terminal, and typing `open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege`, and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
+- [ ] Verify (`Linux`) that opening a shell and typing `xdg-open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege` opens Brave and loads an HTML page with the word `PASS`.
+
 ### Peers
 ## adding
 ## removing
