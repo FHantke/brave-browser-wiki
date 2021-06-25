@@ -5,10 +5,12 @@
 - Automatic redirection IPFS resources to IPFS gateway
 - Automatic redirect DNSLink to an IPFS version of a website when possible
 
-## Local node features IPFS cache
+# Local node features IPFS cache
+
 - Cache size configuration
 - Peers list modification
 - IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
+
 - IPNS keys management:
 * Keys import
 * pinning content with ipns key
