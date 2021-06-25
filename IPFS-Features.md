@@ -8,7 +8,9 @@
 - IPFS protocol menu in addressbar
 - IPFS protocol system handler
 - Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
+
 # Local node features IPFS cache
+- Updating local node to new version
 - Cache size configuration
 - Peers list modification
 - Diagnostic page (brave://ipfs)
