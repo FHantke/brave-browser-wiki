@@ -10,20 +10,23 @@
 - Cache size configuration
 - Peers list modification
 - IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
-
+- Diagnostic page (brave://ipfs)
+  * Install/Start/Stop localnode
+  * Show diagnostic information(Node Info, Repo Stats, Addresses, Connected Peers)
+  * Perform a garbage collection sweep
 - IPNS keys management:
-* * Keys import
-* * pinning content with ipns key
-* * add/remove/rotate keys
+  * importing keys
+  * pinning content with ipns key
+  * add/remove/rotate keys
 
 - Import:
-* importing a page via IPFS
-* importing linked content
-* importing selected audio
-* importing selected image
-* importing selected text
-* importing selected video
-* sharing a local file using IPFS
-* sharing a local folder using IPFS
+  * importing a page via IPFS
+  * importing linked content
+  * importing selected audio
+  * importing selected image
+  * importing selected text
+  * importing selected video
+  * sharing a local file using IPFS
+  * sharing a local folder using IPFS
 
 ## Public gateway
