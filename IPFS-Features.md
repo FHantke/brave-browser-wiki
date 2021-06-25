@@ -17,6 +17,8 @@
   * Install/Start/Stop localnode
   * Show diagnostic information (Node Info, Repo Stats, Addresses, Connected Peers)
   * Perform a garbage collection sweep
+
+***
   * Link to my node webui
   * Link to connected peers details
   
@@ -34,6 +36,14 @@
   * importing selected video
   * sharing a local file using IPFS
   * sharing a local folder using IPFS
+
+### Installation
+
+
+### go-updater node update
+- [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
+- [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate, which at the time of this writing is `0.9.0-rc1` (we'll pick up the latest, so YMMV)
+
 
 ### Automatic redirects
 
