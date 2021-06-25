@@ -12,9 +12,9 @@
 - IPFS badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
 
 - IPNS keys management:
-* Keys import
-* pinning content with ipns key
-* add/remove/rotate keys
+* * Keys import
+* * pinning content with ipns key
+* * add/remove/rotate keys
 
 - Import:
 * importing a page via IPFS
