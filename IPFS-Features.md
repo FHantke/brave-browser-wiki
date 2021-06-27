@@ -17,8 +17,6 @@
   * Install/Start/Stop localnode
   * Show diagnostic information (Node Info, Repo Stats, Addresses, Connected Peers)
   * Perform a garbage collection sweep
-
-***
   * Link to my node webui
   * Link to connected peers details
   
