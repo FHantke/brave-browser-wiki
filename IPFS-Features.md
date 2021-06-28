@@ -20,11 +20,18 @@
   * Link to my node webui
   * Link to connected peers details
   
-- IPNS keys management:
-  * importing keys
-  * pinning content with IPNS key
-  * add/remove/rotate keys
-
+## IPNS keys management:
+- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
+### importing keys
+- [ ] Verify adding new key, you can select `import` button and import existing key from file.
+- [ ] Verify imported key is available with entered name
+- [ ] Verify you cannot import same key twice
+### pinning content with IPNS key
+- [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
+### add/remove/rotate keys
+- [ ] Verify when you click Add key, it shows dialog with proposition to enter key name and generate a new key. It should not allow to add a key with existing name. 
+- [ ] Verify when you click by Trash icon for a key, it removes the key
+- [ ] Verify when you click by Rotate icon for self key, it proposes to save oldkey with new name and creates new self key
 ## Import:
 ### importing a page via IPFS
 - [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the page context menu. Select and import any page content. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the page content can be downloaded. The shareable link is copied to clipboard.
