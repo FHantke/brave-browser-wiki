@@ -97,8 +97,14 @@
 ### removing
 - [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
 
-### IPNS keys management:
-- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings -> IPFS`, there should be available `Set up your IPNS keys` option, which opens `brave://settings/ipfs/keys`
+## IPNS keys:
+- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings -> IPFS`, there should be an available `Set up your IPNS keys` option, which opens `brave://settings/ipfs/keys`
+
+### sharing a local file using an IPFS key
+- [ ] Verify the IPFS item available in the main app menu. Go to IPFS -> Share Local File Using IPFS select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard; verify you see your key before the `?filename=filename.ext` in the copied text.
+### sharing a local folder using an IPFS key
+- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS`, and select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard; verify you see your key before the...[TBD]
+
 ### importing keys
 - [ ] Verify adding a new key by clicking on the `Import` button and choosing an existing key file to import.
 - [ ] Verify imported key is available with entered name; verify entering `self` will yield `This name cannot be used`.
