@@ -21,7 +21,7 @@
 - [ ] Verify that clicking `My Node` takes you to the `Status` pane of the IPFS dashboard, with a URL similar to `127.0.0.1:45002/ipfs/bafy..../#/`, where you see `Connected to IPFS`, MB count of files shared, and dynamically updating peers count, as well as your `PEER ID` and `AGENT`.
 
 ## Import:
-- [ ] Prerequisites: local node launched and local gateway configured.
+- [ ] Prerequisites: local node launched and local gateway configured.  On a new profile, loading `ipns://brantly.eth` and clicking `Use a local node` on the interstitial page will set you up.
 
 ### importing a page via IPFS
 - [ ] Verify the IPFS item available in the page context menu. Select and import any page content. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the page content can be downloaded. The shareable link is copied to clipboard.
