@@ -98,7 +98,7 @@
 - [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
 
 ### IPNS keys management:
-- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings -> IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
+- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings -> IPFS`, there should be available `Set up your IPNS keys` option, which opens `brave://settings/ipfs/keys`
 ### importing keys
 - [ ] Verify adding a new key by clicking on the `Import` button and choosing an existing key file to import.
 - [ ] Verify imported key is available with entered name; verify entering `self` will yield `This name cannot be used`.
