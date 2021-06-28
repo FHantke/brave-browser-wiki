@@ -55,6 +55,16 @@
 ### sharing a local folder using IPFS
 - [ ] Verify the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
 
+### others import cases
+- [ ] Verify you can context-click on `wikipedia.org`, choose `Import to IPFS > This page` and see a `www.wikipedia.org` folder with assets, in the `Files` pane of the IPFS dashboard.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the resource.
+- [ ] Verify you can context-click on the player UI for `https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.ogg`, choose `Import to IPFS > Selected audio`, and play the audio file found in the imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the audio file.
+- [ ] Verify you can context-click on the Google logo at `www.google.com`, choose `Import to IPFS > Selected image`, and see the Google logo in its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and it loads the image.
+- [ ] Verify you can context-click on any selected text, choose `Import Selected Text to IPFS`, and... [TBD]
+- [ ] Verify you can context-click on `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`, choose `Import to IPFS > Selected video`, and play the video, found in its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the video file.
+- [ ] Verify you can choose `IPFS > Share Local File Using IPFS` to share a file of your choosing.  Confirm you can view/play the file from its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the file.
+- [ ] Verify you can choose `IPFS > Share Local Folder Using IPFS` to share a folder of your choosing.  Confirm the file contents and sizes are identical to the originals.  Confirm a shareable, loadable `'dweb.link` link is copied to your clipboard, and that it loads the file.
+
+
 ### Installation
 
 
@@ -107,16 +117,6 @@
 - [ ] Verify that clicking on `(details)` to the right of `Connected peers:` takes you to the `PEERS` pane of `127.0.0.1:45002/ipfs/bafy..../#/` and you see a global map with a dynamically updating peer count and listing, below.
 - [ ] Verify that clicking on `Perform a garbage collection sweep` resets and repopulates the `Objects:` and `Size:` stats beneath `Repo Stats`.
 - [ ] Verify that clicking `My Node` takes you to the `Status` pane of the IPFS dashboard, with a URL similar to `127.0.0.1:45002/ipfs/bafy..../#/`, where you see `Connected to IPFS`, MB count of files shared, and dynamically updating peers count, as well as your `PEER ID` and `AGENT`.
-
-
-### Import
-- [ ] Verify you can context-click on `wikipedia.org`, choose `Import to IPFS > This page` and see a `www.wikipedia.org` folder with assets, in the `Files` pane of the IPFS dashboard.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the resource.
-- [ ] Verify you can context-click on the player UI for `https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.ogg`, choose `Import to IPFS > Selected audio`, and play the audio file found in the imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the audio file.
-- [ ] Verify you can context-click on the Google logo at `www.google.com`, choose `Import to IPFS > Selected image`, and see the Google logo in its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and it loads the image.
-- [ ] Verify you can context-click on any selected text, choose `Import Selected Text to IPFS`, and... [TBD]
-- [ ] Verify you can context-click on `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`, choose `Import to IPFS > Selected video`, and play the video, found in its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the video file.
-- [ ] Verify you can choose `IPFS > Share Local File Using IPFS` to share a file of your choosing.  Confirm you can view/play the file from its imported folder.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the file.
-- [ ] Verify you can choose `IPFS > Share Local Folder Using IPFS` to share a folder of your choosing.  Confirm the file contents and sizes are identical to the originals.  Confirm a shareable, loadable `'dweb.link` link is copied to your clipboard, and that it loads the file.
 
 ### Protocol system handler/OS integration
 - [ ] Verify (`Windows`) that pressing `Win+R`, typing `ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege`, and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
