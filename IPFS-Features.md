@@ -1,7 +1,7 @@
 # List of IPFS features
 
 
-### Installation
+## Installation & Setup
 
 ### go-updater node update
 - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
