@@ -8,7 +8,7 @@
 - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate.
 
 ### Config
-- [ ] Verify changing `Maximum IPFS cache size (GB)` on the `brave://settings/ipfs` page (set `Method to resolve IPFS resources` to `Local node` on `brave://settings/ipfs`), the new value is available on diagnostic page (`brave://ipfs`) in the `Repo Stats -> Size` section.
+- [ ] Verify changing `Maximum IPFS cache size (GB)` on the `brave://settings/ipfs` page (set `Method to resolve IPFS resources` to `Local node` on `brave://settings/ipfs`), the new value is reflected on the diagnostic page (`brave://ipfs`) in the `Repo Stats -> Size` section.
 
 ### Diagnostic page
 - [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`.
