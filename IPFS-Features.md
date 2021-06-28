@@ -103,7 +103,7 @@
 ### sharing a local file using an IPFS key
 - [ ] Verify the IPFS item available in the main app menu. Go to IPFS -> Share Local File Using IPFS select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard; verify you see your key before the `?filename=filename.ext` in the copied text.
 ### sharing a local folder using an IPFS key
-- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS`, and select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard; verify you see your key before the...[TBD]
+- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS`, and select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard; verify you see your key before the `?filename=Downloads` part, e.g. https://dweb.link/ipns/k51qzi5uqu5djfh24zd6m4e8fm6d9rju48fyokc13achcfo4hz9fmioev0xln6?filename=Downloads (`k51qzi5uqu5djfh24zd6m4e8fm6d9rju48fyokc13achcfo4hz9fmioev0xln6` is the key here)
 
 ### importing keys
 - [ ] Verify adding a new key by clicking on the `Import` button and choosing an existing key file to import.
