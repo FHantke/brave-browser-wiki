@@ -88,21 +88,21 @@
 - [ ] Verify (`macOS`): opening Terminal, and typing `open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege`, and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
 - [ ] Verify (`Linux`) that opening a shell and typing `xdg-open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege` and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
 
-## Peers
+## Peers:
 - [ ] Prerequisites: local node launched and local gateway configured.
 ### adding
-- [ ] Verify when you go to `brave://settings/ipfs/peers` and click on the `Add` button, it prompts you to enter a new peer-connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or something like `**/p2p/**` format.
+- [ ] Verify when you go to `brave://settings/ipfs/peers` and click on the `Add` button, it prompts you to enter a new peer-connection string. Confirm that entering an incorrect string yields `This name is not valid` upon clicking `Submit`. (Acceptable ones are only CIDs or something like `**/p2p/**` format.)
 - [ ] Verify if a peer is added and node is started, it proposes to restart node to apply changes.
-- [ ] Verify node is restarted by clicking `Restart` button, if error would happen it shows error message and suggests to see more on diagnostic page.
+- [ ] Verify the local node is restarted by clicking `Restart` button; happen it shows error message and suggests to see more on diagnostic page.
 ### removing
 - [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
 
 ### IPNS keys management:
-- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
+- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings -> IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
 ### importing keys
-- [ ] Verify adding new key, you can select `import` button and import existing key from file.
-- [ ] Verify imported key is available with entered name.
-- [ ] Verify you cannot import same key twice.
+- [ ] Verify adding a new key by clicking on the `Import` button and choosing an existing key file to import.
+- [ ] Verify imported key is available with entered name; verify entering `self` will yield `This name cannot be used`.
+- [ ] Verify you cannot import the same key twice.
 ### pinning content with IPNS key
 - [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
 ### add/remove/rotate keys.
