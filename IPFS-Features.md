@@ -13,12 +13,7 @@
 - Updating local node to new version
 - Cache size configuration
 - Peers list modification
-- Diagnostic page (brave://ipfs)
-  * Install/Start/Stop localnode
-  * Show diagnostic information (Node Info, Repo Stats, Addresses, Connected Peers)
-  * Perform a garbage collection sweep
-  * Link to my node webui
-  * Link to connected peers details
+
   
 ## IPNS keys management:
 - [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
@@ -104,6 +99,7 @@
 
 
 ### Diagnostic page
+- Diagnostic page (brave://ipfs)
 - [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`
 - [ ] Verify, on a clean profile, visiting `brave://ipfs` will present you with an `Install and start` button, which will install and start an IPFS local node.  Confirm you see `Node is running` under `IPFS node status`, `Stop`, `Restart`, and `My Node` buttons, and a dynamically updating `Connected peers:` count.
 - [ ] Verify that clicking `Stop` resets all statistics, paths, and config information.
