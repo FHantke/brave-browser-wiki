@@ -52,7 +52,7 @@
 - [ ] Automatic redirect DNSLink to an IPFS version of a website when possible, only if site has header `x-ipfs-path` or DNSLink TXT record if server returned 5xx error
 - [ ] Verify IPFS address bar badge is shown for pages with x-ipfs-header and dnslink TXT record for 5xx error code
 - [ ] Verify by clicking the `IPFS` badge icon in the address bar on IPFS/IPNS pages it shows valid (green) information about the IPFS resource.
-- [ ] Verify, when loading an IPFS/IPNS resources on a new profile, that the interstitial page (`Ask` mode in brave://settings/ipfs`) gives you two choices: to install a local node (`Use a local node`) or select public gateway (Android + iOS: public gateway only)
+- [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android + iOS: public gateway only).
 
 ### DNSLink
 - [ ] Verify that loading `https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Mars.html` redirects you seamlessly to `https://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa.ipfs.dweb.link/wiki/Mars.html`, and there's an `Open using IPFS` badge/button in the URL bar.  Confirm that clicking `Open using IPFS` goes to `ipfs://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa/wiki/Mars.html`.
