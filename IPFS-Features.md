@@ -22,10 +22,10 @@
 - [ ] Verify the IPFS item available in the video context menu. Select and import any video from any page. Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to clipboard.
 
 ### sharing a local file using IPFS
-- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
+- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> Share Local File Using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
 
 ### sharing a local folder using IPFS
-- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
+- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
 
 ### others import cases
 - [ ] Verify you can context-click on `wikipedia.org`, choose `Import to IPFS > This page` and see a `www.wikipedia.org` folder with assets, in the `Files` pane of the IPFS dashboard.  Confirm a shareable, loadable `dweb.link` link is copied to your clipboard, and that it loads the resource.
@@ -42,7 +42,6 @@
 ### Config
 - [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
 
-
 ### go-updater node update
 - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
 - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate, which at the time of this writing is `0.9.0-rc1` (we'll pick up the latest, so YMMV)
@@ -54,11 +53,8 @@
 - [ ] Verify by clicking on left side badge in the address bar on IPFS/IPNS pages it shows valid(green) information about ipfs page.
 - [ ] Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 
-#### IPFS
-#### DNSLink
-- [ ] Verify that loading `https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Mars.html` redirects you seamlessly to `https://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa.ipfs.dweb.link/wiki/Mars.html`, and there's an `Open using IPFS` badge/button in the URL bar.  Confirm that clicking `Open using IPFS` goes to `ipfs://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa/wiki/Mars.html`.
-
 ### DNSLink
+- [ ] Verify that loading `https://dweb.link/ipfs/QmT5NvUtoM5nWFfrQdVrFtvGfKFmG7AHE8P34isapyhCxX/wiki/Mars.html` redirects you seamlessly to `https://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa.ipfs.dweb.link/wiki/Mars.html`, and there's an `Open using IPFS` badge/button in the URL bar.  Confirm that clicking `Open using IPFS` goes to `ipfs://bafybeicgmdpvw4duutrmdxl4a7gc52sxyuk7nz5gby77afwdteh3jc5bqa/wiki/Mars.html`.
 - [ ] Verify that loading `https://ipfs.io/ipns/libp2p.io/` shows an `Open using IPFS` button in the URL bar, and clicking it redirects to `ipns://libp2p.io/`.  Confirm it resolves and loads.
 
 ### IPFS Companion
@@ -86,7 +82,6 @@
 - [ ] Verify, on a new profile, you can load `https://wikipedia-on-ipfs.org`, switch `Method to resolve IPFS resources` to either `Gateway` or `Local node` in `brave://settings/ipfs`, and then see an `Open using IPFS` badge/icon in the URL bar.
 - [ ] Verify clicking on `Open using IPFS` on `https://blog.ipfs.io/24-uncensorable-wikipedia` loads `ipfs://bafybeiaieqdmhtnehaau7kqoj2lmdfqc7juk34cjyb7dxr35vahp22bquu/24-uncensorable-wikipedia/`
 
-
 ### Diagnostic page
 - [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`
 - [ ] Verify, on a clean profile, visiting `brave://ipfs` will present you with an `Install and start` button, which will install and start an IPFS local node.  Confirm you see `Node is running` under `IPFS node status`, `Stop`, `Restart`, and `My Node` buttons, and a dynamically updating `Connected peers:` count.
@@ -105,7 +100,7 @@
 ## Peers
 - [ ] Prerequisites: local node launched and local gateway configured.
 ### adding
-- [ ] Verify when you go to `brave://settings/ipfs/peers` and click by Add button, it shows the dialog that allows to enter new peer connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or somthing like `**/p2p/**` format
+- [ ] Verify when you go to `brave://settings/ipfs/peers` and click by Add button, it shows the dialog that allows to enter new peer connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or something like `**/p2p/**` format
 - [ ] Verify if a peer added and node is started it proposes to restart node to apply changes.
 - [ ] Verify node is restarted by clicking restart button, if error would happen it shows error message and suggests to see more on diagnostic page
 ### removing
@@ -115,11 +110,11 @@
 - [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
 ### importing keys
 - [ ] Verify adding new key, you can select `import` button and import existing key from file.
-- [ ] Verify imported key is available with entered name
-- [ ] Verify you cannot import same key twice
+- [ ] Verify imported key is available with entered name.
+- [ ] Verify you cannot import same key twice.
 ### pinning content with IPNS key
 - [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
-### add/remove/rotate keys
+### add/remove/rotate keys.
 - [ ] Verify when you click Add key, it shows dialog with proposition to enter key name and generate a new key. It should not allow to add a key with existing name. 
-- [ ] Verify when you click by Trash icon for a key, it removes the key
-- [ ] Verify when you click by Rotate icon for self key, it proposes to save oldkey with new name and creates new self key
+- [ ] Verify when you click on the Trash icon for a key, it removes the key.
+- [ ] Verify when you click on the Rotate icon for self key, it proposes to save oldkey with new name and creates new self key.
