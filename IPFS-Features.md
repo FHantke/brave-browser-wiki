@@ -1,15 +1,6 @@
-## List of IPFS features
+# List of IPFS features
 
-- [ ] Support of ipfs/ipns urls via gateway and localnode
-- [ ] Public gateway customization
-- [ ] Automatic redirection IPFS resources to IPFS gateway
-- [ ] Automatic redirect DNSLink to an IPFS version of a website when possible
-- [ ] IPFS address bar badge for pages with x-ipfs-header and dnslink TXT record for 5xx error code
-- [ ] IPFS protocol menu in addressbar
-- [ ] IPFS protocol system handler
-- [ ] Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
-
-## Local-node only features
+### Local-node only features
 - [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
  
 ## IPNS keys management:
