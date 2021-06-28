@@ -108,9 +108,11 @@
 - [ ] Verify adding a new key by clicking on the `Import` button and choosing an existing key file to import.
 - [ ] Verify imported key is available with entered name; verify entering `self` will yield `This name cannot be used`.
 - [ ] Verify you cannot import the same key twice.
+
 ### pinning content with IPNS key
 - [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
-### add/remove/rotate keys.
+
+### add/remove/rotate keys
 - [ ] Verify when you click `Add`, it prompts for key name and generates a new key.
 - [ ] Verify clicking on `Add` and entering an existing key name shows a `This name cannot be used` error message.
 - [ ] Verify when you click on the Trash icon for a key, it removes the key.
