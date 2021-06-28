@@ -26,15 +26,29 @@
   * add/remove/rotate keys
 
 ## Import:
-  * importing a page via IPFS
-  * importing linked content
-  * importing selected audio
-  * importing selected image
-  * importing selected text
-  * importing selected video
-  * sharing a local file using IPFS
+### importing a page via IPFS
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the page context menu. Select and import any page content. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the page content can be downloaded. The shareable link is copied to clipboard.
+
+### importing linked content
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the linked content context menu. Select and import any linked content from any page. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to clipboard.
+
+### importing selected audio
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the audio context menu. Select and import any audio from any page. Make sure the audio is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to clipboard.
+
+### importing selected image
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the image context menu. Select and import any image from any page. Make sure the image is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to clipboard.
+
+### importing selected text
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the selected text context menu. Select text and import it to the IPFS. Make sure the text is wrapped into a file with id like file_1.txt, the imported text is available inside the file. The shareable link is copied to clipboard.
+
+### importing selected video
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the video context menu. Select and import any video from any page. Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to clipboard.
+
+### sharing a local file using IPFS
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
+
 ### sharing a local folder using IPFS
-- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
 
 ### Installation
 
