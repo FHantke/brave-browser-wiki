@@ -1,9 +1,7 @@
 # List of IPFS features
 
-### Local-node only features
-- [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
- 
-## IPNS keys management:
+
+### IPNS keys management:
 - [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
 ### importing keys
 - [ ] Verify adding new key, you can select `import` button and import existing key from file.
@@ -54,6 +52,9 @@
 
 
 ### Installation
+
+### Config
+- [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
 
 
 ### go-updater node update
