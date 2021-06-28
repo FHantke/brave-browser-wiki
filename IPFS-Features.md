@@ -3,12 +3,12 @@
 
 ### Installation
 
-### Config
-- [ ] Verify changing `Maximum IPFS cache size (GB)` on the `brave://settings/ipfs` page (set `Method to resolve IPFS resources` to `Local node` on `brave://settings/ipfs`), the new value is available on diagnostic page (`brave://ipfs`) in the `Repo Stats -> Size` section.
-
 ### go-updater node update
 - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
 - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate.
+
+### Config
+- [ ] Verify changing `Maximum IPFS cache size (GB)` on the `brave://settings/ipfs` page (set `Method to resolve IPFS resources` to `Local node` on `brave://settings/ipfs`), the new value is available on diagnostic page (`brave://ipfs`) in the `Repo Stats -> Size` section.
 
 ### Diagnostic page
 - [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`.
