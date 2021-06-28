@@ -4,14 +4,14 @@
 ### Installation
 
 ### Config
-- [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
+- [ ] Verify changing `Maximum IPFS cache size (GB)` on the `brave://settings/ipfs` page, the new value is available on diagnostic page (`brave://ipfs`) in the `Repo Stats -> Size` section.
 
 ### go-updater node update
 - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
-- [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate, which at the time of this writing is `0.9.0-rc1` (we'll pick up the latest, so YMMV)
+- [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate.
 
 ### Diagnostic page
-- [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`
+- [ ] Verify loading `brave://ipfs` redirects to `brave://ipfs-internals`.
 - [ ] Verify, on a clean profile, visiting `brave://ipfs` will present you with an `Install and start` button, which will install and start an IPFS local node.  Confirm you see `Node is running` under `IPFS node status`, `Stop`, `Restart`, and `My Node` buttons, and a dynamically updating `Connected peers:` count.
 - [ ] Verify that clicking `Stop` resets all statistics, paths, and config information.
 - [ ] Verify that clicking `Start` populates all statistics, paths, and config information, and you see `Stop`, `Restart`, and `My Node` buttons, along with a dynamically updating `Connected peers:` count. 
