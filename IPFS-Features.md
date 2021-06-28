@@ -1,19 +1,5 @@
 # List of IPFS features
 
-
-### IPNS keys management:
-- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
-### importing keys
-- [ ] Verify adding new key, you can select `import` button and import existing key from file.
-- [ ] Verify imported key is available with entered name
-- [ ] Verify you cannot import same key twice
-### pinning content with IPNS key
-- [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
-### add/remove/rotate keys
-- [ ] Verify when you click Add key, it shows dialog with proposition to enter key name and generate a new key. It should not allow to add a key with existing name. 
-- [ ] Verify when you click by Trash icon for a key, it removes the key
-- [ ] Verify when you click by Rotate icon for self key, it proposes to save oldkey with new name and creates new self key
-
 ## Import:
 - [ ] Prerequisites: local node launched and local gateway configured.
 
@@ -124,3 +110,16 @@
 - [ ] Verify node is restarted by clicking restart button, if error would happen it shows error message and suggests to see more on diagnostic page
 ### removing
 - [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
+
+### IPNS keys management:
+- [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
+### importing keys
+- [ ] Verify adding new key, you can select `import` button and import existing key from file.
+- [ ] Verify imported key is available with entered name
+- [ ] Verify you cannot import same key twice
+### pinning content with IPNS key
+- [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
+### add/remove/rotate keys
+- [ ] Verify when you click Add key, it shows dialog with proposition to enter key name and generate a new key. It should not allow to add a key with existing name. 
+- [ ] Verify when you click by Trash icon for a key, it removes the key
+- [ ] Verify when you click by Rotate icon for self key, it proposes to save oldkey with new name and creates new self key
