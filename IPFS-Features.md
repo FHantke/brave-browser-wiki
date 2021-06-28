@@ -106,6 +106,7 @@
 ### pinning content with IPNS key
 - [ ] Verify keys are available in all import menus in order to pin content by selected key. the import link should contain the selected key.
 ### add/remove/rotate keys.
-- [ ] Verify when you click Add key, it shows dialog with proposition to enter key name and generate a new key. It should not allow to add a key with existing name. 
+- [ ] Verify when you click `Add`, it prompts for key name and generates a new key.
+- [ ] Verify clicking on `Add` and entering an existing key name shows a `This name cannot be used` error message.
 - [ ] Verify when you click on the Trash icon for a key, it removes the key.
-- [ ] Verify when you click on the Rotate icon for self key, it proposes to save oldkey with new name and creates new self key.
+- [ ] Verify when you click on the Rotate icon for self key, it proposes to save the old key with a new name and creates a new self key.
