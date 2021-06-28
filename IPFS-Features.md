@@ -25,7 +25,7 @@
   * pinning content with IPNS key
   * add/remove/rotate keys
 
-- Import:
+### Import:
   * importing a page via IPFS
   * importing linked content
   * importing selected audio
@@ -33,7 +33,8 @@
   * importing selected text
   * importing selected video
   * sharing a local file using IPFS
-  * sharing a local folder using IPFS
+## sharing a local folder using IPFS
+- [ ] Verify when local gateway is configured and the node is launched the IPFS item available in the main app menu. Go to `IPFS->sharing a local folder using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to clipboard.
 
 ### Installation
 
