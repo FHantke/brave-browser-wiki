@@ -10,10 +10,8 @@
 - [ ] Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 
 ## Local-node only features
-- [ ] Cache size configuration
-- [ ] Peers list modification
-
-  
+- [ ] Verify if change `Maximum IPFS cache size (GB)` on brave://settings/ipfs page, new value is available on diagnostic page (brave://ipfs) in Repo Stats -> Size section
+ 
 ## IPNS keys management:
 - [ ] Prerequisites: local node launched and local gateway configured. Go to `Settings->IPFS`, there should be available item `Set up your IPNS keys` and opens `brave://settings/ipfs/keys`
 ### importing keys
@@ -122,8 +120,11 @@
 - [ ] Verify (`macOS`): opening Terminal, and typing `open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege`, and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
 - [ ] Verify (`Linux`) that opening a shell and typing `xdg-open ipfs://bafkreigcnxudvpojjfwncmauociy5q46zsq46oe66cxbyzie3imabuoege` and pressing `Enter` opens Brave and loads an HTML page with the word `PASS`.
 
-### Peers
-## adding
-## removing
-### Key management
-### Pinning content using keys
+## Peers
+- [ ] Prerequisites: local node launched and local gateway configured.
+### adding
+- [ ] Verify when you go to `brave://settings/ipfs/peers` and click by Add button, it shows the dialog that allows to enter new peer connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or somthing like `**/p2p/**` format
+- [ ] Verify if a peer added and node is started it proposes to restart node to apply changes.
+- [ ] Verify node is restarted by clicking restart button, if error would happen it shows error message and suggests to see more on diagnostic page
+### removing
+- [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
