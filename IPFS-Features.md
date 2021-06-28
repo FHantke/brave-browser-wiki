@@ -91,9 +91,9 @@
 ## Peers
 - [ ] Prerequisites: local node launched and local gateway configured.
 ### adding
-- [ ] Verify when you go to `brave://settings/ipfs/peers` and click by Add button, it shows the dialog that allows to enter new peer connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or something like `**/p2p/**` format
-- [ ] Verify if a peer added and node is started it proposes to restart node to apply changes.
-- [ ] Verify node is restarted by clicking restart button, if error would happen it shows error message and suggests to see more on diagnostic page
+- [ ] Verify when you go to `brave://settings/ipfs/peers` and click on the `Add` button, it prompts you to enter a new peer-connection string. It validates name and do not allow to put wrong one, acceptable only CIDs or something like `**/p2p/**` format.
+- [ ] Verify if a peer is added and node is started, it proposes to restart node to apply changes.
+- [ ] Verify node is restarted by clicking `Restart` button, if error would happen it shows error message and suggests to see more on diagnostic page.
 ### removing
 - [ ] Verify a peer can be removed by clicking on Trash icon in the peer line.
 
