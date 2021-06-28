@@ -10,7 +10,6 @@
 - [ ] Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 
 ## Local-node only features
-- [ ] Updating local node to new version
 - [ ] Cache size configuration
 - [ ] Peers list modification
 
