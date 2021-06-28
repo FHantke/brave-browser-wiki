@@ -60,8 +60,12 @@
 - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
 - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate, which at the time of this writing is `0.9.0-rc1` (we'll pick up the latest, so YMMV)
 
-
 ### Automatic redirects
+- [ ] Automatic redirection IPFS resources to IPFS gateway if option enabled on `brave://settings/ipfs` page
+- [ ] Automatic redirect DNSLink to an IPFS version of a website when possible, only if site has header `x-ipfs-path` or DNSLink TXT record if server returned 5xx error
+- [ ] Verify IPFS address bar badge is shown for pages with x-ipfs-header and dnslink TXT record for 5xx error code
+- [ ] Verify by clicking on left side badge in the address bar on IPFS/IPNS pages it shows valid(green) information about ipfs page.
+- [ ] Interstitial page for Ask mode allows to install node or select public gateway (Android: public gateway only)
 
 #### IPFS
 #### DNSLink
