@@ -116,4 +116,3 @@
 - [ ] Verify when you click `Add`, it prompts for key name and generates a new key.
 - [ ] Verify clicking on `Add` and entering an existing key name shows a `This name cannot be used` error message.
 - [ ] Verify when you click on the Trash icon for a key, it removes the key.
-- [ ] Verify when you click on the Rotate icon for self key, it proposes to save the old key with a new name and creates a new self key.
