@@ -36,13 +36,29 @@
 - [ ] Verify the IPFS item available in the image context menu. Select an image and choose `Import to IPFS > Selected image` and import any image from any page. Make sure the image is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
 
 ### importing selected text
-- [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1.txt` and the imported text is available inside the file. The shareable link is copied to the clipboard.
+- [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. The shareable link is copied to the clipboard.
 
 ### importing selected video
 - [ ] Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+- Verify for the following filetypes:
+- [ ] .avi
+- [ ] .mov
+- [ ] .mp3
+- [ ] .mp4
+- [ ] .ogg
+- [ ] .webm
 
 ### sharing a local file using IPFS (without keys)
-- [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> Share Local File Using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard.
+- Verify the IPFS item available in the main app menu. Go to `IPFS -> Share Local File Using IPFS` select and import any local file. Make sure the file is imported, the import folder is opened when import completed successfully, the file can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard.  Share the following filetypes:
+- [ ] .avi
+- [ ] .txt
+- [ ] .json
+- [ ] .mpeg
+- [ ] .mp3
+- [ ] .mp4
+- [ ] .ogg
+- [ ] .wav
+- [ ] .webm
 
 ### sharing a local folder using IPFS (without keys)
 - [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard.
