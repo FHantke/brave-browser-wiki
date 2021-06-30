@@ -39,7 +39,7 @@
 - [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. The shareable link is copied to the clipboard.
 
 ### importing selected video
-- [ ] Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+- Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
 - Verify for the following filetypes:
 - [ ] .avi
 - [ ] .mov
