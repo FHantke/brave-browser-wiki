@@ -124,11 +124,12 @@
 
 ## `Peers`
 
-- [ ] Prerequisites: local node launched and local gateway configured.
+- [ ] Prerequisites: local node launched and local gateway configured on two machines, locally networked (LAN, can be over Wi-Fi).
 
-   ### `Adding`
+   ### `Adding` (see https://github.com/brave/brave-browser/issues/15567#issuecomment-867983572 for full setup steps)
 
    - [ ] Verify when you go to `brave://settings/ipfs/peers` and click on the `Add` button, it prompts you to enter a new peer-connection string. Confirm that entering an incorrect string yields `This name is not valid` upon clicking `Submit`. (Acceptable ones are only CIDs or something like `**/p2p/**` format.)
+   - [ ] 
    - [ ] Verify if a peer is added and node is started, it proposes to restart node to apply changes.
    - [ ] Verify the local node is restarted by clicking `Restart` button; happen it shows error message and suggests to see more on diagnostic page.
 
