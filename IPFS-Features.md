@@ -29,27 +29,27 @@
 
    ### `Importing a page via IPFS`
     
-   - [ ] Verify the IPFS item available in the page context menu. Select `Import to IPFS > This page` and import any page content. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the page content can be downloaded. The shareable link is copied to the clipboard.
+   - [ ] Load `wikipedia.org`. Context-click the page and select `Import to IPFS > This page`. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the page content can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing linked content`
 
-   - [ ] Verify the IPFS item available in the linked content context menu. Select `Import to IPFS > Linked content` and import any linked content from any page. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+   - [ ] Select `Import to IPFS > Linked content` and import any linked content from any page. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected audio`
 
-   - [ ] Verify the IPFS item available in the audio context menu. Select `Import to IPFS > Selected audio` and import any audio from any page. Make sure the audio is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+   - [ ] Verify the IPFS item available in the audio context menu. Select `Import to IPFS > Selected audio` and import any audio from any page. Make sure the audio is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected image`
    
-   - [ ] Verify the IPFS item available in the image context menu. Select an image and choose `Import to IPFS > Selected image` and import any image from any page. Make sure the image is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+   - [ ] Load `google.com`. Select the logo and choose `Import to IPFS > Selected image` and import it. Make sure the image is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard, and opens, when pasting it.
 
    ### `Importing selected text`
 
-   - [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. The shareable link is copied to the clipboard.
+   - [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected video`
 
-   - Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. The shareable link is copied to the clipboard.
+   - Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
       Verify for the following filetypes:
        - [ ] .avi
