@@ -83,7 +83,7 @@
    - [ ] Automatic redirect DNSLink to an IPFS version of a website when possible, only if site has header `x-ipfs-path` or DNSLink TXT record if server returned 5xx error
    - [ ] Verify IPFS address bar badge is shown for pages with x-ipfs-header and dnslink TXT record for 5xx error code
    - [ ] Verify by clicking the `IPFS` badge icon in the address bar on IPFS/IPNS pages it shows valid (green) information about the IPFS resource.
-   - [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android + iOS: public gateway only).
+   - [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in `brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android + iOS: public gateway only).
 
 ## `DNSLink`
 
