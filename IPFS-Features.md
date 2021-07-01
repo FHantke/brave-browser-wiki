@@ -54,7 +54,6 @@
       Verify for the following filetypes:
        - [ ] .avi
        - [ ] .mov
-       - [ ] .mp3
        - [ ] .mp4
        - [ ] .ogg
        - [ ] .webm
