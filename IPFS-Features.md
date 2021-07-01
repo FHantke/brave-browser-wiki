@@ -108,7 +108,7 @@
    - [ ] `ipns://brantly.eth`
    - [ ] `ipns://en.wikipedia-on-ipfs.org`
    - [ ] `ipns://libp2p.io/`
-   - [ ] `ipns://en.wikipedia-on-ipfs.org/wiki/Tokyo_National_Museum.html`
+   - [ ] `ipns://en.wikipedia-on-ipfs.org/wiki/Tokyo`
    - [ ] `ipns://ipfs.io`
 
 ## `Gateway`
