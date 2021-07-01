@@ -49,7 +49,7 @@
 
    ### `Importing selected video`
 
-   - Verify the IPFS item available in the video context menu. Select a video and choose `Import to IPFS > Selected video`/ Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
+   - Load `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`. Play the video, context-click on it, and choose `Import to IPFS > Selected video`. Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
       Verify for the following filetypes:
        - [ ] .avi
