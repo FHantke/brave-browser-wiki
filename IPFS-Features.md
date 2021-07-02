@@ -50,7 +50,7 @@
 
    ### `Importing selected video`
 
-   - Load `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`. Play the video, context-click on it, and choose `Import to IPFS > Selected video`. Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
+   - Load `https://upload.wikimedia.org/wikipedia/commons/c/c0/Big_Buck_Bunny_4K.webm`. Play the video, context-click on it, and choose `Import to IPFS > Selected video`. Make sure the video is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.  For now, only the above Big Bucky test file needs to play inline, until I can figure out support for native/non-native file types.  For the other types, downloading from the IPFS webui (My Node) and ensuring they still play in a media player, is enough.
 
       Verify for the following filetypes:
        - [ ] .avi
