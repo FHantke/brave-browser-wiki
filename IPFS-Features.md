@@ -34,7 +34,7 @@
 
    ### `Importing linked content`
 
-   - [ ] Select `Import to IPFS > Linked content` and import any linked content from any page. Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
+   - [ ] Load `https://search.brave.com/search?q=hiddenmickeys&source=desktop`.  Context-click the first link there and select `Import to IPFS > Linked content`.  Make sure the content is downloaded and imported, the import folder is opened when import completed successfully, and the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected audio`
 
