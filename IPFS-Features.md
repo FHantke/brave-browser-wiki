@@ -53,7 +53,7 @@
 
    ### `Importing selected text`
 
-   - [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. Verify the shareable link is copied to the clipboard and opens when pasting it.
+   - [ ] Load `https://lipsum.com/` and make a text selection.  Context-click and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected video`
 
@@ -82,7 +82,7 @@
 
    ### `Sharing a local folder using IPFS (without keys)`
 
-   - [ ] Verify the IPFS item available in the main app menu. Go to `IPFS -> share Local Folder Using IPFS` select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded and the downloaded one is same as original. The shareable link is copied to the clipboard.
+   - [ ] Go to `IPFS -> share Local Folder Using IPFS`, and select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded, and the downloaded one is same as original. Verify the shareable link is copied to the clipboard, and loads.
 
    ### `Automatic redirects (needs fleshing out)`
 
