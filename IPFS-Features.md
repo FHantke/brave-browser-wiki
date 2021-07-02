@@ -44,6 +44,13 @@
    
    - [ ] Load `google.com`. Select the logo and choose `Import to IPFS > Selected image` and import it. Make sure the image is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard, and opens, when pasting it.
 
+      Verify for the following filetypes:
+       - [ ] .apng
+       - [ ] .gif
+       - [ ] .jpg/.jpeg
+       - [ ] .svg
+       - [ ] .webp
+
    ### `Importing selected text`
 
    - [ ] Verify the IPFS item available in the selected text context menu. Select text and choose `Import Selected Text to IPFS`. Make sure the text is wrapped into a file with id like `file_1` and the imported text is available inside the file. Verify the shareable link is copied to the clipboard and opens when pasting it.
