@@ -5,9 +5,9 @@
 
    ### `go-updater node update`
   
-   - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows `go-ipfs/0.7.0` (or latest released), via the `Version:` section under `Node info`.
-   - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest development candidate.
-   - [ ] Verify, after installing the `0.9.0` or other latest update, that you still have the latest version, upon restart, running without `--use-dev-goupdater-url`.  (Doing so will cause problems with installing IPFS Companion, later.)
+   - [ ] Verify going to `brave://ipfs` and clicking on `Install and start` installs and shows the latest `go-ipfs` release (`https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md`), via the `Version:` section under `Node info`.
+   - [ ] Verify, using the above profile, that restarting Brave with `--use-dev-goupdater-url`, and clicking on `Restart` via `brave://ipfs` downloads and installs the latest in-development (release) candidate.
+   - [ ] Verify, after installing the latest update, that you still have the in-development version, upon restart, running without `--use-dev-goupdater-url`.  (Doing so will cause problems with installing IPFS Companion, later.)
 
    ### `Config`
 
