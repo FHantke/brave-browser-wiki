@@ -38,7 +38,7 @@
 
    ### `Importing selected audio`
 
-   - [ ] Verify the IPFS item available in the audio context menu. Select `Import to IPFS > Selected audio` and import any audio from any page. Make sure the audio is downloaded and imported, the import folder is opened when import completed successfully, the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
+   - [ ] Load `https://samplelib.com/sample-mp3.html`.  Context-click any audio file and select `Import to IPFS > Selected audio`. Make sure the audio is downloaded and imported, the import folder is opened when import completed successfully, and the file can be downloaded. Verify the shareable link is copied to the clipboard and opens when pasting it.
 
    ### `Importing selected image`
    
@@ -84,13 +84,13 @@
 
    - [ ] Go to `IPFS -> share Local Folder Using IPFS`, and select and import any local folder. Make sure the whole folder is imported, the import folder is opened when import completed successfully, files can be downloaded, and the downloaded one is same as original. Verify the shareable link is copied to the clipboard, and loads.
 
-   ### `Automatic redirects (needs fleshing out)`
+   ### `Automatic redirects to IPFS`
 
    - [ ] Automatic redirection of IPFS resources to IPFS gateway if option enabled on `brave://settings/ipfs` page
-   - [ ] Automatic redirect DNSLink to an IPFS version of a website when possible, only if site has header `x-ipfs-path` or DNSLink TXT record if server returned 5xx error
-   - [ ] Verify IPFS address bar badge is shown for pages with x-ipfs-header and dnslink TXT record for 5xx error code
-   - [ ] Verify by clicking the `IPFS` badge icon in the address bar on IPFS/IPNS pages it shows valid (green) information about the IPFS resource.
+   - [ ] Via `brave://settings/ipfs`, set `Automatically redirect to IPFS pages via DNSLink when possible` to `On`.  Load `https://en.wikipedia-on-ipfs.org/wiki/` and confirm it automatically redirects to `ipns://en.wikipedia-on-ipfs.org/wiki/`.
    - [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in `brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android + iOS: public gateway only).
+   - [ ] Load `ipns://brantly.eth` while using `Local node` for the resolver, and confirm there's a clickable info badge to the left of the URL, which says `This content was loaded over the IPFS protocol.`
+
 
 ## `DNSLink`
 
