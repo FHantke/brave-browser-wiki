@@ -86,9 +86,9 @@
 
    ### `Automatic redirects to IPFS`
 
-   - [ ] Automatic redirection of IPFS resources to IPFS gateway if option enabled on `brave://settings/ipfs` page
+   - [ ] Via `brave://settings/ipfs`, set `Redirect IPFS resources to the configured IPFS gateway` to `On`.  Load `https://en.wikipedia-on-ipfs.org/` and confirm it redirects to `http://en.wikipedia-on-ipfs.org.ipns.localhost:48081/wiki/`.
    - [ ] Via `brave://settings/ipfs`, set `Automatically redirect to IPFS pages via DNSLink when possible` to `On`.  Load `https://en.wikipedia-on-ipfs.org/wiki/` and confirm it automatically redirects to `ipns://en.wikipedia-on-ipfs.org/wiki/`.
-   - [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in `brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android + iOS: public gateway only).
+   - [ ] Verify, when loading an IPFS/IPNS resources on a new profile (such as `ipns://brantly.eth`), that the interstitial page (`Ask` mode in `brave://settings/ipfs`) gives you two choices: 1) to install a local node (`Use a local node`) or 2) `Use a public gateway` (Android: public gateway only).
    - [ ] Load `ipns://brantly.eth` while using `Local node` for the resolver, and confirm there's a clickable info badge to the left of the URL, which says `This content was loaded over the IPFS protocol.`
 
 
