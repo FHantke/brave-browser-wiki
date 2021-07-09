@@ -169,8 +169,10 @@
    ### `Add/Remove/Rotate keys`
 
    - [ ] Verify when you click `Add`, it prompts for key name and generates a new key.
-   - [ ] Verify clicking on `Add` and entering an existing key name shows a `This name cannot be used` error message.
-   - [ ] Verify when you click on the Trash icon for a key, it removes the key.
+   - [ ] Verify clicking on `Add` and entering an existing key name shows a `This name cannot be used` error message.   
+   - [ ] Verify clicking on the Rotate key icon for the `self` key prompts for a key name.  Enter a valid name and click `Rotate`.  Confirm the key is created with your entered name, and original hash, and a new `self` key (with a new hash value) is generated.
+   - [ ] Verify clicking on the 3-dot menu to the right of a key gives you two options: `Export key` and `Remove key`.  Choose `Export key` and confirm you get prompted to save the key.  Click `Save` and ensure the key is saved to disk. Delete the key from `brave://settings/ipfs/keys` and now click `Add` to confirm the same key as the original, is added from disk.
+   - [ ] Verify clicking on the 3-dots menu and choosing `Remove key` removes the key from the UI.
 
 
 ***
