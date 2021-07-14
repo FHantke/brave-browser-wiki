@@ -4,7 +4,7 @@ the client IP address and the nature of the request or response.
 
 # When NOT to use the Private CDN
 
-If your service **accepts data from users** and needs to strip the IP addresses, then the Private CDN is **not** for you. Use a TCP load-balancer instead.
+If your service **accepts data from users** and needs to strip the IP addresses, then the Private CDN is **not** for you. Use a TCP load-balancer instead. (See some [internal docs](https://github.com/brave/devops/wiki/Spectrum-configuration) about our typical config.)
 
 If the content you're serving is the **same for all users** then the nature of the request/response doesn't need to be hidden and so all you need to do is strip the IP address.
 
