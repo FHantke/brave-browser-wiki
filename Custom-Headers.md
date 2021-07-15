@@ -8,7 +8,7 @@ In all cases, the header is the same for **all users** of Brave Desktop and ther
 
 ## X-Brave-Partner
 
-The latest list can always be found at <https://laptop-updates.brave.com/promo/custom-headers>.
+The latest list used to be found at <https://laptop-updates.brave.com/promo/custom-headers>, but that has now moved to a static list in <https://github.com/brave/brave-core/blob/master/components/brave_referrals/browser/brave_referrals_service.cc>.
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
