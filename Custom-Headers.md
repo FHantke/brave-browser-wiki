@@ -12,7 +12,6 @@ The latest list can always be found at <https://laptop-updates.brave.com/promo/c
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
-| eaff.com & subdomains | `X-Brave-Partner: eaff` | Custom content for Brave users.
 | uphold.com & subdomains | `X-Brave-Partner: uphold` | Shows different UI to Brave users for payments as a publisher.
 | grammarly.com & subdomain | `X-Brave-Partner: grammarly` | Count Brave visitors as part of an ad campaign
 
