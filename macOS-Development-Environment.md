@@ -1,9 +1,9 @@
 # Prerequisites
 
-You will need the prerequisites below to build Brave on macOS 10.15+. There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements)
+You will need the prerequisites below to build Brave on macOS 10.15+.
 
-- Xcode 12.2+ (can install through the App Store, or by running `xcode-select --install`)
-- MacOS SDK 11.1(or from https://github.com/phracker/MacOSX-SDKs)
+There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements):
+
 - NodeJS LTS Version - currently 12.x (`brew install node@12`) - can also use `nvm`
 > If `node --version` fails when installing `node@12` through Homebrew or reports a different version, run `brew link --force --overwrite node@12`
 - npm 6.x (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable))
