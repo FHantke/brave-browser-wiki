@@ -47,4 +47,10 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.18.x  |    87    | December 1, 2020    | December 10, 2020    | Release delayed, originally `Dec. 8, 2020`|
 | 1.19.x  |    88    | January 13, 2021    | January 19, 2021    | Longer cycle/late release due to Holidays - Migration delayed, originally `Jan 12, 2020` |
 | 1.20.x  |    88    | February 3, 2021    | February 10, 2021    | Migration delayed, originally `Feb 2, 2021`& Release delayed, originally `Feb 9, 2020`|
+| 1.21.x  |    89    | February 23, 2021   | March 3, 2021       | Release delayed, originally `March 2, 2021`|
+| 1.22.x  |    89    | March 16, 2021      | March 23, 2021      |                                            |
+| 1.23.x  |    90    | April 7, 2021       | April 14, 2021      | Migration delayed, originally `April 6, 2021`. Release delayed, originally `April 13, 2021`|
+| 1.24.x  |    90    | April 28, 2021      | May 5, 2021         | Migration delayed, originally `April 27, 2021`. Release delayed, originally `May 4, 2021`|
+| 1.25.x  |    91    | May 19, 2021        | May 27, 2021        |  Migration delayed, originally `May 18, 2021`. Release delayed, originally `May 25, 2021` |
+| 1.26.x  |    91    | June 16, 2021       | June 22, 2021       | Migration delayed, originally `June 15, 2021`. Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 ---                           
