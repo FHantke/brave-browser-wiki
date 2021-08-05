@@ -34,15 +34,25 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
-| 1.27.x  |    92    | July 14, 2021       | July 20, 2021       | Migration delayed, originally `July 13, 2021`Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
-| 1.28.x  |    92    | August 4, 2021      | August 10, 2021     | Migration delayed, originally `August 3, 2021`. |
+| 1.27.x  |    92    | July 14, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.28.x  |    92    | August 4, 2021      | August 10, 2021     |                                            |
 | 1.29.x  |    93    | August 24, 2021     | August 31, 2021     |                                            |
-| 1.30.x  |    93    | September 14, 2021  | September 21, 2021  |                                            |
-| 1.31.x  |    94    | October 5, 2021     | October 12, 2021    |                                            |
-| 1.32.x  |    94    | October 26, 2021    | November 2, 2021    |                                            |
-| 1.33.x  |    95    | November 23, 2021   | November 30, 2021   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
-| 1.34.x  |    95    | December 14, 2021   | December 21, 2021   |                                            |
-| 1.35.x  |    96    | January 18, 2022    | January 25, 2022    | Longer cycle/late release due to Holidays  |
+| 1.30.x  |    94    | September 14, 2021  | September 21, 2021  |                                            |
+| 1.31.x  |    95    | October 12, 2021    | October 19, 2021    |                                            |
+| 1.32.x  |    96    | November 9, 2021    | November 16, 2021   |                                            |
+| 1.33.x  |    96    | November 30, 2021   | December 7, 2021    | Shorter cycle due to C96 & C97 being 49 days rather than 28 days|
+| 1.34.x  |    97    | December 28, 2021   | January 4, 2022     |                                            |
+| 1.35.x  |    98    | January 25, 2022    | February 1, 2022    |                                            |
+| 1.36.x  |    99    | February 22, 2022   | March 1, 2022       |                                            |
+| 1.37.x  |    100   | March 22, 2022      | March 29, 2022      |                                            |
+| 1.38.x  |    101   | April 19, 2022      | April 26, 2022      |                                            |
+| 1.39.x  |    102   | May 17, 2022        | May 24, 2022        |                                            |
+| 1.40.x  |    103   | June 14, 2022       | June 21, 2022       |                                            |
+| 1.41.x  |    103   | July 5, 2022        | July 12, 2022       | Shorter cycle due to C103 & C104 being 42 days rather than 28 days|
+| 1.42.x  |    104   | July 26, 2022       | August 2, 2022      | Shorter cycle due to C103 & C104 being 42 days rather than 28 days|
+| 1.43.x  |    105   | August 23, 2022     | August 30, 2022     |                                            |
+| 1.44.x  |    106   | September 20, 2022  | September 27, 2022  |                                            |
+| 1.45.x  |    107   | October 18, 2022    | October 25, 2022    |                                            |
 
 - All dates are approximate and are subject to change.
 - `Migration Date` is also the cutoff date to add strings that need to be translated for the release. 
@@ -53,26 +63,26 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version         | # of days between releases| Comments                                   |
 |:---------------:|:-------------------------:|---------------------------------------------
-| 1.15.x - 1.16.x | 20 days                   |                                            |
-| 1.16.x - 1.17.x | 21 days                   |                                            |
-| 1.17.x - 1.18.x | 21 days                   |                                            |
-| 1.18.x - 1.19.x | 42 days                   | Longer cycle/late release due to Holidays  |
-| 1.19.x - 1.20.x | 21 days                   |                                            |
-| 1.20.x - 1.21.x | 21 days                   |                                            |
-| 1.21.x - 1.22.x | 21 days                   |                                            |
-| 1.22.x - 1.23.x | 21 days                   |                                            |
-| 1.23.x - 1.24.x | 21 days                   |                                            |
-| 1.24.x - 1.25.x | 21 days                   |                                            |
 | 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.27.x - 1.28.x | 21 days                   |                                            |
 | 1.28.x - 1.29.x | 21 days                   |                                            |
 | 1.29.x - 1.30.x | 21 days                   |                                            |
-| 1.30.x - 1.31.x | 21 days                   |                                            |
-| 1.31.x - 1.32.x | 21 days                   |                                            |
-| 1.32.x - 1.33.x | 28 days                   | Longer cycle due to CR94 - CR95 being 49 days rather than 42 days|
-| 1.33.x - 1.34.x | 21 days                   |                                            |
-| 1.34.x - 1.35.x | 35 days                   | Longer cycle/late release due to Holidays  |
+| 1.30.x - 1.31.x | 28 days                   |                                            |
+| 1.31.x - 1.32.x | 28 days                   |                                            |
+| 1.32.x - 1.33.x | 21 days                   | Shorter cycle due to C96 & C97 being 49 days rather than 28 days|
+| 1.33.x - 1.34.x | 28 days                   |                                            |
+| 1.34.x - 1.35.x | 28 days                   |                                            |
+| 1.35.x - 1.36.x | 28 days                   |                                            |
+| 1.36.x - 1.37.x | 28 days                   |                                            |
+| 1.37.x - 1.38.x | 28 days                   |                                            |
+| 1.38.x - 1.39.x | 28 days                   |                                            |
+| 1.39.x - 1.40.x | 28 days                   |                                            |
+| 1.40.x - 1.41.x | 21 days                   | Shorter cycle due to C103 & C104 being 42 days rather than 28 days|
+| 1.41.x - 1.42.x | 21 days                   | Shorter cycle due to C103 & C104 being 42 days rather than 28 days|
+| 1.42.x - 1.43.x | 28 days                   |                                            |
+| 1.43.x - 1.44.x | 28 days                   |                                            |
+| 1.44.x - 1.45.x | 28 days                   |                                            |
 ---
 
 # Beta & Dev channel dates:
