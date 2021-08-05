@@ -1,8 +1,8 @@
 # Overview 
 
-- Major Release frequency: ~3 weeks
+- Major Release frequency: ~4 weeks
 - Minor / Chemspill frequency: As needed 
-- Every 2nd release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
+- Every release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
 
 Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
 
