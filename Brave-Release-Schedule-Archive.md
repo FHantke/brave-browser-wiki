@@ -86,6 +86,8 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 
 # Nightly channel dates:
 
+| Version | Target Chromium   | Migration Date      | Comments                                  |
+|:-------:|:-----------------:|---------------------|-------------------------------------------|
 | 1.16.x  | 86                | September 8, 2020   |                                           |
 | 1.17.x  | 87                | September 29, 2020  |                                           |
 | 1.18.x  | 87                | October 20, 2020    |                                           |
