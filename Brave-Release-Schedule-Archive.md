@@ -54,6 +54,7 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.25.x  |    91    | May 19, 2021        | May 27, 2021        |  Migration delayed, originally `May 18, 2021`. Release delayed, originally `May 25, 2021` |
 | 1.26.x  |    91    | June 16, 2021       | June 22, 2021       | Migration delayed, originally `June 15, 2021`. Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 
+
 ### Number of days between each release on Release channel
 
 | Version         | # of days between releases| Comments                                   |
@@ -68,6 +69,7 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.22.x - 1.23.x | 21 days                   |                                            |
 | 1.23.x - 1.24.x | 21 days                   |                                            |
 | 1.24.x - 1.25.x | 21 days                   |                                            |
+| 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 
 # Beta & Dev channel dates:
 
@@ -83,6 +85,7 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.23.x  | 90                | March 16, 2021      |                                           |
 | 1.24.x  | 90                | April 6, 2021       |                                           |  
 | 1.25.x  | 91                | April 28, 2021      |                                           |
+| 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 
 # Nightly channel dates:
 
@@ -97,4 +100,5 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.22.x  | 89                | February 3, 2021    |                                           |
 | 1.23.x  | 90                | February 23, 2021   |                                           |
 | 1.24.x  | 90                | March 16, 2021      |                                           |
-| 1.25.x  | 91                | April 6, 2021       |                                           |      
+| 1.25.x  | 91                | April 6, 2021       |                                           |
+| 1.26.x  | 91                | April 28, 2021      |                                           |
