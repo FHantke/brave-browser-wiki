@@ -19,9 +19,9 @@ Here's a typical workflow:
 5. Client unpads the images (typically in memory using the brave-core [`RemovePadding()` function](https://github.com/brave/brave-core/blob/1cb5818aa0b70666c6aeea5ea9c06cc4e712171a/components/brave_private_cdn/private_cdn_helper.cc#L12)).
 6. Client displays the images (typically as a `data:` URI).
 
-Each service using the Private CDN will get its own set of credentials which
+Each service using the Private CDN will get its own set of AWS credentials which
 only allow writing to the S3 keys which beging with a specific prefix
-(`/bravefoo/` in the example above).
+(`/bravefoo/` in the example above). File a [devops issue](https://github.com/brave/devops/issues/new/choose) to get started.
 
 # Choosing the padding length
 
