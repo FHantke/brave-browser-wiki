@@ -14,8 +14,8 @@ Here's a typical workflow:
 
 1. BraveFoo backend service receives `img0001.jpg` and `img0002.jpg`.
 2. Backend pads the images (for example, using the [reference padding implementation](https://github.com/brave/simplepadding)).
-3. Backend uploads `img0001.jpg.pad` and `img0002.jpg.pad` to the pcdn S3 bucket under `/bravefoo/`.
-4. Client fetches `img0001.jpg.pad` and `img0002.jpg.pad`, omitting any identifying headers.
+3. Backend uploads `img0001.jpg.pad` and `img0002.jpg.pad` to the `pcdn` S3 bucket under `/bravefoo/`.
+4. Client fetches `img0001.jpg.pad` and `img0002.jpg.pad` from `pcdn.brave.com`, omitting any identifying headers.
 5. Client unpads the images (typically in memory using the brave-core [`RemovePadding()` function](https://github.com/brave/brave-core/blob/1cb5818aa0b70666c6aeea5ea9c06cc4e712171a/components/brave_private_cdn/private_cdn_helper.cc#L12)).
 6. Client displays the images (typically as a `data:` URI).
 
@@ -78,3 +78,10 @@ following request headers as much as possible:
 Note that these headers are also filtered out on the CDN side, but the CDN
 configuration cannot be examined by end users and so doing it on the client
 is best.
+
+# Development and staging URLs
+
+The production endpoint is `pcdn.brave.com`, but there are also the following endpoints for staging/testing:
+
+- Staging: `pcdn.bravesoftware.com`
+- Dev: `pcdn.brave.software`
