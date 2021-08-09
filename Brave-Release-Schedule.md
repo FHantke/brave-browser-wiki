@@ -35,7 +35,7 @@ The following is our automated schedule for creating and uploading builds to our
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.27.x  |    92    | July 14, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
-| 1.28.x  |    92    | August 4, 2021      | August 10, 2021     |                                            |
+| 1.28.x  |    92    | August 4, 2021      | August 11, 2021     |                                            |
 | 1.29.x  |    93    | August 24, 2021     | August 31, 2021     |                                            |
 | 1.30.x  |    94    | September 14, 2021  | September 21, 2021  |                                            |
 | 1.31.x  |    95    | October 12, 2021    | October 19, 2021    |                                            |
