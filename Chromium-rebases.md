@@ -29,7 +29,7 @@
  
  ```
   cd src
-  git apply brave/patches/patch_name.patch
+  git apply -3 brave/patches/patch_name.patch
   git diff <CHROMIUM_VERSION> --src-prefix=a/ --dst-prefix=b/ --full-index path/to/file/being/patched > brave/patches/patch_name.patch
  ```
 
