@@ -8,6 +8,8 @@ If you navigate to `brave://settings/socialBlocking`, you will see an option to 
 
 ## Extensions
 
+**Note: this is currently broken and waiting for a fix by Google: https://github.com/brave/brave-browser/issues/15754**
+
 If you navigate to `brave://settings/extensions`, you will see an option to enable `Allow extensions to use chrome.identity api`.
 
 ![extensions](https://jumde.github.io/img/google_login_for_extensions.png?123)
