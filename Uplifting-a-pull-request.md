@@ -15,7 +15,7 @@ Painfully hand-created table of contents:
 
 ## What are uplifts?
 - Most of our pull requests go against master ("Nightly")
-- If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("Dev", "Beta", "Release") as needed
+- If approved by the reviewers, the owner then typically submits the same pull request against the other branches ("Beta", "Release") as needed
 - The [uplift approvers](https://github.com/brave/brave-browser/wiki/Triage-Guidelines#uplift-approvers) will take a look at those pull requests and approve/deny 
 - These PRs cannot be merged until CI passes (or have only known failures) and the owner of the PR tests that their fix works on Nightly.
 - If an uplift has been sitting for too long, it is the responsibility of the person that requested the uplift to make sure it gets approved and to ping the needed people.
@@ -31,7 +31,7 @@ This is the preferred way to do it!
 - visit https://ci.brave.com/job/brave-core-create-uplift-prs/
 - click `Build with Parameters`:
     - put the pull request number (must already be merged)
-    - pick the furthest channel you want to uplift to (e.g. `beta` will also pull in `dev`)
+    - pick the furthest channel you want to uplift to (e.g. `release` will also pull in `beta`)
     - click `build`
 - uplifts are created (no need to use CLI)
 
@@ -72,7 +72,7 @@ You submitted a PR to `master` and it was approved and merged 🎉. You now need
 ```
 ./script/uplift.py --uplift-to=release --uplift-using-pr=1632
 ```
-A PR would then be created against `dev`, `beta`, and `release`.
+A PR would then be created against `beta` and `release`.
 
 #### Advanced command line usage
 There are a log of flags you can include. Here are the ones currently present:
@@ -104,7 +104,7 @@ This will show the raw responses sent back from GitHub
 ./script/uplift.py --labels=ui,bug --uplift-using-pr=1632
 ```
 
-6. Do you only want to submit a patch against RELEASE and BETA? (not dev). *Use start-from*:
+6. Do you only want to submit a patch against RELEASE and BETA?. *Use start-from*:
 ```
 ./script/uplift.py --uplift-to=release --start-from=beta --uplift-using-pr=1632
 ```
@@ -136,7 +136,7 @@ optional arguments:
                         as a reference for uplifting
   --start-from START_FROM
                         instead of starting from nightly (default), start from
-                        beta/dev/release
+                        beta/release
   -v, --verbose         prints the output of the GitHub API calls
   -n, --dry-run         don't actually create pull requests; just show a call
                         would be made
@@ -147,7 +147,7 @@ optional arguments:
 ```
 
 ### Helpful notes
-- The "version" used by `master` is determined by looking at the `package.json` in the root of the `brave-browser` repo. At the time of this writing, `0.63.0` is master. When the PR is created for dev, this assigns the milestone `0.62.x`
+- The "version" used by `master` is determined by looking at the `package.json` in the root of the `brave-browser` repo. At the time of this writing, `0.63.0` is master. When the PR is created for beta, this assigns the milestone `0.62.x`
 - You can get verbose output with `--verbose`
 - You can do a "dry run" with `--dry-run`
 - Owner (assignee) is optional
