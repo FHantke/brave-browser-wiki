@@ -62,7 +62,7 @@ Here is an example of a ping sent to our server:
     "collection_id": "AXR6842CER27463NWQL",
     "collection_slot": 356,
     "platform": "android-bc",
-    "wiki": "https://github.com/brave/brave-browser/wiki/Operational_Patterns"
+    "wiki": "https://github.com/brave/brave-browser/wiki/Operational-Patterns"
 }
 ```
 
