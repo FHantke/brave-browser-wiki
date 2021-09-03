@@ -10,7 +10,7 @@ As a user browses the Web, some resources may be irretrievable (e.g. the resourc
 
 When a user chooses to query for earlier copies of the resource, Brave transmits the original resource URL to the Wayback Machine service for lookup (see *Resource Lookup* below). The user is informed whether copies of the requested resource exist, and can then decide if they would like to browse those copies.
 
-Wayback Machine support can be enabled/disabled from within the Brave's Settings (`brave://settings/braveHelpTips/`).
+Wayback Machine support can be controlled from within the Brave's Settings (`brave://settings/braveHelpTips/`).
 
 ## Observed Domain Patterns
 
