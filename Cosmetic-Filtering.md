@@ -6,7 +6,7 @@ Our implementation of cosmetic filters tries to avoid hiding entirely first-part
 4. If it has [more than 5 words of text in it](https://github.com/brave/brave-core/blob/73c843859bcc5f47176f4f052d01d768b83b9349/components/brave_extension/extension/brave_extension/content_cosmetic.ts#L315), don't hide it.
 5. Otherwise apply the filter and hide it.
 
-See [this test page](https://fmarier.github.io/brave-testing/b_ad.html).
+See [this test page](https://fmarier.github.io/brave-testing/cosmetic-filtering.html).
 
 # cosmetic filtering API call:
 
