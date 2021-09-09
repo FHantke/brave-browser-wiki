@@ -114,7 +114,7 @@ _Google does not receive any information about which client is performing these 
 ### Modified Features and Functionality
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened.
-- Media Router Extension (Chromecast) is disabled by default. You can turn it on by toggling the switch in brave://settings.
+- Media Router (Chromecast) is disabled by default on Desktop. You can turn it on by toggling the switch in brave://settings.
 - Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
 - Have StorageManager.estimate report a fixed value [#11543](https://github.com/brave/brave-browser/issues/11543)
 - Many features have randomness added or values generalized as a defense against fingerprinting, including:
