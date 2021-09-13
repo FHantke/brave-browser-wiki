@@ -19,6 +19,7 @@ The request is encoded with the following rules:
 * The first flag is set to true if this is the first day the browser was installed.
 * The woi (week of installation), ref (referral code, not used if default), and dtoi (date of installation) are retrieved from browser state.
 * The adsEnabled flag, set to true if ads are enabled in the browser.
+* The walletActive flag. Set to 7 for daily, 6 for weekly, 4 for monthly, 0 if wallet never used.
 * The arch field, which has the CPU architecture Brave was compiled for. This is sent only if ads are enabled in the browser.
 
 The request is routed to a CDN before it is forwarded to Brave for capture. The CDN performs the following:
