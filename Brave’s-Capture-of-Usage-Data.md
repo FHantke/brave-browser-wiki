@@ -51,6 +51,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
 | dtoi | Date of installation - date of the browser installation (held in browser state for 14 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
 | adsEnabled | Ads status flag | true or false | Browser | true |
+| walletActive | Brave Wallet Status | 4 possible values for daily user, weekly user, monthly user, never used. | Browser | 7
 | arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | Browser | x86_64 |
 
 # What aggregated data is built from the usage requests?
