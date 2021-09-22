@@ -137,6 +137,7 @@ https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=pac
 
 # Check for changes in supported OS versions.
 - [ ] For MacOS check `mac_deployment_target` and `mac_min_system_version` in `build/config/mac/mac_sdk.gni`
+- [ ] For iOS check `ios_deployment_target` in `build/config/ios/ios_sdk_overrides.gni`
 
 # Notify Security team of feature changes
 
