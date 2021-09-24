@@ -10,8 +10,7 @@ As in the old MetaMask extension, we adopt [BIP-39](https://github.com/bitcoin/b
 
 ### Mnemonic generation and encryption
 
-1. User chooses a strong passphrase (ANTHONY: do we have length recommendations?)
-2. 
+1. User chooses a strong passphrase
 
 
 ### HD-Wallets
