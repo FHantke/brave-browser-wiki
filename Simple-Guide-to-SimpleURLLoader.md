@@ -225,7 +225,7 @@ void MyClass:OnSimpleLoaderComplete(std::unique_ptr<std::string> response_body) 
 }
 ```
 
-`response_body` is the body of the HTTP response, normalized into an `std::string` (i.e. not bytes). If there was any sort of error, `response_body` will be `null`. Always null-check `response_body`.
+`response_body` is the body of the HTTP response, normalized into an `std::string` (i.e. not bytes). If there was any sort of error, `response_body` will be `null`. Always null-check `response_body`.  If you need a `response_body` for unsuccessful HTTP status codes, you can use `simple_url_loader_->SetAllowHttpErrorResults(true);`.
 
 If there were any HTTP headers included in the response, the `headers` field on the original `simple_url_loader_` object will contain the response headers. The `headers` field can be null. Always null-check `simple_url_loader_->headers`.
 
