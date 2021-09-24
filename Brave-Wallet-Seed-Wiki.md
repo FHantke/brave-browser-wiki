@@ -13,8 +13,5 @@ As in the old MetaMask extension, we adopt [BIP-39](https://github.com/bitcoin/b
 1. User chooses a strong passphrase
 
 
-### HD-Wallets
-1. 
-
 
 
