@@ -21,12 +21,13 @@ Protocols
 4. Derive a 12-byte (96-bit) initialization vector using `crypto::RandBytes`
 5. Encrypt the Mnemonic under AES-256-GCM-SIV mode with the mnemonic, key, and IV as input.
 
-### MetaMask and Crypto Wallets
+### Auto import from MetaMask and Crypto Wallets
 1. User provides the password that they used to unlock MM and CW
 2.  We will fetch the data stored in `chrome.storage.local` to get salt, iv and encrypted data
 3.  Derived encryption key using PBKDF2 + HMAC-SHA256 with password from step1, salt from step 2  and 10000 iterations
 4.  Then we decrypt the encrypted data using key from step 3 with mod AES-GCM along with iv from step 2
 5.  When we get the decrypted mnemonic, we will do auto import for user
 
-
+### Auto import from legacy Crypto Wallets (24 words mnemonic)
+TBD
 
