@@ -15,7 +15,7 @@ Protocols
 
 
 ### Encryption of Mnemonic
-1. User chooses a strong passphrase
+1. User chooses a strong passphrase. Passwords must be at least 7 characters and contain at least one number and special character, though we STRONGLY RECOMMEND much longer passphrases. 
 2. Derive a 256-bit salt using `crypto::RandBytes`
 3. Derive 256-bit symmetric key using PBKDF2+HMAC-SHA256 with the passphrase + salt as input. We use 100,000 iterations.
 4. Derive a 12-byte (96-bit) initialization vector using `crypto::RandBytes`
