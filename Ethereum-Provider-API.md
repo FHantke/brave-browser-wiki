@@ -78,7 +78,7 @@ window.ethereum.request({ method: 'eth_requestAccounts' })
 
 To make a request for permissions to an account.
 If granted, the website will be able to see the allowed account address.
-The website will also be able to ask the user to approve (sing / send) transactions and to sign messages.
+The website will also be able to ask the user to approve (sing / send) transactions and to sign data.
 Signing transactions and messages require separate approval after the initial account approval.
 
 # Adding other chains
