@@ -71,7 +71,7 @@ Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider
 
 A number of legacy provider methods are provided for backwards compatibility:
 
-### `enable`
+### `enable` (deprecated)
 
 Allows a website to request permissions.
 
@@ -81,7 +81,7 @@ This method is superseded by a `request` with `eth_requestAccounts`.
 Provider.request({ method: 'eth_requestAccounts' })
 ```
 
-### `sendAsync`
+### `sendAsync` (deprecated)
 
 ```js
 Provider.sendAsync(request: Object, callback: Function): void;
@@ -89,7 +89,7 @@ Provider.sendAsync(request: Object, callback: Function): void;
 
 This method is superseded by `request`.
 
-### `send`
+### `send` (deprecated)
 
 ```js
 Provider.send(...args: unknown[]): unknown;
@@ -97,23 +97,23 @@ Provider.send(...args: unknown[]): unknown;
 
 This method is superseded by `request`.
 
-### event: `close`
+### event: `close` (deprecated)
 
 Not yet implemented, but Brave may implement it.
 This event `close` is superseded by `disconnect`.
 
 
-### event: `networkChanged` 
+### event: `networkChanged` (deprecated)
 
 Not yet implemented, but Brave may implement it.
 
 The event `networkChanged` is superseded by `chainChanged`.
 
-### event: `notification`
+### event: `notification` (deprecated)
 
 This event is superseded by `message`.
 
-### event: `message`
+### event: `message` (deprecated)
 
 Brave has not implemented this event yet. 
 
