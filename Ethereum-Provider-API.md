@@ -26,6 +26,50 @@ Provider.request(args: RequestArguments): Promise<unknown>;
 Provider.isConnected(): boolean;
 ```
 
+# Provider events
+
+## `connect`
+
+The Provider emits connect when it:
+
+- first connects to a chain after being initialized.
+- first connects to a chain, after the disconnect event was emitted.
+
+```js
+interface ProviderConnectInfo {
+  readonly chainId: string;
+}
+```
+
+Provider.on('connect', listener: (connectInfo: ProviderConnectInfo) => void): Provider;
+
+## `disconnect`
+
+The Provider emits disconnect when it becomes disconnected from all chains.
+
+```
+Provider.on('disconnect', listener: (error: ProviderRpcError) => void): Provider;
+```
+
+## `chainChanged`
+
+The Provider emits chainChanged when connecting to a new chain.
+
+```js
+Provider.on('chainChanged', listener: (chainId: string) => void): Provider;
+```
+
+## `accountsChanged`
+
+The Provider emits accountsChanged if the accounts returned from the Provider (eth_accounts) change.
+
+```js
+Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider;
+```
+
+
+
+
 # Built-in networks
 
 Chain ID | Network name
@@ -39,4 +83,4 @@ Chain ID | Network name
 
 # Disabling the Ethereum provider object insertion
 
-The Ethereum provider object can be disabled from brave://settings/wallet by changing the Default cryptocurrency wallet to `None`.
+The Ethereum provider object can be disabled from `brave://settings/wallet` by changing the Default cryptocurrency wallet to `None`.
