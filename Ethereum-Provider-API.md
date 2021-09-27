@@ -22,7 +22,7 @@ Provider.request(args: RequestArguments): Promise<unknown>;
 
 ### `window.ethereum.isConnected`
 
-```js
+```ts
 Provider.isConnected(): boolean;
 ```
 
@@ -35,7 +35,7 @@ The Provider emits connect when it:
 - first connects to a chain after being initialized.
 - first connects to a chain, after the disconnect event was emitted.
 
-```js
+```ts
 interface ProviderConnectInfo {
   readonly chainId: string;
 }
@@ -55,7 +55,7 @@ Provider.on('disconnect', listener: (error: ProviderRpcError) => void): Provider
 
 The Provider emits chainChanged when connecting to a new chain.
 
-```js
+```ts
 Provider.on('chainChanged', listener: (chainId: string) => void): Provider;
 ```
 
@@ -63,7 +63,7 @@ Provider.on('chainChanged', listener: (chainId: string) => void): Provider;
 
 The Provider emits accountsChanged if the accounts returned from the Provider (eth_accounts) change.
 
-```js
+```ts
 Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider;
 ```
 
@@ -72,7 +72,7 @@ Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider
 
 Websites can call:
 
-```js
+```ts
 window.ethereum.request({ method: 'eth_requestAccounts' })
 ```
 
@@ -85,14 +85,14 @@ Signing transactions and messages require separate approval after the initial ac
 
 Websites can request that alternate chains be added by using:
 
-```js
+```ts
 window.ethereum.request({ method: 'wallet_addEthereumChain' }, params)
 ```
 
 
 `wallet_addEthereumChain` accepts a single object parameter, specified by the following TypeScript interface:
 
-```js
+```ts
 interface AddEthereumChainParameter {
   chainId: string;
   blockExplorerUrls?: string[];
@@ -136,13 +136,13 @@ Allows a website to request permissions.
 
 This method is superseded by a `request` with `eth_requestAccounts`.
 
-```js
+```ts
 Provider.request({ method: 'eth_requestAccounts' })
 ```
 
 ### `sendAsync` (deprecated)
 
-```js
+```ts
 Provider.sendAsync(request: Object, callback: Function): void;
 ```
 
@@ -150,7 +150,7 @@ This method is superseded by `request`.
 
 ### `send` (deprecated)
 
-```js
+```ts
 Provider.send(...args: unknown[]): unknown;
 ```
 
@@ -183,7 +183,7 @@ The message event is intended for arbitrary notifications not covered by other e
 
 The event will be emitted with an object argument of the following form:
 
-```js
+```ts
 interface ProviderMessage {
   readonly type: string;
   readonly data: unknown;
