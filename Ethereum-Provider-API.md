@@ -9,7 +9,7 @@ This object gives websites the ability to:
 
 # Provider methods
 
-## `window.ethereum.request`
+### `window.ethereum.request`
 
 ```js
 interface RequestArguments {
@@ -20,7 +20,7 @@ interface RequestArguments {
 Provider.request(args: RequestArguments): Promise<unknown>;
 ```
 
-## `window.ethereum.isConnected`
+### `window.ethereum.isConnected`
 
 ```js
 Provider.isConnected(): boolean;
@@ -28,7 +28,7 @@ Provider.isConnected(): boolean;
 
 # Provider events
 
-## `connect`
+### `connect`
 
 The Provider emits connect when it:
 
@@ -43,7 +43,7 @@ interface ProviderConnectInfo {
 
 Provider.on('connect', listener: (connectInfo: ProviderConnectInfo) => void): Provider;
 
-## `disconnect`
+### `disconnect`
 
 The Provider emits disconnect when it becomes disconnected from all chains.
 
@@ -51,7 +51,7 @@ The Provider emits disconnect when it becomes disconnected from all chains.
 Provider.on('disconnect', listener: (error: ProviderRpcError) => void): Provider;
 ```
 
-## `chainChanged`
+### `chainChanged`
 
 The Provider emits chainChanged when connecting to a new chain.
 
@@ -59,7 +59,7 @@ The Provider emits chainChanged when connecting to a new chain.
 Provider.on('chainChanged', listener: (chainId: string) => void): Provider;
 ```
 
-## `accountsChanged`
+### `accountsChanged`
 
 The Provider emits accountsChanged if the accounts returned from the Provider (eth_accounts) change.
 
@@ -69,9 +69,16 @@ Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider
 
 # Legacy Provider methods and events
 
-A number of legacy provider methods are provided for backwards compatability:
+A number of legacy provider methods are provided for backwards compatibility:
 
-## `sendAsync`
+### `enable`
+
+Allows a website to request permissions.
+
+This method is superseded by a `request` with `eth_requestAccounts`.
+
+
+### `sendAsync`
 
 ```js
 Provider.sendAsync(request: Object, callback: Function): void;
@@ -79,7 +86,7 @@ Provider.sendAsync(request: Object, callback: Function): void;
 
 This method is superseded by `request`.
 
-## `send`
+### `send`
 
 ```js
 Provider.send(...args: unknown[]): unknown;
@@ -87,23 +94,23 @@ Provider.send(...args: unknown[]): unknown;
 
 This method is superseded by `request`.
 
-## event: `close`
+### event: `close`
 
 Not yet implemented, but Brave may implement it.
 This event `close` is superseded by `disconnect`.
 
 
-## event: `networkChanged` 
+### event: `networkChanged` 
 
 Not yet implemented, but Brave may implement it.
 
 The event `networkChanged` is superseded by `chainChanged`.
 
-## event: `notification`
+### event: `notification`
 
 This event is superseded by `message`.
 
-## event: `message`
+### event: `message`
 
 Brave has not implemented this event yet. 
 
