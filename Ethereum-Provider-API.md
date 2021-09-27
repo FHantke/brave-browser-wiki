@@ -7,6 +7,25 @@ This object gives websites the ability to:
 - Ask the user (if given permission previously) to sign / submit a transaction
 - Ask the user (if given permission previously) to sign a message
 
+# Provider methods
+
+## `window.ethereum.request`
+
+```js
+interface RequestArguments {
+  readonly method: string;
+  readonly params?: readonly unknown[] | object;
+}
+
+Provider.request(args: RequestArguments): Promise<unknown>;
+```
+
+## `window.ethereum.isConnected`
+
+```js
+Provider.isConnected(): boolean;
+```
+
 # Built-in networks
 
 Chain ID | Network name
