@@ -107,6 +107,24 @@ interface AddEthereumChainParameter {
 }
 ```
 
+# Sending transactions
+
+Sites can request that a transaction be signed / sent by using the `eth_sendTransaction` method.
+
+For more information, see: https://eth.wiki/json-rpc/API#eth_sendtransaction
+
+# Signing data
+
+Signing data can be done with:
+
+- `eth_sign`
+- `personal_sign`
+- `signTypedData`
+- `signTypedData_v1` (same as `signTypedData`)
+- `signTypedData_v3`
+- `signTypedData_v4`
+
+These are not implemented yet in Brave and they are being tracked here: https://github.com/brave/brave-browser/issues/17986
 
 # Legacy Provider methods
 
