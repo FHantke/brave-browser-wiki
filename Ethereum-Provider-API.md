@@ -67,6 +67,47 @@ The Provider emits accountsChanged if the accounts returned from the Provider (e
 Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider;
 ```
 
+
+# Permissions
+
+Websites can call:
+
+```js
+window.ethereum.request({ method: 'eth_requestAccounts' })
+```
+
+To make a request for permissions to an account.
+If granted, the website will be able to see the allowed account address.
+The website will also be able to ask the user to approve (sing / send) transactions and to sign messages.
+Signing transactions and messages require separate approval after the initial account approval.
+
+# Adding other chains
+
+Websites can request that alternate chains be added by using:
+
+```js
+window.ethereum.request({ method: 'wallet_addEthereumChain' }, params)
+```
+
+
+`wallet_addEthereumChain` accepts a single object parameter, specified by the following TypeScript interface:
+
+```js
+interface AddEthereumChainParameter {
+  chainId: string;
+  blockExplorerUrls?: string[];
+  chainName?: string;
+  iconUrls?: string[];
+  nativeCurrency?: {
+    name: string;
+    symbol: string;
+    decimals: number;
+  };
+  rpcUrls?: string[];
+}
+```
+
+
 # Legacy Provider methods and events
 
 A number of legacy provider methods are provided for backwards compatibility:
