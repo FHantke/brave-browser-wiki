@@ -108,7 +108,7 @@ interface AddEthereumChainParameter {
 ```
 
 
-# Legacy Provider methods and events
+# Legacy Provider methods
 
 A number of legacy provider methods are provided for backwards compatibility:
 
@@ -138,23 +138,26 @@ Provider.send(...args: unknown[]): unknown;
 
 This method is superseded by `request`.
 
-### event: `close` (deprecated)
+# Legacy Provider events
+
+
+### `close` (deprecated)
 
 Not yet implemented, but Brave may implement it.
 This event `close` is superseded by `disconnect`.
 
 
-### event: `networkChanged` (deprecated)
+### `networkChanged` (deprecated)
 
 Not yet implemented, but Brave may implement it.
 
 The event `networkChanged` is superseded by `chainChanged`.
 
-### event: `notification` (deprecated)
+### `notification` (deprecated)
 
 This event is superseded by `message`.
 
-### event: `message` (deprecated)
+### `message` (deprecated)
 
 Brave has not implemented this event yet. 
 
