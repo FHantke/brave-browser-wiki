@@ -77,6 +77,9 @@ Allows a website to request permissions.
 
 This method is superseded by a `request` with `eth_requestAccounts`.
 
+```js
+ethereum.request({ method: 'eth_requestAccounts' })
+```
 
 ### `sendAsync`
 
