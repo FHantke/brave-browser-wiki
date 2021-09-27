@@ -11,7 +11,7 @@ This object gives websites the ability to:
 
 ### `window.ethereum.request`
 
-```js
+```ts
 interface RequestArguments {
   readonly method: string;
   readonly params?: readonly unknown[] | object;
