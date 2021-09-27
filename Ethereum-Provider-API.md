@@ -67,8 +67,56 @@ The Provider emits accountsChanged if the accounts returned from the Provider (e
 Provider.on('accountsChanged', listener: (accounts: string[]) => void): Provider;
 ```
 
+# Legacy Provider methods and events
+
+A number of legacy provider methods are provided for backwards compatability:
+
+## `sendAsync`
+
+```js
+Provider.sendAsync(request: Object, callback: Function): void;
+```
+
+This method is superseded by `request`.
+
+## `send`
+
+```js
+Provider.send(...args: unknown[]): unknown;
+```
+
+This method is superseded by `request`.
+
+## event: `close`
+
+Not yet implemented, but Brave may implement it.
+This event `close` is superseded by `disconnect`.
 
 
+## event: `networkChanged` 
+
+Not yet implemented, but Brave may implement it.
+
+The event `networkChanged` is superseded by `chainChanged`.
+
+## event: `notification`
+
+This event is superseded by `message`.
+
+## event: `message`
+
+Brave has not implemented this event yet. 
+
+The message event is intended for arbitrary notifications not covered by other events.
+
+The event will be emitted with an object argument of the following form:
+
+```js
+interface ProviderMessage {
+  readonly type: string;
+  readonly data: unknown;
+}
+```
 
 # Built-in networks
 
