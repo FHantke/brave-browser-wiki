@@ -37,7 +37,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.27.x  |    92    | July 14, 2021       | July 20, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
 | 1.28.x  |    92    | August 4, 2021      | August 11, 2021     |                                            |
 | 1.29.x  |    93    | August 24, 2021     | August 31, 2021     |                                            |
-| 1.30.x  |    94    | September 17, 2021  | September 23, 2021  |Migration delayed. Originally set as `September 14, 2021`. Release delayed. Originally set as `September 21, 2021`  |
+| 1.30.x  |    94    | September 17, 2021  | September 28, 2021  |Migration delayed. Originally set as `September 14, 2021`. Release delayed. Originally set as `September 21, 2021`  |
 | 1.31.x  |    95    | October 12, 2021    | October 19, 2021    |                                            |
 | 1.32.x  |    96    | November 9, 2021    | November 16, 2021   |                                            |
 | 1.33.x  |    96    | November 30, 2021   | December 7, 2021    | Shorter cycle due to C96 - C97 being 49 days rather than 28 days|
