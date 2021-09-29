@@ -34,7 +34,7 @@ See https://community.brave.com/t/fingerprinting-how-do-we-know-its-actually-wor
 
 ## Differences between "standard" and "strict" protections
 
-Brave has two levels of fingerprinting protections.  In the default, "standard" configuration, Brave adds subtle noise to APIs commonly used for fingeprinting. This small amount of noise is enough to make you look different to fingerprinting scripts, without breaking websites, and will provide good protections against web-scale online trackers.
+Brave has two levels of fingerprinting protections.  In the default, "standard" configuration, Brave adds subtle noise to APIs commonly used for fingerprinting. This small amount of noise is enough to make you look different to fingerprinting scripts, without breaking websites, and will provide good protections against web-scale online trackers.
 
 Brave also includes a "strict" option. When set to "strict" mode, Brave only returns random values from APIs commonly used by fingerprinters.  This provides a higher level of protection against highly determined attackers, who may attempt statistical and / or targeted attacks to identify users. This mode will also break websites who depend on these features to work correctly.
 
