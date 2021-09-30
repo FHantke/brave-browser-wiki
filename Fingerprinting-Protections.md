@@ -42,10 +42,15 @@ Brave also includes a "strict" option. When set to "strict" mode, Brave only ret
 
 * Canvas: [#9186](https://github.com/brave/brave-browser/issues/9186)
 * WebGL: [#9188](https://github.com/brave/brave-browser/issues/9188)
+* WebGL v2 APIs: [#9189](https://github.com/brave/brave-browser/issues/9189)
+* WebGL Extensions: [#15882](https://github.com/brave/brave-browser/issues/15882)
+* User Agent: [#9190]((https://github.com/brave/brave-browser/issues/9190)
 * Web Audio: [#9187](https://github.com/brave/brave-browser/issues/9187)
 * Plugins: [#9435](https://github.com/brave/brave-browser/issues/9435), [#10597](https://github.com/brave/brave-browser/issues/10597)
 * Hardware Concurrency: [#10808](https://github.com/brave/brave-browser/issues/10808)
 * Enumerate Devices (order): [#11271](https://github.com/brave/brave-browser/issues/11271)
+* Enumerate Devices (labels and ids): [#8666](https://github.com/brave/brave-browser/issues/8666)
+* Dark Mode: [#15265](https://github.com/brave/brave-browser/issues/15265)
 
 Progress on the randomization for additional fingerprint-able sources can be found here: https://github.com/brave/brave-browser/issues/8787
 
