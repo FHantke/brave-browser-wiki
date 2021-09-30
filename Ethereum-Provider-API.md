@@ -81,6 +81,9 @@ If granted, the website will be able to see the allowed account address.
 The website will also be able to ask the user to approve (sing / send) transactions and to sign data.
 Signing transactions and messages require separate approval after the initial account approval.
 
+Permissions can be revoked in brave://settings/content/ethereum
+A user can also open up the wallet panel and disconnect a connected site when they are on that site. 
+
 # Adding other chains
 
 Websites can request that alternate chains be added by using:
