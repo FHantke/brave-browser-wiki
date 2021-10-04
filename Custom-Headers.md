@@ -12,7 +12,6 @@ The latest list used to be found at <https://laptop-updates.brave.com/promo/cust
 
 | **Site**        | Header | Reason  |
 | ----------------| -------| ------- |
-| uphold.com & subdomains | `X-Brave-Partner: uphold` | Shows different UI to Brave users for payments as a publisher.
 | grammarly.com & subdomain | `X-Brave-Partner: grammarly` | Count Brave visitors as part of an ad campaign
 
 ## Yandex CLID
