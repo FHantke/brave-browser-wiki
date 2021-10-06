@@ -344,6 +344,20 @@ _`Brave.Sync.ProgressTokenEverReset`_ **[D]** **[A]**
 1. 0-Normal reset of progress marker due to 7th failure
 2. 1-Reset progress marker due to 7th failure happening twice in a row in less than 30 minutes
 
+### Q37: Are you a daily user of brave wallet?
+_`Brave.Wallet.UsageDaily`_ **[D]** **[A]**
+1. Yes
+2. No
+
+### Q38: Are you a weekly user of brave wallet?
+_`Brave.Wallet.UsageWeekly`_ **[D]** **[A]**
+1. Yes
+2. No
+
+### Q39: Are you a monthly user of brave wallet?
+_`Brave.Wallet.UsageMonthly`_ **[D]** **[A]**
+1. Yes
+2. No
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
