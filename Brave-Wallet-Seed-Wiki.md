@@ -29,5 +29,9 @@ Protocols
 5.  When we get the decrypted mnemonic, we will do auto import for user
 
 ### Auto import from legacy Crypto Wallets (24 words mnemonic)
-TBD
-
+1. User provides the password that they used to unlock CW which has 24 words mnemonic
+2. We will fetch the data stored in `chrome.storage.local` to get salt, iv, encrypted data and also argon2 params and salt for argon2
+3. Derived new password using argon2 with password from step1 along with argon2 params and argon2 salt
+4. Derived encryption key using PBKDF2 + HMAC-SHA256 with password from step3, salt from step 2  and 10000 iterations
+5. Then we decrypt the encrypted data using key from step 3 with mod AES-GCM along with iv from step 2
+6. When we get the decrypted mnemonic, we will do auto import for user
