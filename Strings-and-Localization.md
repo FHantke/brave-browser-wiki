@@ -200,7 +200,7 @@ Swahili    (sw)
   - `&#8230;` - ellipsis(`…`)
   - **Note:** standalone `&amp;` (or `&amp;amp;`), `&lt;` (or `&amp;lt;`), or `&gt;` (or `&amp;gt;`), if needed in the localized string, should be left as they are. For example, `Bob &amp; Jim`, or `System &gt; Settings` should stay that way.
 
-- Do not translate branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads".
+- In branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads", do not translate Brave, but do translate the feature name ("Rewards", "Ads", etc.).
 
 - Do not translate terms inside double square or squiggly brackets - they are placeholders (for example `[[user]]` or `{{user}}` should be left as is).
 
