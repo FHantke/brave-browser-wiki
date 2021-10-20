@@ -358,6 +358,20 @@ _`Brave.Wallet.UsageWeekly`_ **[D]** **[A]**
 _`Brave.Wallet.UsageMonthly`_ **[D]** **[A]**
 1. Yes
 2. No
+
+### Q40: Did you switch search engines this week, and if so from what to what?
+_`Brave.Search.SwitchEngine`_ **[D]** **[A]**
+
+0. No
+1. Yes, from Brave to Google
+2. Yes, from Brave to DuckDuckGo
+3. Yes, from Brave to Other
+4. Yes, from Google to Brave
+5. Yes, from DuckDuckGo to Brave
+6. Yes, from Other to Brave
+7. Yes, from Other to Other
+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
