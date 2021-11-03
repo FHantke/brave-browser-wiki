@@ -13,7 +13,7 @@ Pretty much everything except for:
 
 # Proper titles
 
-Something close tot he issue title will be used in release notes. You can see release notes here:
+Something close to the issue title will be used in release notes. You can see release notes here:
 https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md
 
 The issue title do not need to contain the prefix word like "Added", "Updated", "Fixed".
