@@ -61,3 +61,7 @@ Traceback (most recent call last):
 ```
 
 remove `src/out`, `src/brave/vendor`, `src/brave/build/`, run `npm run init` and start the build again.
+
+## Rust error on build
+
+When the Rust bundles get bumped you'd have to remove `src/brave/build/rustup` and then do sync or init again.
