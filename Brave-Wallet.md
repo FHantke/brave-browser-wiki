@@ -52,3 +52,10 @@ Permissions in Brave Wallet are managed by content settings. They can be modifie
 brave://settings/content/ethereum
 
 If a Dapp has previously requested access to a page and was given permission, then it will show up in this page as well.
+
+
+## HD Wallet
+
+Bitcoin and Ethereum generate addresses in different ways, but they share the same key derivation implementations as BIP-32 compatible wallets. 
+
+The Brave wallet implements BIP-32 (HD wallet), BIP-39 (Mnemonic keywords), BIP-43 (Multipurpose HD wallet structure), and BIP-44 (Multicurrency and multi account wallets).
