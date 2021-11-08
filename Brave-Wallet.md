@@ -81,6 +81,35 @@ Updates will occur as part of the normal component update flow in Brave describe
 
 The component is downloaded into the user's profile directory in a subdirectory named `BraveWallet/`.
 
+
+## Transactions
+
+If an account has given permissions for an address to a page. That page can request the user to sign a transaction.  The Brave Wallet will try to deduce what the transaction does to inform the user.  The details of the transaction will also be shown.  Transaction approval will always happen from the Brave Wallet panel. Transactions are initiated by pages that use the `eth_sendTransaction` method in a `window.ethereum.request` call.
+
+Transaction signatures use the selected network’s chain ID to avoid replay protection.
+
+## Signing data
+
+If an account has given permissions for an address to a page. That page can request that the account sign a message. 
+
+There will be a number of signing methods exposed, currently the supported methods are:
+`eth_sign` and `personal_sign`
+
+## Adding other EVM compatible chains
+
+EIP 3085 describes `wallet_addEthereumChain` in https://eips.ethereum.org/EIPS/eip-3085
+EVM compatible chains can be suggested by pages for adding alternate chains such as Binance Smart Chain, L2s such as Polygon, Arbitrum, Optimism, and side chains such as SKALE, xDAI.  Not all of these chains need to have a native currency of ETH, for example Binance Smart Chain has a native symbol of BNB and Polygon has MATIC.
+
+We may preload some chains and L2s to avoid phishing attempts from a page wanting to add another network. 
+
+A page can specify the following fields: 
+`NetworkName`, `NetworkURL`, `ChainID`, `CurrencySymbol`
+
+A list of known EVM networks can be found here: https://chainid.network/ we’ll make a subset of this list as our officially supported list.
+We’ll give a UI warning if a page is requesting something to be added that’s not in that list. 
+
+The list of added networks can also be managed in preferences.
+
 ## Brave developer information
 
 For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
