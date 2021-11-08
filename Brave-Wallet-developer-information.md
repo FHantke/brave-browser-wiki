@@ -5,6 +5,25 @@ Please see https://github.com/brave/brave-browser/wiki/Brave-Wallet for general 
 Please see https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API for information about the global Ethereum provider object.
 
 
+## Architecture
+
+The Brave Wallet is natively implemented as part of [brave-core](https://github.com/brave/brave-core).
+Front ends of the Brave Wallet include the Brave desktop WebUI page and panel, Android native UI, and iOS native UI. 
+These front ends communicate with the Brave Wallet through the [Brave Wallet mojo interface](https://github.com/brave/brave-core/blob/master/components/brave_wallet/common/brave_wallet.mojom).
+
+Most front end functionality is accomplished through one of the following singleton controllers:
+- `KeyringController`: Implements the HD wallet, Ledger & Trezor integration, account management, and signing.
+- `EthJsonRpcController`: Deals with the ETH JSON RPC API, as well as things like the user's current network
+- `SwapController`: Implements swapping related functionality through the 0x API
+- `AssetRatioController`: used for cryptocurrency prices over time
+- `ERCTokenRegistry`: List of tokens and coins that are supported (This is likely to get renamed in the future).
+- `EthTxController`: For transaction management such as creation, broadcasting, and storing transactions.
+- `BraveWalletService`: For basically everything else including the default wallet setting, user assets, permission checks, importing functionality and much more.
+
+Each controller typically also has an `Observer` named after it which allows the front end to update dynamically as changes are made in other places (such as settings). 
+
+For each renderer there is also a `BraveWalletProvider` which is used by the renderer process for interaction from `window.ethereum`.
+
 ## HD Wallet
 
 Bitcoin and Ethereum generate addresses in different ways, but they share the same key derivation implementations as BIP-32 compatible wallets. 
