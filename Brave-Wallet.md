@@ -119,7 +119,7 @@ On first setup of the Brave Wallet, a user will be given the option to automatic
 
 Users can still use Crypto Wallets by changing their default wallet in settings. 
 
-Users can still use MetaMask as the Brave Wallet does not have any special handling for it and allows it to overwrite window.ethereum by default.  This can be changed in brave://settings/wallet.
+Users can still use MetaMask as the Brave Wallet does not have any special handling for it and allows it to overwrite `window.ethereum` by default.  This can be changed in brave://settings/wallet.
 
 A user can also later import accounts from a hex string or JSON format.  When restoring Crypto Wallets from seed words, we support both the legacy derivation paths that are specific to Crypto wallets and the new BIP39 compatible ones.  The user will be given the option to select which one if they enter 24 words.  If a user doesn't know which version they are on, and a user picks the wrong way and doesn't see their balance, they can try again with the other option.
 
