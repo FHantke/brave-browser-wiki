@@ -112,6 +112,17 @@ We’ll give a UI warning if a page is requesting something to be added that’s
 
 The list of added networks can also be managed in preferences.
 
+## Upgrading to the Brave Wallet
+
+Users of Crypto Wallets and MetaMask have the ability to import their HD wallets to Brave Wallet.
+On first setup of the Brave Wallet, a user will be given the option to automatically import from MetaMask or from Crypto Wallets if Brave detects it is installed.  If the user selects to import, the browser will ask for their password and use that to decode their seed words. The password never leaves the user's device and is not kept in memory.
+
+Users can still use Crypto Wallets by changing their default wallet in settings. 
+
+Users can still use MetaMask as the Brave Wallet does not have any special handling for it and allows it to overwrite window.ethereum by default.  This can be changed in brave://settings/wallet.
+
+A user can also later import accounts from a hex string or JSON format.  When restoring Crypto Wallets from seed words, we support both the legacy derivation paths that are specific to Crypto wallets and the new BIP39 compatible ones.  The user will be given the option to select which one if they enter 24 words.  If a user doesn't know which version they are on, and a user picks the wrong way and doesn't see their balance, they can try again with the other option.
+
 ## Brave developer information
 
 For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
