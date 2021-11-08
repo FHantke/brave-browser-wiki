@@ -53,6 +53,13 @@ brave://settings/content/ethereum
 
 If a Dapp has previously requested access to a page and was given permission, then it will show up in this page as well.
 
+## Hardware wallets
+
+We support both Ledger and Trezor wallets. 
+
+Ledger will works through the ledger JS bridge.  Which means code for hardware wallet can only run when the page or panel is open.  When a user first sets up a hardware wallet it will store the metadata about the hardware wallet in preferences. A user will be prompted to connect their hardware wallet when they want to send a transaction with an address that belongs to the hardware wallet or sign data.
+
 ## Brave developer information
 
 For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
+
