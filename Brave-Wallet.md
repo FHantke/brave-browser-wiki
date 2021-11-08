@@ -95,10 +95,12 @@ If an account has given permissions for an address to a page. That page can requ
 There will be a number of signing methods exposed, currently the supported methods are:
 `eth_sign` and `personal_sign`
 
-## Adding other EVM compatible chains
+## Adding and switching to other EVM compatible chains
 
-EIP 3085 describes `wallet_addEthereumChain` in https://eips.ethereum.org/EIPS/eip-3085
-EVM compatible chains can be suggested by pages for adding alternate chains such as Binance Smart Chain, L2s such as Polygon, Arbitrum, Optimism, and side chains such as SKALE, xDAI.  Not all of these chains need to have a native currency of ETH, for example Binance Smart Chain has a native symbol of BNB and Polygon has MATIC.
+EIP 3085 describes `wallet_addEthereumChain` in https://eips.ethereum.org/EIPS/eip-3085 for adding EVM compatible chains.
+EIP 3326 describes `wallet_switchEthereumChain` in https://eips.ethereum.org/EIPS/eip-3326 for switching to EVM compatible chains.
+
+Some EVM compatible chain examples include Binance Smart Chain, L2s such as Polygon, Arbitrum, Optimism, and side chains such as SKALE, xDAI.  Not all of these chains need to have a native currency of ETH, for example Binance Smart Chain has a native symbol of BNB and Polygon has MATIC.
 
 We may preload some chains and L2s to avoid phishing attempts from a page wanting to add another network. 
 
