@@ -1,0 +1,2 @@
+Brave Wallet was created as part of the Brave browser in order to bring cryptocurrency and web 3 access to users.
+Users can access the Brave Wallet by navigating to brave://wallet or from the wallet icon at the top of the browser.
