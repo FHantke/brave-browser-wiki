@@ -131,13 +131,14 @@ These are not implemented yet in Brave and they are being tracked here: https://
 
 # Provider properties
 
-### `selectedAddress`
+### `selectedAddress` (Deprecated)
 
-The string address of the first allowed address or undefined if no account is currently allowed.  Note that when the keyring is locked it is undefined.
+The string address of the first allowed address or undefined if no account is currently allowed.  Note that when the keyring is locked it is undefined.  Since this property is deprecated, this property is provided for webcompat reasons only.
 
-### `chainId`
+### `chainId` (Deprecated)
 
 The chain ID of the currently connected network.
+Since this property is deprecated, this property is provided for webcompat reasons only.
 
 # Legacy Provider methods
 
