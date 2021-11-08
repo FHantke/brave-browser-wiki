@@ -2,7 +2,7 @@ Brave Wallet was created as part of the Brave browser in order to bring cryptocu
 
 Users can access the Brave Wallet by navigating to brave://wallet or from the wallet icon at the top of the browser.
 
-The Brave wallet will be home to a user's local cryptocurrency wallet, Brave Rewards wallet, credit cards, and other exchanges that we support oauth’ing to such as Uphold, Binance, and Gemini or our own Creators portal (so that creators can manage their earnings balance through Brave Wallet)
+The Brave wallet will be home to a user's local cryptocurrency wallet, Brave Rewards wallet, credit cards, and other exchanges that we support oauth’ing to.
 
 ## Ethereum provider global object
 
