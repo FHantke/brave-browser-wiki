@@ -1,5 +1,8 @@
 The following information is mostly useful to Brave developers. 
+
 Please see https://github.com/brave/brave-browser/wiki/Brave-Wallet for general information about the Brave Wallet.
+
+Please see https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API for information about the global Ethereum provider object.
 
 
 ## HD Wallet
