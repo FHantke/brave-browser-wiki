@@ -66,3 +66,15 @@ Which account paths are created / derived are stored in preferences as well. We 
 
 Bitcoin and Ethereum use an elliptic curve named secp256k1. We use Boring SSL in Brave, but that library does not support secp256k1.  Instead we use `libsecp256k1` from [Bitcoin Core](https://github.com/bitcoin/bitcoin). 
 
+
+## Address formats
+
+On Ethereum, both externally-owned accounts and contract accounts are 40-character hex encoded strings with a “0x” prefix.  0x + the last 20 bytes of the `keccak` hash of the public key.
+
+For testing: http://bip32.org/
+
+Bitcoin addresses are encoded using `bech32` base 58 encoding (base-58 encoding also from https://github.com/bitcoin/bitcoin).
+
+https://en.bitcoin.it/wiki/BIP_0173#Segwit_address_format
+https://en.bitcoin.it/wiki/Segregated_Witness
+
