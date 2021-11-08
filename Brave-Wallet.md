@@ -55,4 +55,4 @@ If a Dapp has previously requested access to a page and was given permission, th
 
 ## Brave developer information
 
-For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet--developer-information
+For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
