@@ -45,3 +45,10 @@ You can visit https://chainlist.org/ for a list of supported chains.
 ### Reset Wallet
 
 This allows you to reset all of your wallet state back to the original default. Ensure you have a backup of your seed phrase and imported keys before using this option.
+
+### Ethereum permission management
+
+Permissions in Brave Wallet are managed by content settings. They can be modified for which sites have access to your addresses here:
+brave://settings/content/ethereum
+
+If a Dapp has previously requested access to a page and was given permission, then it will show up in this page as well.
