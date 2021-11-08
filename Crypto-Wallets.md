@@ -1,4 +1,4 @@
-# Crypto Wallets
+# Crypto Wallets (Deprecated)
 
 ## Install of Crypto Wallets on first use
 
