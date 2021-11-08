@@ -129,6 +129,16 @@ Signing data can be done with:
 
 These are not implemented yet in Brave and they are being tracked here: https://github.com/brave/brave-browser/issues/17986
 
+# Provider properties
+
+### `selectedAddress`
+
+The string address of the first allowed address or undefined if no account is currently allowed.  Note that when the keyring is locked it is undefined.
+
+### `chainId`
+
+The chain ID of the currently connected network.
+
 # Legacy Provider methods
 
 A number of legacy provider methods are provided for backwards compatibility:
