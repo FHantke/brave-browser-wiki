@@ -8,6 +8,30 @@ Bitcoin and Ethereum generate addresses in different ways, but they share the sa
 
 The Brave wallet implements BIP-32 (HD wallet), BIP-39 (Mnemonic keywords), BIP-43 (Multipurpose HD wallet structure), and BIP-44 (Multicurrency and multi account wallets).
 
+
+
+1. Generate mnemonic words from random 128-256bits (BIP39 https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+2. Generate seed (512 bits) from the mnemonic words in step 1 with an empty passphrase (salt `mnemonic`) using PBKDF2 (BIP39).  Note: The test vectors use passphrase TREZOR (salt `mnemonicTREZOR`).
+3. Use the seed to generate the master key / root key (256bits) and master chain code (256 bits) (BIP32 https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
+4. Use the master private key above to generate a master public key using secp256k1
+5. Derive the extended private key and public key at least with 3 hardened derivations and 1 normal derivation from master keys before we can use the keys (BIP44 https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
+m / purpose' / coin_type' / account' / change / address_index
+Where purpose’ is 44'
+coin_type’ is 60' (See https://github.com/satoshilabs/slips/blob/master/slip-0044.md#registered-coin-types for example Ethereum is 60’ and Ethereum Classic is 61’ Bitcoin is 0’, Binance Smart Contract is 519’, Binance is 714’). Note that MetaMask uses 60’ for the key path no matter which networks you add. We do the same for compatibility.
+account’ is : 0'
+change is: 0
+
+Account 0
+Private key: m/44'/60'/0'/0/0
+Public key: M/44'/60'/0'/0/0
+
+…
+
+Account N
+Private key: m/44'/60'/0'/N/0
+Public key: M/44'/60'/0'/N/0
+
+
 The mnemonic words are encrypted with AES-GCM symmetric encryption and stored in preferences with the user passphrase. 
 
 Which account paths are created / derived are stored in preferences as well. We will support discovery of them when restoring too via https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#account-discovery
