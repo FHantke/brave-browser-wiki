@@ -2,6 +2,9 @@ Brave Wallet was created as part of the Brave browser in order to bring cryptocu
 
 Users can access the Brave Wallet by navigating to brave://wallet or from the wallet icon at the top of the browser.
 
+## Ethereum provider global object
+
+The `window.ethereum` object is provided by Brave's wallet to web pages. You can read about it here: https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API
 
 ## Settings
 
