@@ -52,3 +52,7 @@ Permissions in Brave Wallet are managed by content settings. They can be modifie
 brave://settings/content/ethereum
 
 If a Dapp has previously requested access to a page and was given permission, then it will show up in this page as well.
+
+## Brave developer information
+
+For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet--developer-information
