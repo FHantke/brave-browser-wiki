@@ -59,6 +59,28 @@ We support both Ledger and Trezor wallets.
 
 Ledger will works through the ledger JS bridge.  Which means code for hardware wallet can only run when the page or panel is open.  When a user first sets up a hardware wallet it will store the metadata about the hardware wallet in preferences. A user will be prompted to connect their hardware wallet when they want to send a transaction with an address that belongs to the hardware wallet or sign data.
 
+## Updatable data files
+
+Some data that the Brave Wallet uses is retrieved at run time from the component update server so that it can be updated out of line from browser release updates. This component is named "Brave Wallet data files" and you can see it in brave://components/
+
+- **Name: Contract metadata**  
+Source: https://github.com/MetaMask/contract-metadata/blob/master/contract-map.json and coinmarketcap data for alternate chains like BSC.  
+Purpose: To list assets that a user can watch and interact with
+
+- **Name: List of network chains**  
+Source: Subset of https://chainid.network/chains.json  
+Purpose: For working with EIP-3085
+
+- **Name: List of popular Dapps**  
+Source: We’ll create a customized list of known Dapps  
+Purpose: For adding a browse popular Dapps feature
+
+Desktop, Android and iOS will have the same component ID `bbckkcdiepaecefgfnibemejliemjnio`.
+
+Updates will occur as part of the normal component update flow in Brave described here: https://github.com/brave/brave-browser/wiki/Component-Extensions
+
+The component is downloaded into the user's profile directory in a subdirectory named `BraveWallet/`.
+
 ## Brave developer information
 
 For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
