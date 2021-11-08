@@ -114,6 +114,23 @@ interface AddEthereumChainParameter {
 }
 ```
 
+# Switching to other chains
+
+Websites can request that the browser changes to a different chain by using `wallet_switchEthereumChain`
+
+```ts
+window.ethereum.request({ method: 'wallet_switchEthereumChain' }, params)
+```
+
+
+`wallet_switchEthereumChain` accepts a single object parameter, specified by the following TypeScript interface:
+
+```ts
+interface SwitchEthereumChainParameter {
+  chainId: string;
+}
+```
+
 # Sending transactions
 
 Sites can request that a transaction be signed / sent by using the `eth_sendTransaction` method.
