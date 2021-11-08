@@ -78,3 +78,6 @@ Bitcoin addresses are encoded using `bech32` base 58 encoding (base-58 encoding 
 https://en.bitcoin.it/wiki/BIP_0173#Segwit_address_format
 https://en.bitcoin.it/wiki/Segregated_Witness
 
+## Working with big numbers
+
+It is common to work in very large numbers in Ethereum for both ETH and for tokens.  For example eth = 1,000,000,000,000,000,000 wei.  We use `unsigned _ExtInt(256)` type for working with these large numbers. For mojo interfaces which allow communication across processes and languages, we support a second format of a hex encoded string, e.g. “0xDE0B6B3A7640000”.  There are conversion functions to and from the hex string format and the `uint256_t` function.
