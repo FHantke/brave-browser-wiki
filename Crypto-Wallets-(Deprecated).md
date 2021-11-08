@@ -1,3 +1,5 @@
+This page contains old information that is no longer valid.  It is being retained for a period of time only for historical reference.
+
 ## Install of Crypto Wallets on first use
 
 A user can install Crypto Wallets by either navigating to `brave://wallet`, or by going to a Dapp and confirming to install via the infobar that comes up.
