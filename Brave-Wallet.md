@@ -17,6 +17,9 @@ The `window.ethereum` object is provided by Brave's wallet to web pages. You can
 
 It is exposed for Ethereum and other EVM compatible networks.  It communicates over ETH JSON RPC API with an endpoint defined by whatever is the current selected network.
 
+Solana Dapp support will be provided via an adapter: https://github.com/solana-labs/wallet-adapter.
+For webcompat reasons with Phantom wallet, users may also opt into allowing the wallet to expose `window.solana`.
+
 ## Settings
 
 Brave Wallet settings can be accessed from: brave://settings/wallet
