@@ -29,6 +29,8 @@ For each renderer there is also a `BraveWalletProvider` which is used by the ren
 You can debug Dapps that aren't compatible with our wallet but do work with MetaMask by using a Proxy object. 
 It may also be useful to add logging for the method name in `components/brave_wallet/renderer/brave_wallet_js_handler.cc`.
 
+Paste this into the console of the Dapp that isn't working:
+
 ```
 const handler = {
   get: function(target, prop, receiver) {
