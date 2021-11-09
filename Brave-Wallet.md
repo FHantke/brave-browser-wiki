@@ -15,6 +15,8 @@ The Brave wallet will be home to a user's local cryptocurrency wallet, Brave Rew
 
 The `window.ethereum` object is provided by Brave's wallet to web pages. You can read about it here: https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API
 
+It is exposed for Ethereum and other EVM compatible networks.  It communicates over ETH JSON RPC API with an endpoint defined by whatever is the current selected network.
+
 ## Settings
 
 Brave Wallet settings can be accessed from: brave://settings/wallet
