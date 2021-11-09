@@ -4,6 +4,13 @@ Users can access the Brave Wallet by navigating to brave://wallet or from the wa
 
 The Brave wallet will be home to a user's local cryptocurrency wallet, Brave Rewards wallet, credit cards, and other exchanges that we support oauth’ing to.
 
+## Supported networks
+
+- Ethereum and other EVM compatible networks (Polygon, Avalanche, etc)
+- Solana (coming soon)
+- Filecoin (coming soon)
+
+
 ## Ethereum provider global object
 
 The `window.ethereum` object is provided by Brave's wallet to web pages. You can read about it here: https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API
