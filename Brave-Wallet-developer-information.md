@@ -24,6 +24,31 @@ Each controller typically also has an `Observer` named after it which allows the
 
 For each renderer there is also a `BraveWalletProvider` which is used by the renderer process for interaction from `window.ethereum`.
 
+## Debugging Dapps
+
+You can debug Dapps that aren't compatible with our wallet but do work with MetaMask by using a Proxy object. 
+It may also be useful to add logging for the method name in `components/brave_wallet/renderer/brave_wallet_js_handler.cc`.
+
+```
+const handler = {
+  get: function(target, prop, receiver) {
+    console.log('accessing prop: ', prop)
+    return Reflect.get(...arguments);
+  },
+  set(target, prop, val) { // to intercept property writing
+    console.log('Setting prop to', prop, val)
+    return Reflect.set(...arguments);
+  },
+  apply: function(target, thisArg, args) {
+    console.log('apply on target with args: ', target, ...args)
+    return target(...args)
+  }
+};
+
+const ethereumProxy = new Proxy(window.ethereum, handler);
+window.ethereum = ethereumProxy
+```
+
 ## HD Wallet
 
 Bitcoin and Ethereum generate addresses in different ways, but they share the same key derivation implementations as BIP-32 compatible wallets. 
