@@ -15,7 +15,7 @@ Most front end functionality is accomplished through one of the following single
 - `KeyringController`: Implements the HD wallet, Ledger & Trezor integration, account management, and signing.
 - `EthJsonRpcController`: Deals with the ETH JSON RPC API, as well as things like the user's current network
 - `SwapController`: Implements swapping related functionality through the 0x API
-- `AssetRatioController`: used for cryptocurrency prices over time
+- `AssetRatioController`: Used for cryptocurrency prices over time
 - `ERCTokenRegistry`: List of tokens and coins that are supported (This is likely to get renamed in the future).
 - `EthTxController`: For transaction management such as creation, broadcasting, and storing transactions.
 - `BraveWalletService`: For basically everything else including the default wallet setting, user assets, permission checks, importing functionality and much more.
