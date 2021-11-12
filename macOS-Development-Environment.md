@@ -13,3 +13,6 @@ There are additional details in the Chromium build system requirements at https:
 # Other tips
 
 - Make sure you have Spotlight fully off or privacy on for the build directory (or indexing will slow it down). System Preferences -> Spotlight -> Privacy
+- If you see `Connection to github.com closed by remote host` adding the following lines to `~/.ssh/config`:
+    ServerAliveInterval 60
+    ServerAliveCountMax 100
