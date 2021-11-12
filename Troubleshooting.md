@@ -65,3 +65,10 @@ remove `src/out`, `src/brave/vendor`, `src/brave/build/`, run `npm run init` and
 ## Rust error on build
 
 When the Rust bundles get bumped you'd have to remove `src/brave/build/rustup` and then do sync or init again.
+
+## "Connection to github.com closed by remote host" error on build
+
+Increase server alive variables by adding the following to `~/.ssh/config`:
+
+        ServerAliveInterval 60
+        ServerAliveCountMax 100
