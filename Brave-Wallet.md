@@ -127,6 +127,10 @@ We’ll give a UI warning if a page is requesting something to be added that’s
 
 The list of added networks can also be managed in preferences.
 
+## Prices
+
+Prices for assets are determined by the CoinGecko API which is proxied through a Brave endpoint for caching and anonymity reasons.
+
 ## Upgrading to the Brave Wallet
 
 Users of Crypto Wallets and MetaMask have the ability to import their HD wallets to Brave Wallet.
