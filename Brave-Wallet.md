@@ -71,6 +71,8 @@ We support both Ledger and Trezor wallets.
 
 Ledger will works through the ledger JS bridge.  Which means code for hardware wallet can only run when the page or panel is open.  When a user first sets up a hardware wallet it will store the metadata about the hardware wallet in preferences. A user will be prompted to connect their hardware wallet when they want to send a transaction with an address that belongs to the hardware wallet or sign data.
 
+Please note that derivation paths in Trezor are different than Ledger, so users won't be able to restore a Ledger seed in a Trezor device and access their Ethereum accounts.
+
 ## Updatable data files
 
 Some data that the Brave Wallet uses is retrieved at run time from the component update server so that it can be updated out of line from browser release updates. This component is named "Brave Wallet data files" and you can see it in `brave://components/`
