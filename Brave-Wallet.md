@@ -13,11 +13,11 @@ The Brave wallet will be home to a user's local cryptocurrency wallet, Brave Rew
 
 ## Ethereum provider global object
 
-The `window.ethereum` object is provided by Brave's wallet to web pages. You can read about it here: `https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API`
+The `window.ethereum` object is provided by Brave's wallet to web pages. You can read about it here: https://github.com/brave/brave-browser/wiki/Ethereum-Provider-API
 
 It is exposed for Ethereum and other EVM compatible networks.  It communicates over ETH JSON RPC API with an endpoint defined by whatever is the current selected network.
 
-Solana Dapp support will be provided via an adapter: `https://github.com/solana-labs/wallet-adapter`.
+Solana Dapp support will be provided via an adapter: https://github.com/solana-labs/wallet-adapter.
 For webcompat reasons with Phantom wallet, users may also opt into allowing the wallet to expose `window.solana`.
 
 ## Settings
@@ -52,7 +52,7 @@ The number of minutes to wait until the Brave Wallet is automatically locked. Th
 ### Networks
 
 EVM compatible networks can be added here: `brave://settings/wallet/networks`
-You can visit `https://chainlist.org/` for a list of supported chains.
+You can visit https://chainlist.org/ for a list of supported chains.
 
 ### Reset Wallet
 
@@ -78,11 +78,11 @@ Please note that derivation paths in Trezor are different than Ledger, so users 
 Some data that the Brave Wallet uses is retrieved at run time from the component update server so that it can be updated out of line from browser release updates. This component is named "Brave Wallet data files" and you can see it in `brave://components/`
 
 - **Name: Contract metadata**  
-Source: `https://github.com/MetaMask/contract-metadata/blob/master/contract-map.json` and coinmarketcap data for alternate chains like BSC.  
+Source: https://github.com/MetaMask/contract-metadata/blob/master/contract-map.json and coinmarketcap data for alternate chains like BSC.  
 Purpose: To list assets that a user can watch and interact with
 
 - **Name: List of network chains**  
-Source: Subset of `https://chainid.network/chains.json`
+Source: Subset of https://chainid.network/chains.json
 Purpose: For working with EIP-3085
 
 - **Name: List of popular Dapps**  
@@ -91,7 +91,7 @@ Purpose: For adding a browse popular Dapps feature
 
 Desktop, Android and iOS will have the same component ID `bbckkcdiepaecefgfnibemejliemjnio`.
 
-Updates will occur as part of the normal component update flow in Brave described here: `https://github.com/brave/brave-browser/wiki/Component-Extensions`
+Updates will occur as part of the normal component update flow in Brave described here: https://github.com/brave/brave-browser/wiki/Component-Extensions
 
 The component is downloaded into the user's profile directory in a subdirectory named `BraveWallet/`.
 
@@ -111,9 +111,9 @@ There will be a number of signing methods exposed, currently the supported metho
 
 ## Adding and switching to other EVM compatible chains
 
-EIP 3085 describes `wallet_addEthereumChain` in `https://eips.ethereum.org/EIPS/eip-3085` for adding EVM compatible chains.
+EIP 3085 describes `wallet_addEthereumChain` in https://eips.ethereum.org/EIPS/eip-3085 for adding EVM compatible chains.
 
-EIP 3326 describes `wallet_switchEthereumChain` in `https://eips.ethereum.org/EIPS/eip-3326` for switching to EVM compatible chains.
+EIP 3326 describes `wallet_switchEthereumChain` in https://eips.ethereum.org/EIPS/eip-3326 for switching to EVM compatible chains.
 
 Some EVM compatible chain examples include Binance Smart Chain, L2s such as Polygon, Arbitrum, Optimism, and side chains such as SKALE, xDAI.  Not all of these chains need to have a native currency of ETH, for example Binance Smart Chain has a native symbol of BNB and Polygon has MATIC.
 
@@ -122,7 +122,7 @@ We may preload some chains and L2s to avoid phishing attempts from a page wantin
 A page can specify the following fields: 
 `NetworkName`, `NetworkURL`, `ChainID`, `CurrencySymbol`
 
-A list of known EVM networks can be found here: `https://chainid.network/` we’ll make a subset of this list as our officially supported list.
+A list of known EVM networks can be found here: https://chainid.network/ we’ll make a subset of this list as our officially supported list.
 We’ll give a UI warning if a page is requesting something to be added that’s not in that list. 
 
 The list of added networks can also be managed in preferences.
@@ -144,5 +144,5 @@ A user can also later import accounts from a hex string or JSON format.  When re
 
 ## Brave developer information
 
-For information for Brave wallet developers, please see `https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information`
+For information for Brave wallet developers, please see https://github.com/brave/brave-browser/wiki/Brave-Wallet-developer-information
 
