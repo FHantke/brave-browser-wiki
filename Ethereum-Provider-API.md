@@ -166,6 +166,12 @@ Since this property is deprecated, this property is provided for webcompat reaso
 A string of the chain ID in base 10.
 Since this property is deprecated, this property is provided for webcompat reasons only.
 
+### `_metamask.isUnlocked` (Experimental MM method)
+
+Returns a promise which resolves to true or false depending on if the wallet is locked.
+This function is only provided for webcompat reasons only.
+
+
 # Legacy Provider methods
 
 A number of legacy provider methods are provided for backwards compatibility:
