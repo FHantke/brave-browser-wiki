@@ -161,6 +161,11 @@ The string address of the first allowed address or undefined if no account is cu
 The chain ID of the currently connected network.
 Since this property is deprecated, this property is provided for webcompat reasons only.
 
+### `networkVersion` (Deprecated)
+
+A string of the chain ID in base 10.
+Since this property is deprecated, this property is provided for webcompat reasons only.
+
 # Legacy Provider methods
 
 A number of legacy provider methods are provided for backwards compatibility:
