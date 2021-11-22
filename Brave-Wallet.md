@@ -69,7 +69,7 @@ If a Dapp has previously requested access to a page and was given permission, th
 
 We support both Ledger and Trezor wallets. 
 
-Ledger will works through the ledger JS bridge.  Which means code for hardware wallet can only run when the page or panel is open.  When a user first sets up a hardware wallet it will store the metadata about the hardware wallet in preferences. A user will be prompted to connect their hardware wallet when they want to send a transaction with an address that belongs to the hardware wallet or sign data.
+Ledger works through a Ledger JS bridge, which means code for hardware wallet can only run when the page or panel is open.  When a user first sets up a hardware wallet it will store the metadata about the hardware wallet in preferences. A user will be prompted to connect their hardware wallet when they want to send a transaction with an address that belongs to the hardware wallet or sign data.
 
 Please note that derivation paths in Trezor are different than Ledger, so users won't be able to restore a Ledger seed in a Trezor device and access their Ethereum accounts.
 
