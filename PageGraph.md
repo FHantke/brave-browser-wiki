@@ -57,6 +57,8 @@ npm run init
 npm run build -- Static
  ```
 
+There is also a [Dockerfile](https://github.com/brave/brave-browser/blob/page-graph/Dockerfile) included in the `page-graph` branch of the `brave-browser` repository. This is a verified setup that can be used as a reference for required dependency versions and installation steps. The image can also be built and used directly for research purposes.
+
 ## Publications Using PageGraph
 
 - [SugarCoat: Programmatically Generating Privacy-Preserving, Web-Compatible Resource Replacements For Content Blocking](https://www.peteresnyder.com/static/papers/sugarcoat-ccs-2021.pdf), Michael Smith, Peter Snyder, Ben Livshits, Deian Stefan, **CCS 2021**
