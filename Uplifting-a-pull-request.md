@@ -25,6 +25,8 @@ Painfully hand-created table of contents:
 ## Using automation to create those pull requests
 _**NOTE: this script only works for clean uplifts. If there are merge conflicts, you'll have to do it manually. Regardless, this should save some time.**_
 
+_**NOTE: for the automation to work, the PR branch has to exist. When PRs are merged, their branches are automatically deleted, but they can be restored on the PR page by clicking `restore branch`.**_
+
 ### Jenkins job
 This is the preferred way to do it!
 
