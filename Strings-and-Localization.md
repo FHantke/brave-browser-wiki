@@ -18,7 +18,7 @@ Original and translated strings from chromium src .grd, .grdp and .xtb files are
 For each chromium release, the chromium GRD and GRDP files that we wish to make modifications to are copied to a file inside the brave-core source. Some mappings include:
 
 | Chromium path                      |          Brave path         |
-|------------------------------------|---------------------------|
+|------------------------------------|-----------------------------|
 | chrome_app_chromium_strings.grd    | app/brave_strings.grd       |
 | chrome_app_generated_resources.grd | app/generated_resources.grd |
 | chrome_app_bookmarks_strings.grdp  | app/bookmarks_strings.grdp  |
@@ -64,8 +64,8 @@ Strings are matched using filename (not path). This is something we control in t
 - Login to Transifex and navigate to the Brave dashboard https://www.transifex.com/brave/brave/dashboard/
 - Click `Order`
 - You can pick from 3 providers gengo, TextMaster, and e2f
-- You will repeat this process 3 times, one for each provider. Start with gengo.
-- Some services have a "Tone" to translate in, usually I select something like Technical and Software.  This screen also allows you to write information to the localizer.  Simply put this in that box:
+- We use **e2f**.
+- Select something like Technical and Software for the "Tone".  This screen also allows you to write information to the localizer.  Simply put this in that box:
 ```
 Please read this!
 
@@ -84,18 +84,26 @@ https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information
 - The officially supported languages to order are: `af, am, ar, as, be, bg, bn, bs, ca, cs, da, de, el, en-GB, es, es-419, et, eu, fa, fi, fil, fr, fr-CA, gl, gu, hi, hr, hu, hy, id, is, it, he, hr-Latn, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, or, pa, pl, pt-BR, pt-PT, ro, ru, si, sk, sl, sq, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
 - Here are the things we currently select:
 ```
-# Gengo
+# e2f
 
+Amharic       (am)
 Arabic        (ar)
+Bengali       (bn)
 Bulgarian     (bg)
 Catalan       (ca)
+Chinese-CN    (zh-CN)
 Chinese-TW    (zh-TW)
+Croatian      (hr)
 Czech         (cs)
 Danish        (da)
 Dutch         (nl)
+English-GB    (en-GB)
+Estonian      (et)
+Filipino      (fil)
 Finnish       (fi)
 French        (fr)
 French-CA     (fr-CA)
+Galician      (gl)
 German        (de)
 Greek         (el)
 Hebrew        (he)
@@ -104,42 +112,29 @@ Hungarian     (hu)
 Indonesian    (id)
 Italian       (it)
 Japanese      (ja)
+Kannada       (kn)
 Korean        (ko)
+Latvian       (lv)
+Lithuanian    (lt)
 Malay         (ms)
 Norwegian     (no)
+Persian       (fa)
 Polish        (pl)
 Portuguese-BR (pt-BR)
+Portuguese-PT (pt-PT)
 Romanian      (ro)
 Russian       (ru)
 Serbian       (sr)
 Slovak        (sk)
+Slovenian     (sl)
 Spanish       (es)
+Spanish-LA    (es-419)
+Swahili       (sw)
 Swedish       (sv)
 Thai          (th)
 Turkish       (tr)
-Ukranian      (uk)
+Ukrainian     (uk)
 Vietnamese    (vi)
-
-# TextMaster
-Portuguese-PT (pt-PT)
-
-# e2f
-
-Amharic    (am)
-Bengali    (bn)
-Chinese-CN (zh-CN)
-Croatian   (hr)
-English-GB (en-GB)
-Estonian   (et)
-Filipino   (fil)
-Galician   (gl)
-Kannada    (kn)
-Latvian    (lv)
-Lithuanian (lt)
-Persian    (fa)
-Slovenian  (sl)
-Spanish-LA (es-419)
-Swahili    (sw)
 ```
 
 - The total cost is usually in the hundreds to thousands range, but usually below 10k.  If it's above 10k then please get special approval and make sure everything is being selected correctly.
@@ -149,11 +144,13 @@ Swahili    (sw)
 
 - Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. Sometimes, you may encounter incorrectly double-escaped encodings like `&amp;lt;` (instead of `&lt;`); it's ok to leave those as they are.
 
-- Sometimes strings have variables (placeholders) which look like the graphic below.<br/>
-  <img width="466" alt="screen shot 2018-12-18 at 2 49 57 pm" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png"><br/>
+- Sometimes strings have variables (placeholders) which look like the pictures below.<br/>
+  <img width="466" alt="string with placeholders example" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png"><br/>
+  or<br/>
+  <img width="466" alt="string with placeholders example 2" src="https://user-images.githubusercontent.com/41635752/144468340-2dea8b7c-2174-4d3e-a1bd-58ba694d33ef.png"><br/> 
   In these cases you should:
-    - use `<` and `>` and not `&lt;` and not `&gt;` **with `ph` and `ex` elements (and only those elements!)**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`.
-    - The text inside `ex` should _not_ be included in the translation - it's an example of values that would be used in this variable.<br/>
+    - If the parts of the string with `&lt;ph ...` and `&lt;/ph&gt;` are exposed in your editor then use `<` and `>` and not `&lt;` and not `&gt;`, **BUT ONLY with `ph` and `ex` elements (and only those elements!)**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`. **DO NOT replace `&lt;` and `&gt;` when they surround other elements, such as `a` (`&lt;a...` and `&lt;a/&gt;` should not be modified).**
+    - The text inside `ex` should _not_ be translated - it's an example for you, the translator, of values that would be used in this variable.<br/>
     - In the example in the graphic above, the translation should look like this:
       <table>
         <tr>
