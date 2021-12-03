@@ -33,6 +33,6 @@ If you used the wrong method, simply restore on top again. Please remember if yo
 
 BAT Rewards come in the form of virtual BAT (vBAT) until you verify with an exchange. When you verify with an exchange, your vBAT gets deposited there and converted to real BAT.  The step for going to an exchange is required for AML/KYC reasons. We're looking at the decentralization process for Brave ads rewards as part of [Themis](https://brave.com/themis-rfcc-wrap-up/)
 
-Brave Wallet is a self custody wallet and therefore we cannot currently pay to it for the user rev-share for ads. We would possibly need to KYC/AML your address and may also need a money transmitter license to do so.
+Brave Wallet is a self custody wallet and therefore we cannot currently pay to it for the user rev-share for ads. We would need to KYC/AML your address and may also need a money transmitter license to do so.
 
 For tipping, we are planning to implement this. There are some things to work through including high Ethereum gas fees and no anonymity in tipping.  After we have Solana support we will likely add this pretty quickly.
