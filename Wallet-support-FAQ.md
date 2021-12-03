@@ -26,3 +26,5 @@ You should use that checkbox to get back at the same address as your old Crypto 
 For reference, the difference is:
 - 24 words -> entropy and use entropy as seed
 - Bip39: Valid mnemonic words->entropy->PBKDF2-HMAC-Sha256 and use that as seed
+
+If you used the wrong method, simply restore on top again. Please remember if you are restoring you will replace and lose what your wallet currently has.  You can restore from the lock screen on the wallet panel or in brave://wallet. 
