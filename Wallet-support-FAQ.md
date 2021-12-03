@@ -28,3 +28,11 @@ For reference, the difference is:
 - Bip39: Valid mnemonic words->entropy->PBKDF2-HMAC-Sha256 and use that as seed
 
 If you used the wrong method, simply restore on top again. Please remember if you are restoring you will replace and lose what your wallet currently has.  You can restore from the lock screen on the wallet panel or in brave://wallet. 
+
+# Why can't my wallet receive my rewards? How about tipping from my wallet?
+
+BAT Rewards come in the form of virtual BAT (vBAT) until you verify with an exchange. When you verify with an exchange, your vBAT gets deposited there and converted to real BAT.  The step for going to an exchange is required for AML/KYC reasons. We're looking at the decentralization process for Brave ads rewards as part of [Themis](https://brave.com/themis-rfcc-wrap-up/)
+
+Brave Wallet is a self custody wallet and therefore we cannot currently pay to it for the user rev-share for ads. We would possibly need to KYC/AML your address and may also need a money transmitter license to do so.
+
+For tipping, we are planning to implement this. There are some things to work through including high Ethereum gas fees and no anonymity in tipping.  After we have Solana support we will likely add this pretty quickly.
