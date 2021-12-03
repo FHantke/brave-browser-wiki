@@ -5,7 +5,7 @@ Only one wallet can provide `window.ethereum` to websites.
 In Brave, we expose a setting in brave://settings/wallet to be able to change which wallet provides `window.ethereum`.
 
 Here's a description of each setting:
-- Brave Wallet (Prefer extensions) - This is the default. Brave Wallet will expose window.ethereum but allow other extensions such as MetaMask to overwrite it.
+- Brave Wallet (Prefer extensions) - This is the default. Brave Wallet will expose `window.ethereum` but allow other extensions such as MetaMask to overwrite it.
 - Brave Wallet - Exposes `window.ethereum` and prevents sites and extensions from changing `window.ethereum`.
 - Crypto Wallets (Deprecated) - Gives access to the old deprecated wallet. This option is not compatible with other extensions such as MetaMask.
 - None - `window.ethereum` will not be provided by Brave Wallet at all. If you have extensions such as MetaMask, is is free to use `window.ethereum`.
