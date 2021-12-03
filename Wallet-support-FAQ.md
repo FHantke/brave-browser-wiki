@@ -13,3 +13,16 @@ Here's a description of each setting:
 After changing the default wallet, it is best to restart your browser. Why?
 - If you had Crypto Wallets loaded, it won't be unloaded until the next restart. When Crypto Wallets is loaded it will not work properly with other extensions trying to access `window.ethereum`.
 - Existing already opened tabs will not change to use the new wallet setting, you need a new tab or a browser restart.
+
+# When I restored my old recovery words, I got a different address than in the old Crypto Wallets
+
+Early versions of the deprecated Crypto Wallets extension used 24-words and were not BIP39 compliant.
+This was fixed later on for compatibility with other wallets to be compliant with BIP39.
+
+If you have 24-words and you are restoring your wallet, then a checkbox will appear to use the legacy Brave method.
+
+You should use that checkbox to get back at the same address as your old Crypto Wallets account.
+
+For reference, the difference is:
+- 24 words -> entropy and use entropy as seed
+- Bip39: Valid mnemonic words->entropy->PBKDF2-HMAC-Sha256 and use that as seed
