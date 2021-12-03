@@ -35,4 +35,4 @@ BAT Rewards come in the form of virtual BAT (vBAT) until you verify with an exch
 
 Brave Wallet is a self custody wallet and therefore we cannot currently pay to it for the user rev-share for ads. We would need to KYC/AML your address and may also need a money transmitter license to do so.
 
-For tipping, we are planning to implement this. There are some things to work through including high Ethereum gas fees and no anonymity in tipping.  After we have Solana support we will likely add this pretty quickly.
+For tipping, we are planning to implement on-chain P2P tipping. There are some things to work through including high Ethereum gas fees and no anonymity in tipping.  After we have Solana support we will likely add this pretty quickly.
