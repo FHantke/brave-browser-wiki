@@ -1,4 +1,4 @@
-# My MetaMask or other extension is not working
+# My MetaMask or other extension is not working with Dapps
 
 Only one wallet can provide `window.ethereum` to websites.
 In Brave, we expose a setting in brave://settings/wallet to be able to change which wallet provides `window.ethereum`.
