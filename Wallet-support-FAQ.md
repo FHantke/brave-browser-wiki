@@ -44,3 +44,9 @@ If you've lost your password, or don't remember ever creating a wallet, and you 
 To do that click on the "Get Started" button from brave://wallet and then on the 2nd screen at the bottom, select "I’ve lost my password and recovery phrase, create a new wallet."
 
 If you don't remember creating a wallet it might be that it was accidentally created in the past.
+
+# Can I sync my Brave Wallets between devices?
+
+We plan on adding it as an optional part of our Sync in the future here https://github.com/brave/brave-browser/issues/19762.
+
+Until that is implemented, you can simply restore your backup seed words onto all devices that you want.
