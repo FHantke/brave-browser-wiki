@@ -42,3 +42,5 @@ For tipping, we are planning to implement on-chain P2P tipping. There are some t
 If you've lost your password, or don't remember ever creating a wallet, and you are trying to upgrade to the new Brave Wallet, then the best option is to simply not import from the existing wallet.
 
 To do that click on the "Get Started" button from brave://wallet and then on the 2nd screen at the bottom, select "I’ve lost my password and recovery phrase, create a new wallet."
+
+If you don't remember creating a wallet it might be that it was accidentally created in the past.
