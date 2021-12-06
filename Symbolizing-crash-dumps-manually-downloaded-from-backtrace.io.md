@@ -16,11 +16,11 @@ ninja -C out/android_Release_arm64 minidump_stackwalk dump_syms minidump_dump
 
 3. Check whether you have `brave-browser/src/out/android_Release_arm64/dist/brave.breakpad.syms` dir, if you already have, skip pt3
 
-4. Generate symbols:
+4. Generate symbols. Note: use the binary from `lib.unstripped` folder. Note 2: if you are making symbols for arm64 or x64 apk/aab, build symbols for each ABI.
 ```
 #GenerateBreakpadSymbols.sh
 
-md ./brave-browser/src/out/android_Release_arm64/dist/brave.breakpad.syms
+mkdir ./brave-browser/src/out/android_Release_arm64/dist/brave.breakpad.syms
 
 ./brave-browser/src/components/crash/content/tools/generate_breakpad_symbols.py             \
 --build-dir=./brave-browser/src/out/android_Release_arm64                                   \
@@ -28,6 +28,14 @@ md ./brave-browser/src/out/android_Release_arm64/dist/brave.breakpad.syms
 --binary=./brave-browser/src/out/android_Release_arm64/lib.unstripped/libmonochrome.so      \
 --platform=android                                                                          \
 --verbose
+
+./brave-browser/src/components/crash/content/tools/generate_breakpad_symbols.py             \
+--build-dir=./brave-browser/src/out/android_Release_arm64                                   \
+--symbols-dir=./brave-browser/src/out/android_Release_arm64/dist/brave.breakpad.syms        \
+--binary=./brave-browser/src/out/android_Release_arm64/android_clang_arm/lib.unstripped/libmonochrome.so  \
+--platform=android                                                                          \
+--verbose
+
 ```
 
 5. Run script to analyze the dump, in example below `./2cd18bf.dmp` is the path to downloaded file from pt1
