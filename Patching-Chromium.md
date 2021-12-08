@@ -6,9 +6,17 @@ Please follow this order when doing patching from best to worst:
 
 If changes can be made inside existing subclasses and code inside `src/brave`, then that is preferred.
 
-## Subclass and override
+## Changes inside Chromium
 
-When you can't make a change directly in existing brave-core code, it's often best to simply subclass a Chromium class, and override the functions needed.
+### Introduction to `chromium_src` overrides
+
+When you can't make a change directly in existing `src/brave` code, different approaches can be used to alter an upstream implementation. Many of them are based on `src/brave/chromium_src` overrides. The content of this directory is prioritized over upstream files during compilation. The basic rules are:
+* `#include "chrome/browser/profiles/profile.h"` will actually include `src/brave/chromium_src/chrome/browser/profiles/profile.h` if it exists.
+* compile `chrome/browser/profiles/profile.cc` will actually compile `src/brave/chromium_src/chrome/browser/profiles/profile.cc` if it exists.
+
+### Subclass and override
+
+To change an upstream logic it's often best to simply subclass a Chromium class, and override the functions needed.
 
 You will need to patch (see the below documentation) for some small trivial things in this case:
 - Create instances of your class instead of the Chromium class.
@@ -28,43 +36,46 @@ Header patches should use preprocessor defines when possible. The define should 
   BRAVE_BROWSER_H
  private:
 ```
-with chromium_src override
+with `src/brave/chromium_src/chrome/browser/ui/browser.h` override:
 ```
 #ifndef BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
 #define BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
 
 #define BRAVE_BROWSER_H \
- private: \
+ private:               \
   friend class BookmarkPrefsService;
 
-#include "../../../../../chrome/browser/ui/browser.h"  // NOLINT
+#include "src/chrome/browser/ui/browser.h"
 
 #undef BRAVE_BROWSER_H
 
 #endif  // BRAVE_CHROMIUM_SRC_CHROME_BROWSER_UI_BROWSER_H_
 ```
-## Using the preprocessor to use base implementations inside override files
+### Using the preprocessor to use base implementations inside override files
 
-One strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` and `.h` files but still use the source in the original Chromium code too.  To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium implementation inside of it.
+One strategy that's preferred over patching is to use `src/brave/chromium_src` which overrides `.cc` and `.h` files but still use the source in the original Chromium code too. To do that you can rename a function with the preprocessor in Chromium, and then provide your own real implementation of that file and use the Chromium implementation inside of it.
 
 Here's an example:
 https://github.com/brave/brave-core/blob/5293f0cab08816819bb307d02e404c2061e4368d/chromium_src/chrome/browser/browser_about_handler.cc
 
 No BUILD.gn changes are needed for this.
 
-## Making methods virtual
+### Making methods virtual
 There are two methods depending on whether you have a pointer or non-pointer return value.
-For pointer return values
+For pointer return values:
 ```
 #define GetExtensionAction           \
   UnusedMethod() { return nullptr; } \
   virtual ExtensionAction* GetExtensionAction
 ```
 
-and for non-pointer types
+and for non-pointer types:
+```
+#define ReportResult virtual ReportResult
+```
 https://github.com/brave/brave-core/commit/a85a399a16df59b99b18382e2a4106d63e1a32c1#diff-925a04f8f2bcee20b47c338c1a3c70b9
 
-## Override a .cc file completely
+### Override a `.cc` file completely
 
 If you want to provide a completely different implementation of a file, it is often not safe, but sometimes applicable. You can just provide the alternate implementation inside the `src/brave/chromium_src` directory.
 
@@ -72,7 +83,7 @@ One way electron went wrong is they copied entire files for changes inside a sim
 
 No BUILD.gn changes are needed for this.
 
-## Patch the Chromium files
+### Patch the Chromium files
 
 When other options are exhausted, you can patch the code directly in `src/`. After making the changes, you can run the npm command `npm run update_patches`.   This will update the patches which are stored in  `src/brave/patches`.   Please note that removed changes in `src` currently will not update the patches, so you will have to do that manually. 
 
@@ -110,14 +121,14 @@ Make sure you do NOT have the following in your `~/.gitconfig`:
 
 as trailing whitespace can be essential in patch files.
 
-## Patching gn/gni files
+## Patching `gn/gni` files
 We should also prefer extensible patches in gn files where possible. 
 
 Multiple deps should never be added to the same target. Always create a generic brave dep and then add other deps (public_deps if needed) inside that. 
 
 The same thing goes for sources, but those should be added as `sources += my_brave_sources` where `my_brave_sources` is defined in a brave gni file. We have a gni file that is already included in nearly every gn build file in chromium through a patch in chrome_build.gni (`import("//brave/build/config/brave_guild.gni"`). Add new gni imports inside brave_guild.gni instead of patching them into another gn/gni file
 
-## Patching mojom files
+## Patching `mojom` files
 Mojom files can be patched using override files placed at the same location in `src/brave/chromium_src` directory. It's possible to:
 * add definitions: `const`, `enum`, `interface`, `struct`, `union`
 * extend definitions: add new values to `enum`, add new methods to `interface`, add new members to `struct`/`union`
@@ -129,7 +140,7 @@ Examples:
 * [All-in-one mojom patch example](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/brave/mojo/brave_ast_patcher/test_module.mojom)
 * Extending a mojo struct that uses traits: [mojom](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.mojom), [native header](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.h), [native source](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.cc), [traits header](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings_mojom_traits.h), [traits source](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings_mojom_traits.cc)
 
-## Patching java files
+## Patching Android `java` files
 
 Many java patches can be replaced by using asm. In order to use asm properly you have to ensure that things compile correctly pre-asm and then make the changes in the asm step that will produce the actual calls you want. Examples:
 Changing private methods to public - https://github.com/brave/brave-core/pull/4716/files and https://github.com/brave/brave-core/pull/5127/files
@@ -137,7 +148,7 @@ Changing private methods to public - https://github.com/brave/brave-core/pull/47
 Try to extend Java class like in that example https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/BraveActivity.java or https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/toolbar/top/BraveToolbarLayout.java. 
 After that just create the new class via `new ...` where the old class created.
 
-## Patching Android xml files
+## Patching Android `xml` files
 
 - AndroidManifest.xml: Brave's addition to the manifest is included in the original chromium's and located in that place https://github.com/brave/brave-core/blob/master/android/java/AndroidManifest.xml. Add new items inside it.
 - layouts: Layouts could be included in original chromium's layouts `<include layout="@layout/brave_toolbar" android:layout_height="wrap_content" android:layout_width="match_parent" />`
