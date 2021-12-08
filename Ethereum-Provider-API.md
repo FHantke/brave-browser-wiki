@@ -150,6 +150,25 @@ Signing data can be done with:
 
 These are not implemented yet in Brave and they are being tracked here: https://github.com/brave/brave-browser/issues/17986
 
+# Suggesting an asset 
+Websites can suggest an asset to be added into the user wallet via a single `WatchAssetParameters` object.[EIP-747](https://eips.ethereum.org/EIPS/eip-747) 
+```ts
+interface WatchAssetParameters {
+  type: string; // The asset's interface, e.g. 'ERC20'
+  options: {
+    address: string; // The hexadecimal Ethereum address of the token contract
+    symbol?: string; // A ticker symbol or shorthand, up to 5 alphanumerical characters
+    decimals?: number; // The number of asset decimals
+    image?: string; // A string url of the token logo
+  };
+}
+```
+```ts
+window.ethereum.request({ method: 'wallet_watchAsset' }, params)
+```
+Brave will show an UI with the asset to be added for users to accept or cancel the request.
+If the same contract address exists in user's current asset list or Brave's build-in list, we will use the information stored in the list instead of from the API request.
+
 # Provider properties
 
 ### `selectedAddress` (Deprecated)
