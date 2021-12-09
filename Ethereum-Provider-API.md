@@ -168,6 +168,7 @@ window.ethereum.request({ method: 'wallet_watchAsset' }, params)
 ```
 Brave will show an UI with the asset to be added for users to accept or cancel the request.
 If the same contract address exists in user's current asset list or Brave's build-in list, we will use the information stored in the list instead of from the API request.
+
 Note that image parameter is not supported yet, it is being tracked here: https://github.com/brave/brave-browser/issues/20000 
 
 # Provider properties
