@@ -151,7 +151,7 @@ Signing data can be done with:
 These are not implemented yet in Brave and they are being tracked here: https://github.com/brave/brave-browser/issues/17986
 
 # Suggesting an asset 
-Websites can suggest an asset to be added into the user wallet via a single `WatchAssetParameters` object.[EIP-747](https://eips.ethereum.org/EIPS/eip-747) 
+Websites can suggest an asset to be added into the user wallet via a single `WatchAssetParameters` object. Please see [EIP-747](https://eips.ethereum.org/EIPS/eip-747) for more information.
 ```ts
 interface WatchAssetParameters {
   type: string; // The asset's interface, e.g. 'ERC20'
