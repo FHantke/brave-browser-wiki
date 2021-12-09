@@ -1,1 +1,1 @@
-(placeholder)
+See https://github.com/brave/brave-browser/wiki/Operational-Patterns.
