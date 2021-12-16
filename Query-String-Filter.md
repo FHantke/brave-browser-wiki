@@ -3,7 +3,7 @@ The Brave  query string filter aims at preventing the tracking of individual use
 - an email address, or
 - an individual click.
 
-This kind of tracking is typically used in cookie syncing, that is the practice of synchronizing the value of first-party cookies on different domains, or in tying clicks inside an email message to a website visit.
+This kind of tracking is typically used to sync cookie, that is the practice of synchronizing the value of first-party cookies on different domains, to link clicks inside an email message to a website visit, or to leak a user's identity across site boundaries.
 
 ### Implementation
 
