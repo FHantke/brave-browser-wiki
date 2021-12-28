@@ -41,7 +41,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.31.x  |    95    | October 12, 2021    | October 19, 2021    |                                            |
 | 1.32.x  |    96    | November 9, 2021    | November 16, 2021   |                                            |
 | 1.33.x  |    96    | November 30, 2021   | December 14, 2021    | Shorter cycle due to C96 - C97 being 49 days rather than 28 days. Release delayed. Originally set as `December 7, 2021`|
-| 1.34.x  |    97    | December 28, 2021   | January 4, 2022     |                                            |
+| 1.34.x  |    97    | December 28, 2021   | January 6, 2022     | Release delayed. Originally set as `January 4, 2022` |
 | 1.35.x  |    98    | January 25, 2022    | February 1, 2022    |                                            |
 | 1.36.x  |    99    | February 22, 2022   | March 1, 2022       |                                            |
 | 1.37.x  |    100   | March 22, 2022      | March 29, 2022      |                                            |
