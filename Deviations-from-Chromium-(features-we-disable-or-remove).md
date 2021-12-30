@@ -69,6 +69,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable Digital Goods API](https://github.com/brave/brave-core/blob/master/chromium_src/third_party/blink/renderer/core/origin_trials/origin_trials.cc#L23)
 - [Disable Serial API](https://github.com/brave/brave-core/blob/master/renderer/brave_content_renderer_client.cc#L38)
 - [Disable Federated Learning of Cohorts (FLoC)](https://github.com/brave/brave-browser/issues/14942)
+- [Disable Network Information API](https://github.com/brave/brave-browser/issues/20122)
 
 ### Services We Proxy Through Brave Servers
 
