@@ -50,6 +50,7 @@ const handler = {
 const ethereumProxy = new Proxy(window.ethereum, handler);
 window.ethereum = ethereumProxy
 ```
+Note: This won't work if you have default wallet set to `Brave Wallet`. It needs to be set to `Brave Wallet (Prefer extensions)` because otherwise `window.ethereum` is not writable. 
 
 ## HD Wallet
 
