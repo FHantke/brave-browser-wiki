@@ -371,6 +371,17 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 6. Yes, from Other to Brave
 7. Yes, from Other to Other
 
+### Q41: If you have turned off BR, how long did you have it on?
+_`Brave.Rewards.EnabledDuration`_ **[D]** **[A]**
+
+0. It was never on
+1. It’s still on
+2. 1 hour
+3. 1 day
+4. 1 week
+5. 1 month
+6. More than one month
+
 
 ## Metrics Proposed/Under Development
 
