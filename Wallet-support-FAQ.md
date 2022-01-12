@@ -50,3 +50,10 @@ If you don't remember creating a wallet it might be that it was accidentally cre
 We plan on adding it as an optional part of our Sync in the future here https://github.com/brave/brave-browser/issues/19762.
 
 Until that is implemented, you can simply restore your backup seed words onto all devices that you want.
+
+# How do I use my legacy 24-word seed phrase on MetaMask
+
+If you have a 24-word seed phrase generated from an old version of Brave you can't move over your seed phrase to MetaMask.
+Otherwise it will generate a different address.
+
+You can however move your account to MetaMask by exporting your private key by navigating to brave://wallet/crypto/accounts and then importing it into MetaMask.
