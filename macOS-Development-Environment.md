@@ -2,6 +2,9 @@
 
 You will need the prerequisites below to build Brave on macOS 10.15+.
 
+Xcode 13.1 or higher is recommended and needed for official builds.
+Xcode 12.5 can be used in development for now with component builds.
+
 There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements):
 
 - NodeJS LTS Version (`brew install node`) - can also use `nvm`
