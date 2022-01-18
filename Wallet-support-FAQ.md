@@ -2,7 +2,7 @@
 
 Dapps work by communicating with a special object that Brave Wallet and extensions like MetaMask provide named `window.ethereum`.
 Only one wallet can provide `window.ethereum` to websites.
-In Brave, we expose a setting in brave://settings/wallet to be able to change which wallet provides `window.ethereum`.
+In Brave, we expose a setting in `brave://settings/wallet` to be able to change which wallet provides `window.ethereum`.
 
 Here's a description of each setting:
 - Brave Wallet (Prefer extensions) - This is the default. Brave Wallet will expose `window.ethereum` but allow other extensions such as MetaMask to overwrite it.
@@ -41,7 +41,7 @@ For tipping, we are planning to implement on-chain P2P tipping. There are some t
 
 If you've lost your password, or don't remember ever creating a wallet, and you are trying to upgrade to the new Brave Wallet, then the best option is to simply not import from the existing wallet.
 
-To do that click on the "Get Started" button from brave://wallet and then on the 2nd screen at the bottom, select "I’ve lost my password and recovery phrase, create a new wallet."
+To do that click on the "Get Started" button from `brave://wallet` and then on the 2nd screen at the bottom, select `"I’ve lost my password and recovery phrase, create a new wallet."`
 
 If you don't remember creating a wallet it might be that it was accidentally created in the past.
 
@@ -56,4 +56,4 @@ Until that is implemented, you can simply restore your backup seed words onto al
 If you have a 24-word seed phrase generated from an old version of Brave you can't move over your seed phrase to MetaMask.
 Otherwise it will generate a different address.
 
-You can however move your account to MetaMask by exporting your private key by navigating to brave://wallet/crypto/accounts and then importing it into MetaMask.
+You can however move your account to MetaMask by exporting your private key by navigating to `brave://wallet/crypto/accounts` and then importing it into MetaMask.
