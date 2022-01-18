@@ -61,6 +61,7 @@ There is also a [Dockerfile](https://github.com/brave/brave-browser/blob/page-gr
 
 ## Publications Using PageGraph
 
+- [Measuring the Privacy vs. Compatibility Trade-off in Preventing Third-Party Stateful Tracking](https://www.peteresnyder.com/static/papers/storage-policies-www-2022.pdf), Jordan Jueckstock, Peter Snyder, Shaown Sarker, Alexandros Kapravelos, Ben Livshits, **WWW 2022**
 - [SugarCoat: Programmatically Generating Privacy-Preserving, Web-Compatible Resource Replacements For Content Blocking](https://www.peteresnyder.com/static/papers/sugarcoat-ccs-2021.pdf), Michael Smith, Peter Snyder, Ben Livshits, Deian Stefan, **CCS 2021**
 - [Hiding in Plain Site: Detecting JavaScript Obfuscation through Concealed Browser API Usage](https://kapravelos.com/publications/jsobf-imc20.pdf), Shaown Sarker, Jordan Jueckstock, Alexandros Kapravelos, **IMC 2020**
 - [Detecting Filter List Evasion With Event-Loop-Turn Granularity JavaScript Signatures](https://arxiv.org/abs/2005.11910), Quan Chen, Peter Snyder, Benjamin Livshits, Alexandros Kapravelos, **S&P 2021**
