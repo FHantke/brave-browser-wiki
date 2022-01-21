@@ -81,7 +81,7 @@ _Google does not receive any information about which client is performing these 
 - [Certificate revocation requests are proxied](https://github.com/brave/brave-core/pull/997)
 - [Requests for CRLSets are proxied](https://github.com/brave/brave-core/pull/1581)
 - [Requests for component updates are proxied](https://github.com/brave/brave-core/pull/1581)
-- [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/2354)
+- [Requests for spellcheck dictionaries are proxied](https://github.com/brave/brave-core/pull/11917)
 - [Requests in devtools are proxied](https://github.com/brave/brave-core/pull/5500)
 
 #### Proxied endpoints
