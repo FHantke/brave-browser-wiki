@@ -3,7 +3,7 @@
 You will need the prerequisites below to build Brave on macOS 10.15+.
 
 Xcode 13.1+ and macOS SDK 12.0 are needed for official builds on Chromium 98. Chromium 99 requires Xcode 13.2+ and macOS SDK 12.1.
-Xcode 12.5+ can be used in development for now with component builds.
+Xcode 12.5+ can be used in development for now with component builds. See https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43
 
 You'll want an SDK setup like this:
 ```
