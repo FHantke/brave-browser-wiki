@@ -6,15 +6,15 @@ Xcode 13.1+ and macOS SDK 12.0 are needed for official builds on Chromium 98. Ch
 Xcode 12.5+ can be used in development for now with component builds. See https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43
 
 You'll want an SDK setup like this:
-```
-ls -la /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
-```
 
 ```
-MacOSX.sdk - linked to what XCode comes with
-MacOSX11.3.sdk
-MacOSX12.0.sdk
+ls -al `xcode-select -p`/Platforms/MacOSX.platform/Developer/SDKs
+drwxr-xr-x  7 jenkins  staff  224 Dec 21 12:02 MacOSX.sdk
+drwxr-xr-x  7 jenkins  staff  224 May  3  2021 MacOSX11.3.sdk
+lrwxr-xr-x  1 jenkins  staff   10 Dec 21 12:02 MacOSX12.0.sdk -> MacOSX.sdk
 ```
+
+Note: this SDK version information could be out of date, please see [the source code here to check if it points to a higher version](https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43)!
 
 You can get the newer SDKs from https://ci.brave.com/userContent/ (VPN required)
 
