@@ -27,7 +27,7 @@ The following is our automated schedule for creating and uploading builds to our
 | `Beta`| 4am UTC (8pm PST/11pm EST) | Tuesday, Thursday | all | yes |
 | `Dev`| 8am UTC (12am PST/3am EST)| Tuesday, Thursday | linux-x64 macos-x64 macos-arm64 win64 win32 | yes |
 | `Nightly`| 12pm UTC (4am PST/7am EST)| Monday - Friday| all | yes |
-| `Nightly`| 6pm UTC (10am PST/1pm EST)| Monday - Friday| linux-x64 macos-x64 win64 | no |
+| `Nightly`| 6pm UTC (10am PST/1pm EST)| Monday - Friday| android linux-x64 macos-x64 win64 | no |
 | `Nightly`| 12am UTC (4pm PST/7pm EST)| Monday - Friday| android linux-x64 macos-x64 win64 | no |
 ---
 
