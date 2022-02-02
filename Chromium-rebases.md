@@ -4,13 +4,15 @@
 
 &emsp;`npm install`
 
-2. Open `package.json` in the root repo and change the string at the path `config.projects.chrome.dir.tag` to the new Chromium version.
-
-3. Since you’re using a new cloned dir you should not already have an `src` dir and should run `init`.
+2. Since you’re using a new cloned dir you should not already have an `src` dir and should run `init`.
 
 &emsp;`npm run init`
 
-4. If all patches apply correctly, simply run
+3. Open `package.json` in `src/brave/` and change the string at the path `config.projects.chrome.tag` to the new Chromium version, then commit the changes to that file with the comment "Update from Chromium XXX to Chromium YYY."
+
+4. Run `npm run sync` to make sure that the Chromium repository at `src/` is at the right version, the right internal dependencies set to the expected versions and the patches from Brave applied.
+
+5. If all patches apply correctly, simply run
 
 &emsp;`npm run update_patches`
 
