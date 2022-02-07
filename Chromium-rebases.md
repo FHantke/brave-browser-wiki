@@ -41,7 +41,7 @@
 
  * The content that was being patched or the entire file was removed -> determine if the patch can just be removed or other changes need to made to compensate for the removed code. Remove the patch and commit. The commit message should include the links to the relevant upstream changes on https://chromium.googlesource.com/ or https://source.chromium.org/, as well as the upstream commit messages for those changes.
 
-2. Once all patching error have been resolved, run update:
+2. Once all patching errors have been resolved, run update:
 
 &emsp;`npm run update_patches`
 
