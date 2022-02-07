@@ -27,7 +27,7 @@
 1. Resolve errors for each patch that didn't apply.
 
 &emsp;The most common situations are: 
- * The file being patches got moved/renamed -> rename the patch accordingly.
+ * The file being patched got moved/renamed -> rename the patch accordingly.
  * The content of the file changed so that the lines surrounding the patched in lines don't match -> adjust the patch to fit the new content.
  Once the patch is fixed, apply it, then, update:
  
