@@ -8,6 +8,8 @@
 
 &emsp;`npm run init`
 
+3. Branch off the latest Chromium rebase branch.
+
 3. Open `package.json` in `src/brave/` and change the string at the path `config.projects.chrome.tag` to the new Chromium version, then commit the changes to that file with the comment "Update from Chromium XXX to Chromium YYY."
 
 4. Run `npm run sync` to make sure that the Chromium repository at `src/` is at the right version, the right internal dependencies set to the expected versions and the patches from Brave applied.
