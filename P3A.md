@@ -382,6 +382,20 @@ _`Brave.Rewards.EnabledDuration`_ **[D]** **[A]**
 5. 1 month
 6. More than one month
 
+### Q42: Has the Wallet keyring been created?
+`Brave.Wallet.KeyringCreated` **[D]** **[A]**
+
+1. No
+2. Yes
+
+### Q43: What is the DefaultWalletSetting?
+`Brave.Wallet.DefaultWalletSetting` **[D]** **[A]**
+
+0. AskDeprecated
+1. None
+2. CryptoWallets
+3. BraveWalletPreferExtension
+4. BraveWallet
 
 ## Metrics Proposed/Under Development
 
