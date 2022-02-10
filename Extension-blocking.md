@@ -9,4 +9,4 @@ We will generally do this only in these cases:
 
 The current list of blocked extensions, along with a summary of the justification can be found in the `blacklist` section of <https://github.com/brave/extension-whitelist/blame/master/data/whitelist.json>.
 
-Extension authors wanting to dispute our decision may email <mailto:security@brave.com>.
+Extension authors wanting to dispute our decisions may email <mailto:security@brave.com>.
