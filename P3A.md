@@ -97,10 +97,11 @@ _`Brave.Rewards.WalletState`_ **[D]** (ANDROID?)
 6. Wallet disabled after having been created (Brave Rewards switched off)
 
 ### Q12: How much BAT, excluding grants, is in your wallet?
-_`Brave.Rewards.WalletBalance.2`_ **[D]** **[A]**
+_`Brave.Rewards.WalletBalance.3`_ **[D]** **[A]**
 1. No wallet created
-2. Rewards Disabled
-3. Less than 10 BAT (0-9), excluding grants
+2. Wallet created, rewards disabled
+4. Zero BAT, excluding grants
+3. 1-9 BAT, excluding grants
 4. 10-50 BAT, excluding grants
 5. Over 50 BAT, excluding grants~~
 
