@@ -3,10 +3,6 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Prerequisites
 
-- [ ] Check that Brave is pulling the correct Tor executable listed under https://github.com/brave/tor_build_scripts/blob/master/env.sh#L6
-  - [ ] macOS
-  - [ ] Windows
-  - [ ] Linux
 - [ ] Double check the previous release/milestone and ensure everything has been QA'd
   - **Note:** If there's issues that need to be checked, create a `master` GH issue that lists the issues that need to be QA'd
 - [ ] Consult with the security team to ensure that all security issues have been included.
