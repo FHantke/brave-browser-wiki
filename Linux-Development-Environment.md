@@ -26,7 +26,7 @@ Use `./src/build/install-build-deps-android.sh` for android builds
 
 # Troubleshooting
 
-Check out the upstream [Checking out and building Chromium on Linux](https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md) docs before filing an issue.
+Check out the upstream [Checking out and building Chromium on Linux](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md) docs before filing an issue.
 
 ## Known issues
 On debug build for Android lint may crash with error `java.lang.OutOfMemoryError: Java heap space`. Solution is to set environment variable `export JAVA_OPTS="-Xmx10G -Xms1G"`.
