@@ -18,6 +18,11 @@ Intended to provide a critical update
 1. Find the latest Desktop and Android tags. An easy way to find would be to look at [CHANGELOG_DESKTOP.md](https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md) and [CHANGELOG_ANDROID.md](https://github.com/brave/brave-browser/blob/master/CHANGELOG_ANDROID.md). Most of the time the tags are the same 👍 
 1. We can create a new branch based on this tag. If the tags are the same, we only need one branch. If they are different we can make two branches. For example, if https://github.com/brave/brave-browser/releases/tag/v1.35.103 is the tag, we can run:
     ```
+    cd /your-folder-here/brave-browser/
+    git fetch --tags
+    git checkout -b 1.35.release4 v1.35.103
+    git push -u origin 1.35.release4
+    cd src/brave
     git checkout -b 1.35.release4 v1.35.103
     git push -u origin2 1.35.release4
     ```
