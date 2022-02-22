@@ -21,3 +21,5 @@ Intended to provide a critical update
     git checkout -b 1.35.release4 v1.35.103
     git push -u origin2 1.35.release4
     ```
+1. Run the `chromium-update-minor` job and specify the branch (ex: `1.35.release4`). If this fails, attempt the Chromium update manually.
+1. We're ready for a build! We can start the build via the `brave-browser-build` job. NOTE: We may need to ask for devops support if we can't provide this branch name in the job parameters
