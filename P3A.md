@@ -386,8 +386,8 @@ _`Brave.Rewards.EnabledDuration`_ **[D]** **[A]**
 ### Q42: Has the Wallet keyring been created?
 `Brave.Wallet.KeyringCreated` **[D]** **[A]**
 
-1. No
-2. Yes
+0. No
+1. Yes
 
 ### Q43: What is the DefaultWalletSetting?
 `Brave.Wallet.DefaultWalletSetting` **[D]** **[A]**
