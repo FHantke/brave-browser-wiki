@@ -398,6 +398,13 @@ _`Brave.Rewards.EnabledDuration`_ **[D]** **[A]**
 3. BraveWalletPreferExtension
 4. BraveWallet
 
+### Q44: Was the IPFS local node installed? If so, is it still used?
+`Brave.IPFS.LocalNodeRetention` **[D]** **[A]**
+
+0. Never installed
+1. Installed, in use
+2. Installed, but disabled
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
