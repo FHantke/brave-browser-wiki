@@ -56,7 +56,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 - [ ] download the stub installer from https://brave.com on `Win x64` - `https://laptop-updates.brave.com/latest/winx64`
 - [ ] download the stub installer from https://brave.com on `Win x86` - `https://laptop-updates.brave.com/latest/winia32`
-- [ ] download the stub installer from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
+- [ ] download the `.dmg` binary from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
 
 ### Announcements
 
