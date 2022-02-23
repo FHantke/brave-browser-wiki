@@ -15,7 +15,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 ### Release Notes to Staging
 
-- [ ] Mark closed issues in github as release-notes/exclude or release-notes/include.
+- [ ] Mark closed issues in github as `release-notes/exclude` or `release-notes/include`.
 - [ ] Commit release notes to [CHANGELOG_DESKTOP.md](https://github.com/brave/brave-browser/blob/master/CHANGELOG_DESKTOP.md) in brave-browser master branch, must be completed before release to production Jenkins build job is run.
 - [ ] Stage release notes to https://github.com/brave/brave-browser/releases/
 
@@ -45,17 +45,18 @@ Be super sure that <version> is replaced with the version you wish to use.
 ### Updates Testing on Production
 
 - [ ] Wait for confirmation that Windows live update works
-  - [ ] Ensure that `delta` upgrades are working on `Win x64` platforms
-    - Save the [`configuration`](https://github.com/brave/brave-browser/wiki/(WIP)-Desktop-Release-Checklist#example-of-delta-upgrade-occurring) into a file named `BraveUpdate.ini` and move into `C:\`
-    - Upgrade and you should see `C:\Omaha log.txt`. Confirm that a [`delta`](https://github.com/brave/brave-browser/wiki/(WIP)-Desktop-Release-Checklist#example-of-delta-upgrade-occurring) upgrade has occurred.
+  - [ ] Ensure that `delta` upgrades are working on both `Win x64` & `Win x86` platforms
+    - Create the needed registry keys mentioned via https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#enabling-logging-to-check-delta-upgrades-on-win-x64--win-x86
+    - Upgrade and you should see `C:\ProgramData\BraveSoftware\Update\Log\BraveUpdate.log`. Confirm that a [`x64 delta`](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#x64-example) or [`x86 delta`](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#x86-example) upgrade has occurred.
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Wait for confirmation that Linux live update works
+  - [ ] ensure that following https://brave.com/linux downloads/installs the expected release (version we just published/released)
 
-### Download & Install Binaries from Brave.com
+### Download & Install stub binaries from https://brave.com
 
-- [ ] download binary from https://brave.com on `Win x64` - `https://laptop-updates.brave.com/latest/winx64`
-- [ ] download binary from https://brave.com on `Win x86` - `https://laptop-updates.brave.com/latest/winia32`
-- [ ] download binary from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
+- [ ] download the stub installer from https://brave.com on `Win x64` - `https://laptop-updates.brave.com/latest/winx64`
+- [ ] download the stub installer from https://brave.com on `Win x86` - `https://laptop-updates.brave.com/latest/winia32`
+- [ ] download the stub installer from https://brave.com on `macOS` - `https://laptop-updates.brave.com/latest/osx`
 
 ### Announcements
 
@@ -106,7 +107,7 @@ At line:1 char:1
 Once you've created the above registry keys, update Brave via `brave://settings/help` and you should see a log file created under the following directory :
 
 ```
-C:\ProgramData\BraveSoftware\Update\Log
+C:\ProgramData\BraveSoftware\Update\Log\
 ```
 
 You'll see something similar to the following under `BraveUpdate.log` which indicates that the `brave_installer-delta-x64.exe` was used for the upgrade:
