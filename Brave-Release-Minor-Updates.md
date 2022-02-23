@@ -9,7 +9,7 @@ These would be planned releases where we'll deliver bug fixes.
 
 Intended to provide a critical update
 
-## Minor Chromium Upgrade
+## Minor chromium release
 
 - When Chromium updates are released we're going to commit to getting a new Brave release out within 24 hours.
     - Only Chromium update will be included in the release
