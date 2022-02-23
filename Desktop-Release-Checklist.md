@@ -46,7 +46,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 - [ ] Wait for confirmation that Windows live update works
   - [ ] Ensure that `delta` upgrades are working on both `Win x64` & `Win x86` platforms
-    - Create the needed [`registry `](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#enabling-logging-to-check-delta-upgrades-on-win-x64--win-x86) keys
+    - Create the needed [`registry`](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#enabling-logging-to-check-delta-upgrades-on-win-x64--win-x86) keys
     - Upgrade and you should see `C:\ProgramData\BraveSoftware\Update\Log\BraveUpdate.log`. Confirm that a [`x64 delta`](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#x64-example) or [`x86 delta`](https://github.com/brave/brave-browser/wiki/Desktop-Release-Checklist/_edit#x86-example) upgrade has occurred.
 - [ ] Wait for confirmation that macOS live update works
 - [ ] Wait for confirmation that Linux live update works
