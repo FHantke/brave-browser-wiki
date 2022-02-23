@@ -347,11 +347,13 @@ _`Brave.Sync.ProgressTokenEverReset`_ **[D]** **[A]**
 
 ### Q37: Have you used the wallet in the previous month?
 _`Brave.Wallet.UsageMonthly.2`_ **[D]** **[A]**
+
 0. No
 1. Yes
 
 ### Q38/39: How many days have you used the wallet in the past week?
 _`Brave.Wallet.UsageDaysInWeek`_ **[D]** **[A]**
+
 0. No usage
 1. One day
 2. Two days
