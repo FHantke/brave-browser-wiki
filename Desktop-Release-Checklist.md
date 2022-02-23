@@ -5,13 +5,13 @@ Be super sure that <version> is replaced with the version you wish to use.
 
 - [ ] Double check the previous release/milestone and ensure everything has been QA'd
   - **Note:** If there's issues that need to be checked, create a `master` GH issue that lists the issues that need to be QA'd
-- [ ] Consult with the security team to ensure that all security issues have been included.
-   - [ ] Release using the `critical` feature (forces users to update/restart) if there's a zero day vulnerability being exploited
-- [ ] Consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverable's.
 - [ ] Ensure that the RC executable installs/launches without any issues on `x86` platforms (*Note:* preferably all three are checked but one should be good enough if others can't be checked) 
   - [ ] `Win 8.1 x86`
   - [ ] `Win 10 x86`
   - [ ] `Win 11 x86`
+- [ ] Consult with the security team to ensure that all security issues have been included.
+   - [ ] Release using the `critical` feature (forces users to update/restart) if there's a zero day vulnerability being exploited
+- [ ] Consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverable's.
 
 ### Release Notes to Staging
 
