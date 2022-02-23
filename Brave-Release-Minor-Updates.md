@@ -29,4 +29,4 @@ Intended to provide a critical update
 1. Run the `chromium-update-minor` job and specify the branch (ex: `1.35.release4`). If this fails, attempt the Chromium update manually. If the tags are NOT the same for Desktop and Android, we'll have needed to create two branches (ex: `1.35.release4` and `1.35.release4android`) and cherry-pick the Chromium update from `1.35.release4` over to `1.35.release4android`
 1. Pull request the branch. Review / Approve / Merge
 1. We can start the build via the `brave-browser-build` job. NOTE: We may need to ask for devops support if we can't provide this branch name in the job parameters
-1. Once build completes, we need to merge this branch into the major version branch. For example, `1.35.release4` would merge into `1.35.x`
+1. Once build completes, we need to merge this branch (`1.35.release4`) into the major version branch (`1.35.x`).
