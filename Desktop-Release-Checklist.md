@@ -71,6 +71,10 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-browser/milestones
 - [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-core/milestones
 
+### Creating milestones
+
+- [ ] Create milestones under https://github.com/brave/brave-browser/milestones & https://github.com/brave/brave-core/milestones if needed
+
 ---------------------------
 
 ### Enabling Logging to check delta upgrades on `Win x64` & `Win x86`
