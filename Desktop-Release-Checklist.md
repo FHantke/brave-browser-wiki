@@ -56,3 +56,52 @@ Be super sure that <version> is replaced with the version you wish to use.
 ### Closing milestones
 - [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-browser/milestones
 - [ ] Set a release date (if missing) and close the appropriate milestone under https://github.com/brave/brave-core/milestones
+
+---------------------------
+
+### Enabling Logging to check delta upgrades on `Win x64` & `Win x86`
+
+Once Brave is installed and you're ready to run through an upgrade, the following registry keys need to be added using `Powershell`:
+
+#### `Win x64`
+
+```
+New-Item –Path "HKLM:\SOFTWARE\WOW6432Node\BraveSoftware" –Name UpdateDev
+New-ItemProperty -Path "HKLM:\SOFTWARE\WOW6432Node\BraveSoftware\UpdateDev" -Name "IsEnabledLogToFile" -Value ”1”  -PropertyType "DWord"
+```
+
+#### `Win x86`
+
+```
+New-Item –Path "HKLM:\SOFTWARE\BraveSoftware" –Name UpdateDev
+New-ItemProperty -Path "HKLM:\SOFTWARE\BraveSoftware\UpdateDev" -Name "IsEnabledLogToFile" -Value ”1”  -PropertyType "DWord"
+```
+
+**Note:** You'll need to run Powershell as an `Administrator` or you'll get an error message similar to the following:
+
+```
+PS C:\Users\kamil> New-Item –Path "HKLM:\SOFTWARE\WOW6432Node\BraveSoftware" –Name UpdateDev
+New-Item : Requested registry access is not allowed.
+At line:1 char:1
++ New-Item –Path "HKLM:\SOFTWARE\WOW6432Node\BraveSoftware" –Name Updat ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...e\BraveSoftware:String) [New-Item], SecurityExcepti
+   on
+    + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.NewItemCommand
+```
+
+Once you've created the above registry keys, update Brave via `brave://settings/help` and you should see a log file created under the following directory :
+
+```
+C:\ProgramData\BraveSoftware\Update\Log
+```
+
+You'll see something similar to the following under `BraveUpdate.log` which indicates that the `brave_installer-delta-x64.exe` was used for the upgrade:
+
+#### `x64 example`
+
+```[02/22/22 19:48:16.672][BraveUpdate:goopdate][2304:3864][Running installer][C:\Program Files (x86)\BraveSoftware\Update\Install\{EA78FFA4-26E6-459D-9D48-03CA7B5750EE}\brave_installer-delta-x64.exe][][{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}]```
+
+#### `x86 example`
+
+```[02/22/22 20:04:57.790][BraveUpdate:goopdate][9384:9404][Running installer][C:\Program Files\BraveSoftware\Update\Install\{0700DFFF-3AD1-406E-9622-B46E1D93C408}\brave_installer-delta-ia32.exe][][{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}]```
