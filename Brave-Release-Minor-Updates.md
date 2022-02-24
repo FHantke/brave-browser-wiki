@@ -9,12 +9,14 @@ These would be planned releases where we'll deliver bug fixes.
 
 Intended to provide a critical update. Intended for when P1 issues are found/fixed in Brave.
 
-## Minor chromium release
+## Minor Chromium release
 When Chromium updates are released we're going to commit to getting a new Brave release out within 24 hours. Only Chromium update will be included in the release
 
 
 
-### Process for hotfix
+### Process for Minor Chromium release
+
+**Note:** some specifics for this may change; this was the process followed for 1.35.x release 4.
 
 1. Create the milestones in [brave-browser](https://github.com/brave/brave-browser/milestones) and [brave-core](https://github.com/brave/brave-core/milestones). For example `1.35.x - Release 4`
 1. Create an issue to track this (ex: https://github.com/brave/brave-browser/issues/21241) and put into the milestone
