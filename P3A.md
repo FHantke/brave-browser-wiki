@@ -397,6 +397,17 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 1. Installed, in use
 2. Installed, but disabled
 
+### Q45: Are ads enabled? If not, were they enabled in the past? If so, for how long?
+`Brave.Rewards.AdsEnabledDuration` **[D]** **[A]**
+
+0. It was never on
+1. It’s still on
+2. Less than three hours
+3. Less than three days
+4. Less than three weeks
+5. Less than three months
+6. More than three months
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
