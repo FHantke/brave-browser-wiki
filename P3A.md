@@ -351,7 +351,7 @@ _`Brave.Wallet.UsageMonthly.2`_ **[D]** **[A]**
 0. No
 1. Yes
 
-### Q38/39: How many days have you used the wallet in the past week?
+### Q38/39: How many days have you used the wallet in the past 7 days?
 _`Brave.Wallet.UsageDaysInWeek`_ **[D]** **[A]**
 
 0. No usage
