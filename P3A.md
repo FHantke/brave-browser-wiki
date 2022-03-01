@@ -409,12 +409,14 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 6. More than three months
 
 ### Q46: What is the global ad blocking shields setting?
+_`Brave.Shields.AdBlockSetting`_ **[D]** **[A]**
 
 0. Disabled
 1. Standard
 2. Aggressive
 
 ### Q47: What is the global fingerprinting shields setting?
+_`Brave.Shields.FingerprintBlockSetting`_ **[D]** **[A]**
 
 0. Disabled
 1. Standard
