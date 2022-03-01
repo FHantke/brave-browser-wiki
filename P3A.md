@@ -408,6 +408,18 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 5. Less than three months
 6. More than three months
 
+### Q46: What is the global ad blocking shields setting?
+
+0. Disabled
+1. Standard
+2. Aggressive
+
+### Q47: What is the global fingerprinting shields setting?
+
+0. Disabled
+1. Standard
+2. Aggressive
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
