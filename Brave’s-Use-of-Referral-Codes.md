@@ -1,4 +1,4 @@
-**Update: As of 11/23/20, Brave only supports referral codes for a small (50-100) list of referrers who are manually reviewed by Brave staff.** See https://brave.com/referral-program-update/ for details.
+**Update: As of 11/23/20, Brave supports referral codes only for a small (50-100) list of referrers who are manually reviewed by Brave staff.** See https://brave.com/referral-program-update/ for details.
 
 ## What are referral codes?
 
