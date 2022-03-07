@@ -6,7 +6,7 @@ Before you begin, ensure your system satisfies the [system requirements](https:/
 
 You will need Git, Python 3, the Node.js active LTS (v16+), and npm. You may need to make `python3` the default if Python 2.7 is default for your OS
 
-> Alternatively to npm, you can also use Yarn. We recommend following the [Yarn install docs](https://yarnpkg.com/lang/en/docs/install/) to install Yarn and a compatible version of NodeJS. After installing `yarn` you'll want to run `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+> Alternatively to npm, you can also use Yarn. We recommend following the [Yarn install docs](https://yarnpkg.com/lang/en/docs/install/) to install Yarn and a compatible version of Node.js. After installing `yarn` you'll want to run `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 
 If you are using Ubuntu, additionally install:
 
