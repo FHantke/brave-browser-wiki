@@ -66,6 +66,9 @@ npm run chromium_rebase_l10n
 Note: Filled some custom strings to brave_strings.grd by https://github.com/brave/brave-core/pull/214/commits/256f5aa8e781d266ad23f863ac7b613615ad2a5a
 ```
 
+Inspect changed strings visually to catch overly aggressive replacements (e.g. Google Lens -> Brave Lens).
+If overly aggressive replacements are found, add them to `script/lib/l10n/grd_string_replacements.py` and `script/lib/l10n/transifex/push.py` and rerun the `chromium_rebase_l10n` script.
+
 Do a commit for the updated source strings, `grd` files with the comment "Updated strings for Chromium XXX".
 
 ## Check for changes in the build tool chain.
