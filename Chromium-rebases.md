@@ -54,7 +54,7 @@
 **Note:** Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
 
 
-###  Update strings
+##  Update strings
 
 Update `grd` and `grdp` files from the Chromium ones:
 
@@ -120,7 +120,6 @@ Build unit and browser tests as usual:
 
 Use the same commit practices as for fixing the main build.
 
-
 ***
 ***MIDL issue on Windows***
 
@@ -131,7 +130,7 @@ To rebaseline:
   copy /y c:\users\XXX\appdata\local\temp\tmpdjhho_\* C:\Projects\brave\brave-browser\src\third_party\win_build_output\midl\google_update\x64
 ```
 
-# Audit for new network services
+## Audit for new network services
 
 When submitting PR on Github add `CI/run-network-audit` label to the PR to ensure that the CI runs `audit-network`.
 
@@ -141,11 +140,11 @@ We should build some automation to find new things added here:
 
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
 
-# Check for changes in supported OS versions
+## Check for changes in supported OS versions
 - [ ] For MacOS check `mac_deployment_target` and `mac_min_system_version` in `build/config/mac/mac_sdk.gni`
 - [ ] For iOS check `ios_deployment_target` in `build/config/ios/ios_sdk_overrides.gni`
 
-# Notify Security team of feature changes
+## Notify Security team of feature changes
 
 - [ ] Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
 in #security-discussion Slack channel. 
@@ -156,7 +155,7 @@ in #security-discussion Slack channel.
 
 - [ ] On Android, new permissions can be added in */AndroidManifest.xml or */AndroidManifest.xml.expected. Users often ask questions about new permissions on update. Any new permissions should be reviewed by the @android-team or @security-team before merge.
 
-### Update localizations
+## Update localizations
 
 See https://github.com/brave/brave-browser/wiki/Strings-and-Localization
 
@@ -173,7 +172,7 @@ Run this to pull down new xtb and translation files:
 
 Do a commit for all the string translation updates, `xtb` files.
 
-### Before merging
+## Before merging
 
 Make builds for QA smoke tests using the following links:
 * MacOS: https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
@@ -184,7 +183,7 @@ Make builds for QA smoke tests using the following links:
 
 Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
 
-#### Android installers
+### Android installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
@@ -192,11 +191,11 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
 
-#### Linux installers
+### Linux installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly_1.37.54_amd64.deb
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly-1.37.54-1.x86_64.rpm
 
-#### Windows installers
+### Windows installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/setup-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/brave_installer-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserNightlySetup_99_1_37_54.exe
@@ -205,6 +204,6 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
-#### MacOS installers
+### MacOS installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
 * ARM64?
