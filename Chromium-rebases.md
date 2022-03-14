@@ -1,28 +1,28 @@
-## Configure and init the new Chromium version.
+## Configure and init the new Chromium version
 
-1. Create a new cloned dir.
+1. Create a new cloned directory and install the necessary node modules.
 
 &emsp;`npm install`
 
-2. Since you’re using a new cloned dir you should not already have an `src` dir and should run `init`.
+2. Since this is a new clone, you won't have a `src` directory so run `init` to create that.
 
 &emsp;`npm run init`
 
-3. Branch off the latest Chromium rebase branch.
+3. Branch off the latest Chromium rebase branch or master, whichever is applicable.
 
-3. Open `package.json` in `src/brave/` and change the string at the path `config.projects.chrome.tag` to the new Chromium version, then commit the changes to that file with the comment "Update from Chromium XXX to Chromium YYY."
+3. Open `package.json` in `src/brave/` and change the string at the path `config.projects.chrome.tag` to the new Chromium version, then commit the changes to that file with the comment `Update from Chromium XXX to Chromium YYY.`
 
-4. Run `npm run sync` to make sure that the Chromium repository at `src/` is at the right version, the right internal dependencies set to the expected versions and the patches from Brave applied.
+4. Run `npm run sync` to make sure that the Chromium repository at `src/` is at the right version, the right internal dependencies are set to the expected versions, and the patches from Brave applied as expected.
 
 5. If all patches apply correctly, simply run
 
 &emsp;`npm run update_patches`
 
-&emsp;then, commit the changes with the comment "Updated patches from Chromium XXX to Chromium YYY."
+&emsp;then, commit the changes with the comment `Updated patches from Chromium XXX to Chromium YYY.`
 
 &emsp;Typically, however, some patches will fail to apply.
 
-## Fix patches.
+## Fix patches
 
 1. Resolve errors for each patch that didn't apply.
 
@@ -37,7 +37,7 @@
   git diff <CHROMIUM_VERSION> --src-prefix=a/ --dst-prefix=b/ --full-index path/to/file/being/patched > brave/patches/patch_name.patch
  ```
 
- &emsp;When all such failing patches have been fixed, commit the changed patches with the comment "Conflict-resolved patches from Chromium XXX to Chromium YYY."
+ &emsp;When all such failing patches have been fixed, commit the changed patches with the comment `Conflict-resolved patches from Chromium XXX to Chromium YYY.`
 
  * The content that was being patched or the entire file was removed -> determine if the patch can just be removed or other changes need to made to compensate for the removed code. Remove the patch and commit. The commit message should include the links to the relevant upstream changes on https://chromium.googlesource.com/ or https://source.chromium.org/, as well as the upstream commit messages for those changes.
 
@@ -45,7 +45,7 @@
 
 &emsp;`npm run update_patches`
 
-&emsp;This will update patches that applied correctly in the first place. Commit the changes with the comment "Updated patches from Chromium XXX to Chromium YYY."
+&emsp;This will update patches that applied correctly in the first place. Commit the changes with the comment `Updated patches from Chromium XXX to Chromium YYY.`
 
 3. Since the `init` was interrupted by patching errors run `sync`:
 
@@ -54,7 +54,7 @@
 **Note:** Be careful when applying `tools/gritsettings/resource_ids`, sometimes the IDs can change and you should update the Brave one to be the same as the Chromium one.
 
 
-###  Fix strings.
+###  Update strings
 
 Update `grd` and `grdp` files from the Chromium ones:
 
@@ -69,15 +69,15 @@ Note: Filled some custom strings to brave_strings.grd by https://github.com/brav
 Inspect changed strings visually to catch overly aggressive replacements (e.g. Google Lens -> Brave Lens).
 If overly aggressive replacements are found, add them to `script/lib/l10n/grd_string_replacements.py` and `script/lib/l10n/transifex/push.py` and rerun the `chromium_rebase_l10n` script.
 
-Do a commit for the updated source strings, `grd` files with the comment "Updated strings for Chromium XXX".
+Do a commit for the updated source strings, `grd` files with the comment `Updated strings for Chromium XXX`.
 
-## Check for changes in the build tool chain.
+## Check for changes in the build tool chain
 * For Mac, check `mac_sdk_min` in `src/build/config/mac/mac_sdk_overrides.gni` for the SDK version, the comment above `MAC_BINARIES_TAG` and `MAC_MINIMUM_OS_VERSION` in `src/build/mac_toolchain.py` for the XCode version and the OS version,
 * For Windows check `MSVS_VERSIONS` in `src/build/vs_toolchain.py` (`CURRENT_DEFAULT_TOOLCHAIN_VERSION` in `src/build/win_toolchain.py` prior to C75) for Visual Studio versions.
 
 Update your tool chain if needed and alert dev and CI teams on tool chain changes. 
 
-## Fix build.
+## Fix the build
 
 Do a build like normal, fix errors as they come up.
 
@@ -110,7 +110,7 @@ Run `brave/script/check_chromium_src.py` to locate any override files in `chromi
 Make an appropriate fix for each situation.
 
 
-## Fix unit and browser tests build.
+## Fix unit and browser tests build
 
 Build unit and browser tests as usual:
 
@@ -131,7 +131,6 @@ To rebaseline:
   copy /y c:\users\XXX\appdata\local\temp\tmpdjhho_\* C:\Projects\brave\brave-browser\src\third_party\win_build_output\midl\google_update\x64
 ```
 
-
 # Audit for new network services
 
 When submitting PR on Github add `CI/run-network-audit` label to the PR to ensure that the CI runs `audit-network`.
@@ -142,7 +141,7 @@ We should build some automation to find new things added here:
 
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
 
-# Check for changes in supported OS versions.
+# Check for changes in supported OS versions
 - [ ] For MacOS check `mac_deployment_target` and `mac_min_system_version` in `build/config/mac/mac_sdk.gni`
 - [ ] For iOS check `ios_deployment_target` in `build/config/ios/ios_sdk_overrides.gni`
 
@@ -157,7 +156,7 @@ in #security-discussion Slack channel.
 
 - [ ] On Android, new permissions can be added in */AndroidManifest.xml or */AndroidManifest.xml.expected. Users often ask questions about new permissions on update. Any new permissions should be reviewed by the @android-team or @security-team before merge.
 
-### Update localization.
+### Update localizations
 
 See https://github.com/brave/brave-browser/wiki/Strings-and-Localization
 
@@ -173,3 +172,39 @@ Run this to pull down new xtb and translation files:
 `npm run pull_l10n`
 
 Do a commit for all the string translation updates, `xtb` files.
+
+### Before merging
+
+Make builds for QA smoke tests using the following links:
+* MacOS: https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
+* Windows: https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
+* Linux: https://ci.brave.com/view/linux/job/test-brave-browser-build-linux-x64
+* Windows: https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
+* Android: https://ci.brave.com/view/macos/job/test-brave-browser-build-android
+
+Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
+
+#### Android installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/70/BraveMonox86.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
+
+#### Linux installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly_1.37.54_amd64.deb
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly-1.37.54-1.x86_64.rpm
+
+#### Windows installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/setup-x64.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/brave_installer-x64.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneSilentNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
+
+#### MacOS installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
+* ARM64?
