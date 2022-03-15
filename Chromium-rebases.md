@@ -175,8 +175,8 @@ Do a commit for all the string translation updates, `xtb` files.
 ## Before merging
 
 Make builds for QA smoke tests using the following links:
-* MacOS: https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
-* Windows: https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
+* MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
+* MacOS (arm64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
 * Linux: https://ci.brave.com/view/linux/job/test-brave-browser-build-linux-x64
 * Windows: https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
 * Android: https://ci.brave.com/view/macos/job/test-brave-browser-build-android
