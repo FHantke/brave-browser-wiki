@@ -181,6 +181,12 @@ Make builds for QA smoke tests using the following links:
 * Windows: https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
 * Android: https://ci.brave.com/view/macos/job/test-brave-browser-build-android
 
+Settings:
+* `CHANNEL` - Set to `nightly` (this is the default)
+* `BRANCH` - Set to `master` (this is the default)
+* `BRAVE_CORE_BRANCH` - Set to the appropriate branch name, e.g., `cr100`
+* `PREVIOUS_BUILD_NUMBER_DELTA` - Leave blank
+
 Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
 
 ### Android installers
