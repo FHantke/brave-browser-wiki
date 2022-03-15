@@ -60,6 +60,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.45.x  |    107   | October 18, 2022    | October 25, 2022    |                                            |
 
 - All dates are approximate and are subject to change.
+- Maintenance builds are tentative and subject to change. 
 - `Migration Date` is also the cutoff date to add strings that need to be translated for the release. 
 - CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
