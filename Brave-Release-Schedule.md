@@ -1,8 +1,9 @@
 # Overview 
 
 - Major Release frequency: ~4 weeks
-- Minor / Chemspill frequency: As needed 
-- Every release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
+- Maintenance Release frequency: ~2 weeks after a major release (however, these are tentative and subject to change)
+- Chemspill/Hotfix frequency: As needed 
+- Every major release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
 
 Older Brave Release Schedules are available in the [Brave Release Schedules Archive](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule-Archive).
 
@@ -57,7 +58,6 @@ The following is our automated schedule for creating and uploading builds to our
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
 - `Migration Date` is also the cutoff date to add strings that need to be translated for the release. 
-- CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
 
 ### Number of days between each release on Release channel
