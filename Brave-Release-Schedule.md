@@ -37,22 +37,25 @@ The following is our automated schedule for creating and uploading builds to our
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.35.x  |    98    | January 26, 2022    | February 2, 2022    | Migration delayed. Originally set as `January 25, 2021`.  Release delayed. Originally set as `February 1, 2022`|
 | 1.36.x  |    99    | February 23, 2022   | March 2, 2022       | Migration delayed due to Holiday. Originally set as `February 22, 2021`.  Release delayed. Originally set as `March 1, 2022`|
-| 1.36.x  |    99    | N/A                 | March 16, 2022      |Maintenance Release                         |
+| 1.36.x  |    99    | N/A                 | March 16, 2022      | Maintenance Release                        |
 | 1.37.x  |    100   | March 22, 2022      | March 29, 2022      |                                            |
-| 1.37.x  |    100   | N/A                 | April 13, 2022      |Maintenance Release                         |
+| 1.37.x  |    100   | N/A                 | April 13, 2022      | Maintenance Release                        |
 | 1.38.x  |    101   | April 19, 2022      | April 26, 2022      |                                            |
-| 1.38.x  |    101   | N/A                 | May 11, 2022        |Maintenance Release                         |
+| 1.38.x  |    101   | N/A                 | May 11, 2022        | Maintenance Release                        |
 | 1.39.x  |    102   | May 17, 2022        | May 24, 2022        |                                            |
-| 1.39.x  |    102   | N/A                 | June 8, 2022        |Maintenance Release                         |
+| 1.39.x  |    102   | N/A                 | June 8, 2022        | Maintenance Release                        |
 | 1.40.x  |    103   | June 14, 2022       | June 21, 2022       |                                            |
 | 1.41.x  |    103   | July 5, 2022        | July 12, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 | 1.42.x  |    104   | July 26, 2022       | August 2, 2022      | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
+| 1.42.x  |    104   | N/A                 | August 17, 2022     | Maintenance Release                        |
 | 1.43.x  |    105   | August 23, 2022     | August 30, 2022     |                                            |
+| 1.43.x  |    105   | N/A                 | September 14, 2022  | Maintenance Release                        |
 | 1.44.x  |    106   | September 20, 2022  | September 27, 2022  |                                            |
+| 1.44.x  |    106   | N/A                 | October 12, 2022    | Maintenance Release                        |
 | 1.45.x  |    107   | October 18, 2022    | October 25, 2022    |                                            |
 
 - All dates are approximate and are subject to change.
-- Maintenance builds are tentative and subject to change. 
+- `Maintenance releases` are tentative and subject to change. 
 - `Migration Date` is also the cutoff date to add strings that need to be translated for the release. 
 - CI does builds for release channel once a day if there are changes or as requested.
 - Updates will be released as requested only.
