@@ -213,4 +213,4 @@ Those build jobs produce installers that you can retrieve from the following pla
 
 ### MacOS installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
-* ARM64?
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-arm64/153/Brave-Browser-Nightly-arm64.dmg
