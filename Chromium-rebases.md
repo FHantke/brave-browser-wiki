@@ -186,6 +186,7 @@ Settings:
 * `BRANCH` - Set to `master` (this is the default)
 * `BRAVE_CORE_BRANCH` - Set to the appropriate branch name, e.g., `cr100`
 * `PREVIOUS_BUILD_NUMBER_DELTA` - Leave blank
+* `KEYCHAIN_NAME` (Mac only) - **Must** be set to `release` (this is **not** currently the default and will result in a startup crash if not set properly)
 
 Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
 
