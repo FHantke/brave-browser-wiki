@@ -214,3 +214,9 @@ Those build jobs produce installers that you can retrieve from the following pla
 ### MacOS installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-arm64/153/Brave-Browser-Nightly-arm64.dmg
+
+## Merge
+
+After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/etc. changes required by the new Chromium version.
+
+After merging to `master` create uplifts as appropriate.
