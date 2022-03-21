@@ -1,7 +1,7 @@
 # Privacy Preserving Product Analytics Metrics
 This is a human-readable list of product analytics metrics collected.
 The list of metrics collected can also be found [in the source
-code](https://github.com/brave/brave-core/blob/26388acdc18107e9a43e862cc38ff6a637e68724/components/p3a/brave_p3a_service.cc#L51).
+code](https://github.com/brave/brave-core/blob/master/components/p3a/brave_p3a_service.cc#L67).
 The analytics reported are not exact numbers, but are collected into aggregate
 "buckets" or histograms. The process for this aggregation can also be verified [in
 the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a558b7e0aa7378bb1c1/components/p3a/brave_histogram_rewrite.cc#L24).
