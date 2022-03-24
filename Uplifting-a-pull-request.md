@@ -113,7 +113,7 @@ This will show the raw responses sent back from GitHub
 
 ## Getting help
 - Hit up [@bsclifton](https://github.com/bsclifton) (`@clifton` on Slack)
-- On Slack, ask in `#brave-core` or `#brave-core-ci`
+- On Slack, ask in `#brave-core` or `#continuous-integration-guest`
 
 ### Command line help
 You can run the script with `--help` to see all the available inputs:
