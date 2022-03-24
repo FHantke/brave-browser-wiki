@@ -11,6 +11,7 @@ Painfully hand-created table of contents:
     - [Command line help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#command-line-help)
     - [Helpful notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#helpful-notes)
     - [Implementation notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#implementation-notes)
+    - [Known issues / enhancements](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#implementation-notes)
 - [Also see](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#also-see)
 
 ## What are uplifts?
@@ -167,26 +168,11 @@ optional arguments:
 - Bug fixes in https://github.com/brave/brave-core/pull/1655 and https://github.com/brave/brave-core/pull/1662
 - Script renamed / functionality modified in https://github.com/brave/brave-core/pull/1775
 
-
-## Uplift templates
-
-### Uplift approval template
-
-Approved, please ensure that before merging:
-
-- [ ] You have checked CI and the builds, lint, and tests all pass or are not related to your PR.
-- [ ] You have tested your change on Nightly.
-- [ ] The PR milestones match the branch they're landing to.
-
-After you merge:
-
-- [ ] The associated issue milestone is set to the smallest version that the changes is landed on.
-
-
-### Uplift denial template
-
-Uplift declined. Reason here...
-
+### Known issues / enhancements
+- [PR uplift pipeline should copy skip labels from original PR](https://github.com/brave/brave-browser/issues/20528)
+- [The uplift script/pipeline should not fail if the PR being uplifted is not merged yet](https://github.com/brave/brave-browser/issues/20378)
+- [Temporarily restore PR branch, if deleted, in uplift.py](https://github.com/brave/brave-browser/issues/19683)
+- [Uplifts PR script fails with Unicode characters](https://github.com/brave/brave-browser/issues/14656)
 
 ## Also see
 If you enjoyed this document, check out the following docs too! 😎 
