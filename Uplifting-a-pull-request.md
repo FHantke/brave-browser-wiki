@@ -177,5 +177,5 @@ optional arguments:
 ## Also see
 If you enjoyed this document, check out the following docs too! 😎 
 - [Triage Guidelines](https://github.com/brave/brave-browser/wiki/Triage-Guidelines)
-- [Checks done on Pull Request](https://github.com/brave/brave-browser/wiki/Checks-done-on-Pull-Request)
+- [PR Builder overview](https://github.com/brave/brave-browser/wiki/PR-Builder-overview)
 - [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule)
