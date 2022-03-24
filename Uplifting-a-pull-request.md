@@ -11,7 +11,7 @@ Painfully hand-created table of contents:
     - [Command line help](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#command-line-help)
     - [Helpful notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#helpful-notes)
     - [Implementation notes](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#implementation-notes)
-    - [Known issues / enhancements](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#implementation-notes)
+    - [Known issues / enhancements](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#known-issues--enhancements)
 - [Also see](https://github.com/brave/brave-browser/wiki/Uplifting-a-pull-request#also-see)
 
 ## What are uplifts?
