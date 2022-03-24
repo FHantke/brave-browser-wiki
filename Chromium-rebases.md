@@ -220,3 +220,7 @@ Those build jobs produce installers that you can retrieve from the following pla
 After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/etc. changes required by the new Chromium version.
 
 After merging to `master` create uplifts as appropriate.
+
+## Minor bumps
+
+For post-merge minor Chromium bumps, [follow the instructions here](https://github.com/brave/brave-browser/wiki/Brave-Release-Minor-Updates).
