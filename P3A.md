@@ -422,6 +422,30 @@ _`Brave.Shields.FingerprintBlockSetting`_ **[D]** **[A]**
 1. Standard
 2. Aggressive
 
+### Q48: How many external feeds did you add last week?
+_`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]**
+
+0. None
+1. 1 feed
+2. 2 feeds
+3. 3 feeds
+4. 4 feeds
+5. 5 feeds
+6. 6 to 10 feeds
+7. More than 10 feeds
+
+### Q49: How many external feeds do you have in total?
+_`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]**
+
+0. None
+1. 1 feed
+2. 2 feeds
+3. 3 feeds
+4. 4 feeds
+5. 5 feeds
+6. 6 to 10 feeds
+7. More than 10 feeds
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
