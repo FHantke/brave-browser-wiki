@@ -69,7 +69,7 @@ Strings are matched using filename (not path). This is something we control in t
 ```
 Please read this!
 
-https://github.com/brave/brave-browser/wiki/Strings-and-Localization#information-for-localizers
+https://github.com/brave/brave-browser/wiki/Information-for-localizers
 ```
 - Press Next and it should take a minute or two to load, I think this happens because we have a lot of strings.
 - Uncheck `All`, then only select these resources for translation, the rest are taken from Chromium but we just store them in Transifex:
@@ -141,65 +141,7 @@ Vietnamese    (vi)
  
 
 ## Information for localizers:
-
-- Entities should be encoded like for example: `<b>test</b>` would be `&lt;b&gt;test&lt;/b&gt;`. Note that entities start with an ampersand, and they end with a semicolon. There is no space in between any of that. Sometimes, you may encounter incorrectly double-escaped encodings like `&amp;lt;` (instead of `&lt;`); it's ok to leave those as they are.
-
-- Sometimes strings have variables (placeholders) which look like the pictures below.<br/>
-  <img width="466" alt="string with placeholders example" src="https://user-images.githubusercontent.com/831718/50179178-59893f80-02d4-11e9-86e4-585d55fa37ac.png"><br/>
-  or<br/>
-  <img width="466" alt="string with placeholders example 2" src="https://user-images.githubusercontent.com/41635752/144468340-2dea8b7c-2174-4d3e-a1bd-58ba694d33ef.png"><br/> 
-  In these cases you should:
-    - If the parts of the string with `&lt;ph ...` and `&lt;/ph&gt;` are exposed in your editor then use `<` and `>` and not `&lt;` and not `&gt;`, **BUT ONLY with `ph` and `ex` elements (and only those elements!)**.  Even though the source looks like `&lt;ph`, the translation  should use `<` and `>`. **DO NOT replace `&lt;` and `&gt;` when they surround other elements, such as `a` (`&lt;a...` and `&lt;a/&gt;` should not be modified).**
-    - The text inside `ex` should _not_ be translated - it's an example for you, the translator, of values that would be used in this variable.<br/>
-    - In the example in the graphic above, the translation should look like this:
-      <table>
-        <tr>
-          <td><b>Source:</b></td>
-          <td>&amp;lt;ph name="EXTENSION_NAME"&amp;gt;$1&amp;lt;/ph&amp;gt; (extension ID "&amp;lt;ph name="EXTENSION_ID"&amp;gt;$2&amp;lt;ex&amp;lt;abacabadabacabaeabacabadabacabaf&amp;lt;/ex&amp;lt;&amp;lt;/ph&amp;gt;") is not allowed in Brave.</td>
-        </tr>
-        <tr>
-          <td><b>Translation:</b></td>
-          <td>&lt;ph name="EXTENSION_NAME"&gt;$1&lt;/ph&gt;<b> (translate this "</b>&lt;ph name="EXTENSION_ID"&gt;$2&lt;ex&gt;<b>do not translate this</b>&lt;/ex&gt;&lt;/ph&gt;<b>") translate this too.</b></td>
-        </tr>
-      </table>
-   - You may encounter other encoded tags inside the `ph` tags: for example, `&lt;ph name="BEGIN_BOLD1"&gt;&amp;lt;b1&amp;gt;&lt;/ph&gt;`. These encoded tags inside `ph` tags should be left encoded, in this case resulting in:
-     <table>
-       <tr>
-         <td><b>Source:</b></td>
-         <td>&amp;lt;ph name="BEGIN_BOLD1"&amp;gt;&amp;amp;lt;b1&amp;amp;gt;&amp;lt;/ph&amp;gt;</td>
-       </tr>
-       <tr>
-         <td><b>Translation:</b></td>
-         <td>&lt;ph name="BEGIN_BOLD1"&gt;&amp;amp;lt;b1&amp;amp;gt;&lt;/ph&gt;</td>
-       </tr>
-     </table> 
-
-- Sometimes strings support single/plural versions. Such strings support [ICU plural rules](http://cldr.unicode.org/index/cldr-spec/plural-rules) and look similar to this:
-  <table>
-    <tr>
-      <td>{COUNT, plural,<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=0 {<b>Open all in &amp;amp;private window</b>}<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=1 {<b>Open in &amp;amp;private window</b>}<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other {<b>Open all (</b>{COUNT}<b>) in &amp;amp;private window</b>}}<br/>
-      </td>
-    </tr>
-    <tr>
-      <td>Only the bolded text in the above example should be translated. Terms <i>COUNT</i> (or any other term after the initial <i>'{'</i>), <i>plural</i>, <i>other</i> should <b>NOT</b> be translated.
-      </td>
-    </tr>
-  </table>
-
-- If you see `&#8217;` in the text, that is an encoded apostrophe(`’`). For example, `you&#8217;re` is just `you're` in which case you don't need to preserve this encoded sequence in the translation.
-  <br/>Other common codes:
-  - `&#8211;` - en dash(`–`)
-  - `&#8212;` - em dash(`—`)
-  - `&#8216;` - opening single quote(`‘`)
-  - `&#8230;` - ellipsis(`…`)
-  - **Note:** standalone `&amp;` (or `&amp;amp;`), `&lt;` (or `&amp;lt;`), or `&gt;` (or `&amp;gt;`), if needed in the localized string, should be left as they are. For example, `Bob &amp; Jim`, or `System &gt; Settings` should stay that way.
-
-- In branded feature names, such as "Brave", "Brave Rewards", and "Brave Ads", do not translate Brave, but do translate the feature name ("Rewards", "Ads", etc.).
-
-- Do not translate terms inside double square or squiggly brackets - they are placeholders (for example `[[user]]` or `{{user}}` should be left as is).
+This information can now be found [here](https://github.com/brave/brave-browser/wiki/Information-for-localizers)
 
 
 ## When to submit orders and what to do when they're done
