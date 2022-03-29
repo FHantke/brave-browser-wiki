@@ -19,7 +19,7 @@ In these cases you should:
   - When placeholders contain URLs, you may receive a warning from Transifex about a missing URL:<br/>
     <img width="400" alt="Missing URL warning example" src="https://user-images.githubusercontent.com/41635752/160645779-8c51f18a-d53c-43cb-9242-95825ca2f016.png"><br/>
     You can ignore such warnings.
-  - If you do not use Transifex edit for translating, please, see the [Manual handling of placeholders](https://github.com/brave/brave-browser/wiki/Strings-and-Localization#manual-handling-of-placeholders) section below.<br/>
+  - If you do not use Transifex edit for translating, please, see the [Manual handling of placeholders](https://github.com/brave/brave-browser/wiki/Information-for-localizers#manual-handling-of-placeholders) section below.<br/>
 
 Sometimes you may encounter other types of placeholders such as double square or double squiggly brackets. Do not translate terms inside these placeholders (for example, `[[user]]` or `{{user}}` should be left as is).
 
