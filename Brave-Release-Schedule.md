@@ -151,8 +151,7 @@ The following is our automated schedule for creating and uploading builds to our
 
 # How to do branch migrations:
 
-This process has recently been automated!
-- Visit https://staging.ci.brave.com/job/branch-migrations/
+- Visit https://ci.brave.com/job/branch-migrations/
 - Queue the job
 - Verify results
 
