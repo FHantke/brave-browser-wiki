@@ -66,7 +66,7 @@ Be super sure that <version> is replaced with the version you wish to use.
 - [ ] Announce release on https://www.reddit.com/r/brave_browser/ (@Hollons)
 - [ ] Notify #announcements of the latest release with a link to the release notes
 
-Additionally, for 0-day and critical releases 
+Additional announcements for 0-day and critical releases 
 - [ ] Announce release on Twitter `https://twitter.com/brave` (@rebron)
 - [ ] Announce release on Facebook `https://www.facebook.com/BraveSoftware` (@rebron)
 
