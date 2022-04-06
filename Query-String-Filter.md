@@ -7,7 +7,7 @@ This kind of tracking is typically used to sync cookie, that is the practice of 
 
 ### Implementation
 
-The way that the filter works is that we remove from the query string any parameters (i.e. the parameter name and its value) before we proceed with a non-same-site network request. This means that such parameters never make it to the server, URL bar or the `Referer` header, and cannot be recovered by scripts running on a page.
+The way that the filter works is that we remove from the query string any parameters (i.e. the parameter name and its value) before we proceed with a non-same-site network request (navigations, subresources and redirects). This means that such parameters never make it to the server, URL bar or the `Referer` header, and cannot be recovered by scripts running on a page.
 
 A notable exception to this intervention is the unsubscribe link in emails. If a user-identifying tracking parameter is required for that functionality to work, we make an exception.
 
