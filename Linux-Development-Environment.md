@@ -4,14 +4,14 @@ Before you begin, ensure your system satisfies the [system requirements](https:/
 
 # Install additional build dependencies
 
-You will need Git, Python 3, the Node.js active LTS (v16+), and npm. You may need to make `python3` the default if Python 2.7 is default for your OS
+You will need Git, Python 3, the Node.js active LTS (v16+), and npm. You may need to make `python3` the default if Python 2.7 is default for your OS. Also, if you don't have anything named `python` on your machine and only have `python3`, you will need something like `python-is-python3`.
 
 > Alternatively to npm, you can also use Yarn. We recommend following the [Yarn install docs](https://yarnpkg.com/lang/en/docs/install/) to install Yarn and a compatible version of Node.js. After installing `yarn` you'll want to run `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 
 If you are using Ubuntu, additionally install:
 
 ```
-apt-get install build-essential libgnome-keyring-dev python-setuptools
+apt-get install build-essential python-setuptools
 ```
 
 You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `npm run init` is finished, there is one final step to finish installing build dependencies. This shell script only works on Debian and Ubuntu but check [system requirements](https://github.com/chromium/chromium/blob/master/docs/linux/build_instructions.md#system-requirements) for other distros: 
