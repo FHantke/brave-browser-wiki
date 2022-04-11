@@ -29,7 +29,7 @@ When Chromium updates are released we're going to commit to getting a new Brave 
     git push -u origin 1.35.release4
     cd src/brave
     git checkout -b 1.35.release4 v1.35.103
-    git push -u origin2 1.35.release4
+    git push -u origin 1.35.release4
     ```
 1. Run the `chromium-update-minor` job (https://ci.brave.com/view/wip/job/chromium-update-minor/) and specify the branch (ex: `1.35.release4`). This will create a new branch (ex: `1.35.release4-98.0.4758.109`). If this fails, attempt the Chromium update manually. If the tags are NOT the same for Desktop and Android, we'll have needed to create two branches (ex: `1.35.release4` and `1.35.release4android`) and cherry-pick the Chromium update from `1.35.release4` over to `1.35.release4android`
 1. Pull request the branch (`1.35.release4-98.0.4758.109` merging into `1.35.release4`)
