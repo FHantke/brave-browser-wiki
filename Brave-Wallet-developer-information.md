@@ -34,11 +34,11 @@ Paste this into the console of the Dapp that isn't working:
 ```
 const handler = {
   get: function(target, prop, receiver) {
-    console.log('accessing prop: ', prop)
+    console.log('accessing prop: ', prop, ...arguments)
     return Reflect.get(...arguments);
   },
   set(target, prop, val) { // to intercept property writing
-    console.log('Setting prop to', prop, val)
+    console.log('Setting prop to', prop, val, ...arguments)
     return Reflect.set(...arguments);
   },
   apply: function(target, thisArg, args) {
