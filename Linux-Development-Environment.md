@@ -11,7 +11,7 @@ You will need Git, Python 3, the Node.js active LTS (v16+), and npm. You may nee
 If you are using Ubuntu, additionally install:
 
 ```
-apt-get install build-essential python-setuptools
+apt-get install build-essential python-setuptools python3-distutils
 ```
 
 You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-the-repo]]. After `npm run init` is finished, there is one final step to finish installing build dependencies. This shell script only works on Debian and Ubuntu but check [system requirements](https://github.com/chromium/chromium/blob/master/docs/linux/build_instructions.md#system-requirements) for other distros: 
