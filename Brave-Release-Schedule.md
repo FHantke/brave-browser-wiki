@@ -40,7 +40,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.36.x  |    99    | February 23, 2022   | March 2, 2022       | Migration delayed due to Holiday. Originally set as `February 22, 2021`.  Release delayed. Originally set as `March 1, 2022`|
 | 1.36.x  |    99    | N/A                 | March 16, 2022      | Maintenance Release                        |
 | 1.37.x  |    100   | March 22, 2022      | March 30, 2022      |Release delayed. Originally set as `March 29, 2022`|    
-| 1.37.x  |    100   | N/A                 | April 13, 2022      | Maintenance Release                        |
+| 1.37.x  |    100   | N/A                 | April 14, 2022      | Maintenance Release                        |
 | 1.38.x  |    101   | April 19, 2022      | April 26, 2022      |                                            |
 | 1.38.x  |    101   | N/A                 | May 11, 2022        | Maintenance Release                        |
 | 1.39.x  |    102   | May 17, 2022        | May 24, 2022        |                                            |
