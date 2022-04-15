@@ -446,6 +446,19 @@ _`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]**
 6. 6 to 10 feeds
 7. More than 10 feeds
 
+### Q50: How many Brave News cards did you view in the past week?
+_`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]**
+
+0. None
+1. 1
+2. 2 to 10
+3. 11 to 20
+4. 21 to 40
+5. 41 to 80
+6. 81 to 100
+7. 101 or more
+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
