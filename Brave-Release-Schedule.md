@@ -149,6 +149,20 @@ The following is our automated schedule for creating and uploading builds to our
 - If something fails tests, that thing should be backed out.
 - `brave/brave-browser`'s `package.json` specifies brave-core branch to be `master`.
 
+# Mobile platforms
+## Android rollout process
+When 1) approved in the Google Play Store and 2) QA has signed off on the release, we'll release in a staged rollout. Before moving to the next stage, crash reports are checked by release team and evaluated.
+
+Assuming we have the release ready in the morning, the schedule will typically look like this:
+| day | time | rollout             |
+|:---:|:----:|---------------------|
+| 1 | morning | initial release 1% |
+| 1 | evening | 5%                 |
+| 2 | morning | 10%                |
+| 2 | evening | 20%                |
+| 3 | morning | 50%                |
+| 3 | evening | 100%               |
+
 # How to do branch migrations:
 
 - Visit https://ci.brave.com/job/branch-migrations/
