@@ -15,9 +15,9 @@ Be super sure that <version> is replaced with the version you wish to use.
  - [ ] Download the latest version of [ClassyShark3xodus](https://f-droid.org/en/packages/com.oF2pks.classyshark3xodus/) and ensure that zero trackers are found within Brave.
    - [ ] Once scanned, ensured that selecting `Settings` -> `Sub Totals` also displays zero trackers
 
-**`Example`** | **`Example`**
---------------|---------------
-![Screenshot_20220411-220522](https://user-images.githubusercontent.com/2602313/162865301-fe3e4efd-dac0-4403-a8c9-5bee07881341.png) | ![Screenshot_20220411-220913](https://user-images.githubusercontent.com/2602313/162865300-6c4b5929-a5ac-47fe-9df4-4faca1f36534.png)
+**`Good Example (Brave)`** | **`Good Example (Brave)`** | **`Bad Example (Firefox)`**
+---------------------------|---------------------------|------------------------------
+![Screenshot_20220411-220522](https://user-images.githubusercontent.com/2602313/162865301-fe3e4efd-dac0-4403-a8c9-5bee07881341.png) | ![Screenshot_20220411-220913](https://user-images.githubusercontent.com/2602313/162865300-6c4b5929-a5ac-47fe-9df4-4faca1f36534.png) | ![Screenshot (Apr  11, 2022 11_42_57)](https://user-images.githubusercontent.com/2602313/165127332-bb756dee-92ec-476c-8730-ded93a8d1677.png)
 
 ### Release Notes to Staging
 
