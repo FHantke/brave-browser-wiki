@@ -458,6 +458,45 @@ _`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]**
 6. 81 to 100
 7. 101 or more
 
+### Q51: On how many domains has the user set the adblock setting to be lower (block less) than the default?
+_`Brave.Shields.DomainAdsSettingsBelowGlobal`_ **[D]** **[A]**
+
+0) 0
+1) 1-5
+2) 6-10
+3) 11-20
+4) 21-30
+5) 31+
+
+### Q52: On how many domains has the user set the adblock setting to be higher (block more) than the default?
+_`Brave.Shields.DomainAdsSettingsAboveGlobal`_ **[D]** **[A]**
+
+0) 0
+1) 1-5
+2) 6-10
+3) 11-20
+4) 21-30
+5) 31+
+
+### Q53: On how many domains has the user set the FP setting to be lower (block less) than the default?
+_`Brave.Shields.DomainFingerprintSettingsBelowGlobal`_ **[D]** **[A]**
+
+0) 0
+1) 1-5
+2) 6-10
+3) 11-20
+4) 21-30
+5) 31+
+
+### Q54: On how many domains has the user set the FP setting to be higher (block more) than the default?
+_`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]**
+
+0) 0
+1) 1-5
+2) 6-10
+3) 11-20
+4) 21-30
+5) 31+
 
 ## Metrics Proposed/Under Development
 
