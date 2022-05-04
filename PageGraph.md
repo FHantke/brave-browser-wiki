@@ -61,6 +61,7 @@ There is also a [Dockerfile](https://github.com/brave/brave-browser/blob/page-gr
 
 ## Publications Using PageGraph
 
+- [Blocked Or Broken? Automatically Detecting When Privacy Interventions Break Websites](https://arxiv.org/abs/2203.03528), Michael Smith, Peter Snyder, Moritz Haller, Ben Livshits, Hamed Haddadi, Deian Stefan, **PETS 2022**
 - [Measuring the Privacy vs. Compatibility Trade-off in Preventing Third-Party Stateful Tracking](https://www.peteresnyder.com/static/papers/storage-policies-www-2022.pdf), Jordan Jueckstock, Peter Snyder, Shaown Sarker, Alexandros Kapravelos, Ben Livshits, **WWW 2022**
 - [SugarCoat: Programmatically Generating Privacy-Preserving, Web-Compatible Resource Replacements For Content Blocking](https://www.peteresnyder.com/static/papers/sugarcoat-ccs-2021.pdf), Michael Smith, Peter Snyder, Ben Livshits, Deian Stefan, **CCS 2021**
 - [Detecting Filter List Evasion With Event-Loop-Turn Granularity JavaScript Signatures](https://arxiv.org/abs/2005.11910), Quan Chen, Peter Snyder, Benjamin Livshits, Alexandros Kapravelos, **S&P 2021**
