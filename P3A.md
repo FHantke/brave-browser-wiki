@@ -167,14 +167,15 @@ Note: we count only omnibox events that trigger a search.
 
 ### Q20: Which is your currently selected search engine? 
 _`Brave.Search.DefaultEngine.4`_ **[D]** **[A]**
-1. Other
-2. Google
-3. DuckDuckGo
-4. Startpage
-5. Bing
-6. Qwant
-7. Yandex
-8. Ecosia
+0. Other
+1. Google
+2. DuckDuckGo
+3. Startpage
+4. Bing
+5. Qwant
+6. Yandex
+7. Ecosia
+8. Brave Search
 
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
