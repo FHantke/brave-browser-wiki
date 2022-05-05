@@ -167,6 +167,7 @@ Note: we count only omnibox events that trigger a search.
 
 ### Q20: Which is your currently selected search engine? 
 _`Brave.Search.DefaultEngine.4`_ **[D]** **[A]**
+
 0. Other
 1. Google
 2. DuckDuckGo
