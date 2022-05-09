@@ -7,12 +7,11 @@ These would be planned releases where we'll deliver bug fixes.
 
 ## Hotfix Release
 
-Intended to provide a critical update. Intended for when P1 issues are found/fixed in Brave.
+* Intended to provide a critical update
+* Intended for when P1 issues are found/fixed in Brave.
 
 ## Minor Chromium release
-When Chromium updates are released we're going to commit to getting a new Brave release out within 24 hours. Only Chromium update will be included in the release
-
-
+When Chromium updates are released we're going to commit to getting a new Brave release out within 24 hours. The release will include only the Chromium update.
 
 ### Process for Minor Chromium release
 
