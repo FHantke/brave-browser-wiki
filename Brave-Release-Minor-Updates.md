@@ -35,4 +35,4 @@ When Chromium updates are released we're going to commit to getting a new Brave 
 1. Pull request the branch (`1.35.release4-98.0.4758.109` merging into `1.35.release4`)
 1. [Uplift approvers group](https://github.com/orgs/brave/teams/uplift-approvers) will Review / Approve / Merge
 1. We can start the build via the `brave-browser-build` job. NOTE: We may need to ask for devops support if we can't provide this branch name in the job parameters
-1. Once build completes, we need to merge this branch (`1.35.release4`) into the major version branch (`1.35.x`).
+1. Once build completes and QA verifies it, merge this branch (`1.35.release4`) into the major version branch (`1.35.x`).
