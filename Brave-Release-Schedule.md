@@ -1,6 +1,6 @@
 # Overview 
 
-Currently publisher version numbers can be seen at https://brave-browser-downloads.s3.brave.com/
+Currently published version numbers can be seen at https://brave-browser-downloads.s3.brave.com/
 
 - Major Release frequency: ~4 weeks
 - Maintenance Release frequency: ~2 weeks after a major release (however, these are tentative and subject to change)
