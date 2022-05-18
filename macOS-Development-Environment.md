@@ -21,7 +21,7 @@ You can get the newer SDKs from https://ci.brave.com/userContent/ (VPN required)
 There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements):
 
 - Node.js active LTS version (v16+) - `brew install node` or can also use `nvm`. If `node --version` fails when installing `node@16` through Homebrew or reports a different version, run `brew link --force --overwrite node`
-- npm - v8+ (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)). npm is automatically installed if you install NodeJS through Homebrew. If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+- npm - v8+ but < 8.6 (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)). npm is automatically installed if you install NodeJS through Homebrew. If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 - Python - 2.7 and 3+ - **Note:** On macOS 12.3 and higher Python 2.7 is no longer included by default and you will have to [install it manually](https://www.python.org/downloads/release/python-2718/)
 
 # Other tips
