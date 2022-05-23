@@ -81,8 +81,8 @@ https://github.com/brave/brave-browser/wiki/Information-for-localizers
   - `rewards_extension`, and
   - all `*_override` files.
   - Leave the rest unchecked!
-- The officially supported languages to order are: `af, am, ar, as, be, bg, bn, bs, ca, cs, da, de, el, en-GB, es, es-419, et, eu, fa, fi, fil, fr, fr-CA, gl, gu, hi, hr, hu, hy, id, is, it, he, hr-Latn, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, or, pa, pl, pt-BR, pt-PT, ro, ru, si, sk, sl, sq, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
-- Here are the things we currently select:
+- The officially supported (by Chromium) languages are: `af, am, ar, as, az, be, bg, bn, bs, ca, cs, cy, da, de, el, en-GB, en, es, es-419, et, eu, fa, fi, fil, fr-CA, fr, gl, gu, he, hi, hr, hu, hy, id, is, it, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, pa, pl, pt-BR, pt-PT, or, ro, ru, si, sk, sl, sq, sr-Latn, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
+- Here are the things we currently select to order:
 ```
 # e2f
 
