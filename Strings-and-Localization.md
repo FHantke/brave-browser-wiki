@@ -81,8 +81,13 @@ https://github.com/brave/brave-browser/wiki/Information-for-localizers
   - `rewards_extension`, and
   - all `*_override` files.
   - Leave the rest unchecked!
-- The officially supported (by Chromium) languages are: `af, am, ar, as, az, be, bg, bn, bs, ca, cs, cy, da, de, el, en-GB, en, es, es-419, et, eu, fa, fi, fil, fr-CA, fr, gl, gu, he, hi, hr, hu, hy, id, is, it, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, my, ne, nl, no, pa, pl, pt-BR, pt-PT, or, ro, ru, si, sk, sl, sq, sr-Latn, sr, sv, sw, ta, te, th, tr, uk, ur, uz, vi, zh-CN, zh-HK, zh-TW, zu`
-- Here are the things we currently select to order:
+- The officially supported (by Chromium) languages are: 
+<hr/>
+af, <b>am</b>, <b>ar</b>, as, az, be, <b>bg</b>, <b>bn</b>, bs, <b>ca</b>, <b>cs</b>, cy, <b>da</b>, <b>de</b>, <b>el</b>, <b>en-GB</b>, en, <b>es</b>, <b>es-419</b>, <b>et</b>, eu, <b>fa</b>, <b>fi</b>, <b>fil</b>, <b>fr-CA</b>, <b>fr</b>, <b>gl</b>, gu, <b>he</b>, <b>hi</b>, <b>hr</b>, <b>hu</b>, hy, <b>id</b>, is, <b>it</b>, <b>ja</b>, ka, kk, km, <b>kn</b>, <b>ko</b>, ky, lo, <b>lt</b>, <b>lv</b>, mk, ml, mn, mr, <b>ms</b>, my, ne, <b>nl</b>, <b>no</b>, pa, <b>pl</b>, <b>pt-BR</b>, <b>pt-PT</b>, or, <b>ro</b>, <b>ru</b>, si, <b>sk</b>, <b>sl</b>, sq, sr-Latn, <b>sr</b>, <b>sv</b>, <b>sw</b>, ta, te, <b>th</b>, <b>tr</b>, <b>uk</b>, ur, uz, <b>vi</b>, <b>zh-CN</b>, zh-HK, <b>zh-TW</b>, zu
+<hr/>
+
+- Here are the 49 languages we currently select to order (same as bolded items in the above list):
+
 ```
 # e2f
 
