@@ -1,7 +1,6 @@
 # General guidelines
 
 - All work has an issue.  Even if it's a small pull request, link it to an issue.
-- If you'd like to have an issue schedule to a particular release, use Asana.
 - If you'd like to set priority on an issue, use a priority label described below.
 
 # Milestones
