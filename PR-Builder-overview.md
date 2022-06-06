@@ -82,6 +82,6 @@ Besides the platform builds, there are pipelines that do platform-agnostic pre-i
 We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks and [CodeQL](https://securitylab.github.com/tools/codeql) for security checks.
 
 ## Resources
-- for employees, join the `#brave-browser-ci-guest` Slack channel
+- for employees, join the `#continuous-integration-guest` Slack channel
 - for external contributors (community), we would like to have the content of these checks be publicly viewable in the future
 - additional non-public information is available in the [devops wiki](https://github.com/brave/devops/wiki/PR-Builder-Non-public-information)
