@@ -47,7 +47,7 @@ Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-i
 Slack notifications will be sent to PR author based on a map that associates the GitHub user with their corresponding Slack username. To update, copy the value from our password manager, edit, then update in the Jenkins credential store `github-to-slack-username-map` variable. For extra notifications 
 
 ## Process overview
-The checks that are done are defined in the Jenkinsfiles at https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-*.Jenkinsfile
+The checks that are done are defined in the Jenkinsfiles at [https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-*.Jenkinsfile](https://github.com/brave/devops/tree/master/jenkins/jobs/browser)
 
 The above get called independently by both https://github.com/brave/brave-browser/blob/master/Jenkinsfile and https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will look for a PR in the other repo and update its status.
 
