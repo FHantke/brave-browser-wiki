@@ -270,4 +270,4 @@ Chain ID | Network name
 
 # Disabling the Ethereum provider object insertion
 
-The Ethereum provider object can be disabled from `brave://settings/wallet` by changing the Default cryptocurrency wallet to `None`.
+The Ethereum provider object can be disabled on desktop from `brave://settings/wallet` by changing the Default cryptocurrency wallet to `None`. On Android it can be disabled via setting a flag `Enable Brave Wallet Dapps support` in `brave://flags` to `Disable`.
