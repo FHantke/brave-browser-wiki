@@ -500,7 +500,7 @@ _`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]**
 4) 21-30
 5) 31+
 
-## Q55: As an opted in Brave News user, when was the last time I used Brave News?
+### Q55: As an opted in Brave News user, when was the last time I used Brave News?
 _`Brave.Today.LastUsageTime`_ **[D]** **[A]**
 
 1) This week
@@ -510,7 +510,7 @@ _`Brave.Today.LastUsageTime`_ **[D]** **[A]**
 5) A month ago
 6) Over a month ago
 
-## Q56: As an opted in Brave News user, how many days did I use Brave News in the last 30 days?
+### Q56: As an opted in Brave News user, how many days did I use Brave News in the last 30 days?
 _`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
 
 0) 0 days
@@ -522,7 +522,7 @@ _`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
 6) 16 to 20 days
 7) More than 20 days
 
-## Q57: As a first time user of Brave News this week, did I return again to use it during the week?
+### Q57: As a first time user of Brave News this week, did I return again to use it during the week?
 _`Brave.Today.NewUserReturning`_ **[D]** **[A]**
 
 0) I have never used Brave News
