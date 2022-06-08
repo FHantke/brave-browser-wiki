@@ -143,8 +143,6 @@ Signing data can be done with:
 
 - `eth_sign`
 - `personal_sign`
-- `signTypedData`
-- `signTypedData_v1` (same as `signTypedData`)
 - `signTypedData_v3`
 - `signTypedData_v4`
 
