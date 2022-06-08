@@ -500,6 +500,37 @@ _`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]**
 4) 21-30
 5) 31+
 
+## Q55: As an opted in Brave News user, when was the last time I used Brave News?
+_`Brave.Today.LastUsageTime`_ **[D]** **[A]**
+
+1) This week
+2) 1 week ago
+3) 2 weeks ago
+4) 3 weeks ago
+5) A month ago
+6) Over a month ago
+
+## Q56: As an opted in Brave News user, how many days did I use Brave News in the last 30 days?
+_`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
+
+0) 0 days
+1) 1 day
+2) 2 days
+3) 3 to 5 days
+4) 6 to 10 days
+5) 11 to 15 days
+6) 16 to 20 days
+7) More than 20 days
+
+## Q57: As a first time user of Brave News this week, did I return again to use it during the week?
+_`Brave.Today.NewUserReturning`_ **[D]** **[A]**
+
+0) I have never used Brave News
+1) I have used Brave News, but I'm not a first time Brave News user this week
+2) I'm a first time Brave News user this week but, no, I did not return the rest of the week
+3) I'm a first time Brave News user this week and, yes, I returned and used it again the following day
+4) I'm a first time Brave News user this week and, yes, I returned and used it again this week but not the following day
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
