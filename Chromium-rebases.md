@@ -183,8 +183,7 @@ Make builds for QA smoke tests using the following links:
 
 Settings:
 * `CHANNEL` - Set to `nightly` (this is the default)
-* `BRANCH` - Set to `master` (this is the default)
-* `BRAVE_CORE_BRANCH` - Set to the appropriate branch name, e.g., `cr100`
+* `BRANCH` - Set to the appropriate branch name, e.g., `cr100`
 * `PREVIOUS_BUILD_NUMBER_DELTA` - Leave blank
 * `KEYCHAIN_NAME` (Mac only) - **Must** be set to `release` (this is now the default, but always double-check it as using the wrong setting will result in an app that crashes on startup)
 
