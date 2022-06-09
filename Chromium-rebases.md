@@ -178,7 +178,8 @@ Make builds for QA smoke tests using the following links:
 * MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
 * MacOS (arm64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
 * Linux: https://ci.brave.com/view/linux/job/test-brave-browser-build-linux-x64
-* Windows: https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
+* Windows (x64): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
+* Windows (x86): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x86/
 * Android: https://ci.brave.com/view/macos/job/test-brave-browser-build-android
 
 Settings:
@@ -201,7 +202,7 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly_1.37.54_amd64.deb
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly-1.37.54-1.x86_64.rpm
 
-### Windows installers
+### Windows (x64) installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/setup-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/brave_installer-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserNightlySetup_99_1_37_54.exe
@@ -209,6 +210,15 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneSilentNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
+
+### Windows (x86) installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/setup-x86.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/brave_installer-x86.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneSilentNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
 ### MacOS installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
