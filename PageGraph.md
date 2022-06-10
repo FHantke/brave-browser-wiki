@@ -59,6 +59,13 @@ npm run build -- Static
 
 There is also a [Dockerfile](https://github.com/brave/brave-browser/blob/page-graph/Dockerfile) included in the `page-graph` branch of the `brave-browser` repository. This is a verified setup that can be used as a reference for required dependency versions and installation steps. The image can also be built and used directly for research purposes.
 
+Running
+---
+
+The PageGraph-enabled browser can be run manually like a normal build of Brave, and can still be used to generate graph files when run manually. However it is recommended to run using an automated crawling tool like [pagegraph-crawl](https://github.com/brave-experiments/pagegraph-crawl).
+
+When running, be sure to add the `--js-flags=--no-compilation-cache` argument to work around an occasional crash.
+
 ## Publications Using PageGraph
 
 - [Blocked Or Broken? Automatically Detecting When Privacy Interventions Break Websites](https://arxiv.org/abs/2203.03528), Michael Smith, Peter Snyder, Moritz Haller, Ben Livshits, Hamed Haddadi, Deian Stefan, **PETS 2022**
