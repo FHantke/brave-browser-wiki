@@ -32,7 +32,7 @@ To verify and audit the workings of the variations service there are several opt
 * All resources to generate, sign and serve variations in the [brave-variations](https://github.com/brave/brave-variations) repository.
 * All feature implementations in the [brave-core](https://github.com/brave/brave-core) repository (search for [base::Feature](https://github.com/brave/brave-core/search?q=base%3A%3Afeature)).
 
-To inspect active studies in the Brave browser (as opposed to Chrome), navigate to brave://version. On top of that we have built a dashboard, listing all active studies at https://griffin.brave.com/.
+To inspect active studies in the Brave browser, navigate to brave://version or visit https://griffin.brave.com/.
 
 ## Privacy Reviews
 Privacy reviews scrutinise any new study with respect to its impact on the identifiability and addressability of users. In the cases where Brave acts as a data controller (e.g. Brave ads), this could mean only allowing experiments to run in sufficiently large markets like the US. This is to ensure that groups are always large enough to prevent the identification of individual users by Brave. To prevent  publishers and websites from telling individual users apart, this could mean ensuring that page-visible changes don’t increase the fingerprinting surface, as exposed through the JavaScript API.
