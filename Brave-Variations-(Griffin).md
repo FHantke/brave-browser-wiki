@@ -1,8 +1,4 @@
-Griffin is Brave's version of Google's Finch - A backend for Chromium's variation service. The variations service is a browser component to progressively roll-out and test new features in Chromium-based browsers. At Brave, this component has been previously disabled to prevent user data being leaked to Google’s servers. With increasing user adoption and product complexity, the ability to perform staged roll-outs and conduct more nuanced testing is becoming ever more important.
-
-# Capabilities
-
-Griffin provides three new capabilities to improve security, reliability and user experience:
+Griffin is Brave's version of Google's Finch - A backend for Chromium's variation service. The variations service is a browser component to progressively roll-out and test new features in Chromium-based browsers. Griffin provides the following capabilities to improve security, reliability and user experience:
 
 1. Staged Rollouts
 2. Private Statistical Experiments
