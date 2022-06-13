@@ -28,9 +28,9 @@ In the case of experiments one has to either observe existing downstream metrics
 ## Everything is Open Source
 To verify and audit the workings of the variations service there are several options. As always the entire codebase is open source:
 
-The variations service browser component in [Chromium](https://source.chromium.org/chromium/chromium/src/+/master:components/variations/service/variations_service.h).
-All resources to generate, sign and serve variations in the [brave-variations](https://github.com/brave/brave-variations) repository.
-All feature implementations in the [brave-core](https://github.com/brave/brave-core) repository (search for [base::Feature](https://github.com/brave/brave-core/search?q=base%3A%3Afeature)).
+* The variations service browser component in [Chromium](https://source.chromium.org/chromium/chromium/src/+/master:components/variations/service/variations_service.h).
+* All resources to generate, sign and serve variations in the [brave-variations](https://github.com/brave/brave-variations) repository.
+* All feature implementations in the [brave-core](https://github.com/brave/brave-core) repository (search for [base::Feature](https://github.com/brave/brave-core/search?q=base%3A%3Afeature)).
 
 To inspect active studies in the Brave browser (as opposed to Chrome), navigate to brave://version. On top of that we have built a dashboard, listing all active studies at https://griffin.brave.com/.
 
