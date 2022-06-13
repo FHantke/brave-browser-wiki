@@ -23,7 +23,7 @@ With these benefits in mind, Brave’s privacy and security promises always trum
 ## Unchanged Data Collection Policy
 There are two ways that variations could affect data collection. The first are HTTP logs on the variations server since each browser has to periodically request the configuration file. Like with all Brave services, the file is being served through a CDN and request logs are never persisted.
 
-In the case of experiments one has to either observe existing downstream metrics like crash report numbers, or implement a dedicated response measurement to be able to analyse the effect of variations. For the latter, we don’t allow anything but our proven mechanism for [privacy preserving product analytics](https://brave.com/privacy-preserving-product-analytics-p3a/) (P3A). Until we have implemented an [opt-out mechanism](https://github.com/brave/brave-browser/issues/15711), A/B tests are limited to users who have opted-in to ads.
+In the case of experiments one has to either observe existing downstream metrics like crash report numbers, or implement a dedicated response measurement to be able to analyse the effect of variations. For the latter, we don’t allow anything but our proven mechanism for [privacy preserving product analytics](https://brave.com/privacy-preserving-product-analytics-p3a/) (P3A).
 
 ## Everything is Open Source
 To verify and audit the workings of the variations service there are several options. As always the entire codebase is open source:
