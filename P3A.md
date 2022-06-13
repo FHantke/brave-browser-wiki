@@ -306,7 +306,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 `Brave.Today.WeeklySessionCount` **[D]**
 
-0. Never _(won't ever be sent)_
+0. Never
 1. Once
 2. 2-3 times
 3. 4-7 times
