@@ -125,3 +125,18 @@ The following JSON RPC API is exposed:
 https://eth.wiki/json-rpc/API#json-rpc-methods
 
 This API will be used by the in page provider (`window.ethereum` object) and also exposed to the Brave Wallet WebUI via mojo.  
+
+
+## Testing Dapp providers
+
+
+`window.ethereum` and `window.solana` are only available on secure contexts.
+`localhost` and `127.0.0.1` is considered secure even when over HTTP.
+
+But if you want to test with some other host name, you can either use an HTTPS server locally, or use this flag:
+brave://flags/#unsafely-treat-insecure-origin-as-secure
+
+For example if you add z.com as 127.0.0.1 in your hosts file and then start it on an HTTP server:
+
+<img width="785" alt="Screen Shot 2022-06-14 at 10 14 05 AM" src="https://user-images.githubusercontent.com/831718/173599734-86289c85-5197-49e7-9687-37adcac04215.png">
+
