@@ -140,3 +140,8 @@ For example if you add z.com as 127.0.0.1 in your hosts file and then start it o
 
 <img width="785" alt="Screen Shot 2022-06-14 at 10 14 05 AM" src="https://user-images.githubusercontent.com/831718/173599734-86289c85-5197-49e7-9687-37adcac04215.png">
 
+
+## QA test projects
+
+- https://github.com/bbondy/eth-manual-tests
+- https://github.com/darkdh/solana-provider-test
