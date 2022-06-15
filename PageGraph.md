@@ -49,6 +49,8 @@ If you have any questions about PageGraph, or would like to use / extend it for 
 
 Building
 ---
+You'll want to use Node version 12.x. If you don't have that installed by default, it's recommended to use [nvm](https://github.com/nvm-sh/nvm).
+
 ```
 git clone -b page-graph https://github.com/brave/brave-browser
 cd brave-browser
