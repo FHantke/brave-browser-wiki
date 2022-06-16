@@ -172,6 +172,17 @@ Run this to pull down new xtb and translation files:
 
 Do a commit for all the string translation updates, `xtb` files.
 
+## Creating the PR
+
+When creating the PR, mark it as `WIP` and put it into draft mode. The title should be "Upgrade from Chromium n to Chromium n+1" where `n` is the current version number.
+
+The PR must contain all of the following labels:
+
+* `CI/run-audit-deps`
+* `CI/run-draft`
+* `CI/run-network-audit`
+* `CI/run-upstream-tests`
+
 ## Before merging
 
 Make builds for QA smoke tests using the following links:
