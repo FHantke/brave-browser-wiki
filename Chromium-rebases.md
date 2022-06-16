@@ -174,7 +174,7 @@ Do a commit for all the string translation updates, `xtb` files.
 
 ## Creating the PR
 
-When creating the PR, mark it as `WIP` and put it into draft mode. The title should be "Upgrade from Chromium n to Chromium n+1" where `n` is the current version number.
+When creating the PR, mark it as `WIP` and put it into draft mode. The title should be `Upgrade from Chromium {n} to Chromium {n+1}` where `n` is the current version number.
 
 The PR must contain all of the following labels:
 
