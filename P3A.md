@@ -531,6 +531,22 @@ _`Brave.Today.NewUserReturning`_ **[D]** **[A]**
 3) I'm a first time Brave News user this week and, yes, I returned and used it again the following day
 4) I'm a first time Brave News user this week and, yes, I returned and used it again this week but not the following day
 
+### Q58: Did the participant in Group A click on "Try Brave Search" and did they switch their default engine to Brave Search?
+_`Brave.Search.Promo.Button`_ **[D]**
+
+0) No, No
+1) Yes, No
+2) No, Yes
+3) Yes, Yes
+
+### Q59: Did the participant in Group B click on "Try Brave Search" and did they switch their default engine to Brave Search?
+_`Brave.Search.Promo.Banner`_ **[D]**
+
+0) No, No
+1) Yes, No
+2) No, Yes
+3) Yes, Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
