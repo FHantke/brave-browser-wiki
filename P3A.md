@@ -531,7 +531,7 @@ _`Brave.Today.NewUserReturning`_ **[D]** **[A]**
 3) I'm a first time Brave News user this week and, yes, I returned and used it again the following day
 4) I'm a first time Brave News user this week and, yes, I returned and used it again this week but not the following day
 
-### Q58: Did the participant in Group A click on "Try Brave Search" and did they switch their default engine to Brave Search?
+### Q58: Did the participant in Group A click on the promo and did they switch their default engine to Brave Search?
 _`Brave.Search.Promo.Button`_ **[D]**
 
 0) No, No
@@ -539,7 +539,7 @@ _`Brave.Search.Promo.Button`_ **[D]**
 2) No, Yes
 3) Yes, Yes
 
-### Q59: Did the participant in Group B click on "Try Brave Search" and did they switch their default engine to Brave Search?
+### Q59: Did the participant in Group B click on the promo and did they switch their default engine to Brave Search?
 _`Brave.Search.Promo.Banner`_ **[D]**
 
 0) No, No
