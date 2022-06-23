@@ -37,12 +37,13 @@ Protocols
 
 ### Filecoin Addresses
 
-There are 2 ways a filecoin address can be represented. An address appearing on chain will always be formatted as raw bytes. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [More](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
-String:
+An address is an identifier that refers to an actor in the Filecoin state. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [More](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
+
  |------------|----------|---------|----------|
  |  network   | protocol | payload | checksum |
  |------------|----------|---------|----------|
  | 'f' or 't' |  1 byte  | n bytes | 4 bytes  |
+
 Network:
 - 't' means test/calibration or localhost node network.
 - 'f' means Mainnet
