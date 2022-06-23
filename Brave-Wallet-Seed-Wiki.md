@@ -13,7 +13,6 @@ Protocols
 3. Using PBKDF2 + HMAC-SHA512 with 2048 iterations, take the seed from step 2 and the mnemonic from step 1, derive our 512bit seed.
 4. Used the 512bit seed to construct the HD-Wallet using BIP32.
 
-
 ### Encryption of Mnemonic
 1. User chooses a strong passphrase. Passwords must be at least 7 characters and contain at least one number and special character, though we STRONGLY RECOMMEND much longer passphrases. 
 2. Derive a 256-bit salt using `crypto::RandBytes`
@@ -35,3 +34,6 @@ Protocols
 4. Derived encryption key using PBKDF2 + HMAC-SHA256 with password from step3, salt from step 2  and 10000 iterations
 5. Then we decrypt the encrypted data using key from step 3 with mod AES-GCM along with iv from step 2
 6. When we get the decrypted mnemonic, we will do auto import for user
+
+### Import Filecoin from Hardware Wallets
+1. Filecoin adopt the [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) (HD-Wallet) specification and maintains its own implementation of a Keyring Controller. It uses the [bitcoin-core](https://github.com/bitcoin/bitcoin) implementations of `secp256k1`, and [bls-signatures](https://github.com/filecoin-project/bls-signatures) for `BLS12-381`. 
