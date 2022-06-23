@@ -35,5 +35,26 @@ Protocols
 5. Then we decrypt the encrypted data using key from step 3 with mod AES-GCM along with iv from step 2
 6. When we get the decrypted mnemonic, we will do auto import for user
 
+### Filecoin Addresses
+
+There are 2 ways a filecoin address can be represented. An address appearing on chain will always be formatted as raw bytes. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [More](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
+String:
+ |------------|----------|---------|----------|
+ |  network   | protocol | payload | checksum |
+ |------------|----------|---------|----------|
+ | 'f' or 't' |  1 byte  | n bytes | 4 bytes  |
+Network:
+- 't' means test/calibration or localhost node network.
+- 'f' means Mainnet
+Procotol:
+- value 1: addresses represent secp256k1 public encryption keys. The payload field contains the Blake2b 160 hash of the uncompressed public key (65 bytes).
+- value 3: addresses represent BLS public encryption keys.
+Payload:
+- The payload field contains 48 byte BLS PubKey public key. All payloads except the payload of the ID protocol are base32 encoded using the lowercase alphabet when seralized to their human readable format.
+Checksum:
+- Filecoin checksums are calculated over the address protocol and payload using blake2b-4. Checksums are base32 encoded and only added to an address when encoding to a string. Addresses following the ID Protocol do not have a checksum.
+
+
 ### Import Filecoin from Hardware Wallets
 1. Filecoin adopt the [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) (HD-Wallet) specification and maintains its own implementation of a Keyring Controller. It uses the [bitcoin-core](https://github.com/bitcoin/bitcoin) implementations of `secp256k1`, and [bls-signatures](https://github.com/filecoin-project/bls-signatures) for `BLS12-381`. 
+2. Derivation paths adopt [SLIP-0044](https://github.com/satoshilabs/slips/blob/5f85bc4854adc84ca2dc5a3ab7f4b9e74cb9c8ab/slip-0044.md). Importing accounts for Mainnet uses `m/44'/461'/0'/0/${i}` derivation paths, and, accordingly, a `m/44'/1'/0'/0/${i}` is used for test networks
