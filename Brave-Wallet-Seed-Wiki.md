@@ -37,7 +37,7 @@ Protocols
 
 ### Filecoin Addresses
 
-An address is an identifier that refers to an actor in the Filecoin state. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [More](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
+An address is an identifier that refers to an actor in the Filecoin state. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [Filecoin spec](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
 
  |  network   | protocol | payload | checksum |
  |------------|----------|---------|----------|
@@ -46,13 +46,16 @@ An address is an identifier that refers to an actor in the Filecoin state. An ad
 Network:
 - 't' means test/calibration or localhost node network.
 - 'f' means Mainnet
+
 Procotol:
-- value 1: addresses represent secp256k1 public encryption keys. The payload field contains the Blake2b 160 hash of the uncompressed public key (65 bytes).
-- value 3: addresses represent BLS public encryption keys.
+- value 1: addresses represent `secp256k1` public encryption keys. The payload field contains the Blake2b 160 hash of the uncompressed public key (65 bytes).
+- value 3: addresses represent `BLS` public encryption keys.
+
 Payload:
-- The payload field contains 48 byte BLS PubKey public key. All payloads except the payload of the ID protocol are base32 encoded using the lowercase alphabet when seralized to their human readable format.
+- The payload field contains 48 byte `BLS` PubKey public key. All payloads except the payload of the ID protocol are `base32` encoded using the lowercase alphabet when seralized to their human readable format.
+
 Checksum:
-- Filecoin checksums are calculated over the address protocol and payload using blake2b-4. Checksums are base32 encoded and only added to an address when encoding to a string. Addresses following the ID Protocol do not have a checksum.
+- Filecoin checksums are calculated over the address protocol and payload using `blake2b-4`. Checksums are `base32` encoded and only added to an address when encoding to a string. Addresses following the ID Protocol do not have a checksum.
 
 
 ### Import Filecoin from Hardware Wallets
