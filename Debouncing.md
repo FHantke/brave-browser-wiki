@@ -31,7 +31,7 @@ Both the redirect and base64,redirect rules expect the query string to be encode
 When writing new rules, these things must be determined:
 
 1. Is it a security-related redirector? If so, don’t include.
-2. Which query string parameter encodes the destination URL?
+2. Which query string parameter encodes the destination URL? (case **sensitive**)
 3. Is the type of URL encoding supported?
 4. What URL pattern should be used?
 
