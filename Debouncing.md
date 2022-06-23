@@ -37,7 +37,7 @@ When writing new rules, these things must be determined:
 
 ## Identifying the right query string parameter
 
-This part can be confusing for two reasons.
+This part can be confusing for a few reasons.
 
 Firstly, a query string can include both the **destination URL** and the **referring URL**:
 
