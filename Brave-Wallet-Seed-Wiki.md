@@ -58,6 +58,6 @@ Checksum:
 - Filecoin checksums are calculated over the address protocol and payload using `blake2b-4`. Checksums are `base32` encoded and only added to an address when encoding to a string. Addresses following the ID Protocol do not have a checksum.
 
 
-### Import Filecoin from Hardware Wallets
+### Filecoin derivation paths
 1. Filecoin adopt the [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) (HD-Wallet) specification and maintains its own implementation of a Keyring Controller. It uses the [bitcoin-core](https://github.com/bitcoin/bitcoin) implementations of `secp256k1`, and [bls-signatures](https://github.com/filecoin-project/bls-signatures) for `BLS12-381`. 
-2. Derivation paths adopt [SLIP-0044](https://github.com/satoshilabs/slips/blob/5f85bc4854adc84ca2dc5a3ab7f4b9e74cb9c8ab/slip-0044.md). Importing accounts for Mainnet uses `m/44'/461'/0'/0/${i}` derivation paths, and, accordingly, a `m/44'/1'/0'/0/${i}` is used for test networks
+2. Derivation paths adopt [SLIP-0044](https://github.com/satoshilabs/slips/blob/5f85bc4854adc84ca2dc5a3ab7f4b9e74cb9c8ab/slip-0044.md). Accounts for Mainnet uses `m/44'/461'/0'/0/${i}` derivation paths, and, accordingly, a `m/44'/1'/0'/0/${i}` is used for test networks
