@@ -39,7 +39,6 @@ Protocols
 
 An address is an identifier that refers to an actor in the Filecoin state. An address may also be encoded to a string, this encoding includes a checksum and network prefix. [More](https://spec.filecoin.io/appendix/address/#section-appendix.address.string)
 
- |------------|----------|---------|----------|
  |  network   | protocol | payload | checksum |
  |------------|----------|---------|----------|
  | 'f' or 't' |  1 byte  | n bytes | 4 bytes  |
