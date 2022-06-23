@@ -48,7 +48,7 @@ Network:
 - 'f' means Mainnet
 
 Procotol:
-- value 1: addresses represent `secp256k1` public encryption keys. The payload field contains the Blake2b 160 hash of the uncompressed public key (65 bytes).
+- value 1: addresses represent `secp256k1` public encryption keys. The payload field contains the `Blake2b` 160 hash of the uncompressed public key (65 bytes).
 - value 3: addresses represent `BLS` public encryption keys.
 
 Payload:
