@@ -16,4 +16,4 @@ By default, the Brave browser should only talk to Brave servers.
 
 Services that provide data to the browser and are a result of a user choosing to interact with that feature/service do not typically need to be proxied (e.g. Chrome Store extensions, Wallet on-ramp, Uphold wallet linking).
 
-When a user opts in and it's clear that the service is provided by a third-party, there is no need to proxy. It's similar to a user visiting GMail because they chose Google as their email provider.
+When a user opts in and it's clear that the service is provided by a third-party, there is no need to proxy. It's similar to a user visiting Gmail because they chose Google as their email provider.
