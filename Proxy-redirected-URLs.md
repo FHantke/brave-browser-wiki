@@ -2,10 +2,18 @@ Google proxies moved to https://github.com/brave/brave-browser/wiki/Deviations-f
 
 Server config at https://github.com/brave/devops/wiki/Mappings-for-proxied-URLs.
 
-## What requests to proxy?
+# Guidelines for developers
+
+Proxying has a privacy benefit for our users (hiding their IP address from third-parties), but it costs us in terms of maintenance and bandwidth. Also has a cost to our user in terms of latency. How do we pick which services to proxy?
+
+## Requests that should be proxied
 
 If a service would cause network traffic to a non-Brave server in a new browser profile, prior to changing settings or interacting with specific features, then it should be proxied so that users don't talk to it directly (e.g. Chrome component updates, Safe Browsing).
 
-## What requests **not** to proxy?
+By default, the Brave browser should only talk to Brave servers.
+
+## Requests that should NOT be proxied
 
 Services that provide data to the browser and are a result of a user choosing to interact with that feature/service do not typically need to be proxied (e.g. Chrome Store extensions, Wallet on-ramp, Uphold wallet linking).
+
+When a user opts in and it's clear that the service is provided by a third-party, there is no need to proxy. It's similar to a user visiting GMail because they chose Google as their email provider.
