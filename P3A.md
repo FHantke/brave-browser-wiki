@@ -547,6 +547,15 @@ _`Brave.Search.Promo.Banner`_ **[D]**
 2) No, Yes
 3) Yes, Yes
 
+### Q60. As a first time user of Brave Wallet this week, did I return again to use it during the week?
+_`Brave.Wallet.NewUserReturning`_ **[D]** **[A]**
+
+0) I have never used Brave Wallet
+1) I have used Brave Wallet, but I'm not a first time Brave Wallet user this week
+2) I'm a first time Brave Wallet user this week but, no, I did not return the rest of the week
+3) I'm a first time Brave Wallet user this week and, yes, I returned and used it again the following day
+4) I'm a first time Brave Wallet user this week and, yes, I returned and used it again this week but not the following day
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
