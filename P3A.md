@@ -503,12 +503,12 @@ _`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]**
 ### Q55: As an opted in Brave News user, when was the last time I used Brave News?
 _`Brave.Today.LastUsageTime`_ **[D]** **[A]**
 
-1) This week
-2) 1 week ago
-3) 2 weeks ago
-4) 3 weeks ago
-5) A month ago
-6) Over a month ago
+1) 0 - 6 days ago
+2) 7 - 13 days ago
+3) 14 - 20 days ago
+4) 21 - 27 days ago
+5) 28 - 59 days ago
+6) 60 days ago or more
 
 ### Q56: As an opted in Brave News user, how many days did I use Brave News in the last 30 days?
 _`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
