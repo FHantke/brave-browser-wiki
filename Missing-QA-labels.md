@@ -6,7 +6,7 @@ Each valid issue in a release should have exactly one of the following 2 labels:
 
 It means the issue will be tested once by QA on all platforms before it is released.
 
-# How do I specify a test plan for `QA/Yes`?
+# After I have tagged my issue with `QA/Yes`, how do I specify a test plan?
 
 Fill out the Test Plan section in the issue's PR. Once the test plan has been specified, please add the label `QA/Test-plan-specified` to the issue.
 
