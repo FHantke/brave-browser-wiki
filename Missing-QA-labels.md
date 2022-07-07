@@ -6,6 +6,10 @@ Each valid issue in a release should have exactly one of the following 2 labels:
 
 It means the issue will be tested once by QA on all platforms before it is released.
 
+# How do I specify a test plan for `QA/Yes`?
+
+Fill out the Test Plan section in the issue's PR. Once the test plan has been specified, please add the label `QA/Test-plan-specified` to the issue.
+
 # When does QA'ing happen?
 
 QA is usually done on an issue when it reaches the Beta channel.
