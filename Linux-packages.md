@@ -8,7 +8,7 @@ If building in a virtual machine, make sure you don't build as `root` or the [`n
 
 Once you've installed the [pre-requisites](https://github.com/brave/brave-browser/wiki/Linux-Development-Environment) and [cloned the repo](https://github.com/brave/brave-browser/wiki), the build command to use is:
 
-    npm run create_dist Release
+    npm run create_dist -- Release
 
 In particular, make sure you don't specify `--official_build=false` or your [build might fail](https://github.com/brave/brave-core/pull/1078#issuecomment-454969015) (see [#305](https://github.com/brave/brave-browser/issues/305)).
 
@@ -18,4 +18,4 @@ Once the build is done, you'll find the `.deb` and `.rpm` directly in `src/out/R
 
 To build beta or dev packages, use the `--channel` argument:
 
-    npm run create_dist Release -- --channel=beta
+    npm run create_dist -- Release --channel=beta
