@@ -556,6 +556,12 @@ _`Brave.Wallet.NewUserReturning`_ **[D]** **[A]**
 3) I'm a first time Brave Wallet user this week and, yes, I returned and used it again the following day
 4) I'm a first time Brave Wallet user this week and, yes, I returned and used it again this week but not the following day
 
+### Q61. If you accessed the Wallet page at least once, did you create/import a wallet?
+_`Brave.Wallet.OnboardingConversion`_ **[D]** **[A]**
+
+0) I accessed the wallet page, but did not set up the wallet
+1) Yes, I have set up the wallet
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
