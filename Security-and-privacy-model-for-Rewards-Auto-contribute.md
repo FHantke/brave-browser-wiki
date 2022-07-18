@@ -3,8 +3,8 @@
 ### Parties: 
 * Brave Browser Users
 * Brave operators
-* Publishers
-* Uphold
+* Publishers/creators
+* Custodian (Uphold or Gemini)
 
 ### Goals: 
 * Allow the user to contribute to publishers in proportion to their attention without revealing their browsing history in a linkable way with user funds and anonymous card funds
