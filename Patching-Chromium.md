@@ -129,14 +129,24 @@ Multiple deps should never be added to the same target. Always create a generic 
 The same thing goes for sources, but those should be added as `sources += my_brave_sources` where `my_brave_sources` is defined in a brave gni file. We have a gni file that is already included in nearly every gn build file in chromium through a patch in chrome_build.gni (`import("//brave/build/config/brave_guild.gni"`). Add new gni imports inside brave_guild.gni instead of patching them into another gn/gni file
 
 ## Patching `mojom` files
-Mojom files can be patched using override files placed at the same location in `src/brave/chromium_src` directory. It's possible to:
-* add definitions: `const`, `enum`, `interface`, `struct`, `union`
-* extend definitions: add new values to `enum`, add new methods to `interface`, add new members to `struct`/`union`
-
-The override file should use the same `module` name, it can have additional `import`s.
-To add a definition, `[BraveAdd]` attribute should be used. To extend an existing definition, `[BraveExtend]` attribute should be used. This attributes ensure that a required definition doesn't exist or exists with the exact type.
+Mojom files can be patched using an override placed at the same location in `src/brave/chromium_src` directory. It's possible to:
+* add: `const`, `enum`, `interface`, `struct`, `union`. Use `[BraveAdd]` attribute to ensure we don't overwrite upstream definition.
+* extend: `enum`, `interface`, `struct`, `union`. Use `[BraveExtend]` attribute to ensure a required definition exists with the exact type.
 
 Examples:
+```
+[BraveExtend]
+enum GlobalEnum {
+  NEW_VALUE = 1,
+  NEW_VALUE_GLOBAL_CONSTANT = kGlobalConstant2,
+};
+
+[BraveAdd]
+union NewGlobalUnion {
+  int32 int32_value;
+  float float_value;
+};
+```
 * [All-in-one mojom patch example](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/brave/mojo/brave_ast_patcher/test_module.mojom)
 * Extending a mojo struct that uses traits: [mojom](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.mojom), [native header](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.h), [native source](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings.cc), [traits header](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings_mojom_traits.h), [traits source](https://github.com/brave/brave-core/blob/569ccb3766a1e7752b7a4166bd3f07aad2afe560/chromium_src/components/content_settings/core/common/content_settings_mojom_traits.cc)
 
