@@ -93,7 +93,8 @@ These voting token redemption events or “votes” should not be linkable to th
 1. The vote metadata does not include information unique to the user (that is not otherwise unique to this event.)
 1. The user is not made re-identifiable through other side channels such as IP address information. We ensure this by configuring our CDN to neither log nor forward client address information.
 1. The signing keys used to sign voting tokens are widely used, we do not use unique keys for small user cohorts. To this effect we publish all signing keys publicly and instruct the browser to verify DLEQ proofs.
-1. Timing Signals:
+
+#### Timing Signals:
 1. Order creation ( unlinked to any IDs at this point, returns order id )
 1. Transaction submission (linked to the order id, is linkable to server to uphold anonymous card or user wallet that is submitting funds )
 1. Credential creation ( linked to the order id )
