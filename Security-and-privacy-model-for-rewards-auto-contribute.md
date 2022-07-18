@@ -47,7 +47,6 @@
 * Compromise of a user’s device
 * Malicious extension/plugin might be able to read tokens from sqlite database the browser uses to store tokens if file level access is given to the extension/plugin, allowing potentially votes to be cast by said extension/plugin using user’s tokens.
 * MITM ( Upstream ISP level TLS compromise could leak payload which tells who a user is voting for )
-* We ensure this by configuring our CDN to neither log nor forward client address information on the anonymous confirmation endpoint.
 
 ### Protocol:
 
