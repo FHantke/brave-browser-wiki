@@ -37,7 +37,7 @@ When writing new rules, these things must be determined:
 4. What URL pattern should be used?
 
 
-## Writing a regex rule
+## Writing a regex rule (`regex-path` action)
 
 The `regex-path` action lets you specify a generic regex pattern for picking out destination URLs from a given URL. The motivating use-case is to debounce AMP cache URLs to the canonical URLs. These URLs look something like https://www-theverge-com.cdn.ampproject.org/c/s/www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news -- we would want to debounce that URL to https://www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news. We also need the ability to predicate a debounce rule on a user preference, to support use-cases like De-AMP where a user turning off the preference should turn off the relevant debouncing rule.
 
@@ -66,8 +66,9 @@ Here's an example:
 
 With this rule, the URL https://brave.com/https://braveattentiontoken.com would be debounced to https://braveattentiontoken.com/ if the user preference `brave.de_amp.enabled` (the De-AMP pref) is switched on. Note that https://brave.com/xyz would not be debounced despite matching the param pattern because xyz is not a valid URL even after prepending https scheme to it.
 
+## Writing `redirect` and `base64,redirect` rules
 
-## Identifying the right query string parameter
+### Identifying the right query string parameter
 
 This part can be confusing for a few reasons.
 
@@ -119,7 +120,7 @@ location: https://ad.doubleclick.net/ddm/trackclk/N256806.2461108IMPACTRADIUSROW
 
 But the real destination URL is `ad.doubleclick.net` and not showing in the URL. Therefore this is **not a URL we can debounce**.
 
-## Query-string encoding
+### Query-string encoding
 
 In order to determine whether or not the encoding is supported:
 
@@ -150,7 +151,7 @@ location: https://www.yubico.com/us/product/pivot2/
 
 and so this bouncer is **supported**.
 
-## URL pattern
+### URL pattern
 
 In order to avoid applying the client-side internal redirects to an overly-broad set of URLs, the matching URL pattern should be **as tight as possible**.
 
