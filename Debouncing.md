@@ -9,7 +9,7 @@ These other tasks are performed by other components in Brave.
 
 Engineering issues: https://github.com/brave/brave-browser/issues?q=is%3Aissue+label%3Aprivacy%2Fdebounce+
 
-List issues: https://github.com/brave/adblock-lists/issues?q=is%3Aissue+label%3ADebounce+
+Filter List issues: https://github.com/brave/adblock-lists/issues?q=is%3Aissue+label%3ADebounce+
 
 # Security-related redirectors
 
@@ -23,8 +23,9 @@ At the moment, the following rule types are supported:
 
 - `redirect`: the destination URL is extracted from a query string parameter
 - `base64,redirect`: the destination URL is extracted from a query string parameter, but the value of the parameter is base64-encoded and must therefore be base64-decoded prior to redirecting to it
+- `regex-path`: the destination URL is extracted from the URL path using a regex specified in the `param`
 
-Both the redirect and base64,redirect rules expect the query string to be encoded in the standard way that HTML5 forms are (i.e. `?key1=value1&key2=value2`). It doesn’t work for any other encodings.
+The `redirect` and `base64,redirect` rules expect the query string to be encoded in the standard way that HTML5 forms are (i.e. `?key1=value1&key2=value2`). It doesn’t work for any other encodings.
 
 # Writing new rules
 
@@ -34,6 +35,37 @@ When writing new rules, these things must be determined:
 2. Which query string parameter encodes the destination URL? (case **sensitive**)
 3. Is the type of URL encoding supported?
 4. What URL pattern should be used?
+
+
+## Writing a regex rule
+
+The `regex-path` action lets you specify a generic regex pattern for picking out destination URLs from a given URL. The motivating use-case is to debounce AMP cache URLs to the canonical URLs. These URLs look something like https://www-theverge-com.cdn.ampproject.org/c/s/www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news -- we would want to debounce that URL to https://www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news. We also need the ability to predicate a debounce rule on a user preference, to support use-cases like De-AMP where a user turning off the preference should turn off the relevant debouncing rule.
+
+The `param` would be a regular expression that has a capture group that should pick out one (and only one) well-formed URL on evaluation when applied on the original URL's path.
+
+There's a key called `prepend_scheme: http|https` that, only if specified, will add the specified scheme (http or https) to the captured string value. Note that as a safety check, if the captured string value is already a valid URL AND `prepend_scheme` is specified, then we error out. `prepend_scheme` helps us capture the case in AMP cache URLs where the scheme is not specified in the original URL and would thus never be parsed into a valid URL.
+
+Here's an example:
+
+```
+[
+  {
+    "include": [
+      "*://brave.com/*"
+    ],
+    "pref": "brave.de_amp.enabled",
+    "exclude": [
+    ],
+    "prepend_scheme": "https",
+    "action": "regex-path",
+    "param": "^/(.*)$"
+  },
+...
+]
+```
+
+With this rule, the URL https://brave.com/https://braveattentiontoken.com would be debounced to https://braveattentiontoken.com/ if the user preference `brave.de_amp.enabled` (the De-AMP pref) is switched on. Note that https://brave.com/xyz would not be debounced despite matching the param pattern because xyz is not a valid URL even after prepending https scheme to it.
+
 
 ## Identifying the right query string parameter
 
@@ -140,5 +172,6 @@ Until a [built-in debugging interface](https://github.com/brave/brave-browser/is
 
 - `/Users/<username>/Library/Application Support/BraveSoftware/Brave-Browser-Beta/afalakplffnnnlkncjhbmahjfjhmlkal/<version>/1/debounce.json` on Mac
 - `/home/<username>/.config/BraveSoftware/Brave-Browser-Beta/afalakplffnnnlkncjhbmahjfjhmlkal/<version>/1/debounce.json` on Linux
+- `/c/Users/.../AppData/Local/BraveSoftware/Brave-Browser-Nightly/User Data/afalakplffnnnlkncjhbmahjfjhmlkal/[version]/1/debounce.json` on Windows
 
 and then restart the browser profile.
