@@ -66,6 +66,8 @@ Here's an example:
 
 With this rule, the URL https://brave.com/https://braveattentiontoken.com would be debounced to https://braveattentiontoken.com/ if the user preference `brave.de_amp.enabled` (the De-AMP pref) is switched on. Note that https://brave.com/xyz would not be debounced despite matching the param pattern because xyz is not a valid URL even after prepending https scheme to it.
 
+For more info, check the [GitHub issue](https://github.com/brave/brave-browser/issues/23121).
+
 ## Writing `redirect` and `base64,redirect` rules
 
 ### Identifying the right query string parameter
