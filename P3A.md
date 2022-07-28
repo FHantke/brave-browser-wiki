@@ -562,6 +562,14 @@ _`Brave.Wallet.OnboardingConversion`_ **[D]** **[A]**
 0) I accessed the wallet page, but did not set up the wallet
 1) Yes, I have set up the wallet
 
+### Q62. Did the participant in Group C click on the promo and did they switch their default engine to Brave Search?
+_`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
+
+0) No, No
+1) Yes, No
+2) No, Yes
+3) Yes, Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
