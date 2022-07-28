@@ -33,11 +33,6 @@ Check out the upstream [Checking out and building Chromium on Linux](https://chr
 On debug build for Android lint may crash with error `java.lang.OutOfMemoryError: Java heap space`. Solution is to set environment variable `export JAVA_OPTS="-Xmx10G -Xms1G"`.
 
 # Making debug build for Android
-If you are building debug apk for Android and doing debugging, you may want to add `--gn=enable_proguard_obfuscation:false` to build command:
-```
-npm run build -- --target_os=android --target_arch=arm --gn=enable_proguard_obfuscation:false
-```
-This will give you nice stacks from Java crashes or exceptions without need to run retrace script.
 
 In order to make sure output format is apk, add `--target_android_output_format=apk` to build command:
 ```
