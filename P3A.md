@@ -522,7 +522,7 @@ _`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
 6) 16 to 20 days
 7) More than 20 days
 
-### Q57: As a first time user of Brave News this week, did I return again to use it during the week?
+### Q57: As a first time user of Brave News this week, did I return again to use it during the first 7 day period?
 _`Brave.Today.NewUserReturning`_ **[D]** **[A]**
 
 0) I have never used Brave News
@@ -547,7 +547,7 @@ _`Brave.Search.Promo.Banner`_ **[D]**
 2) No, Yes
 3) Yes, Yes
 
-### Q60. As a first time user of Brave Wallet this week, did I return again to use it during the week?
+### Q60. As a first time user of Brave Wallet this week, did I return again to use it during the first 7 day period?
 _`Brave.Wallet.NewUserReturning`_ **[D]** **[A]**
 
 0) I have never used Brave Wallet
