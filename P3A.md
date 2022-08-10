@@ -570,6 +570,37 @@ _`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
 2) No, Yes
 3) Yes, Yes
 
+### Q63. As a Brave VPN user, when was the last time I enabled the Brave VPN?
+_`Brave.VPN.LastUsageTime`_ **[D]** **[A]**
+
+1) 0 - 6 days ago
+2) 7 - 13 days ago
+3) 14 - 20 days ago
+4) 21 - 27 days ago
+5) 28 - 59 days ago
+6) 60 days ago or more
+
+### Q64. As Brave VPN user, how many different days did I enable the Brave VPN in the last 30 days?
+_`Brave.VPN.DaysInMonthUsed`_ **[D]** **[A]**
+
+0) 0 days
+1) 1 day
+2) 2 days
+3) 3 to 5 days
+4) 5 to 10 days
+5) 10 to 15 days
+6) 15 to 20 days
+7) More than 20 days
+
+### Q65. As a first time user of the Brave VPN this week, did I enable it again the following day?
+_`Brave.VPN.NewUserReturning`_ **[D]** **[A]**
+
+0) I have never enabled the Brave VPN
+1) I have enabled the Brave VPN, but I'm not a first time Brave VPN user this week
+2) I'm a first time Brave VPN user this week but, no, I did not enable the Brave VPN the rest of the week
+3) I'm a first time Brave VPN user this week and, yes, I did enable it again the following day
+4) I'm a first time Brave VPN user this week and, yes, I enabled it again this week but not the following day
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
