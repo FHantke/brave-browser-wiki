@@ -601,6 +601,12 @@ _`Brave.VPN.NewUserReturning`_ **[D]** **[A]**
 3) I'm a first time Brave VPN user this week and, yes, I did enable it again the following day
 4) I'm a first time Brave VPN user this week and, yes, I enabled it again this week but not the following day
 
+### Q66. Do you have Web Discovery Project enabled?
+_`Brave.Search.WebDiscoveryEnabled`_ **[D]**
+
+0) No
+1) Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
