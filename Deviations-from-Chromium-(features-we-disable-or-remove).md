@@ -105,11 +105,6 @@ _Google does not receive any information about which client is performing these 
 - `https://*.gvt1.com/edgel/chromewebstore/*/*`
 - `https://*.gvt1.com/edgedl/release2/*/*`
 - `http://dl.google.com/release2/*/*`
-- `https://translate.googleapis.com/translate_a/element.js*`
-- `https://translate.googleapis.com/element/*/js/element/element_main.js`
-- `https://translate.googleapis.com/translate_static/js/element/main.js`
-- `https://translate.googleapis.com/translate_static/css/translateelement.css`
-- `https://www.gstatic.com/images/branding/product/*x/translate_24dp.png`
 
 ### Modified Features and Functionality
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
