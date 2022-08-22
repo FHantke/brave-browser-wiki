@@ -607,6 +607,15 @@ _`Brave.Search.WebDiscoveryEnabled`_ **[D]**
 0) No
 1) Yes
 
+### Q67. What is the default Solana wallet setting?
+_`Brave.Wallet.DefaultSolanaWalletSetting`_ **[D]** **[A]**
+
+0. AskDeprecated
+1. None
+2. CryptoWallets
+3. BraveWalletPreferExtension
+4. BraveWallet
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
