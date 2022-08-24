@@ -7,5 +7,5 @@ Users can find the setting by visiting brave://settings/extensions and look for 
 4. `Ethereum`: Brave will be using Infura to issue Ethereum JSON-RPC call to the smart contract from Unstoppable Domains to resolve .crypto domain name lookup requests. If you enable this, Infura will see the .crypto domain that you're trying to visit but they will not be able to see other domains. See Infura's [terms of use](https://consensys.net/terms-of-use) and [privacy policy](https://consensys.net/privacy-policy/).
 
 **Note:**
-- Since 1.40 in addition to .crypto Brave also supports .x, .coin, .nft, .dao, .wallet, .888, .blockchain and .bitcoin domains. 
+- Since 1.40 in addition to .crypto Brave also supports .x, .coin, .nft, .dao, .wallet, .blockchain and .bitcoin domains. 
 - Since 1.44 .zil is also supported
