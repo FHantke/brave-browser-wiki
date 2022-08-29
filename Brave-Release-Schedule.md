@@ -51,7 +51,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.41.x  |    103   | July 5, 2022        | July 12, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 | 1.42.x  |    104   | July 26, 2022       | August 3, 2022      | Shorter cycle due to C103 - C104 being 42 days rather than 28 days. Release delayed. Originally set as `August 2, 2022`.|
 | 1.42.x  |    104   | N/A                 | August 17, 2022     | Maintenance Release                        |
-| 1.43.x  |    105   | August 23, 2022     | August 30, 2022     |                                            |
+| 1.43.x  |    105   | August 23, 2022     | September 1, 2022     | Release delayed. Originally set as `August 30, 2022`.|
 | 1.43.x  |    105   | N/A                 | September 14, 2022  | Maintenance Release                        |
 | 1.44.x  |    106   | September 20, 2022  | September 27, 2022  |                                            |
 | 1.44.x  |    106   | N/A                 | October 12, 2022    | Maintenance Release                        |
