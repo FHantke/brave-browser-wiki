@@ -41,7 +41,7 @@ When writing new rules, these things must be determined:
 
 The `regex-path` action lets you specify a generic regex pattern for picking out destination URLs from a given URL. The motivating use-case is to debounce AMP cache URLs to the canonical URLs. These URLs look something like https://www-theverge-com.cdn.ampproject.org/c/s/www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news -- we would want to debounce that URL to https://www.theverge.com/platform/amp/2018/9/20/17881766/bing-google-amp-support-mobile-news. We also need the ability to predicate a debounce rule on a user preference, to support use-cases like De-AMP where a user turning off the preference should turn off the relevant debouncing rule.
 
-The `param` would be a regular expression that has a capture group that should pick out one (and only one) well-formed URL on evaluation when applied on the original URL's path.
+The `param` should be a regular expression that has [one or more](https://github.com/brave/brave-core/pull/14687) regex capture groups that construct a well-formed URL on evaluation when applied on the original URL's path.
 
 There's a key called `prepend_scheme: http|https` that, only if specified, will add the specified scheme (http or https) to the captured string value. Note that as a safety check, if the captured string value is already a valid URL AND `prepend_scheme` is specified, then we error out. `prepend_scheme` helps us capture the case in AMP cache URLs where the scheme is not specified in the original URL and would thus never be parsed into a valid URL.
 
