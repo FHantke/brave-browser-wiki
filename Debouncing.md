@@ -43,6 +43,8 @@ The `regex-path` action lets you specify a generic regex pattern for picking out
 
 The `param` should be a regular expression that has [one or more](https://github.com/brave/brave-core/pull/14687) regex capture groups that construct a well-formed URL on evaluation when applied on the original URL's path.
 
+Note that all debounce rules are applied sequentially, so higher rules take precedence. So if you have two regex rules with the same `includes`, you should make sure the more specific one is higher in the list.
+
 There's a key called `prepend_scheme: http|https` that, only if specified, will add the specified scheme (http or https) to the captured string value. Note that as a safety check, if the captured string value is already a valid URL AND `prepend_scheme` is specified, then we error out. `prepend_scheme` helps us capture the case in AMP cache URLs where the scheme is not specified in the original URL and would thus never be parsed into a valid URL.
 
 Here's an example:
