@@ -1,5 +1,7 @@
 [More information about sccache](https://github.com/mozilla/sccache)
 
+This is currently used at Brave only for iOS builds.
+
 `sccache` helps save a lot of time by caching the object files you compile. If something triggers a rebuild (ex: you delete the `src/out` directory), `sccache` will try to use its cache.  Once installed, you can see the number of hits/misses by running `sccache -s`.  You'll see an output like this:
 ```
 Compile requests              9144
@@ -37,16 +39,11 @@ Max cache size                 100 GiB
 ### Install rust
 If you already have rust installed but you're not sure if it's current, you can run `rustup update`
 
-#### Mac/Linux installation
+#### macOS installation
 Install Rust via [rustup](https://rustup.rs/)
 ```bash
 curl https://sh.rustup.rs -sSf | sh
 ```
-On Linux, you may need to install `libssl-dev` and `pkg-config` using apt/yum/dnf
-
-#### Windows installation
-Download and install Rust via [rustup](https://rustup.rs/) and follow the on-screen instructions
-
 
 ### Install sccache
 With rust setup, you can install the `sccache` cargo package
@@ -74,7 +71,6 @@ Test it's working by running `which sccache` and observing that your shell has f
   - Also on macOS, you can also run `brew doctor` to help try to identify problems with your installed packages
 - If you are doing this on a new Mac, make sure you have XCode installed and that you've installed the command-line tools via `xcode-select --install`
 - Clifton was getting an error `error: failed to run custom build command for 'rust-crypto v0.2.36'`, followed by errors about nested includes going too deep. The solution was to delete/move `/usr/local/include/stdint.h` (which must have been left over from an old install) which was referenced in the error
-- When installing sccache v0.2.7 on Windows, you are likely to get an error `failed to compile`. This is a known error (https://github.com/mozilla/sccache/issues/292) and is due to a compilation warning issued during the build of ring-0.12.1 and the setting to treat warnings as errors. To get around this, in your cmd shell, `set _CL_=/wd5045` and `set _LINK_=/WX:NO` (this one may not be necessary), then rerun the cargo install command.
 - Using sccache v0.2.8, you may notice that nothing is cacheable anymore when looking at `sccache --show-stats`:
 
       Non-cacheable reasons:
@@ -92,7 +88,7 @@ You'll need to export some variables used by sccache to your `.bashrc`. Sccache 
 This is a great option if compiling takes a while on your machine. The cache is stored in an S3 bucket and multiple people can read/write to the bucket as they are compiling to take advantage of the cache.
 ```bash
 # s3 cache
-export SCCACHE_BUCKET=sccache-macos-bucket # bucket must exist and your access key must have read/write perm
+export SCCACHE_BUCKET=sccache-ios-bucket # bucket must exist and your access key must have read/write perm
 ```
 
 If using S3, you will need to ask for credentials (and the bucket name) from the Release Engineering team (see #devops in Slack). Once you have this information, you can store your AWS credentials in `~/.aws/credentials` like so:
@@ -179,6 +175,4 @@ If you're running macOS and sick of sccache dying and then failing to start auto
 7. `launchctl list` to check your service is launched or not
 
 
-This will basically just ping sccache once a minute to keep it alive (or restart it it died). 
-
-Taken from https://bravesoftware.slack.com/archives/C7VLGSR55/p1521752407000424 and other notes (thanks [@bridiver](https://github.com/bridiver), [@darkdh](https://github.com/darkdh))
+This will basically just ping sccache once a minute to keep it alive (or restart it it died).
