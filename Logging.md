@@ -15,4 +15,4 @@ npm start -- --vmodule=*/ipfs/*=1 --enable-logging=stderr
 
 `VLOG` should be used for debug info not `LOG(ERROR)`.
 
-Sensitive information should never be logged at all. For example, private keys.
+Sensitive information should never be logged at all. For example, private keys, OAuth tokens, HTTP basic auth credentials, cookies.
