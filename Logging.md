@@ -12,3 +12,5 @@ Then when you start you can match via file paths like this:
 ```
 npm start -- --vmodule=*/ipfs/*=1 --enable-logging=stderr
 ```
+
+`VLOG` should be used for debug info not `LOG(ERROR)`
