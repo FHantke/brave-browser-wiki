@@ -587,9 +587,9 @@ _`Brave.VPN.DaysInMonthUsed`_ **[D]** **[A]**
 1) 1 day
 2) 2 days
 3) 3 to 5 days
-4) 5 to 10 days
-5) 10 to 15 days
-6) 15 to 20 days
+4) 6 to 10 days
+5) 11 to 15 days
+6) 16 to 20 days
 7) More than 20 days
 
 ### Q65. As a first time user of the Brave VPN this week, did I enable it again the following day?
