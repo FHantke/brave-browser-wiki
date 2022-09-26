@@ -9,3 +9,5 @@ Brave improves this situation by giving users more control. Instead of permissio
 The second way Brave improves the privacy of the Permissions API is to give users more control over the *lifetime* of permissions. In other Chromium browsers, you can either give a site permission for a capability forever, or not at all. This causes users to give sites more access to more sensitive capabilities for longer than sites need them, and often for longer than users can keep track of.
 
 Again, Brave improves this situation by giving users more control. In Brave, you can give sites a permission for a limited time (for example, for one day, or until you close the site), in addition to the "forever" or "deny" options available in Chrome.
+
+More information on how Brave improves the privacy of the Permissions API can be found our [related blog post](https://brave.com/privacy-updates/8-grab-bag-2/#improved-web-permission-lifetimes).
