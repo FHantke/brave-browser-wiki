@@ -17,3 +17,7 @@ The latest list used to be found at <https://laptop-updates.brave.com/promo/cust
 ## Yandex CLID
 
 If Yandex is the default search engine, we add a `clid` parameter to search requests to indicate that they are coming from Brave. Our `clid` is assigned by Yandex, so it looks like a random number but is actually the same for all users on a platform. On Android, you would see 2423859 in the URL and on desktop you would see 2353835.
+
+## X-Brave-Ads-Enabled
+
+Helps the Brave Search backend to understand whether the requesting browser has Brave Ads enabled. As such, the header X-Brave-Ads-Enabled: 1 is added to navigation requests to Brave Search. Otherwise, the header is not added.
