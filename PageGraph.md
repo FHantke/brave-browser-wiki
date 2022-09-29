@@ -1,17 +1,14 @@
 PageGraph Goal
 ---
-PageGraph is an under-development, research effort to instrument Brave, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
-It currently lives in the [`page-graph`](https://github.com/brave/brave-core/tree/page-graph/) branch of [`brave/brave-core`](https://github.com/brave/brave-core).  A test suite is maintained at [brave-experiments/page-graph-tests](https://github.com/brave-experiments/page-graph-tests).
+PageGraph is a research project developed by Brave to instrument Brave browser, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
+
+PageGraph is included in all builds of Brave starting with version 1.46, though enabling it requires passing some command line arguments. Th easiest way to run PageGraph is to use [`pagegraph-crawl`](https://github.com/brave-experiments/pagegraph-crawl/) tools and scripts, which automate enabling PageGraph in Brave, launching Brave, and recording the resulting graph files.
 
 PageGraph's name comes from the graph-based representation of the document's execution it builds in memory.  Every relevant event in the document (a node being created, a network request being triggered, a script being executed, etc.) is recorded in the graph, noting both the relevant event, and the event's cause.
 
 The resulting graph allows for the analysis of the proximate and upstream causes of every modification in the document. We expect this information will be useful for a variety of filter list generation, privacy-preserving feature restrictions, and web compatibility analysis, among other uses.
 
 PageGraph is the next, production-ish version of [AdGraph](https://arxiv.org/abs/1805.09155), an earlier system for representing page execution as a directed graph.  PageGraph advances AdGraph in a large number of ways, increasing the breath and accuracy of attributions, enabling GraphML export, being kept up to date with Brave and Chromium, among many other improvements. 
-
-Getting the GraphML Data
----
-The current suggested way of getting the recorded graphs is through PageGraph extensions to [the chromium devtools protocol](https://chromedevtools.github.io/devtools-protocol/).  If you're looking to use PageGraph, we suggest using the [pagegraph-crawl](https://github.com/brave-experiments/pagegraph-crawl) tools, which abstracts away a lot of the tricky parts (e.g., dealing with child frames, managing Brave Shields, etc).
 
 Questions / Clarifications
 ---
@@ -49,24 +46,11 @@ If you have any questions about PageGraph, or would like to use / extend it for 
 
 Building
 ---
-You'll want to use Node version 12.x. If you don't have that installed by default, it's recommended to use [nvm](https://github.com/nvm-sh/nvm).
-
-```
-git clone -b page-graph https://github.com/brave/brave-browser
-cd brave-browser
-npm install
-npm run init
-npm run build -- Static
- ```
-
-There is also a [Dockerfile](https://github.com/brave/brave-browser/blob/page-graph/Dockerfile) included in the `page-graph` branch of the `brave-browser` repository. This is a verified setup that can be used as a reference for required dependency versions and installation steps. The image can also be built and used directly for research purposes.
+As of version 1.46, PageGraph is included in all brave-core (i.e., desktop and Android) versions of Brave.  There is no need for a special, customized build process.
 
 Running
 ---
-
 The PageGraph-enabled browser can be run manually like a normal build of Brave, and can still be used to generate graph files when run manually. However it is recommended to run using an automated crawling tool like [pagegraph-crawl](https://github.com/brave-experiments/pagegraph-crawl).
-
-When running, be sure to add the `--js-flags=--no-compilation-cache` argument to work around an occasional crash.
 
 ## Publications Using PageGraph
 
