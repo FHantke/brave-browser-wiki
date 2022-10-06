@@ -92,6 +92,24 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.23.x - 1.24.x | 21 days                   |                                            |
 | 1.24.x - 1.25.x | 21 days                   |                                            |
 | 1.25.x - 1.26.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.27.x - 1.28.x | 21 days                   |                                            |
+| 1.28.x - 1.29.x | 21 days                   |                                            |
+| 1.29.x - 1.30.x | 21 days                   |                                            |
+| 1.30.x - 1.31.x | 28 days                   |                                            |
+| 1.31.x - 1.32.x | 28 days                   |                                            |
+| 1.32.x - 1.33.x | 21 days                   | Shorter cycle due to C96 - C97 being 49 days rather than 28 days|
+| 1.33.x - 1.34.x | 28 days                   |                                            |
+| 1.34.x - 1.35.x | 28 days                   |                                            |
+| 1.35.x - 1.36.x | 28 days                   |                                            |
+| 1.36.x - 1.37.x | 28 days                   |                                            |
+| 1.37.x - 1.38.x | 28 days                   |                                            |
+| 1.38.x - 1.39.x | 28 days                   |                                            |
+| 1.39.x - 1.40.x | 28 days                   |                                            |
+| 1.40.x - 1.41.x | 21 days                   | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
+| 1.41.x - 1.42.x | 21 days                   | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
+| 1.42.x - 1.43.x | 28 days                   |                                            |
+| 1.43.x - 1.44.x | 28 days                   |                                            |
 
 # Beta & Dev channel dates:
 
