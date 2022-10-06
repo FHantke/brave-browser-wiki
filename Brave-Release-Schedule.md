@@ -38,24 +38,35 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
-| 1.35.x  |    98    | January 26, 2022    | February 2, 2022    | Migration delayed. Originally set as `January 25, 2021`.  Release delayed. Originally set as `February 1, 2022`|
-| 1.36.x  |    99    | February 23, 2022   | March 2, 2022       | Migration delayed due to Holiday. Originally set as `February 22, 2021`.  Release delayed. Originally set as `March 1, 2022`|
-| 1.36.x  |    99    | N/A                 | March 16, 2022      | Maintenance Release                        |
-| 1.37.x  |    100   | March 22, 2022      | March 30, 2022      |Release delayed. Originally set as `March 29, 2022`|    
-| 1.37.x  |    100   | N/A                 | April 14, 2022      | Maintenance Release                        |
-| 1.38.x  |    101   | April 20, 2022      | April 27, 2022      | Migration delayed. Originally set as `April 19, 2022`. Release delayed. Originally set as `April 26, 2022`|
-| 1.38.x  |    101   | N/A                 | May 17, 2022        | Maintenance Release. Release delayed. Originally set as `May 11, 2022`. |
-| 1.39.x  |    102   | May 18, 2022        | May 24, 2022        | Migration delayed. Originally set as `May 17, 2022`                                           |
-| 1.39.x  |    102   | N/A                 | June 8, 2022        | Maintenance Release                        |
-| 1.40.x  |    103   | June 16, 2022       | June 21, 2022       | Migration delayed. Originally set as `June 14, 2022 `.|                    
-| 1.41.x  |    103   | July 5, 2022        | July 12, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
-| 1.42.x  |    104   | July 26, 2022       | August 3, 2022      | Shorter cycle due to C103 - C104 being 42 days rather than 28 days. Release delayed. Originally set as `August 2, 2022`.|
-| 1.42.x  |    104   | N/A                 | August 17, 2022     | Maintenance Release                        |
-| 1.43.x  |    105   | August 23, 2022     | September 1, 2022     | Release delayed. Originally set as `August 30, 2022`.|
-| 1.43.x  |    105   | N/A                 | September 14, 2022  | Maintenance Release                        |
 | 1.44.x  |    106   | September 20, 2022  | September 27, 2022  |                                            |
 | 1.44.x  |    106   | N/A                 | October 12, 2022    | Maintenance Release                        |
 | 1.45.x  |    107   | October 18, 2022    | October 25, 2022    |                                            |
+| 1.45.x  |    107   | N/A                 | November 15, 2022   | Maintenance Release                        |
+| 1.46.x  |    108   | November 22, 2022   | November 29, 2022   |                                            |
+| 1.46.x  |    108   | N/A                 | December 14, 2022   | Maintenance Release                        |
+| 1.46.x  |    108   | N/A                 | December 29, 2022   | Maintenance Release (tentative) - `Note:` Depending on QA availability, this maintenance release could be moved to `January 4, 2023`|
+| 1.47.x  |    109   | January 4, 2023     | January 10, 2023    |                                            |
+| 1.47.x  |    109   | N/A                 | January 25, 2023    | Maintenance Release                        |
+| 1.48.x  |    110   | January 31, 2023    | February 7, 2023    |                                            |
+| 1.48.x  |    110   | N/A                 | February 22, 2023   | Maintenance Release                        |
+| 1.49.x  |    111   | February 28, 2023   | March 7, 2023       |                                            |
+| 1.49.x  |    111   | N/A                 | March 22, 2023      | Maintenance Release                        |
+| 1.50.x  |    112   | March 28, 2023      | April 4, 2023       |                                            |
+| 1.50.x  |    112   | N/A                 | April 19, 2023      | Maintenance Release                        |
+| 1.51.x  |    113   | April 25, 2023      | May 2, 2023         |                                            |
+| 1.51.x  |    113   | N/A                 | May 17, 2023        | Maintenance Release                        |
+| 1.52.x  |    114   | May 23, 2023        | May 30, 2023        |                                            |
+| 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
+| 1.53.x  |    115   | June 20, 2023       | June 27, 2023       |                                            |
+| 1.53.x  |    115   | N/A                 | July 12, 2023       | Maintenance Release                        |
+| 1.53.x  |    115   | N/A                 | July 26, 2023       | Maintenance Release                        |
+| 1.54.x  |    116   | August 1, 2023      | August 8, 20203     |                                            |
+| 1.54.x  |    116   | N/A                 | August 23, 2023     | Maintenance Release                        |
+| 1.55.x  |    117   | August 29, 2023     | September 5, 2023   |                                            |
+| 1.55.x  |    117   | N/A                 | September 20, 2023  | Maintenance Release                        |
+| 1.56.x  |    118   | September 26, 2023  | October 3, 2023     |                                            |
+| 1.56.x  |    118   | N/A                 | October 18, 2023    | Maintenance Release                        |
+| 1.57.x  |    119   | October 24, 2023    | October 31, 2023    |                                            |
 
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
@@ -66,25 +77,19 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version         | # of days between releases| Comments                                   |
 |:---------------:|:-------------------------:|---------------------------------------------
-| 1.26.x - 1.27.x | 28 days                   | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
-| 1.27.x - 1.28.x | 21 days                   |                                            |
-| 1.28.x - 1.29.x | 21 days                   |                                            |
-| 1.29.x - 1.30.x | 21 days                   |                                            |
-| 1.30.x - 1.31.x | 28 days                   |                                            |
-| 1.31.x - 1.32.x | 28 days                   |                                            |
-| 1.32.x - 1.33.x | 21 days                   | Shorter cycle due to C96 - C97 being 49 days rather than 28 days|
-| 1.33.x - 1.34.x | 28 days                   |                                            |
-| 1.34.x - 1.35.x | 28 days                   |                                            |
-| 1.35.x - 1.36.x | 28 days                   |                                            |
-| 1.36.x - 1.37.x | 28 days                   |                                            |
-| 1.37.x - 1.38.x | 28 days                   |                                            |
-| 1.38.x - 1.39.x | 28 days                   |                                            |
-| 1.39.x - 1.40.x | 28 days                   |                                            |
-| 1.40.x - 1.41.x | 21 days                   | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
-| 1.41.x - 1.42.x | 21 days                   | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
-| 1.42.x - 1.43.x | 28 days                   |                                            |
-| 1.43.x - 1.44.x | 28 days                   |                                            |
 | 1.44.x - 1.45.x | 28 days                   |                                            |
+| 1.45.x - 1.46.x | 35 days                   |                                            |
+| 1.46.x - 1.47.x | 42 days                   |                                            |
+| 1.47.x - 1.48.x | 28 days                   |                                            |
+| 1.48.x - 1.49.x | 28 days                   |                                            |
+| 1.49.x - 1.50.x | 28 days                   |                                            |
+| 1.50.x - 1.51.x | 28 days                   |                                            |
+| 1.51.x - 1.52.x | 28 days                   |                                            |
+| 1.52.x - 1.53.x | 28 days                   |                                            |
+| 1.53.x - 1.54.x | 42 days                   |                                            |
+| 1.54.x - 1.55.x | 28 days                   |                                            |
+| 1.55.x - 1.56.x | 28 days                   |                                            |
+| 1.56.x - 1.57.x | 28 days                   |                                            |
 ---
 
 # Beta & Dev channel dates:
