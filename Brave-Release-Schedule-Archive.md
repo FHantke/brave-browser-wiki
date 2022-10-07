@@ -126,6 +126,23 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.24.x  | 90                | April 6, 2021       |                                           |  
 | 1.25.x  | 91                | April 28, 2021      |                                           |
 | 1.26.x  | 91                | May 18, 2021        | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
+| 1.28.x  | 92                | July 14, 2021       |                                           |
+| 1.29.x  | 93                | August 4, 2021      |                                           |
+| 1.30.x  | 94                | August 24, 2021     |                                           |
+| 1.31.x  | 95                | September 17, 2021  |Migration delayed. Originally set as `September 14, 2021`|
+| 1.32.x  | 96                | October 12, 2021    |                                           |
+| 1.33.x  | 96                | November 9, 2021    |                                           |
+| 1.34.x  | 97                | November 30, 2021   | Shorter cycle due to C96 - C97 being 49 days rather than 28 days|
+| 1.35.x  | 98                | December 28, 2021   |                                           |
+| 1.36.x  | 99                | January 25, 2022    |                                           |
+| 1.37.x  | 100               | February 22, 2022   |                                           |
+| 1.38.x  | 101               | March 22, 2022      |                                           |
+| 1.39.x  | 102               | April 19, 2022      |                                           |
+| 1.40.x  | 103               | May 17, 2022        |                                           |
+| 1.41.x  | 103               | June 14, 2022       |                                           |
+| 1.42.x  | 104               | July 5, 2022        | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
+| 1.43.x  | 105               | July 26, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 
 # Nightly channel dates:
 
