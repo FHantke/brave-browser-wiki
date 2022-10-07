@@ -616,6 +616,27 @@ _`Brave.Wallet.DefaultSolanaWalletSetting`_ **[D]** **[A]**
 3. BraveWalletPreferExtension
 4. BraveWallet
 
+### Q68. If you have viewed the cookie consent block prompt, how did you react?
+_`Brave.Shields.CookieListPrompt`_ **[D]** **[A]**
+
+0. Have not seen the prompt
+1. Have seen the prompt, but did not react
+2. Clicked "No thanks" on the prompt
+3. Clicked "Block cookie notices" on the prompt
+
+### Q69. Do you have cookie consent notice blocking enabled?
+_`Brave.Shields.CookieListEnabled`_ **[D]** **[A]**
+
+0. No
+1. Yes
+
+### Q70. What is your preferred Ethereum provider?
+_`Brave.Wallet.EthProvider`_ **[D]**
+
+0. None
+1. Third-party wallet extension
+2. Native wallet
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
