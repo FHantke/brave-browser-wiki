@@ -117,7 +117,7 @@ The following is our automated schedule for creating and uploading builds to our
 
 ---
 
-# Nightly channel dates:
+# Nightly channel migration dates:
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
