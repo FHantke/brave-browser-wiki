@@ -92,30 +92,24 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.56.x - 1.57.x | 28 days                   |                                            |
 ---
 
-# Beta & Dev channel dates:
+# Beta & Dev channel migration dates:
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.27.x  | 92                | June 15, 2021       | Longer cycle due to CR91 - CR92 being 56 days rather than 42 days|
-| 1.28.x  | 92                | July 14, 2021       |                                           |
-| 1.29.x  | 93                | August 4, 2021      |                                           |
-| 1.30.x  | 94                | August 24, 2021     |                                           |
-| 1.31.x  | 95                | September 17, 2021  |Migration delayed. Originally set as `September 14, 2021`|
-| 1.32.x  | 96                | October 12, 2021    |                                           |
-| 1.33.x  | 96                | November 9, 2021    |                                           |
-| 1.34.x  | 97                | November 30, 2021   | Shorter cycle due to C96 - C97 being 49 days rather than 28 days|
-| 1.35.x  | 98                | December 28, 2021   |                                           |
-| 1.36.x  | 99                | January 25, 2022    |                                           |
-| 1.37.x  | 100               | February 22, 2022   |                                           |
-| 1.38.x  | 101               | March 22, 2022      |                                           |
-| 1.39.x  | 102               | April 19, 2022      |                                           |
-| 1.40.x  | 103               | May 17, 2022        |                                           |
-| 1.41.x  | 103               | June 14, 2022       |                                           |
-| 1.42.x  | 104               | July 5, 2022        | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
-| 1.43.x  | 105               | July 26, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 | 1.44.x  | 106               | August 23, 2022     |                                           |
 | 1.45.x  | 107               | September 20, 2022  |                                           |
 | 1.46.x  | 108               | October 18, 2022    |                                           |
+| 1.47.x  | 109               | November 22, 2022   |                                           |
+| 1.48.x  | 110               | January 4, 2023     |                                           |
+| 1.49.x  | 111               | January 31, 2023    |                                           |
+| 1.50.x  | 112               | February 28, 2023   |                                           |
+| 1.51.x  | 113               | March 28, 2023      |                                           |
+| 1.52.x  | 114               | April 25, 2023      |                                           |
+| 1.53.x  | 115               | May 23, 2023        |                                           |
+| 1.54.x  | 116               | June 20, 2023       |                                           |
+| 1.55.x  | 117               | August 1, 2023      |                                           |
+| 1.56.x  | 118               | August 29, 2023     |                                           |
+| 1.57.x  | 119               | September 26, 2023  |                                           |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
