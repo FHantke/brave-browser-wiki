@@ -637,6 +637,28 @@ _`Brave.Wallet.EthProvider`_ **[D]**
 1. Third-party wallet extension
 2. Native wallet
 
+### Q71. How many pages did you load in the past week?
+_`Brave.Core.PagesLoaded`_ **[D]** **[A]**
+
+0. 0 pages
+1. 1-10
+2. 11-50
+3. 51-100
+4. 101-500
+5. 501-1000
+6. Greater than 1000 pages
+
+### Q72. How many unique domains did you load in the past week?
+_`Brave.Core.DomainsLoaded`_ **[D]** **[A]**
+
+0. 0 domains
+1. 1-4
+2. 5-10
+3. 11-30
+4. 31-50
+5. 51-100
+6. Greater than 100 domains
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
