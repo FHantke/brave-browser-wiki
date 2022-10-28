@@ -557,10 +557,11 @@ _`Brave.Wallet.NewUserReturning`_ **[D]** **[A]**
 4) I'm a first time Brave Wallet user this week and, yes, I returned and used it again this week but not the following day
 
 ### Q61. If you accessed the Wallet page at least once, did you create/import a wallet?
-_`Brave.Wallet.OnboardingConversion`_ **[D]** **[A]**
+_`Brave.Wallet.OnboardingConversion.2`_ **[D]** **[A]**
 
 0) I accessed the wallet page, but did not set up the wallet
-1) Yes, I have set up the wallet
+1) Yes, I have set up a new wallet
+2) Yes, I have imported an existing wallet
 
 ### Q62. Did the participant in Group C click on the promo and did they switch their default engine to Brave Search?
 _`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
