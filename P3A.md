@@ -660,6 +660,12 @@ _`Brave.Core.DomainsLoaded`_ **[D]** **[A]**
 5. 51-100
 6. Greater than 100 domains
 
+### Q73. If you have ever sent a transaction, have you sent one in the past 7 days?
+_`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`Brave.Wallet.FilTransactionSent`_
+
+0) No
+1) Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
