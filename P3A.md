@@ -671,18 +671,3 @@ _`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`B
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
 
 https://github.com/brave/brave-browser/labels/feature%2Fnew-metric
-
-## Removed metrics
-
-### Q41: If you have turned off BR, how long did you have it on?
-_`Brave.Rewards.EnabledDuration`_ **[D]** **[A]**
-
-This question was removed in Brave v1.37, to be replaced by the better-defined `Brave.Rewards.AdsEnabledDuration` metric.
-
-0. It was never on
-1. It’s still on
-2. 1 hour
-3. 1 day
-4. 1 week
-5. 1 month
-6. More than one month
