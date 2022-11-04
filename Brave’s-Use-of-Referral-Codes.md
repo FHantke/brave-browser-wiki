@@ -1,4 +1,4 @@
-**Update: As of 11/23/20, Brave does not generally support referral codes for external publishers.** See https://brave.com/referral-program-update/ for details.
+**Update: As of 11/23/20, Brave has mostly shut down the creators referral program.** See https://brave.com/referral-program-update/ for details. Referral codes are still used for the other purposes mentioned in this page.
 
 ## What are referral codes?
 
