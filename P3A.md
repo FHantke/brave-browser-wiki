@@ -666,6 +666,16 @@ _`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`B
 0) No
 1) Yes
 
+### Q74. As an active ETH/SOL/FIL user (that currently has an active account, or previously has had one), how many accounts do you have with a non-zero balance?
+_`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Brave.Wallet.ActiveFilAccounts`_
+
+0) 0 accounts
+1) 1 account
+2) 2 accounts
+3) 3 accounts
+4) 4-7 accounts
+5) 8+ accounts
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
