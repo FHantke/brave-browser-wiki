@@ -661,13 +661,13 @@ _`Brave.Core.DomainsLoaded`_ **[D]** **[A]**
 6. Greater than 100 domains
 
 ### Q73. If you have ever sent a transaction, have you sent one in the past 7 days?
-_`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`Brave.Wallet.FilTransactionSent`_
+_`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`Brave.Wallet.FilTransactionSent`_ [D] [A]
 
 0) No
 1) Yes
 
 ### Q74. As an active ETH/SOL/FIL user (that currently has an active account, or previously has had one), how many accounts do you have with a non-zero balance?
-_`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Brave.Wallet.ActiveFilAccounts`_
+_`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Brave.Wallet.ActiveFilAccounts`_ [D] [A]
 
 0) 0 accounts
 1) 1 account
