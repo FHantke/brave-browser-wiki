@@ -27,7 +27,7 @@ Install the Node.js active LTS (v16+) from https://nodejs.org/.
 
 ## npm or Yarn
 
-Preferably use npm v8+ (but < 8.6) as it is the default package manager used across our builds. npm is built in Node by default. Alternatively, you can install Yarn:
+Preferably use npm v8+ as it is the default package manager used across our builds. npm is built in Node by default. Alternatively, you can install Yarn:
 
 Install Yarn from https://yarnpkg.com/lang/en/docs/install/.
 Installing Yarn via `.msi` has been tested and is known to work.
