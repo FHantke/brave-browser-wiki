@@ -11,7 +11,7 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 
 ## Windows 10 SDK
 
-[Install Windows 10 SDK 10.0.20348.0](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/). (VS 2019 installer does not include this version.)
+[Install Windows 10 SDK 10.0.20348.0](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/). (VS 2019 installer does not include this version).
 
 See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#currently-the-supported-toolchain-is-visual-studio-2019-update-161110-and-windows-sdk-100220000
 
@@ -24,15 +24,6 @@ Configure Git according to the ["Get the Code" section](https://chromium.googles
 ## Node
 
 Install the Node.js active LTS (v16+) from https://nodejs.org/.
-
-## npm or Yarn
-
-Preferably use npm v8+ as it is the default package manager used across our builds. npm is built in Node by default. Alternatively, you can install Yarn:
-
-Install Yarn from https://yarnpkg.com/lang/en/docs/install/.
-Installing Yarn via `.msi` has been tested and is known to work.
-
-If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 
 ## Python 2.7
 
