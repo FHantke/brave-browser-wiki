@@ -11,7 +11,7 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 
 ## Windows 10 SDK
 
-[Install Windows 10 SDK 10.0.19041.1](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/). (VS2017 installer does not include this version.)
+[Install Windows 10 SDK 10.0.20348.0](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/). (VS2017 installer does not include this version.)
 
 See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#currently-the-supported-toolchain-is-visual-studio-2019-update-161110-and-windows-sdk-100220000
 
