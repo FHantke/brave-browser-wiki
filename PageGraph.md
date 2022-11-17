@@ -1,6 +1,6 @@
 PageGraph is a research project developed by Brave to instrument Brave browser, blink and v8, to allow for complete attribution of document modifications, network requests, script execution, and privacy-relevant Web API accesses.
 
-PageGraph is included in all builds of Brave starting with version 1.46, though enabling it requires passing some command line arguments. Th easiest way to run PageGraph is to use [`pagegraph-crawl`](https://github.com/brave-experiments/pagegraph-crawl/) tools and scripts, which automate enabling PageGraph in Brave, launching Brave, and recording the resulting graph files.
+PageGraph is included in all builds of Brave starting with version 1.46, though enabling it requires passing some command line arguments. The easiest way to run PageGraph is to use [`pagegraph-crawl`](https://github.com/brave-experiments/pagegraph-crawl/) tools and scripts, which automate enabling PageGraph in Brave, launching Brave, and recording the resulting graph files.
 
 *Note* that recording builtin JS APIs requires [nightly Brave builds](https://brave.com/download-nightly/). this choice is made to slightly optimize the performance of the Beta and Stable builds that most Brave users use.
 
