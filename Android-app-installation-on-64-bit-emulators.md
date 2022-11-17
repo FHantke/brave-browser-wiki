@@ -35,6 +35,7 @@ Commands above assume that you have only 1 emulator (and no other devices connec
 
 For instance `bundletool build-apks --bundle=BraveMonoarm64.aab --output=BraveMonoarm64.apks --device-id=emulator-5554`.
 
+List of ids can be found by running `adb devices` command.
+
 ## Known issues
 There is a problem with `vulkan` on `arm64` emulators on `M1` Mac. It shows annoying crash dialogs when apps starts. After closing those dialogs app works as expected.
-List of ids can be found by running `adb devices` command.
