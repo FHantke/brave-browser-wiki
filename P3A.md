@@ -13,6 +13,8 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 
 **[A]** = supported on Android ([merged in 1.19.x](https://github.com/brave/brave-core/pull/7016) and [enabled in 1.20.x](https://github.com/brave/brave-core/pull/7550))
 
+**[iOS]** = supported on iOS ([merged and enabled in 1.46.x](https://github.com/brave/brave-ios/pull/6308))
+
 ### Q1: How long has this browser been open for the last seven days?
 _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 1. N/A -- seven days have not passed since first open
@@ -42,7 +44,7 @@ _`Brave.Importer.ImporterSource`_ **[D]**
 6. Imported from Safari (answer only possible on macOS)
 
 ### Q5: How many bookmarks do you have?
-_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]** **[A]**
+_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]** **[A]** **[iOS]**
 1. 0-5
 2. 6-20
 3. 21-100
@@ -60,7 +62,7 @@ _`Brave.Core.WindowCount.2`_ **[D]**
 4. 6+
 
 ### Q7: How many open tabs do you have?
-_`Brave.Core.TabCount`_ **[D]** **[A]**
+_`Brave.Core.TabCount`_ **[D]** **[A]** **[iOS]**
 1. 0-1
 2. 2-5
 3. 6-10
@@ -166,7 +168,7 @@ Note: we count only omnibox events that trigger a search.
 8. More than 500 times 
 
 ### Q20: Which is your currently selected search engine? 
-_`Brave.Search.DefaultEngine.4`_ **[D]** **[A]**
+_`Brave.Search.DefaultEngine.4`_ **[D]** **[A]** **[iOS]**
 
 0. Other
 1. Google
@@ -235,7 +237,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q26: Is the sponsored new tab page option enabled?
 
-`Brave.NTP.SponsoredImagesEnabled` **[D]** **[A]**
+`Brave.NTP.SponsoredImagesEnabled` **[D]** **[A]** **[iOS]**
 
 0. Disabled
 1. Enabled
@@ -411,14 +413,14 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 6. More than three months
 
 ### Q46: What is the global ad blocking shields setting?
-_`Brave.Shields.AdBlockSetting`_ **[D]** **[A]**
+_`Brave.Shields.AdBlockSetting`_ **[D]** **[A]** **[iOS]**
 
 0. Disabled
 1. Standard
 2. Aggressive
 
 ### Q47: What is the global fingerprinting shields setting?
-_`Brave.Shields.FingerprintBlockSetting`_ **[D]** **[A]**
+_`Brave.Shields.FingerprintBlockSetting`_ **[D]** **[A]** **[iOS]**
 
 0. Disabled
 1. Standard
@@ -437,7 +439,7 @@ _`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]**
 7. More than 10 feeds
 
 ### Q49: How many external feeds do you have in total?
-_`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]**
+_`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]** **[iOS]**
 
 0. None
 1. 1 feed
@@ -461,7 +463,7 @@ _`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]**
 7. 101 or more
 
 ### Q51: On how many domains has the user set the adblock setting to be lower (block less) than the default?
-_`Brave.Shields.DomainAdsSettingsBelowGlobal`_ **[D]** **[A]**
+_`Brave.Shields.DomainAdsSettingsBelowGlobal`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1-5
@@ -471,7 +473,7 @@ _`Brave.Shields.DomainAdsSettingsBelowGlobal`_ **[D]** **[A]**
 5) 31+
 
 ### Q52: On how many domains has the user set the adblock setting to be higher (block more) than the default?
-_`Brave.Shields.DomainAdsSettingsAboveGlobal`_ **[D]** **[A]**
+_`Brave.Shields.DomainAdsSettingsAboveGlobal`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1-5
@@ -481,7 +483,7 @@ _`Brave.Shields.DomainAdsSettingsAboveGlobal`_ **[D]** **[A]**
 5) 31+
 
 ### Q53: On how many domains has the user set the FP setting to be lower (block less) than the default?
-_`Brave.Shields.DomainFingerprintSettingsBelowGlobal`_ **[D]** **[A]**
+_`Brave.Shields.DomainFingerprintSettingsBelowGlobal`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1-5
@@ -491,7 +493,7 @@ _`Brave.Shields.DomainFingerprintSettingsBelowGlobal`_ **[D]** **[A]**
 5) 31+
 
 ### Q54: On how many domains has the user set the FP setting to be higher (block more) than the default?
-_`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]**
+_`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1-5
@@ -618,7 +620,7 @@ _`Brave.Wallet.DefaultSolanaWalletSetting`_ **[D]** **[A]**
 4. BraveWallet
 
 ### Q68. If you have viewed the cookie consent block prompt, how did you react?
-_`Brave.Shields.CookieListPrompt`_ **[D]** **[A]**
+_`Brave.Shields.CookieListPrompt`_ **[D]** **[A]** **[iOS]**
 
 0. Have not seen the prompt
 1. Have seen the prompt, but did not react
@@ -626,7 +628,7 @@ _`Brave.Shields.CookieListPrompt`_ **[D]** **[A]**
 3. Clicked "Block cookie notices" on the prompt
 
 ### Q69. Do you have cookie consent notice blocking enabled?
-_`Brave.Shields.CookieListEnabled`_ **[D]** **[A]**
+_`Brave.Shields.CookieListEnabled`_ **[D]** **[A]** **[iOS]**
 
 0. No
 1. Yes
