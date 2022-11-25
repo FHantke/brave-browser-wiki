@@ -14,6 +14,18 @@ There're few options you may find useful:
 If you need to configure some upstream checks, i.e. disable or add a file filter, please use:
 [chromium_presubmit_config.json5](https://github.com/brave/brave-core/blob/master/chromium_presubmit_config.json5).
 
+## Available checks
+In addition to manually written checks, the presubmit system also runs:
+* code format (clang-format, yapf)
+* cpplint
+* pylint
+* checkdeps
+
+It can be extended to support eslint, WebUI style check and other checks, such as `chromium_src` macro validation.
+
+The system also supports Android style check, but it's currently disabled via config file, because most `.java` files require style rework.
+
+## Chromium modifications
 Currently upstream checks are modified in such way:
 1. Make it compatible with our directory structure.
 2. Disable Gerrit-specific checks.
