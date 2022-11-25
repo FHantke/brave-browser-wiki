@@ -23,7 +23,7 @@ In addition to manually written checks, the presubmit system also runs:
 
 It can be extended to support eslint, WebUI style check and other checks, such as `chromium_src` macro validation.
 
-The system also supports Android style check, but it's currently disabled via config file, because most `.java` files require style rework.
+The system also supports Android style check, but it's currently [disabled via config file](https://github.com/brave/brave-core/blob/3f8492e4be2b5adfab8ddb65fd49e7412d019710/chromium_presubmit_config.json5#L73-L74), because most `.java` files require style rework.
 
 ## Chromium modifications
 Currently upstream checks are modified in such way:
