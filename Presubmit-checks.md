@@ -15,7 +15,7 @@ If you need to configure some upstream checks, i.e. disable or add a file filter
 [chromium_presubmit_config.json5](https://github.com/brave/brave-core/blob/master/chromium_presubmit_config.json5).
 
 ## Available checks
-#### Brave-specific checks
+#### Brave checks
 * license header check
 
 #### Chromium checks
