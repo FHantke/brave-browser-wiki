@@ -678,6 +678,16 @@ _`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Bra
 4) 4-7 accounts
 5) 8+ accounts
 
+### Q75. As a Brave Wallet user, when was the last time I unlocked the wallet?
+_`Brave.Wallet.LastUsageTime`_ **[D]** **[A]**
+
+1) 0 - 6 days ago
+2) 7 - 13 days ago
+3) 14 - 20 days ago
+4) 21 - 27 days ago
+5) 28 - 59 days ago
+6) 60 days ago or more
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
