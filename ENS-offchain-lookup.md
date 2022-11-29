@@ -1,6 +1,4 @@
-Brave supports [ENS(.eth)](https://docs.ens.domains/) domain names resolution. This support includes [resolving wallet addresses](https://docs.ens.domains/ens-improvement-proposals/ensip-1-ens#addr) in wallet panel and [resolving ipfs links](https://docs.ens.domains/ens-improvement-proposals/ensip-7-contenthash-field) in omnibox. ENS is deployed on the Ethereum main network.
-
-Brave also supports transparent reading of [ENS records from offchain storages](https://docs.ens.domains/dapp-developer-guide/ens-l2-offchain). Offchain storage is setup by domain owner by providing a custom resolver smart contract to ENS.
+Brave supports transparent reading of [ENS records from offchain storages](https://docs.ens.domains/dapp-developer-guide/ens-l2-offchain) for [resolving wallet addresses](https://docs.ens.domains/ens-improvement-proposals/ensip-1-ens#addr) in wallet panel and [resolving ipfs links](https://docs.ens.domains/ens-improvement-proposals/ensip-7-contenthash-field) in the omnibox. Offchain storage is set up by the domain owner by providing a custom resolver smart contract to ENS, which could be a third party. If you enable offchain lookup, a third party could see the .eth domain you're trying to visit but they won't be able to see other domains you visit.
 
 ENS offchain lookup is controlled by settings in brave://settings/extensions. Possible values are:
 1. `Ask`. This is the default option which Brave would ask whether to enable ENS offchain lookup when visiting such .eth domains.
