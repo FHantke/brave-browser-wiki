@@ -1,4 +1,4 @@
-The Brave  query string filter aims at preventing the tracking of individual users without interfering with campaign-level tracking. We target parameters which are known to be specific to:
+The Brave  query string filter aims at preventing the tracking of individual users without interfering with coarse-grained campaign-level tracking. We target parameters which are known to be specific to:
 - a user,
 - an email address, or
 - an individual click.
