@@ -5,6 +5,8 @@ The Brave  query string filter aims at preventing the tracking of individual use
 
 This kind of tracking is typically used to sync cookie, that is the practice of synchronizing the value of first-party cookies on different domains, to link clicks inside an email message to a website visit, or to leak a user's identity across site boundaries.
 
+In addition, we may remove parameters that can be used to circumvent our referrer trimming protections, that is parameters that would leak more than just the referring page's origin (e.g. including the referring page's path).
+
 ### Implementation
 
 The way that the filter works is that we remove from the query string any parameters (i.e. the parameter name and its value) before we proceed with a non-same-site `GET` request (navigations, subresources and redirects). This means that such parameters never make it to the server, URL bar or the `Referer` header, and cannot be recovered by scripts running on a page.
