@@ -159,6 +159,22 @@ Assuming we have the release ready in the morning, the schedule will typically l
 | 3 | morning | 50%                |
 | 3 | evening | 100%               |
 
+## iOS rollout process
+When 1) approved in iOS App Store and 2) QA has signed off on the release, we'll begin the automated rollout. This takes place over 7 days to people who have automatic updates enabled. Users can visit the App Store page for Brave at any time and get the latest one
+
+If something goes wrong, the release can be paused.
+
+| day | rollout             |
+|:---:|---------------------|
+| 1 | initial release 1% |
+| 2 | 2% |
+| 3 | 5% |
+| 4 | 10% |
+| 5 | 20% |
+| 6 | 50% |
+| 7 | 100% |
+
+
 # How to do branch migrations:
 
 - Visit https://ci.brave.com/job/branch-migrations/
