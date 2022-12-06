@@ -1,3 +1,16 @@
+# TOC
+- [Overview](#overview)
+- [Current channel information](#current-channel-information)
+- [Current build schedule](#current-build-schedule)
+- [Release channel dates](#release-channel-dates)
+    - [Number of days between each release on Release channel](#number-of-days-between-each-release-on-release-channel)
+- [Beta & Dev channel migration dates](#beta--dev-channel-migration-dates)
+- [Nightly channel migration dates](#nightly-channel-migration-dates)
+- [Mobile platforms]()
+    - [Android rollout process](#android-rollout-process)
+    - [iOS rollout process](#ios-rollout-process)
+- [How to do branch migrations](#how-to-do-branch-migrations)
+
 # Overview 
 
 Currently published version numbers can be seen at https://brave-browser-downloads.s3.brave.com/
@@ -181,18 +194,5 @@ If something goes wrong, the release can be paused.
 - Queue the job
 - Verify results
 
-## Manual process (for reference)
-
-Follow this checklist:
-
-- [ ] Create a new branch off of `master` of `brave/brave-core` for the new version. `cd src/brave && git checkout master && git pull`
-- [ ] Create a new branch off of `master` of `brave/brave-browser` for the new version.  `git checkout master && git pull`
-- [ ] Create a new branch in the `brave/brave-ui` repo, off of the sha referenced in brave-core's package.json for the brave-ui dependency (could be different to master), named `brave-core-Z.YY.x`
-- [ ] Update info in the chart at the top of https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule 
-- [ ] Verify branch protection is still in effect for `brave/brave-browser` and `brave/brave-core` for the new version. If it is of the format `0.*.x` then it will be.
-- [ ] Rename milestone names with the channel name on brave-browser.  Create a new one for the new Nightly.
-- [ ] Rename milestone names with the channel name on brave-core. Create a new one for the new Nightly.
-- [ ] Update versions on brave-browser with a PR like this: https://github.com/brave/brave-browser/commit/2a118fc38cc6357c15678db37a57dfd030328877
-- [ ] Update the version for brave-core in package.json to the branch, similar to: https://github.com/brave/brave-browser/blame/0.59.x/package.json#L45
-- [ ] Update versions on brave-core with a commit like this: https://github.com/brave/brave-core/commit/f65158c72d65f83194a72e5b6386693e61b48c8c
-- [ ] Message everyone in slack in #brave-core about each branch and where it lives.
+For folks that want to see more of "how the sausage is made" (link restricted to Brave employees), you can view the Jenkins job details here:
+https://github.com/brave/devops/blob/master/jenkins/jobs/browser/branch-migrations.yml
