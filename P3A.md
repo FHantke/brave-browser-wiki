@@ -634,11 +634,11 @@ _`Brave.Shields.CookieListEnabled`_ **[D]** **[A]** **[iOS]**
 1. Yes
 
 ### Q70. What is your preferred Ethereum provider?
-_`Brave.Wallet.EthProvider`_ **[D]**
+_`Brave.Wallet.EthProvider.2`_ **[D]**
 
-0. None
+0. None (native wallet not setup or third-party extension not installed)
 1. Third-party wallet extension
-2. Native wallet
+2. Native wallet (wallet is setup)
 
 ### Q71. How many pages did you load in the past week?
 _`Brave.Core.PagesLoaded`_ **[D]** **[A]**
