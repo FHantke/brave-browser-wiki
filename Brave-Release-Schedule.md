@@ -57,7 +57,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.45.x  |    107   | N/A                 | November 15, 2022   | Maintenance Release.                       |
 | 1.46.x  |    108   | November 22, 2022   | December 1, 2022    | Release delayed. Originally scheduled for `November 29, 2022`.|    
 | 1.46.x  |    108   | N/A                 | December 14, 2022   | Maintenance Release                        |
-| 1.46.x  |    108   | N/A                 | December 29, 2022   | Maintenance Release (tentative) - `Note:` Depending on QA availability, this maintenance release may be moved to `January 4, 2023`|
+| 1.46.x  |    108   | N/A                 | ~December 29, 2022~   | Maintenance Release (tentative) - `Note:` Depending on QA availability, this maintenance release may be moved to `January 4, 2023`. **Cancelled**.|
 | 1.47.x  |    109   | January 4, 2023     | January 10, 2023    |                                            |
 | 1.47.x  |    109   | N/A                 | January 25, 2023    | Maintenance Release                        |
 | 1.48.x  |    110   | January 31, 2023    | February 7, 2023    |                                            |
