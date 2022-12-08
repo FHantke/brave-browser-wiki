@@ -188,7 +188,12 @@ npm run build -- --target_os=android --target_arch=x86
 
 ## Upstream Chromium tests
 
-Brave runs most tests from upstream Chromium in CI.
+Brave runs most tests from upstream Chromium in CI (see `CI/run-upstream-tests` label). They can also be run locally like this:
+
+```
+npm test browser_tests
+npm test unit_tests
+```
+
 However, Brave also makes several changes to Chromium that may cause those tests to fail.
-To disable particular upstream tests, add an entry to [brave-core/test/filters/](https://github.com/brave/brave-core/tree/master/test/filters).
-Be sure to include a short description of why the filter is required and create an associated tracking issue.
+To disable particular upstream tests, add an entry to [brave-core/test/filters/](https://github.com/brave/brave-core/tree/master/test/filters). Be sure to include a short description of why the filter is required and create an associated tracking issue.
