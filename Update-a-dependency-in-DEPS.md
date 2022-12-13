@@ -1,4 +1,4 @@
-# Auto bump DEPS
+# Update a dependency in DEPS
 
 A Github Actions [workflow](https://github.com/brave/brave-core/actions/workflows/update-dep.yml) has been created that makes the process of auto bumping DEPS easier.
 
