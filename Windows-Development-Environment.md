@@ -23,7 +23,7 @@ Configure Git according to the ["Get the Code" section](https://chromium.googles
 
 ## Node
 
-Install the Node.js active LTS (v16+) from https://nodejs.org/.
+Install the Node.js active LTS (v18+) from https://nodejs.org/.
 
 ## Python 2.7
 
