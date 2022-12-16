@@ -140,6 +140,24 @@ For example if you add z.com as 127.0.0.1 in your hosts file and then start it o
 
 <img width="785" alt="Screen Shot 2022-06-14 at 10 14 05 AM" src="https://user-images.githubusercontent.com/831718/173599734-86289c85-5197-49e7-9687-37adcac04215.png">
 
+## Bump Solana Web3 script process (This requires a security review)
+1. Bump `package.json` in brave-core
+2. `npm install` to get the bumped version in node_modules
+3. Clone https://github.com/brave-experiments/Javascript-Secure-Plugin
+4. Copy `node_modules/@solana/web3.js/lib/index.iife.min.js into the above repo as `solana-web3.js`
+5. `npm install` and `npm run build` in the plugin repo
+6. Edit the `Build/test.js` to remove lines above `/************************************************************************/` and the last line `/******/ })()` 
+7. Add Brave license and `/* Auto generated from @solana/web3.js 1.47.1 index.iife.min.js */` (replace 1.47.1 with the bumped version)
+8. Copy `Build/test.js` to brave-core in `components/brave_wallet/resources/solana_web3_script.js`
+9. sync and build brave-core
+10. Go to https://github.com/darkdh/solana-provider-test to test `connect` and `send transaction` without any console error.
+11. If there is no errors, then go ahead and open the PR, otherwise go to step 12.
+12. Trace the `solana_web3` error line number from console
+13. Looking for something that begins with `$` and add stuff into `components/safe_builtins/renderer/safe_builtins.cc`.
+14. Let say if it is `$Array.from()` then add it to the the second array of `$Array` block because it is a dynamic method.
+15. If it is `Array.prototype.flat()` then add `flat` to the first array of `$Array` block as static method.
+16. Repeat step 12-15 until there is no errors and open a PR.
+
 
 ## QA test projects
 
