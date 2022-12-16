@@ -153,10 +153,10 @@ For example if you add z.com as 127.0.0.1 in your hosts file and then start it o
 10. Go to https://github.com/darkdh/solana-provider-test to test `connect` and `send transaction` without any console error.
 11. If there is no errors, then go ahead and open the PR, otherwise go to step 12.
 12. Trace the `solana_web3` error line number from console
-13. Looking for something that begins with `$` and add stuff into `components/safe_builtins/renderer/safe_builtins.cc`.
-14. Let say if it is `$Array.from()` then add it to the the second array of `$Array` block because it is a dynamic method.
-15. If it is `Array.prototype.flat()` then add `flat` to the first array of `$Array` block as static method.
-16. Repeat step 12-15 until there is no errors and open a PR.
+13. Looking for something that begins with `$` and add missing builtins into `components/safe_builtins/renderer/safe_builtins.cc`.
+  - Let say if it is `$Array.from()` then add it to the the second array of `$Array` block because it is a dynamic method.
+  - If it is `Array.prototype.flat()` then add `flat` to the first array of `$Array` block as static method.
+15. Repeat step 12-14 until there is no errors and open a PR.
 
 
 ## QA test projects
