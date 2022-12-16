@@ -25,6 +25,7 @@ In addition to manually written checks, the presubmit system also runs:
 * cpplint
 * pylint
 * checkdeps
+* eslint
 
 It can be extended to support eslint, WebUI style check and other checks, such as `chromium_src` macro validation.
 
