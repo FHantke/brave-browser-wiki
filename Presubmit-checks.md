@@ -9,6 +9,7 @@ There're few options you may find useful:
 --all                 run presubmit on all files
 --files <file list>   semicolon-separated list of files to run presubmit on
 --verbose [arg]       pass --verbose 2 for more debugging info
+--fix                 try to fix found issues automatically
 ```
 
 If you need to configure some upstream checks, i.e. disable or add a file filter, please use:
