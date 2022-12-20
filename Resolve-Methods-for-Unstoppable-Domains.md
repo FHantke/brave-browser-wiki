@@ -1,5 +1,5 @@
 This page describes the resolve methods Brave supports for resolving domain names when visiting Unstoppable Domains (ex: .crypto domains).
-Users can find the setting by visiting brave://settings/web3 and look for `Method to resolve Unstoppable Domains`.
+Users can find the setting by visiting `brave://settings/web3` and look for `Resolve Unstoppable Domains domain names`.
 
 1. `Ask`: This is the default option which Brave would ask whether to enable Unstoppable Domains support when visiting .crypto domains.
 2. `Disabled`: Disable the support of Unstoppable Domains.
