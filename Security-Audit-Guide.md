@@ -1,3 +1,5 @@
+UPDATE (2023): This page is no longer maintained and contains a lot of outdated information.
+
 Component updater:
 - brave component updater has its own configurator 
  `brave/browser/component_updater/brave_component_updater_configurator.cc`. Take special note of all values here, in particular if `EnabledCupSigning` is ok to keep disabled. (We were ok to have this disabled in muon previously)
