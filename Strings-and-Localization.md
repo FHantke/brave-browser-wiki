@@ -76,9 +76,7 @@ https://github.com/brave/brave-browser/wiki/Information-for-localizers
   - `android_brave_strings`,
   - `brave_components_resources`,
   - `brave_extension`,
-  - `brave_generated_resources`,
-  - `ethereum_remote_client_extension`,
-  - `rewards_extension`, and
+  - `brave_generated_resources`, and
   - all `*_override` files.
   - Leave the rest unchecked!
 - The officially supported (by Chromium) languages are: 
