@@ -12,6 +12,10 @@ Be super sure that <version> is replaced with the version you wish to use.
    - [ ] Release using the `critical` feature (forces users to update/restart) if there's a zero day vulnerability being exploited
 - [ ] Consult with PR team (@catherinecorre) and provide heads up on release timing, screenshots, other deliverable's.
 
+#### `Nightly` & `BETA` channels (HF/zero-day chromium releases)
+
+- [ ] When pushing out a chromium bump (especially a zero-day chromium release), ensure that `BETA` builds have also been started/pushed publicly. This is a quick check to avoid cases were a zero-day chromium bump was merged late on Thursday, missing the `public` build as per https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#current-build-schedule. When this happens, users need to wait till Tuesday until the next public `BETA` build is pushed out. This leaves users vulnerable and doesn't respect our `1-day SLA` promise. In these cases, ensure that `BETA` also goes out within ~24hrs.
+
 ### Release Notes to Staging
 
 - [ ] Mark closed issues in github as `release-notes/exclude` or `release-notes/include`.
