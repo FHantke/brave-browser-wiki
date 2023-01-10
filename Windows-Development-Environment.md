@@ -14,7 +14,7 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#currently-the-supported-toolchain-is-visual-studio-2019-update-161110-and-windows-sdk-100220000
 
 ## Git
-If you need to clone `brave-core` or another repo on Windows, you can install Git from https://git-scm.com/downloads.
+If you need to clone `brave-core` or another repo on Windows, you can install Git from https://git-scm.com/downloads. Alternatively, you can use the version included in `depot_tools`
 
 After you have Git on your machine, please configure it according to the ["Get the Code" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#get-the-code) of the Chromium Windows build instructions, specifically all of the `git config --global` commands.
 
