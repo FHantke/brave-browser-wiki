@@ -1,7 +1,5 @@
 You should follow the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md) stopping before the `Get the code` step
 
-## System Requirements
-
 Before you begin, make sure your system satisfies the [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#system-requirements).
 
 ## Visual Studio
