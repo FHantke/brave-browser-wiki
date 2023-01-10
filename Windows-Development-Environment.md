@@ -1,6 +1,4 @@
-Overall, you can follow the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md) stopping before the `Get the code` step
-
-Below you'll find some additional information
+You should follow the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md) stopping before the `Get the code` step
 
 ## System Requirements
 
@@ -20,7 +18,7 @@ See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#cu
 ## Git
 If you need to clone `brave-core` or another repo on Windows, you can install Git from https://git-scm.com/downloads.
 
-Configure Git according to the ["Get the Code" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#get-the-code) of the Chromium Windows build instructions, specifically all of the `git config --global` commands.
+After you have Git on your machine, please configure it according to the ["Get the Code" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#get-the-code) of the Chromium Windows build instructions, specifically all of the `git config --global` commands.
 
 Git is included in `depot_tools`. At the moment, there are known issues calling out to Git if your system has the version from `depot_tools` PATH'ed.
 
