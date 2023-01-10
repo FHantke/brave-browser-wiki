@@ -1,3 +1,5 @@
+Overall, you can follow some of the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md)
+
 # System Requirements
 
 Before you begin, make sure your system satisfies the [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#system-requirements).
@@ -16,18 +18,22 @@ Follow guidance from the ["Visual Studio" section](https://chromium.googlesource
 See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#currently-the-supported-toolchain-is-visual-studio-2019-update-161110-and-windows-sdk-100220000
 
 ## Git
-
-Install Git from https://git-scm.com/downloads.
+If you need to clone `brave-core` or another repo on Windows, you can install Git from https://git-scm.com/downloads.
 
 Configure Git according to the ["Get the Code" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#get-the-code) of the Chromium Windows build instructions, specifically all of the `git config --global` commands.
+
+Git is included in `depot_tools`. At the moment, there are known issues calling out to Git if your system has the version from `depot_tools` PATH'ed.
 
 ## Node
 
 Install the Node.js active LTS (v18+) from https://nodejs.org/.
 
-## Python 2.7
+## Python
 
-Install the latest Python 2.7 release from https://www.python.org/downloads/windows/.
+If you don't already have a system version of Python, you can get version 3 from https://www.python.org/downloads/windows/.
+When doing the build, the version from `depot_tools` is used. Some legacy scripts are using Python 2.7.
+
+Python is included in `depot_tools`. At the moment, there are known issues calling out to Python if your system has the version from `depot_tools` PATH'ed.
 
 ## Done!
 
