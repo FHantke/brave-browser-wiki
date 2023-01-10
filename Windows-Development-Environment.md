@@ -1,4 +1,4 @@
-Overall, you can follow some of the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md)
+Overall, you can follow the steps from Chromium's [Checking out and Building Chromium for Windows guide](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md) stopping before the `Get the code` step
 
 # System Requirements
 
