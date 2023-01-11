@@ -45,3 +45,4 @@ to run an Android test, instead use
 npm run test -- brave_unit_tests --target_os=android --target_arch=x86 --manual_android_test_device
 npm run test -- brave_browser_tests --target_os=android --target_arch=x86 --manual_android_test_device
 ```
+Note that you can also add `--use_goma` to these commands to, well, use GOMA.
