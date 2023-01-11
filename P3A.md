@@ -147,7 +147,7 @@ _`Brave.Rewards.AdsState.2`_ **[D]** **[A]**
 5. Wallet created, ads enabled, then disabled, while Brave Rewards remains on
 6. Wallet created, ads enabled, then disabled, Brave Rewards disabled
 
-### Q18: How many questions the browser was able to answer within a week?
+### Q18: How many weekly questions did the browser send in the previous week?
 _`Brave.P3A.SentAnswersCount`_ **[D]** **[A]**
 1. None
 2. Between 1 and 4
