@@ -48,3 +48,15 @@ npm run test -- brave_browser_tests --target_os=android --target_arch=x86 --manu
 
 ## Speeding up builds
 Add `--use_goma` to `npm run build` commands to use GOMA to speed up your builds.
+
+## Build failing and don't know what to do?
+
+First try updating everything:
+```
+git checkout master  # in src/brave
+git pull origin master # in src/brave
+git pull origin master # in src/
+# then sync and build, run the following in the top-level directory (above src/)
+npm run sync && cd src/brave && npm run build 
+# once this works, try rebasing your feature branch on master and checking it out and building
+```
