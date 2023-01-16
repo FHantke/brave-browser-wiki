@@ -688,6 +688,13 @@ _`Brave.Wallet.LastUsageTime`_ **[D]** **[A]**
 5) 28 - 59 days ago
 6) 60 days ago or more
 
+### Q76. What menu functionality group do you use the most?
+_`Brave.Toolbar.FrequentMenuGroup`_ **[D]**
+
+0) Tab & window actions (new tab/new window)
+1) Brave features (Wallet, Rewards, Sync)
+2) Browser views (History, Bookmarks, Extensions, Settings)
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
