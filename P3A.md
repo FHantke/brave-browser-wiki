@@ -695,6 +695,25 @@ _`Brave.Toolbar.FrequentMenuGroup`_ **[D]**
 1) Brave features (Wallet, Rewards, Sync)
 2) Browser views (History, Bookmarks, Extensions, Settings)
 
+### Q77. How often is the menu triggered and dismissed without an action taken in the past week?
+_`Brave.Toolbar.MenuDismissRate`_ **[D]**
+
+0) Menu was not opened in the past week
+1) Less than 25% (exclusive) of opens
+2) Between 25% (inclusive) and 50% (exclusive) of opens
+3) Between 50% (inclusive) and 75% (exclusive) of opens
+4) More than 75% of opens
+
+### Q78. How many times was the menu opened in the past 7 days?
+_`Brave.Toolbar.MenuOpens`_ **[D]**
+
+0) 0
+1) 1-5
+2) 6-15
+3) 16-29
+4) 30-49
+5) 50+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
