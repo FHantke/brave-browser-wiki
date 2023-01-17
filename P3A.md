@@ -714,7 +714,7 @@ _`Brave.Toolbar.MenuOpens`_ **[D]**
 4) 30-49
 5) 50+
 
-### Q79. How many ads have I viewed in the past 7 days?
+### Q79. How many News ads have I viewed in the past 7 days?
 _`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]**
 
 0) 0
