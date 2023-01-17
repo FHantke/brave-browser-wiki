@@ -714,6 +714,18 @@ _`Brave.Toolbar.MenuOpens`_ **[D]**
 4) 30-49
 5) 50+
 
+### Q79. How many ads have I viewed in the past 7 days?
+_`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]**
+
+0) 0
+1) 1
+2) 2-4
+3) 5-12
+4) 13-20
+5) 21-40
+6) 41-80
+7) 81+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
