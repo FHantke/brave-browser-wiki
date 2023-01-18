@@ -505,7 +505,7 @@ _`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]** **[iOS]**
 ### Q55: As an opted in Brave News user, when was the last time I used Brave News?
 _`Brave.Today.LastUsageTime`_ **[D]** **[A]**
 
-1) 0 - 6 days ago
+1) Within the last 6 days
 2) 7 - 13 days ago
 3) 14 - 20 days ago
 4) 21 - 27 days ago
@@ -576,7 +576,7 @@ _`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
 ### Q63. As a Brave VPN user, when was the last time I enabled the Brave VPN?
 _`Brave.VPN.LastUsageTime`_ **[D]** **[A]**
 
-1) 0 - 6 days ago
+1) Within the last 6 days
 2) 7 - 13 days ago
 3) 14 - 20 days ago
 4) 21 - 27 days ago
@@ -681,7 +681,7 @@ _`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Bra
 ### Q75. As a Brave Wallet user, when was the last time I unlocked the wallet?
 _`Brave.Wallet.LastUsageTime`_ **[D]** **[A]**
 
-1) 0 - 6 days ago
+1) Within the last 6 days
 2) 7 - 13 days ago
 3) 14 - 20 days ago
 4) 21 - 27 days ago
