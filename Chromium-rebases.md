@@ -189,9 +189,10 @@ Make builds for QA smoke tests using the following links:
 * MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
 * MacOS (arm64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
 * Linux: https://ci.brave.com/view/linux/job/test-brave-browser-build-linux-x64
-* Windows (x64): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64/
-* Windows (x86): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x86/
+* Windows (x64): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64
+* Windows (x86): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x86
 * Android: https://ci.brave.com/view/macos/job/test-brave-browser-build-android
+* iOS: https://ci.brave.com/view/macos/job/test-brave-browser-build-ios
 
 Settings:
 * `CHANNEL` - Set to `nightly` (this is the default)
@@ -201,13 +202,9 @@ Settings:
 
 Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
 
-### Android installers
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/70/BraveMonox86.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
+### MacOS installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-arm64/153/Brave-Browser-Nightly-arm64.dmg
 
 ### Linux installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly_1.37.54_amd64.deb
@@ -231,9 +228,17 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
-### MacOS installers
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-arm64/153/Brave-Browser-Nightly-arm64.dmg
+### Android installers
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/70/BraveMonox86.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
+
+### iOS installers
+
+* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-ios/193/brave-core-ios-1.48.51.tgz
 
 ## Merge
 
