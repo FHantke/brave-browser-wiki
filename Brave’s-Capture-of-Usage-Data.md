@@ -50,7 +50,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
 | country_code | Country Code | 2 digit string containing the country code | CDN | US |
 | region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
-| dtoi | Date of installation - date of the browser installation (held in browser state for 14 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
+| dtoi | Date of installation - date of the browser installation (held in browser state for 30 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
 | adsEnabled | Ads status flag | true or false | Browser | true |
 | walletActive | Brave Wallet Status | 4 possible values for daily user, weekly user, monthly user, never used. | Browser | 7
 | arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | Browser | x86_64 |
