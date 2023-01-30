@@ -40,6 +40,6 @@ You can check the list of components installed in Brave Browser by navigating to
 | Safety Tips      | Yes         | SafetyTips | Protobuf of domains for client side lookalike URL detection | | |
 | Subresource Filter Rules      | No           | Subresource Filter | Contains rules to block websites which don’t follow the better Ads Standard. Its often used to block phishing domains |               |
 | Widevine      | Yes           | oimompecagnajdejgnnjijobebaeigek | Widevine’s DRM solution provides the capability to license, securely distribute and protect playback of content on any consumer device |           |
-| youtubedown.js | Yes           | | Used to get youtubedown.js script | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageYoutubedown.js |
+| youtubedown.js | Yes           | | Used to get [playlist-component](https://github.com/brave/playlist-component) | https://github.com/brave/brave-core-crx-packager/blob/master/scripts/packageYoutubedown.js |
 | Zxcvbn Data Dictionaries      | No           | ZxcvbnData | This contains the data like popular English words and names to higlight password strength.    | | The work to develop a custom password check is being tracked here: https://github.com/brave/brave-browser/issues/12001 |
 | Crypto Wallets | Yes | odbfpeeihdkbihmopkbjmoonfanlbfcl | Contains the Brave Crypto Wallet component required to support Dapp | http://github.com/brave/ethereum-remote-client/ |  Component lazy loads by default unless set to run at browser startup
