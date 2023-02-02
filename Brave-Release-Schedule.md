@@ -39,12 +39,12 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Channel | Time | Days      | Platforms | Public      |
 |:-------:|:--------:|:---------------------:|:---------------------:|:---------------------:|
-| `Beta`| 4am UTC (8pm PST/11pm EST) | Monday, Wednesday, Friday | android linux-x64 macos-x64 win64 | no |
+| `Beta`| 4am UTC (8pm PST/11pm EST) | Monday, Wednesday, Friday | android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
 | `Beta`| 4am UTC (8pm PST/11pm EST) | Tuesday, Thursday | all | yes |
-| `Dev`| 8am UTC (12am PST/3am EST)| Tuesday, Thursday | linux-x64 macos-x64 macos-arm64 win64 win32 | yes |
+| `Dev`| 8am UTC (12am PST/3am EST)| Saturday | linux-x64 linux-arm64 macos-x64 macos-arm64 windows-x64 windows-x86 windows-arm64 | yes |
 | `Nightly`| 12pm UTC (4am PST/7am EST)| Monday - Friday| all | yes |
-| `Nightly`| 4pm UTC (8am PST/11am EST)| Monday - Friday| android linux-x64 macos-x64 win64 | no |
-| `Nightly`| 12am UTC (4pm PST/7pm EST)| Monday - Friday| android linux-x64 macos-x64 win64 | no |
+| `Nightly`| 4pm UTC (8am PST/11am EST)| Monday - Friday| android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
+| `Nightly`| 12am UTC (4pm PST/7pm EST)| Monday - Friday| android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
 ---
 
 # Release channel dates:
