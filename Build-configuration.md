@@ -18,8 +18,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * brave_sync_endpoint
   * brave_variations_server_url
   * dcheck_always_on (set to 1 in PRs on non-Windows platforms)
-  * ftx_client_id
-  * ftx_client_secret
   * gemini_api_staging_url
   * gemini_api_url
   * gemini_client_id
@@ -46,6 +44,12 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * uphold_client_secret
   * uphold_staging_client_id
   * uphold_staging_client_secret
+        * brave_p3a_enabled true
+        * p3a_json_upload_url
+        * p3a_creative_upload_url
+        * p2a_json_upload_url
+        * p3a_star_upload_url 
+        * star_randomness_host
 * Android
   * brave_android_developer_options_code
   * brave_android_key_password
