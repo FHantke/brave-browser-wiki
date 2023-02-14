@@ -108,6 +108,7 @@ _Google does not receive any information about which client is performing these 
 
 ### Modified Features and Functionality
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
+- Session Cookies are [cleaned up on restart](https://github.com/brave/brave-browser/issues/28379) if "Continue where you left off" mode is enabled (which is default in Brave).
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened. In addition, cross-origin requests from a `.onion` service have an empty `Referer` header and a `null` `Origin` header just like the Tor Browser.
 - Media Router (Chromecast) is disabled by default on Desktop. You can turn it on by toggling the switch in brave://settings.
 - Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
