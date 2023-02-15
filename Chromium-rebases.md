@@ -183,6 +183,22 @@ The PR must contain all of the following labels:
 * `CI/run-network-audit`
 * `CI/run-upstream-tests`
 
+## Smoke test
+
+Before handing off a build to QA, please test the following functionality:
+
+- Ensure that About page shows the expected version number
+- Ensure that brave://settings is functional and not throwing any console errors
+- Ensure that clearing browser data on exit works as expected
+- Ensure that tabs have the expected shape (it's slightly different from Chrome)
+- Ensure that videos play properly on YouTube and that the media device toolbar button works correctly
+- Ensure that tab-muting works properly
+- Ensure that vertical tabs work as expected (must first enable this via brave://flags)
+- Ensure that enabling Rewards works properly
+- Ensure that all elements of the sidebar panel work as expected
+- Ensure that private and Tor windows work as expected
+- Ensure that a few different web sites load as expected
+
 ## Before merging
 
 Make builds for QA smoke tests using the following links:
