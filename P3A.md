@@ -183,7 +183,7 @@ _`Brave.Search.DefaultEngine.4`_ **[D]** **[A]** **[iOS]**
 ### Q21: How much data did Brave save you last week?
 Note: this is based on a predictive algorithm running strictly client-side
 
-`Brave.Savings.BandwidthSavingsMB` **[D]** **[A]**
+`Brave.Savings.BandwidthSavingsMB` **[D]** **[A]** **[iOS]**
 
 1. 0
 2. \>0-50mb
@@ -224,7 +224,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q25: On average, how many New Tab Pages did you create per day?
 
-`Brave.NTP.NewTabsCreated` **[D]** **[A]**
+`Brave.NTP.NewTabsCreated` **[D]** **[A]** **[iOS]**
 
 0. 0 
 1. 1 to 3
@@ -244,7 +244,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q27: On average, how many of the New Tab Pages you saw per day were sponsored?
 
-`Brave.NTP.SponsoredNewTabsCreated` **[D]** **[A]**
+`Brave.NTP.SponsoredNewTabsCreated` **[D]** **[A]** **[iOS]**
 
 0. 0%
 1. &gt; 0% and < 10%
@@ -306,7 +306,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q33: How many times did you use Brave Today in the last week that Brave Today was used?*
 
-`Brave.Today.WeeklySessionCount` **[D]**
+`Brave.Today.WeeklySessionCount` **[D]** **[iOS]**
 
 0. Never
 1. Once
@@ -319,7 +319,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q34: How many articles did you visit (or read) in your largest article-reading session in the preceeding week of the last time you visited a Brave Today article?*
 
-`Brave.Today.WeeklyMaxCardVisitsCount` **[D]**
+`Brave.Today.WeeklyMaxCardVisitsCount` **[D]** **[iOS]**
 
 0. None _(won't ever be sent)_
 1. 1
@@ -331,7 +331,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q35: How many rows of articles did you view in your largest row-viewing session in the preceeding week of the last time you used Brave Today?*
 
-`Brave.Today.WeeklyMaxCardViewsCount` **[D]**
+`Brave.Today.WeeklyMaxCardViewsCount` **[D]** **[iOS]**
 
 0. None _(won't ever be sent)_
 1. 1
@@ -368,7 +368,7 @@ _`Brave.Wallet.UsageDaysInWeek`_ **[D]** **[A]**
 7. Seven days
 
 ### Q40: Did you switch search engines this week, and if so from what to what?
-_`Brave.Search.SwitchEngine`_ **[D]** **[A]**
+_`Brave.Search.SwitchEngine`_ **[D]** **[A]** **[iOS]**
 
 0. No
 1. Yes, from Brave to Google
@@ -402,7 +402,7 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]**
 2. Installed, but disabled
 
 ### Q45: Are ads enabled? If not, were they enabled in the past? If so, for how long?
-`Brave.Rewards.AdsEnabledDuration` **[D]** **[A]**
+`Brave.Rewards.AdsEnabledDuration` **[D]** **[A]** **[iOS]**
 
 0. It was never on
 1. It’s still on
@@ -427,7 +427,7 @@ _`Brave.Shields.FingerprintBlockSetting`_ **[D]** **[A]** **[iOS]**
 2. Aggressive
 
 ### Q48: How many external feeds did you add last week?
-_`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]**
+_`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]** **[iOS]**
 
 0. None
 1. 1 feed
@@ -451,7 +451,7 @@ _`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]** **[iOS]**
 7. More than 10 feeds
 
 ### Q50: How many Brave News cards did you view in the past week?
-_`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]**
+_`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]** **[iOS]**
 
 0. None
 1. 1
@@ -503,7 +503,7 @@ _`Brave.Shields.DomainFingerprintSettingsAboveGlobal`_ **[D]** **[A]** **[iOS]**
 5) 31+
 
 ### Q55: As an opted in Brave News user, when was the last time I used Brave News?
-_`Brave.Today.LastUsageTime`_ **[D]** **[A]**
+_`Brave.Today.LastUsageTime`_ **[D]** **[A]** **[iOS]**
 
 1) Within the last 6 days
 2) 7 - 13 days ago
@@ -513,7 +513,7 @@ _`Brave.Today.LastUsageTime`_ **[D]** **[A]**
 6) 60 days ago or more
 
 ### Q56: As an opted in Brave News user, how many days did I use Brave News in the last 30 days?
-_`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
+_`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]** **[iOS]**
 
 0) 0 days
 1) 1 day
@@ -525,7 +525,7 @@ _`Brave.Today.DaysInMonthUsedCount`_ **[D]** **[A]**
 7) More than 20 days
 
 ### Q57: As a first time user of Brave News this week, did I return again to use it during the first 7 day period?
-_`Brave.Today.NewUserReturning`_ **[D]** **[A]**
+_`Brave.Today.NewUserReturning`_ **[D]** **[A]** **[iOS]**
 
 0) I have never used Brave News
 1) I have used Brave News, but I'm not a first time Brave News user this week
@@ -574,7 +574,7 @@ _`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
 3) Yes, Yes
 
 ### Q63. As a Brave VPN user, when was the last time I enabled the Brave VPN?
-_`Brave.VPN.LastUsageTime`_ **[D]** **[A]**
+_`Brave.VPN.LastUsageTime`_ **[D]** **[A]** **[iOS]**
 
 1) Within the last 6 days
 2) 7 - 13 days ago
@@ -584,7 +584,7 @@ _`Brave.VPN.LastUsageTime`_ **[D]** **[A]**
 6) 60 days ago or more
 
 ### Q64. As Brave VPN user, how many different days did I enable the Brave VPN in the last 30 days?
-_`Brave.VPN.DaysInMonthUsed`_ **[D]** **[A]**
+_`Brave.VPN.DaysInMonthUsed`_ **[D]** **[A]** **[iOS]**
 
 0) 0 days
 1) 1 day
@@ -596,7 +596,7 @@ _`Brave.VPN.DaysInMonthUsed`_ **[D]** **[A]**
 7) More than 20 days
 
 ### Q65. As a first time user of the Brave VPN this week, did I enable it again the following day?
-_`Brave.VPN.NewUserReturning`_ **[D]** **[A]**
+_`Brave.VPN.NewUserReturning`_ **[D]** **[A]** **[iOS]**
 
 0) I have never enabled the Brave VPN
 1) I have enabled the Brave VPN, but I'm not a first time Brave VPN user this week
@@ -641,7 +641,7 @@ _`Brave.Wallet.EthProvider.2`_ **[D]**
 2. Native wallet (wallet is setup)
 
 ### Q71. How many pages did you load in the past week?
-_`Brave.Core.PagesLoaded`_ **[D]** **[A]**
+_`Brave.Core.PagesLoaded`_ **[D]** **[A]** **[iOS]**
 
 0. 0 pages
 1. 1-10
@@ -705,7 +705,7 @@ _`Brave.Toolbar.MenuDismissRate`_ **[D]**
 4) More than 75% of opens
 
 ### Q78. How many times was the menu opened in the past 7 days?
-_`Brave.Toolbar.MenuOpens`_ **[D]**
+_`Brave.Toolbar.MenuOpens`_ **[D]** **[iOS]**
 
 0) 0
 1) 1-5
@@ -715,7 +715,7 @@ _`Brave.Toolbar.MenuOpens`_ **[D]**
 5) 50+
 
 ### Q79. How many News ads have I viewed in the past 7 days?
-_`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]**
+_`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1
