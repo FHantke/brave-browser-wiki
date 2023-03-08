@@ -6,7 +6,7 @@ If you navigate to `brave://settings/socialBlocking`, you will see an option to 
 
 **When this option is enabled:** It adds a third-party cookie exception for accounts.google.com so sites using `Login with Google` can work correctly.
 
-**Starting 1.51**, this option and cookie exception will go away and Brave will prompt per-website when it detects that the website is trying to use third-party cookies for Google Sign-In.
+**Starting 1.51**, this option and cookie exception will go away and Brave will prompt per-website when it detects that the website is trying to use third-party cookies for Google Sign-In. [Announcement](https://brave.com/privacy-updates/24-google-sign-in-permission/).
 
 ## Extensions
 
