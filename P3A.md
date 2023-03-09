@@ -726,6 +726,18 @@ _`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]** **[iOS]**
 6) 41-80
 7) 81+
 
+### Q80. How many days did you use the browser in the previous ISO week?
+_`Brave.Core.WeeklyUsage`_ **[D]** **[A]**
+
+0) 0 days
+1) 1 day
+2) 2 days
+3) 3 days
+4) 4 days
+5) 5 days
+6) 6 days
+7) 7 days
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
