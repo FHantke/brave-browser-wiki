@@ -738,6 +738,15 @@ _`Brave.Core.WeeklyUsage`_ **[D]** **[A]**
 6) 6 days
 7) 7 days
 
+### Q81. If you enabled ads today, how many hours after browser installation did you enable ads?
+_`Brave.Rewards.EnabledInstallationTime`_ **[D]** **[A]**
+
+0) Less than an hour
+1) 1 hour or more, less than 12 hours
+2) 12 hours or more, less than 24 hours
+3) 24 hours or more, less than 72 hours
+4) 72 hours or more
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
