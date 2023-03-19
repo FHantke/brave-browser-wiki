@@ -35,6 +35,8 @@ npm run build -- --target_os=android --target_arch=x86 --target_android_output_f
 adb install ./src/out/android_Component_x86/apks/Bravex86.apk
 ```
 
+Alternatively, after building the APK, you can just drag and drop the APK to the running emulator as well. 
+
 ## Running unit tests and browser tests
 To run a browser test, you can use
 ```
@@ -44,6 +46,11 @@ to run an Android test, instead use
 ```
 npm run test -- brave_unit_tests --target_os=android --target_arch=x86 --manual_android_test_device
 npm run test -- brave_browser_tests --target_os=android --target_arch=x86 --manual_android_test_device
+```
+
+On Linux, we run upstream tests as well in CI which might sometimes fail and need replicating:
+```
+npm run test -- unit_tests --filter=whatever
 ```
 
 ## Speeding up builds
