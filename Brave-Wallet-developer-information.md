@@ -35,6 +35,14 @@ Paste this into the console of the Dapp that isn't working:
 const handler = {
   get: function(target, prop, receiver) {
     console.log('accessing prop: ', prop, ...arguments)
+    if (typeof target[prop] === 'function') {
+      return new Proxy(target[prop], {
+        apply: (targetFunc, thisArg, args) => {
+          console.log('args: ', ...args)
+          return targetFunc.call(target, ...args);
+        }
+      });
+    }
     return Reflect.get(...arguments);
   },
   set(target, prop, val) { // to intercept property writing
