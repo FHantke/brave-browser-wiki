@@ -11,4 +11,4 @@ After enabling NFT Discovery, the Wallet will periodically send request(s) which
 SimpleHash assigns a spam score to each NFT project as a measure of its legitimacy. If the spam score of the NFT is greater than zero, Brave will not add the NFT. Currently, there is no way to view NFTs labeled spam, however this feature may be added in the future.  You can read about spam scores in SimpleHash [blog post](https://blog.simplehash.com/blog/how-simplehash-fights-nft-spam-using-ai-and-crowdsourcing) or in their [documentation](https://docs.simplehash.com/reference/spam-scores).
 
 ## What About Fungible Tokens (ERC20s)?
-Automatic discovery of ERC20 and SPL tokens in Brave's [registry](https://www.npmjs.com/package/brave-wallet-lists?activeTab=code) use standard JSON RPC APIs, not Simplehash, and is always on.
+Automatic discovery of ERC20 and SPL tokens in Brave's [registry](https://www.npmjs.com/package/brave-wallet-lists?activeTab=code) use standard JSON RPC APIs, not SimpleHash, and is always on.
