@@ -1,10 +1,8 @@
-Chrome extensions are generally available in Brave, at the user's risk. These are not reviewed by Brave and user should be cautious.
-
-There are two ways that extensions are blocked in Brave: via [Google Safe Browsing](https://safebrowsing.google.com/), and via a Brave-controlled mechanism.
+Chrome extensions are generally available in Brave, at the user's risk. These are not reviewed by Brave and users should be cautious.
 
 # Safe Browsing list
 
-The Safe Browsing bad extension list comes from Google and is used to protect users in Brave (unless they have opted out of Safe Browsing protection via the appropriate setting in `brave://settings/security`).
+The [Safe Browsing](https://safebrowsing.google.com/) bad extension list comes from Google and is used to protect users in Brave (unless they have opted out of Safe Browsing protection via the appropriate setting in `brave://settings/security`).
 
 In order to test that the extension blocklist portion of Safe Browsing is working in Brave, you'll need to create a special build of Brave and a local proxy like [mitmproxy](https://mitmproxy.org/).
 
