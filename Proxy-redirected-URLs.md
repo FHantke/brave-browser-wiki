@@ -1,6 +1,8 @@
-Google proxies moved to https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers.
+Brave proxies some external services (not hosted by Brave) in order to hide users' IP addresses from these service providers.
 
-Server config at https://github.com/brave/devops/wiki/Mappings-for-proxied-URLs.
+The proxies for Google services are listed at https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers.
+
+Internal server configuration documentation can be found at https://github.com/brave/devops/wiki/Mappings-for-proxied-URLs (staff only)
 
 # Guidelines for developers
 
