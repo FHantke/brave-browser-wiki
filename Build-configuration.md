@@ -48,7 +48,7 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * p3a_json_upload_url
   * p3a_creative_upload_url
   * p2a_json_upload_url
-  * p3a_star_upload_url 
+  * p3a_constellation_upload_url 
   * star_randomness_host
 * Android
   * brave_android_developer_options_code
