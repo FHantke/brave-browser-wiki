@@ -17,6 +17,7 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * brave_stats_updater_url
   * brave_sync_endpoint
   * brave_variations_server_url
+  * brave_zero_ex_api_key
   * dcheck_always_on (set to 1 in PRs on non-Windows platforms)
   * gemini_api_staging_url
   * gemini_api_url
