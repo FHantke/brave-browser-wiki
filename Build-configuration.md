@@ -7,6 +7,7 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * bitflyer_staging_client_id
   * bitflyer_staging_client_secret
   * bitflyer_staging_url
+  * brave_ai_chat_endpoint
   * brave_google_api_endpoint
   * brave_google_api_key
   * brave_infura_project_id
