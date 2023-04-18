@@ -385,15 +385,6 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]** **[iOS]**
 0. No
 1. Yes
 
-### Q43: What is the DefaultWalletSetting?
-`Brave.Wallet.DefaultWalletSetting` **[D]** **[A]**
-
-0. AskDeprecated
-1. None
-2. CryptoWallets
-3. BraveWalletPreferExtension
-4. BraveWallet
-
 ### Q44: Was the IPFS local node installed? If so, is it still used?
 `Brave.IPFS.LocalNodeRetention` **[D]** **[A]**
 
@@ -609,15 +600,6 @@ _`Brave.Search.WebDiscoveryEnabled`_ **[D]**
 
 0) No
 1) Yes
-
-### Q67. What is the default Solana wallet setting?
-_`Brave.Wallet.DefaultSolanaWalletSetting`_ **[D]** **[A]**
-
-0. AskDeprecated
-1. None
-2. CryptoWallets
-3. BraveWalletPreferExtension
-4. BraveWallet
 
 ### Q68. If you have viewed the cookie consent block prompt, how did you react?
 _`Brave.Shields.CookieListPrompt`_ **[D]** **[A]** **[iOS]**
