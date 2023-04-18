@@ -750,6 +750,23 @@ _`Brave.Rewards.EnabledInstallationTime`_ **[D]** **[A]**
 3) 24 hours or more, less than 72 hours
 4) 72 hours or more
 
+### Q82. If you enabled rewards this week, how did you enable it?
+_`Brave.Rewards.EnabledSource`_ **[D]**
+
+0) Inline tip button
+1) BAT icon in the address bar
+2) Rewards card on NTP
+
+### Q83. If rewards are disabled, did you click on the inline [Tip] button this week?
+_`Brave.Rewards.InlineTipTrigger`_ **[D]**
+
+1) Yes
+
+### Q84. If rewards are disabled, did you click on the BAT icon in the URL this week?
+_`Brave.Rewards.ToolbarButtonTrigger`_ **[D]**
+
+1) Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
