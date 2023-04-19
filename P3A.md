@@ -107,23 +107,10 @@ _`Brave.Rewards.WalletBalance.3`_ **[D]** **[A]**
 4. 10-50 BAT, excluding grants
 5. Over 50 BAT, excluding grants~~
 
-### Q13: Have you made use of Auto-contribute in Brave Rewards?
-_`Brave.Rewards.AutoContributionsState.2`_ **[D]** **[A]**
-1. No wallet created
-2. Rewards Disabled
-3. Wallet created, Auto-Contribute off
-4. Auto-contribute enabled, no contribution so far
-5. Auto-contribute enabled, one successful contribution so far
-6. Auto-contribute enabled, more than one successful contribution so far
-
-### Q14: Have you made use of tips within Brave Rewards?
-_`Brave.Rewards.TipsState.2`_ **[D]** **[A]**
-1. No wallet created
-2. Rewards Disabled
-3. Wallet created, no tips sent
-4. Wallet created, one-time tip sent
-5. Wallet created, at least one monthly tip queued up or sent
-6. Wallet created, one-time sent and at least one monthly tip queued up or sent
+### Q13: If you’re a Brave Rewards user with a custodial account linked, is your Auto-Contribute feature ON?
+_`Brave.Rewards.AutoContributionsState.3`_ **[D]** **[A]**
+0. No
+1. Yes
 
 ### Q15: Have you enabled sync?
 _`Brave.Sync.Status`_ **[D]**
@@ -748,6 +735,13 @@ _`Brave.Rewards.InlineTipTrigger`_ **[D]**
 _`Brave.Rewards.ToolbarButtonTrigger`_ **[D]**
 
 1) Yes
+
+### Q85. If you have Brave Rewards enabled with a custodial account connected, and you made at least one tip, how many tips did you make in the past month?
+_`Brave.Rewards.TipsSent`_ **[D]** **[A]**
+
+0) 1 tip
+1) 2-3 tips
+2) 4+ tips
 
 ## Metrics Proposed/Under Development
 
