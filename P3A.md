@@ -602,8 +602,8 @@ _`Brave.Shields.CookieListEnabled`_ **[D]** **[A]** **[iOS]**
 0. No
 1. Yes
 
-### Q70. What is your preferred Ethereum provider?
-_`Brave.Wallet.EthProvider.3`_ **[D]**
+### Q70. What is your preferred Ethereum/Solana provider?
+_`Brave.Wallet.EthProvider.3`_ and _`Brave.Wallet.SolProvider`_ **[D]**
 
 0. None, because no wallet is setup
 1. None, because the default provider setting is set to none
