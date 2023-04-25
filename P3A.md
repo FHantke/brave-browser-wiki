@@ -35,7 +35,7 @@ _`Brave.Welcome.InteractionStatus`_ **[D]**
 4. Made it to end of on-boarding flow
 
 ### Q4: Did you import settings and bookmarks, and if so from where?
-_`Brave.Importer.ImporterSource`_ **[D]**
+_`Brave.Importer.ImporterSource.2`_ **[D]**
 1. Did not import
 2. Imported from Brave
 3. Imported from Chrome
