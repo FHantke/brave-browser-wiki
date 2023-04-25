@@ -743,6 +743,22 @@ _`Brave.Rewards.TipsSent`_ **[D]** **[A]**
 1) 2-3 tips
 2) 4+ tips
 
+### Q86. If you are opted into sync, how many objects are synced?
+_`Brave.Sync.SyncedObjectsCount`_ **[D]** **[A]**
+
+0) 0 - 1000
+1) 1001 - 10000
+2) 10001 - 49000
+3) 49001+
+
+### Q87. If you are opted into sync, which types are enabled in Sync?
+_`Brave.Sync.EnabledTypes`_ **[D]** **[A]**
+
+0) No types or only Bookmarks
+1) Only Bookmarks + History
+2) More than (Bookmarks + History) but less than (Sync All)
+3) All types
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
