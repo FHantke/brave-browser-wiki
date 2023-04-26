@@ -188,7 +188,7 @@ The PR must contain all of the following labels:
 Before handing off a build to QA, please test the following functionality:
 
 - Ensure that About page shows the expected version number
-- Ensure that brave://settings is functional and not throwing any console errors
+- Ensure that brave://settings is functional and not throwing any console errors (check each section)
 - Ensure that clearing browser data on exit works as expected
 - Ensure that tabs have the expected shape (it's slightly different from Chrome)
 - Ensure that videos play properly on YouTube and that the media device toolbar button works correctly
@@ -199,6 +199,7 @@ Before handing off a build to QA, please test the following functionality:
 - Enusre that creating and using multiple profiles works as expected
 - Ensure that private and Tor windows work as expected
 - Ensure that a few different web sites load as expected
+- Ensure that DevTools works as expected
 
 ## Before merging
 
