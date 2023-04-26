@@ -759,6 +759,42 @@ _`Brave.Sync.EnabledTypes`_ **[D]** **[A]**
 2) More than (Bookmarks + History) but less than (Sync All)
 3) All types
 
+### Q88. As a user that used Playlist at least once, when was the last time I used or added content to Brave Playlist?
+_`Brave.Playlist.LastUsageTime`_ **[D]** **[A]**
+
+1) 0 - 6 days ago (less than a week)
+2) 7 - 13 days ago (one week ago or more)
+3) 14 - 20 days ago (two weeks ago or more)
+4) 21 - 27 days ago (three weeks ago or more)
+5) 28 - 59 days ago (four weeks ago or more)
+6) 60 days ago or more (two months ago or more)
+
+### Q89. As a first-time user of Brave Playlist this week, did I return again to use or add content to Brave Playlist during the first 7-day period?
+_`Brave.Playlist.NewUserReturning`_ **[D]** **[A]**
+
+1) I have used Brave Playlist, but I'm not a first-time Brave Playlist user this week
+2) I'm a first-time Brave Playlist user this week but, no, I did not return the rest of the week
+3) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again the following day
+4) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again this week but not the following day
+
+### Q90. As a user that used Playlist this week, how many days did I use or add content to Brave Playlist in the past 7 days?
+_`Brave.Playlist.UsageDaysInWeek`_ **[D]** **[A]**
+
+1) I have used Brave Playlist, but I'm not a first-time Brave Playlist user this week
+2) I'm a first-time Brave Playlist user this week but, no, I did not return the rest of the week
+3) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again the following day
+4) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again this week but not the following day
+
+### Q91. As a new user of Playlist this week, how long did it take for new Brave users to use Playlist for the first time?
+_`Brave.Playlist.FirstTimeOffset`_ **[D]** **[A]**
+
+0) Less than 1 day
+1) 1 - 6 days
+2) 7 - 13 days 
+3) 14 - 20 days 
+4) 21 - 27 days 
+5) Longer than 27 days
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
