@@ -71,6 +71,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Disable Federated Learning of Cohorts (FLoC)](https://github.com/brave/brave-browser/issues/14942)
 - [Disable Network Information API](https://github.com/brave/brave-browser/issues/20122)
 - [SCT auditing](https://github.com/brave/brave-core/blob/f21d39fd1bf651c586ac157e9213b217331c3033/chromium_src/chrome/common/chrome_features.cc#L20)
+- [Site affiliation fetcher](https://github.com/brave/brave-core/pull/18153) (part of the password manager)
 
 ### Services We Proxy Through Brave Servers
 
