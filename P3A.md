@@ -780,10 +780,10 @@ _`Brave.Playlist.NewUserReturning`_ **[D]** **[A]**
 ### Q90. As a user that used Playlist this week, how many days did I use or add content to Brave Playlist in the past 7 days?
 _`Brave.Playlist.UsageDaysInWeek`_ **[D]** **[A]**
 
-1) I have used Brave Playlist, but I'm not a first-time Brave Playlist user this week
-2) I'm a first-time Brave Playlist user this week but, no, I did not return the rest of the week
-3) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again the following day
-4) I'm a first-time Brave Playlist user this week and, yes, I returned and used it again this week but not the following day
+1) 1 to 2 days
+2) 3 to 4 days
+3) 5 to 6 days
+4) 7 days
 
 ### Q91. As a new user of Playlist this week, how long did it take for new Brave users to use Playlist for the first time?
 _`Brave.Playlist.FirstTimeOffset`_ **[D]** **[A]**
