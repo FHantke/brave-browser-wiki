@@ -795,6 +795,15 @@ _`Brave.Playlist.FirstTimeOffset`_ **[D]** **[A]**
 4) 21 - 27 days 
 5) Longer than 27 days
 
+### Q92. How many profiles do you have?
+_`Brave.Core.ProfileCount`_ **[D]**
+
+1) 1
+2) 2
+3) 3
+4) 4-5
+5) 6+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
