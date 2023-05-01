@@ -66,7 +66,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.49.x  |    111   | N/A                 | March 22, 2023      | Maintenance Release                        |
 | 1.50.x  |    112   | March 28, 2023      | April 5, 2023       | Release delayed. Originally scheduled for `April 4, 2023`.|
 | 1.50.x  |    112   | N/A                 | April 19, 2023      | Maintenance Release                        |
-| 1.51.x  |    113   | April 26, 2023      | May 2, 2023         | Channel migrations delayed. Originally scheduled for `April 25, 2023`.|
+| 1.51.x  |    113   | April 26, 2023      | May 3, 2023         | Channel migrations delayed. Originally scheduled for `April 25, 2023`. Release delayed. Originally scheduled for `May 2, 2023`.|
 | 1.51.x  |    113   | N/A                 | May 17, 2023        | Maintenance Release                        |
 | 1.52.x  |    114   | May 23, 2023        | May 30, 2023        |                                            |
 | 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
