@@ -125,15 +125,6 @@ _`Brave.Core.NumberOfExtensions`_ (only queried on program start) **[D]**
 3. Two to four extensions
 4. Five or more extensions
 
-### Q17: Have you enabled Brave Ads? **[BROKEN]**
-_`Brave.Rewards.AdsState.2`_ **[D]** **[A]**
-1. No wallet created
-2. Rewards Disabled
-3. Wallet created, ads not enabled
-4. Wallet created and ads enabled 
-5. Wallet created, ads enabled, then disabled, while Brave Rewards remains on
-6. Wallet created, ads enabled, then disabled, Brave Rewards disabled
-
 ### Q18: How many weekly questions did the browser send in the previous week?
 _`Brave.P3A.SentAnswersCount`_ **[D]** **[A]**
 1. None
