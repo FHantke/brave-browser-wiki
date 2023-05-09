@@ -1,3 +1,5 @@
+**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/npm-config-for-Brave-Developers)**
+
 A number of build parameters are passed via .npmrc. The following are used in official release builds:
 
 * All platforms
