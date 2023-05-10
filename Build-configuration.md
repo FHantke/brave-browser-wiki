@@ -6,6 +6,14 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * binance_client_id
   * bitflyer_client_id
   * bitflyer_client_secret
+  * bitflyer_production_client_id
+  * bitflyer_production_client_secret
+  * bitflyer_production_fee_address
+  * bitflyer_production_url
+  * bitflyer_sandbox_client_id
+  * bitflyer_sandbox_client_secret
+  * bitflyer_sandbox_fee_address
+  * bitflyer_sandbox_url
   * bitflyer_staging_client_id
   * bitflyer_staging_client_secret
   * bitflyer_staging_url
@@ -28,6 +36,16 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * gemini_client_secret
   * gemini_oauth_staging_url
   * gemini_oauth_url
+  * gemini_production_api_url
+  * gemini_production_client_id
+  * gemini_production_client_secret
+  * gemini_production_fee_address
+  * gemini_production_oauth_url
+  * gemini_sandbox_api_url
+  * gemini_sandbox_client_id
+  * gemini_sandbox_client_secret
+  * gemini_sandbox_fee_address
+  * gemini_sandbox_oauth_url
   * gemini_wallet_client_id
   * gemini_wallet_client_secret
   * gemini_wallet_staging_client_id
@@ -46,6 +64,16 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * updater_prod_endpoint
   * uphold_client_id
   * uphold_client_secret
+  * uphold_production_api_url
+  * uphold_production_client_id
+  * uphold_production_client_secret
+  * uphold_production_fee_address
+  * uphold_production_oauth_url
+  * uphold_sandbox_api_url
+  * uphold_sandbox_client_id
+  * uphold_sandbox_client_secret
+  * uphold_sandbox_fee_address
+  * uphold_sandbox_oauth_url
   * uphold_staging_client_id
   * uphold_staging_client_secret
   * brave_p3a_enabled true
