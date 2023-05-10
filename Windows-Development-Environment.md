@@ -49,3 +49,6 @@ We recommend cloning the `brave-browser` Git repository to the top level of your
 
 - Some developers have encountered problems with paths exceeding 256 chars when the repository is cloned to a subdirectory.
 - Some developers have encountered problems with paths that contain spaces (e.g. the path to your home directory, if your username contains spaces) and some of Chromium's build tools.
+
+## Why is my build slow?
+Microsoft Defender can often be a reason why builds are slow, due to all the processes being created and the scanning that takes place. [More in depth information can be read in the Chromium Docs](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#why-is-my-build-slow). To solve this, you can add exclusions for Defender for your working directories. Defender can also be disabled via group policy
