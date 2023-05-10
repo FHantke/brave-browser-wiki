@@ -2,6 +2,10 @@ You should follow the steps from Chromium's [Checking out and Building Chromium 
 
 Before you begin, make sure your system satisfies the [system requirements](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#system-requirements).
 
+## Antivirus
+
+[Exclusions should be added](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26) for working directories in any active antivirus software ([Defender Antivirus](https://en.wikipedia.org/wiki/Microsoft_Defender_Antivirus) is enabled by default).
+
 ## Visual Studio
 
 Install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/older-downloads/).
@@ -51,4 +55,5 @@ We recommend cloning the `brave-browser` Git repository to the top level of your
 - Some developers have encountered problems with paths that contain spaces (e.g. the path to your home directory, if your username contains spaces) and some of Chromium's build tools.
 
 ## Why is my build slow?
-Microsoft Defender can often be a reason why builds are slow, due to all the processes being created and the scanning that takes place. [More in depth information can be read in the Chromium Docs](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#why-is-my-build-slow). To solve this, you can add exclusions for Defender for your working directories. Defender can also be disabled via group policy
+
+https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#why-is-my-build-slow
