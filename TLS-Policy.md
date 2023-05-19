@@ -18,4 +18,4 @@ While we do enable root pinning enforcement and HSTS preloading, we do not curre
 
 # Certificate Transparency
 
-We do not enforce CT at the moment (https://github.com/brave/brave-browser/issues/22482).
+We started enforcing CT on desktop & Android in 1.53 (https://github.com/brave/brave-core/pull/17944).
