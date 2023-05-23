@@ -770,6 +770,22 @@ _`Brave.Core.ProfileCount`_ **[D]**
 4) 4-5
 5) 6+
 
+### Q93. If you changed your News opt-in status today, what did you change it to?
+_`Brave.Today.IsEnabled`_ **[D]** **[A]**
+
+0) Disabled
+1) Enabled
+
+### Q94. Did you use Brave News this month?
+_`Brave.Today.UsageMonthly`_ **[D]** **[A]**
+
+1) Yes
+
+### Q95. Did you use Brave News this month?
+_`Brave.Today.UsageDaily`_ **[D]** **[A]**
+
+1) Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
