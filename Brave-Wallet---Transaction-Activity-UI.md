@@ -29,5 +29,4 @@ The following activity data is checked against the provided search-field value f
 
 
 # Limitations
-- [We currently don't show "all" transactions, since we only fetch the selected network for all coin types (not all networks)](https://bravesoftware.slack.com/archives/C023VS4HJ6Q/p1680806694383499?thread_ts=1680806641.725749&cid=C023VS4HJ6Q)
 - We can only store the last 10 **confirmed** transactions and last 10 **rejected** transactions per chainId
