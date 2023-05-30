@@ -793,6 +793,20 @@ _`Brave.Core.UsageDaily`_ **[D]** **[A]**
 
 1) Yes
 
+### Q98. If you accessed the Wallet onboarding page this week, where did you stop in the onboarding process?
+_`Brave.Wallet.OnboardingConversion.3`_ **[D]** **[A]**
+
+0) Viewed onboarding splash
+1) Between "Legal stuff" and "Create password"
+2) During "recovery phrase" steps
+3) Completed onboarding after completing "recovery phrase" steps
+4) Completed onboarding after skipping "recovery phrase" steps
+
+### Q99. If you created a wallet within the last week, did you make a deposit this week?
+_`Brave.Wallet.NewUserBalance`_ **[D]** **[A]**
+
+1) Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
