@@ -302,23 +302,20 @@ _`Brave.Sync.ProgressTokenEverReset`_ **[D]** **[A]**
 1. 0-Normal reset of progress marker due to 7th failure
 2. 1-Reset progress marker due to 7th failure happening twice in a row in less than 30 minutes
 
-### Q37: Have you used the wallet in the previous month?
-_`Brave.Wallet.UsageMonthly.2`_ **[D]** **[A]**
+### Q37: Have you used the wallet in this month?
+_`Brave.Wallet.UsageMonthly`_ **[D]** **[A]**
 
-0. No
 1. Yes
 
-### Q38/39: How many days have you used the wallet in the past 7 days?
-_`Brave.Wallet.UsageDaysInWeek`_ **[D]** **[A]**
+### Q38: How you used the wallet this week?
+_`Brave.Wallet.UsageWeekly`_ **[D]** **[A]**
 
-0. No usage
-1. One day
-2. Two days
-3. Three days
-4. Four days
-5. Five days
-6. Six days
-7. Seven days
+1. Yes
+
+### Q39: How you used the wallet in the past day?
+_`Brave.Wallet.UsageDaily`_ **[D]** **[A]**
+
+1. Yes
 
 ### Q40: Did you switch search engines this week, and if so from what to what?
 _`Brave.Search.SwitchEngine`_ **[D]** **[A]** **[iOS]**
@@ -781,8 +778,18 @@ _`Brave.Today.UsageMonthly`_ **[D]** **[A]**
 
 1) Yes
 
-### Q95. Did you use Brave News this month?
+### Q95. Did you use Brave News in the past day?
 _`Brave.Today.UsageDaily`_ **[D]** **[A]**
+
+1) Yes
+
+### Q96. Did you use the browser this month?
+_`Brave.Core.UsageMonthly`_ **[D]** **[A]**
+
+1) Yes
+
+### Q97. Did you use the browser in the past day?
+_`Brave.Core.UsageDaily`_ **[D]** **[A]**
 
 1) Yes
 
