@@ -18,7 +18,7 @@ Referral codes are not personally identifiable and are not unique to a user unle
    - BRV013: Brave Search downloads
    - BRV029: Downloads from all other search engines
    - BRV002: Downloads from direct traffic to brave.com
-* Referral codes were also used for the now retired Brave [creators referral program](https://creators.brave.com/) to measure how many installs of Brave a creator has driven through their referral program. This program was shutdown at the end of January 2023.
+* Referral codes were also used for the now retired Brave [creators referral program](https://creators.brave.com/) to measure how many installs of Brave a creator has driven through their referral program. This program was shut down at the end of January 2023.
 
 ## What data is sent with the referral code in pings?
 
