@@ -10,15 +10,17 @@ Referral codes are not personally identifiable and are not unique to a user unle
 
 ## Why does Brave use referral codes?
 
+## Why does Brave use referral codes?
+
 * Referral codes are used to identify builds downloaded via partnerships or paid ads that Brave is running. We use this data to measure product retention for these partnerships/ads.
-* Referral codes are used for brave.com desktop downloads to understand the retention of specific acquisition channels. These referral codes are to also remove bots from influencing product metrics. Examples of the ref codes used on brave.com include:
+* Referral codes are used on brave.com desktop downloads to understand the retention of specific acquisition channels and to remove bots from influencing product metrics. Examples of the ref codes used on brave.com include:
    - BRV010: Google Search downloads
    - BRV011: Bing Search downloads
    - BRV012: Yahoo Search downloads
    - BRV013: Brave Search downloads
    - BRV029: Downloads from all other search engines
    - BRV002: Downloads from direct traffic to brave.com
-* Referral codes are used for the now retired Brave [creators referral program](https://creators.brave.com/) to measure how many installs of Brave a creator has driven through their referral program. This program was shutdown on February 2023.
+* Referral codes were also used for the now retired Brave [creators referral program](https://creators.brave.com/) to measure how many installs of Brave a creator has driven through their referral program. This program was shutdown at the end of January 2023.
 
 ## What data is sent with the referral code in pings?
 
