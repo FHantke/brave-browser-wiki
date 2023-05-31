@@ -1,5 +1,3 @@
-**Update: As of 11/23/20, Brave has mostly shut down the creators referral program.** See https://brave.com/referral-program-update/ for details. Referral codes are still used for the other purposes mentioned in this page.
-
 ## What are referral codes?
 
 Referral codes, or ref codes for short, are 6-character alphanumeric codes used in Brave on all platforms, including mobile, to identify where the build was downloaded from.
@@ -10,11 +8,17 @@ Referral codes, or ref codes for short, are 6-character alphanumeric codes used 
 
 Referral codes are not personally identifiable and are not unique to a user unless they are the only person who has downloaded Brave from a particular source. The codes are saved in browser state and may be included in pings for up to 90 days after install, at which point they are deleted.
 
-
 ## Why does Brave use referral codes?
-* Referral codes are used for the Brave [creator referral program](https://brave.com/refer/) to track how many installs of Brave a creator has driven through their referral program. We use these codes in a 30-day confirmation ping to check if a referred user is using Brave 30 days after install, at which point the referrer is eligible for a BAT payout.
-* Referral codes are used to identify builds downloaded via partnerships or paid ads that Brave is running. We use this data to track user retention for these partnerships/ads.
-* As of https://github.com/brave/brave-core/pull/1982, a default referral code `BRV001` is used for builds that would otherwise have no referral code; AKA “organic” downloads of Brave, such as from https://brave.com/download. This helped us determine a baseline rate of retention. Since merging https://github.com/brave/brave-core/pull/8103, the referral service is no longer initialized in this default referral code scenario.
+
+* Referral codes are used to identify builds downloaded via partnerships or paid ads that Brave is running. We use this data to measure product retention for these partnerships/ads.
+* Referral codes are used for brave.com desktop downloads to understand the retention of specific acquisition channels. These referral codes are to also remove bots from influencing product metrics. Examples of the ref codes used on brave.com include:
+   - BRV010: Google Search downloads
+   - BRV011: Bing Search downloads
+   - BRV012: Yahoo Search downloads
+   - BRV013: Brave Search downloads
+   - BRV029: Downloads from all other search engines
+   - BRV002: Downloads from direct traffic to brave.com
+* Referral codes are used for the now retired Brave [creators referral program](https://creators.brave.com/) to measure how many installs of Brave a creator has driven through their referral program. This program was shutdown on February 2023.
 
 ## What data is sent with the referral code in pings?
 
@@ -30,13 +34,11 @@ The diagram below shows the full flow for non-stub installed referral builds in 
 
 The record layouts are described below in Appendix A.
 
-
 ## How is this data processed server-side?
 
 The server uses these pings to track retention for each referral group. In the case of referral codes which are associated with a publisher who is to be paid out for referrals, the server uses the referral pings to calculate payout and fraud signals. 
 
 In the case of referral codes associated with a Brave partner, Brave may forward those publishers an aggregated report of referral events which are associated with their referral code. In the case of the creator referral program, the creator finds out how many users have installed Brave and used it 30 days later via their referral.
-
 
 For referral codes associated with a publisher/creator who is getting payouts for referring users, information derived from the IP of the referred users may be retained for longer than 10 days for anti-fraud purposes. 
 
@@ -108,5 +110,3 @@ finalized_ts | Timestamp of successful confirmation | Confirmation
 eyeshade_confirmed | Boolean (default False) indicating eyeshade transfer status | Creation / Eyeshade transfer
 eyeshade_confirmed_ts | Timestamp of successful Eyeshade transfer | Eyeshade transfer
 iptags | JSON structure containing ip derived data | Creation
-
-
