@@ -807,6 +807,32 @@ _`Brave.Wallet.NewUserBalance`_ **[D]** **[A]**
 
 1) Yes
 
+### Q100: Do you have iOS display zoom enabled?
+_`Brave.Accessibility.DisplayZoomEnabled`_ **[iOS]**
+1. Yes
+2. No
+
+### Q101: Which location Bottom bar being used?
+_`Brave.General.BottomBarLocation`_ **[iOS]**
+1. Top
+2. Bottom
+
+### Q102: How many times did you use reader mode in the last 7 days?
+_`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
+1. 0
+2. 1-5
+3. 6-20
+4. 21-50
+5. 51+
+
+### Q103: What is the document directory size in MB?
+_`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
+1. 0-59
+2. 50-200
+3. 200-500
+4. 500-1000
+5. 1000+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
