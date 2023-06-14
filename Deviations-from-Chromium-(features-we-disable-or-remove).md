@@ -126,6 +126,7 @@ _Google does not receive any information about which client is performing these 
     * [deviceMemory](https://github.com/brave/brave-browser/issues/12348)
 - The list of hostnames with pinned CA certificates is replaced with a [Brave-specific one](https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc).
 - [Restore gesture requirement for async clipboard write access](https://github.com/brave/brave-browser/issues/16890)
+- [Dangerous download warnings are always shown when Safe Browsing is OFF](https://github.com/brave/brave-browser/issues/28079), but [a flag to disable the warnings](https://github.com/brave/brave-core/pull/18877) is available for advanced users.
 
 ### Comments
 
