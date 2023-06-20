@@ -63,9 +63,9 @@ An example of a Brave Ads click-through URL containing the reserved parameters a
 
 With the appended Brave Ads reserved click-through URL parameters, the advertiser can reference their first-party server logs against their Brave Ads reporting to evaluate the volume of overall traffic served for Brave Ads campaign served, the Creative Set and the Creative assigned to each Creative Set. 
 
-The reserved parameters **are intentionally not unique to each Brave Ads user**, and **are not used to identify or attribute page visits to an individual user**. 
 
 # Reserved Parameter Table
+The reserved parameters **are intentionally not unique to each Brave Ads user**, and **are not used to identify or attribute page visits to an individual user**. 
 <table>
 <tr>
 <td>Reserved Parameter</td>
@@ -74,7 +74,7 @@ The reserved parameters **are intentionally not unique to each Brave Ads user**,
 <td>Example URL</td>
 </tr>
 <tr>
-<td>brave-campaign-id</td>
+<td>brave-campaign-id, mtm_campaign, utm_campaign</td>
 <td>campaignId</td>
 <td>brave-campaign-id=04ec84e2-6afd-4432-8703-aa70faf7c50b</td>
 <td>https://foo.com/?brave-campaign-id=04ec84e2-6afd-4432-8703-aa70faf7c50b</td>
@@ -86,11 +86,12 @@ The reserved parameters **are intentionally not unique to each Brave Ads user**,
 <td>https://foo.com/?brave-creative-set-id=ae7a3556-8414-4444-a584-3f4eb9abd18e</td>
 </tr>
 <tr>
-<td>brave-creative-id</td>
+<td>brave-creative-id, mtm_content</td>
 <td>creativeInstanceId</td>
 <td>brave-creative-id=878d82ed-4af6-4f73-b555-f7d64306025a</td>
 <td>https://foo.com/?brave-creative-id=878d82ed-4af6-4f73-b555-f7d64306025a</td>
 </tr>
 </table>
+
 
 Note: The table above only covers the URL parameters that are reserved by Brave Ads, and the Brave Ads server. Brave Ads click-through URLs may include additional URL parameters and values assigned by the advertiser for their campaign. Similar to Brave Ads reserved URL parameters, additional URL parameters included by the advertiser **are the same for all Brave Ads users**, and **are not uniquely identifiable per user**. 
