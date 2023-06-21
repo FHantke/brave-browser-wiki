@@ -827,6 +827,19 @@ _`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
 4. 500-1000
 5. 1000+
 
+### Q104: Do you have privacy report enabled?
+_`Brave.PrivacyHub.IsEnabled`_ **[A]**
+
+1. Yes
+
+### Q105: If you opened privacy report in the past 30 days, how many times did you open it?
+_`Brave.PrivacyHub.Views`_ **[A]**
+
+0) 1
+1) 2-10
+2) 11-20
+3) 21+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
