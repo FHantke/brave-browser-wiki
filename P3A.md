@@ -29,6 +29,7 @@ _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 
 ### Q3: What was the last screen that you viewed during the browser onboarding process?
 _`Brave.Welcome.InteractionStatus.2`_ **[D]**
+
 0. Only viewed the welcome screen, performed no action
 1. Viewed the profile import screen
 2. Viewed the diagnostic/analytics consent screen
