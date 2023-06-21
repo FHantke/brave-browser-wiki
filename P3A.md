@@ -500,13 +500,6 @@ _`Brave.Wallet.NewUserReturning`_ **[D]** **[A]**
 3) I'm a first time Brave Wallet user this week and, yes, I returned and used it again the following day
 4) I'm a first time Brave Wallet user this week and, yes, I returned and used it again this week but not the following day
 
-### Q61. If you accessed the Wallet page at least once, did you create/import a wallet?
-_`Brave.Wallet.OnboardingConversion.2`_ **[D]** **[A]**
-
-0) I accessed the wallet page, but did not set up the wallet
-1) Yes, I have set up a new wallet
-2) Yes, I have imported an existing wallet
-
 ### Q62. Did the participant in Group C click on the promo and did they switch their default engine to Brave Search?
 _`Brave.Search.Promo.NewTabPage`_ **[D]** **[A]**
 
@@ -567,10 +560,10 @@ _`Brave.Shields.CookieListEnabled`_ **[D]** **[A]** **[iOS]**
 1. Yes
 
 ### Q70. What is your preferred Ethereum/Solana provider?
-_`Brave.Wallet.EthProvider.3`_ and _`Brave.Wallet.SolProvider`_ **[D]**
+_`Brave.Wallet.EthProvider.4`_ and _`Brave.Wallet.SolProvider.2`_ **[D]**
 
 0. None, because no wallet is setup
-1. None, because the default provider setting is set to none
+1. None, because the default provider setting is set to "Extensions (no fallback)"
 2. Brave Wallet (wallet is setup, no installed extension)
 3. Brave Wallet (wallet is setup, an extension may potentially be installed but cannot override native provider)
 4. Third-party extension (not overriding a setup Brave Wallet)
