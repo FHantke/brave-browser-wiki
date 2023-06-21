@@ -27,12 +27,12 @@ _`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
 1. No
 2. Yes
 
-### Q3: Did you follow the on-boarding process
-_`Brave.Welcome.InteractionStatus`_ **[D]**
-1. Did not click within welcome screen
-2. Clicked once 
-3. Clicked twice or more but did not make it to the end
-4. Made it to end of on-boarding flow
+### Q3: What was the last screen that you viewed during the browser onboarding process?
+_`Brave.Welcome.InteractionStatus.2`_ **[D]**
+0. Only viewed the welcome screen, performed no action
+1. Viewed the profile import screen
+2. Viewed the diagnostic/analytics consent screen
+3. Finished the onboarding process
 
 ### Q4: Did you import settings and bookmarks, and if so from where?
 _`Brave.Importer.ImporterSource.2`_ **[D]**
