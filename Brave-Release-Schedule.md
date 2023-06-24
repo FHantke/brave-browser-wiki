@@ -70,7 +70,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.51.x  |    113   | N/A                 | May 17, 2023        | Maintenance Release                        |
 | 1.52.x  |    114   | May 23, 2023        | May 31, 2023        | Release delayed. Originally scheduled for `May 30, 2023`.|            
 | 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
-| 1.53.x  |    115   | June 20, 2023       | June 27, 2023       |                                            |
+| 1.53.x  |    115   | June 20, 2023       | June 29, 2023       | Release delayed. Originally scheduled for `June 27, 2023`.|
 | 1.53.x  |    115   | N/A                 | July 12, 2023       | Maintenance Release                        |
 | 1.53.x  |    115   | N/A                 | July 26, 2023       | Maintenance Release                        |
 | 1.54.x  |    116   | August 1, 2023      | August 8, 20203     |                                            |
