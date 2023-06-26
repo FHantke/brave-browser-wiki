@@ -87,10 +87,10 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.52.x  | 114               | April 25, 2023      |                                           |
 | 1.53.x  | 115               | May 23, 2023        |                                           |
 | 1.54.x  | 116               | June 20, 2023       |                                           |
-| 1.55.x  | 117               | August 1, 2023      |                                           |
-| 1.56.x  | 118               | August 29, 2023     |                                           |
-| 1.57.x  | 119               | September 26, 2023  |                                           |
-| 1.58.x  | 120               | October 24, 2023    |                                           |
+| 1.55.x  | 117               | August 8, 2023      |                                           |
+| 1.56.x  | 118               | September 5, 2023   |                                           |
+| 1.57.x  | 119               | October 3, 2023     |                                           |
+| 1.58.x  | 120               | October 31, 2023    |                                           |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
@@ -102,21 +102,14 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.45.x  | 107               | August 23, 2022     |                                           |
-| 1.46.x  | 108               | September 20, 2022  |                                           |
-| 1.47.x  | 109               | October 18, 2022    |                                           |
-| 1.48.x  | 110               | November 22, 2022   |                                           |
-| 1.49.x  | 111               | January 4, 2023     |                                           |
-| 1.50.x  | 112               | January 31, 2023    |                                           |
-| 1.51.x  | 113               | February 28, 2023   |                                           |
 | 1.52.x  | 114               | March 28, 2023      |                                           |
 | 1.53.x  | 115               | April 25, 2023      |                                           |
 | 1.54.x  | 116               | May 23, 2023        |                                           |
 | 1.55.x  | 117               | June 20, 2023       |                                           |
-| 1.56.x  | 118               | August 1, 2023      |                                           |
-| 1.57.x  | 119               | August 29, 2023     |                                           |
-| 1.58.x  | 120               | September 26, 2023  |                                           |
-| 1.59.x  | 121               | October 24, 2023    |                                           |
+| 1.56.x  | 118               | August 8, 2023      |                                           |
+| 1.57.x  | 119               | September 5, 2023   |                                           |
+| 1.58.x  | 120               | October 3, 2023     |                                           |
+| 1.59.x  | 121               | October 31, 2023    |                                           |
 
 - Nightly builds will be made from master for this channel.
 - This means that within a day of any change you can start testing it.
@@ -153,7 +146,6 @@ If something goes wrong, the release can be paused.
 | 5 | 20% |
 | 6 | 50% |
 | 7 | 100% |
-
 
 # How to do branch migrations:
 
