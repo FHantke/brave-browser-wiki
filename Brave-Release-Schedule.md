@@ -73,33 +73,17 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version         | # of days between releases| Comments                                   |
 |:---------------:|:-------------------------:|---------------------------------------------
-| 1.44.x - 1.45.x | 28 days                   |                                            |
-| 1.45.x - 1.46.x | 35 days                   |                                            |
-| 1.46.x - 1.47.x | 42 days                   |                                            |
-| 1.47.x - 1.48.x | 28 days                   |                                            |
-| 1.48.x - 1.49.x | 28 days                   |                                            |
-| 1.49.x - 1.50.x | 28 days                   |                                            |
-| 1.50.x - 1.51.x | 28 days                   |                                            |
-| 1.51.x - 1.52.x | 28 days                   |                                            |
-| 1.52.x - 1.53.x | 28 days                   |                                            |
-| 1.53.x - 1.54.x | 42 days                   |                                            |
+| 1.52.x - 1.53.x | 48 days                   |                                            |
+| 1.53.x - 1.54.x | 28 days                   |                                            |
 | 1.54.x - 1.55.x | 28 days                   |                                            |
-| 1.55.x - 1.56.x | 28 days                   |                                            |
-| 1.56.x - 1.57.x | 28 days                   |                                            |
+| 1.55.x - 1.56.x | 29 days                   |                                            |
+| 1.56.x - 1.57.x | 29 days                   |                                            |
 ---
 
 # Beta & Dev channel migration dates:
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.44.x  | 106               | August 23, 2022     |                                           |
-| 1.45.x  | 107               | September 20, 2022  |                                           |
-| 1.46.x  | 108               | October 18, 2022    |                                           |
-| 1.47.x  | 109               | November 22, 2022   |                                           |
-| 1.48.x  | 110               | January 4, 2023     |                                           |
-| 1.49.x  | 111               | January 31, 2023    |                                           |
-| 1.50.x  | 112               | February 28, 2023   |                                           |
-| 1.51.x  | 113               | March 28, 2023      |                                           |
 | 1.52.x  | 114               | April 25, 2023      |                                           |
 | 1.53.x  | 115               | May 23, 2023        |                                           |
 | 1.54.x  | 116               | June 20, 2023       |                                           |
