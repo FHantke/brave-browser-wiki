@@ -168,6 +168,14 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.41.x  | 103               | June 14, 2022       |                                           |
 | 1.42.x  | 104               | July 5, 2022        | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 | 1.43.x  | 105               | July 26, 2022       | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
+| 1.44.x  | 106               | August 23, 2022     |                                           |
+| 1.45.x  | 107               | September 20, 2022  |                                           |
+| 1.46.x  | 108               | October 18, 2022    |                                           |
+| 1.47.x  | 109               | November 22, 2022   |                                           |
+| 1.48.x  | 110               | January 4, 2023     |                                           |
+| 1.49.x  | 111               | January 31, 2023    |                                           |
+| 1.50.x  | 112               | February 28, 2023   |                                           |
+| 1.51.x  | 113               | March 28, 2023      |                                           |
 
 # Nightly channel dates:
 
