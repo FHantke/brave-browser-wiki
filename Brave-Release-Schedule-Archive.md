@@ -76,6 +76,23 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.42.x  |    104   | N/A                 | August 17, 2022     | Maintenance Release                        |
 | 1.43.x  |    105   | August 23, 2022     | September 1, 2022   | Release delayed. Originally set as `August 30, 2022`.|
 | 1.43.x  |    105   | N/A                 | September 14, 2022  | Maintenance Release                        |
+| 1.44.x  |    106   | September 20, 2022  | September 27, 2022  |                                            |
+| 1.44.x  |    106   | N/A                 | October 12, 2022    | Maintenance Release                        |
+| 1.45.x  |    107   | October 18, 2022    | October 25, 2022    |                                            |
+| 1.45.x  |    107   | N/A                 | November 15, 2022   | Maintenance Release.                       |
+| 1.46.x  |    108   | November 22, 2022   | December 1, 2022    | Release delayed. Originally scheduled for `November 29, 2022`.|    
+| 1.46.x  |    108   | N/A                 | December 14, 2022   | Maintenance Release                        |
+| 1.46.x  |    108   | N/A                 | ~December 29, 2022~ | Maintenance Release (tentative) - `Note:` Depending on QA availability, this maintenance release may be moved to `January 4, 2023`. **Cancelled**.|
+| 1.47.x  |    109   | January 4, 2023     | January 12, 2023    | Delayed due to Holiday PTO's. Originally scheduled for `January 10, 2023`|
+| 1.47.x  |    109   | N/A                 | January 25, 2023    | Maintenance Release                        |
+| 1.48.x  |    110   | February 1, 2023    | February 7, 2023    | Channel migrations delayed. Originally scheduled for `January 31, 2023`|
+| 1.48.x  |    110   | N/A                 | February 23, 2023   | Release delayed. Originally scheduled for `February 22, 2023`. |
+| 1.49.x  |    111   | March 1, 2023       | March 9, 2023       | Channel migrations delayed. Originally scheduled for `February 28, 2023`. Release delayed. Originally scheduled for `March 7, 2023`.|
+| 1.49.x  |    111   | N/A                 | March 22, 2023      | Maintenance Release                        |
+| 1.50.x  |    112   | March 28, 2023      | April 5, 2023       | Release delayed. Originally scheduled for `April 4, 2023`.|
+| 1.50.x  |    112   | N/A                 | April 19, 2023      | Maintenance Release                        |
+| 1.51.x  |    113   | April 26, 2023      | May 3, 2023         | Channel migrations delayed. Originally scheduled for `April 25, 2023`. Release delayed. Originally scheduled for `May 2, 2023`.|
+| 1.51.x  |    113   | N/A                 | May 17, 2023        | Maintenance Release                        |
 
 ### Number of days between each release on Release channel
 
