@@ -127,6 +127,14 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.41.x - 1.42.x | 21 days                   | Shorter cycle due to C103 - C104 being 42 days rather than 28 days|
 | 1.42.x - 1.43.x | 28 days                   |                                            |
 | 1.43.x - 1.44.x | 28 days                   |                                            |
+| 1.44.x - 1.45.x | 28 days                   |                                            |
+| 1.45.x - 1.46.x | 35 days                   |                                            |
+| 1.46.x - 1.47.x | 42 days                   |                                            |
+| 1.47.x - 1.48.x | 28 days                   |                                            |
+| 1.48.x - 1.49.x | 28 days                   |                                            |
+| 1.49.x - 1.50.x | 28 days                   |                                            |
+| 1.50.x - 1.51.x | 28 days                   |                                            |
+| 1.51.x - 1.52.x | 28 days                   |                                            |
 
 # Beta & Dev channel dates:
 
