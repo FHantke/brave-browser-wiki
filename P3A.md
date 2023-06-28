@@ -840,6 +840,29 @@ _`Brave.PrivacyHub.Views`_ **[A]**
 2) 11-20
 3) 21+
 
+### Q106: As a user with vertical tabs enabled, what is the max amount of open tabs this week?
+_`Brave.VerticalTabs.OpenTabs`_ **[D]**
+
+0. 1
+1. 2-5
+2. 6-10
+3. 11-50
+4. 51+
+
+### Q107: As a user with vertical tabs enabled and had at least one pinned tab this week, what is the max amount of pinned tabs this week?
+_`Brave.VerticalTabs.PinnedTabs`_ **[D]**
+
+0. 1-2
+1. 3-5
+2. 6+
+
+### Q108: As a user with vertical tabs mode enabled and had at least one tab group this week, what is the max amount of tab groups this week?
+_`Brave.VerticalTabs.GroupTabs`_ **[D]**
+
+0. 1-2
+1. 3-5
+2. 6+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
