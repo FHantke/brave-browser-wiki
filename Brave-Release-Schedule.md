@@ -54,15 +54,15 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.52.x  |    114   | May 23, 2023        | May 31, 2023        | Release delayed. Originally scheduled for `May 30, 2023`.|            
 | 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
 | 1.52.x  |    114   | N/A                 | July 7, 2023        | Maintenance Release. Release delayed due to upstream CI issues. Originally scheduled for `July 6, 2023`.|
-| 1.54.x  |    115   | June 20, 2023       | July 18, 2023       | Originally scheduled for `June 27, 2023` but Chromium schedule changed/updated.|
-| 1.54.x  |    115   | N/A                 | August 2, 2023      | Maintenance Release                        |
-| 1.55.x  |    116   | August 8, 2023      | August 15, 2023     |                                            |
-| 1.55.x  |    116   | N/A                 | August 30, 2023     | Maintenance Release                        |
-| 1.56.x  |    117   | September 5, 2023   | September 12, 2023  |                                            |
-| 1.56.x  |    117   | N/A                 | September 27, 2023  | Maintenance Release                        |
-| 1.57.x  |    118   | October 3, 2023     | October 10, 2023    |                                            |
-| 1.57.x  |    118   | N/A                 | October 25, 2023    | Maintenance Release                        |
-| 1.58.x  |    119   | October 31, 2023    | November 7, 2023    |                                            |
+| 1.56.x  |    115   | June 20, 2023       | July 18, 2023       | Originally scheduled for `June 27, 2023` but Chromium schedule changed/updated.|
+| 1.56.x  |    115   | N/A                 | August 2, 2023      | Maintenance Release                        |
+| 1.57.x  |    116   | August 8, 2023      | August 15, 2023     |                                            |
+| 1.57.x  |    116   | N/A                 | August 30, 2023     | Maintenance Release                        |
+| 1.58.x  |    117   | September 5, 2023   | September 12, 2023  |                                            |
+| 1.58.x  |    117   | N/A                 | September 27, 2023  | Maintenance Release                        |
+| 1.59.x  |    118   | October 3, 2023     | October 10, 2023    |                                            |
+| 1.59.x  |    118   | N/A                 | October 25, 2023    | Maintenance Release                        |
+| 1.60.x  |    119   | October 31, 2023    | November 7, 2023    |                                            |
 
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
