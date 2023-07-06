@@ -53,7 +53,7 @@ The following is our automated schedule for creating and uploading builds to our
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
 | 1.52.x  |    114   | May 23, 2023        | May 31, 2023        | Release delayed. Originally scheduled for `May 30, 2023`.|            
 | 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
-| 1.52.x  |    114   | N/A                 | July 6, 2023        | Maintenance Release                        |
+| 1.52.x  |    114   | N/A                 | July 7, 2023        | Maintenance Release. Release delayed due to upstream CI issues. Originally scheduled for `July 6, 2023`.|
 | 1.54.x  |    115   | June 20, 2023       | July 18, 2023       | Originally scheduled for `June 27, 2023` but Chromium schedule changed/updated.|
 | 1.54.x  |    115   | N/A                 | August 2, 2023      | Maintenance Release                        |
 | 1.55.x  |    116   | August 8, 2023      | August 15, 2023     |                                            |
