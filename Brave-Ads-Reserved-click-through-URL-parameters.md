@@ -86,7 +86,7 @@ The reserved parameters **are intentionally not unique to each Brave Ads user**,
 <td>https://foo.com/?brave-creative-set-id=ae7a3556-8414-4444-a584-3f4eb9abd18e</td>
 </tr>
 <tr>
-<td>brave-creative-id, mtm_content</td>
+<td>brave-creative-id, mtm_content, utm_content</td>
 <td>creativeInstanceId</td>
 <td>brave-creative-id=878d82ed-4af6-4f73-b555-f7d64306025a</td>
 <td>https://foo.com/?brave-creative-id=878d82ed-4af6-4f73-b555-f7d64306025a</td>
