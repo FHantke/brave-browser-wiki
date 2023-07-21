@@ -20,4 +20,4 @@ While we do enable root pinning enforcement and HSTS preloading, we do not curre
 
 On iOS, we rely on Apple's CT policy and the CT support in Webkit.
 
-On desktop & Android, we follow Chrome's CT policy and started enforcement in 1.53 (https://github.com/brave/brave-core/pull/17944). SCT auditing is disabled.
+On desktop & Android, we follow Chrome's CT policy and started enforcement in 1.56 (https://github.com/brave/brave-core/pull/17944). SCT auditing is disabled.
