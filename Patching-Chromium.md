@@ -165,3 +165,38 @@ After that just create the new class via `new ...` where the old class created.
 - styles: Add new style to https://github.com/brave/brave-core/blob/master/android/java/res/values/brave_styles.xml
 - preferences: create your preference in a separate xml file https://github.com/brave/brave-core/blob/master/android/java/res/xml/brave_main_preferences.xml and inject it in runtime from java code https://github.com/brave/brave-core/blob/master/android/java/org/chromium/chrome/browser/preferences/BraveMainPreferencesBase.java#L51
 - resources: add general resources, pictures and etc inside https://github.com/brave/brave-core/tree/master/android/java/res. They are copied inside original chromium's folder before a build.
+
+## Patching `py` files
+
+Python files should use [`import_inline`](https://github.com/brave/brave-core/blob/master/script/import_inline.py) calls to inject content from files located in `brave/chromium_src`. Inlined files may modify original logic by overriding functions and variables with helpers from [`override_utils`](https://github.com/brave/brave-core/blob/master/script/override_utils.py).
+
+If a patched file has `if __name__ == '__main__'` line, then you should inline `brave/chromium_src/...` file right before it:
+```
+from import_inline import inline_file_from_src; inline_file_from_src("brave/chromium_src/tools/symsrc/source_index.py", globals(), locals())
+if __name__ == '__main__':
+  sys.exit(main())
+```
+otherwise the inline call should be the last line in the file.
+
+You can fully replace functions/variables/classes in the inlined file, but if you need to modify input args or slightly change the behavior of the original function, you can use `override_utils` helpers:
+```
+# Example of a global function override.
+@override_utils.override_function(globals())
+def DirectoryIsPartOfPublicGitRepository(orig_func, local_dir):
+    if IsGitIgnored(local_dir, '.'):
+        return False
+
+    return orig_func(local_dir)
+
+# Example of a class function override.
+@override_utils.override_method(PossibleDesktopBrowser)
+def _TearDownEnvironment(self, original_method):
+  if '--update-source-profile' in self._browser_options.extra_browser_args:
+      # Override the source profile by the result profile.
+      shutil.rmtree(self._browser_options.profile_dir)
+      shutil.copytree(self._profile_directory,
+                      self._browser_options.profile_dir)
+  original_method(self)
+```
+
+To look for other examples just search for helper names from `override_utils` across codebase.
