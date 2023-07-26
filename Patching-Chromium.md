@@ -199,4 +199,6 @@ def _TearDownEnvironment(self, original_method):
   original_method(self)
 ```
 
+Nice thing about `override_utils` is that all helpers will fail if an object to override is not found. This helps find issues on early stages, so you should use `override_utils` even if you're doing a full function replacement.
+
 To look for other examples just search for helper names from `override_utils` across codebase.
