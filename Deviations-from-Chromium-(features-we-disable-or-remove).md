@@ -12,6 +12,8 @@ _**NOTE: this page is a work in progress! It should by no means be considered a 
 
 Brave for desktop is built on top of the [open-source Chromium project](https://www.chromium.org/chromium-projects). We add features on top of what is already there and we also remove features or pieces of the code. These deviations we make that touch the core Chromium code are done via patching.
 
+The scope of this page is to cover Chromium functionality that is modified in some way. Brave has it's own features which are not covered by this document.
+
 Chromium is not the same as Google Chrome. For some differences, see https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md. 
 
 ## How it works
