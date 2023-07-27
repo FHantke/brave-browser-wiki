@@ -130,6 +130,7 @@ _Google does not receive any information about which client is performing these 
 - [Restore gesture requirement for async clipboard write access](https://github.com/brave/brave-browser/issues/16890)
 - [Dangerous download warnings are always shown when Safe Browsing is OFF](https://github.com/brave/brave-browser/issues/28079), but [a flag to disable the warnings](https://github.com/brave/brave-core/pull/18877) is available for advanced users.
 - [Functionality from the Chromium side panel has been merged into the Brave Sidebar](https://github.com/brave/brave-core/pull/13769).
+- [Web Serial API is OFF](https://github.com/brave/brave-browser/issues/13902) but [a flag to enable](https://github.com/brave/brave-browser/issues/24404) is available for advanced users.
 
 ### Comments
 
