@@ -12,7 +12,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * bitflyer_sandbox_client_secret
   * bitflyer_sandbox_fee_address
   * bitflyer_sandbox_url
-  * bitflyer_staging_client_id
   * brave_ai_chat_endpoint
   * brave_google_api_endpoint
   * brave_google_api_key
