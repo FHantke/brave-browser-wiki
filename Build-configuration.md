@@ -4,8 +4,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
 
 * All platforms
   * binance_client_id
-  * bitflyer_client_id
-  * bitflyer_client_secret
   * bitflyer_production_client_id
   * bitflyer_production_client_secret
   * bitflyer_production_fee_address
@@ -15,8 +13,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * bitflyer_sandbox_fee_address
   * bitflyer_sandbox_url
   * bitflyer_staging_client_id
-  * bitflyer_staging_client_secret
-  * bitflyer_staging_url
   * brave_ai_chat_endpoint
   * brave_google_api_endpoint
   * brave_google_api_key
@@ -30,12 +26,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * brave_variations_server_url
   * brave_zero_ex_api_key
   * dcheck_always_on (set to 1 in PRs on non-Windows platforms)
-  * gemini_api_staging_url
-  * gemini_api_url
-  * gemini_client_id
-  * gemini_client_secret
-  * gemini_oauth_staging_url
-  * gemini_oauth_url
   * gemini_production_api_url
   * gemini_production_client_id
   * gemini_production_client_secret
@@ -46,10 +36,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * gemini_sandbox_client_secret
   * gemini_sandbox_fee_address
   * gemini_sandbox_oauth_url
-  * gemini_wallet_client_id
-  * gemini_wallet_client_secret
-  * gemini_wallet_staging_client_id
-  * gemini_wallet_staging_client_secret
   * goma_server_host
   * google_default_client_id
   * google_default_client_secret
@@ -62,8 +48,6 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * sardine_client_secret
   * updater_dev_endpoint
   * updater_prod_endpoint
-  * uphold_client_id
-  * uphold_client_secret
   * uphold_production_api_url
   * uphold_production_client_id
   * uphold_production_client_secret
@@ -74,8 +58,14 @@ A number of build parameters are passed via .npmrc. The following are used in of
   * uphold_sandbox_client_secret
   * uphold_sandbox_fee_address
   * uphold_sandbox_oauth_url
-  * uphold_staging_client_id
-  * uphold_staging_client_secret
+  * zebpay_production_api_url
+  * zebpay_production_client_id
+  * zebpay_production_client_secret
+  * zebpay_production_oauth_url
+  * zebpay_sandbox_api_url
+  * zebpay_sandbox_client_id
+  * zebpay_sandbox_client_secret
+  * zebpay_sandbox_oauth_url
   * brave_p3a_enabled true
   * p3a_json_upload_url
   * p3a_creative_upload_url
