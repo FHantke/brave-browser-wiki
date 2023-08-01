@@ -8,12 +8,12 @@ Before you begin, make sure your system satisfies the [system requirements](http
 
 ## Visual Studio
 
-Install [Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/older-downloads/).
+Install [Visual Studio Community 2022](https://visualstudio.microsoft.com/downloads/).
 Follow guidance from the ["Visual Studio" section](https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md#visual-studio) of the Chromium Windows build instructions.
 
 ## Windows 10 SDK
 
-[Install Windows 10 SDK 10.0.20348.0](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/). (VS 2019 installer does not include this version).
+[Install Windows 11 SDK 10.0.22621.0](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/). (VS 2022 installer does not include this version).
 
 See also https://github.com/google/omaha/blob/main/doc/DeveloperSetupGuide.md#currently-the-supported-toolchain-is-visual-studio-2019-update-161110-and-windows-sdk-100220000
 
