@@ -15,3 +15,7 @@
 * Unless a given package is meant to be unstable, only "public" releases should be used
   * Internal releases are published only to GitHub and are meant primarily for testing (marked as pre-release)
   * Public releases are published to all mediums and are meant for general use (marked as full release)
+
+# Contact
+
+* If you maintain a Brave browser package that we're not aware of, please contact us at devops at brave dot com
