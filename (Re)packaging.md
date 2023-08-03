@@ -10,11 +10,12 @@
 # Recommendations
 
 * Information about released browser versions can be found at [versions.brave.com](https://versions.brave.com/)
-* The above page links to individual endpoints for each platform/channel/architecture that return the current version
-  * Automation should rely on these endpoints, rather than polling GitHub
 * Unless a given package is meant to be unstable, only "public" releases should be used
   * Internal releases are published only to GitHub and are meant primarily for testing (marked as pre-release)
   * Public releases are published to all mediums and are meant for general use (marked as full release)
+* The above page links to individual endpoints for each platform/channel/architecture that return the current version
+  * E.g. public linux x64 release - https://versions.brave.com/latest/release-linux-x64.version
+  * Automation should rely on these endpoints, rather than polling GitHub
 
 # Contact
 
