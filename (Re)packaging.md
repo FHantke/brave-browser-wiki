@@ -9,7 +9,7 @@
 
 # Recommendations
 
-* Information about released browser versions can be found at https://versions.brave.com/
+* Information about released browser versions can be found at [versions.brave.com](https://versions.brave.com/)
 * The above page links to individual endpoints for each platform/channel/architecture that return the current version
   * Automation should rely on these endpoints, rather than polling GitHub
 * Unless a given package is meant to be unstable, only "public" releases should be used
