@@ -1,6 +1,6 @@
 **Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/npm-config-for-Brave-Developers)**
 
-A number of build parameters are passed via .npmrc. The following are used in official release builds:
+A number of build parameters are passed via a `.env` configuration file in the `brave-core` repository root directory. The following are used in official release builds:
 
 * All platforms
   * binance_client_id
