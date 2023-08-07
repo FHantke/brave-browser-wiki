@@ -1,4 +1,4 @@
-**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/%60.env%60-config-for-Brave-Developers)**
+**Updates to this public wiki page should be reflected on its [private equivalent][1]**
 
 A number of build parameters are passed via a `.env` configuration file in the `brave-core` repository root directory. The following are used in official release builds:
 
@@ -85,6 +85,8 @@ A number of build parameters are passed via a `.env` configuration file in the `
   * sparkle_eddsa_private_key
   * sparkle_eddsa_public_key
 
-Internal developers can find the values for these parameters in the company secrets management service (more information at https://github.com/brave/devops/wiki/npm-config-for-Brave-Developers).
+Internal developers can find the values for these parameters in the company secrets management service (more information [here][1]).
 
 Since each of those parameters is tied to a service that Brave has to pay to maintain, or get access to, external developers will have to supply their own values.
+
+[1]: https://github.com/brave/devops/wiki/%60.env%60-config-for-Brave-Developers
