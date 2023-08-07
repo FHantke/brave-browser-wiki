@@ -1,4 +1,4 @@
-**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/npm-config-for-Brave-Developers)**
+**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/%60.env%60-config-for-Brave-Developers)**
 
 A number of build parameters are passed via a `.env` configuration file in the `brave-core` repository root directory. The following are used in official release builds:
 
