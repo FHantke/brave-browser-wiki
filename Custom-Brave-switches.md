@@ -13,6 +13,14 @@ If a CLI flag `--ntp-branded-data-path` is provided with a valid FS directory pa
 
 This is a great way to create a folder with a `photo.json` to test new integrations with the new tab page.
 
+## Brave Wallet
+See [components/brave_wallet/common/switches.cc](https://github.com/brave/brave-core/blob/master/components/brave_wallet/common/switches.cc)
+* `--dev-wallet-password="your_password"`
+* `--bitcoin-mainnet-rpc-url="your_btc_url"`
+* `--bitcoin-testnet-rpc-url="your_btc_testnet_url"`
+* `--asset-ratio-dev-url="https://ratios.rewards.brave.software"`
+
+
 ## Useful Chromium switches which must be passed to the binary
 
 - `--show-component-extension-options`
