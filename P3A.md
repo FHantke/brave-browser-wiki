@@ -694,11 +694,12 @@ _`Brave.Rewards.ToolbarButtonTrigger`_ **[D]**
 1) Yes
 
 ### Q85. If you have Brave Rewards enabled with a custodial account connected, and you made at least one tip, how many tips did you make in the past month?
-_`Brave.Rewards.TipsSent`_ **[D]** **[A]**
+_`Brave.Rewards.TipsSent.2`_ **[D]** **[A]**
 
-0) 1 tip
-1) 2-3 tips
-2) 4+ tips
+0) 0 tips
+1) 1 tip
+2) 2-3 tips
+3) 4+ tips
 
 ### Q86. If you are opted into sync, how many objects are synced?
 _`Brave.Sync.SyncedObjectsCount`_ **[D]** **[A]**
