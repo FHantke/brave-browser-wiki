@@ -343,16 +343,13 @@ _`Brave.Search.SwitchEngine`_ **[D]** **[A]** **[iOS]**
 1. Installed, in use
 2. Installed, but disabled
 
-### Q45: Are ads enabled? If not, were they enabled in the past? If so, for how long?
-`Brave.Rewards.AdsEnabledDuration` **[D]** **[A]** **[iOS]**
+### Q45: If you have rewards enabled, which ad types do you have enabled?
+`Brave.Rewards.AdTypesEnabled` **[D]** **[A]**
 
-0. It was never on
-1. It’s still on
-2. Less than three hours
-3. Less than three days
-4. Less than three weeks
-5. Less than three months
-6. More than three months
+0. None
+1. NTP only
+2. Push only
+3. NTP + Push
 
 ### Q46: What is the global ad blocking shields setting?
 _`Brave.Shields.AdBlockSetting`_ **[D]** **[A]** **[iOS]**
