@@ -23,7 +23,7 @@ You are now ready to [[clone and initialize the repo|Home#clone-and-initialize-t
 
 You might also want to try `./src/build/install-build-deps.sh --unsupported` if above command gives an error about using a non supported Linux distribution. 
 
-Use `./src/build/install-build-deps-android.sh` for Android builds.
+Use `./src/build/install-build-deps.sh --android` for Android builds.
 
 # Troubleshooting
 
