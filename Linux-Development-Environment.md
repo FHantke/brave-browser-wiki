@@ -49,7 +49,9 @@ npm run build -- Debug --target_os=android --target_arch=arm --target_android_ou
 Both for devices and if you have a started emulator:
 
 ` ./src/build/android/adb_install_apk.py ./src/out/android_Debug_x86/apks/Bravex86.apk `
+
 Or
+
 ` adb install ./src/out/android_Debug_x86/apks/Bravex86.apk `
 
 If you have an aab file:
