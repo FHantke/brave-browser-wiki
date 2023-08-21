@@ -690,7 +690,7 @@ _`Brave.Rewards.ToolbarButtonTrigger`_ **[D]**
 
 1) Yes
 
-### Q85. If you have Brave Rewards enabled with a custodial account connected, how many tips did you make in the past 30 days (monthly and one-time tips combined)? Monthly tips count so long as they are still in the monthly tips list, even if they do not execute.
+### Q85. If you have Brave Rewards enabled with a custodial account connected, how many tips did you make in the past 30 days (monthly and one-time tips combined)? Monthly tips count so long as they are still in your monthly tips list, even if they do not go through.
 _`Brave.Rewards.TipsSent.2`_ **[D]** **[A]**
 
 0) 0 tips
