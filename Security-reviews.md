@@ -9,9 +9,11 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 5. It adds new dependencies (e.g. Docker images), integrations, or plugins.
 6. It is related to sensitive user information such as cookies, passwords, and private browsing data.
 7. It changes the amount of data collected by Brave or one of its partners  — including making any logs which may be sent to Brave or a third party.
-8. It adds a new extension to the list of extensions which Brave doesn't warn before installing.
+8. It adds a new extension that is built-in or has special privileges in Brave.
 9. It changes any security/privacy messaging in our products (warning messages, security icons, etc.).
 10. It adds a new channel or modifies an existing channel for distributing software produced by Brave, including software updates.
+11. It modifies handling of URL protocols, including internal urls like brave:// (especially any rewriting of internals urls). 
+12. It has to do with a new window API. Please see https://docs.google.com/document/d/1BfJbLCvwToPqXHzsKqQgDuluwVDtGhzFR1BclqVzqaA/edit first.
 
 If you are not sure whether you need a security review, you should probably ask for one just to play it safe.
 
