@@ -1,3 +1,3 @@
-Brave uses the same User Agent request header as Chromium for web compatibility reasons. In testing, we found that some websites broke on encountering an uncommon User Agent. 
+Brave uses the same User Agent request header as Chromium for web compatibility reasons. We also expose `Brave` in the `Sec-Ch-Ua` header. In testing, we found that some websites broke on encountering an uncommon User Agent. 
 
-If you want to detect Brave, please use the `navigator.brave.isBrave()` JavaScript API.
+If you want to detect Brave, please use the `navigator.brave.isBrave()` JavaScript API. Note that [we make this API unavailable](https://github.com/brave/adblock-lists/blob/c67badc6f1e4409c93d56bd98fae3a1d39671d55/brave-unbreak.txt#L722-L723) for websites that block or discriminate against Brave users.
