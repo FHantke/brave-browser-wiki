@@ -1,5 +1,10 @@
 Brave uses Rust language code, but there are some caveats.
 
+Since 1.58 brave-core has used the upstream chromium build system for rust code. All code must be in-tree, with 3rd-party crates (libraries) vendored either in `brave/third_party/rust` or upstream in `src/third_party/rust`.
+We largely follow the [chromium guidelines](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/adding_to_third_party.md#Rust) for determining acceptable use, although we have some components (SKUs, Speedreader, STAR) implemented in rust. Please contact Clifton and Brian Johnson when planning any new work involving substantial Rust code.
+
+Instead of `cargo`, our build calls `rustc` directly. Source files, config settings, and dependencies are extracted from Cargo.toml files and an equivalent BUILD.gn is created and checked into the tree. There is a `gnrt` tool to automate this, but it is currently very rough and doesn't support our setup of with `third_party/rust` trees. See the [instructions](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/crates/README.md) for how to build and run this tool.
+
 ## Review guidelines
 
 A checklist for reviewing Rust code changes, including dependent library crates.
