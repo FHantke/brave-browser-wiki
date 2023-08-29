@@ -193,7 +193,7 @@ Before handing off a build to QA, please test the following functionality:
 - Ensure that tabs have the expected shape (it's slightly different from Chrome)
 - Ensure that videos play properly on YouTube and that the media device toolbar button works correctly
 - Ensure that tab-muting works properly
-- Ensure that vertical tabs work as expected (must first enable this via `brave://flags`)
+- Ensure that vertical tabs work as expected (must first enable this via `brave://settings`)
 - Ensure that enabling Rewards works properly
 - Ensure that all elements of the sidebar panel work as expected
 - Enusre that creating and using multiple profiles works as expected
