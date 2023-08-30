@@ -480,8 +480,8 @@ _`Brave.Search.Promo.Button`_ **[D]**
 2) No, Yes
 3) Yes, Yes
 
-### Q59: Did the participant in Group B click on the promo and did they switch their default engine to Brave Search?
-_`Brave.Search.Promo.Banner`_ **[D]**
+### Q59: Did the participant in Group A/B/C/D click on the promo and did they switch their default engine to Brave Search?
+_`Brave.Search.Promo.BannerA`_ _`Brave.Search.Promo.BannerB`_ _`Brave.Search.Promo.BannerC`_ _`Brave.Search.Promo.BannerD`_ **[D]**
 
 0) No, No
 1) Yes, No
