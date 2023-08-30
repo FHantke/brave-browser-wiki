@@ -861,6 +861,35 @@ _`Brave.VerticalTabs.GroupTabs`_ **[D]**
 1. 3-5
 2. 6+
 
+### Q109: Do you have Leo enabled?
+_`Brave.AIChat.Enabled`_ **[D]** **[A]**
+
+1. Yes
+
+### Q110: Did you use Leo in the past day?
+_`Brave.AIChat.UsageDaily`_ **[D]** **[A]**
+
+1. Yes
+
+### Q111: If you used Leo in the past week, how many chats did you engage in during the period?
+_`Brave.AIChat.ChatCount`_ **[D]** **[A]**
+
+0. 1
+1. 2 to 5
+2. 5 to 10
+3. 10 to 20
+4. 20 to 50
+5. More than 50
+
+### Q112: If you used Leo in the past week, what was the average amount of prompts per conversation during the period?
+_`Brave.AIChat.AvgPromptCount`_ **[D]** **[A]**
+
+0. 1 to 2
+1. 2 to 5
+2. 5 to 10
+3. 10 to 20
+4. More than 20
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
