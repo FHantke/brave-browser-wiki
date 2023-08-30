@@ -203,16 +203,16 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q25: In the past week, what was the highest amount of New Tab Pages created in a day?
 
-`Brave.NTP.NewTabsCreated` **[D]** **[A]** **[iOS]**
+`Brave.NTP.NewTabsCreated.2` **[D]** **[A]** **[iOS]**
 
 0. 0 
-1. 1 to 3
-2. 4 to 8
-3. 9 to 20
-4. 21 to 50
-5. 51 to 100
-6. More than 100
-
+1. 1
+2. 2
+3. 3
+4. 4
+5. 5-8
+6. 9-15
+7. 16+
 
 ### Q26: Is the sponsored new tab page option enabled?
 
