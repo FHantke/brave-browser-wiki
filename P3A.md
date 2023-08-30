@@ -876,18 +876,18 @@ _`Brave.AIChat.ChatCount`_ **[D]** **[A]**
 
 0. 1
 1. 2 to 5
-2. 5 to 10
-3. 10 to 20
-4. 20 to 50
+2. 6 to 10
+3. 11 to 20
+4. 21 to 50
 5. More than 50
 
 ### Q112: If you used Leo in the past week, what was the average amount of prompts per conversation during the period?
 _`Brave.AIChat.AvgPromptCount`_ **[D]** **[A]**
 
 0. 1 to 2
-1. 2 to 5
-2. 5 to 10
-3. 10 to 20
+1. 3 to 5
+2. 6 to 10
+3. 11 to 20
 4. More than 20
 
 ## Metrics Proposed/Under Development
