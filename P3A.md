@@ -890,6 +890,25 @@ _`Brave.AIChat.AvgPromptCount`_ **[D]** **[A]**
 3. 11 to 20
 4. More than 20
 
+### Q113: If you viewed the NFT gallery this week, how many NFTs are displayed in the gallery?
+_`Brave.Wallet.NFTCount`_ **[D]** **[A]**
+
+0. 0
+1. 1 - 4
+2. 5 - 20
+3. More than 20
+
+### Q114: Did you use the NFT gallery for the first time this week?
+_`Brave.Wallet.NFTNewUser`_ **[D]** **[A]**
+
+1. Yes
+
+### Q115: As a user that has used the wallet at least once, do you have NFT discovery enabled?
+_`Brave.Wallet.NFTDiscoveryEnabled`_ **[D]** **[A]**
+
+0. No
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
