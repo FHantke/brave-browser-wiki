@@ -61,8 +61,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.58.x  |    117   | September 5, 2023   | September 12, 2023  |                                            |
 | 1.58.x  |    117   | N/A                 | September 27, 2023  | Maintenance Release                        |
 | 1.59.x  |    118   | October 3, 2023     | October 10, 2023    |                                            |
-| 1.59.x  |    118   | N/A                 | October 25, 2023    | Maintenance Release                        |
-| 1.60.x  |    119   | October 31, 2023    | November 7, 2023    |                                            |
+| 1.60.x  |    119   | October 24, 2023    | October 31, 2023    |                                            |
 
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
