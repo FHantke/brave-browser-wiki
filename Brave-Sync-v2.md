@@ -60,6 +60,6 @@ That is the field that will get encrypted and can only be seen by the client.
 Other essential fields used for communication and sync conflict resolution will remain plaintext, like device name and type, opaque IDs for synced items and their parents, item version, creation time, etc.
 
 ## Current status
-Sync v2 is fully live on Desktop and Android. 
+Sync v2 is fully live on **Desktop** and **Android**. 
 
-iOS supports most of the sync types too: Bookmarks / History / Passwords / Open tabs. 
+**iOS** supports most of the sync types too: Bookmarks / History / Passwords / Open tabs. 
