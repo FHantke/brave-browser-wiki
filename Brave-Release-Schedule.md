@@ -76,7 +76,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.56.x - 1.57.x | 28 days                   |                                            |
 | 1.57.x - 1.58.x | 28 days                   |                                            |
 | 1.58.x - 1.59.x | 29 days                   |                                            |
-| 1.59.x - 1.60.x | 29 days                   |                                            |
+| 1.59.x - 1.60.x | 21 days                   |                                            |
 ---
 
 # Beta & Dev channel migration dates:
