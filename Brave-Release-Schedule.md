@@ -58,7 +58,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.56.x  |    115   | N/A                 | August 3, 2023      | Maintenance Release. Originally scheduled for `August 2, 2023`. Moved to see if a new minor `C115` is pushed|
 | 1.57.x  |    116   | August 8, 2023      | August 15, 2023     |                                            |
 | 1.57.x  |    116   | N/A                 | August 30, 2023     | Maintenance Release                        |
-| 1.58.x  |    117   | September 5, 2023   | September 12, 2023  |                                            |
+| 1.58.x  |    117   | September 6, 2023   | September 14, 2023  | Release delayed. Originally scheduled for `September 12, 2023`. |             
 | 1.58.x  |    117   | N/A                 | September 27, 2023  | Maintenance Release                        |
 | 1.59.x  |    118   | October 3, 2023     | October 10, 2023    |                                            |
 | 1.60.x  |    119   | October 24, 2023    | October 31, 2023    |                                            |
