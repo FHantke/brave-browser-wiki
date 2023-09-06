@@ -909,6 +909,11 @@ _`Brave.Wallet.NFTDiscoveryEnabled`_ **[D]** **[A]**
 0. No
 1. Yes
 
+### Q116: Do you have the Sidebar setting set to "Always" or "On mouseover"?
+_`Brave.Sidebar.Enabled`_ **[D]**
+
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
