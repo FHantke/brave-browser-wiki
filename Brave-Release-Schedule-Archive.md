@@ -142,6 +142,9 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.49.x - 1.50.x | 28 days                   |                                            |
 | 1.50.x - 1.51.x | 28 days                   |                                            |
 | 1.51.x - 1.52.x | 28 days                   |                                            |
+| 1.52.x - 1.56.x | 48 days                   |                                            |
+| 1.56.x - 1.57.x | 28 days                   |                                            |
+| 1.57.x - 1.58.x | 28 days                   |                                            |
 
 # Beta & Dev channel dates:
 
