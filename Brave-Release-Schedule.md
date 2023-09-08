@@ -51,17 +51,23 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Chromium | Migration Date      | Release Date        | Comments                                   |
 |:-------:|:--------:|---------------------|---------------------|--------------------------------------------|
-| 1.52.x  |    114   | May 23, 2023        | May 31, 2023        | Release delayed. Originally scheduled for `May 30, 2023`.|            
-| 1.52.x  |    114   | N/A                 | June 14, 2023       | Maintenance Release                        |
-| 1.52.x  |    114   | N/A                 | July 7, 2023        | Maintenance Release. Release delayed due to upstream CI issues. Originally scheduled for `July 6, 2023`.|
-| 1.56.x  |    115   | June 20, 2023       | July 18, 2023       | Originally scheduled for `June 27, 2023` but Chromium schedule changed/updated.|
-| 1.56.x  |    115   | N/A                 | August 3, 2023      | Maintenance Release. Originally scheduled for `August 2, 2023`. Moved to see if a new minor `C115` is pushed|
-| 1.57.x  |    116   | August 8, 2023      | August 15, 2023     |                                            |
-| 1.57.x  |    116   | N/A                 | August 30, 2023     | Maintenance Release                        |
 | 1.58.x  |    117   | September 6, 2023   | September 14, 2023  | Release delayed. Originally scheduled for `September 12, 2023`. |             
 | 1.58.x  |    117   | N/A                 | September 27, 2023  | Maintenance Release                        |
-| 1.59.x  |    118   | October 3, 2023     | October 10, 2023    |                                            |
-| 1.60.x  |    119   | October 24, 2023    | October 31, 2023    |                                            |
+| 1.59.x  |    118   | October 4, 2023     | October 10, 2023    |                                            |
+| 1.60.x  |    119   | October 25, 2023    | October 31, 2023    |                                            |
+| 1.60.x  |    119   | N/A                 | November 15, 2023   | Maintenance Release                        |
+| 1.61.x  |    120   | November 29, 2023   | December 5, 2023    |                                            |
+| 1.62.x  |    121   | January 17, 2024    | January 23, 2024    |                                            |
+| 1.63.x  |    122   | February 14, 2024   | February 20, 2024   |                                            |
+| 1.64.x  |    123   | March 13, 2024      | March 19, 2024      |                                            |
+| 1.65.x  |    124   | April 10, 2024      | April 16, 2024      |                                            |
+| 1.66.x  |    125   | May 8, 2024         | May 14, 2024        |                                            |
+| 1.67.x  |    126   | June 5, 2024        | June 11, 2024       |                                            |
+| 1.68.x  |    127   | July 17, 2024       | July 23, 2024       |                                            |
+| 1.69.x  |    128   | August 14, 2024     | August 20, 2024     |                                            |
+| 1.70.x  |    129   | September 11, 2024  | September 17, 2024  |                                            |
+| 1.71.x  |    130   | October 9, 2024     | October 15, 2024    |                                            |
+| 1.72.x  |    131   | November 6, 2024    | November 12, 2024   |                                            |
 
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
@@ -72,11 +78,20 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version         | # of days between releases| Comments                                   |
 |:---------------:|:-------------------------:|---------------------------------------------
-| 1.52.x - 1.56.x | 48 days                   |                                            |
-| 1.56.x - 1.57.x | 28 days                   |                                            |
-| 1.57.x - 1.58.x | 28 days                   |                                            |
 | 1.58.x - 1.59.x | 29 days                   |                                            |
 | 1.59.x - 1.60.x | 21 days                   |                                            |
+| 1.60.x - 1.61.x | 35 days                   |                                            |
+| 1.61.x - 1.62.x | 49 days                   |                                            |
+| 1.62.x - 1.63.x | 28 days                   |                                            |
+| 1.63.x - 1.64.x | 28 days                   |                                            |
+| 1.64.x - 1.65.x | 28 days                   |                                            |
+| 1.65.x - 1.66.x | 28 days                   |                                            |
+| 1.66.x - 1.67.x | 28 days                   |                                            |
+| 1.67.x - 1.68.x | 42 days                   |                                            |
+| 1.68.x - 1.69.x | 28 days                   |                                            |
+| 1.69.x - 1.70.x | 28 days                   |                                            |
+| 1.70.x - 1.71.x | 28 days                   |                                            |
+| 1.71.x - 1.72.x | 28 days                   |                                            |
 ---
 
 # Beta & Dev channel migration dates:
