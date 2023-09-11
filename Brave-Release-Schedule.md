@@ -69,6 +69,8 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.71.x  |    130   | October 9, 2024     | October 15, 2024    |                                            |
 | 1.72.x  |    131   | November 6, 2024    | November 12, 2024   |                                            |
 
+**`Note:`** As announced via https://security.googleblog.com/2023/08/an-update-on-chrome-security-updates.html, we'll be getting minor chromium bumps every Tuesday. These releases will sometime also include `P1` & `P2` issues that are deemed important enough to get out ASAP rather than waiting for a major release. For example, HackerOne reports or other issues that are affecting users in a major way.
+
 - All dates are approximate and are subject to change.
 - `Maintenance releases` are tentative and subject to change. 
 - `Migration Date` is also the cutoff date to add strings that need to be translated for the release. 
