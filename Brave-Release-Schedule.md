@@ -15,8 +15,8 @@
 
 Currently published version numbers can be seen at https://brave-browser-downloads.s3.brave.com/
 
-- Major Release frequency: ~4 weeks
-- Maintenance Release frequency: ~2 weeks after a major release (however, these are tentative and subject to change)
+- Major Release frequency: ~3 weeks
+- Minor Chromium/Security releases: Every Tuesday (within ~24hrs after released) as per [Chromium schedule](https://security.googleblog.com/2023/08/an-update-on-chrome-security-updates.html). (however, these are tentative and subject to change)
 - Chemspill/Hotfix frequency: As needed 
 - Every major release is tied to a fuzzy [Chromium release date](https://chromiumdash.appspot.com/schedule).
 
