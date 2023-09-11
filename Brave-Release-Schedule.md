@@ -100,13 +100,20 @@ The following is our automated schedule for creating and uploading builds to our
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
-| 1.52.x  | 114               | April 25, 2023      |                                           |
-| 1.56.x  | 115               | May 23, 2023        |                                           |
-| 1.57.x  | 116               | June 20, 2023       |                                           |
-| 1.58.x  | 117               | August 8, 2023      |                                           |
-| 1.59.x  | 118               | September 5, 2023   |                                           |
-| 1.60.x  | 119               | October 3, 2023     |                                           |
-| 1.61.x  | 120               | October 24, 2023    |                                           |
+| 1.60.x  | 119               | October 4, 2023     |                                           |
+| 1.61.x  | 120               | October 25, 2023    |                                           |
+| 1.62.x  | 121               | November 29, 2023   |                                           |
+| 1.63.x  | 122               | January 17, 2024    |                                           |
+| 1.64.x  | 123               | February 14, 2024   |                                           |
+| 1.65.x  | 124               | March 13, 2024      |                                           |
+| 1.66.x  | 125               | April 10, 2024      |                                           |
+| 1.67.x  | 126               | May 8, 2024         |                                           |
+| 1.68.x  | 127               | June 5, 2024        |                                           |
+| 1.69.x  | 128               | July 17, 2024       |                                           |
+| 1.70.x  | 129               | August 14, 2024     |                                           |
+| 1.71.x  | 130               | September 11, 2024  |                                           |
+| 1.72.x  | 131               | October 9, 2024     |                                           |
+| 1.73.x  | 132               | November 6, 2024    |                                           |
 
 - CI does builds for Beta channel happen twice a week.
 - CI builds for Dev channel happen once a day on weekdays.
