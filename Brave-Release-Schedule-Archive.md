@@ -186,6 +186,11 @@ See the [Brave Release Schedule](https://github.com/brave/brave-browser/wiki/Bra
 | 1.49.x  | 111               | January 31, 2023    |                                           |
 | 1.50.x  | 112               | February 28, 2023   |                                           |
 | 1.51.x  | 113               | March 28, 2023      |                                           |
+| 1.52.x  | 114               | April 25, 2023      |                                           |
+| 1.56.x  | 115               | May 23, 2023        |                                           |
+| 1.57.x  | 116               | June 20, 2023       |                                           |
+| 1.58.x  | 117               | August 8, 2023      |                                           |
+| 1.59.x  | 118               | September 5, 2023   |                                           |
 
 # Nightly channel dates:
 
