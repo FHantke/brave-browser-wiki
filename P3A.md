@@ -914,6 +914,16 @@ _`Brave.Sidebar.Enabled`_ **[D]**
 
 1. Yes
 
+### Q117: As a phone user, in the past 7 days, what % of your navigation button actions consist of forward navigation?
+_`Brave.Toolbar.ForwardNavigationAction`_ **[D]**
+
+0. 0-1%
+1. 1-3%
+2. 3-5%
+3. 5-10%
+4. 10-20%
+5. 20-100%
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
