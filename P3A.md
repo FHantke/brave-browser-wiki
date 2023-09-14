@@ -818,7 +818,7 @@ _`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
 5. 51+
 
 ### Q103: What is the document directory size in MB?
-_`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
+_`Brave.Core.DocumentsDirectorySizeMB`_ **[iOS]**
 1. 0-59
 2. 50-200
 3. 200-500
