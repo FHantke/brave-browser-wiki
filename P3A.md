@@ -924,6 +924,18 @@ _`Brave.Toolbar.ForwardNavigationAction`_ **[iOS]**
 4. 10-20%
 5. 20-100%
 
+### Q118: If you switched search engines this week from Brave Search to something else, how many queries did you do before switching? (via address bar only)
+_`Brave.Search.QueriesBeforeChurn`_ **[D]** **[A]**
+
+0. 0
+1. 1
+2. 2
+3. 3-5
+4. 6-10
+5. 11-20
+6. 21-40
+7. More than 40
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
