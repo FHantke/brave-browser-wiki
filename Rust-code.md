@@ -7,11 +7,23 @@ Instead of `cargo`, our build calls `rustc` directly. Source files, config setti
 
 ## Updating a dependency
 
-This is pretty painful right now. Since `gnrt` doesn't support downstream two-level third_party/rust tree, one approach is to copy `src/brave/third_party/rust` into `src/third_party/rust`, update `third_party.toml` and then run `gnrt download` and `gnrt gen` until it's happy. They copy everything back into the brave-core tree, and use git status to work split out which files belong where, and manually fix up the paths for upstream crates.
+### The "correct" but painful way
+Since `gnrt` doesn't support downstream two-level third_party/rust tree, one approach is to copy `src/brave/third_party/rust` into `src/third_party/rust`, update `third_party.toml` and then run `gnrt download` and `gnrt gen` until it's happy. They copy everything back into the brave-core tree, and use git status to work split out which files belong where, and manually fix up the paths for upstream crates.
 
+### The hacky but simple(r) way
 Alternatively, downloading the published crate [directly](https://github.com/rust-lang/crates.io/issues/65#issuecomment-281749089) and writing/updating `BUILD.gn` by hand can be easier.
 
 Until we have better tooling for this, it can be a real time sink. Please ask one of the @rust-deps reviewers for help if you're not sure how this works. The `#rust` slack channel is also a good place to ask for help.
+
+### Checking your work
+
+Since the process involves a lot of manual tedium and is error-prone either way, it's a good idea to compare your work to a known-good PR.
+
+#### Updating a patch version
+[This PR](https://github.com/brave/brave-core/pull/20113/files) updates `adblock 0.8.0` to `adblock 0.8.1` without any `brave-core` code changes.
+
+#### Updating a minor version
+[This PR](https://github.com/brave/brave-core/pull/19648/files) updates `adblock 0.7` to `adblock 0.8`. This is generally similar to the patch version diff, but there are additional related changes (i.e. see `components/brave_shields/adblock/rs/BUILD.gn` where a path is changed), along with additional unrelated changes (`brave-core` code changes to account for the newer API).
 
 ## Review guidelines
 
