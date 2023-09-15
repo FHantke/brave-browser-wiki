@@ -11,7 +11,7 @@ Instead of `cargo`, our build calls `rustc` directly. Source files, config setti
 Since `gnrt` doesn't support downstream two-level third_party/rust tree, one approach is to copy `src/brave/third_party/rust` into `src/third_party/rust`, update `third_party.toml` and then run `gnrt download` and `gnrt gen` until it's happy. They copy everything back into the brave-core tree, and use git status to work split out which files belong where, and manually fix up the paths for upstream crates.
 
 ### The hacky but simple(r) way
-Alternatively, downloading the published crate [directly](https://github.com/rust-lang/crates.io/issues/65#issuecomment-281749089) and writing/updating `BUILD.gn` by hand can be easier, but only if there are no changes to dependencies. If you are unsure, please check in the `#rust` slack channel before doing this.
+Alternatively, downloading the published crate [directly](https://github.com/rust-lang/crates.io/issues/65#issuecomment-281749089) and writing/updating `BUILD.gn` by hand can be easier, but only if there are no changes to dependencies or any new/removed files. There can only be changes to existing rust sources. If you are unsure, please check in the `#rust` slack channel before doing this.
 
 Until we have better tooling for this, it can be a real time sink. Please ask one of the @rust-deps reviewers for help if you're not sure how this works. The `#rust` slack channel is also a good place to ask for help.
 
