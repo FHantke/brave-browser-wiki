@@ -14,7 +14,7 @@ If a service would cause network traffic to a non-Brave server in a new browser 
 
 By default, the Brave browser should only talk to Brave servers.
 
-## Requests that should NOT be proxied
+## Requests that do NOT need be proxied
 
 Services that provide data to the browser and are a result of a user choosing to interact with that feature/service do not typically need to be proxied (e.g. Chrome Store extensions, Wallet on-ramp, Uphold wallet linking).
 
