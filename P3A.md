@@ -801,29 +801,32 @@ _`Brave.Wallet.NewUserBalance`_ **[D]** **[A]**
 
 ### Q100: Do you have iOS display zoom enabled?
 _`Brave.Accessibility.DisplayZoomEnabled`_ **[iOS]**
+
+0. No
 1. Yes
-2. No
 
 ### Q101: Which location Bottom bar being used?
 _`Brave.General.BottomBarLocation`_ **[iOS]**
-1. Top
-2. Bottom
+
+0. Top
+1. Bottom
 
 ### Q102: How many times did you use reader mode in the last 7 days?
 _`Brave.ReaderMode.NumberReaderModeActivated`_ **[iOS]**
-1. 0
-2. 1-5
-3. 6-20
-4. 21-50
-5. 51+
+
+0. 0
+1. 1-5
+2. 6-20
+3. 21-50
+4. 51+
 
 ### Q103: What is the document directory size in MB?
 _`Brave.Core.DocumentsDirectorySizeMB`_ **[iOS]**
-1. 0-59
-2. 50-200
-3. 200-500
-4. 500-1000
-5. 1000+
+0. 0-50
+1. 50-200
+2. 200-500
+3. 500-1000
+4. 1000+
 
 ### Q104: Do you have privacy report enabled?
 _`Brave.PrivacyHub.IsEnabled`_ **[A]**
