@@ -1,4 +1,29 @@
-# Setup build environment
+## Functional overview
+
+As of this writing, Omaha is Brave's auto-update mechanism on Windows. We are using version 3 of Omaha. In the very near future, we will migrate to Omaha version 4, which also supports other platforms. The rest of this document is about Omaha 3 on Windows.
+
+Omaha ("Brave Update") runs as a separate application on user's system. This has several reasons:
+
+ * Users can also receive updates when Brave is not running.
+ * Omaha can update multiple applications - in our case Brave Release, Brave Beta, Brave Nightly.
+ * There is no danger of bricking the update fleet in case there is a broken version of Brave.
+ * It solves permission issues: Omaha runs with administrative privileges and can thus update system-wide installations of Brave. This lets users perform on-demand update checks from within Brave, even when Brave runs without admin privileges.
+
+### Update mechanisms
+
+#### Background updates
+
+Background updates run independently of whether Brave is running. They are kicked off by the Windows Task Scheduler. The main Task for this is `BraveSoftwareUpdateTaskMachineUA{some UUID}`. `UA` stands for "update all". The task runs once per hour. But it actually only checks for updates every 5 hours. It keeps track of the last time it ran (and thus whether 5 hours have passed) in a registry value called `LastChecked`.
+
+#### On-demand updates
+
+These are kicked off on `brave://settings/help`:
+
+![image](https://github.com/brave/brave-browser/assets/1076393/e05ca63c-b64f-4a9b-a529-2ab7f9e4d8b0)
+
+What they do is communicate with Omaha via COM to check for and possibly apply updates. (Recall that Omaha is a separate application.)
+
+## Setup build environment
 
 There are some documents about how to build/customize [google omaha](https://github.com/google/omaha).
 * [Developer Setup Guide](https://github.com/google/omaha/blob/master/doc/DeveloperSetupGuide.md) from google omaha 
