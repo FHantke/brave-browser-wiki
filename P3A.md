@@ -561,7 +561,7 @@ _`Brave.Wallet.EthProvider.4`_ and _`Brave.Wallet.SolProvider.2`_ **[D]**
 
 0. None, because no wallet is setup
 1. None, because the default provider setting is set to "Extensions (no fallback)"
-2. Brave Wallet (wallet is setup, no installed extension; setting is "Extensions (Brave Wallet fallback)
+2. Brave Wallet (wallet is setup, no installed extension; setting is "Extensions (Brave Wallet fallback)")
 3. Brave Wallet (wallet is setup, an extension may potentially be installed but cannot override native provider; setting is "Brave Wallet")
 4. Third-party extension (not overriding a setup Brave Wallet; setting is most likely "Extensions (Brave Wallet fallback)", but could be "Extensions (no fallback)")
 5. Third-party extension (overriding a setup Brave Wallet; setting is "Extensions (Brave Wallet fallback)")
