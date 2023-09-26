@@ -69,6 +69,7 @@ A number of build parameters are passed via a `.env` configuration file in the `
   * p3a_json_upload_url
   * p3a_creative_upload_url
   * p2a_json_upload_url
+  * p3a_constellation_upload_host
   * p3a_constellation_upload_url 
   * star_randomness_host
 * Android
