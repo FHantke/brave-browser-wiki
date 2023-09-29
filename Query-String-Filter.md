@@ -17,7 +17,7 @@ All issues related to this feature are tagged with the [privacy/query-filter lab
 
 ### List
 
-The current list of parameters we filter can be seen in [brave/browser/net/brave_query_filter.cc:: kSimpleQueryStringTrackers](https://github.com/brave/brave-core/blob/master/components/query_filter/utils.cc#L21).
+The current list of parameters we filter can be seen in the [`query_filter` component](https://github.com/brave/brave-core/blob/master/components/query_filter/utils.cc#L21).
 
 ### QA
 
