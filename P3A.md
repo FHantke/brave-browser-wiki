@@ -19,9 +19,9 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 _`Brave.Uptime.BrowserOpenTime`_ **[D]**
 
 0. 30 minutes or less
-1. 31 minutes to 1 hour
-2. 1 to 2 hours
-3. 2 to 3 hours
+1. 31 minutes - 1 hour
+2. 1 - 2 hours
+3. 2 - 3 hours
 4. 3 - 5 hours
 5. 5 - 7 hours
 6. 7 - 10 hours
