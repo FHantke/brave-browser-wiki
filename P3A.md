@@ -15,12 +15,17 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 
 **[iOS]** = supported on iOS ([merged and enabled in 1.46.x](https://github.com/brave/brave-ios/pull/6308))
 
-### Q1: How long has this browser been open for the last seven days?
-_`Brave.Uptime.BrowserOpenMinutes`_ **[D]**
-1. N/A -- seven days have not passed since first open
-2. 0 - 30min
-3. 30min - 5hrs
-4. 5hrs+
+### Q1: How long has the browser been active for in the past day?
+_`Brave.Uptime.BrowserOpenTime`_ **[D]**
+
+0. 30 minutes or less
+1. 31 minutes to 1 hour
+2. 1 to 2 hours
+3. 2 to 3 hours
+4. 3 - 5 hours
+5. 5 - 7 hours
+6. 7 - 10 hours
+7. More than 10 hours
 
 ### Q2: Have you made Brave your default browser?
 `_Brave.Core.IsDefault_` **[D]**
