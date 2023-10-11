@@ -196,7 +196,7 @@ Before handing off a build to QA, please test the following functionality:
 - Ensure that vertical tabs work as expected (must first enable this via `brave://settings`)
 - Ensure that enabling Rewards works properly
 - Ensure that all elements of the sidebar panel work as expected
-- Enusre that creating and using multiple profiles works as expected
+- Ensure that creating and using multiple profiles works as expected
 - Ensure that creating and using a Guest profile works as expected (reached via Hamburger -> More tools -> Open Guest profile)
 - Ensure that private and Tor windows work as expected
 - Ensure that a few different web sites load as expected
