@@ -944,6 +944,20 @@ _`Brave.Search.QueriesBeforeChurn`_ **[D]** **[A]**
 6. 21-40
 7. More than 40
 
+### Q119: If you have secure DNS enabled, what setting are you using?
+_`Brave.DNS.SecureSetting`_ **[D]** **[A]**
+
+1. Current service provider
+2. Predefined / custom provider
+
+### Q120: If your secure DNS setting is set to "current service provider" and at least one DNS request was auto-upgraded in the past week, what percent of queries were made over DoH in the past week?"
+_`Brave.DNS.AutoSecureRequests`_ **[D]** **[A]**
+
+0. Greater than 0%, less than 5%
+1. Greater than 5%, less than 50%
+2. Greater than 50%, less than 90%
+3. Greater than 90%
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
