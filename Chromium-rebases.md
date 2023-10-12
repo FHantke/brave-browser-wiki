@@ -102,7 +102,7 @@ git rebase -i --autosquash @~3
 
 ## Fix chromium_src overrides
 
-Run `brave/script/check_chromium_src.py` to locate any override files in `chromium_src` override directory:
+Run `brave/tools/check_chromium_src.py` to locate any override files in `chromium_src` override directory:
 
 * whose targets under `src` no longer exist
 * that contain definitions for symbols that are no longer present in the target file
