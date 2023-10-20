@@ -276,7 +276,7 @@ Make delta builds for QA smoke tests using the following links:
 Settings (all settings are the same as used above for the non-delta QA builds, except):
 * `PREVIOUS_BUILD_NUMBER_DELTA` - Specify the build number from the previous non-delta build that you created above
 
-After producing the delta builds, you can upload them to the update server here (only supports Windows at the moment):
+After producing the delta builds, you can upload them to the update server here:
 https://ci.brave.com/job/test-brave-browser-updates-upload
 
 Settings:
