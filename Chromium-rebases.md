@@ -102,13 +102,12 @@ git rebase -i --autosquash @~3
 
 ## Fix chromium_src overrides
 
-Run `brave/tools/check_chromium_src.py` to locate any override files in `chromium_src` override directory:
+Run `brave/tools/chromium_src/check_chromium_src.py` to find faulty overrides in the `chromium_src` directory, including:
 
-* whose targets under `src` no longer exist
-* that contain definitions for symbols that are no longer present in the target file
+* targets under `src` that no longer exist
+* definitions for symbols that are no longer present in the target file
 
 Make an appropriate fix for each situation.
-
 
 ## Fix unit and browser tests build
 
@@ -132,7 +131,7 @@ To rebaseline:
 
 ## Audit for new network services
 
-When submitting PR on Github add `CI/run-network-audit` label to the PR to ensure that the CI runs `audit-network`.
+When submitting your PR add the `CI/run-network-audit` label to ensure that CI runs the `audit-network` pipeline.
 
 For now just follow the instructions in https://github.com/brave/brave-browser/wiki/Tests#privacy-network-audit.
 
@@ -204,9 +203,9 @@ Before handing off a build to QA, please test the following functionality:
 
 ## QA Builds
 
-Before merging, we must produce regular (non-delta) and delta builds for QA to test.
+Before merging, we must produce standard (non-delta) and delta builds for QA to test.
 
-### Regular (non-delta) builds
+### Standard (non-delta) builds
 
 Make non-delta builds for QA smoke tests using the following links:
 * MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
@@ -265,7 +264,7 @@ Those build jobs produce installers that you can retrieve from the following pla
 
 ### Delta builds
 
-After producing the regular builds, create the delta builds for Windows and Mac. You MUST first wait for the version number to increment on master and then rebase your branch against master to get that new version, as the delta updater must update to a new version number.
+After producing the standard builds, create the delta builds for Windows and Mac. You MUST first wait for the version number to increment on master and then rebase your branch against master to get that new version, as the delta updater must update to a new version number.
 
 Make delta builds for QA smoke tests using the following links:
 * MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
@@ -284,7 +283,7 @@ Settings:
 
 ## Merge
 
-After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/etc. changes required by the new Chromium version.
+After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toollkit/etc. changes required by the new Chromium version.
 
 After merging to `master` create uplifts as appropriate.
 
