@@ -202,9 +202,13 @@ Before handing off a build to QA, please test the following functionality:
 - Ensure that a few different web sites load as expected
 - Ensure that DevTools works as expected
 
-## Before merging
+## QA Builds
 
-Make builds for QA smoke tests using the following links:
+Before merging, we must produce regular (non-delta) and delta builds for QA to test.
+
+### Regular (non-delta) builds
+
+Make non-delta builds for QA smoke tests using the following links:
 * MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
 * MacOS (arm64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
 * Linux: https://ci.brave.com/view/linux/job/test-brave-browser-build-linux-x64
@@ -221,15 +225,15 @@ Settings:
 
 Those build jobs produce installers that you can retrieve from the following places (you'll need to modify these links slightly, as they include build and version number information; they're provided here only as an example):
 
-### MacOS installers
+#### MacOS installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-x64/600/Brave-Browser-Nightly-x64.dmg 
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-macos-arm64/153/Brave-Browser-Nightly-arm64.dmg
 
-### Linux installers
+#### Linux installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly_1.37.54_amd64.deb
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-linux-x64/516/brave-browser-nightly-1.37.54-1.x86_64.rpm
 
-### Windows (x64) installers
+#### Windows (x64) installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/setup-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/brave_installer-x64.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserNightlySetup_99_1_37_54.exe
@@ -238,7 +242,7 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x64/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
-### Windows (x86) installers
+#### Windows (x86) installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/setup-x86.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/brave_installer-x86.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserNightlySetup_99_1_37_54.exe
@@ -247,7 +251,7 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
-### Android installers
+#### Android installers
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
@@ -255,9 +259,28 @@ Those build jobs produce installers that you can retrieve from the following pla
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
 
-### iOS installers
+#### iOS installers
 
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-ios/193/brave-core-ios-1.48.51.tgz
+
+### Delta builds
+
+After producing the regular builds, create the delta builds for Windows and Mac. You MUST first wait for the version number to increment on master and then rebase your branch against master to get that new version, as the delta updater must update to a new version number.
+
+Make delta builds for QA smoke tests using the following links:
+* MacOS (x64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-x64
+* MacOS (arm64): https://ci.brave.com/view/macos/job/test-brave-browser-build-macos-arm64
+* Windows (x64): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x64
+* Windows (x86): https://ci.brave.com/view/linux/job/test-brave-browser-build-windows-x86
+
+Settings (all settings are the same as used above for the non-delta QA builds, except):
+* `PREVIOUS_BUILD_NUMBER_DELTA` - Specify the build number from the previous non-delta build that you created above
+
+After producing the delta builds, you can upload them to the update server here (only supports Windows at the moment):
+https://ci.brave.com/job/test-brave-browser-updates-upload
+
+Settings:
+* `BUILD_NUMBER` - Specify the build number of the delta build
 
 ## Merge
 
