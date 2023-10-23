@@ -14,6 +14,7 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 10. It adds a new channel or modifies an existing channel for distributing software produced by Brave, including software updates.
 11. It modifies handling of URL protocols, including internal urls like brave:// (especially any rewriting of internals urls). 
 12. It has to do with a new window API. Please see https://docs.google.com/document/d/1BfJbLCvwToPqXHzsKqQgDuluwVDtGhzFR1BclqVzqaA/edit first.
+13. Adds any JavaScript in the browser which runs in the main world.
 
 If you are not sure whether you need a security review, you should probably ask for one just to play it safe.
 
