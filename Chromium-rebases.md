@@ -305,6 +305,23 @@ Settings:
 * `BUILD_NUMBER` - The build number of the delta build
 * `OMAHA_CHANNEL` - The channel on the update server to upload the version to
 
+#### Testing
+
+##### Windows
+
+In order to test a delta update on Windows, do the following:
+
+1. Connect to the Brave VPN
+1. Download and install the appropriate standalone installer (e.g., `BraveBrowserStandaloneNightlySetup_119_1_61_36.exe`)
+1. Once the browser launches:
+   - Open brave://version
+   - Verify that correct version is installed
+   - Close the browser
+1. In the Windows registry, set `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\BraveSoftware\UpdateDev\url` to `https://updates.brave.com/service/update2`
+1. In the Windows registry, set `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\BraveSoftware\Update\ClientState\{C6CB981E-DB30-4876-8639-109F8933582C}\ap` to the appropriate channel name (e.g., `cr-bump-update-tests-x64`)
+1. Launch the browser and visit brave://settings/help
+1. Verify that the browser downloads and installs the delta update
+
 ## Merge
 
 After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toollkit/etc. changes required by the new Chromium version.
