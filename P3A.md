@@ -958,6 +958,29 @@ _`Brave.DNS.AutoSecureRequests`_ **[D]** **[A]**
 2. Greater than 50%, less than 90%
 3. Greater than 90%
 
+### Q121: If you are an opted-in Leo user, what % of your Omnibox selections were the Ask Leo option?
+_`Brave.AIChat.OmniboxOpens`_ **[D]**
+
+0. None
+1. Less than 1%
+2. Between 1% and 3%
+3. Between 3% and 5%
+4. Between 5% and 10%
+5. Between 10% and 25%
+6. More than 25%
+
+### Q122: If you are an opted-in Leo user, and you used the Leo omnibox option in the previous week, did you select the Leo omnibox option proportionally more this week vs last week?
+_`Brave.AIChat.OmniboxWeekCompare`_ **[D]**
+
+0. More last week
+1. More this week
+
+### Q123: As a first time Leo user, what was your entry point?
+_`Brave.AIChat.AcquisitionSource`_ **[D]**
+
+0. Omnibox option
+1. Sidebar
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
