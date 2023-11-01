@@ -24,6 +24,16 @@ Don’t squash commits after reviews. That way your review can see intermediate 
 
 ## Android
 
+Building Android works great on Linux and Windows with WSL2 from the command line. I commonly use this to create the binaries:
+```
+npm run create_dist -- Release --channel=nightly --target_os=android --target_arch=arm --target_android_output_format=apk
+```
+
+This may require environment variables being set if the signing step is done (`BRAVE_ANDROID_KEYSTORE_PATH`, `BRAVE_ANDROID_KEY_PASSWORD`, `BRAVE_ANDROID_KEYSTORE_PASSWORD`, `BRAVE_ANDROID_KEYSTORE_NAME`). However, you should still be able to get an APK without the signing taking place.
+
+Once you have the APK, you can easily sideload it onto your phone using an app like AirDroid. This will require that you have the developer mode enabled on your phone.
+
+### Android Studio
 Building and running Android seems to only work on Linux (not macOS) and so far only on x86 (not x64). Use Android Studio > Device Manager > Create Device. When creating a device, choose an x86 image (not an x86_64).
 
 Then use 
@@ -36,6 +46,10 @@ adb install ./src/out/android_Component_x86/apks/Bravex86.apk
 ```
 
 Alternatively, after building the APK, you can just drag and drop the APK to the running emulator as well. 
+
+### Note about tests on Android
+You should not be using `InProcessBrowserTest` for anything that is (or will be) available on Android. That should include just about everything. See https://bravesoftware.slack.com/archives/C03MMJ4CHEZ/p1671052432003879?thread_ts=1671050489.910559&cid=C03MMJ4CHEZ for more information.
+
 
 ## Running unit tests and browser tests
 To run a browser test, you can use
