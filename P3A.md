@@ -987,6 +987,12 @@ _`Brave.Search.WebDiscoveryAndAds`_ **[D]**
 0. No
 1. Yes
 
+### Q125: Do you have a popular third-party adblock extension installed?
+_`Brave.Extensions.AdBlock`_ **[D]**
+
+0. No
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
