@@ -31,7 +31,7 @@ npm run create_dist -- Release --channel=nightly --target_os=android --target_ar
 
 This may require environment variables being set if the signing step is done (`BRAVE_ANDROID_KEYSTORE_PATH`, `BRAVE_ANDROID_KEY_PASSWORD`, `BRAVE_ANDROID_KEYSTORE_PASSWORD`, `BRAVE_ANDROID_KEYSTORE_NAME`). However, you should still be able to get an APK without the signing taking place.
 
-Once you have the APK, you can easily sideload it onto your phone using an app like AirDroid. This will require that you have the developer mode enabled on your phone.
+Once you have the APK, you can easily sideload it onto your phone using an app like [AirDroid](https://play.google.com/store/apps/details?id=com.sand.airdroid&hl=en_US&gl=US). This will require that you have the developer mode enabled on your phone.
 
 ### Android Studio
 Building and running Android seems to only work on Linux (not macOS) and so far only on x86 (not x64). Use Android Studio > Device Manager > Create Device. When creating a device, choose an x86 image (not an x86_64).
