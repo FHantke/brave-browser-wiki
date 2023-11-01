@@ -981,6 +981,12 @@ _`Brave.AIChat.AcquisitionSource`_ **[D]**
 0. Omnibox option
 1. Sidebar
 
+### Q124: Do you have Web Discovery Project & notification ads enabled?
+_`Brave.Search.WebDiscoveryAndAds`_ **[D]**
+
+0. No
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
