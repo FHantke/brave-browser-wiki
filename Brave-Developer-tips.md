@@ -67,3 +67,9 @@ git pull origin master # in src/
 npm run sync && cd src/brave && npm run build 
 # once this works, try rebasing your feature branch on master and checking it out and building
 ```
+## Testing CI builds
+Brave employees can check for the binaries created by PR builder in the `#browser-artifacts-bot` Slack channel.
+Alternatively, you can go into the Jenkins job for the platform (linked on the PR) and then check at the end of the job, the URL created where the binaries are uploaded to. Via the Jenkins interface, you can also re-queue the build and set release channel and signing options. This is super helpful for testing scenarios requiring a certain channel or scenarios requiring signed binaries.
+
+For Windows installs, there are command line options you can pass to the generated installer which will execute the system install. For more information about that, [please check the Brave omaha wiki page](https://github.com/brave/brave-browser/wiki/Brave-omaha#test-mini-installer-we-rename-it-to-brave_installerexe). These same options can be passed to the `brave_installer.exe` that is created if you were to run `npm run create_dist`.
+
