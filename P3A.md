@@ -77,10 +77,11 @@ _`Brave.Core.TabCount`_ **[D]** **[A]** **[iOS]**
 
 ### Q8: What has been your interaction with the shields icon?
 _`Brave.Shields.UsageStatus`_ **[D]**
-1. Never clicked on shields icon
-2. Clicked on it, but never made a change
-3. Clicked on it, shut off shields for one or more sites
-4. Clicked on it, changed Shields defaults or per-site shield settings in addition to (or in place of) shutting off shields on one or more sites
+
+0. Never clicked on shields icon
+1. Clicked on it, but never made a change
+2. Clicked on it, shut off shields for one or more sites
+3. Clicked on it, changed Shields defaults or per-site shield settings in addition to (or in place of) shutting off shields on one or more sites
 
 ### Q9: Have you ever used a private window?
 _`Brave.Core.LastTimeIncognitoUsed`_ **[D]**
