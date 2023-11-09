@@ -2,7 +2,7 @@
 
 Official Windows Brave builds (arm64, x86, x64) upload PDBs and binary images to Brave symbol server.
 
-The symbol server is accessible via https://brave-symbols.s3.brave.com/.
+The symbol server is accessible via https://brave-symbols.s3.brave.com.
 
 ### Configuring Visual Studio
 
