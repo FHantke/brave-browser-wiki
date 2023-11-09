@@ -1,6 +1,6 @@
 # Using Brave symbol server
 
-You can debug Windows release Brave builds or crashdumps using Visual Studio or WinDBG.
+You can debug Windows release Brave builds or crashdumps using Visual Studio.
 
 The Brave symbol server is located at https://brave-symbols.s3.brave.com/.
 
