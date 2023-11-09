@@ -1,6 +1,10 @@
-# Using Brave symbol server
+### What's uploaded and how to access
 
-Windows Brave release builds (arm64, x86, x64) upload PDBs and binary images to Brave symbol server. The symbol server is accessible via https://brave-symbols.s3.brave.com/.
+Official Windows Brave builds (arm64, x86, x64) upload PDBs and binary images to Brave symbol server.
+
+The symbol server is accessible via https://brave-symbols.s3.brave.com/.
+
+### Configuring Visual Studio
 
 To setup Visual Studio to use the symbol server you can either:
 * set `_NT_SYMBOL_PATH` environment variable before running `devenv.exe`:
@@ -10,9 +14,9 @@ set _NT_SYMBOL_PATH=SRV\*C:\symbols\*https://msdl.microsoft.com/download/symbols
 * or add `https://brave-symbols.s3.brave.com/` via Options dialog:
 ![image](https://github.com/brave/brave-browser/assets/5928869/8bbd3c98-02d7-4b2b-b4cf-d23d04353377)
 
-### Source files downloads
+### Using automatic source file downloads
 
-Brave symbols include source server information which allows Visual Studio to automatically download source files from GitHub. This greatly simplifies the debug process as you don't need to have the exact Brave source tree checked-out locally.
+Brave PDBs include source server information which allows Visual Studio to automatically download source files from GitHub. This greatly simplifies the debug process as you don't need to have the exact Brave source tree checked-out locally.
 
 To have this working you need to install Python 3 and make sure [`py` launcher](https://docs.python.org/3/using/windows.html#launcher) is in your `PATH`.
 
@@ -31,6 +35,6 @@ If you trust the command, then:
 
 Visual Studio will download symbols and display the exact source location automatically.
 
-### PGO and other Release optimizations
+### PGO and other Release optimizations notes
 
-Please have in mind that Brave is built with Profile Guided Optimizations and other optimizations which may change the code flow substantially, and even having all symbols the execution during debugger steps might look weird.
+Brave is built with Profile Guided Optimizations enabled, which may change the code flow substantially, and even having all symbols the execution during debugger steps might look weird. That's the sad reality of PGO builds.
