@@ -37,4 +37,4 @@ Visual Studio will download symbols and display the exact source location automa
 
 ### PGO and other optimizations notes
 
-Brave is built with Profile-guided optimizations enabled, which may change the code flow substantially, and even having all symbols the execution during debugger steps might look weird. That's the sad reality of PGO builds.
+Brave is built with [Profile-guided optimizations](https://clang.llvm.org/docs/UsersManual.html#profile-guided-optimization) enabled, which may change the code flow substantially, and even having all symbols the execution during debugger steps might look weird. That's the sad reality of PGO builds.
