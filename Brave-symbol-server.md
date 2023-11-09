@@ -11,7 +11,7 @@ To setup Visual Studio to use the symbol server you can either:
 ```
 set _NT_SYMBOL_PATH=SRV\*C:\symbols\*https://msdl.microsoft.com/download/symbols;SRV\*C:\symbols\*https://brave-symbols.s3.brave.com
 ```
-* or add `https://brave-symbols.s3.brave.com/` via Options dialog:
+* or add `https://brave-symbols.s3.brave.com` via Options dialog:
 ![image](https://github.com/brave/brave-browser/assets/5928869/8bbd3c98-02d7-4b2b-b4cf-d23d04353377)
 
 ### Using automatic source file downloads
