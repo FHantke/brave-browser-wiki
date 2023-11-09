@@ -1,10 +1,8 @@
 # Using Brave symbol server
 
-You can debug Windows release Brave builds or crashdumps using Visual Studio.
+Windows Brave release builds (arm64, x86, x64) upload PDBs and binary images to Brave symbol server. The symbol server is accessible via https://brave-symbols.s3.brave.com/.
 
-The Brave symbol server is located at https://brave-symbols.s3.brave.com/.
-
-To setup Visual Studio you can either:
+To setup Visual Studio to use the symbol server you can either:
 * set `_NT_SYMBOL_PATH` environment variable before running `devenv.exe`:
 ```
 set _NT_SYMBOL_PATH=SRV\*C:\symbols\*https://msdl.microsoft.com/download/symbols;SRV\*C:\symbols\*https://brave-symbols.s3.brave.com
