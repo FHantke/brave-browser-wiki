@@ -1010,6 +1010,20 @@ _`Brave.Core.NewTabMethods`_ **[A]**
 2. 50% -75% of total new tabs created using [+] button
 3. More than 75% of total new tabs created using [+] button
 
+### Q128: If you triggered the Rewards panel as a non-rewards user or a new Rewards user this week, did you enable Rewards?
+_`Brave.Rewards.MobileConversion`_ **[A]**
+
+0. No
+1. Yes
+
+### Q129: If you triggered the Rewards panel at least once as a Rewards user in the last 7 days, how many times did you trigger the panel?
+_`Brave.Rewards.MobilePanelCount`_ **[A]**
+
+0. 1-5
+1. 6-10
+2. 11-50
+3. 51+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
