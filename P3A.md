@@ -994,6 +994,22 @@ _`Brave.Extensions.AdBlock`_ **[D]**
 0. No
 1. Yes
 
+### Q126: In the past week, how often are address bar entries/queries performed in new tabs compared to existing tabs?
+_`Brave.Core.LocationNewEntries`_ **[A]**
+
+0. Less than 25% of total address bar entries performed in new tabs
+1. 25% -50% of total address bar entries performed in new tabs
+2. 50% -75% of total address bar entries performed in new tabs
+3. More than 75% of total address bar entries performed in new tabs
+
+### Q127: In the past week, when creating new tabs, how often do you use the [+] button compared to the tab switcher button?
+_`Brave.Core.NewTabMethods`_ **[A]**
+
+0. Less than 25% of total new tabs created using [+] button
+1. 25% -50% of total new tabs created using [+] button
+2. 50% -75% of total new tabs created using [+] button
+3. More than 75% of total new tabs created using [+] button
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
