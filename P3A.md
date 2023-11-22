@@ -140,7 +140,7 @@ _`Brave.P3A.SentAnswersCount`_ **[D]** **[A]**
 4. 10 or more
 
 ### Q19: How many times did you search last week?
-_`Brave.Omnibox.SearchCount`_ **[D]**
+_`Brave.Omnibox.SearchCount.3`_ **[D]**
 Note: we count only omnibox events that trigger a search.
 
 1. Never
