@@ -1024,6 +1024,11 @@ _`Brave.Rewards.MobilePanelCount`_ **[A]**
 2. 11-50
 3. 51+
 
+### Q130: Did you view the WebTorrent page at least once this week?
+_`Brave.WebTorrent.UsageWeekly`_ **[D]**
+
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
