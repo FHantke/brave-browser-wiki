@@ -4,7 +4,7 @@
 - [Current build schedule](#current-build-schedule)
 - [Release channel dates](#release-channel-dates)
     - [Number of days between each release on Release channel](#number-of-days-between-each-release-on-release-channel)
-- [Beta & Dev channel migration dates](#beta--dev-channel-migration-dates)
+- [Beta channel migration dates](#beta-channel-migration-dates)
 - [Nightly channel migration dates](#nightly-channel-migration-dates)
 - [Mobile platforms]()
     - [Android rollout process](#android-rollout-process)
@@ -26,10 +26,10 @@ Information about channel differences available in the [Release Channel Descript
 
 # Current channel information:
 
-| **Channel**     | Release |  Beta & Dev | Nightly|
-| ----------------| ------- | ------ | ------ |
-| **Milestone**   | 1.61.x  | 1.62.x    | 1.63.x |
-| **Branch name** | 1.61.x | 1.62.x    | master |
+| **Channel**     | Release |  Beta  | Nightly |
+| --------------- | ------- | ------ | ------- |
+| **Milestone**   | 1.61.x  | 1.62.x | 1.63.x  |
+| **Branch name** | 1.61.x  | 1.62.x | master  |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
@@ -41,7 +41,6 @@ The following is our automated schedule for creating and uploading builds to our
 |:-------:|:--------:|:---------------------:|:---------------------:|:---------------------:|
 | `Beta`| 4am UTC (8pm PST/11pm EST) | Monday, Wednesday, Friday | android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
 | `Beta`| 4am UTC (8pm PST/11pm EST) | Tuesday, Thursday | all | yes |
-| `Dev`| 8am UTC (12am PST/3am EST)| Saturday | linux-x64 linux-arm64 macos-x64 macos-arm64 windows-x64 windows-x86 windows-arm64 | yes |
 | `Nightly`| 12pm UTC (4am PST/7am EST)| Monday - Friday| all | yes |
 | `Nightly`| 4pm UTC (8am PST/11am EST)| Monday - Friday| android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
 | `Nightly`| 12am UTC (4pm PST/7pm EST)| Monday - Friday| android linux-x64 macos-x64 macos-arm64 windows-x64 | no |
@@ -96,7 +95,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.71.x - 1.72.x | 28 days                   |                                            |
 ---
 
-# Beta & Dev channel migration dates:
+# Beta channel migration dates:
 
 | Version | Target Chromium   | Migration Date      | Comments                                  |
 |:-------:|:-----------------:|---------------------|-------------------------------------------|
@@ -116,7 +115,6 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.73.x  | 132               | November 6, 2024    |                                           |
 
 - CI does builds for Beta channel happen twice a week.
-- CI builds for Dev channel happen once a day on weekdays.
 - Updates are released as there are builds as long as tests pass.
 
 ---
