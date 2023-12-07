@@ -871,14 +871,16 @@ _`Brave.VerticalTabs.GroupTabs`_ **[D]**
 2. 6+
 
 ### Q109: Do you have Leo enabled?
-_`Brave.AIChat.Enabled`_ **[D]** **[A]**
+_`Brave.AIChat.Enabled.2`_ **[D]** **[A]**
 
-1. Yes
+1. Yes, as a free user
+2. Yes, as a premium user
 
 ### Q110: Did you use Leo in the past day?
-_`Brave.AIChat.UsageDaily`_ **[D]** **[A]**
+_`Brave.AIChat.UsageDaily.2`_ **[D]** **[A]**
 
-1. Yes
+1. Yes, as a free user
+2. Yes, as a premium user
 
 ### Q111: If you used Leo in the past week, how many chats did you engage in during the period?
 _`Brave.AIChat.ChatCount`_ **[D]** **[A]**
