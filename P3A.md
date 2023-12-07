@@ -1031,6 +1031,36 @@ _`Brave.WebTorrent.UsageWeekly`_ **[D]**
 
 1. Yes
 
+### Q131: How many times have you been presented the Request-OTR interstitial in the past month?
+_`Brave.RequestOTR.InterstitialShown`_ **[D]**
+
+0) 0
+1) 1
+2) 2
+3) 3-5
+4) 6-10
+5) 11+
+
+### Q132: How many times has the user opted into Request-OTR mode on a site in the past month?
+_`Brave.RequestOTR.SessionCount`_ **[D]**
+
+0) 0
+1) 1
+2) 2
+3) 3-5
+4) 6-10
+5) 11+
+
+### Q133: If Request-OTR interstitial was shown at least once in the past month, how long did the user view the page, on average?
+_`Brave.RequestOTR.InterstitialDuration`_ **[D]**
+
+0) Less than or equal to 5 seconds
+1) Greater than 5, but less than or equal to 10 seconds
+2) Greater than 10, but less than or equal to 15 seconds
+3) Greater than 15, but less than or equal to 30 seconds
+4) Greater than 30, but less than or equal to 60 seconds
+5) Greater than 60 sec
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
