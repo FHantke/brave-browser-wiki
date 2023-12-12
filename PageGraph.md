@@ -2,7 +2,7 @@ PageGraph is a research project developed by Brave to instrument Brave browser, 
 
 PageGraph is included in all builds of Brave starting with version 1.46, though enabling it requires passing some command line arguments. The easiest way to run PageGraph is to use [`pagegraph-crawl`](https://github.com/brave-experiments/pagegraph-crawl/) tools and scripts, which automate enabling PageGraph in Brave, launching Brave, and recording the resulting graph files.
 
-*Note* that recording builtin JS APIs requires [nightly Brave builds](https://brave.com/download-nightly/). this choice is made to slightly optimize the performance of the Beta and Stable builds that most Brave users use.
+*Note* that recording builtin JS APIs requires [nightly Brave builds](https://brave.com/download-nightly/). This choice is made to slightly optimize the performance of the Beta and Stable builds that most Brave users use. A list of which Web APIs are instrumented can be found in [python interface.py](https://github.com/brave/brave-core/blob/master/chromium_src/third_party/blink/renderer/bindings/scripts/bind_gen/interface.py#L32) file which controls, at build time, which APIs are instrumented. You can instrument additional APIs by indicating additional APIs in this file, and rebuilding Brave.
 
 PageGraph's name comes from the graph-based representation of the document's execution it builds in memory.  Every relevant event in the document (a node being created, a network request being triggered, a script being executed, etc.) is recorded in the graph, noting both the relevant event, and the event's cause.
 
