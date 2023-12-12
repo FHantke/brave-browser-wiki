@@ -1061,6 +1061,12 @@ _`Brave.RequestOTR.InterstitialDuration`_ **[D]**
 4) Greater than 30, but less than or equal to 60 seconds
 5) Greater than 60 sec
 
+### Q134: Did you use Leo this month?
+_`Brave.AIChat.UsageMonthly`_ **[D]**
+
+1. Yes, as a free user
+2. Yes, as a premium user
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
