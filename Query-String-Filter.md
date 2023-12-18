@@ -19,6 +19,12 @@ All issues related to this feature are tagged with the [privacy/query-filter lab
 
 The current list of parameters we filter can be seen in the [`query_filter` component](https://github.com/brave/brave-core/blob/master/components/query_filter/utils.cc#L21).
 
+There are three types of rules:
+
+- simple: the parameter name is removed from any URL (case-sensitive)
+- conditional: the parameter name is removed only if the given *regular expression* does **not** match the URL
+- scoped: the parameter name is only removed if the URL's *base domain* matches the given domain
+
 ### QA
 
 There is a test page at <https://fmarier.github.io/brave-testing/query-filter.html>.
