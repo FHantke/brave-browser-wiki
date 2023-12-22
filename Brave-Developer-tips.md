@@ -67,9 +67,6 @@ On Linux, we run upstream tests as well in CI which might sometimes fail and nee
 npm run test -- unit_tests --filter=whatever
 ```
 
-## Speeding up builds
-Add `--use_goma` to `npm run build` commands to use GOMA to speed up your builds.
-
 ## Build failing and don't know what to do?
 
 First try updating everything:
