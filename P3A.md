@@ -69,6 +69,7 @@ _`Brave.Core.WindowCount.2`_ **[D]**
 
 ### Q7: How many open tabs do you have?
 _`Brave.Core.TabCount`_ **[D]** **[A]** **[iOS]**
+
 0. 1
 1. 2-5
 2. 6-10
