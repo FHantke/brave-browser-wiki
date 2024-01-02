@@ -69,11 +69,11 @@ _`Brave.Core.WindowCount.2`_ **[D]**
 
 ### Q7: How many open tabs do you have?
 _`Brave.Core.TabCount`_ **[D]** **[A]** **[iOS]**
-1. 0-1
-2. 2-5
-3. 6-10
-4. 11-50
-5. 50+
+0. 0-1
+1. 2-5
+2. 6-10
+3. 11-50
+4. 50+
 
 ### Q8: What has been your interaction with the shields icon?
 _`Brave.Shields.UsageStatus`_ **[D]**
