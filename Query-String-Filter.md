@@ -23,7 +23,7 @@ There are three types of rules:
 
 - simple: the parameter name is removed from any URL (case-sensitive)
 - conditional: the parameter name is removed only if the given *regular expression* does **not** match the URL
-- scoped: the parameter name is only removed if the URL's *base domain* matches the given domain
+- scoped: the parameter name is only removed if the URL's *base domain* matches one of the given domains
 
 ### QA
 
