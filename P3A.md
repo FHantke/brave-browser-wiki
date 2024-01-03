@@ -93,7 +93,7 @@ _`Brave.Core.LastTimeIncognitoUsed`_ **[D]**
 5. Never used
 
 ### Q10: Have you ever used a Tor private window?
-_`Brave.Core.TorEverUsed`_ **[D]**
+_`Brave.Core.TorEverUsed`_ **[D]** [[broken]](https://github.com/brave/brave-browser/issues/35111)
 1. Yes
 2. No
 
