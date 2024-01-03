@@ -94,8 +94,8 @@ _`Brave.Core.LastTimeIncognitoUsed`_ **[D]**
 
 ### Q10: Have you ever used a Tor private window?
 _`Brave.Core.TorEverUsed`_ **[D]** [[broken]](https://github.com/brave/brave-browser/issues/35111)
-1. Yes
-2. No
+0. Yes
+1. No
 
 ### Q11: What is the state of your Brave Rewards wallet? 
 _`Brave.Rewards.WalletState`_ **[D]** (ANDROID?)
