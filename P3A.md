@@ -1069,6 +1069,29 @@ _`Brave.AIChat.UsageMonthly`_ **[D]**
 1. Yes, as a free user
 2. Yes, as a premium user
 
+### Q135: Did you use Leo this week?
+_`Brave.AIChat.UsageWeekly`_ **[D]**
+
+1. Yes, as a free user
+2. Yes, as a premium user
+
+### Q136: As a first time user of Brave Leo this week, did I return again to use it during the first 7 day period?
+_`Brave.AIChat.NewUserReturning`_ **[D]**
+
+0. I have never used the feature
+1. I have used the feature, but I'm not a first time feature user this week
+2. I'm a first time feature user this week but, no, I did not return the rest of the week
+3. I'm a first time feature this week and, yes, I returned and used it again the following day
+4. I'm a first time feature user this week and, yes, I returned and used it again this week but not the following day
+
+### Q137: As an opted in Brave Leo user, when was the last time I used Brave Leo? (reported monthly)
+_`Brave.AIChat.LastUsageTime`_ **[D]**
+
+1. Within the last 6 days
+2. 7 - 13 days ago
+3. 14 - 20 days ago
+4. 21 - 30 days ago
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
