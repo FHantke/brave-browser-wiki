@@ -243,7 +243,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q28: On the New Tab Page, did you click the Customize Settings icon?
 
-`Brave.NTP.CustomizeUsageStatus` **[D]**
+`Brave.NTP.CustomizeUsageStatus.2` **[D]**
 
 0. No
 1. Yes, but I didn't make any changes
