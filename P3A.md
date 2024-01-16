@@ -1092,6 +1092,23 @@ _`Brave.AIChat.LastUsageTime`_ **[D]**
 3. 14 - 20 days ago
 4. 21 - 30 days ago
 
+### Q138: If you are Rewards user who opened the Rewards panel in the past week, how many times did you open it? (desktop only)
+_`Brave.Rewards.DesktopPanelCount`_ **[D]**
+
+0. 1-5
+1. 6-10
+2. 11-50
+3. 50+
+
+### Q139: If you are Rewards user who opened the Rewards page in the past month, how many times did you open it?
+_`Brave.Rewards.PageViewCount`_ **[D]** **[A]**
+
+0. 1-2
+1. 3-5
+2. 6-10
+3. 11-50
+4. 51+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
