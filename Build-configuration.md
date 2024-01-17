@@ -66,12 +66,6 @@ A number of build parameters are passed via a `.env` configuration file in the `
   * zebpay_sandbox_client_secret
   * zebpay_sandbox_oauth_url
   * brave_p3a_enabled true
-  * p3a_json_upload_url
-  * p3a_creative_upload_url
-  * p2a_json_upload_url
-  * p3a_constellation_upload_host
-  * p3a_constellation_upload_url 
-  * star_randomness_host
 * Android
   * brave_android_developer_options_code
   * brave_android_key_password
