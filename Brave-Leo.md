@@ -1,21 +1,32 @@
+Wiki page for Brave Leo
+https://github.com/brave/brave-browser/wiki/Brave-Leo
+
 # What is Brave Leo?
+Brave Leo is a private AI smart assistant that enhances your use of the Internet. 
 
-Brave Leo is a chat assistant hosted by Brave without the use of third-party AI services, available to Brave users on the desktop Nightly channel. The model behind Leo is Llama 2, [a source-available large language model released by Meta](https://about.fb.com/news/2023/07/llama-2/) with a special focus on safety. We’ve made sure that user inputs are always submitted anonymously through a [reverse-proxy](https://en.wikipedia.org/wiki/Reverse_proxy) to our inference infrastructure. In this way, Brave can offer an AI experience with unparalleled privacy.
+Ask Leo to summarize a webpage you’re viewing. Or ask questions about the page, and get answers, clarifications, and other viewpoints. Brave Leo can also create content, translate between different languages, and transcribe audio and video. It can even have back-and-forth conversations.
 
-We’ve specifically tuned the model prompt to adhere to Brave's core values. However, as with any other LLM, the outputs of the model should be treated with care for potential inaccuracies or errors.
-How to try Leo and share feedback
-Leo is available today for all users of the Brave browser desktop Nightly channel. Nightly desktop users can access Leo via the  button in Brave Sidebar.
+Leo is free to use with limited access. Brave Leo Premium offers more models, higher limits and gives subscribers early access to new features. 
 
-Are you a Brave Nightly user? Please tell us what you think of Leo! Just click the [link](https://community.brave.com/c/new-feature-feedback/141) to share feedback.
+### How to try Leo and share feedback
+Leo is available today for all users of the Brave browser desktop channel. You can access Leo via the URL address bar when entering a prompt or via the Leo button in the browser Sidebar.
 
-### A note on anonymity
-Leo is free to use for any desktop Nightly user, and no user login or account is required. Chats in Leo cannot be used for training purposes, and no one can review those conversations, as they're not persisted on Brave’s servers—conversations are discarded immediately after the reply is generated. For this reason, there's no way to review past conversations or delete that data—it isn't stored in the first place.
+### Response accuracy
+The accuracy of responses is not guaranteed, and may include inaccurate, misleading, or false information. Leo uses data from Brave Search to improve response quality. Don't submit sensitive or private info, and use caution with any answers related to health, finance, personal safety, or similar. 
 
-### What data does the Brave browser send?
-If you use Leo, the browser shares with the server your latest query, your ongoing conversation history and, when the use case calls for it, only the necessary context from the page you're actively viewing (e.g. the article’s text, or the youtube video transcript).
+We recommend double-checking any Leo responses for accuracy. Please also provide feedback to us if you see anything concerning. To do so, click the menu next to Leo’s response and select the best option. 
 
+### Privacy protections
+Leo is free to use and no user login or account is required. Leo does not collect identifiers such as your IP Address that can be linked to you. No personal data is retained by the AI model or any 3rd-party model providers. 
+
+Brave browser shares with the server your latest query, the context of your current conversation and, when the use case calls for it, the necessary context from the page you’re viewing (e.g. an article’s text, or a YouTube video’s transcript). Note that once a chat is closed all record of it is erased.
+
+See the privacy policy for more information. 
+
+### Are my conversations used for model training?
+No. Your conversations are not persisted and they are discarded immediately after a response has been generated.
 ### How can I get better results out of Leo?
-As with any AI, the more specific you are with your prompts and context, the better the results Leo can provide. Remember to give Leo clear, detailed instructions and, if you don't get exactly the answer you're looking for, to try wording your query/prompt a different way.
+As with any AI, the more specific you are with your prompts and context, the better the results Leo can provide. Remember to give Leo clear, detailed instructions and, if you don't get exactly the answer you're looking for, try wording your query/prompt a different way.
 
 ### Does Leo have access to live information?
 For now, Leo does not have access to live info. However, in future releases we do plan to offer a version of Leo with some level of access to current information. This will be powered by our very own [Brave Search](https://brave.com/search/).
@@ -25,4 +36,6 @@ In addition to incorporating live info, we’ll be making improvements to Leo’
 
 # Versions
 
+* 0.2 - MVP
 * 0.1 - Llama 2.0, no additional fine-tuning
+
