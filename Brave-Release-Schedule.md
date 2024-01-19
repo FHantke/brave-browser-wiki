@@ -56,7 +56,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.60.x  |    119   | October 25, 2023    | November 2, 2023    | Release delayed. Originally scheduled to release on `October 31, 2023`. |
 | 1.60.x  |    119   | N/A                 | November 15, 2023   | Maintenance Release                        |
 | 1.61.x  |    120   | November 29, 2023   | December 6, 2023    | Release delayed. Originally scheduled to release on `December 5, 2023`. |
-| 1.62.x  |    121   | January 17, 2024    | January 23, 2024    |                                            |
+| 1.62.x  |    121   | January 17, 2024    | January 25, 2024    | Release delayed. Originally scheduled to release on `January 23, 2024`. |                                  
 | 1.63.x  |    122   | February 14, 2024   | February 20, 2024   |                                            |
 | 1.64.x  |    123   | March 13, 2024      | March 19, 2024      |                                            |
 | 1.65.x  |    124   | April 10, 2024      | April 16, 2024      |                                            |
