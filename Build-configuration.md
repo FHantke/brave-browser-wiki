@@ -19,6 +19,7 @@ A number of build parameters are passed via a `.env` configuration file in the `
   * brave_pref_hash_seed
   * brave_referrals_api_key
   * brave_services_key
+  * brave_services_key_id
   * brave_stats_api_key
   * brave_stats_updater_url
   * brave_sync_endpoint
@@ -45,6 +46,7 @@ A number of build parameters are passed via a `.env` configuration file in the `
   * safebrowsing_api_endpoint
   * sardine_client_id
   * sardine_client_secret
+  * service_key_aichat
   * updater_dev_endpoint
   * updater_prod_endpoint
   * uphold_production_api_url
