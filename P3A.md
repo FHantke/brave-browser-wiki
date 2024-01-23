@@ -1092,7 +1092,7 @@ _`Brave.AIChat.LastUsageTime`_ **[D]**
 3. 14 - 20 days ago
 4. 21 - 30 days ago
 
-### Q138: If you are Rewards user who opened the Rewards panel in the past week, how many times did you open it? (desktop only)
+### Q138: If you are Rewards user who opened the Rewards panel in the past week, how many times did you open it?
 _`Brave.Rewards.DesktopPanelCount`_ **[D]**
 
 0. 1-5
@@ -1108,6 +1108,11 @@ _`Brave.Rewards.PageViewCount`_ **[D]** **[A]**
 2. 6-10
 3. 11-50
 4. 51+
+
+### Q140: What is your primary language? (reported via STAR/Constellation only)
+_`Brave.Core.PrimaryLang`_ **[D]** **[A]**
+
+See https://github.com/brave/brave-core/blob/a317944ed75cc746f101aaeaf81b2fa416ef863f/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
 
 ## Metrics Proposed/Under Development
 
