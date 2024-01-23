@@ -26,7 +26,7 @@ Git is included in `depot_tools`. At the moment, there are known issues calling 
 
 ## Node
 
-Install the Node.js active LTS (v18+) from https://nodejs.org/.
+Install the Node.js active LTS (v20+) from https://nodejs.org/.
 
 ## Python
 
