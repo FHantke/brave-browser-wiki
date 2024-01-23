@@ -2,12 +2,12 @@
 
 You will need the prerequisites below to build Brave on macOS 10.15+.
 
-macOS SDK 13.0 is needed as per https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43. This is bundled with Xcode 14.1 for example as per https://xcodereleases.com
+macOS SDK 14.0 is needed as per https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43. This is bundled with Xcode 15.0 for example as per https://xcodereleases.com
 
 There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements):
 
-- Node.js active LTS version (v18) - `brew install node` or can also use `nvm`. If `node --version` fails when installing `node@18` through Homebrew or reports a different version, run `brew link --force --overwrite node`
-- npm - v8+ (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)). npm is automatically installed if you install NodeJS through Homebrew. If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
+- Node.js active LTS version (v20) - `brew install node` or can also use `nvm`. If `node --version` fails when installing `node@20` through Homebrew or reports a different version, run `brew link --force --overwrite node`
+- npm - v10+ (or [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)). npm is automatically installed if you install NodeJS through Homebrew. If you'd like to use `yarn` instead of `npm` you can use `yarn import` to create a `yarn.lock` file from our `package-lock.json`.
 - Python - 2.7 and 3+ - **Note:** On macOS 12.3 and higher Python 2.7 is no longer included by default and you will have to [install it manually](https://www.python.org/downloads/release/python-2718/)
 
 # Other tips
