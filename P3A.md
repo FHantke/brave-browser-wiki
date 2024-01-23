@@ -1112,7 +1112,7 @@ _`Brave.Rewards.PageViewCount`_ **[D]** **[A]**
 ### Q140: What is your primary language? (reported via STAR/Constellation only)
 _`Brave.Core.PrimaryLang`_ **[D]** **[A]**
 
-See https://github.com/brave/brave-core/blob/a317944ed75cc746f101aaeaf81b2fa416ef863f/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
+See https://github.com/brave/brave-core/blob/master/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
 
 ## Metrics Proposed/Under Development
 
