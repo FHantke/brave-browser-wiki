@@ -575,7 +575,7 @@ _`Brave.Wallet.EthProvider.4`_ and _`Brave.Wallet.SolProvider.2`_ **[D]**
 5. Third-party extension (overriding a setup Brave Wallet; setting is "Extensions (Brave Wallet fallback)")
 
 ### Q71. How many pages did you load in the past week?
-_`Brave.Core.PagesLoaded`_ **[D]** **[A]** **[iOS]**
+_`Brave.Core.PagesLoaded.2`_ **[D]** **[A]** **[iOS]**
 
 0. 0 pages
 1. 1-10
@@ -1115,10 +1115,21 @@ _`Brave.Core.PrimaryLang`_ **[D]** **[A]**
 See https://github.com/brave/brave-core/blob/master/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
 
 ### Q141: Do you have a payment method saved in your autofill settings?
-`Brave.Autofill.PaymentMethodPresent`
+`Brave.Autofill.PaymentMethodPresent` **[D]** **[A]**
 
 0. No
 1. Yes
+
+### Q142: How many pages did you reload in the past week?
+`Brave.Core.PagesReloaded` **[D]** **[A]**
+
+0. 0 pages
+1. 1-10
+2. 11-50
+3. 51-100
+4. 101-500
+5. 501-1000
+6. Greater than 1000 pages
 
 ## Metrics Proposed/Under Development
 
