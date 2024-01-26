@@ -1114,6 +1114,12 @@ _`Brave.Core.PrimaryLang`_ **[D]** **[A]**
 
 See https://github.com/brave/brave-core/blob/master/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
 
+### Q141: Do you have a payment method saved in your autofill settings?
+`Brave.Autofill.PaymentMethodPresent`
+
+0. No
+1. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
