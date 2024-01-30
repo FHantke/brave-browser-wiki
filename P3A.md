@@ -707,7 +707,7 @@ _`Brave.Rewards.TipsSent.2`_ **[D]** **[A]**
 3) 4+ tips
 
 ### Q86. If you are opted into sync, how many objects are synced?
-_`Brave.Sync.SyncedObjectsCount`_ **[D]** **[A]**
+_`Brave.Sync.SyncedObjectsCount.2`_ **[D]** **[A]**
 
 0) 0 - 1000
 1) 1001 - 10000
