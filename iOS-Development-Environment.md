@@ -2,11 +2,11 @@
 
 1. First follow the [macOS Development Environment](https://github.com/brave/brave-browser/wiki/macOS-Development-Environment) prerequisites.
 
-2. If you haven't already cloned brave-core, please follow the instructions in [brave-browser's README](https://github.com/brave/brave-browser/README.md) to do so. Note: After cloning and running init you may need to have `depot_tools` in your PATH (e.g. `$ export PATH="$PATH:/path/to/src/brave/vendor/depot_tools"`)
+2. If you haven't already cloned brave-core, please follow the instructions in [brave-browser's README](https://github.com/brave/brave-browser/blob/master/README.md) to do so. Note: After cloning and running init you may need to have `depot_tools` in your PATH (e.g. `$ export PATH="$PATH:/path/to/src/brave/vendor/depot_tools"`)
 
 3. Run `src/brave/ios/brave-ios/scripts/bootstrap.sh` at least once prior to your first build. This will ensure Xcode can load `Package.swift` correctly on first build.
 
-4. Optional: If you have installed `node`/`npm` via `nvm`, please ensure you have a symlink to the required version of npm found in the macOS Development Environment doc above in the standard `/usr/local/bin` directory (e.g. `$ sudo ln -s $(which node) /usr/local/bin/` and `$ sudo ln -s $(which npm) /usr/local/bin/`. This is due to Xcode's build system not having insight into shell's `PATH`.
+4. Optional: If you have installed `node`/`npm` via `nvm`, please ensure you have a symlink to the required version of npm found in the macOS Development Environment doc above in the standard `/usr/local/bin` directory (e.g. `$ sudo ln -s $(which node) /usr/local/bin/` and `$ sudo ln -s $(which npm) /usr/local/bin/`.) This is due to Xcode's build system not having insight into shell's `PATH`.
 
 Note:
 
