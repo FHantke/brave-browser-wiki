@@ -192,14 +192,14 @@ Before handing off a build to QA, please test the following functionality:
 - Ensure that tabs have the expected shape (it's slightly different from Chrome)
 - Ensure that videos play properly on YouTube and that the media device toolbar button works correctly
 - Ensure that tab-muting works properly
-- Ensure that vertical tabs work as expected (must first enable this via `brave://settings`)
+- Ensure that vertical tabs work as expected (enable by right-clicking any tab and selecting "Use vertical tabs")
 - Ensure that enabling Rewards works properly
 - Ensure that all elements of the sidebar panel work as expected
 - Ensure that creating and using multiple profiles works as expected
 - Ensure that creating and using a Guest profile works as expected (reached via Hamburger -> More tools -> Open Guest profile)
 - Ensure that private and Tor windows work as expected
 - Ensure that a few different web sites load as expected
-- Ensure that DevTools works as expected
+- Ensure that DevTools loads correctly and works as expected
 
 ## QA Builds
 
