@@ -36,3 +36,7 @@ Breakpoints should work like normal across both brave-core and brave-ios codebas
 ### Build Acceleration
 
 Internal developers can find more information on remote build execution [here](https://github.com/brave/devops/wiki/Remote-Build-Execution)
+
+### Build Configuration
+
+Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
