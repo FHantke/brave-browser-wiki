@@ -1,6 +1,3 @@
-Wiki page for Brave Leo
-https://github.com/brave/brave-browser/wiki/Brave-Leo
-
 # What is Brave Leo?
 Brave Leo is a private AI smart assistant that enhances your use of the Internet. 
 
