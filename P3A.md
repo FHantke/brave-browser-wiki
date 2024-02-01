@@ -1131,6 +1131,18 @@ See https://github.com/brave/brave-core/blob/master/components/misc_metrics/lang
 5. 501-1000
 6. Greater than 1000 pages
 
+### Q143: If you have a custom position configured for ads notifications, what area is it in?
+_`Brave.Rewards.CustomNotificationPosition`_  **[D]**
+
+1. Top left
+2. Top center
+3. Top right
+4. Center left
+5. Center right
+6. Bottom left
+7. Bottom center
+8. Bottom right
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
