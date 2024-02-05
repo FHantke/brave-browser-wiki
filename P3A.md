@@ -1143,6 +1143,13 @@ _`Brave.Rewards.CustomNotificationPosition`_  **[D]**
 7. Bottom center
 8. Bottom right
 
+### Q144: Is it likely that you have made Brave the default browser on iOS?
+_`Brave.IOS.IsLikelyDefault`_ **[iOS]**
+
+0. Not enough information
+1. No
+2. Yes
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
