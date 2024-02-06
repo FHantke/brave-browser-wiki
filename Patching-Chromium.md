@@ -168,17 +168,17 @@ After that just create the new class via `new ...` where the old class created.
 
 ## Patching `py` files
 
-Python files should use [`import_inline`](https://github.com/brave/brave-core/blob/master/script/import_inline.py) calls to inject content from files located in `brave/chromium_src`. Inlined files may modify original logic by overriding functions and variables with helpers from [`override_utils`](https://github.com/brave/brave-core/blob/master/script/override_utils.py).
+Python files should use [`brave_chromium_utils`](https://github.com/brave/brave-core/blob/master/script/brave_chromium_utils.py) calls to inject content from files located in `brave/chromium_src`. Inlined files may modify original logic by overriding functions and variables with helpers from [`override_utils`](https://github.com/brave/brave-core/blob/master/script/override_utils.py).
 
 If a patched file has `if __name__ == '__main__'` line, then you should inline `brave/chromium_src/...` file right before it:
 ```
-from import_inline import inline_file_from_src; inline_file_from_src("brave/chromium_src/tools/symsrc/source_index.py", globals(), locals())
+from brave_chromium_utils import inline_chromium_src_override; inline_chromium_src_override(globals(), locals())
 if __name__ == '__main__':
   sys.exit(main())
 ```
 otherwise the inline call should be the last line in the file.
 
-You can fully replace functions/variables/classes in the inlined file, but if you need to modify input args or slightly change the behavior of the original function, you can use `override_utils` helpers:
+You can fully replace functions/variables/classes in the inlined file with a help of `override_utils` helpers. These helpers will fail if an object to override is not found which allow us to detect failures very early in the build.
 ```
 # Example of a global function override.
 @override_utils.override_function(globals())
@@ -199,6 +199,6 @@ def _TearDownEnvironment(self, original_method):
   original_method(self)
 ```
 
-Nice thing about `override_utils` is that all helpers will fail if an object to override is not found. This helps find issues on early stages, so you should use `override_utils` even if you're doing a full function replacement.
+
 
 To look for other examples just search for helper names from `override_utils` across codebase.
