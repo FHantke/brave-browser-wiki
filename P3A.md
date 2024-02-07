@@ -50,7 +50,7 @@ _`Brave.Importer.ImporterSource.2`_ **[D]**
 6. Imported from Safari (answer only possible on macOS)
 
 ### Q5: How many bookmarks do you have?
-_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]** **[A]** **[iOS]**
+_`Brave.Core.BookmarksCountOnProfileLoad.2`_ **[D]** **[iOS]**
 1. 0-5
 2. 6-20
 3. 21-100
