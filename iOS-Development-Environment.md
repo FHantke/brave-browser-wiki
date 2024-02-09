@@ -27,7 +27,7 @@ You can then use this scheme locally as you need, but keep in mind to use the De
 
 ### Debugging
 
-Breakpoints should work like normal across both brave-core and brave-ios codebases as long as you ran the initial bootstrap script in the prerequisites list which will create an `LLDBInit` file to fix debug source mapping.
+Breakpoints should work like normal across both brave-core and brave-ios codebases. The `ios_bootstrap` script (which runs automatically as part of `sync`) will create an `LLDBInit` file to fix debug source mapping when build acceleration is enabled.
 
 ### Build Acceleration
 
