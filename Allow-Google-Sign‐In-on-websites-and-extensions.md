@@ -1,11 +1,10 @@
-## Legacy Google Sign-In
+### Legacy Google Sign-In
 
-Some websites still use [legacy Google Sign-In](https://developers.google.com/identity/sign-in/web/sign-in) which requires the use of privacy-harmful 3rd party cookies. [Brave blocks third-party cookies by default](https://brave.com/glossary/cookie/#how-can-i-prevent-cookies-from-being-used-to-track-me), but if you try to login to a (increasingly rare)website that still requires 3rd party cookies for Google Sign-In, Brave will shows a permission prompt.
+Some websites still use [legacy Google Sign-In](https://developers.google.com/identity/sign-in/web/sign-in) which requires the use of privacy-harmful 3rd party cookies. [Brave blocks third-party cookies by default](https://brave.com/glossary/cookie/#how-can-i-prevent-cookies-from-being-used-to-track-me), but if you try to login to a (increasingly rare) website that still requires 3rd party cookies for Google Sign-In, Brave will show a permission prompt. See our [blog post](https://brave.com/privacy-updates/24-google-sign-in-permission/) for more details on this feature.
 
 <img width="635" alt="image" src="https://github.com/brave/brave-browser/assets/5284154/a6372669-95bf-4510-b9d6-ad92852ec1d5">
 
-
-## Extensions
+### Extensions
 
 If you navigate to `brave://settings/extensions` on Desktop, you will see an option to enable `Allow Google login for extensions`.
 
