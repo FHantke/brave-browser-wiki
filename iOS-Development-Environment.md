@@ -36,3 +36,7 @@ Internal developers can find more information on remote build execution [here](h
 ### Build Configuration
 
 Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
+
+### Xcode Performance with built-in SCM:
+
+Xcode's Source Control feature seems to track changes even in parent git repositories, which means it tracks Chromium's src git repo as well which is very slow. While you can keep the Xcode SCM feature _on_ if you'd like, if you do notice any lag while working within Xcode please turn off the `Text Editing: Show Source Control Changes` preference found in Xcode's preference window (⌘+,) > Source Control.
