@@ -28,8 +28,8 @@ Information about channel differences available in the [Release Channel Descript
 
 | **Channel**     | Release |  Beta  | Nightly |
 | --------------- | ------- | ------ | ------- |
-| **Milestone**   | 1.62.x  | 1.63.x    | 1.64.x |
-| **Branch name** | 1.62.x | 1.63.x    | master |
+| **Milestone**   | 1.63.x  | 1.64.x    | 1.65.x |
+| **Branch name** | 1.63.x | 1.64.x    | master |
 
 Note: These versions represent which channel our CI builds things on. It may not reflect exactly the version on release channel for example. This would happen if for example Release above said `0.58.x` and it was in RC but on our website we still offered `0.57.x`.
 
