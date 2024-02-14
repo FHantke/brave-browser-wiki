@@ -1150,6 +1150,54 @@ _`Brave.IOS.IsLikelyDefault`_ **[iOS]**
 1. No
 2. Yes
 
+### Q145: If you have used Brave News in the last week and clicked on at least one card, how many cards did you click on? (reported weekly, desktop & Android)
+_`Brave.Today.WeeklyTotalCardClicks`_ **[D]** **[A]**
+
+0. 1-2
+1. 3-5
+2. 6 -10
+3. 11-15
+4. 16-20
+5. 21-25
+6. 26+
+
+### Q146: If you have clicked on 5 or more cards in the last week, what is the average rank (depth) of the cards you clicked on in the For You/Following feeds? (reported weekly, desktop & Android)
+_`Brave.Today.ClickCardDepth`_ **[D]** **[A]**
+
+0. 1-3 cards deep
+1. 4 to 6 cards deep
+2. 7 to 10 cards deep
+3. 11 to 15 cards deep
+4. 16 to 20 cards deep
+5. 21+
+
+### Q147: If you are a monthly active user, how many channels are you subscribed to? (reported monthly, desktop & Android only)
+_`Brave.Today.ChannelCount`_ **[D]** **[A]**
+
+0. 0-1
+1. 2-4
+2. 5-7
+3. 8-10
+4. 11+
+
+### Q148: If you are a monthly active user, how many publishers are you subscribed to (excluding direct feeds)? (reported monthly, desktop & Android only)
+_`Brave.Today.PublisherCount`_ **[D]** **[A]**
+
+0. 0-1
+1. 2-4
+2. 5-7
+3. 8-10
+4. 11+
+
+### Q149: If you have used Brave News in the last week and you used the sidebar filter at least once, how many times have you used the sidebar filters? (reported weekly, desktop only)
+_`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
+
+0. 1
+1. 2-4
+2. 5-7
+3. 8-10
+4. 11+
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
