@@ -9,3 +9,4 @@ Users can find the setting by visiting `brave://settings/web3` and look for `Res
 **Note:**
 - Since 1.40 in addition to .crypto Brave also supports .x, .nft, .dao, .wallet, .blockchain and .bitcoin domains. 
 - Since 1.44 .zil is also supported
+- Since 1.63 .altimist, .anime, .klever, .manga, .polygon, .unstoppable, .pudgy are also supported.
