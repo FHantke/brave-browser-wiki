@@ -50,3 +50,15 @@ An experiment (think “group”) is a set of features and parameters that is en
 
 ## Features
 A feature is the underlying abstraction that links code on the client to studies from the variations service. It is Chromium’s implementation of [feature flags](https://en.wikipedia.org/wiki/Feature_toggle). A feature can have an arbitrary number of associated parameters in the form of key/value pairs.
+
+
+## How It Works
+**Windows:** Griffin studies can be applied on the first launch, but only when using the stub (online) executables/installers. For more information, see [Issue #34150](https://github.com/brave/brave-browser/issues/34150). When the standalone (offline) executables are used, Griffin studies will work, but not on the first launch; restarting the app is required.
+
+**Mac:** Griffin studies will work, but not on the first launch; restarting the app is required.
+
+**Linux:** Griffin studies will work, but not on the first launch; restarting the app is required.
+
+**Android:** Griffin studies can be applied on the first launch; a restart of the app is not required. For more information, see [PR #20244](https://github.com/brave/brave-core/pull/20244).
+
+**iOS:** Similar to Mac, Griffin studies will work, but not on the first launch; restarting the app is required. Available after version 1.63.
