@@ -61,4 +61,4 @@ A feature is the underlying abstraction that links code on the client to studies
 
 **Android:** Griffin studies can be applied on the first launch; a restart of the app is not required. For more information, see [PR #20244](https://github.com/brave/brave-core/pull/20244).
 
-**iOS:** Similar to Mac, Griffin studies will work, but not on the first launch; restarting the app is required. Available after version 1.63.
+**iOS:** Similar to Mac, Griffin studies will work, but not on the first launch; restarting the app is required. Available in version 1.63 or above.
