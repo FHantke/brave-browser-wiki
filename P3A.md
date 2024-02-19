@@ -602,8 +602,8 @@ _`Brave.Wallet.EthTransactionSent`_, _`Brave.Wallet.SolTransactionSent`_ and _`B
 0) No
 1) Yes
 
-### Q74. As an active ETH/SOL/FIL user (that currently has an active account, or previously has had one), how many accounts do you have with a non-zero balance?
-_`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Brave.Wallet.ActiveFilAccounts`_ [D] [A]
+### Q74. As an active ETH/SOL/FIL/BTC/ZEC user (that currently has an active account, or previously has had one), how many accounts do you have with a non-zero balance?
+_`Brave.Wallet.ActiveEthAccounts`_, _`Brave.Wallet.ActiveSolAccounts`_ and _`Brave.Wallet.ActiveFilAccounts`_, _`Brave.Wallet.ActiveBtcAccounts`_, _`Brave.Wallet.ActiveZecAccounts`_ [D] [A]
 
 0) 0 accounts
 1) 1 account
