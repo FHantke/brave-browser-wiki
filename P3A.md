@@ -1064,19 +1064,19 @@ _`Brave.RequestOTR.InterstitialDuration`_ **[D]**
 5) Greater than 60 sec
 
 ### Q134: Did you use Leo this month?
-_`Brave.AIChat.UsageMonthly`_ **[D]**
+_`Brave.AIChat.UsageMonthly`_ **[D]** **[A]**
 
 1. Yes, as a free user
 2. Yes, as a premium user
 
 ### Q135: Did you use Leo this week?
-_`Brave.AIChat.UsageWeekly`_ **[D]**
+_`Brave.AIChat.UsageWeekly`_ **[D]** **[A]**
 
 1. Yes, as a free user
 2. Yes, as a premium user
 
 ### Q136: As a first time user of Brave Leo this week, did I return again to use it during the first 7 day period?
-_`Brave.AIChat.NewUserReturning`_ **[D]**
+_`Brave.AIChat.NewUserReturning`_ **[D]** **[A]**
 
 0. I have never used the feature
 1. I have used the feature, but I'm not a first time feature user this week
@@ -1085,7 +1085,7 @@ _`Brave.AIChat.NewUserReturning`_ **[D]**
 4. I'm a first time feature user this week and, yes, I returned and used it again this week but not the following day
 
 ### Q137: As an opted in Brave Leo user, when was the last time I used Brave Leo? (reported monthly)
-_`Brave.AIChat.LastUsageTime`_ **[D]**
+_`Brave.AIChat.LastUsageTime`_ **[D]** **[A]**
 
 1. Within the last 6 days
 2. 7 - 13 days ago
