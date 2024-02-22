@@ -211,7 +211,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q25: In the past week, what was the highest amount of New Tab Pages created in a day?
 
-`Brave.NTP.NewTabsCreated.2` **[D]** **[A]** **[iOS]**
+`Brave.NTP.NewTabsCreated.3` **[D]** **[A]** **[iOS]**
 
 0. 0 
 1. 1
@@ -231,7 +231,7 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q27: In the past week, on the day where you created the most tabs, how many of the New Tab Pages were sponsored?
 
-`Brave.NTP.SponsoredNewTabsCreated` **[D]** **[A]** **[iOS]**
+`Brave.NTP.SponsoredNewTabsCreated.2` **[D]** **[A]** **[iOS]**
 
 0. 0%
 1. &gt; 0% and < 10%
