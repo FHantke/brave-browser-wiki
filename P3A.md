@@ -6,6 +6,7 @@ The analytics reported are not exact numbers, but are collected into aggregate
 "buckets" or histograms. The process for this aggregation can also be verified [in
 the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a558b7e0aa7378bb1c1/components/p3a/brave_histogram_rewrite.cc#L24).
 
+General information about P3A can be found on [our support page](https://support.brave.com/hc/en-us/articles/9140465918093-What-is-P3A-in-Brave).
 
 ## Current Metrics
 
