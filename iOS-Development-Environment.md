@@ -18,12 +18,9 @@ Alternatively, if you'd like you can still build brave-core yourself using the s
 
 ### Building without brave-core
 
-If you are doing frontend only work or are making frequent small incremental fixes in the Xcode project only it may be annoying eating the cost of building core each time even when there are no changes. You can avoid this by:
+If you are doing frontend only work or are making frequent small incremental fixes in the Xcode project only it may be annoying eating the cost of building core each time even when there are no changes. You can avoid this by using the `Debug (No Core)` Xcode scheme. This scheme will only update the symlink based on your selected target device and run a webpack.
 
-1. Ensuring you have already built the Xcode project _at least once_ since last pulling master and running sync _using the standard Debug/Release scheme_. This will make sure BraveCore `xcframeworks` are prepared already and ready to use.
-2. Creating a duplicate Debug scheme that does not have a pre-action. (Expand "Build" in the scheme, select "Pre-Action", then tap the trash button on the run script phase).
-
-You can then use this scheme locally as you need, but keep in mind to use the Debug build often to keep everything in sync.
+You can also use this scheme if you want to apply custom arguments to the build like providing `--offline` or `--force_gn_gen`, but keep in mind that switching from simulator to device and vice-versa you will need to remember to run builds for that particular configuration manually. 
 
 ### Debugging
 
