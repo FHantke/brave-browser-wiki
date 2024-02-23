@@ -1198,6 +1198,13 @@ _`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
 3. 8-10
 4. 11+
 
+### Q150: If you filed a web compatibility report this week, how did you file it?
+
+`Brave.Webcompat.UISource` **[D]** **[A]**
+
+0. Via the Shields panel
+1. Via the app menu (desktop only)
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
