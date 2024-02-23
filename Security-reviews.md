@@ -15,6 +15,8 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 11. It modifies handling of URL protocols, including internal urls like brave:// (especially any rewriting of internals urls). 
 12. It has to do with a new window API. Please see https://docs.google.com/document/d/1BfJbLCvwToPqXHzsKqQgDuluwVDtGhzFR1BclqVzqaA/edit first.
 13. Adds any "content scripts" which run in the main world or an isolated world, AKA any scripts which interact with in-page JavaScript.
+14. It adds a new way of collecting data from A/B tests (not through Griffin or Crash Reports).
+15. It saves data on a user's device and later retrieves it for purposes that are not strictly necessary (such as analytics).
 
 If you are not sure whether you need a security review, you should probably ask for one just to play it safe.
 
