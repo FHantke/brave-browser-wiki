@@ -13,7 +13,7 @@
 
 # Overview 
 
-Currently published version numbers can be seen at https://brave-browser-downloads.s3.brave.com/
+Currently published version numbers can be seen at https://versions.brave.com/
 
 - Major Release frequency: ~3 weeks
 - Minor Chromium/Security releases: Every Tuesday (within ~24hrs after released) as per [Chromium schedule](https://security.googleblog.com/2023/08/an-update-on-chrome-security-updates.html). (however, these are tentative and subject to change)
