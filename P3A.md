@@ -8,6 +8,10 @@ the source code](https://github.com/brave/brave-core/blob/cbfc3c2abceabf14e3528a
 
 General information about P3A can be found on [our support page](https://support.brave.com/hc/en-us/articles/9140465918093-What-is-P3A-in-Brave).
 
+## Encoding Parameters
+
+Metric reports encoded using the [STAR protocol](https://brave.com/privacy-updates/19-star/) use an [aggregation threshold](https://github.com/brave/brave-core/blob/master/components/p3a/constellation_helper.cc#L30) of 50 for each layer.
+
 ## Current Metrics
 
 **[D]** = supported on Desktop ([merged and enabled in 1.1.x](https://github.com/brave/brave-core/pull/3242))
