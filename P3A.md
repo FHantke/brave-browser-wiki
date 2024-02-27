@@ -12,6 +12,8 @@ General information about P3A can be found on [our support page](https://support
 
 Metric reports encoded using the [STAR protocol](https://brave.com/privacy-updates/19-star/) use an [aggregation threshold](https://github.com/brave/brave-core/blob/master/components/p3a/constellation_helper.cc#L30) of 50 for each layer.
 
+Submission of STAR-encoded reports is controlled by the `BraveP3AConstellation` feature flag [added in 1.52](https://github.com/brave/brave-core/pull/14399) and enabled by default [in 1.62](https://github.com/brave/brave-core/pull/20264). Parallel submission of metrics without STAR is suppressed by the `BraveP3ATypicalJSONDeprecation` feature flag for weekly-cadence questions and `BraveP3AOtherJSONDeprecation` for others, [added in 1.62](https://github.com/brave/brave-core/pull/20788).
+
 ## Current Metrics
 
 **[D]** = supported on Desktop ([merged and enabled in 1.1.x](https://github.com/brave/brave-core/pull/3242))
