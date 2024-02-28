@@ -120,6 +120,7 @@ Build unit and browser tests as usual:
 Use the same commit practices as for fixing the main build.
 
 ***
+
 ***MIDL issue on Windows***
 
 When this message is visible during the build, check `src/third_party/win_build_output/` is changed. If not, it means our pre-generated files in `./src/brave/win_build_output/midl/google_update/` are not copied there. In this case, check `updateOmahaMidlFiles()` in `lib/util.js`. Make sure that `google_update` directory has two directory(x64, x86).
@@ -140,6 +141,7 @@ We should build some automation to find new things added here:
 https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=package:chromium&type=cs
 
 ## Check for changes in supported OS versions
+
 - [ ] For MacOS check `mac_deployment_target` and `mac_min_system_version` in `build/config/mac/mac_sdk.gni`
 - [ ] For iOS check `ios_deployment_target` in `build/config/ios/ios_sdk_overrides.gni`
 
@@ -153,6 +155,12 @@ in #security-discussion Slack channel.
 - [ ] Entitlements to enable new features specific to Chrome are added to `https://source.chromium.org/chromium/chromium/src/+/master:chrome/app/app-entitlements-chrome.plist`. Review the new entitlements for each CR bump when new features are added to Chrome. If a new entitlement is added, it most likely will result in the MacOS application failing to launch due to a signature error.
 
 - [ ] On Android, new permissions can be added in */AndroidManifest.xml or */AndroidManifest.xml.expected. Users often ask questions about new permissions on update. Any new permissions should be reviewed by the @android-team or @security-team before merge.
+
+## Check for dependency changes in upstream Rust crates
+
+If there are dependency changes in upstream Rust crates (see `third_party/rust/chromium_crates_io/Cargo.lock`), then we must update our dependencies to reflect this. This process currently involves copying all of Brave's Rust dependencies and associated third_party/cargo configuration changes to `src` and running `gnrt` from `src` to update everything.
+
+[This process is explained here](https://github.com/brave/brave-browser/wiki/Rust-code#updating-a-dependency), but it's best to have someone from the Rust team and/or `@rust-deps` perform this step for now.
 
 ## Update localizations
 
