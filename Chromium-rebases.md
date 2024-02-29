@@ -332,9 +332,13 @@ In order to test a delta update on Windows, do the following:
 
 ## Merge
 
-After QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toollkit/etc. changes required by the new Chromium version.
+After code review and QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toolkit/etc. changes required by the new Chromium version.
 
-After merging to `master` create uplifts as appropriate.
+After merging to `master` create uplift PRs as appropriate.
+
+## Follow-up work
+
+Sometimes during the review process, reviewers will request follow-up issues to resolve problems that are important but shouldn't block review. [We track those issues here](https://github.com/brave/brave-browser/issues?q=is%3Aissue+is%3Aopen+label%3Achromium%2Ffollowup), using the GitHub tag `Chromium/Followup`. When entering a new follow-up issue, please use that tag and prefix the issue title with the major Chromium version where the follow-up work was requested.
 
 ## Minor bumps
 
