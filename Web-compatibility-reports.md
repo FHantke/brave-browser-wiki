@@ -11,7 +11,7 @@ The following is a list of data that Brave collects from user-submitted Web Comp
 - **Fingerprint blocking setting:** The configured level of the fingerprint blocking at the time of the report.
 - **Enabled ad-block lists:** This identifies which ad-block lists the user has activated.
 - **User-configured languages:** The languages that a user had configured in their browser settings near the time of the issue.
-- **Language farbling status:** A privacy-enhancing feature that randomizes the output of certain JavaScript API’s to thwart fingerprinting attempts.
+- **Language farbling status:** Whether or not the "language farbling" privacy-enhancing feature was enabled at the time of the report.
 - **Brave VPN connection status (if any):** If the user was connected to the Brave VPN at the time, if the user is a subscriber to Brave VPN.
 
 In addition to this, the user may choose to provide the following optional details:
