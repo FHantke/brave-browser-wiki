@@ -115,7 +115,7 @@ _Google does not receive any information about which client is performing these 
 - The Battery API always [returns a fixed value](https://github.com/brave/brave-core/pull/567).
 - Cookies are given a [maximum lifetime](https://github.com/brave/brave-browser/issues/3443) of 7 days for cookies set through Javascript and 6 months for cookies set through HTTP
 - Session Cookies are [cleaned up on restart](https://github.com/brave/brave-browser/issues/28379) if "Continue where you left off" mode is enabled (which is default in Brave).
-- Third-party cookies are always blocked at the HTTP header level, but we give JavaScript access to partitioned ephemeral storage to pages.
+- Third-party cookies are always blocked at the HTTP header level, but we give JavaScript access to partitioned ephemeral storage to pages ([learn more](https://brave.com/privacy-updates/7-ephemeral-storage/) about partitioned ephemeral storage).
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened. In addition, cross-origin requests from a `.onion` service have an empty `Referer` header and a `null` `Origin` header just like the Tor Browser.
 - `.onion` entries are replaced with `"null"` in `document.location.ancestorOrigins()` unless such entries are same-origin with the innermost frame.
 - Media Router (Chromecast) is disabled by default on Desktop. You can turn it on by toggling the switch in brave://settings.
