@@ -1196,7 +1196,7 @@ _`Brave.Today.PublisherCount`_ **[D]** **[A]**
 3. 8-10
 4. 11+
 
-### Q149: If you have used Brave News in the last week and you used the sidebar filter at least once, how many times have you used the sidebar filters? (reported weekly, desktop only)
+### Q149: If you have used Brave News in the last week and you used the sidebar filter at least once, how many sessions included the usage of the sidebar filters? (reported weekly, desktop only)
 _`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
 
 0. 1
