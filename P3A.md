@@ -791,12 +791,12 @@ _`Brave.Today.UsageDaily`_ **[D]** **[A]**
 1) Yes
 
 ### Q96. Did you use the browser this month?
-_`Brave.Core.UsageMonthly`_ **[D]** **[A]**
+_`Brave.Core.UsageMonthly`_ **[D]** **[A]** **[iOS]**
 
 1) Yes
 
 ### Q97. Did you use the browser in the past day?
-_`Brave.Core.UsageDaily`_ **[D]** **[A]**
+_`Brave.Core.UsageDaily`_ **[D]** **[A]** **[iOS]**
 
 1) Yes
 
