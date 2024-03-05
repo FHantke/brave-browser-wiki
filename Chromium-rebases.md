@@ -158,7 +158,7 @@ in #security-discussion Slack channel.
 
 ## Check for dependency changes in upstream Rust crates
 
-If there are dependency changes in upstream Rust crates (see `third_party/rust/chromium_crates_io/Cargo.lock`) and we also use those crates in Brave code, then we must update our dependencies to reflect the new versions. This process currently involves copying all of Brave's Rust dependencies and associated third_party/cargo configuration changes to `src` and running `gnrt` from `src` to update everything.
+If there are dependency changes in upstream Rust crates (see `third_party/rust/chromium_crates_io/Cargo.lock`) that we also use in Brave code, then we must update our dependencies to reflect the new versions. This process currently involves copying all of Brave's Rust dependencies and associated third_party/cargo configuration changes to `src` and running `gnrt` from `src` to update everything.
 
 [This process is explained here](https://github.com/brave/brave-browser/wiki/Rust-code#updating-a-dependency), but it's best to have someone from the Rust team and/or `@rust-deps` perform this step for now.
 
