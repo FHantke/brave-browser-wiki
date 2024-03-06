@@ -148,9 +148,9 @@ This information can now be found [here](https://github.com/brave/brave-browser/
 
 
 ## When to submit orders and what to do when they're done
-For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submit orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
+For Desktop, the ideal time to submit an order would be 1 week before the release. [Per the release schedule](https://github.com/brave/brave-browser/wiki/Brave-Release-Schedule#release-channel-dates), this lines up with the migration date. We have submitted orders with 4 days left before a release, but that's very tight. The translations themselves take a while to complete.
 
-When submitting, we can submit the strings for *master*. When those are complete, we'd pull them into master and then look at back-porting the strings. If release channel is 1.2 and nightly is 1.5, we'd submit uplifts for 1.4 back to 1.2 with the string changes. This can cause problems if the names of the strings (the key) change.
+When it's time to submit, we typically have the PR that contains the uplift of the target Chromium version into the Release branch (or, Beta branch, if the channel migration has not run yet). We submit the strings from that branch. If the uplift has already been merged into the Release (Beta - before the migrations) branch, then we submit from that branch directly, instead of the PR branch. Once the translations have been completed, we pull them into the Release branch and then look at back-porting the strings into other branches. If release channel is 1.2 and nightly is 1.4, we'd create "lowering" PRs for 1.3 and 1.4 with the string changes from 1.2.
 
 Once translations are ordered, we should make every effort to NOT make string changes to the product. The strings in the product should be considered frozen by reviewers.
 
