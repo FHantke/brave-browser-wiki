@@ -1,6 +1,6 @@
 # Switches
 
-In addition to supporting all Chromium command line switches, the following switches are supported:
+In addition to supporting all [Chromium command line switches](https://peter.sh/experiments/chromium-command-line-switches/), the following switches are supported:
 
 - `npm start --disable_brave_extension`: Disable loading Brave extension on startup (note: this only disable the extension control view, not Shields)
 - `npm start --disable_pdfjs_extension`: Prevent installing the PDFJS extension
