@@ -201,7 +201,7 @@ Before handing off a build to QA, please test the following functionality:
 - Ensure that videos play properly on YouTube and that the media device toolbar button works correctly
 - Ensure that tab-muting works properly
 - Ensure that vertical tabs work as expected (enable by right-clicking any tab and selecting "Use vertical tabs")
-- Ensure that enabling Rewards works properly
+- Ensure that enabling Rewards works properly and verify that the NTP Rewards widget shows as connected
 - Ensure that all elements of the sidebar panel work as expected
 - Ensure that creating and using multiple profiles works as expected
 - Ensure that creating and using a Guest profile works as expected (reached via Hamburger -> More tools -> Open Guest profile)
