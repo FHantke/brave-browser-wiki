@@ -147,12 +147,12 @@ https://cs.chromium.org/search/?q=%22destination:+GOOGLE_OWNED_SERVICE%22&sq=pac
 
 ## Notify Security team of feature changes
 
-- [ ] Check with the Security team in regards to any possibly relevant changes in features or their default settings. Specifically, post link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
+- [ ] Check with the Security team regarding any potentially relevant changes in feature behaviors or defaults. Specifically, post a link to changes in https://chromium.googlesource.com/chromium/src/+diff/[PreviousVersion]..[NewVersion]/content/public/common/content_features.cc
 in #security-discussion Slack channel. 
 
-- [ ] Besides new settings, we'll want to look at brave://components and see if there are new components registered. For example, there are components we have either missed (when added) or we never triaged captured in [this GitHub issue](https://github.com/brave/brave-browser/issues/11544). There's an issue created to automate this process which you [can find here](https://github.com/brave/brave-browser/issues/11811).
+- [ ] In addition to new/changed features, check brave://components to see if there are any new components. For example, [this GitHub issue](https://github.com/brave/brave-browser/issues/11544) lists components that slipped in during the rebasing process or that we failed to triage in the past. There's an issue created to automate this process which you [can find here](https://github.com/brave/brave-browser/issues/11811).
 
-- [ ] Entitlements to enable new features specific to Chrome are added to `https://source.chromium.org/chromium/chromium/src/+/master:chrome/app/app-entitlements-chrome.plist`. Review the new entitlements for each CR bump when new features are added to Chrome. If a new entitlement is added, it most likely will result in the MacOS application failing to launch due to a signature error.
+- [ ] Entitlements to enable new features specific to Chromium are added to `https://source.chromium.org/chromium/chromium/src/+/master:chrome/app/app-entitlements-chrome.plist`. Review the new entitlements for each CR bump when new features are added to Chromium. If a new entitlement is added, it most likely will result in the MacOS application failing to launch due to a signature error.
 
 - [ ] On Android, new permissions can be added in */AndroidManifest.xml or */AndroidManifest.xml.expected. Users often ask questions about new permissions on update. Any new permissions should be reviewed by the @android-team or @security-team before merge.
 
@@ -313,6 +313,10 @@ Settings:
 * `BUILD_NUMBER` - The build number of the delta build
 * `OMAHA_CHANNEL` - The channel on the update server to upload the version to
 
+For Windows x86 and x64, set `OMAHA_CHANNEL` to `nightly` (this is the default).
+
+For MacOS x64, set `OMAHA_CHANNEL` to `nightly` (this is the default). For MacOS arm64, set `OMAHA_CHANNEL` to `nightly-arm64`.
+
 #### Testing
 
 ##### Windows
@@ -332,7 +336,7 @@ In order to test a delta update on Windows, do the following:
 
 ## Merge
 
-After code review and QA signoff on the test builds, merge to `master` and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toolkit/etc. changes required by the new Chromium version.
+After code review and QA signoff on the test builds, merge to `master` (do not use a squash merge) and announce it on the appropriate Slack channels. At this time, you can also note for developers any process/style/toolkit/etc. changes required by the new Chromium version.
 
 After merging to `master` create uplift PRs as appropriate.
 
