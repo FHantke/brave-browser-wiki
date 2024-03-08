@@ -68,3 +68,5 @@ The PageGraph-enabled browser can be run manually like a normal build of Brave, 
 The best place to find documentation on the structure and types in the resulting [GraphML](http://graphml.graphdrawing.org/)-format graphs is in the documentation for the [rust library](https://docs.rs/pagegraph) we maintain for parsing and querying these graphs. In particular, the [types documentation](https://docs.rs/pagegraph/0.1.3/pagegraph/types/index.html#types) may be helpful. 
 
 This documentation is incomplete and being built up as we go. If you have questions about the document format that aren't answered by the existing documentation, please do not hesitate to [open an issue](https://github.com/brave/pagegraph-rust).
+
+However, note that PageGraph currently *does not* track puppeteer / automation scripts, and so modifying or interacting with the document through [devtools/puppeteer](https://pptr.dev/) while recording a PageGraph file will fail.
