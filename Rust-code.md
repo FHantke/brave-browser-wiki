@@ -3,14 +3,14 @@ Brave uses Rust language code, but there are some caveats.
 Since 1.58 brave-core has used the upstream chromium build system for rust code. All code must be in-tree, with 3rd-party crates (libraries) vendored under either `brave/third_party/rust` or upstream in `src/third_party/rust`.
 We largely follow the [chromium guidelines](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/adding_to_third_party.md#Rust) for determining acceptable use, although we have some components (SKUs, Speedreader, STAR) implemented in rust. Please contact Clifton and Brian Johnson when planning any new work involving substantial Rust code.
 
-There is a `gnrt` tool included with chromium which helps maintain the rust sub-tree. It extracts information from Cargo.toml files, downloads any referenced third-party packages and generates an equivalent BUILD.gn, which must then be checked into the tree. See the [instructions](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/crates/README.md) for how to build and run this tool.
+There is a `gnrt` tool included with chromium which helps maintain the rust sub-tree. It extracts information from Cargo.toml files, downloads any referenced third-party packages and generates an equivalent BUILD.gn, which must then be checked into the tree. See the [instructions](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/rust.md#Updating-existing-third_party-crates) for how to build and run this tool.
 
 Instead of `cargo`, our build calls `rustc` directly based on the description in the accompanying BUILD.gn files. However, cargo tooling can often be used for local testing and verification.
 
 ## Updating a dependency
 
 Since brave v1.65.79 we have patched `gnrt` to support our two-level third_party/rust tree. To update depencencies, change the required version in the relevant Cargo.toml and/or update the project-level `third_party/rust/chromium_crates_io/Cargo.lock` e.g. by running `cargo update -p <depname>` in that directory.
-Then one can run `gnrt vendor` to update the third-party source packages followed by `gnrt gen` to update the build description and metadata. Review and commit the changes. Note that `gnrt vendor` will remove obsolete packages as well as adding new ones.
+Then run `gnrt vendor` to update the third-party source packages followed by `gnrt gen` to update the build description and metadata. Review and commit the changes. Note that `gnrt vendor` will remove obsolete packages as well as adding new ones.
 
 gnrt currently expects to be invoked from the top-level (chromium) `src` directory and won't work from inside the brave-core repository.
 
