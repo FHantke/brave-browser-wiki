@@ -1,9 +1,11 @@
 Brave uses Rust language code, but there are some caveats.
 
-Since 1.58 brave-core has used the upstream chromium build system for rust code. All code must be in-tree, with 3rd-party crates (libraries) vendored either in `brave/third_party/rust` or upstream in `src/third_party/rust`.
+Since 1.58 brave-core has used the upstream chromium build system for rust code. All code must be in-tree, with 3rd-party crates (libraries) vendored under either `brave/third_party/rust` or upstream in `src/third_party/rust`.
 We largely follow the [chromium guidelines](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/adding_to_third_party.md#Rust) for determining acceptable use, although we have some components (SKUs, Speedreader, STAR) implemented in rust. Please contact Clifton and Brian Johnson when planning any new work involving substantial Rust code.
 
-Instead of `cargo`, our build calls `rustc` directly. Source files, config settings, and dependencies are extracted from Cargo.toml files and an equivalent BUILD.gn is created and checked into the tree. There is a `gnrt` tool to automate this, but it is currently very rough and doesn't support our setup of with multiple `third_party/rust` trees. See the [instructions](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/crates/README.md) for how to build and run this tool.
+There is a `gnrt` tool included with chromium to automate vendoring. It extracts information from Cargo.toml files, downloads any referenced third-party packages and generates an equivalent BUILD.gn, which must then be checked into the tree. See the [instructions](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/crates/README.md) for how to build and run this tool.
+
+Instead of `cargo`, our build calls `rustc` directly based on the description in the accompanying BUILD.gn files. However, cargo tooling can often be used for local testing and verification. Source files, config settings, and dependencies are extracted from Cargo.toml files and an equivalent BUILD.gn is created and checked into the tree. 
 
 ## Updating a dependency
 
