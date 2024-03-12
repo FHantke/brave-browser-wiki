@@ -1212,6 +1212,17 @@ _`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
 0. Via the Shields panel
 1. Via the app menu (desktop only)
 
+### Q151: If your "upgrade connections to HTTPS" setting is set to "standard" or "strict", how many page requests failed the auto-upgrade to HTTPS this week?
+_`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
+
+0. 0%
+1. Above 0%, less than or equal to 0.25%
+2. Above 0.25%, less than or equal to 0.5%
+3. Above 0.5, less than or equal to 1%
+4. Above 1%, less than or equal to 3%
+5. Above 3%, less than or equal to 7%
+6. Greater than 7%
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
