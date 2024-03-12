@@ -5,17 +5,23 @@ We largely follow the [chromium guidelines](https://chromium.googlesource.com/ch
 
 There is a `gnrt` tool included with chromium to automate vendoring. It extracts information from Cargo.toml files, downloads any referenced third-party packages and generates an equivalent BUILD.gn, which must then be checked into the tree. See the [instructions](https://chromium.googlesource.com/chromium/src/tools/+/refs/heads/main/crates/README.md) for how to build and run this tool.
 
-Instead of `cargo`, our build calls `rustc` directly based on the description in the accompanying BUILD.gn files. However, cargo tooling can often be used for local testing and verification. Source files, config settings, and dependencies are extracted from Cargo.toml files and an equivalent BUILD.gn is created and checked into the tree. 
+Instead of `cargo`, our build calls `rustc` directly based on the description in the accompanying BUILD.gn files. However, cargo tooling can often be used for local testing and verification.
 
 ## Updating a dependency
 
-### The "correct" but painful way
-Since `gnrt` doesn't support downstream two-level third_party/rust tree, one approach is to copy `src/brave/third_party/rust` into `src/third_party/rust`, update `third_party.toml` and then run `gnrt download` and `gnrt gen` until it's happy. They copy everything back into the brave-core tree, and use git status to work split out which files belong where, and manually fix up the paths for upstream crates.
+Since brave v1.65.79 we have patched `gnrt` to support our two-level third_party/rust tree. To update depencencies, change the required version in the relevant Cargo.toml and/or update the project-level `third_party/rust/chromium_crates_io/Cargo.lock` e.g. by running `cargo update -p <depname>` in that directory.
+Then one can run `gnrt vendor` to update the dependencies source packages under `third_party/rust/chromium_crates_io/vendor/$depname-$version` followed by `gnrt gen` to update the `BUILD.gn` files. Review and commit the changes. Note that `gnrt vendor` will remove obsolete packages as well as adding new ones.
 
-### The hacky but simple(r) way
-Alternatively you can directly edit the crate, but only if there are no changes to dependencies or features and minimal changes within the crate. If you can't do it by manually copy/pasting a few source files, you probably should not be doing this. This is very error prone and you need to make sure you update everything correctly for version changes, added/removed source files, etc... If you are unsure, please check in the `#rust` slack channel before doing this. 
+To reduce code duplication, please try to always move toward unifying different versions of dependencies, and make use of any packages already included in upstream chromium whenever possible.
 
-Until we have better tooling for this, it can be a real time sink. Please ask one of the @rust-deps reviewers for help if you're not sure how this works. The `#rust` slack channel is also a good place to ask for help.
+### Details for manual review
+
+If you're interested in the details, or need to hack something until the automation can be improved to handle it, the general scheme is:
+
+- third_party packages are downloaded and unpacked into third_party/rust/chromium_crates_io/vendor/$CRATE-$VERSION
+- packages previously downloaded by the system cargo can be found in `$HOME/.cargo/registery/src` if you want to compare or copy from there
+- package download urls can be fetched manually from e.g. `https://crates.io/api/v1/crates/$package/$version/download`
+- While the vendored source and top-level Cargo.toml is under chromium_crates_io/vendor (for compatibility with cargo-vendor) each package must have a separate BUILD.gn and README.chromium in `third_party/rust/$package/$epoch/` where `$epoch` is a flattened version number. E.g. `serde-1.0.193 -> serde/v1`, `ppoprf-0.3.1` -> `ppoprf/v0_3`.
 
 ### Checking your work
 
