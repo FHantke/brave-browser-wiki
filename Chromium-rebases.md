@@ -162,23 +162,6 @@ If there are dependency changes in upstream Rust crates (see `third_party/rust/c
 
 [This process is explained here](https://github.com/brave/brave-browser/wiki/Rust-code#updating-a-dependency), but it's best to have someone from the Rust team and/or `@rust-deps` perform this step for now.
 
-## Update localizations
-
-See https://github.com/brave/brave-browser/wiki/Strings-and-Localization
-
-Run this to detect new strings and push them to Transifex, it will also push up the translations for those strings automatically.
-If you need access talk to devops.
-
-```
-npm run push_l10n
-```
-
-Run this to pull down new xtb and translation files:
-
-`npm run pull_l10n`
-
-Do a commit for all the string translation updates, `xtb` files.
-
 ## Creating the PR
 
 When creating the PR, mark it as `WIP` and put it into draft mode. The title should be `Upgrade from Chromium {n} to Chromium {n+1}` where `n` is the current version number.
