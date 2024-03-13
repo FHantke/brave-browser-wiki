@@ -154,6 +154,25 @@ When it's time to submit, we typically have the PR that contains the uplift of t
 
 Once translations are ordered, we should make every effort to NOT make string changes to the product. The strings in the product should be considered frozen by reviewers.
 
+## Pushing and pulling localizations
+
+Run this to push new strings to Transifex. The script can also push up translations, if needed (see command line params).
+If you need access to Transifex talk to devops.
+
+To run these command you will need Python3 (3.10.x) with the following modules:
+  * lxml
+  * transifex-python==2.1.0
+
+```
+npm run push_l10n
+```
+
+Run this to pull down new xtb and translation files:
+
+`npm run pull_l10n`
+
+Do a commit for all the string translation updates (`message.json` and/or `xtb` files).
+
 # Localizing extensions
 
 ## Ethereum Remote Client
