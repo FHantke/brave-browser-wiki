@@ -1223,6 +1223,29 @@ _`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
 5. Above 3%, less than or equal to 7%
 6. Greater than 7%
 
+## New Tab Page Ad Metrics
+
+Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
+
+- `views`: amount of views for an ad in the past day
+- `clicks`: amount of clicks for an ad in the past day
+- `lands`: amount of times a user clicked on the ad, and stayed on the subsequent page for 10 or more seconds
+
+A metric name is constructed for each ad campaign and event type: `creativeInstanceId.<ad campaign id>.<event type>`
+
+An additional metric is reported for the total amount of ad campaigns that the user interacted within the past day (`creativeInstanceId.total.count`).
+
+The bucket values for all of the above metrics are as follows:
+
+0. 0 interactions
+1. 1 interaction
+2. 2 interactions
+3. 3 interactions
+4. 4 -8 interactions
+5. 9-12 interactions
+6. 13-16 interactions
+7. 17+ interactions
+
 ## Metrics Proposed/Under Development
 
 Metrics in various states of development can be found in the `brave-browser` issue log with the `feature/new-metric` label:
