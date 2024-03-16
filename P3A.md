@@ -1223,6 +1223,38 @@ _`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
 5. Above 3%, less than or equal to 7%
 6. Greater than 7%
 
+### Q152: As a free tier user opted in to Leo, how many times did you use right click actions in the past week?
+`Brave.AIChat.ContextMenu.FreeUsages` and `Brave.AIChat.ContextMenu.PremiumUsages`
+
+0. 0
+1. 1
+2. 2
+3. 3 to 5
+4. 6 to 10
+5. 11 to 20
+6. 21 to 50
+7. More than 50
+
+### Q153: As a user of Leo Right-click Actions this week, what is the most used action category?
+`Brave.AIChat.ContextMenu.MostUsedAction`
+
+0. Summarize
+1. Explain
+2. Paraphrase
+3. Create Tagline
+4. Create Social Media Post
+5. Improve
+6. Change Tone
+7. Change Length
+
+### Q154: As an opted in Leo user, when was the last time you used the Right-click Actions feature?
+`Brave.AIChat.ContextMenu.LastUsageTime`
+
+1. Within the last 6 days
+2. 7 - 13 days ago
+3. 14 - 20 days ago
+4. 21 - 30 days ago
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
