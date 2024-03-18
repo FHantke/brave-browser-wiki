@@ -5,7 +5,7 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 1. It is a feature important enough that there has been at least one meeting about it.
 2. It modifies or adds network requests.
 3. It is related to money/BAT.
-4. It involves cryptography, including anything which generates a random number, a random series of bytes, or the like.
+4. It involves cryptography (including anything which generates a random number, a random series of bytes, or the like) or distributes cryptography that is not fully open source.
 5. It adds new dependencies (e.g. Docker images), integrations, or plugins. Update (9/2023): Please choose "Third-Party Dependency Review" when opening these in brave/reviews.
 6. It is related to sensitive user information such as cookies, passwords, and private browsing data.
 7. It changes the amount of data collected by Brave or one of its partners  — including making any logs which may be sent to Brave or a third party.
