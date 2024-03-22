@@ -34,7 +34,7 @@ This is the preferred way to do it!
 - visit https://ci.brave.com/job/brave-core-create-uplift-prs/
 - click `Build with Parameters`:
     - put the pull request number (must already be merged)
-    - pick the furthest channel you want to uplift to (e.g. `release` will also pull in `beta`)
+    - pick the channels you want to uplift to: `release` or `beta` or `beta,release` (which does both)
     - click `build`
 - uplifts are created (no need to use CLI)
 
