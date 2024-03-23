@@ -1207,7 +1207,7 @@ _`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
 
 ### Q150: If you filed a web compatibility report this week, how did you file it?
 
-`Brave.Webcompat.UISource` **[D]** **[A]**
+_`Brave.Webcompat.UISource`_ **[D]** **[A]**
 
 0. Via the Shields panel
 1. Via the app menu (desktop only)
@@ -1224,7 +1224,7 @@ _`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
 6. Greater than 7%
 
 ### Q152: As a free tier user opted in to Leo, how many times did you use right click actions in the past week?
-`Brave.AIChat.ContextMenu.FreeUsages` and `Brave.AIChat.ContextMenu.PremiumUsages`
+_`Brave.AIChat.ContextMenu.FreeUsages` and `Brave.AIChat.ContextMenu.PremiumUsages`_  **[D]**
 
 0. 0
 1. 1
@@ -1236,7 +1236,7 @@ _`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
 7. More than 50
 
 ### Q153: As a user of Leo Right-click Actions this week, what is the most used action category?
-`Brave.AIChat.ContextMenu.MostUsedAction`
+_`Brave.AIChat.ContextMenu.MostUsedAction`_  **[D]**
 
 0. Summarize
 1. Explain
@@ -1248,12 +1248,17 @@ _`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
 7. Change Length
 
 ### Q154: As an opted in Leo user, when was the last time you used the Right-click Actions feature?
-`Brave.AIChat.ContextMenu.LastUsageTime`
+_`Brave.AIChat.ContextMenu.LastUsageTime`_  **[D]**
 
 1. Within the last 6 days
 2. 7 - 13 days ago
 3. 14 - 20 days ago
 4. 21 - 30 days ago
+
+### Q155: If you are included or are not included in the day zero experiment, how long ago did you install the browser?
+_`Brave.DayZero.On.InstallTime`_ or _`Brave.DayZero.Off.InstallTime`_  **[D]** **[A]**
+
+Answers range from 0 to 30 days.
 
 ## New Tab Page Ad Metrics
 
