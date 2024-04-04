@@ -1255,8 +1255,8 @@ _`Brave.AIChat.ContextMenu.LastUsageTime`_  **[D]**
 3. 14 - 20 days ago
 4. 21 - 30 days ago
 
-### Q155: If you are included or are not included in the day zero experiment, how long ago did you install the browser?
-_`Brave.DayZero.On.InstallTime`_ or _`Brave.DayZero.Off.InstallTime`_  **[D]** **[A]**
+### Q155: If you are included in the day zero experiment, how long ago did you install the browser?
+_`Brave.DayZero.A.InstallTime`_ or _`Brave.DayZero.B.InstallTime`_  **[D]** **[A]**
 
 Answers range from 0 to 30 days.
 
