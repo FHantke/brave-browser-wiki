@@ -1,6 +1,6 @@
 # Prerequisites
 
-1. First follow the [macOS Development Environment](https://github.com/brave/brave-browser/wiki/macOS-Development-Environment) prerequisites.
+1. First follow the [macOS Development Environment](https://github.com/brave/brave-browser/wiki/macOS-Development-Environment) prerequisites. (With one exception: iOS requires Xcode 15.3)
 
 2. If you haven't already cloned brave-core, please follow the instructions in [brave-browser's README](https://github.com/brave/brave-browser/blob/master/README.md) to do so. Note: After cloning and running init you may need to have `depot_tools` in your PATH (e.g. `$ export PATH="$PATH:/path/to/src/brave/vendor/depot_tools"`)
 
