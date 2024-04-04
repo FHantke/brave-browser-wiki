@@ -1260,6 +1260,31 @@ _`Brave.DayZero.A.InstallTime`_ or _`Brave.DayZero.B.InstallTime`_  **[D]** **[A
 
 Answers range from 0 to 30 days.
 
+### Q156: As a "sidebar enabled" experiment participant, do you have Leo enabled?
+`Brave.AIChat.Enabled.SidebarEnabledA` or `Brave.AIChat.Enabled.SidebarEnabledB` **[D]**
+
+1. Yes, as a free user
+2. Yes, as a premium user
+
+### Q157: As a "sidebar enabled" experiment participant, did you use Leo in the past day?
+`Brave.AIChat.UsageDaily.SidebarEnabledA` or `Brave.AIChat.UsageDaily.SidebarEnabledB` **[D]**
+
+1. Yes, as a free user
+2. Yes, as a premium user
+
+### Q158: As a "sidebar enabled" experiment participant, did you use Leo in the past week?
+`Brave.AIChat.UsageWeekly.SidebarEnabledA` or `Brave.AIChat.UsageWeekly.SidebarEnabledB` **[D]**
+
+1. Yes, as a free user
+2. Yes, as a premium user
+
+### Q159: As a "sidebar enabled" experiment participant, did you change the Sidebar settings?
+`Brave.Core.SidebarSettings.SidebarEnabledA` or `Brave.Core.SidebarSettings.SidebarEnabledB` **[D]**
+
+0. No
+1. Yes, I changed Show Sidebar to "On mouse over"
+2. Yes, I changed Show Sidebar to "Never"
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
