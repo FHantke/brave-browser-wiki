@@ -963,7 +963,7 @@ _`Brave.DNS.SecureSetting`_ **[D]** **[A]**
 2. Predefined / custom provider
 
 ### Q120: If your secure DNS setting is set to "current service provider" and at least one DNS request was auto-upgraded in the past week, what percent of queries were made over DoH in the past week?"
-_`Brave.DNS.AutoSecureRequests`_ **[D]** **[A]**
+_`Brave.DNS.AutoSecureRequests`_, _`Brave.DNS.AutoSecureRequests.Quad9`_, _`Brave.DNS.AutoSecureRequests.Wikimedia`_ or _`Brave.DNS.AutoSecureRequests.Cloudflare`_ **[D]** **[A]**
 
 0. Greater than 0%, less than 5%
 1. Greater than 5%, less than 50%
