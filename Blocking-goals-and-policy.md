@@ -4,13 +4,19 @@ Brave modifies how websites execute, and what network requests websites can make
 
 ## Blocking Goals and Policy
 
-Brave's default settings attempt to protect user privacy by blocking third party advertising.  Brave's goal in doing so is not to block the advertisement images themselves, but to block the tracking such advertisements cause.  In practice, it is difficult-to-impossible to distinguish third-party advertising with third-party tracking, so Brave blocks both.
+Brave's default settings attempt to protect user privacy by blocking third-party advertising.  Brave's goal in doing so is not to block the advertisement images themselves, but to block the tracking such advertisements cause.  In practice, it is difficult-to-impossible to distinguish third-party advertising with third-party tracking, so Brave blocks both.
+
+In Standard blocking mode (the default), Brave does not apply network-level filter list blocking to first-party requests. In Aggressive blocking mode, both third-party and first-party requests are blocked. Read more in the [blog post](https://brave.com/privacy-updates/9-web-compat-blocking/).
+
+### First-party blocking
 
 While Brave does not intentionally target first-party advertising for blocking, Brave doesn't consider it an error either.  In other words, Brave does not try to block first party ads, but won't take efforts to unblock first-party ads if they're being blocked by other steps.
 
-Similarly, Brave also blocks code that attempts to identify users based on unique browser characteristics, hardware configuration and similar semi-unique data points.  Such identification techniques are just as harmful to users as traditional cookie-based tracking.
+Similarly, Brave also blocks code that attempts to identify (fingerprint) users based on unique browser characteristics, hardware configuration and similar semi-unique data points.  Such identification techniques are just as harmful to users as traditional cookie-based tracking.
 
 Finally, Brave intentionally blocks website behaviors that are harmful to users, whether or not those behaviors are privacy-harming.  For example, Brave blocks crypto-mining scripts.  These scripts use the user's computer in an intensive manner to try and earn money for the hosting website, and result in degraded performance and reduced battery life.  Crypto mining scripts are only one such example, but when possible, Brave will modify websites and requests to improve the user experience.
+
+Brave allows first-party analytics scripts as long as the script does not engage in clear cases of user-harmful behaviour as defined above.
 
 Brave also aims to empower users who wish to block first-party advertising and tracking scripts, even though doing so often comes at an increased risk of website breakage. Many Shields settings have two levels of strength to accommodate these use cases for advanced users, and Brave's adblocker is extensible with custom filter list entries and subscriptions.
 
