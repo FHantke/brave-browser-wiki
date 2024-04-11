@@ -8,6 +8,8 @@ Brave's default settings attempt to protect user privacy by blocking third-party
 
 In Standard blocking mode (the default), Brave does not apply network-level filter list blocking to first-party requests. In Aggressive blocking mode, both third-party and first-party requests are blocked. Read more in the [blog post](https://brave.com/privacy-updates/9-web-compat-blocking/).
 
+Note: Brave will always attempt to block anti-adblock behavior. 
+
 ### First-party blocking
 
 While Brave does not intentionally target first-party advertising for blocking, Brave doesn't consider it an error either.  In other words, Brave does not try to block first party ads, but won't take efforts to unblock first-party ads if they're being blocked by other steps.
