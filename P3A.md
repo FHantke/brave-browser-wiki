@@ -1139,7 +1139,7 @@ See https://github.com/brave/brave-core/blob/master/components/misc_metrics/lang
 6. Greater than 1000 pages
 
 ### Q143: If you have a custom position configured for ads notifications, what area is it in?
-_`Brave.Rewards.CustomNotificationPosition`_  **[D]**
+_`Brave.Rewards.CustomNotificationAdPosition`_  **[D]**
 
 1. Top left
 2. Top center
