@@ -152,7 +152,7 @@ For example if you add z.com as 127.0.0.1 in your hosts file and then start it o
 1. Bump `package.json` in brave-core
 2. `npm install` to get the bumped version in node_modules
 3. Clone https://github.com/brave-experiments/Javascript-Secure-Plugin
-4. Copy `node_modules/@solana/web3.js/lib/index.iife.min.js into the above repo as `solana-web3.js`
+4. Copy `node_modules/@solana/web3.js/lib/index.iife.min.js` into the above repo as `solana-web3.js`
 5. `npm install` and `npm run build` in the plugin repo
 6. Edit the `Build/test.js` to remove lines above `/************************************************************************/` and the last line `/******/ })()` 
 7. Add Brave license and `/* Auto generated from @solana/web3.js 1.47.1 index.iife.min.js */` (replace 1.47.1 with the bumped version)
