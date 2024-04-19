@@ -1290,6 +1290,22 @@ Answers range from 0 to 30 days.
 
 1. Yes
 
+### Q161: Which extra ad-block filter lists do you have enabled this month?
+`Brave.Shields.FilterLists` **[D]** **[A]**
+
+0. None
+1. One or more hardcoded filter lists
+2. One or more custom filter lists
+3. Both hardcoded & custom filter lists
+
+### Q162: Do you have the "forget me when I close this site" setting enabled?
+`Brave.Shields.ForgetFirstParty` **[D]** **[A]**
+
+0. Not globally, and not per-site
+1. Globally enabled, no exceptions for any sites
+2. Globally enabled, but the setting is disabled for at least one site
+3. Not globally, but the setting is enabled for at least one site
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
