@@ -1285,6 +1285,11 @@ Answers range from 0 to 30 days.
 1. Yes, I changed Show Sidebar to "On mouse over"
 2. Yes, I changed Show Sidebar to "Never"
 
+### Q160: Did you temporarily allow/block individual scripts this week?
+`Brave.Shields.AllowScriptOnce` **[D]**
+
+1. Yes
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
