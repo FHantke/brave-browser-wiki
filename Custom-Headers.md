@@ -12,4 +12,4 @@ If Yandex is the default search engine, we add a `clid` parameter to search requ
 
 ## X-Brave-Ads-Enabled header
 
-It helps the Brave Search backend to understand whether the requesting browser has Brave Ads enabled. As such, the header `X-Brave-Ads-Enabled: 1` is added to navigation requests to Brave Search. Otherwise, the header is not added.
+It helps the Brave Search backend to understand whether the requesting browser has Brave Rewards enabled. As such, the header `X-Brave-Ads-Enabled: 1` is added to navigation requests to Brave Search. Otherwise, the header is not added.
