@@ -392,7 +392,7 @@ _`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]** **[iOS]**
 6. 6 to 10 feeds
 7. More than 10 feeds
 
-### Q49: How many external feeds do you have in total?
+### Q49: As a Brave News user this month, how many external feeds do you have in total?
 _`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]** **[iOS]**
 
 0. None
@@ -1178,7 +1178,7 @@ _`Brave.Today.ClickCardDepth`_ **[D]** **[A]**
 4. 16 to 20 cards deep
 5. 21+
 
-### Q147: If you are a monthly active user, how many channels are you subscribed to? (reported monthly, desktop & Android only)
+### Q147: If you are a monthly active News user, how many channels are you subscribed to? (reported monthly, desktop & Android only)
 _`Brave.Today.ChannelCount`_ **[D]** **[A]**
 
 0. 0-1
@@ -1187,7 +1187,7 @@ _`Brave.Today.ChannelCount`_ **[D]** **[A]**
 3. 8-10
 4. 11+
 
-### Q148: If you are a monthly active user, how many publishers are you subscribed to (excluding direct feeds)? (reported monthly, desktop & Android only)
+### Q148: If you are a monthly active News user, how many publishers are you subscribed to (excluding direct feeds)? (reported monthly, desktop & Android only)
 _`Brave.Today.PublisherCount`_ **[D]** **[A]**
 
 0. 0-1
