@@ -393,7 +393,7 @@ _`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]** **[iOS]**
 7. More than 10 feeds
 
 ### Q49: As a Brave News user this month, how many external feeds do you have in total?
-_`Brave.Today.DirectFeedsTotal`_ **[D]** **[A]** **[iOS]**
+_`Brave.Today.DirectFeedsTotal.2`_ **[D]** **[A]** **[iOS]**
 
 0. None
 1. 1 feed
