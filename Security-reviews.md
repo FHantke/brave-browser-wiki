@@ -1,6 +1,6 @@
 # When is a security review needed?
 
-If a code change (pull request, commit, etc.) satisfies ANY of the following, it requires a security review before it can be merged:
+If a code change (pull request, commit, etc.) satisfies ANY of the following, it requires a security review before it can be merged (even if behind a flag or only for certain channels). We prefer to review things at the design/spec stage and then again at the implementation stage.
 
 1. It is a feature important enough that there has been at least one meeting about it.
 2. It modifies or adds network requests.
@@ -18,7 +18,7 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 14. It adds a new way of collecting data from A/B tests (not through Griffin or Crash Reports).
 15. It saves data on a user's device and later retrieves it for purposes that are not strictly necessary (such as analytics).
 
-If you are not sure whether you need a security review, you should probably ask for one just to play it safe. We prefer to review things at the design/spec stage and then again at the implementation stage.
+If you are not sure whether you need a security review, you should probably ask for one just to play it safe.
 
 # How to request a security review.
 
