@@ -2,7 +2,7 @@
 
 If a code change (pull request, commit, etc.) satisfies ANY of the following, it requires a security review before it can be merged (even if behind a flag or only for certain channels). We prefer to review things at the design/spec stage and then again at the implementation stage.
 
-1. It is a feature important enough that there has been at least one meeting about it.
+1. It is a major feature that touches many parts of the code or required work from multiple teams.
 2. It modifies or adds network requests.
 3. It is related to money/BAT.
 4. It involves cryptography (including anything which generates a random number, a random series of bytes, or the like) or distributes cryptography that is not fully open source.
