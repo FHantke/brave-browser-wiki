@@ -47,7 +47,6 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | first | First day of installation flag | true or false | Browser | false |
 | woi | Week of installation; date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
 | ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
-| country_code | Country Code | 2 digit string containing the country code | CDN | US |
 | dtoi | Date of browser installation. Only reported in the 30 days after installation. | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
 | adsEnabled | Ads status flag | true or false | Browser | true |
 | wallet2 | Brave Wallet Status | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | Browser | 7
