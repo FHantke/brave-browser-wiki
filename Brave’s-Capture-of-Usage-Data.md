@@ -1,4 +1,4 @@
-Note: This document is a complement to the referral system described at https://github.com/brave/brave-browser/wiki/Brave%E2%80%99s-Use-of-Referral-Codes
+Note: This document is a complement to the referral system described at [Brave's Use of Referral Codes](https://github.com/brave/brave-browser/wiki/Brave%E2%80%99s-Use-of-Referral-Codes)
 
 # Why does Brave capture usage data?
 
