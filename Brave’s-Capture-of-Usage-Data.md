@@ -24,6 +24,8 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 
 # What information is contained in a usage request?
 
+The browser provides the following values in the query parameters of the request.
+
 | Field | Description | Values | Example |
 | ----- | ----------- | ------ | ------- |
 | platform | Platform identifier | winx64-bc, winia32-bc, winarm64-bc, linux-bc, osx-bc, osxarm64-bc, android-bc, ios | winx64-bc |
