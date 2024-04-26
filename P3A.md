@@ -393,16 +393,14 @@ _`Brave.Today.WeeklyAddedDirectFeedsCount`_ **[D]** **[A]** **[iOS]**
 7. More than 10 feeds
 
 ### Q49: As a Brave News user this month, how many external feeds do you have in total?
-_`Brave.Today.DirectFeedsTotal.2`_ **[D]** **[A]** **[iOS]**
+_`Brave.Today.DirectFeedsTotal.3`_ **[D]** **[A]** **[iOS]**
 
-0. None
-1. 1 feed
-2. 2 feeds
-3. 3 feeds
-4. 4 feeds
-5. 5 feeds
-6. 6 to 10 feeds
-7. More than 10 feeds
+0. 0
+1. 1
+2. 2-4
+3. 5-8
+4. 9-13
+5. 14+
 
 ### Q50: How many Brave News cards did you view in the past week?
 _`Brave.Today.WeeklyTotalCardViews`_ **[D]** **[A]** **[iOS]**
@@ -1179,22 +1177,24 @@ _`Brave.Today.ClickCardDepth`_ **[D]** **[A]**
 5. 21+
 
 ### Q147: If you are a monthly active News user, how many channels are you subscribed to? (reported monthly, desktop & Android only)
-_`Brave.Today.ChannelCount`_ **[D]** **[A]**
+_`Brave.Today.ChannelCount.2`_ **[D]** **[A]**
 
-0. 0-1
-1. 2-4
-2. 5-7
-3. 8-10
-4. 11+
+0. 0
+1. 1
+2. 2-4
+3. 5-8
+4. 9-13
+5. 14+
 
 ### Q148: If you are a monthly active News user, how many publishers are you subscribed to (excluding direct feeds)? (reported monthly, desktop & Android only)
-_`Brave.Today.PublisherCount`_ **[D]** **[A]**
+_`Brave.Today.PublisherCount.2`_ **[D]** **[A]**
 
-0. 0-1
-1. 2-4
-2. 5-7
-3. 8-10
-4. 11+
+0. 0
+1. 1
+2. 2-4
+3. 5-8
+4. 9-13
+5. 14+
 
 ### Q149: If you have used Brave News in the last week and you used the sidebar filter at least once, how many sessions included the usage of the sidebar filters? (reported weekly, desktop only)
 _`Brave.Today.SidebarFilterUsages`_ **[D]** **[A]**
