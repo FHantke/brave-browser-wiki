@@ -24,8 +24,8 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 
 # What information is contained in a usage request?
 
-| Field | Description | Values | Source | Example |
-| ----- | ----------- | ------ | ------ | ------- |
+| Field | Description | Values | Example |
+| ----- | ----------- | ------ | ------- |
 | platform | Platform identifier | winx64-bc, winia32-bc, winarm64-bc, linux-bc, osx-bc, osxarm64-bc, android-bc, ios | winx64-bc |
 | channel | Channel identifier | Nightly, dev, developer, beta, release | release |
 | version | Version number | x.x.x semver formatted string | 1.2.3 |
