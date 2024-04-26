@@ -8,7 +8,7 @@ Usage data is used to guide business decisions, inform product development and s
 
 A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personal data or personally identifying information.
 
-The details of the query parameters in the request are defined below.
+The details of the query parameters in the request are defined in the next section of this document.
 
 The request is routed to a CDN before it is forwarded to Brave for capture. The CDN performs the following:
 
