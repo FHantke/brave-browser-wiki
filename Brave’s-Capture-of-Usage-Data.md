@@ -37,7 +37,7 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 | ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
 | dtoi | Date of browser installation. Only reported in the 30 days after installation. | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
 | adsEnabled | Ads status flag | true or false | Browser | true |
-| wallet2 | Brave Wallet Status | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | Browser | 7
+| wallet2 | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | 0 to 7 | Browser | 7 for daily, weekly and monthly usage, 4 for monthly usage, 2 for weekly usage, 1 for daily usage
 | arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | Browser | x86_64 |
 
 # What aggregated data is built from the usage requests?
