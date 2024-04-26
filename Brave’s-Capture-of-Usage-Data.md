@@ -38,21 +38,19 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 
 | Field | Description | Values | Source | Example |
 | ----- | ----------- | ------ | ------ | ------- |
-| year_month_day | Date of request capture | YYYY-MM-DD encoded date | Brave | 2020-11-19 |
-| platform | Platform identifier | Winx64-bc, winia32-bc, linux-bc, osx-bc, android-bc, ios | Browser| winx64-bc |
+| platform | Platform identifier | winx64-bc, winia32-bc, winarm64-bc, linux-bc, osx-bc, osxarm64-bc, android-bc, ios | Browser| winx64-bc |
 | channel | Channel identifier | Nightly, dev, developer, beta, release | Browser | release |
 | version | Version number | x.x.x semver formatted string | Browser | 1.2.3 |
-| daily | Daily flag | true or false | Browser | true |
-| weekly | Weekly flag | true or false | Browser | true |
-| monthly | Monthly flag | true or false | Browser | false |
+| daily | Daily usage flag; reported as true if used today | true or false | Browser | true |
+| weekly | Weekly usage flag; reported as true if used for the first time this week | true or false | Browser | true |
+| monthly | Monthly usage flag; reported as true if used for the first time this month | true or false | Browser | false |
 | first | First day of installation flag | true or false | Browser | false |
-| woi | Week of installation - date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
+| woi | Week of installation; date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
 | ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
 | country_code | Country Code | 2 digit string containing the country code | CDN | US |
-| region | State / Province Code | 2 digit string containing a sub-national region code | CDN | CA |
-| dtoi | Date of installation - date of the browser installation (held in browser state for 30 days then removed) | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
+| dtoi | Date of browser installation. Only reported in the 30 days after installation. | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
 | adsEnabled | Ads status flag | true or false | Browser | true |
-| walletActive | Brave Wallet Status | 4 possible values for daily user, weekly user, monthly user, never used. | Browser | 7
+| wallet2 | Brave Wallet Status | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | Browser | 7
 | arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | Browser | x86_64 |
 
 # What aggregated data is built from the usage requests?
