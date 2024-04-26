@@ -8,19 +8,7 @@ Usage data is used to guide business decisions, inform product development and s
 
 A usage ping is a HTTP GET request, with data encoded in query parameters, used to count active users. The encoded request is sent to laptop-updates.brave.com either when the browser starts for the first time in a day, or after midnight if the browser is left open. It contains no personal data or personally identifying information.
 
-Note: All fields are described in the table below with example values.
-
-The request is encoded with the following rules:
-
-* The platform, channel, and version strings are retrieved from browser state.
-* The daily flag is set to true.
-* The weekly flag is set to true if the browser is used for the first time in a calendar week, starting on Monday.
-* The monthly flag is set to true if the browser is used for the first time in a calendar month, starting on the 1st of the month.
-* The first flag is set to true if this is the first day the browser was installed.
-* The woi (week of installation), ref (referral code, not used if default), and dtoi (date of installation) are retrieved from browser state.
-* The adsEnabled flag, set to true if ads are enabled in the browser.
-* The walletActive flag. Set to 7 for daily, 6 for weekly, 4 for monthly, 0 if wallet never used.
-* The arch field, which has the CPU architecture Brave was compiled for. This is sent only if ads are enabled in the browser.
+The details of the query parameters in the request are defined below.
 
 The request is routed to a CDN before it is forwarded to Brave for capture. The CDN performs the following:
 
