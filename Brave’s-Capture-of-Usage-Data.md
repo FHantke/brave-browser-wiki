@@ -26,19 +26,19 @@ Once a day Brave aggregates the captured data, storing it for analysis and repor
 
 | Field | Description | Values | Source | Example |
 | ----- | ----------- | ------ | ------ | ------- |
-| platform | Platform identifier | winx64-bc, winia32-bc, winarm64-bc, linux-bc, osx-bc, osxarm64-bc, android-bc, ios | Browser| winx64-bc |
-| channel | Channel identifier | Nightly, dev, developer, beta, release | Browser | release |
-| version | Version number | x.x.x semver formatted string | Browser | 1.2.3 |
-| daily | Daily usage flag; reported as true if used today | true or false | Browser | true |
-| weekly | Weekly usage flag; reported as true if used for the first time this week | true or false | Browser | true |
-| monthly | Monthly usage flag; reported as true if used for the first time this month | true or false | Browser | false |
-| first | First day of installation flag | true or false | Browser | false |
-| woi | Week of installation; date of the first Monday before the installation date | YYYY-MM-DD formatted date | Browser | 2020-11-16 |
-| ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | Browser | ABC123 |
-| dtoi | Date of browser installation. Only reported in the 30 days after installation. | YYYY-MM-DD formatted date | Browser | 2020-11-18 |
-| adsEnabled | Ads status flag | true or false | Browser | true |
-| wallet2 | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | 0 to 7 | Browser | 7 for daily, weekly and monthly usage, 4 for monthly usage, 2 for weekly usage, 1 for daily usage
-| arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | Browser | x86_64 |
+| platform | Platform identifier | winx64-bc, winia32-bc, winarm64-bc, linux-bc, osx-bc, osxarm64-bc, android-bc, ios | winx64-bc |
+| channel | Channel identifier | Nightly, dev, developer, beta, release | release |
+| version | Version number | x.x.x semver formatted string | 1.2.3 |
+| daily | Daily usage flag; reported as true if used today | true or false | true |
+| weekly | Weekly usage flag; reported as true if used for the first time this week | true or false | true |
+| monthly | Monthly usage flag; reported as true if used for the first time this month | true or false | false |
+| first | First day of installation flag | true or false | false |
+| woi | Week of installation; date of the first Monday before the installation date | YYYY-MM-DD formatted date | 2020-11-16 |
+| ref | Referral code (now limited to a small set of 50 to 100 affiliated referrers if this Brave instance was downloaded via a referral link) | ABC123 formatted string or the value none | ABC123 |
+| dtoi | Date of browser installation. Only reported in the 30 days after installation. | YYYY-MM-DD formatted date | 2020-11-18 |
+| adsEnabled | Ads status flag | true or false | true |
+| wallet2 | 3-bit bit field for monthly, weekly, daily usage. The most significant bit indicates Wallet usage in the current month, and the least significant bit indicates daily usage in the current day. | 0 to 7 | 7 for daily, weekly and monthly usage, 4 for monthly usage, 2 for weekly usage, 1 for daily usage
+| arch | CPU architecture Brave is compiled for | X86, x86_64, ia64, arm64, ppc64 | x86_64 |
 
 # What aggregated data is built from the usage requests?
 
