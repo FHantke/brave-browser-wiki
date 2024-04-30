@@ -1213,7 +1213,7 @@ _`Brave.Webcompat.UISource`_ **[D]** **[A]**
 1. Via the app menu (desktop only)
 
 ### Q151: If your "upgrade connections to HTTPS" setting is set to "standard" or "strict", how many page requests failed the auto-upgrade to HTTPS this week?
-_`Brave.Core.FailedHTTPSUpgrades`_  **[D]** **[A]**
+_`Brave.Core.FailedHTTPSUpgrades.2`_  **[D]** **[A]**
 
 0. 0%
 1. Above 0%, less than or equal to 0.25%
