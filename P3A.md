@@ -1279,7 +1279,7 @@ Answers range from 0 to 30 days.
 2. Yes, as a premium user
 
 ### Q159: As a "sidebar enabled" experiment participant, did you change the Sidebar settings?
-`Brave.Core.SidebarSettings.SidebarEnabledA` or `Brave.Core.SidebarSettings.SidebarEnabledB` **[D]**
+`Brave.Sidebar.SidebarSettings.SidebarEnabledA` or `Brave.Sidebar.SidebarSettings.SidebarEnabledB` **[D]**
 
 0. No
 1. Yes, I changed Show Sidebar to "On mouse over"
