@@ -246,12 +246,10 @@ The build jobs produce installers that you can retrieve from the following place
 * https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
 ##### Android installers
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/67/Bravearm.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/68/BraveMonoarm.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/69/Bravex86.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/70/BraveMonox86.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/71/BraveMonoarm64.apk
-* https://brave-jenkins-build-artifacts.s3.amazonaws.com/test-brave-browser-build-android-variant/72/BraveMonox64.apk
+* https://build-artifacts.brave.com/test-brave-browser-build-android-variant/1316/github/BraveMonoarm.apk
+* https://build-artifacts.brave.com/test-brave-browser-build-android-variant/1317/github/BraveMonox86.apk
+* https://build-artifacts.brave.com/test-brave-browser-build-android-variant/1318/github/BraveMonoarm64.apk
+* https://build-artifacts.brave.com/test-brave-browser-build-android-variant/1319/github/BraveMonox64.apk
 
 ##### iOS installers
 
