@@ -1306,6 +1306,12 @@ Answers range from 0 to 30 days.
 2. Globally enabled, but the setting is disabled for at least one site
 3. Not globally, but the setting is enabled for at least one site
 
+### Q163: If you’re a Rewards user with a custodial account connected, do you have one or more monthly contributions configured?
+`Brave.Rewards.RecurringTip` **[D]** **[A]**
+
+0. No
+1. Yes
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
