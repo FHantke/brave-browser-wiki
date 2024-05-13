@@ -123,8 +123,7 @@ Example:
 
 ## Chromium test frameworks
 
-- [GoogleTest Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)
-- [GoogleMock for Dummies](https://github.com/google/googletest/blob/master/googlemock/docs/ForDummies.md)
+- [GoogleTest](https://google.github.io/googletest/)
 
 # Manual tests
 
