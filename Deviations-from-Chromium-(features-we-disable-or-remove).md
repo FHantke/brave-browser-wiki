@@ -136,6 +136,7 @@ _Google does not receive any information about which client is performing these 
 - [Dangerous download warnings are always shown when Safe Browsing is OFF](https://github.com/brave/brave-browser/issues/28079), but [a flag to disable the warnings](https://github.com/brave/brave-core/pull/18877) is available for advanced users.
 - [Functionality from the Chromium side panel has been merged into the Brave Sidebar](https://github.com/brave/brave-core/pull/13769).
 - [Web Serial API is OFF](https://github.com/brave/brave-browser/issues/13902) but [a flag to enable](https://github.com/brave/brave-browser/issues/24404) is available for advanced users.
+- Enhanced the [geolocation permission dialog](https://github.com/brave/brave-core/pull/23278) to inform the user whether the site they are visiting has requested location data with the `enableHighAccuracy` option.
 
 ### Comments
 
