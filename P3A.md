@@ -666,7 +666,7 @@ _`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]** **[iOS]**
 7) 81+
 
 ### Q80. How many days did you use the browser in the previous ISO week?
-_`Brave.Core.WeeklyUsage`_ **[D]** **[A]**
+_`Brave.Core.WeeklyUsage`_ **[D]** **[A]** **[iOS]**
 
 0) 0 days
 1) 1 day
@@ -1115,7 +1115,7 @@ _`Brave.Rewards.PageViewCount`_ **[D]** **[A]**
 4. 51+
 
 ### Q140: What is your primary language? (reported via STAR/Constellation only)
-_`Brave.Core.PrimaryLang`_ **[D]** **[A]**
+_`Brave.Core.PrimaryLang`_ **[D]** **[A]** **[iOS]**
 
 See https://github.com/brave/brave-core/blob/master/components/misc_metrics/language_metrics.cc#L26-L210 for an ordered list of answers.
 
