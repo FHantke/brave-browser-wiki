@@ -16,6 +16,8 @@ On iOS, we rely on the Apple root store.
 
 While we do enable root pinning enforcement and HSTS preloading, we do not currently use the list that ships with Chrome. Instead, we have our own lists: https://github.com/brave/brave-core/blob/master/chromium_src/net/tools/transport_security_state_generator/input_file_parsers.cc
 
+You can confirm that it is working in your browser using this test domain: https://ssl-pinning.someblog.org/
+
 # Certificate Transparency
 
 On iOS, we rely on Apple's CT policy and the CT support in Webkit.
