@@ -7,7 +7,6 @@ It’s an [API](https://brave.com/glossary/api/) service provided  by a third pa
 - Arbitrum Sepolia Testnet
 - Avalanche Fuji Testnet
 - Avalanche Mainnet
-- Base Goerli Testnet (deprecated)
 - Base Mainnet
 - Base Sepolia Testnet
 - Blast Mainnet
@@ -16,9 +15,7 @@ It’s an [API](https://brave.com/glossary/api/) service provided  by a third pa
 - Degen Mainnet
 - Ethereum Mainnet
 - Gnosis Mainnet
-- Goerli Testnet (deprecated)
 - Linea Mainnet
-- Optimism Goerli Testnet (deprecated)
 - Optimism Mainnet
 - Optimism Sepolia Testnet
 - Polygon Amoy Testnet
