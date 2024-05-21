@@ -3,16 +3,31 @@ It’s an [API](https://brave.com/glossary/api/) service provided  by a third pa
 
 ### Current Supported Networks
 
-- Ethereum
-- Polygon
-- Solana
-- BNB Chain
 - Arbitrum One
-- Optimism
-- Goerli testnet (deprecated)
-- Optimism Goerli testnet (deprecated)
-- Solana Testnet
+- Arbitrum Sepolia Testnet
+- Avalanche Fuji Testnet
+- Avalanche Mainnet
+- Base Goerli Testnet (deprecated)
+- Base Mainnet
+- Base Sepolia Testnet
+- Blast Mainnet
+- Blast Sepolia
+- BNB Chain Mainnet
+- Degen Mainnet
+- Ethereum Mainnet
+- Gnosis Mainnet
+- Goerli Testnet (deprecated)
+- Linea Mainnet
+- Optimism Goerli Testnet (deprecated)
+- Optimism Mainnet
+- Optimism Sepolia Testnet
+- Polygon Amoy Testnet
+- Polygon Mainnet
+- Sepolia Testnet
 - Solana Devnet
+- Solana Mainnet
+- Solana Testnet
+- Zora Mainnet
 
 ### How does it work?
  - It checks blocklists to see if the domain and/or contract an end-user is interacting with is dangerous or flagged by Blowfish’s risk engine.
