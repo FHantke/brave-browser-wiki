@@ -1303,6 +1303,11 @@ Answers range from 0 to 30 days.
 0. No
 1. Yes
 
+### Q164: If you have your default engine set to Brave Search, did you make a Brave search query today?
+`Brave.Search.BraveDaily`
+
+1. Yes
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
