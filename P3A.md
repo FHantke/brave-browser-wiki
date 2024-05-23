@@ -23,7 +23,7 @@ Submission of STAR-encoded reports is controlled by the `BraveP3AConstellation` 
 **[iOS]** = supported on iOS ([merged and enabled in 1.46.x](https://github.com/brave/brave-ios/pull/6308))
 
 ### Q1: How long has the browser been active for in the past day?
-_`Brave.Uptime.BrowserOpenTime`_ **[D]** **[A]**
+_`Brave.Uptime.BrowserOpenTime.2`_ **[D]** **[A]**
 
 0. 30 minutes or less
 1. 31 minutes - 1 hour
