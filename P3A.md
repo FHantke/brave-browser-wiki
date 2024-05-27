@@ -644,8 +644,8 @@ _`Brave.Toolbar.MenuOpens`_ **[D]** **[iOS]**
 4) 30-49
 5) 50+
 
-### Q79. How many News ads have I viewed in the past 7 days?
-_`Brave.Today.WeeklyDisplayAdsViewedCount`_ **[D]** **[A]** **[iOS]**
+### Q79. As a rewards or non-rewards user, how many News ads have I viewed in the past 7 days?
+_`Brave.Today.RewardsAdViews`_ or _`Brave.Today.NonRewardsAdViews`_ **[D]** **[A]** **[iOS]**
 
 0) 0
 1) 1
