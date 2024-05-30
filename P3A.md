@@ -1303,7 +1303,7 @@ Answers range from 0 to 30 days.
 0. No
 1. Yes
 
-### Q164: If you have your default engine set to Brave Search, did you make a Brave search query today?
+### Q164: Did you make a Brave Search query today?
 `Brave.Search.BraveDaily`
 
 1. Yes
