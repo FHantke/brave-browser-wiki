@@ -1304,7 +1304,29 @@ Answers range from 0 to 30 days.
 1. Yes
 
 ### Q164: Did you make a Brave Search query today?
-`Brave.Search.BraveDaily`
+`Brave.Search.BraveDaily` **[D]** **[A]**
+
+1. Yes
+
+### Q165: If you have rewards enabled, which ad types do you have enabled?
+`Brave.Rewards.AdTypesEnabled.2` **[D]** **[A]**
+
+0. None
+1. NTP only
+2. Push only
+3. NTP + Push
+4. Search ads only
+5. Search + NTP
+6. Search + Push
+7. Search + NTP + Push
+
+### Q166: If you have Rewards enabled and a payout account connected, did you enable search ads this week?
+`Brave.Rewards.SearchResultAdsOptin` **[D]**
+
+1. Yes
+
+### Q167: If you are a Rewards user, did you view the 30-day Ads history page in the past week? 
+`Brave.Rewards.AdsHistoryView` **[D]**
 
 1. Yes
 
