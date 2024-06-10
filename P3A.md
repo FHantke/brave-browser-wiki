@@ -770,12 +770,12 @@ _`Brave.Today.IsEnabled`_ **[D]** **[A]**
 1) Enabled
 
 ### Q94. Did you use Brave News this month?
-_`Brave.Today.UsageMonthly`_ **[D]** **[A]**
+_`Brave.Today.UsageMonthly`_ **[D]** **[A]** **[iOS]**
 
 1) Yes
 
 ### Q95. Did you use Brave News in the past day?
-_`Brave.Today.UsageDaily`_ **[D]** **[A]**
+_`Brave.Today.UsageDaily`_ **[D]** **[A]** **[iOS]**
 
 1) Yes
 
