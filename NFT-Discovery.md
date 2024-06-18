@@ -3,6 +3,8 @@ NFT discovery is an optional feature of the Brave Wallet designed to streamline 
 
 PRIVACY WARNING: If you enable auto-discovery and someone sends you an NFT that passes the SimpleHash spam filter, they can potentially track your IP address every time you open Brave Wallet. If you don't recognize an NFT in your wallet, you should remove it.
 
+Note: The above privacy warning does not apply to compressed NFTs, as Brave fetches their metadata and image data directly from SimpleHash via a Brave proxy, instead of from the original URLs specified by the NFT creator.
+
 ## Enabling and Disabling NFT Discovery
 Users will be prompted during onboarding whether they want to enable NFT discovery. Users can always enable/disable NFT discovery in the settings at [brave://settings/wallet](brave://settings/wallet).
 
