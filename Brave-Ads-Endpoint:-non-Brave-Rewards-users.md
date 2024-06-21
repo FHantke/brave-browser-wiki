@@ -11,4 +11,4 @@ ex. https://search.anonymous.ads.brave.com/v3/confirmation/{transactionId}
 | ----------- | ------ | ------- | ---- |
 | creativeInstanceId | UUID | e4958d00-e35c-4134-a408-1fbcf274d5ae | An id that references the specific ad creative that the user engaged with. This will be the same for any user that engages with this ad. |
 | transactionId | UUID | c14d370c-1178-4c73-8385-1cfa17200646 | A unique id for the event that is not re-used. This cannot be linked between ad events or users. |
-| type | view, click, landed, conversion | {"type":"view"} | |
+| type | view, click, landed, conversion | {"type":"view"} | See [Brave Ads Manager documentation](https://ads-help.brave.com/campaign-performance/reporting/#available-reporting-metrics-in-brave-ads-manager) for descriptions of `type`. `view` corresponds to `Impressions` and `landed` corresponds to `Site visits`. | 
