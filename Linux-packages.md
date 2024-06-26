@@ -6,7 +6,7 @@ If building in a virtual machine, make sure you don't build as `root` or the [`n
 
 # Build command
 
-Once you've installed the [pre-requisites](https://github.com/brave/brave-browser/wiki/Linux-Development-Environment) and [cloned the repo](https://github.com/brave/brave-browser/wiki), the build command to use is:
+Once you've installed the [pre-requisites](https://github.com/brave/brave-browser/wiki/Linux-Development-Environment) and [cloned the repo](https://github.com/brave/brave-browser), the build command to use is:
 
     npm run create_dist -- Release
 
