@@ -21,7 +21,7 @@ To reduce code duplication, please try to always move toward unifying different 
 If you're interested in the details, or need to hack something until the automation can be improved to handle it, the general scheme is:
 
 - third_party packages are downloaded and unpacked into `third_party/rust/chromium_crates_io/vendor/$CRATE-$VERSION`
-- packages previously downloaded by the system cargo can be found in `$HOME/.cargo/registery/src` if you want to compare or copy from there
+- packages previously downloaded by the system cargo can be found in `$HOME/.cargo/registry/src` if you want to compare or copy from there
 - package download urls can be fetched manually from e.g. `https://crates.io/api/v1/crates/$package/$version/download`
 - While the vendored source and top-level Cargo.toml is under chromium_crates_io/vendor (for compatibility with cargo-vendor) each package must have a separate BUILD.gn and README.chromium in `third_party/rust/$package/$epoch/` where `$epoch` is a flattened version number. E.g. `serde-1.0.193 -> serde/v1`, `ppoprf-0.3.1` -> `ppoprf/v0_3`.
 
