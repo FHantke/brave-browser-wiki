@@ -13,3 +13,11 @@ There are additional details in the Chromium build system requirements at https:
 # Other tips
 
 - Make sure you have Spotlight fully off or privacy on for the build directory (or indexing will slow it down). System Preferences -> Spotlight -> Privacy
+
+# Build Acceleration
+
+Internal developers can find more information on remote build execution [here](https://github.com/brave/devops/wiki/Remote-Build-Execution)
+
+# Build Configuration
+
+Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
