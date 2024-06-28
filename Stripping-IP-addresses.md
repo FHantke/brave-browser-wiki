@@ -50,7 +50,7 @@ where `IP_HEADERS` contains the list of headers shown above.
 
 # Brave News
 
-Proxied images in Brave News [use a private CDN](https://brave.com/blog/brave-private-cdn/) which prevents Brave from associating IP addresses with specific image requests.
+Proxied images in Brave News [use a private CDN](https://brave.com/blog/brave-private-cdn/) which prevents Brave from associating IP addresses with specific image requests. Our proxy configuration [can be verified by users](https://brave.com/blog/published-proxy-config/).
 
 # Private Advertising Analytics
 
