@@ -46,7 +46,7 @@ export function rejectIdentifyingHeaderMiddleware(
   next();
 }
 ```
-where `IP_HEADERS` is an array containing the list of headers shown above.
+where `IP_HEADERS` contains the list of headers shown above.
 
 # Brave News
 
