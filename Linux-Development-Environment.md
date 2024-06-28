@@ -25,6 +25,14 @@ You might also want to try `./src/build/install-build-deps.sh --unsupported` if 
 
 Use `./src/build/install-build-deps.sh --android` for Android builds.
 
+# Build Acceleration
+
+Internal developers can find more information on remote build execution [here](https://github.com/brave/devops/wiki/Remote-Build-Execution)
+
+# Build Configuration
+
+Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
+
 # Troubleshooting
 
 Check out the upstream [Checking out and building Chromium on Linux](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md) docs before filing an issue.
