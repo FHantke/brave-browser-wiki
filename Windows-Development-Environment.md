@@ -39,6 +39,14 @@ Python is included in `depot_tools`. At the moment, there are known issues calli
 
 Now you are ready to follow the next step of the build instructions in the [[wiki|Home]].
 
+### Build Acceleration
+
+Internal developers can find more information on remote build execution [here](https://github.com/brave/devops/wiki/Remote-Build-Execution)
+
+### Build Configuration
+
+Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
+
 # Running Brave
 
 It's always best to run Brave from a standard `cmd.exe` shell or via Windows Explorer. There are instances where debug builds of Brave attempt to log to stderr, which will fail and potentially result in unexpected crashes in non-standard shells (e.g., Cygwin, Git for Windows, etc.)
