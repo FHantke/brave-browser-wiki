@@ -57,3 +57,7 @@ Proxied images in Brave News [use a private CDN](https://brave.com/blog/brave-pr
 # Private Advertising Analytics
 
 For [`p2a.brave.com`](https://github.com/brave/brave-browser/wiki/Randomized-Response-for-Private-Advertising-Analytics), we use a [reverse proxy operated by Cloudflare](https://developers.cloudflare.com/spectrum/) to prevent IP addresses from reaching our backend server.
+
+# Web Discovery Project
+
+[Web Discovery Project](https://support.brave.com/hc/en-us/articles/4409406835469-What-is-the-Web-Discovery-Project) submissions go through a [reverse proxy operated by Cloudflare](https://developers.cloudflare.com/spectrum/) to prevent IP addresses from being potentially associated with browsing data.
