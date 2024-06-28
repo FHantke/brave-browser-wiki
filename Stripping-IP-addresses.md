@@ -24,6 +24,8 @@ with the following list of headers to remove:
 - `x-forwarded-for`
 - `x-real-ip`
 
+Only a few of these headers are potentially exposed by Fastly. We have built an extensive list in order for this configuration to continue to work should this service be moved somewhere else in the future.
+
 In addition, the backend application contains middleware which looks for the
 presence of these headers and rejects any request which includes them. This
 fail-safe allows us to easily detect any failure or misconfiguration of the
