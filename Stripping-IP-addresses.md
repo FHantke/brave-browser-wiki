@@ -61,3 +61,7 @@ For [`p2a.brave.com`](https://github.com/brave/brave-browser/wiki/Randomized-Res
 # Web Discovery Project
 
 [Web Discovery Project](https://support.brave.com/hc/en-us/articles/4409406835469-What-is-the-Web-Discovery-Project) submissions go through a [reverse proxy operated by Cloudflare](https://developers.cloudflare.com/spectrum/) to prevent IP addresses from being potentially associated with browsing data.
+
+# Brave Search
+
+Prior to reaching the Search backend, requests go through our custom nginx-based rate-limiter which removes the client IP address.
