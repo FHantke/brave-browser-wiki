@@ -1,4 +1,4 @@
-**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/%60.env%60-config-for-Brave-Developers) for internal developers and in the company's secrets management service**
+**Updates to this public wiki page should be reflected on its [private equivalent](https://github.com/brave/devops/wiki/%60.env%60-config-for-Brave-Developers) for internal developers and in the company's secrets management service.**
 
 A number of build parameters are passed via a `.env` configuration file in the `brave-core` repository root directory. The build will fail early without some values passed but you can set each to "dummy" to have it continue (some features will be broken though).
 
