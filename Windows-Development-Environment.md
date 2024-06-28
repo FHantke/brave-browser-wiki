@@ -39,11 +39,11 @@ Python is included in `depot_tools`. At the moment, there are known issues calli
 
 Now you are ready to follow the next step of the build instructions in the [[wiki|Home]].
 
-### Build Acceleration
+## Build Acceleration
 
 Internal developers can find more information on remote build execution [here](https://github.com/brave/devops/wiki/Remote-Build-Execution)
 
-### Build Configuration
+## Build Configuration
 
 Please refer to [this document](https://github.com/brave/brave-browser/wiki/Build-configuration) for information about setting up `.env` build configuration.
 
