@@ -65,3 +65,7 @@ For [`p2a.brave.com`](https://github.com/brave/brave-browser/wiki/Randomized-Res
 # Brave Search
 
 Prior to reaching the Search backend, requests go through our custom nginx-based rate-limiter which removes the client IP address.
+
+# Proxies
+
+When proxying external services, such as the ones provided by Google, we run our own nginx-based proxy. Our nginx configuration ensures that the `X-Forwarded-For` header is not present.
