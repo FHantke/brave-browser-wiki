@@ -73,3 +73,5 @@ Besides the platform builds, there are pipelines that do platform-agnostic (nopl
 
 We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks and [CodeQL](https://securitylab.github.com/tools/codeql) for security checks.
 
+More info at https://github.com/brave/devops/wiki/Browser-CI-CD
+
