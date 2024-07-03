@@ -23,8 +23,7 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
 - BUILD_TYPE - `Release` by default but can be `Debug` as well
 - WIPE_WORKSPACE - `false` by default
-- SKIP_INIT - `false` by default
-- DISABLE_SCCACHE - `false` by default (only for Linux and macOS)
+- USE_RBE - `true` by default
 - SKIP_SIGNING - `true` by default
 - DCHECK_ALWAYS_ON - `true` by default
 - NODE_LABEL - empty by default - build node label where to execute
@@ -58,7 +57,6 @@ This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, L
 - initialize the repository (across runs we do `rm -rf src/brave` to force fetching the latest code then `npm run init`)
 - audit dependencies (`npm run audit_deps`)
 - run lint (`npm run lint`)
-- enable `sccache`
 - build
 - gn check (`npm run gn_check`)
 - audit network (`npm run network-audit`)
@@ -67,7 +65,7 @@ This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, L
 - upload build artifacts to S3 (`.apk`, `.zip`, `.dmg`, `.pkg`, `.deb`, `.rpm`, `.exe`)
 - report build results and link to artifacts via Slack (to PR author and #build-downloads-bot)
 
-Besides the platform builds, there are pipelines that do platform-agnostic pre-init or post-init checks like:
+Besides the platform builds, there are pipelines that do platform-agnostic (noplatform) checks like:
 - JavaScript lint and unit tests
 - Storybook tests
 - security checks
