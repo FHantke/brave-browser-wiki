@@ -1,13 +1,11 @@
 # PR Builder overview
 
-Every PR in [brave-browser](https://github.com/brave/brave-browser) or [brave-core](https://github.com/brave/brave-core) needs to pass a series of automated checks before merging as described below. A list of recently built PRs is at https://ci.brave.com/view/pr/
+Every PR in [brave-core](https://github.com/brave/brave-core) needs to pass a series of automated checks before merging as described below. A list of recently built PRs is at https://ci.brave.com/view/pr/
 
 ## GitHub overview
 On each PR, you should see the checks section as below (unless it's a draft PR or has the `CI/skip` label applied).
 
 ![GitHub checks section](images/github-checks.png)
-
-`Details` link will take you to the actual check results (Jenkins private, Travis publicly accessible).
 
 ### Helpful Jenkins links
 
@@ -24,7 +22,6 @@ When on a specific build from the build history there are some helpful links:
 To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-browser-build-pr` or `brave-core-build-pr`). The following parameters are available:
 - CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
 - BUILD_TYPE - `Release` by default but can be `Debug` as well
-- TERMINATE_NODE - `false` by default
 - WIPE_WORKSPACE - `false` by default
 - SKIP_INIT - `false` by default
 - DISABLE_SCCACHE - `false` by default (only for Linux and macOS)
@@ -36,7 +33,7 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 Same is valid for restarts, always do them from the top level jobs for proper status reporting.
 
 ## Jenkins overview
-We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are 13 pipelines at https://ci.brave.com/view/ci, per repo and per platform.
+We have a private Jenkins server available at https://ci.brave.com (you need VPN and a Jenkins account). There are per-platform pipelines at https://ci.brave.com/view/ci.
 
 Each of these is setup in Jenkins as a multibranch pipeline. A scan is done every 5 minutes for new changes and (once detected) the job will automatically be queued up. Forks are ignored. When a new build starts it will cancel the previously running ones, unless it gets aborted for the following reasons:
 - PR labeled with `CI/skip`
@@ -47,9 +44,6 @@ Extra skipping is available per platform using the `CI/skip-android`, `CI/skip-i
 Slack notifications will be sent to PR author based on a map that associates the GitHub user with their corresponding Slack username. To update, copy the value from our password manager, edit, then update in the Jenkins credential store `github-to-slack-username-map` variable. For extra notifications 
 
 ## Process overview
-The checks that are done are defined in the Jenkinsfiles at [https://github.com/brave/devops/blob/master/jenkins/jobs/browser/pr-brave-browser-*.Jenkinsfile](https://github.com/brave/devops/tree/master/jenkins/jobs/browser)
-
-The above get called by https://github.com/brave/brave-core/blob/master/Jenkinsfile. After the build is done, it will look for a PR in the other repo and update its status.
 
 To navigate to the top-level `brave-browser-build-pr-*` or the `brave-core-build-pr-*` pipeline please go to `Console Output` and press the link to `pr-brave-browser-...`. This will take you to where actually everything gets executed. Alternatively, the GitHub build links would take you there.
 
@@ -81,7 +75,3 @@ Besides the platform builds, there are pipelines that do platform-agnostic pre-i
 
 We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks and [CodeQL](https://securitylab.github.com/tools/codeql) for security checks.
 
-## Resources
-- for employees, join the `#continuous-integration-guest` Slack channel
-- for external contributors (community), we would like to have the content of these checks be publicly viewable in the future
-- additional non-public information is available in the [devops wiki](https://github.com/brave/devops/wiki/PR-Builder-Non-public-information)
