@@ -73,6 +73,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Site affiliation fetcher](https://github.com/brave/brave-core/pull/18153) (part of the password manager)
 - [Disables kOptimizationGuideFetchingForSRP](https://github.com/brave/brave-core/pull/19457)
 - [Disable Web Environment Integrity](https://github.com/brave/brave-core/pull/19476)
+- [Disable Popular Sites](https://github.com/brave/brave-core/pull/24511)
 
 ### Services We Proxy Through Brave Servers
 
