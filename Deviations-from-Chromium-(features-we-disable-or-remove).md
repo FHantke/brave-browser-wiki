@@ -118,7 +118,8 @@ _Google does not receive any information about which client is performing these 
 - The Battery API always [returns a fixed value](https://github.com/brave/brave-core/pull/567).
 - Referrer values are capped to `strict-origin-when-cross-origin` and can only be tightened by referrer policy, not weakened. In addition, cross-origin requests from a `.onion` service have an empty `Referer` header and a `null` `Origin` header just like the Tor Browser.
 - `.onion` entries are replaced with `"null"` in `document.location.ancestorOrigins()` unless such entries are same-origin with the innermost frame.
-- Media Router (Chromecast) is disabled by default on Desktop. You can turn it on by toggling the switch in brave://settings.
+- Hangouts extension is enabled by default on Desktop. We disable log uploading to Google's servers: https://github.com/brave/brave-browser/issues/1993. 
+- Media Router (Chromecast) is enabled by default for new profiles on Desktop. You can turn it off by toggling the switch in brave://settings/extensions. We modify the SSDP user agent to not leak the fact that it's a Brave user: https://github.com/brave/brave-core/pull/22140
 - Download protection remote lookups omit URLs and filenames (https://github.com/brave/brave-core/pull/6763).
 - Have StorageManager.estimate report a fixed value [#11543](https://github.com/brave/brave-browser/issues/11543)
 - Many features have randomness added or values generalized as a defense against fingerprinting, including:
