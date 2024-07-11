@@ -1,4 +1,4 @@
-The goal of the debouncer is to change cross-site server-side redirects into internal redirects so that redirecting servers don’t have the opportunity to set cookies or track an individual’s clicks. In other words, the destination URL after debouncing must be the same as if the user had visited the bounce tracker. For more information, see the [blog post](https://brave.com/privacy-updates/11-debouncing/) announcing this feature.
+The goal of the debouncer is to change [cross-site](https://github.com/brave/brave-browser/issues/25859) server-side redirects into internal redirects so that redirecting servers don’t have the opportunity to set cookies or track an individual’s clicks. In other words, the destination URL after debouncing must be the same as if the user had visited the bounce tracker. For more information, see the [blog post](https://brave.com/privacy-updates/11-debouncing/) announcing this feature.
 
 In particular, it’s not the job of the debouncer to:
 
