@@ -2,6 +2,10 @@
 In order to track Brave Ads metrics, it sends confirmation events to the server.
 For non-Brave Rewards users, the client will send a private and anonymous reduced payload if the user has interacted with Brave Ads. The payload contains the properties as described below.
 
+In addition:
+* Our CDN uses the IP address to flag malicious traffic and identify the country.
+* The [IP address is then stripped](https://github.com/brave/brave-browser/wiki/Stripping-IP-addresses#brave-ads) so that it's not accessible to our backend server.
+* The user's platform (e.g. Windows, iOS) is derived from the User-Agent header.
 
 ## Confirmation token payload (non-Brave Rewards Users)
 ex. https://search.anonymous.ads.brave.com/v3/confirmation/{transactionId}
