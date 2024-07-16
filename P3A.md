@@ -1330,6 +1330,26 @@ Answers range from 0 to 30 days.
 
 1. Yes
 
+### Q168: If you used the search widget in the past 7 days, how many queries did you perform this week?
+`Brave.Search.WidgetUsage` **[D]**
+
+0. 1-10
+1. 11-30
+2. 31-40
+3. 41+
+
+### Q169: If the search widget is enabled, what is your default engine for the search widget?
+`Brave.Search.WidgetDefault` **[D]**
+
+0. Brave
+1. Google
+2. DDG
+3. Qwant
+4. Bing
+5. Startpage
+6. Ecosia
+7. Other
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
