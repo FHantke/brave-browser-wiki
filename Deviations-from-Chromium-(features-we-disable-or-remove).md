@@ -53,6 +53,7 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Specific features are disabled on startup via the CLI](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc) (search for `disabled_features`)
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
+- [Disable Reporting API](https://github.com/brave/brave-browser/issues/7956). Note that the JS API for Reporting API ([ReportingObserver](https://developer.mozilla.org/en-US/docs/Web/API/ReportingObserver)) is enabled but is a no-op in Brave, see below.
 - [Disable Scroll To Text Fragment](https://github.com/brave/brave-core/pull/4548/commits/3221538c3b2939d11a3074be3d5c8f44b2540a6c)
 - [Disable Motion Sensors](https://github.com/brave/brave-browser/issues/4789)
 - [Disable navigator.credentials](https://github.com/brave/brave-browser/issues/13#issuecomment-376991976)
