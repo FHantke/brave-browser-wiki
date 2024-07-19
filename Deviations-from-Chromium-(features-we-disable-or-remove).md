@@ -53,7 +53,6 @@ After the gclient sync runs and fetches all the code (including `brave-core`), t
 - [Specific features are disabled on startup via the CLI](https://github.com/brave/brave-core/blob/master/app/brave_main_delegate.cc) (search for `disabled_features`)
 - [Remove dl.google.com repository from Linux packages](https://github.com/brave/brave-core/pull/1078)
 - [Disable metrics reporting](https://github.com/brave/brave-core/pull/2029)
-- [Disable Reporting Observers and Reporting API](https://github.com/brave/brave-core/pull/4578)
 - [Disable Scroll To Text Fragment](https://github.com/brave/brave-core/pull/4548/commits/3221538c3b2939d11a3074be3d5c8f44b2540a6c)
 - [Disable Motion Sensors](https://github.com/brave/brave-browser/issues/4789)
 - [Disable navigator.credentials](https://github.com/brave/brave-browser/issues/13#issuecomment-376991976)
@@ -137,6 +136,7 @@ _Google does not receive any information about which client is performing these 
 - [Functionality from the Chromium side panel has been merged into the Brave Sidebar](https://github.com/brave/brave-core/pull/13769).
 - [Web Serial API is OFF](https://github.com/brave/brave-browser/issues/13902) but [a flag to enable](https://github.com/brave/brave-browser/issues/24404) is available for advanced users.
 - Enhanced the [geolocation permission dialog](https://github.com/brave/brave-core/pull/23278) to inform the user whether the site they are visiting has requested location data with the `enableHighAccuracy` option.
+- Reporting Observers are enabled but don't work (calling will no-op). See [here](https://github.com/brave/brave-core/pull/4578) for where it was disabled and see [here](https://github.com/brave/brave-core/pull/24726) for where it was re-enabled but made to do nothing.
 
 ### Comments
 
