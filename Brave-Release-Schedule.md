@@ -62,7 +62,7 @@ The following is our automated schedule for creating and uploading builds to our
 | 1.65.x  |    124   | April 10, 2024      | April 17, 2024      | Release delayed. Originally scheduled to release on `April 16, 2024`. |
 | 1.66.x  |    125   | May 8, 2024         | May 16, 2024        | Release delayed. Originally scheduled to release on `May 14, 2024`. |
 | 1.67.x  |    126   | June 5, 2024        | June 13, 2024       | Release delayed. Originally scheduled to release on `June 11, 2024`. |
-| 1.68.x  |    127   | July 17, 2024       | July 23, 2024       |                                            |
+| 1.68.x  |    127   | July 17, 2024       | July 24, 2024       |                                            |
 | 1.69.x  |    128   | August 14, 2024     | August 20, 2024     |                                            |
 | 1.70.x  |    129   | September 11, 2024  | September 17, 2024  |                                            |
 | 1.71.x  |    130   | October 9, 2024     | October 15, 2024    |                                            |
