@@ -952,12 +952,13 @@ _`Brave.DNS.SecureSetting`_ **[D]** **[A]**
 2. Predefined / custom provider
 
 ### Q120: If your secure DNS setting is set to "current service provider" and at least one DNS request was auto-upgraded in the past week, what percent of queries were made over DoH in the past week?"
-_`Brave.DNS.AutoSecureRequests`_, _`Brave.DNS.AutoSecureRequests.Quad9`_, _`Brave.DNS.AutoSecureRequests.Wikimedia`_ or _`Brave.DNS.AutoSecureRequests.Cloudflare`_ **[D]** **[A]**
+_`Brave.DNS.AutoSecureRequests.2`_, _`Brave.DNS.AutoSecureRequests.Quad9.2`_, _`Brave.DNS.AutoSecureRequests.Wikimedia.2`_ or _`Brave.DNS.AutoSecureRequests.Cloudflare.2`_ **[D]** **[A]**
 
-0. Greater than 0%, less than 5%
-1. Greater than 5%, less than 50%
-2. Greater than 50%, less than 90%
-3. Greater than 90%
+0. 0%
+1. Greater than 0%, less than 5%
+2. Greater than 5%, less than 50%
+3. Greater than 50%, less than 90%
+4. Greater than 90%
 
 ### Q121: If you are an opted-in Leo user, what % of your Omnibox selections were the Ask Leo option?
 _`Brave.AIChat.OmniboxOpens`_ **[D]**
