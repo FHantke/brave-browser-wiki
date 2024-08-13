@@ -33,9 +33,7 @@ If you have any questions about PageGraph, or would like to use / extend it for 
 * Module scripts
 * Handling remote frames
 * Instrumenting what parts of JS are responsible for which API calls
-
-### Not Done But Will Be Done Shortly
-* Scripts in SVG documents
+* SVG documents
 
 ### Would Be Nice / Someday / Known Limitations / Not Important for Current Needs
 * Recording the body of large, streamed, requests (`<audio>` and `<video>`)
