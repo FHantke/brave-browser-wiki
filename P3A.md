@@ -982,6 +982,7 @@ _`Brave.AIChat.AcquisitionSource`_ **[D]**
 
 0. Omnibox option
 1. Sidebar
+2. Context menu
 
 ### Q124: Do you have Web Discovery Project & notification ads enabled?
 _`Brave.Search.WebDiscoveryAndAds`_ **[D]**
