@@ -1353,6 +1353,11 @@ Answers range from 0 to 30 days.
 6. Ecosia
 7. Other
 
+### Q170: Did you delete your Brave Ads Data this week?
+`Brave.Search.WidgetDefault` **[D]** **[A]** **[iOS]**
+
+1. Yes
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
