@@ -222,10 +222,11 @@ Note: Records the corresponding preference (`"Help improve Brave's features and 
 
 ### Q26: Is the sponsored new tab page option enabled?
 
-`Brave.NTP.SponsoredImagesEnabled` **[D]** **[A]** **[iOS]**
+`Brave.NTP.SponsoredMediaType` **[D]** **[A]** **[iOS]**
 
 0. Disabled
-1. Enabled
+1. Images only
+2. Images and videos
 
 ### Q27: In the past week, on the day where you created the most tabs, how many of the New Tab Pages were sponsored?
 
