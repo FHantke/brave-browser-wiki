@@ -1354,7 +1354,7 @@ Answers range from 0 to 30 days.
 7. Other
 
 ### Q170: Did you delete your Brave Ads Data this week?
-`Brave.Search.WidgetDefault` **[D]** **[A]** **[iOS]**
+`Brave.Ads.ClearData` **[D]** **[A]** **[iOS]**
 
 1. Yes
 
