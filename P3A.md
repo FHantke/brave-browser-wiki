@@ -1358,6 +1358,30 @@ Answers range from 0 to 30 days.
 
 1. Yes
 
+### Q171: What color mode are you using?
+`Brave.Theme.BrowserColorScheme` **[D]**
+
+0. OS default
+1. Dark
+2. Light
+
+### Q172: Are you using the default theme colors?
+`Brave.Theme.ThemeColorDefault` **[D]**
+
+0. No
+1. Yes
+
+### Q173: Do you have "Show search suggestions" enabled?
+`Brave.Search.SearchSuggest` **[D]**
+
+0. No
+1. Yes
+
+### Q174: Did you make a Google query using the NTP search widget this week?
+`Brave.Search.GoogleWidgetUsage` **[D]**
+
+1. Yes
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
