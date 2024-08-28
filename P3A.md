@@ -1387,6 +1387,7 @@ Answers range from 0 to 30 days.
 
 ### Q175: If you are an opted-in Leo user and used Leo in the past 7 days, what was the most used entry point in the past 7 days?
 `Brave.AIChat.MostUsedEntryPoint` **[D]**
+
 0. Omnibox item
 1. Sidebar
 2. Context menu
