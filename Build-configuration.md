@@ -51,6 +51,7 @@ The following are used in official release builds:
   * sardine_client_id
   * sardine_client_secret
   * service_key_aichat
+  * service_key_stt
   * updater_dev_endpoint
   * updater_prod_endpoint
   * uphold_production_api_url
