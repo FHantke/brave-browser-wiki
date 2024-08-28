@@ -6,7 +6,7 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 2. It modifies or adds network requests, or it rewrites URLs (including internal requests like those with the `brave://` scheme).
 3. It is related to money/BAT.
 4. It involves cryptography (including anything which generates a random number, a random series of bytes, or the like) or distributes cryptography that is not fully open source.
-5. It adds new dependencies (e.g. Docker images), integrations, or plugins. Update (9/2023): Please choose "Third-Party Dependency Review" when opening these in brave/reviews.
+5. It adds new dependencies (e.g. Docker images), integrations, or plugins. Update (9/2023): Please choose "Third-Party Dependency Review" when opening these in brave/reviews which requires a security review and principal engineer review in brave-core.
 6. It is related to sensitive user information such as cookies, passwords, and private browsing data.
 7. It changes the amount of data collected by Brave or one of its partners  — including making any logs which may be sent to Brave or a third party.
 8. It adds a new extension that is built-in or has special privileges in Brave.
