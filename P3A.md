@@ -984,6 +984,9 @@ _`Brave.AIChat.AcquisitionSource`_ **[D]**
 0. Omnibox option
 1. Sidebar
 2. Context menu
+3. Toolbar button
+4. App menu item
+5. Omnibox command
 
 ### Q124: Do you have Web Discovery Project & notification ads enabled?
 _`Brave.Search.WebDiscoveryAndAds`_ **[D]**
@@ -1381,6 +1384,15 @@ Answers range from 0 to 30 days.
 `Brave.Search.GoogleWidgetUsage` **[D]**
 
 1. Yes
+
+### Q175: If you are an opted-in Leo user and used Leo in the past 7 days, what was the most used entry point in the past 7 days?
+`Brave.AIChat.MostUsedEntryPoint` **[D]**
+0. Omnibox item
+1. Sidebar
+2. Context menu
+3. Toolbar button
+4. App menu item
+5. Omnibox command
 
 ## New Tab Page Ad Metrics
 
