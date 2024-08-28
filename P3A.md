@@ -1395,6 +1395,16 @@ Answers range from 0 to 30 days.
 4. App menu item
 5. Omnibox command
 
+### Q176: If you are a first-time user this week and you viewed at least one page, how long after the install time did you view your first web page?
+`Brave.Core.FirstPageLoadTime` **[D]** **[A]**
+
+0. 0-5 minutes
+1. 6-10 minutes
+2. 11 minutes - 1 hour
+3. 1 hour - 4 hours
+4. 4 hours - 1 day
+5. Greater than a day
+
 ## New Tab Page Ad Metrics
 
 Metrics are reported for New Tab Page ad interactions, for those who are not opted into Brave Rewards. Three event types are reported for each ad campaign, on a daily basis:
