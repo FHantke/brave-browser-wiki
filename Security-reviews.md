@@ -16,7 +16,7 @@ If a code change (pull request, commit, etc.) satisfies ANY of the following, it
 12. Adds any "content scripts" which run in the main world or an isolated world, AKA any scripts which interact with in-page JavaScript.
 13. It adds a new way of collecting data from A/B tests (not through Griffin or Crash Reports).
 14. It saves data on a user's device and later retrieves it for purposes that are not strictly necessary (such as analytics).
-15. It involves adding new mojo APIs or new WebUIs such as chrome:// or chrome-untrusted:// pages.
+15. It involves adding new mojo APIs, IPC, or WebUIs such as chrome:// or chrome-untrusted:// pages.
 
 If you are not sure whether you need a security review, you should probably ask for one just to play it safe.
 
