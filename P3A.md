@@ -572,7 +572,7 @@ _`Brave.Wallet.EthProvider.4`_ and _`Brave.Wallet.SolProvider.2`_ **[D]**
 5. Third-party extension (overriding a setup Brave Wallet; setting is "Extensions (Brave Wallet fallback)")
 
 ### Q71. As a user with Brave as the default search engine, how many pages did you load in the past week?
-_`Brave.Core.PagesLoaded.BraveSearchDefault`_ **[D]** **[A]** **[iOS]**
+_`Brave.Core.PagesLoaded.BraveSearchDefault`_ **[D]** **[A]**
 
 0. 0 pages
 1. 1-10
@@ -1406,7 +1406,7 @@ Answers range from 0 to 30 days.
 5. Greater than a day
 
 ### Q177. As a user with a non-Brave default search engine, how many pages did you load in the past week?
-_`Brave.Core.PagesLoaded.OtherSearchDefault`_ **[D]** **[A]** **[iOS]**
+_`Brave.Core.PagesLoaded.OtherSearchDefault`_ **[D]** **[A]**
 
 0. 0 pages
 1. 1-10
