@@ -6,10 +6,9 @@ Brave modifies how websites execute, and what network requests websites can make
 
 Brave's default settings attempt to protect user privacy by blocking third-party advertising.  Brave's goal in doing so is not to block the advertisement images themselves, but to block the tracking such advertisements cause.  In practice, it is difficult-to-impossible to distinguish third-party advertising with third-party tracking, so Brave blocks both.
 
-In Standard blocking mode (the default), Brave does not apply network-level filter list blocking to first-party requests. In Aggressive blocking mode, both third-party and first-party requests are blocked. Read more in the [blog post](https://brave.com/privacy-updates/9-web-compat-blocking/). 
+In Standard blocking mode (the default), Brave does not apply network-level filter list blocking to first-party requests. In Aggressive blocking mode, both third-party and first-party requests are blocked. Read more in the [blog post](https://brave.com/privacy-updates/9-web-compat-blocking/). Regional adblock lists (read more below) always operate in Aggressive blocking mode.
 
-Note 1 : Regional adblock lists (read more below) always operate in Aggressive blocking mode.
-Note 2: Brave will always attempt to block anti-adblock behavior. 
+Brave will always attempt to block anti-adblock behavior. 
 
 ### First-party blocking
 
