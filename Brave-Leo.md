@@ -26,7 +26,7 @@ No. Your conversations are not persisted and they are discarded immediately afte
 As with any AI, the more specific you are with your prompts and context, the better the results Leo can provide. Remember to give Leo clear, detailed instructions and, if you don't get exactly the answer you're looking for, try wording your query/prompt a different way.
 
 ### Does Leo have access to live information?
-For now, Leo does not have access to live info. However, in future releases we do plan to offer a version of Leo with some level of access to current information. This will be powered by our very own [Brave Search](https://brave.com/search/).
+Yes, Leo now has access to live information. This is powered by our very own [Brave Search](https://brave.com/search/). For more information, see this [support page](https://support.brave.com/hc/en-us/articles/27586048343309-How-does-Leo-get-current-information).
 
 ### What’s next for Brave Leo?
 In addition to incorporating live info, we’ll be making improvements to Leo’s accuracy and user experience. We hope to release Leo to all Brave browser users in the coming months.
