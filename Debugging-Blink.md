@@ -10,7 +10,7 @@ There are some extensions to make this happen on Windows:
 
 V8 and Blink uses [pointer compression](https://v8.dev/blog/pointer-compression) by default. This lowers RAM usage dramatically, but prevents debuggers to display most variables properly.
 
-To disable pointers compression add this to `out/<Config>/gn.args`:
+To disable pointers compression add this to `out/<Config>/args.gn`:
 
 ```
 v8_enable_pointer_compression = false
