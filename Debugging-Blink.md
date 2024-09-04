@@ -1,7 +1,7 @@
-#### Child process auto-attach
+#### Child process auto-attach on Windows
 To debug Blink and other child processes, a debugger should support child process auto-attach.
 
-There are some extensions to make this happen:
+There are some extensions to make this happen on Windows:
 
 * `Visual Studio 2022` https://marketplace.visualstudio.com/items?itemName=vsdbgplat.MicrosoftChildProcessDebuggingPowerTool2022
 * `Visual Studio Code` https://github.com/albertziegenhagel/childdebugger-vscode
