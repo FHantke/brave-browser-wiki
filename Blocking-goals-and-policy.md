@@ -12,7 +12,9 @@ Brave will always attempt to block anti-adblock behavior.
 
 ### Regional Lists
 
-Default-enabled regional adblock lists operate in Standard blocking mode (i.e. Brave does not apply network-level rules to first-party requests). Historically, a lot of default-enabled regional lists operated in Aggressive blocking mode; the intention is to transition them over to Standard mode. Optional and custom lists (lists that users opt-in to) always operate in Aggressive blocking mode. 
+Default-enabled regional adblock lists operate in Standard blocking mode. This means that Brave will not apply network-level blocking to first-party requests and ads. Historically, a lot of default-enabled regional lists used to operate in Aggressive blocking mode; we are working on transitioning them over to Standard mode. We plan to offer a [toggle in settings](https://github.com/brave/brave-browser/issues/40870) that users can enable to get back the legacy behavior.
+
+Optional and custom lists always operate in Aggressive blocking mode. 
 
 ### First-party blocking
 
