@@ -296,7 +296,8 @@ Settings:
 
 For Windows x86 and x64, set `OMAHA_CHANNEL` to `nightly` (this is the default).
 
-For MacOS x64, set `OMAHA_CHANNEL` to `nightly` (this is the default). For MacOS arm64, set `OMAHA_CHANNEL` to `nightly-arm64`.
+For MacOS x64, set `OMAHA_CHANNEL` to `nightly` (this is the default).
+**For MacOS arm64, set `OMAHA_CHANNEL` to `nightly-arm64`.**
 
 #### Testing
 
