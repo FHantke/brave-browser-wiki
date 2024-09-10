@@ -29,7 +29,7 @@ The following are used in official release builds:
   * brave_sync_endpoint
   * brave_variations_server_url
   * brave_zero_ex_api_key
-  * dcheck_always_on (set to 1 in PRs on non-Windows platforms)
+  * dcheck_always_on (set to `true` in PRs on non-Windows x64 platforms)
   * gemini_production_api_url
   * gemini_production_client_id
   * gemini_production_client_secret
