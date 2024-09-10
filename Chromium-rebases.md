@@ -237,13 +237,13 @@ The build jobs produce installers that you can retrieve from the following place
 * https://build-artifacts.brave.com/test-brave-browser-build-windows-x64/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
 
 ##### Windows (x86) installers
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/setup-x86.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/brave_installer-x86.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserNightlySetup_99_1_37_54.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneNightlySetup_99_1_37_54.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneSilentNightlySetup_99_1_37_54.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneUntaggedNightlySetup_99_1_37_54.exe
-* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup_99_1_37_54.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/setup-ia32.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/brave_installer-ia32.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserNightlySetup32_99_1_37_54.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneNightlySetup32_99_1_37_54.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneSilentNightlySetup32_99_1_37_54.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserStandaloneUntaggedNightlySetup32_99_1_37_54.exe
+* https://build-artifacts.brave.com/test-brave-browser-build-windows-x86/436/BraveBrowserUntaggedNightlySetup32_99_1_37_54.exe
 
 ##### Android installers
 * https://build-artifacts.brave.com/test-brave-browser-build-android-variant/1316/github/BraveMonoarm.apk
