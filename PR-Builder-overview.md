@@ -19,7 +19,7 @@ When on a specific build from the build history there are some helpful links:
 
 ### Start a PR builder Jenkins job
 
-To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-core-build-pr`). The following parameters are available:
+To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-core-build-pr`) or https://ci.brave.com/job/brave-core-build-pr-{PLATFORM}/job/PR-{NUMBER}/ where NUMBER is your PR's number and platform is like linux-x64, macos-arm64 etc. The following parameters are available:
 - CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
 - BUILD_TYPE - `Release` by default but can be `Debug` as well
 - WIPE_WORKSPACE - `false` by default
