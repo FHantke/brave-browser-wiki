@@ -19,7 +19,7 @@ When on a specific build from the build history there are some helpful links:
 
 ### Start a PR builder Jenkins job
 
-To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-browser-build-pr` or `brave-core-build-pr`). The following parameters are available:
+To build a PR on demand press on the `Build with Parameters` link from the Jenkins job view (`brave-core-build-pr`). The following parameters are available:
 - CHANNEL - `nightly` by default but can be `dev`, `beta` or `release` as well
 - BUILD_TYPE - `Release` by default but can be `Debug` as well
 - WIPE_WORKSPACE - `false` by default
@@ -44,14 +44,11 @@ Slack notifications will be sent to PR author based on a map that associates the
 
 ## Process overview
 
-To navigate to the top-level `brave-browser-build-pr-*` or the `brave-core-build-pr-*` pipeline please go to `Console Output` and press the link to `pr-brave-browser-...`. This will take you to where actually everything gets executed. Alternatively, the GitHub build links would take you there.
+We use ephemeral nodes in AWS for building Android, Linux and Windows (which get stopped after the build and reused at next one - unless TERMINATE_NODE is checked). For iOS and macOS builds we use persistent cloud and physical machines (which means higher chance to re-use workspaces).
 
-We use ephemeral nodes in AWS for building Android, Linux and Windows x64 (which get stopped after the build and reused at next one - unless TERMINATE_NODE is checked). For iOS and macOS builds we use physical machines (which means higher chance to re-use workspaces).
-
-This Jenkinsfiles define the steps for building on Android `x86`, iOS `arm64`, Linux `x64`, macOS `x64` and Windowx `x64` with the steps below:
+This Jenkinsfiles in the devops repo define the steps for building on Android `x86`, iOS `arm64`, Linux `x64`, macOS `arm64` and Windowx `x64` with the steps below:
 - notify the PR author (or extra destinations) on Slack that build has started
 - checkout source code
-- pin locally branch in `package.json` if branch also exists in `brave-core`
 - install dependencies (`npm install --no-optional`) and remove `gclient` lock files
 - test scripts (`npm run test:scripts`)
 - initialize the repository (across runs we do `rm -rf src/brave` to force fetching the latest code then `npm run init`)
