@@ -25,6 +25,7 @@ To build a PR on demand press on the `Build with Parameters` link from the Jenki
 - WIPE_WORKSPACE - `false` by default
 - USE_RBE - `true` by default
 - SKIP_SIGNING - `true` by default
+- DCHECK_ALWAYS_ON - `true` by default
 - NODE_LABEL - empty by default (auto-determined) - machine where to run the build
 - SLACK_NOTIFY - empty by default (auto-set to PR author) - comma-separated list of Slack destinations to notify about build (`@user,#build-bot` for example)
 
@@ -41,30 +42,29 @@ Slack notifications will be sent to PR author based on a map that associates the
 
 ## Process overview
 
-We use ephemeral nodes in AWS for building Android, Linux and Windows (which get stopped after the build and reused at next one - unless TERMINATE_NODE is checked). For iOS and macOS builds we use persistent cloud and physical machines (which means higher chance to re-use workspaces).
+We use ephemeral nodes in AWS for building Android, Linux and Windows (which get stopped after the build and reused at next one). For iOS and macOS builds we use persistent cloud and physical machines (which means higher chance to re-use workspaces).
 
-This Jenkinsfiles in the devops repo define the steps for building on Android `x86`, iOS `arm64`, Linux `x64`, macOS `arm64` and Windowx `x64` with the steps below:
-- notify the PR author (or extra destinations) on Slack that build has started
+This Jenkinsfiles in the devops repo define the steps for building on Android `x86`, iOS `x64`, Linux `x64`, Linux `arm64`, macOS `x64`, macOS `arm64`, Windowx `x64`, Windowx `arm64` and Windowx `x86` with the steps below:
 - checkout source code
-- install dependencies (`npm install --no-optional`) and remove `gclient` lock files
-- test scripts (`npm run test:scripts`)
-- initialize the repository (across runs we do `rm -rf src/brave` to force fetching the latest code then `npm run init`)
-- audit dependencies (`npm run audit_deps`)
-- run lint (`npm run lint`)
+- install dependencies (`npm install`)
+- initialize the repository (across runs we do `npm run sync` to force fetching the latest code or `npm run init` if starting with empty workspace)
 - build
 - gn check (`npm run gn_check`)
-- audit network (`npm run network-audit`)
+- eslint (`npm run eslint`)
+- JavaScript tests
 - unit tests and browser tests (`npm run test -- brave_unit_tests` and `npm run test -- brave_browser_tests`)
-- create binaries (and optionally sign)
+- upstream tests
+- Storybook build
+- audit network (`npm run network-audit`)
+- create binaries
 - upload build artifacts to S3 (`.apk`, `.zip`, `.dmg`, `.pkg`, `.deb`, `.rpm`, `.exe`)
-- report build results and link to artifacts via Slack (to PR author and #build-downloads-bot)
+- report build results and link to artifacts via Slack (to PR author/notify list and #build-downloads-bot)
 
 Besides the platform builds, there are pipelines that do platform-agnostic (noplatform) checks like:
-- JavaScript lint and unit tests
-- Storybook tests
-- security checks
-- Python lint (pep8)
+- test scripts (`npm run test:scripts`)
+- check if rebased against current Chromium version
+- audit dependencies (`npm run audit_deps`)
 
-We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks and [CodeQL](https://securitylab.github.com/tools/codeql) for security checks.
+We also use [sonarcloud.io](https://sonarcloud.io) for code quality checks.
 
 More info at https://github.com/brave/devops/wiki/Browser-CI-CD
