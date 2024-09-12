@@ -18,7 +18,7 @@ Optional and custom lists always operate in Aggressive blocking mode.
 
 ### Pre-roll and mid-roll ads
 
-Video content websites like YouTube run pre-roll (pre-stream) and mid-roll (mid-stream) ads. Brave has blocked these ads since the beginning, whether or not they're first-party
+Video content websites like YouTube run pre-roll (pre-stream) and mid-roll (mid-stream) ads. Brave has blocked these ads since the beginning, deeming them user-hostile and pointlessly annoying since they typically depend on third-party advertising for ad metrics (which we block).
 
 ### First-party blocking
 
