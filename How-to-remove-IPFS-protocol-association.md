@@ -13,9 +13,3 @@ As the IPFS support has been deprecated, the next steps help you to remove regis
 3. If exists, make sure that it is associated with Brave Browser by checking the `Computer\HKEY_CLASSES_ROOT\ipfs\shell\open\command`.
 4. Delete whole protocol association: `Computer\HKEY_CLASSES_ROOT\ipfs` and/or `Computer\HKEY_CLASSES_ROOT\ipns`
 
-##### Linux
-1. Open the file: `/usr/share/applications/defaults.list`
-2. Make sure you have no `ipfs` or/end `ipns` related lines like:  `x-scheme-handler/ipfs=brave-browser-nightly.desktop`
-3. Build cache database of MIME types handled by desktop files (may need `sudo`):  [`update-desktop-database`](http://manpages.ubuntu.com/manpages/focal/man1/update-desktop-database.1.html)
-4. Test with [`xdg-open "ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html"`](ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Vincent_van_Gogh.html).
-5. Brave should not be proposed for opening that link
