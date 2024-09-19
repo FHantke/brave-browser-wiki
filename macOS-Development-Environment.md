@@ -2,7 +2,7 @@
 
 You will need the prerequisites below to build Brave on macOS 10.15+.
 
-macOS SDK 14.0 is needed as per https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43. This is bundled with Xcode 15.0 for example as per https://xcodereleases.com
+macOS SDK 15.0 is needed as per https://source.chromium.org/chromium/chromium/src/+/main:build/config/mac/mac_sdk.gni;l=43. This is bundled with Xcode 16.0 for example as per https://xcodereleases.com
 
 There are additional details in the Chromium build system requirements at https://chromium.googlesource.com/chromium/src/+/lkgr/docs/mac_build_instructions.md#system-requirements (do not follow any of the instructions after system requirements):
 
