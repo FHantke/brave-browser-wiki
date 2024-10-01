@@ -12,7 +12,7 @@ PageGraph is the next, production-ish version of [AdGraph](https://arxiv.org/abs
 
 Tools
 ---
-You can find tools for querying data from PageGraph archives either for python ([pagegraph-query](https://github.com/pes10k/pagegraph-query)) or rust ([pagegraph-rust](https://github.com/brave/pagegraph-rust)).
+You can find tools for querying data from PageGraph archives either for python ([pagegraph-query](https://github.com/brave-experiments/pagegraph-query)) or rust ([pagegraph-rust](https://github.com/brave/pagegraph-rust)).
 
 Questions / Clarifications
 ---
